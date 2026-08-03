@@ -458,6 +458,44 @@ ${[...vocab.affiliation].sort().map((v) => `- \`${v}\``).join('\n')}
 
 ${dropped.length ? table([['Term', 'Items'], ['---', '---:'], ...dropped]) : '_None dropped._'}
 
+## Axis coverage by show
+
+How complete each axis is, per show. A filter is only as useful as its
+coverage: an axis at 0% for a given year means that year vanishes from it.
+
+${(() => {
+  const shows = [...new Set(records.map((r) => r.frontmatter.show ?? 'no show'))].sort()
+  const rows = shows.map((s) => {
+    const inShow = records.filter((r) => (r.frontmatter.show ?? 'no show') === s)
+    const pct = (n) => `${n}/${inShow.length}` + (n === inShow.length ? '' : ` (${Math.round((100 * n) / inShow.length)}%)`)
+    return [
+      s,
+      inShow.length,
+      pct(inShow.filter((r) => r.frontmatter.affiliation.length).length),
+      pct(inShow.filter((r) => r.frontmatter.medium.length).length),
+    ]
+  })
+  return table([['Show', 'Items', 'Has affiliation', 'Has medium'], ['---', '---:', '---:', '---:'], ...rows])
+})()}
+
+**Affiliation was not recorded for the 2025 show at all.** That is not scatter or
+export loss — no 2025 term carries an affiliation, so every one of those items
+has an empty array. Across 2019–2024 the same axis is ${(() => {
+  const older = records.filter((r) => r.frontmatter.year && r.frontmatter.year < 2025)
+  const have = older.filter((r) => r.frontmatter.affiliation.length).length
+  return `${have}/${older.length} (${Math.round((100 * have) / older.length)}%)`
+})()} complete, so this is a
+single-year regression rather than a long-standing gap.
+
+Two consequences. It is recoverable — 2025 is the most recent show and the
+people involved will still know who was an undergraduate and who was a
+graduate, which will not stay true indefinitely. And it bears directly on
+decision D5: making affiliation a public filter today would render the newest
+show invisible to it.
+
+This is precisely the drift that Step 7's controlled vocabulary exists to
+prevent recurring.
+
 ## Cost of the drop decisions
 
 ${touchedByDrop.length} project${touchedByDrop.length === 1 ? '' : 's'} lost at least one term to a drop.

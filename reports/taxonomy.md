@@ -59,6 +59,37 @@ Mapping applied from `config/taxonomy-map.yaml` (reviewed).
 | Design | 1 |
 | Playshop | 1 |
 
+## Axis coverage by show
+
+How complete each axis is, per show. A filter is only as useful as its
+coverage: an axis at 0% for a given year means that year vanishes from it.
+
+| Show | Items | Has affiliation | Has medium |
+| --- | ---: | ---: | ---: |
+| 2019-december | 30 | 28/30 (93%) | 30/30 |
+| 2019-february | 20 | 20/20 | 20/20 |
+| 2020 | 58 | 58/58 | 56/58 (97%) |
+| 2021 | 11 | 11/11 | 11/11 |
+| 2022 | 37 | 33/37 (89%) | 37/37 |
+| 2023 | 30 | 28/30 (93%) | 30/30 |
+| 2024 | 32 | 26/32 (81%) | 32/32 |
+| 2025 | 38 | 0/38 (0%) | 38/38 |
+| no show | 8 | 0/8 (0%) | 0/8 (0%) |
+
+**Affiliation was not recorded for the 2025 show at all.** That is not scatter or
+export loss — no 2025 term carries an affiliation, so every one of those items
+has an empty array. Across 2019–2024 the same axis is 204/218 (94%) complete, so this is a
+single-year regression rather than a long-standing gap.
+
+Two consequences. It is recoverable — 2025 is the most recent show and the
+people involved will still know who was an undergraduate and who was a
+graduate, which will not stay true indefinitely. And it bears directly on
+decision D5: making affiliation a public filter today would render the newest
+show invisible to it.
+
+This is precisely the drift that Step 7's controlled vocabulary exists to
+prevent recurring.
+
 ## Cost of the drop decisions
 
 9 projects lost at least one term to a drop.
