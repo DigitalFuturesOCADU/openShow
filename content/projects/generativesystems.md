@@ -8,9 +8,6 @@ session: february
 affiliation:
   - graduate
 medium:
-  - algorithm-design
-  - art-movement
-  - automation
   - code
   - generative
   - installation

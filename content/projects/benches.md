@@ -10,7 +10,6 @@ affiliation:
 medium:
   - code
   - installation
-  - networked
   - physical-computing
   - sculpture
 tags: []

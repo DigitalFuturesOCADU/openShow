@@ -10,7 +10,6 @@ affiliation:
   - faculty
   - graduate
 medium:
-  - speculative
   - vr
   - wearables
 tags: []

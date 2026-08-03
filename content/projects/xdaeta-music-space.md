@@ -9,7 +9,7 @@ affiliation:
   - graduate
 medium:
   - games
-  - sound
+  - nime
   - vr
 tags: []
 credits:

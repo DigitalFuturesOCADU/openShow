@@ -9,6 +9,7 @@ affiliation: []
 medium:
   - code
   - digital-fabrication
+  - nime
   - physical-computing
   - sound
   - wearables

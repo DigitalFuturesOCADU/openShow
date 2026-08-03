@@ -10,7 +10,6 @@ affiliation:
 medium:
   - ai
   - code
-  - typography
 tags: []
 credits:
   - name: Christina Chen

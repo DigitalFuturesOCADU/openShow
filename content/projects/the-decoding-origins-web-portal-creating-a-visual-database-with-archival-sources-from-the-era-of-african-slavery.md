@@ -13,7 +13,6 @@ affiliation:
 medium:
   - ai
   - code
-  - data-transformation
   - data-visualization
   - web
 tags: []
