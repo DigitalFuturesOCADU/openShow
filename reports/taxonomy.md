@@ -73,22 +73,18 @@ coverage: an axis at 0% for a given year means that year vanishes from it.
 | 2022 | 37 | 33/37 (89%) | 37/37 |
 | 2023 | 30 | 28/30 (93%) | 30/30 |
 | 2024 | 32 | 26/32 (81%) | 32/32 |
-| 2025 | 38 | 0/38 (0%) | 38/38 |
+| 2025 | 38 | 36/38 (95%) | 38/38 |
 | no show | 8 | 0/8 (0%) | 0/8 (0%) |
 
-**Affiliation was not recorded for the 2025 show at all.** That is not scatter or
-export loss — no 2025 term carries an affiliation, so every one of those items
-has an empty array. Across 2019–2024 the same axis is 204/218 (94%) complete, so this is a
-single-year regression rather than a long-standing gap.
+**WordPress recorded no affiliation for the 2025 show at all** — not scatter or
+export loss, simply no 2025 term carrying one. 36 of 38 have since been recovered from the Microsoft Forms submission sheet and applied through `config/overrides.yaml` (36 overrides). The remaining 2 are listed there and need a human.
 
-Two consequences. It is recoverable — 2025 is the most recent show and the
-people involved will still know who was an undergraduate and who was a
-graduate, which will not stay true indefinitely. And it bears directly on
-decision D5: making affiliation a public filter today would render the newest
-show invisible to it.
+Across 2019–2024 the same axis is 204/218 (94%) complete, so the gap was a
+single-year regression rather than long-standing decay.
 
-This is precisely the drift that Step 7's controlled vocabulary exists to
-prevent recurring.
+The lasting point is that the submission form already collects this cleanly, as
+a controlled multi-select, and WordPress simply never received it. Wiring the
+form to the content is what stops the next such year, which is Step 7.
 
 ## Cost of the drop decisions
 

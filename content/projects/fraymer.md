@@ -5,7 +5,8 @@ title: Fraymer
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - animation
   - video
@@ -42,6 +43,8 @@ wordpress:
   postDate: '2025-12-08 23:34:38'
   originalSlug: fraymer
   link: https://df.show/portfolio/items/fraymer
+manualOverrides:
+  - affiliation
 ---
 
 "Fraymer is a motion graphics platform that makes animation accessible to anyone—no prior experience needed. Our Figma plugins, Flyp and Splyt, bring motion directly into designers’ workflows.

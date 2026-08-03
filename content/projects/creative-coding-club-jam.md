@@ -5,7 +5,8 @@ title: Creative Coding Club Jam
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - code
   - installation
@@ -86,6 +87,8 @@ wordpress:
   postDate: '2025-12-09 00:28:00'
   originalSlug: creative-coding-club-jam
   link: https://df.show/portfolio/items/creative-coding-club-jam
+manualOverrides:
+  - affiliation
 ---
 
 The Creative Coding Club is a space for students to explore creative technology together. We meet every week to experiment, share ideas, collaborate, and have fun with code. At the Open Show, we are opening up our final meeting of the year for an audio-visual creative technology jam. Just like our weekly meetings, the structure of the jam will be fluid and showcase how coding encourages spontaneous, live collaboration. We will be playing around with live coded music, audio-reactive visuals, a guitar (or two), a custom Arduino MIDI controller, and more. This evolving, improvised performance is a culmination of our ongoing experiments and conversations throughout the year. The Creative Coding Club is open to everyone, regardless of coding experience, and we invite you to join us in exploring this messy, playful side of creative technology.

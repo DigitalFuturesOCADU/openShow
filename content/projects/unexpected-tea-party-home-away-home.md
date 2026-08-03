@@ -5,7 +5,8 @@ title: Unexpected Tea Party/Home Away Home
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - digital-fabrication
   - illustration
@@ -76,6 +77,8 @@ wordpress:
   postDate: '2025-12-08 23:49:16'
   originalSlug: unexpected-tea-party-home-away-home
   link: https://df.show/portfolio/items/unexpected-tea-party-home-away-home
+manualOverrides:
+  - affiliation
 ---
 
 """Unexpected Tea Party"" aims to bring a surprise celebration to the Open Show. A ceramic tea cup embedded with a temperature sensor will be placed with the exhibition hospitality food and drinks. When the content of the teacup reaches a certain temperature, confetti will drop from the ceiling.

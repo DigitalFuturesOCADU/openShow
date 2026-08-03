@@ -5,7 +5,8 @@ title: Orbs Interactive Light
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - code
   - physical-computing
@@ -46,6 +47,8 @@ wordpress:
   postDate: '2025-12-08 23:47:46'
   originalSlug: orbs-interactive-light
   link: https://df.show/portfolio/items/orbs-interactive-light
+manualOverrides:
+  - affiliation
 ---
 
 "Gravity is a fundamental force of nature, responsible for holding planets in orbit, keeping us on the ground, and even forming the atmosphere and oceans of Earth.  

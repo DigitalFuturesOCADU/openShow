@@ -42,3 +42,130 @@
 
 # 3001:
 #   affiliation: [undergraduate]
+
+# ==========================================================================
+# 2025 affiliation backfill, recovered from the Microsoft Forms submission
+# sheet: 'Digital Futures 2025 OPEN Show Submissions.xlsx', column
+# "You and your Team's Connection(s) to Digital Futures".
+#
+# The 2025 show recorded no affiliation in WordPress at all - 0 of 38. This
+# closes that to 36 of 38. Two duplicate submissions were resolved by taking
+# the later one; both agreed on affiliation regardless.
+#
+# Mapping:  DF Grad Student -> graduate       DF Undergrad Student -> undergraduate
+#           DF Alumni       -> alumni         DF Faculty / Faculty -> faculty
+#
+# STILL MISSING, needs a human:
+#   Blade & Coin     archived, but has no row in the submission sheet
+#   Jungle Struggle  the sheet spells it 'Jungle Straggle' - same project? If
+#                    so it is DF Undergrad Student.
+# ==========================================================================
+
+2912:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — 9-5 at Freddy's"
+2865:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — Alley Cat (2025)"
+3033:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Alt Controllers: Round 2"
+2956:
+  affiliation: [graduate]
+  note: "2025 Forms submission — AWORM"
+2971:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Banjo controller"
+2992:
+  affiliation: [graduate]
+  note: "2025 Forms submission — CatLike：Emotion-Responsive Wearables"
+2974:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — Creative Coding Club Jam"
+2933:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Digital Écorché Sculpture"
+2939:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — Drone Delivery"
+2897:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Fraymer"
+2876:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — Full Stomach, Empty Bladder"
+2944:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Haptic in Braiding"
+2984:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — I can see you."
+3008:
+  affiliation: [faculty]
+  note: "2025 Forms submission — Jailbreaking Canada Playshop"
+2904:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Let's Keep in Touch"
+2900:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Light Paint"
+2890:
+  affiliation: [graduate]
+  note: "2025 Forms submission — LoFi Spinny Flock"
+2937:
+  affiliation: [alumni]
+  note: "2025 Forms submission — Logic Fed Scene Randomizer"
+3015:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — Lost Stars"
+2952:
+  affiliation: [graduate]
+  note: "2025 Forms submission — My Friend the Red Balloon"
+3023:
+  affiliation: [alumni, faculty]
+  note: "2025 Forms submission — Networked Light-Up Costumes"
+3036:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — Ocean of Feelings"
+2917:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Orbs Interactive Light"
+2947:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Playful Home"
+2960:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — Project Vampurr"
+2988:
+  affiliation: [graduate]
+  note: "2025 Forms submission — QVS Community Archive"
+2997:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — Really Real"
+2980:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Reimagining Branding: AI & Hyper-Personalization"
+2872:
+  affiliation: [graduate]
+  note: "2025 Forms submission — ReVirtual"
+2882:
+  affiliation: [alumni]
+  note: "2025 Forms submission — Shatter, Before the Break"
+3002:
+  affiliation: [alumni]
+  note: "2025 Forms submission — Thank You for Your Feedback: Affective Data Translation and AI Interpretation"
+2894:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — The Long Dream"
+3028:
+  affiliation: [alumni, faculty]
+  note: "2025 Forms submission — Ultra-Wideband Experiments"
+2920:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Unexpected Tea Party/Home Away Home"
+2964:
+  affiliation: [undergraduate]
+  note: "2025 Forms submission — Wildfire VR"
+2884:
+  affiliation: [graduate]
+  note: "2025 Forms submission — You Were Here"

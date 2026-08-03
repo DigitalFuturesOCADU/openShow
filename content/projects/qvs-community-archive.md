@@ -5,7 +5,8 @@ title: QVS Community Archive
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - games
   - installation
@@ -52,6 +53,8 @@ wordpress:
   postDate: '2025-12-09 00:42:19'
   originalSlug: qvs-community-archive
   link: https://df.show/portfolio/items/qvs-community-archive
+manualOverrides:
+  - affiliation
 ---
 
 "This immersive installation invites brave volunteers to participate in an archive digitization project.  You'll cross-reference databases with physical artifacts, uncovering the tragic fates of the communities and researchers that built and accessed the archive before you. You'll interface with mysterious entities associated with a reality that is encroaching on our own - much like how fictional game worlds intersect with ours, with the player as pivot point, existing at once in the actual world and the virtual world of the fiction. 

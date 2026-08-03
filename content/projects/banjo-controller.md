@@ -5,7 +5,8 @@ title: Banjo controller
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - code
   - digital-fabrication
@@ -36,6 +37,8 @@ wordpress:
   postDate: '2025-12-09 00:22:16'
   originalSlug: banjo-controller
   link: https://df.show/?post_type=royal_portfolio&#038;p=2971
+manualOverrides:
+  - affiliation
 ---
 
 Make the vibrations from banjo as button to control. This project is connected to C&amp;C AltControl project, which make a special controller for game Pong.

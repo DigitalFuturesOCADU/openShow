@@ -5,7 +5,9 @@ title: Ultra-Wideband Experiments
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - alumni
+  - faculty
 medium:
   - ar
   - code
@@ -71,6 +73,8 @@ wordpress:
   postDate: '2025-12-09 00:59:42'
   originalSlug: ultra-wideband-experiments
   link: https://df.show/portfolio/items/ultra-wideband-experiments
+manualOverrides:
+  - affiliation
 ---
 
 These initial experiments funded by the OCADU Seed Grant explore new interactions powered by Ultra-WideBand devices. These devices allow for tracking of people and objects using radio signals over large distances. It provides advantages over camera-based systems by allowing tracking over large areas and not requiring direct line of sight. The method works by defining a device as one of two typologies : Anchor OR Tag. These experiments use P5.js as the environment for designing the interactions and the Makerfabs UWB boards for tracking. In addition to the interaction experiments this research also created a tool for calibrating the tracking environments which proved to be critical for accurate tracking.

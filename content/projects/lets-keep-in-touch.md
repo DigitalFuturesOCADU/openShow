@@ -5,7 +5,8 @@ title: Let's Keep in Touch
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - 3d-printing
   - code
@@ -64,6 +65,8 @@ wordpress:
   postDate: '2025-12-08 23:43:43'
   originalSlug: lets-keep-in-touch
   link: https://df.show/portfolio/items/lets-keep-in-touch
+manualOverrides:
+  - affiliation
 ---
 
 "This project is a prototype of a design research thesis project. The larger research project, and this prototype, both investigate the potential for haptic technology to help users “keep in touch” with their loved ones when apart. Eventually, the aim is to be able to send signals to your friends and family to feel connected. 

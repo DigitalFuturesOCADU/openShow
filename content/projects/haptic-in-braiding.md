@@ -5,7 +5,8 @@ title: Haptic in Braiding
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - code
   - digital-fabrication
@@ -48,6 +49,8 @@ wordpress:
   postDate: '2025-12-09 00:04:43'
   originalSlug: haptic-in-braiding
   link: https://df.show/portfolio/items/haptic-in-braiding
+manualOverrides:
+  - affiliation
 ---
 
 "When I knit or braid, keeping a consistent texture means constantly judging whether the string is too tight or too loose. With Kumihimo, a Japanese braiding craft known for its intricate patterns, this consistency requires experience. It made me wonder: what if the tension on each string could be sensed and expressed back to the maker in real time?

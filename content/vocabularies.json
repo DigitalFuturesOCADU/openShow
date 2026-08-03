@@ -177,17 +177,17 @@
     {
       "slug": "alumni",
       "label": "Alumni",
-      "count": 18
+      "count": 23
     },
     {
       "slug": "faculty",
       "label": "Faculty",
-      "count": 15
+      "count": 18
     },
     {
       "slug": "graduate",
       "label": "Graduate",
-      "count": 83
+      "count": 101
     },
     {
       "slug": "ug-thesis",
@@ -197,7 +197,7 @@
     {
       "slug": "undergraduate",
       "label": "Undergraduate",
-      "count": 96
+      "count": 108
     }
   ],
   "tags": []

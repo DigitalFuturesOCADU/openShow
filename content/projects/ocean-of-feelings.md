@@ -5,7 +5,8 @@ title: Ocean of Feelings
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - games
 tags: []
@@ -43,6 +44,8 @@ wordpress:
   postDate: '2025-12-09 01:01:53'
   originalSlug: ocean-of-feelings
   link: https://df.show/?post_type=royal_portfolio&#038;p=3036
+manualOverrides:
+  - affiliation
 ---
 
 Ocean of Feelings is a two-level narrative exploration game that uses the ocean as a metaphor for emotional depth. The player controls a curious fish who dives into unknown waters in search of meaning, only to encounter creatures who are struggling with their own emotional challenges. As the player travels deeper, the environments darken, the atmosphere shifts, and the creatures' stories become more complex, mirroring the journey of confronting difficult feelings.

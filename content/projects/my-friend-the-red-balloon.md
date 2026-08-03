@@ -5,7 +5,8 @@ title: My Friend the Red Balloon
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - code
   - digital-fabrication
@@ -61,6 +62,8 @@ wordpress:
   postDate: '2025-12-09 00:11:27'
   originalSlug: my-friend-the-red-balloon
   link: https://df.show/portfolio/items/my-friend-the-red-balloon
+manualOverrides:
+  - affiliation
 ---
 
 "As we spent more time with our friend the Red Balloon, he became more alive. By the end he had a personality.

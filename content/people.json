@@ -351,7 +351,9 @@
           "year": 2025,
           "project": "creative-coding-club-jam",
           "title": "Creative Coding Club Jam",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
@@ -381,13 +383,17 @@
           "year": 2025,
           "project": "alley-cat-2025",
           "title": "Alley Cat (2025)",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "julia-andrejczuck",
@@ -888,7 +894,9 @@
           "year": 2025,
           "project": "thank-you-for-your-feedback-affective-data-translation-and-ai-interpretation",
           "title": "Thank You for Your Feedback: Affective Data Translation and AI Interpretation",
-          "affiliation": [],
+          "affiliation": [
+            "alumni"
+          ],
           "role": null
         }
       ],
@@ -1165,13 +1173,17 @@
           "year": 2025,
           "project": "qvs-community-archive",
           "title": "QVS Community Archive",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "gillian-blekkenhorst",
@@ -1501,13 +1513,17 @@
           "year": 2025,
           "project": "drone-delivery",
           "title": "Drone Delivery",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "orus-mateo-castano-suarez",
@@ -1739,13 +1755,17 @@
           "year": 2025,
           "project": "drone-delivery",
           "title": "Drone Delivery",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "aimee-chen",
@@ -1951,7 +1971,9 @@
           "year": 2025,
           "project": "haptic-in-braiding",
           "title": "Haptic in Braiding",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         },
         {
@@ -1959,13 +1981,17 @@
           "year": 2025,
           "project": "my-friend-the-red-balloon",
           "title": "My Friend the Red Balloon",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 2,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "kayli-chow",
@@ -2021,7 +2047,9 @@
           "year": 2025,
           "project": "9-5-at-freddys",
           "title": "9-5 at Freddy's",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
@@ -2127,7 +2155,9 @@
           "year": 2025,
           "project": "drone-delivery",
           "title": "Drone Delivery",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
@@ -2321,13 +2351,17 @@
           "year": 2025,
           "project": "lost-stars",
           "title": "Lost Stars",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 2,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "giuliana-costa",
@@ -2460,13 +2494,17 @@
           "year": 2025,
           "project": "alley-cat-2025",
           "title": "Alley Cat (2025)",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "minghui-cui",
@@ -2488,13 +2526,17 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "aileen-d",
@@ -2593,13 +2635,17 @@
           "year": 2025,
           "project": "9-5-at-freddys",
           "title": "9-5 at Freddy's",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "patricio-davila",
@@ -2871,13 +2917,17 @@
           "year": 2025,
           "project": "alley-cat-2025",
           "title": "Alley Cat (2025)",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "aileen-dong",
@@ -3078,13 +3128,17 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "alexandra-fernandez-espinosa",
@@ -3216,13 +3270,17 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "mehdi-farahani",
@@ -3433,13 +3491,17 @@
           "year": 2025,
           "project": "ocean-of-feelings",
           "title": "Ocean of Feelings",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "doris-gao",
@@ -3493,13 +3555,17 @@
           "year": 2025,
           "project": "project-vampurr",
           "title": "Project Vampurr",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "yueming-gao",
@@ -3713,13 +3779,17 @@
           "year": 2025,
           "project": "ocean-of-feelings",
           "title": "Ocean of Feelings",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "liam-gonzales",
@@ -3795,7 +3865,9 @@
           "year": 2025,
           "project": "wildfire-vr",
           "title": "Wildfire VR",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
@@ -3937,13 +4009,17 @@
           "year": 2025,
           "project": "revirtual",
           "title": "ReVirtual",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "pranya-gulati",
@@ -4129,7 +4205,10 @@
           "year": 2025,
           "project": "networked-light-up-costumes",
           "title": "Networked Light-Up Costumes",
-          "affiliation": [],
+          "affiliation": [
+            "alumni",
+            "faculty"
+          ],
           "role": null
         },
         {
@@ -4137,7 +4216,10 @@
           "year": 2025,
           "project": "ultra-wideband-experiments",
           "title": "Ultra-Wideband Experiments",
-          "affiliation": [],
+          "affiliation": [
+            "alumni",
+            "faculty"
+          ],
           "role": null
         }
       ],
@@ -4181,7 +4263,9 @@
           "year": 2025,
           "project": "reimagining-branding-ai-hyper-personalization",
           "title": "Reimagining Branding: AI & Hyper-Personalization",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
@@ -4389,13 +4473,17 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "prayag-ichangimath",
@@ -4740,13 +4828,17 @@
           "year": 2025,
           "project": "digital-ecorche-sculpture",
           "title": "Digital Écorché Sculpture",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "ziyao-jiang",
@@ -4832,13 +4924,17 @@
           "year": 2025,
           "project": "drone-delivery",
           "title": "Drone Delivery",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": true,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "judsia-joseph",
@@ -5005,7 +5101,9 @@
           "year": 2025,
           "project": "9-5-at-freddys",
           "title": "9-5 at Freddy's",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
@@ -5207,13 +5305,18 @@
           "year": 2025,
           "project": "ultra-wideband-experiments",
           "title": "Ultra-Wideband Experiments",
-          "affiliation": [],
+          "affiliation": [
+            "alumni",
+            "faculty"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 4,
       "affiliations": [
+        "alumni",
+        "faculty",
         "graduate"
       ]
     },
@@ -5283,13 +5386,17 @@
           "year": 2025,
           "project": "drone-delivery",
           "title": "Drone Delivery",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "sam-kingston",
@@ -5395,13 +5502,17 @@
           "year": 2025,
           "project": "full-stomach-empty-bladder",
           "title": "Full Stomach, Empty Bladder",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "krishnokoli",
@@ -5862,7 +5973,9 @@
           "year": 2025,
           "project": "alley-cat-2025",
           "title": "Alley Cat (2025)",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
@@ -6109,13 +6222,17 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "yilia-li",
@@ -6394,7 +6511,9 @@
           "year": 2025,
           "project": "my-friend-the-red-balloon",
           "title": "My Friend the Red Balloon",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         },
         {
@@ -6402,13 +6521,17 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 2,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "raquel-lopes",
@@ -6506,7 +6629,9 @@
           "year": 2025,
           "project": "catlike%ef%bc%9aemotion-responsive-wearables",
           "title": "CatLike：Emotion-Responsive Wearables",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
@@ -6570,13 +6695,17 @@
           "year": 2025,
           "project": "ocean-of-feelings",
           "title": "Ocean of Feelings",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "arteya-lutchman",
@@ -6779,7 +6908,9 @@
           "year": 2025,
           "project": "alley-cat-2025",
           "title": "Alley Cat (2025)",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         },
         {
@@ -6787,7 +6918,9 @@
           "year": 2025,
           "project": "the-long-dream",
           "title": "The Long Dream",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
@@ -7119,7 +7252,9 @@
           "year": 2025,
           "project": "shatter-before-the-break",
           "title": "Shatter, Before the Break",
-          "affiliation": [],
+          "affiliation": [
+            "alumni"
+          ],
           "role": null
         }
       ],
@@ -7192,13 +7327,17 @@
           "year": 2025,
           "project": "ocean-of-feelings",
           "title": "Ocean of Feelings",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "mufaro-mukoki",
@@ -7456,13 +7595,17 @@
           "year": 2025,
           "project": "alley-cat-2025",
           "title": "Alley Cat (2025)",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "emma-nguyen",
@@ -7512,13 +7655,17 @@
           "year": 2025,
           "project": "ocean-of-feelings",
           "title": "Ocean of Feelings",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "irina-noor",
@@ -7540,13 +7687,17 @@
           "year": 2025,
           "project": "project-vampurr",
           "title": "Project Vampurr",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "peter-oke",
@@ -7600,13 +7751,17 @@
           "year": 2025,
           "project": "fraymer",
           "title": "Fraymer",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "social-body-lab-in-collaboration-with-tapestry-opera",
@@ -7660,13 +7815,17 @@
           "year": 2025,
           "project": "drone-delivery",
           "title": "Drone Delivery",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": true,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "ecem-ozturk",
@@ -7748,13 +7907,17 @@
           "year": 2025,
           "project": "drone-delivery",
           "title": "Drone Delivery",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "sydney-pallister",
@@ -7822,13 +7985,17 @@
           "year": 2025,
           "project": "the-long-dream",
           "title": "The Long Dream",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "sarah-parent",
@@ -7947,7 +8114,9 @@
           "year": 2025,
           "project": "lets-keep-in-touch",
           "title": "Let's Keep in Touch",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
@@ -8079,7 +8248,9 @@
           "year": 2025,
           "project": "logic-fed-scene-randomizer",
           "title": "Logic Fed Scene Randomizer",
-          "affiliation": [],
+          "affiliation": [
+            "alumni"
+          ],
           "role": null
         },
         {
@@ -8087,13 +8258,18 @@
           "year": 2025,
           "project": "ultra-wideband-experiments",
           "title": "Ultra-Wideband Experiments",
-          "affiliation": [],
+          "affiliation": [
+            "alumni",
+            "faculty"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 6,
       "affiliations": [
+        "alumni",
+        "faculty",
         "graduate"
       ]
     },
@@ -8127,13 +8303,17 @@
           "year": 2025,
           "project": "creative-coding-club-jam",
           "title": "Creative Coding Club Jam",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 2,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "peiheng",
@@ -8491,7 +8671,9 @@
           "year": 2025,
           "project": "playful-home",
           "title": "Playful Home",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
@@ -8707,7 +8889,10 @@
           "year": 2025,
           "project": "networked-light-up-costumes",
           "title": "Networked Light-Up Costumes",
-          "affiliation": [],
+          "affiliation": [
+            "alumni",
+            "faculty"
+          ],
           "role": null
         },
         {
@@ -8715,13 +8900,17 @@
           "year": 2025,
           "project": "ultra-wideband-experiments",
           "title": "Ultra-Wideband Experiments",
-          "affiliation": [],
+          "affiliation": [
+            "alumni",
+            "faculty"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 3,
       "affiliations": [
+        "alumni",
         "faculty"
       ]
     },
@@ -9214,7 +9403,9 @@
           "year": 2025,
           "project": "creative-coding-club-jam",
           "title": "Creative Coding Club Jam",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         },
         {
@@ -9222,13 +9413,17 @@
           "year": 2025,
           "project": "i-can-see-you",
           "title": "I can see you.",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 2,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "golnoush-mir-salari",
@@ -9348,13 +9543,17 @@
           "year": 2025,
           "project": "orbs-interactive-light",
           "title": "Orbs Interactive Light",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "niloofar-sanandajizadeh",
@@ -9402,7 +9601,9 @@
           "year": 2025,
           "project": "my-friend-the-red-balloon",
           "title": "My Friend the Red Balloon",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         },
         {
@@ -9410,13 +9611,16 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 4,
       "affiliations": [
+        "graduate",
         "undergraduate"
       ]
     },
@@ -9440,13 +9644,17 @@
           "year": 2025,
           "project": "drone-delivery",
           "title": "Drone Delivery",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "arshia-sobhan-sarbandi",
@@ -10262,13 +10470,17 @@
           "year": 2025,
           "project": "really-real",
           "title": "Really Real",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "arshia-sobhan",
@@ -10322,13 +10534,17 @@
           "year": 2025,
           "project": "ocean-of-feelings",
           "title": "Ocean of Feelings",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "jacob-sosulli",
@@ -10382,13 +10598,17 @@
           "year": 2025,
           "project": "creative-coding-club-jam",
           "title": "Creative Coding Club Jam",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "suzanne-stein",
@@ -10410,13 +10630,17 @@
           "year": 2025,
           "project": "jailbreaking-canada-playshop",
           "title": "Jailbreaking Canada Playshop",
-          "affiliation": [],
+          "affiliation": [
+            "faculty"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "faculty"
+      ]
     },
     {
       "id": "mairead-stewart",
@@ -10505,7 +10729,9 @@
           "year": 2025,
           "project": "logic-fed-scene-randomizer",
           "title": "Logic Fed Scene Randomizer",
-          "affiliation": [],
+          "affiliation": [
+            "alumni"
+          ],
           "role": null
         },
         {
@@ -10513,7 +10739,10 @@
           "year": 2025,
           "project": "networked-light-up-costumes",
           "title": "Networked Light-Up Costumes",
-          "affiliation": [],
+          "affiliation": [
+            "alumni",
+            "faculty"
+          ],
           "role": null
         },
         {
@@ -10521,13 +10750,18 @@
           "year": 2025,
           "project": "ultra-wideband-experiments",
           "title": "Ultra-Wideband Experiments",
-          "affiliation": [],
+          "affiliation": [
+            "alumni",
+            "faculty"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 6,
       "affiliations": [
+        "alumni",
+        "faculty",
         "graduate"
       ]
     },
@@ -10788,13 +11022,17 @@
           "year": 2025,
           "project": "networked-light-up-costumes",
           "title": "Networked Light-Up Costumes",
-          "affiliation": [],
+          "affiliation": [
+            "alumni",
+            "faculty"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 2,
       "affiliations": [
+        "alumni",
         "faculty",
         "graduate"
       ]
@@ -10831,7 +11069,9 @@
           "year": 2025,
           "project": "light-paint",
           "title": "Light Paint",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
@@ -10870,13 +11110,17 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 2,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "candide-uyanze",
@@ -10999,7 +11243,9 @@
           "year": 2025,
           "project": "lofi-spinny-flock",
           "title": "LoFi Spinny Flock",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
@@ -11029,13 +11275,17 @@
           "year": 2025,
           "project": "drone-delivery",
           "title": "Drone Delivery",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "nicole-vella",
@@ -11362,7 +11612,9 @@
           "year": 2025,
           "project": "jailbreaking-canada-playshop",
           "title": "Jailbreaking Canada Playshop",
-          "affiliation": [],
+          "affiliation": [
+            "faculty"
+          ],
           "role": null
         }
       ],
@@ -11524,7 +11776,9 @@
           "year": 2025,
           "project": "banjo-controller",
           "title": "Banjo controller",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         },
         {
@@ -11540,13 +11794,17 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 3,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "yixuan-xiao",
@@ -11632,13 +11890,17 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "maria-yala",
@@ -11721,7 +11983,9 @@
           "year": 2025,
           "project": "unexpected-tea-party-home-away-home",
           "title": "Unexpected Tea Party/Home Away Home",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         },
         {
@@ -11729,13 +11993,17 @@
           "year": 2025,
           "project": "alt-controllers-round-2",
           "title": "Alt Controllers: Round 2",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 2,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "yu-shien-yang",
@@ -11843,13 +12111,17 @@
           "year": 2025,
           "project": "you-were-here",
           "title": "You Were Here",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "yanjia-yi",
@@ -11969,13 +12241,17 @@
           "year": 2025,
           "project": "creative-coding-club-jam",
           "title": "Creative Coding Club Jam",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     },
     {
       "id": "ethan-zhang",
@@ -12105,13 +12381,16 @@
           "year": 2025,
           "project": "jailbreaking-canada-playshop",
           "title": "Jailbreaking Canada Playshop",
-          "affiliation": [],
+          "affiliation": [
+            "faculty"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 2,
       "affiliations": [
+        "faculty",
         "graduate"
       ]
     },
@@ -12327,7 +12606,9 @@
           "year": 2025,
           "project": "aworm",
           "title": "AWORM",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
@@ -12581,13 +12862,17 @@
           "year": 2025,
           "project": "alley-cat-2025",
           "title": "Alley Cat (2025)",
-          "affiliation": [],
+          "affiliation": [
+            "undergraduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "undergraduate"
+      ]
     }
   ]
 }

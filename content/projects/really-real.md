@@ -5,7 +5,8 @@ title: Really Real
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - sculpture
 tags: []
@@ -53,6 +54,8 @@ wordpress:
   postDate: '2025-12-09 00:48:11'
   originalSlug: really-real
   link: https://df.show/portfolio/items/really-real
+manualOverrides:
+  - affiliation
 ---
 
 "“In a digital world where entertainment competes for our attention at every moment, it is getting increasingly harder to detach yourself from the internet. In this constant overstimulation, I often feel a sense of confusion as if things that are real and aren’t are blurring together. 
