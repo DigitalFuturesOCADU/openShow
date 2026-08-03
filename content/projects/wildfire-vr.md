@@ -5,7 +5,8 @@ title: Wildfire VR
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - vr
 tags: []
@@ -68,6 +69,8 @@ wordpress:
   postDate: '2025-12-09 00:21:14'
   originalSlug: wildfire-vr
   link: https://df.show/portfolio/items/wildfire-vr
+manualOverrides:
+  - affiliation
 ---
 
 Wildfire VR is an educational tool to teach any audience about wildfires as their severity ramps up each year with the effects of climate change drastically increasing. The experience takes the user through an ongoing wildfire on an island. Whilst educating the user with prompted questions and facts, they are free to follow the wildfire or explore the terrain. This virtual reality experience is a project prototype created as part of a larger project for prof. Michael Page in the PHASE Lab.

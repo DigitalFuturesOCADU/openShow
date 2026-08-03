@@ -5,7 +5,8 @@ title: 'Reimagining Branding: AI & Hyper-Personalization'
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - ai
   - ar
@@ -53,6 +54,8 @@ wordpress:
   postDate: '2025-12-09 00:37:08'
   originalSlug: reimagining-branding-ai-hyper-personalization
   link: https://df.show/portfolio/items/reimagining-branding-ai-hyper-personalization
+manualOverrides:
+  - affiliation
 ---
 
 "This project investigates how artificial intelligence can transform branding into dynamic, individualized experiences while maintaining brand integrity. As brands shift from mass marketing strategies to hyper-personalization, the work demonstrates a speculative future where branding adapts in real time to each user's unique needs and preferences.

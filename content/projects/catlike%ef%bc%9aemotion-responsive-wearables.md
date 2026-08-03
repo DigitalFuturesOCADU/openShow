@@ -5,7 +5,8 @@ title: CatLike：Emotion-Responsive Wearables
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - 3d-printing
   - code
@@ -58,6 +59,8 @@ wordpress:
   postDate: '2025-12-09 00:43:39'
   originalSlug: catlike%ef%bc%9aemotion-responsive-wearables
   link: https://df.show/portfolio/items/catlike%ef%bc%9aemotion-responsive-wearables
+manualOverrides:
+  - affiliation
 ---
 
 My practice explores how wearable technology can give us new ways to express emotions that our bodies already know how to feel. Drawing from my cat's piloerection—that involuntary bristling of fur when experiencing intense emotion—I'm designing wearables that translate internal emotional states into visible, tactile expressions. The project sits at the intersection of fashion, embodied interaction, and soft robotics. I hand-fabricate TPU components using modified 3D printing techniques, integrate biometric sensors with custom Arduino programming, and design for both aesthetic presence and genuine emotional resonance. This isn't about mimicking human emotions—it's about creating a parallel system where wearable materials respond with their own logic, inviting us to rethink what emotional expression can look like. I want to show my 3rd version of the headwear prototype and get feedback from others during the show.

@@ -5,7 +5,8 @@ title: 'Thank You for Your Feedback: Affective Data Translation and AI Interpret
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - alumni
 medium:
   - ai
   - code
@@ -64,6 +65,8 @@ wordpress:
   originalSlug: thank-you-for-your-feedback-affective-data-translation-and-ai-interpretation
   link: >-
     https://df.show/portfolio/items/thank-you-for-your-feedback-affective-data-translation-and-ai-interpretation
+manualOverrides:
+  - affiliation
 ---
 
 "This research-creation project translates qualitative and quantitative feedback gathered during a period of institutional instability into new aesthetic and analytic forms through a multi-sensory installation of printed generative-AI artworks, short audiovisual works, interactive data visualizations, and a contextual essay. The dataset includes metaphorical descriptions, emotional reflections, songs shared to express how the moment felt, and linear rating-scale measures. Although numerical evaluations are present, it is the affective responses, which are often undervalued or excluded in favour of rating systems, that reveal understandings formal feedback tools rarely register or address. By inviting these alternative modes of expression, the project positions this affective archive as an intervention in how institutions collect, interpret, and value knowledge during moments when they struggle to represent experience.

@@ -5,7 +5,8 @@ title: Jailbreaking Canada Playshop
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - faculty
 medium:
   - games
 tags: []
@@ -79,6 +80,8 @@ wordpress:
   postDate: '2025-12-09 00:53:23'
   originalSlug: jailbreaking-canada-playshop
   link: https://df.show/portfolio/items/jailbreaking-canada-playshop
+manualOverrides:
+  - affiliation
 ---
 
 "OCAD U’s Digital Futures program welcomed Cory Doctorow (https://craphound.com/) to OCAD University for a public lecture as part of “Jailbreaking Canada”, a three-day playshop presented by Super Ordinary Lab (https://superordinarylab.com/) and game:play Lab (https://www.gameplaylab.ca/) with SFI Alum Madeline Ashby (https://www.madelineashby.com/) to playfully co-fabulate possible futures for Canada in the contemporary climate of late-stage capitalism.

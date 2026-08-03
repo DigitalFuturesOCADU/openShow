@@ -5,7 +5,8 @@ title: AWORM
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - 3d-printing
   - digital-fabrication
@@ -56,6 +57,8 @@ wordpress:
   postDate: '2025-12-09 00:13:05'
   originalSlug: aworm
   link: https://df.show/portfolio/items/aworm
+manualOverrides:
+  - affiliation
 ---
 
 AWORM is a project exploring artificial life, sentience and machine awareness, it is a fully autonomous machine equipped with proper sensors and motors to allow it to navigate the physical world and to achieve its own tasks——keep its sensors working properly.  It is aware of humans, but instead of interacting with humans directly, it trys to steer away from them so it can have a happy and unbothered lifespan of pure sensor calibration. Humans can interupt AWORM's routine by a variety of methods including casting shadow, turn it over or shaking it.

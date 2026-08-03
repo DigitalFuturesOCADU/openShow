@@ -5,7 +5,8 @@ title: ReVirtual
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - games
   - vr
@@ -51,6 +52,8 @@ wordpress:
   postDate: '2025-12-08 23:09:47'
   originalSlug: revirtual
   link: https://df.show/portfolio/items/revirtual
+manualOverrides:
+  - affiliation
 ---
 
 "ReVirtual is a Virtual Reality (VR) entertainment media project. In this game, the player’s goal is to bring a decaying VR world back to life with the help of Virtri, the admin of this world. During the playthrough, players will face different mechanics challenging their use of proprioception (also called by some people as the “sixth sense” ). The goal of this project is to create gameplay experiences unique to the VR platform and explore proprioceptive user experiences.

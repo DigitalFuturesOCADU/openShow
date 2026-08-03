@@ -548,86 +548,104 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 81 participants.
 
-#### Unspecified (81)
+#### Undergraduate (37)
 
 - Saad Aslam Ali
 - Aathmaja Ananth
-- Leanna Barwick
-- Liam Bisaillion
-- g blekkenhorst
 - John Cao
 - Abelia Chan
-- Rina Chen
 - Kayli Chow
 - Shane Colby
-- Evie Conroy
 - Daniela Ortiz Correa
 - Jackson Crittenden
-- Minghui Cui
 - Amanda Daley
 - Maggie Domagala
-- Kayla Eli
-- Longxiang Fan
 - Bill Fung
 - Emmy Gao
 - Hailey Gonsalvez
 - Sebastian Gorfinkel
-- Peng Guan
-- Kate Hartman
-- Mahnoor Hasan
-- Yubhang Huang
-- Xin Jiang
 - Joe
-- Judsia Joseph
 - Cole Kassirer
-- Aranya Khurana
 - Hanmin Kim
 - Srikripa Krishnan
 - Bryan Lee
-- Brandon li
-- Qingxuan Li
-- Amelia Lochhead
-- Thea Lu
 - Rodrigo Luna
 - Mika Maclear-Wall
-- Nooshin Mohtashami
 - Tiffany Mou
 - David Nguyen
-- Emma Nguyen
 - Nia Nguyen
 - Irina Noor
-- Demilade Olaleye
 - Ozan
-- Sofia Pacheco
 - Jeffery Paik
 - David Parent
-- Olivia Pasian
-- Abha Patil
 - Rojina Pedramy
-- Joshua Jacob Pothen
-- Quinn Powell
-- Nick Puckett
 - Yusif Safarzade
-- Niloofar Sanandaji
-- Niloofar Sanandajizadeh
 - Sebastian Santoni
 - Elena Misako Smillie
 - Alexander Song
 - Menita Sriharsha
-- Suzanne Stein
-- Juan Sulca
-- Adam Tindale
+- Parth Vats
+- Hana Zaghloul
+- Peter Zougas
+
+#### Graduate (25)
+
+- g blekkenhorst
+- Rina Chen
+- Minghui Cui
+- Kayla Eli
+- Longxiang Fan
+- Peng Guan
+- Mahnoor Hasan
+- Yubhang Huang
+- Xin Jiang
+- Qingxuan Li
+- Amelia Lochhead
+- Thea Lu
+- Demilade Olaleye
+- Olivia Pasian
+- Joshua Jacob Pothen
+- Niloofar Sanandaji
+- Niloofar Sanandajizadeh
 - Assal Toudehfallah
 - Tinatei Tunyan
 - Paul Van Rijn
-- Parth Vats
-- Refah Wais
-- Emma Westecott
 - Yuhan Xia
 - Jesse Xu
 - Melanie Yan
 - Yang YI
-- Hana Zaghloul
-- JC Zhang
 - Harry Zhao
-- Peter Zougas
+
+#### Alumni (8)
+
+- Leanna Barwick
+- Kate Hartman
+- Aranya Khurana
+- Nooshin Mohtashami
+- Abha Patil
+- Nick Puckett
+- Juan Sulca
+- Adam Tindale
+
+#### Faculty (9)
+
+- Kate Hartman
+- Aranya Khurana
+- Abha Patil
+- Nick Puckett
+- Suzanne Stein
+- Juan Sulca
+- Adam Tindale
+- Emma Westecott
+- JC Zhang
+
+#### Unspecified (8)
+
+- Liam Bisaillion
+- Evie Conroy
+- Judsia Joseph
+- Brandon li
+- Emma Nguyen
+- Sofia Pacheco
+- Quinn Powell
+- Refah Wais

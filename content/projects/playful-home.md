@@ -5,7 +5,8 @@ title: Playful Home
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - 3d-printing
   - code
@@ -57,6 +58,8 @@ wordpress:
   postDate: '2025-12-09 00:08:29'
   originalSlug: playful-home
   link: https://df.show/portfolio/items/playful-home
+manualOverrides:
+  - affiliation
 ---
 
 "The project explores a new, creative perspective on the networked smart home infrastructures that support our daily lives. Commercially available devices such as voice activated assistants and automated lighting are mostly thought of as purely functional. 

@@ -637,23 +637,26 @@ ${(() => {
   return table([['Show', 'Items', 'Has affiliation', 'Has medium'], ['---', '---:', '---:', '---:'], ...rows])
 })()}
 
-**Affiliation was not recorded for the 2025 show at all.** That is not scatter or
-export loss — no 2025 term carries an affiliation, so every one of those items
-has an empty array. Across 2019–2024 the same axis is ${(() => {
+**WordPress recorded no affiliation for the 2025 show at all** — not scatter or
+export loss, simply no 2025 term carrying one. ${(() => {
+  const y25 = records.filter((r) => r.frontmatter.year === 2025)
+  const have = y25.filter((r) => r.frontmatter.affiliation.length).length
+  const fromOverride = y25.filter((r) => r.frontmatter.manualOverrides?.includes('affiliation')).length
+  return fromOverride
+    ? `${have} of ${y25.length} have since been recovered from the Microsoft Forms submission sheet and applied through \`config/overrides.yaml\` (${fromOverride} overrides). The remaining ${y25.length - have} are listed there and need a human.`
+    : `All ${y25.length} are still empty.`
+})()}
+
+Across 2019–2024 the same axis is ${(() => {
   const older = records.filter((r) => r.frontmatter.year && r.frontmatter.year < 2025)
   const have = older.filter((r) => r.frontmatter.affiliation.length).length
   return `${have}/${older.length} (${Math.round((100 * have) / older.length)}%)`
-})()} complete, so this is a
-single-year regression rather than a long-standing gap.
+})()} complete, so the gap was a
+single-year regression rather than long-standing decay.
 
-Two consequences. It is recoverable — 2025 is the most recent show and the
-people involved will still know who was an undergraduate and who was a
-graduate, which will not stay true indefinitely. And it bears directly on
-decision D5: making affiliation a public filter today would render the newest
-show invisible to it.
-
-This is precisely the drift that Step 7's controlled vocabulary exists to
-prevent recurring.
+The lasting point is that the submission form already collects this cleanly, as
+a controlled multi-select, and WordPress simply never received it. Wiring the
+form to the content is what stops the next such year, which is Step 7.
 
 ## Cost of the drop decisions
 

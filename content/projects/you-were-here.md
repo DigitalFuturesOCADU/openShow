@@ -5,7 +5,8 @@ title: You Were Here
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - code
   - games
@@ -65,6 +66,8 @@ wordpress:
   postDate: '2025-12-08 23:26:32'
   originalSlug: you-were-here
   link: https://df.show/portfolio/items/you-were-here
+manualOverrides:
+  - affiliation
 ---
 
 "”You Were Here“ is a short experimental game about looking at the traces of your past self and seeing how they quietly reshape the future you step into. The piece asks a simple question: what happens when the choices you once made return as your only guide forward?

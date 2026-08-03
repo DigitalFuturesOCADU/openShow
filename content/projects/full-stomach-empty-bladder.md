@@ -5,7 +5,8 @@ title: Full Stomach, Empty Bladder
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - games
 tags: []
@@ -59,6 +60,8 @@ wordpress:
   postDate: '2025-12-08 23:10:55'
   originalSlug: full-stomach-empty-bladder
   link: https://df.show/portfolio/items/full-stomach-empty-bladder
+manualOverrides:
+  - affiliation
 ---
 
 "Full Stomach, Empty Bladder follows a woman trying to free her younger self from the shackles of her family that she doesn’t get along with.

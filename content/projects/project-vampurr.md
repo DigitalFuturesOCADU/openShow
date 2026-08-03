@@ -5,7 +5,8 @@ title: Project Vampurr
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - code
   - games
@@ -52,6 +53,8 @@ wordpress:
   postDate: '2025-12-09 00:14:35'
   originalSlug: project-vampurr
   link: https://df.show/portfolio/items/project-vampurr
+manualOverrides:
+  - affiliation
 ---
 
 Project Vampurr is a 2D platforming action game, set in a gothic Victorian world. The player is a vampire hunter cat who is, ironically, also a vampire, journeying through this decaying world. The game centers on exploration, combat, and platforming, all woven together with strange characters, newfound powers, and the secrets buried deep within the heart of the land.

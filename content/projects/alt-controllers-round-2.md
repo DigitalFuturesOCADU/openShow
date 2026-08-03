@@ -5,7 +5,8 @@ title: 'Alt Controllers: Round 2'
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - code
   - games
@@ -72,6 +73,8 @@ wordpress:
   postDate: '2025-12-09 01:00:43'
   originalSlug: alt-controllers-round-2
   link: https://df.show/portfolio/items/alt-controllers-round-2
+manualOverrides:
+  - affiliation
 ---
 
 Students created a unique and experimental game controllers to duel in the classic game “Pong”.  Each device uses sensors, wireless communication, and physical augmentation to create a customized interaction for its player. From a book, a classic telephone, a pump, chattering teeth, a story and a frying pan, these devices disrupt expectation and bring delight to players and viewers of video games (adapted from creation &amp; computation).

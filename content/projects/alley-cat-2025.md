@@ -5,7 +5,8 @@ title: Alley Cat (2025)
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - games
   - web
@@ -75,6 +76,8 @@ wordpress:
   postDate: '2025-12-08 23:00:49'
   originalSlug: alley-cat-2025
   link: https://df.show/portfolio/items/alley-cat-2025
+manualOverrides:
+  - affiliation
 ---
 
 In Alley Cat, we were challenged to go against the grain of the Unity engine and create an unconventional interaction. We decided to make a game centred around webcam. This serves as both a mechanic and a stylistic choice. Using a photo of the player adds a layer of intimacy to each playthrough. The selfie taken at the beginning informs the tone and interaction of the subsequent objectives.

@@ -5,7 +5,8 @@ title: Drone Delivery
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - animation
   - code
@@ -82,6 +83,8 @@ wordpress:
   postDate: '2025-12-09 00:00:35'
   originalSlug: drone-delivery
   link: https://df.show/portfolio/items/drone-delivery
+manualOverrides:
+  - affiliation
 ---
 
 Made in collaboration with U of T, Drone Delivery is a demonstration of what the technical expertise and art skills of OCAD Students are capable of when paired with the Collaborative Coding skills and music skills of UofT. Art Lead Shane Colby has since made a few QOL changes for another course to add to the experience

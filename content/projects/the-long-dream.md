@@ -5,7 +5,8 @@ title: The Long Dream
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - games
   - sound
@@ -45,6 +46,8 @@ wordpress:
   postDate: '2025-12-08 23:32:57'
   originalSlug: the-long-dream
   link: https://df.show/portfolio/items/the-long-dream
+manualOverrides:
+  - affiliation
 ---
 
 An Immersive dream simulator with a post rock soundtrack using Ps1 style graphics, where you relax and listen to the soundtrack whilst exploring multiple surrealist landscapes

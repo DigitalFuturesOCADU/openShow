@@ -5,7 +5,8 @@ title: LoFi Spinny Flock
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - code
   - digital-fabrication
@@ -55,6 +56,8 @@ wordpress:
   postDate: '2025-12-08 23:30:15'
   originalSlug: lofi-spinny-flock
   link: https://df.show/portfolio/items/lofi-spinny-flock
+manualOverrides:
+  - affiliation
 ---
 
 "Have you ever wondered, how do laser guided robots behave when they get together? It’s not an easy question to answer. Interesting behaviours can emerge when groups of simple mechanisms interact. 

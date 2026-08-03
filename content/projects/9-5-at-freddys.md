@@ -5,7 +5,8 @@ title: 9-5 at Freddy's
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - code
   - games
@@ -61,6 +62,8 @@ wordpress:
   postDate: '2025-12-08 23:46:14'
   originalSlug: 9-5-at-freddys
   link: https://df.show/portfolio/items/9-5-at-freddys
+manualOverrides:
+  - affiliation
 ---
 
 "​9-5 at Freddy's is an office horror game where you work in a cubicle, and your coworkers are a bit quirky. Inspired by the cult classic horror game Five Nights at Freddy's, this game is a comedic and relatable twist on it, offering humour and occasional scares. Headphones recommended.

@@ -5,7 +5,9 @@ title: Networked Light-Up Costumes
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - alumni
+  - faculty
 medium:
   - code
   - digital-fabrication
@@ -68,6 +70,8 @@ wordpress:
   postDate: '2025-12-09 00:57:17'
   originalSlug: networked-light-up-costumes
   link: https://df.show/portfolio/items/networked-light-up-costumes
+manualOverrides:
+  - affiliation
 ---
 
 "LEDs are a go-to when it comes to wearable electronics projects. Everyone loves to wear a splash of light now and then. But how might you design dynamic wearable lighting effects for a professional on-stage performance? How could the circuitry be made robust enough to survive bodies of sweaty dancers and the wear and tear of multiple shows? What if many wearables worn by multiple performers could be controlled to each display synchronized but unique patterns by the same software that operates the stage lighting?

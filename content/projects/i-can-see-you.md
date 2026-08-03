@@ -5,7 +5,8 @@ title: I can see you.
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - undergraduate
 medium:
   - ai
   - animation
@@ -60,6 +61,8 @@ wordpress:
   postDate: '2025-12-09 00:39:44'
   originalSlug: i-can-see-you
   link: https://df.show/portfolio/items/i-can-see-you
+manualOverrides:
+  - affiliation
 ---
 
 "It can see you, it can hear you, it can feel you. You can't hide.
