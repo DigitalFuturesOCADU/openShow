@@ -20,8 +20,10 @@ creditsRaw: Nadine Valcin
 media:
   - type: image
     id: 2274
-    file: 2023/04/Nadine-scaled.jpg
+    file: 2023/04/Nadine.jpg
     role: featured
+    servedByWordpress: 2023/04/Nadine-scaled.jpg
+    bytes: 487409
     alt: null
     caption: null
 layout: default

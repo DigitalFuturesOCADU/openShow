@@ -26,21 +26,25 @@ media:
     id: 2780
     file: 2024/12/UJESCA_1_Tanzil-Garg.png
     role: featured
+    bytes: 1946152
     alt: null
     caption: null
   - type: image
     id: 2783
     file: 2024/12/UJESCA_4_Tanzil-Garg.png
+    bytes: 498057
     alt: null
     caption: null
   - type: image
     id: 2782
     file: 2024/12/UJESCA_3_Tanzil-Garg.png
+    bytes: 432303
     alt: null
     caption: null
   - type: image
     id: 2781
     file: 2024/12/UJESCA_2_Tanzil-Garg.png
+    bytes: 624905
     alt: null
     caption: null
 layout: default

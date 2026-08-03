@@ -34,11 +34,13 @@ media:
     id: 2591
     file: 2023/12/prom.png
     role: featured
+    bytes: 1321136
     alt: null
     caption: null
   - type: image
     id: 2592
     file: 2023/12/prom2.png
+    bytes: 471587
     alt: null
     caption: null
 layout: default

@@ -26,11 +26,13 @@ media:
     id: 2745
     file: 2024/12/Reconnection_aliqapu-pointcloud_Niloofar-Sanandajiza.jpg
     role: featured
+    bytes: 1179759
     alt: null
     caption: Screenshot
   - type: image
     id: 2827
     file: 2024/12/lostconnection_Niloofar-Sanandajiza.jpg
+    bytes: 412211
     alt: null
     caption: Screenshot
 layout: default

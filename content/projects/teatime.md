@@ -24,16 +24,19 @@ media:
     id: 2776
     file: 2024/12/Teatime_3_Xiao-Yixuan.png
     role: featured
+    bytes: 2293014
     alt: null
     caption: null
   - type: image
     id: 2775
     file: 2024/12/Teatime_2_Xiao-Yixuan.png
+    bytes: 2455775
     alt: null
     caption: null
   - type: image
     id: 2774
     file: 2024/12/Teatime_1_Xiao-Yixuan.png
+    bytes: 3681552
     alt: null
     caption: null
 layout: default

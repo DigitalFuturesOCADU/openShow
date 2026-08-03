@@ -32,21 +32,26 @@ media:
     id: 2452
     file: 2023/12/MDDZ_2_anonymous.jpeg
     role: featured
+    bytes: 845107
     alt: null
     caption: null
   - type: image
     id: 2451
     file: 2023/12/MDDZ_1_anonymous.jpeg
+    bytes: 113474
     alt: null
     caption: null
   - type: image
     id: 2453
-    file: 2023/12/MDDZ_3_anonymous-scaled.jpg
+    file: 2023/12/MDDZ_3_anonymous.jpg
+    servedByWordpress: 2023/12/MDDZ_3_anonymous-scaled.jpg
+    bytes: 2872927
     alt: null
     caption: null
   - type: image
     id: 2454
     file: 2023/12/MDDZ_4_anonymous.jpeg
+    bytes: 576771
     alt: null
     caption: null
 layout: default

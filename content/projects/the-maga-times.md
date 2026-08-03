@@ -23,26 +23,31 @@ media:
     id: 1681
     file: 2020/12/TheMAGATimes_1_Nicole-Vella.jpg
     role: featured
+    bytes: 2049303
     alt: null
     caption: null
   - type: image
     id: 1682
     file: 2020/12/TheMAGATimes_2_Nicole-Vella.jpg
+    bytes: 2057504
     alt: null
     caption: null
   - type: image
     id: 1683
     file: 2020/12/TheMAGATimes_3_Nicole-Vella.jpg
+    bytes: 2087108
     alt: null
     caption: null
   - type: image
     id: 1684
     file: 2020/12/TheMAGATimes_4_Nicole-Vella.jpg
+    bytes: 2021073
     alt: null
     caption: null
   - type: image
     id: 1685
     file: 2020/12/TheMAGATimes_5_Nicole-Vella.jpg
+    bytes: 2090720
     alt: null
     caption: null
 layout: default

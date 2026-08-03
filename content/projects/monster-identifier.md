@@ -22,6 +22,7 @@ media:
     id: 2297
     file: 2023/04/DFOS.png
     role: featured
+    bytes: 135098
     alt: null
     caption: null
 layout: default

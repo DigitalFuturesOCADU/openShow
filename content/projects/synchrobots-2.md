@@ -29,6 +29,7 @@ media:
     id: 2338
     file: 2023/04/synchrobots.png
     role: featured
+    bytes: 251910
     alt: null
     caption: null
 layout: default

@@ -35,26 +35,31 @@ media:
     id: 2167
     file: 2022/12/coverPicEER_Ethan-Day.png
     role: featured
+    bytes: 40511
     alt: null
     caption: null
   - type: image
     id: 2166
     file: 2022/12/surprisePic_Ethan-Day.png
+    bytes: 98651
     alt: null
     caption: null
   - type: image
     id: 2168
     file: 2022/12/Screenshot_20221206_111338_Ethan-Day.png
+    bytes: 1085641
     alt: null
     caption: null
   - type: image
     id: 2169
     file: 2022/12/Screenshot_20221206_111304_Ethan-Day.png
+    bytes: 580479
     alt: null
     caption: null
   - type: image
     id: 2170
     file: 2022/12/Screenshot_20221206_104257_Ethan-Day.png
+    bytes: 579533
     alt: null
     caption: null
 layout: default

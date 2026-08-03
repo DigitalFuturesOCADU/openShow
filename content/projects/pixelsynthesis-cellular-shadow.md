@@ -21,16 +21,19 @@ media:
     id: 2065
     file: 2022/12/PixelSynthesis_1_Atharva-Jadhav.png
     role: featured
+    bytes: 4030214
     alt: null
     caption: null
   - type: image
     id: 2066
     file: 2022/12/PixelSynthesis_2_Atharva-Jadhav.png
+    bytes: 4062673
     alt: null
     caption: null
   - type: image
     id: 2067
     file: 2022/12/PixelSynthesis_3_Atharva-Jadhav.png
+    bytes: 1714768
     alt: null
     caption: null
 layout: default

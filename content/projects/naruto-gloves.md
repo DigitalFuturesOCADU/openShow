@@ -26,8 +26,10 @@ creditsRaw: Salisa Jatuweerapong, Brian Nguyen, Madelaine Fischer-Bernhut
 media:
   - type: image
     id: 2371
-    file: 2023/04/naruto-scaled.jpg
+    file: 2023/04/naruto.jpg
     role: featured
+    servedByWordpress: 2023/04/naruto-scaled.jpg
+    bytes: 622165
     alt: null
     caption: null
 layout: default

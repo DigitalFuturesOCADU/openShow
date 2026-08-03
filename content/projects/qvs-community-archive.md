@@ -19,18 +19,22 @@ creditsRaw: g blekkenhorst
 media:
   - type: image
     id: 2989
-    file: 2025/12/gblekkenhorst-ontbleed-spark-setup_Gillian-Blekkenhorst-scaled.jpg
+    file: 2025/12/gblekkenhorst-ontbleed-spark-setup_Gillian-Blekkenhorst.jpg
     role: featured
+    servedByWordpress: 2025/12/gblekkenhorst-ontbleed-spark-setup_Gillian-Blekkenhorst-scaled.jpg
+    bytes: 3562035
     alt: null
     caption: null
   - type: image
     id: 2991
     file: 2025/12/gblekkenhorst-ontbleed-spark-close_Gillian-Blekkenhorst.png
+    bytes: 6232017
     alt: null
     caption: null
   - type: image
     id: 2990
     file: 2025/12/gblekkenhorst-ontbleed-growthemselvesbodies_Gillian-Blekkenhorst.png
+    bytes: 254544
     alt: null
     caption: null
 layout: default

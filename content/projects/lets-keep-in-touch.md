@@ -23,26 +23,32 @@ media:
     id: 3047
     file: 2025/12/LetsKeepinTouch_4_Olivia-Pasian-1-scaled_FEATURE.jpg
     role: featured
+    bytes: 122804
     alt: null
     caption: null
   - type: image
     id: 2906
     file: 2025/12/LetsKeepinTouch_1_Olivia-Pasian.jpg
+    bytes: 8855579
     alt: null
     caption: null
   - type: image
     id: 2909
-    file: 2025/12/LetsKeepinTouch_4_Olivia-Pasian-1-scaled.png
+    file: 2025/12/LetsKeepinTouch_4_Olivia-Pasian-1.png
+    servedByWordpress: 2025/12/LetsKeepinTouch_4_Olivia-Pasian-1-scaled.png
+    bytes: 6140262
     alt: null
     caption: null
   - type: image
     id: 2908
     file: 2025/12/LetsKeepinTouch_3_Olivia-Pasian.jpg
+    bytes: 8502371
     alt: null
     caption: null
   - type: image
     id: 2907
     file: 2025/12/LetsKeepinTouch_2_Olivia-Pasian.png
+    bytes: 4057004
     alt: null
     caption: null
 layout: default

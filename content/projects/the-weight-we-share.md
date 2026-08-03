@@ -22,18 +22,23 @@ creditsRaw: Joshua Jacob Pothen, Erinma Arki
 media:
   - type: image
     id: 2777
-    file: 2024/12/TheWeightWeShare_HeroShot_Joshua-Pothen-scaled.jpeg
+    file: 2024/12/TheWeightWeShare_HeroShot_Joshua-Pothen.jpeg
     role: featured
+    servedByWordpress: 2024/12/TheWeightWeShare_HeroShot_Joshua-Pothen-scaled.jpeg
+    bytes: 3196570
     alt: null
     caption: null
   - type: image
     id: 2779
     file: 2024/12/TheWeightWeShare_Interaction_Joshua-Pothen.jpeg
+    bytes: 263280
     alt: null
     caption: null
   - type: image
     id: 2778
-    file: 2024/12/TheWeightWeShare_InnerWorking_Joshua-Pothen-scaled.jpg
+    file: 2024/12/TheWeightWeShare_InnerWorking_Joshua-Pothen.jpg
+    servedByWordpress: 2024/12/TheWeightWeShare_InnerWorking_Joshua-Pothen-scaled.jpg
+    bytes: 6977813
     alt: null
     caption: null
 layout: default

@@ -20,26 +20,31 @@ media:
     id: 1746
     file: 2020/12/screenshot000_Wang-Ziyi.png
     role: featured
+    bytes: 1860516
     alt: null
     caption: null
   - type: image
     id: 1747
     file: 2020/12/screenshot001_Wang-Ziyi.png
+    bytes: 2010399
     alt: null
     caption: null
   - type: image
     id: 1748
     file: 2020/12/screenshot002_Wang-Ziyi.png
+    bytes: 1942352
     alt: null
     caption: null
   - type: image
     id: 1749
     file: 2020/12/screenshot005_Wang-Ziyi.png
+    bytes: 1581764
     alt: null
     caption: null
   - type: image
     id: 1750
     file: 2020/12/screenshot006_Wang-Ziyi.png
+    bytes: 1635111
     alt: null
     caption: null
 layout: default

@@ -23,21 +23,25 @@ media:
     id: 2996
     file: 2025/12/catlike-headwear-v2-front.pic_Lu-Thea.jpg
     role: featured
+    bytes: 132643
     alt: null
     caption: null
   - type: image
     id: 2993
     file: 2025/12/catlike-headwear-v2-side.pic_Lu-Thea.jpg
+    bytes: 113914
     alt: null
     caption: null
   - type: image
     id: 2995
     file: 2025/12/catlike-headwear-v1-sprik.pic_Lu-Thea.jpg
+    bytes: 150706
     alt: null
     caption: null
   - type: image
     id: 2994
     file: 2025/12/catlike-headwear-v1.pic_Lu-Thea.jpg
+    bytes: 210367
     alt: null
     caption: null
 layout: default

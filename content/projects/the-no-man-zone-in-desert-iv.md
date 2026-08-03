@@ -21,21 +21,26 @@ media:
     id: 2083
     file: 2022/12/TheNoManZone_4_Weiqi-Wu.png
     role: featured
+    bytes: 358146
     alt: null
     caption: null
   - type: image
     id: 2080
-    file: 2022/12/The-no-man-zone-in-DesertIV_1_Weiqi-Wu-scaled.jpg
+    file: 2022/12/The-no-man-zone-in-DesertIV_1_Weiqi-Wu.jpg
+    servedByWordpress: 2022/12/The-no-man-zone-in-DesertIV_1_Weiqi-Wu-scaled.jpg
+    bytes: 808341
     alt: null
     caption: null
   - type: image
     id: 2081
     file: 2022/12/TheNoManZone_2_Weiqi-Wu.png
+    bytes: 862612
     alt: null
     caption: null
   - type: image
     id: 2082
     file: 2022/12/TheNoManZone_3_Weiqi-Wu.png
+    bytes: 650006
     alt: null
     caption: null
 layout: default

@@ -23,21 +23,25 @@ media:
     id: 1806
     file: 2020/12/conductionbody_1_Sarah-Boo.png
     role: featured
+    bytes: 3828433
     alt: null
     caption: null
   - type: image
     id: 1808
     file: 2020/12/conductionbody_4_Sarah-Boo.jpg
+    bytes: 657076
     alt: null
     caption: null
   - type: image
     id: 1809
     file: 2020/12/conductionbody_5_Sarah-Boo.jpg
+    bytes: 506735
     alt: null
     caption: null
   - type: image
     id: 1811
     file: 2020/12/conductionbody-3_Sarah-Boo.jpg
+    bytes: 1238961
     alt: null
     caption: null
 layout: default

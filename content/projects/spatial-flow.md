@@ -22,11 +22,13 @@ media:
     id: 1857
     file: 2020/12/Natalie-Le-Huenen-2c.png
     role: featured
+    bytes: 2226487
     alt: null
     caption: null
   - type: image
     id: 1858
     file: 2020/12/Natalie-Le-Huenen-4.png
+    bytes: 2477807
     alt: null
     caption: null
 layout: default

@@ -21,26 +21,31 @@ media:
     id: 2154
     file: 2022/12/forestPainter_0_Kahani-Ploessl.png
     role: featured
+    bytes: 8518359
     alt: null
     caption: null
   - type: image
     id: 2155
     file: 2022/12/forestPainter_1_Kahani-Ploessl.png
+    bytes: 7910941
     alt: null
     caption: null
   - type: image
     id: 2156
     file: 2022/12/forestPainter_2_Kahani-Ploessl.png
+    bytes: 8910096
     alt: null
     caption: null
   - type: image
     id: 2157
     file: 2022/12/forestPainter_3_Kahani-Ploessl.png
+    bytes: 8321729
     alt: null
     caption: null
   - type: image
     id: 2158
     file: 2022/12/forestPainter_4_Kahani-Ploessl.png
+    bytes: 6399534
     alt: null
     caption: null
 layout: default

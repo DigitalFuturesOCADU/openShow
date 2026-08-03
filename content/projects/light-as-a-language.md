@@ -21,11 +21,13 @@ media:
     id: 2541
     file: 2023/12/Screenshot-2023-11-29-at-12.48.39 PM_anonymous.png
     role: featured
+    bytes: 1891910
     alt: null
     caption: null
   - type: image
     id: 2542
     file: 2023/12/WhatsApp-Image-2023-11-29-at-14.35.09_anonymous.jpeg
+    bytes: 74868
     alt: null
     caption: null
 layout: default

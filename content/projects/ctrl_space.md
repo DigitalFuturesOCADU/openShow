@@ -29,23 +29,30 @@ creditsRaw: Orus Mateo Castano Suarez, Juan Sulca, Aileen D, Yu-Shien Yang
 media:
   - type: image
     id: 2478
-    file: 2023/12/Ctrl_Space_2_anonymous-scaled.jpg
+    file: 2023/12/Ctrl_Space_2_anonymous.jpg
     role: featured
+    servedByWordpress: 2023/12/Ctrl_Space_2_anonymous-scaled.jpg
+    bytes: 7621984
     alt: null
     caption: null
   - type: image
     id: 2477
     file: 2023/12/Ctrl_Space_1_anonymous.jpg
+    bytes: 1347889
     alt: null
     caption: null
   - type: image
     id: 2479
-    file: 2023/12/Ctrl_Space_3_anonymous-scaled.jpg
+    file: 2023/12/Ctrl_Space_3_anonymous.jpg
+    servedByWordpress: 2023/12/Ctrl_Space_3_anonymous-scaled.jpg
+    bytes: 9159256
     alt: null
     caption: null
   - type: image
     id: 2480
-    file: 2023/12/Ctrl_Space_4_anonymous-scaled.jpg
+    file: 2023/12/Ctrl_Space_4_anonymous.jpg
+    servedByWordpress: 2023/12/Ctrl_Space_4_anonymous-scaled.jpg
+    bytes: 5168949
     alt: null
     caption: null
 layout: default

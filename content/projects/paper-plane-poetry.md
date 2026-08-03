@@ -22,11 +22,13 @@ media:
     id: 2312
     file: 2023/04/paper-plane.png
     role: featured
+    bytes: 62911
     alt: null
     caption: null
   - type: image
     id: 2313
     file: 2023/04/paper-plane-2.png
+    bytes: 103536
     alt: null
     caption: null
 layout: default

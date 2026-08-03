@@ -21,26 +21,33 @@ media:
     id: 2885
     file: 2025/12/YouWereHere_5_Yang-Yi.png
     role: featured
+    bytes: 1664517
     alt: null
     caption: null
   - type: image
     id: 2886
     file: 2025/12/YouWereHere_1_Yang-Yi.png
+    bytes: 1981432
     alt: null
     caption: null
   - type: image
     id: 2887
-    file: 2025/12/YouWereHere_2_Yang-Yi-scaled.jpg
+    file: 2025/12/YouWereHere_2_Yang-Yi.jpg
+    servedByWordpress: 2025/12/YouWereHere_2_Yang-Yi-scaled.jpg
+    bytes: 2129784
     alt: null
     caption: null
   - type: image
     id: 2888
-    file: 2025/12/YouWereHere_3_Yang-Yi-scaled.png
+    file: 2025/12/YouWereHere_3_Yang-Yi.png
+    servedByWordpress: 2025/12/YouWereHere_3_Yang-Yi-scaled.png
+    bytes: 5481220
     alt: null
     caption: null
   - type: image
     id: 2889
     file: 2025/12/YouWereHere_4_Yang-Yi.png
+    bytes: 2603061
     alt: null
     caption: null
 layout: default

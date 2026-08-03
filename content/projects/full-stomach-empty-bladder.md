@@ -19,26 +19,31 @@ media:
     id: 2878
     file: 2025/12/full-stomach-empty-bladder1_Srikripa-Krishnan.png
     role: featured
+    bytes: 8658
     alt: null
     caption: null
   - type: image
     id: 2877
     file: 2025/12/full-stomach-empty-bladder5_Srikripa-Krishnan.png
+    bytes: 8684
     alt: null
     caption: null
   - type: image
     id: 2879
     file: 2025/12/full-stomach-empty-bladder2_Srikripa-Krishnan.png
+    bytes: 11666
     alt: null
     caption: null
   - type: image
     id: 2880
     file: 2025/12/full-stomach-empty-bladder3_Srikripa-Krishnan.png
+    bytes: 8533
     alt: null
     caption: null
   - type: image
     id: 2881
     file: 2025/12/full-stomach-empty-bladder4_Srikripa-Krishnan.png
+    bytes: 8840
     alt: null
     caption: null
 layout: default

@@ -27,16 +27,19 @@ media:
     id: 1889
     file: 2020/12/Pandy-Ma-Pandy_Ma_-Auria_1.png
     role: featured
+    bytes: 4824855
     alt: null
     caption: null
   - type: image
     id: 1887
     file: 2020/12/junmei_orig.png
+    bytes: 16678
     alt: null
     caption: null
   - type: image
     id: 1888
     file: 2020/12/map_orig.png
+    bytes: 137045
     alt: null
     caption: null
 layout: default

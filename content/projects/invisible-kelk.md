@@ -22,6 +22,7 @@ media:
     id: 2283
     file: 2023/04/Arshia.png
     role: featured
+    bytes: 356005
     alt: null
     caption: null
 layout: default

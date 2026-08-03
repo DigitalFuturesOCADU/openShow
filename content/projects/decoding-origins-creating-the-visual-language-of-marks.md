@@ -28,6 +28,7 @@ media:
     id: 2355
     file: 2023/04/Page-from-the-Register-of-Liberated-Africans-c.-1837.jpg
     role: featured
+    bytes: 519739
     alt: null
     caption: null
 layout: default

@@ -19,36 +19,43 @@ media:
     id: 2795
     file: 2024/12/photo_2024-11-24_23-39-00_Rojina-Pedramy.jpg
     role: featured
+    bytes: 30119
     alt: null
     caption: null
   - type: image
     id: 2793
     file: 2024/12/photo_2024-11-24_23-37-43_Rojina-Pedramy.jpg
+    bytes: 21081
     alt: null
     caption: null
   - type: image
     id: 2794
     file: 2024/12/photo_2024-11-24_23-37-57_Rojina-Pedramy.jpg
+    bytes: 21635
     alt: null
     caption: null
   - type: image
     id: 2796
     file: 2024/12/photo_2024-11-24_23-39-03_Rojina-Pedramy.jpg
+    bytes: 28181
     alt: null
     caption: null
   - type: image
     id: 2797
     file: 2024/12/photo_2024-11-24_23-39-09_Rojina-Pedramy.jpg
+    bytes: 44310
     alt: null
     caption: null
   - type: image
     id: 2798
     file: 2024/12/photo_2024-11-24_23-39-13_Rojina-Pedramy.jpg
+    bytes: 41918
     alt: null
     caption: null
   - type: image
     id: 2799
     file: 2024/12/photo_2024-11-24_23-39-17_Rojina-Pedramy.jpg
+    bytes: 32663
     alt: null
     caption: null
 layout: default

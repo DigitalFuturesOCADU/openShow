@@ -22,21 +22,25 @@ media:
     id: 2507
     file: 2023/12/Solari_2_anonymous.jpeg
     role: featured
+    bytes: 327039
     alt: null
     caption: null
   - type: image
     id: 2506
     file: 2023/12/Solari_1_anonymous.jpeg
+    bytes: 183033
     alt: null
     caption: null
   - type: image
     id: 2508
     file: 2023/12/Solari_3_anonymous.jpeg
+    bytes: 218449
     alt: null
     caption: null
   - type: image
     id: 2509
     file: 2023/12/Solari_Layout_anonymous.png
+    bytes: 81149
     alt: null
     caption: null
 layout: default

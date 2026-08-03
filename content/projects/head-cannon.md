@@ -22,11 +22,13 @@ media:
     id: 1868
     file: 2020/12/Screen-Shot-2020-08-05-at-13.39.58.png
     role: featured
+    bytes: 4719310
     alt: null
     caption: null
   - type: image
     id: 1869
     file: 2020/12/tania.jpg
+    bytes: 705704
     alt: null
     caption: null
 layout: default

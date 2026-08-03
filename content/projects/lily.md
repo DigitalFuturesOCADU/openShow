@@ -18,23 +18,29 @@ creditsRaw: Kyle Kubica
 media:
   - type: image
     id: 2113
-    file: 2022/12/lily-blanket_Kyle-Kubica-scaled.jpg
+    file: 2022/12/lily-blanket_Kyle-Kubica.jpg
     role: featured
+    servedByWordpress: 2022/12/lily-blanket_Kyle-Kubica-scaled.jpg
+    bytes: 368293
     alt: null
     caption: null
   - type: image
     id: 2114
-    file: 2022/12/lily-compare_Kyle-Kubica-scaled.jpg
+    file: 2022/12/lily-compare_Kyle-Kubica.jpg
+    servedByWordpress: 2022/12/lily-compare_Kyle-Kubica-scaled.jpg
+    bytes: 475427
     alt: null
     caption: null
   - type: image
     id: 2115
     file: 2022/12/lily-model_Kyle-Kubica.png
+    bytes: 1869295
     alt: null
     caption: null
   - type: image
     id: 2117
     file: 2022/12/lily-texture_Kyle-Kubica.png
+    bytes: 2387989
     alt: null
     caption: null
 layout: default

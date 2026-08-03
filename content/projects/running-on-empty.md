@@ -21,6 +21,7 @@ media:
     id: 2749
     file: 2024/12/running-on-empty_Madhu-Priya.png
     role: featured
+    bytes: 2155899
     alt: null
     caption: null
 layout: default

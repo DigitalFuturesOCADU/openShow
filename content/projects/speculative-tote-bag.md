@@ -21,31 +21,37 @@ media:
     id: 1850
     file: 2020/12/mikaFeature.jpg
     role: featured
+    bytes: 167247
     alt: null
     caption: null
   - type: image
     id: 1852
     file: 2020/12/Mika-Hirata-mikahirata_projectpic.png
+    bytes: 2055403
     alt: null
     caption: null
   - type: image
     id: 1849
     file: 2020/12/FCE15E65-869D-404F-99E3-A0C880BF519D_JPG.jpg
+    bytes: 62850
     alt: null
     caption: null
   - type: image
     id: 1846
     file: 2020/12/0F219091-1306-40E1-BB19-7112139483D1_JPG.jpg
+    bytes: 38537
     alt: null
     caption: Processed with VSCO with a6 preset
   - type: image
     id: 1847
     file: 2020/12/0FC65E49-0E9C-4C23-B03B-46E484C57CC6_JPG.jpg
+    bytes: 29491
     alt: null
     caption: Processed with VSCO with a6 preset
   - type: image
     id: 1848
     file: 2020/12/2569491C-8824-405C-95A6-F3B1F7F5E0C7_JPG.jpg
+    bytes: 45394
     alt: null
     caption: Processed with VSCO with a6 preset
 layout: default

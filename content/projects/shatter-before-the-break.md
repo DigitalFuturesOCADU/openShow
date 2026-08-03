@@ -19,6 +19,7 @@ media:
     id: 2883
     file: 2025/12/sh4b_Nooshin-Mohtashami.png
     role: featured
+    bytes: 3631296
     alt: null
     caption: null
 layout: default

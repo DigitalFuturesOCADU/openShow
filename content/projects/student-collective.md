@@ -20,6 +20,7 @@ media:
     id: 1930
     file: 2020/12/simon.png
     role: featured
+    bytes: 781995
     alt: null
     caption: null
   - type: video-file

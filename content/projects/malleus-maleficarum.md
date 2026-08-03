@@ -22,16 +22,19 @@ media:
     id: 2061
     file: 2022/12/menu_Kayli-Chow.png
     role: featured
+    bytes: 764826
     alt: null
     caption: null
   - type: image
     id: 2062
     file: 2022/12/game_opening_letter_Kayli-Chow.png
+    bytes: 637303
     alt: null
     caption: null
   - type: image
     id: 2063
     file: 2022/12/cutscene_Kayli-Chow.png
+    bytes: 937561
     alt: null
     caption: null
   - type: video-embed

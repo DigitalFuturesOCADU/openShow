@@ -20,18 +20,23 @@ creditsRaw: Unnikrishnan Kalidas
 media:
   - type: image
     id: 2141
-    file: 2022/12/Audiocloudscape_1_Unnikrishnan-Kalidas-scaled.jpg
+    file: 2022/12/Audiocloudscape_1_Unnikrishnan-Kalidas.jpg
     role: featured
+    servedByWordpress: 2022/12/Audiocloudscape_1_Unnikrishnan-Kalidas-scaled.jpg
+    bytes: 3677284
     alt: null
     caption: null
   - type: image
     id: 2142
-    file: 2022/12/Audiocloudscape_2_Unnikrishnan-Kalidas-scaled.jpg
+    file: 2022/12/Audiocloudscape_2_Unnikrishnan-Kalidas.jpg
+    servedByWordpress: 2022/12/Audiocloudscape_2_Unnikrishnan-Kalidas-scaled.jpg
+    bytes: 3783800
     alt: null
     caption: null
   - type: image
     id: 2143
     file: 2022/12/Audiocloudscape_3_Unnikrishnan-Kalidas.jpg
+    bytes: 237996
     alt: null
     caption: null
 layout: default

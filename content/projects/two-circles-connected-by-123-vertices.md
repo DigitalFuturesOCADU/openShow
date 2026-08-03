@@ -27,6 +27,7 @@ media:
     id: 2585
     file: 2023/12/cicles.png
     role: featured
+    bytes: 60798
     alt: null
     caption: null
 layout: default

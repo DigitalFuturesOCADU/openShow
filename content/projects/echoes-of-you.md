@@ -28,18 +28,24 @@ creditsRaw: Mahnoor Hasan, Harry Zhao, Ziheng Qu
 media:
   - type: image
     id: 2735
-    file: 2024/12/EchoesOfYou_DSC1710_Mahnoor-Hasan-scaled.jpg
+    file: 2024/12/EchoesOfYou_DSC1710_Mahnoor-Hasan.jpg
     role: featured
+    servedByWordpress: 2024/12/EchoesOfYou_DSC1710_Mahnoor-Hasan-scaled.jpg
+    bytes: 6717440
     alt: null
     caption: null
   - type: image
     id: 2737
-    file: 2024/12/EchoesOfYou_DSC1826_Mahnoor-Hasan-scaled.jpg
+    file: 2024/12/EchoesOfYou_DSC1826_Mahnoor-Hasan.jpg
+    servedByWordpress: 2024/12/EchoesOfYou_DSC1826_Mahnoor-Hasan-scaled.jpg
+    bytes: 6553600
     alt: null
     caption: null
   - type: image
     id: 2736
-    file: 2024/12/EchoesOfYou_DSC1807_Mahnoor-Hasan-scaled.jpg
+    file: 2024/12/EchoesOfYou_DSC1807_Mahnoor-Hasan.jpg
+    servedByWordpress: 2024/12/EchoesOfYou_DSC1807_Mahnoor-Hasan-scaled.jpg
+    bytes: 6193152
     alt: null
     caption: null
 layout: default

@@ -26,21 +26,25 @@ media:
     id: 2913
     file: 2025/12/9-5-at-freddys_1_Kayli-Chow.png
     role: featured
+    bytes: 1670106
     alt: null
     caption: null
   - type: image
     id: 2916
     file: 2025/12/9-5-at-freddys_4_Kayli-Chow.png
+    bytes: 1465256
     alt: null
     caption: null
   - type: image
     id: 2915
     file: 2025/12/9-5-at-freddys_3_Kayli-Chow.png
+    bytes: 2135425
     alt: null
     caption: null
   - type: image
     id: 2914
     file: 2025/12/9-5-at-freddys_2_Kayli-Chow.png
+    bytes: 1361685
     alt: null
     caption: null
 layout: default

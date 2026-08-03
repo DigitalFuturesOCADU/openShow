@@ -27,6 +27,7 @@ media:
     id: 1674
     file: 2020/12/Fin-01_Simran-Duggal.png
     role: featured
+    bytes: 487613
     alt: null
     caption: null
 layout: default

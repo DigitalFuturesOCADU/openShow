@@ -24,26 +24,31 @@ media:
     id: 2763
     file: 2024/12/WrongSideOfHill_3_Mika-MacLear-Wall.png
     role: featured
+    bytes: 1778116
     alt: null
     caption: null
   - type: image
     id: 2764
     file: 2024/12/WrongSideOfHill_4_Mika-MacLear-Wall.png
+    bytes: 1824163
     alt: null
     caption: null
   - type: image
     id: 2765
     file: 2024/12/WrongSideOfHill_5_Mika-MacLear-Wall.png
+    bytes: 1596614
     alt: null
     caption: null
   - type: image
     id: 2762
     file: 2024/12/WrongSideOfHill_2_Mika-MacLear-Wall.png
+    bytes: 1788869
     alt: null
     caption: null
   - type: image
     id: 2761
     file: 2024/12/WrongSideOfHill_1_Mika-MacLear-Wall.png
+    bytes: 1290856
     alt: null
     caption: null
 layout: default

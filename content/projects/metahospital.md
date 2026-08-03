@@ -21,6 +21,7 @@ media:
     id: 2119
     file: 2022/12/Screenshot-2022-12-07-233937_Ziqi-Guo.png
     role: featured
+    bytes: 6352541
     alt: null
     caption: null
 layout: default

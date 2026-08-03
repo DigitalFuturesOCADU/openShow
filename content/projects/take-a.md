@@ -30,6 +30,7 @@ media:
     id: 2547
     file: 2023/12/ASCII_anonymous.jpg
     role: featured
+    bytes: 247201
     alt: null
     caption: null
 layout: default

@@ -23,16 +23,19 @@ media:
     id: 2087
     file: 2022/12/impossible-self3_Weiqi-Wu.png
     role: featured
+    bytes: 786426
     alt: null
     caption: null
   - type: image
     id: 2085
     file: 2022/12/impossible-self1_Weiqi-Wu.png
+    bytes: 2201945
     alt: null
     caption: null
   - type: image
     id: 2086
     file: 2022/12/impossible-self2_Weiqi-Wu.png
+    bytes: 754914
     alt: null
     caption: null
 layout: default

@@ -21,6 +21,7 @@ media:
     id: 2322
     file: 2023/04/time-turn.jpg
     role: featured
+    bytes: 146139
     alt: null
     caption: null
 layout: default

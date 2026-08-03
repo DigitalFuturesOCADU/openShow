@@ -30,6 +30,7 @@ media:
     id: 2307
     file: 2023/04/yutong.jpeg
     role: featured
+    bytes: 91705
     alt: null
     caption: null
 layout: default

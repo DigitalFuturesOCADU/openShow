@@ -29,18 +29,23 @@ creditsRaw: Jun Li, Jie Guan, Shuai Yuan, Adam Tindale
 media:
   - type: image
     id: 1978
-    file: 2020/12/IMG_7642-scaled.jpg
+    file: 2020/12/IMG_7642.jpg
     role: featured
+    servedByWordpress: 2020/12/IMG_7642-scaled.jpg
+    bytes: 793831
     alt: null
     caption: null
   - type: image
     id: 1977
     file: 2020/12/IMG_7636.jpg
+    bytes: 399189
     alt: null
     caption: null
   - type: image
     id: 1976
-    file: 2020/12/IMG_7635-scaled.jpg
+    file: 2020/12/IMG_7635.jpg
+    servedByWordpress: 2020/12/IMG_7635-scaled.jpg
+    bytes: 1345482
     alt: null
     caption: null
 layout: default

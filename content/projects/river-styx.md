@@ -33,6 +33,7 @@ media:
     id: 2346
     file: 2023/04/river.jpg
     role: featured
+    bytes: 281144
     alt: null
     caption: null
 layout: default

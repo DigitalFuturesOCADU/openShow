@@ -24,31 +24,37 @@ media:
     id: 3046
     file: 2025/12/HomeAwayFromHome_4-1_Melanie-Yan_FEATURE.jpg
     role: featured
+    bytes: 113938
     alt: null
     caption: null
   - type: image
     id: 2921
     file: 2025/12/HomeAwayHome_2-1_Melanie-Yan.png
+    bytes: 292079
     alt: null
     caption: null
   - type: image
     id: 2925
     file: 2025/12/UnexpectedTeaParty_1-1_Melanie-Yan.png
+    bytes: 313755
     alt: null
     caption: null
   - type: image
     id: 2924
     file: 2025/12/HomeAwayFromHome_3-1_Melanie-Yan.png
+    bytes: 91795
     alt: null
     caption: null
   - type: image
     id: 2923
     file: 2025/12/HomeAwayFromHome_4-1_Melanie-Yan.png
+    bytes: 308084
     alt: null
     caption: null
   - type: image
     id: 2922
     file: 2025/12/HomeAwayHome_1-1_Melanie-Yan.png
+    bytes: 303136
     alt: null
     caption: null
 layout: default

@@ -24,16 +24,19 @@ media:
     id: 1741
     file: 2020/12/2_Achal-Shah.png
     role: featured
+    bytes: 194758
     alt: null
     caption: null
   - type: image
     id: 1740
     file: 2020/12/1_Achal-Shah.png
+    bytes: 494361
     alt: null
     caption: null
   - type: image
     id: 1742
     file: 2020/12/3_Achal-Shah.png
+    bytes: 658414
     alt: null
     caption: null
 layout: default

@@ -28,16 +28,19 @@ media:
     id: 2759
     file: 2024/12/Water_Womb_2_Kayli-Chow.jpg
     role: featured
+    bytes: 962523
     alt: null
     caption: null
   - type: image
     id: 2788
     file: 2024/12/Water_Womb_1_Kayli-Chow.jpg
+    bytes: 880883
     alt: null
     caption: null
   - type: image
     id: 2760
     file: 2024/12/Water_Womb_3_Kayli-Chow.jpg
+    bytes: 1037777
     alt: null
     caption: null
 layout: default

@@ -21,16 +21,19 @@ media:
     id: 2935
     file: 2025/12/DigitalEcorcheSculpture_03_Xin-Jiang.jpg
     role: featured
+    bytes: 580200
     alt: null
     caption: null
   - type: image
     id: 2934
     file: 2025/12/DigitalEcorcheSculpture_02_Xin-Jiang.jpg
+    bytes: 677327
     alt: null
     caption: null
   - type: image
     id: 2936
     file: 2025/12/DigitalEcorcheSculpture_01_Xin-Jiang.jpg
+    bytes: 617856
     alt: null
     caption: null
 layout: default

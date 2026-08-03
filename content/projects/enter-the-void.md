@@ -24,11 +24,13 @@ media:
     id: 1738
     file: 2020/12/Enter-the-void_1_Achal-Shah.png
     role: featured
+    bytes: 755771
     alt: null
     caption: null
   - type: image
     id: 1739
     file: 2020/12/Enter-the-void_2_Achal-Shah.png
+    bytes: 1544492
     alt: null
     caption: null
 layout: default

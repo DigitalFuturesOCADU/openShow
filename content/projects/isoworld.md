@@ -23,6 +23,7 @@ media:
     id: 2579
     file: 2023/12/iso-e1703130782994.png
     role: featured
+    bytes: 200134
     alt: null
     caption: null
 layout: default

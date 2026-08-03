@@ -25,11 +25,13 @@ media:
     id: 2804
     file: 2024/12/exp-3-cover-warm_Lu-Thea.png
     role: featured
+    bytes: 4013047
     alt: null
     caption: null
   - type: image
     id: 2766
     file: 2024/12/截屏2024-11-20-下午12.46.01_Lu-Thea.png
+    bytes: 1118660
     alt: null
     caption: null
 layout: default

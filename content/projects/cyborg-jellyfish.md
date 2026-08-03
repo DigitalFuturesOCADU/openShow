@@ -32,16 +32,19 @@ media:
     id: 2078
     file: 2022/12/DSC_0082-Large_Tyler-Beatty.png
     role: featured
+    bytes: 834451
     alt: null
     caption: null
   - type: image
     id: 2076
     file: 2022/12/DSC_0012-Large_Tyler-Beatty.png
+    bytes: 1035539
     alt: null
     caption: null
   - type: image
     id: 2077
     file: 2022/12/DSC_0059-Large_Tyler-Beatty.png
+    bytes: 1144546
     alt: null
     caption: null
 layout: default

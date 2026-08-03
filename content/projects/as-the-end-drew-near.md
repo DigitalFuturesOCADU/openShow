@@ -26,26 +26,31 @@ media:
     id: 2069
     file: 2022/12/atedn1_Cindy-Poremba.png
     role: featured
+    bytes: 1999418
     alt: null
     caption: null
   - type: image
     id: 2070
     file: 2022/12/atedn2_Cindy-Poremba.png
+    bytes: 2092841
     alt: null
     caption: null
   - type: image
     id: 2071
     file: 2022/12/atedn3_Cindy-Poremba.png
+    bytes: 912023
     alt: null
     caption: null
   - type: image
     id: 2072
     file: 2022/12/atedn4_Cindy-Poremba.png
+    bytes: 795312
     alt: null
     caption: null
   - type: image
     id: 2073
     file: 2022/12/atedn5_Cindy-Poremba.jpg
+    bytes: 95708
     alt: null
     caption: null
 layout: default

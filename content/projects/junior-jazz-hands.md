@@ -23,6 +23,7 @@ media:
     id: 2369
     file: 2023/04/jazz.png
     role: featured
+    bytes: 2485170
     alt: null
     caption: null
 layout: default

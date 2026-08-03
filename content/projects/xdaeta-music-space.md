@@ -25,11 +25,13 @@ media:
     id: 2511
     file: 2023/12/Xdeata_1_anonymous.jpg
     role: featured
+    bytes: 249223
     alt: null
     caption: null
   - type: image
     id: 2512
     file: 2023/12/Xdeata_2_anonymous.jpg
+    bytes: 339037
     alt: null
     caption: null
 layout: default

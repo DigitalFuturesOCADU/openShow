@@ -25,6 +25,7 @@ media:
     id: 2524
     file: 2023/12/HalftoneDistortion_anonymous-e1701399039382.jpg
     role: featured
+    bytes: 119977
     alt: null
     caption: null
   - type: video-file

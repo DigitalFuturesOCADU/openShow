@@ -22,26 +22,31 @@ media:
     id: 1812
     file: 2020/12/skycavalcade_1_Sarah-Boo.jpg
     role: featured
+    bytes: 462883
     alt: null
     caption: null
   - type: image
     id: 1813
     file: 2020/12/skycavalcade_2_Sarah-Boo.jpg
+    bytes: 451887
     alt: null
     caption: null
   - type: image
     id: 1814
     file: 2020/12/skycavalcade_3_Sarah-Boo.jpg
+    bytes: 553769
     alt: null
     caption: null
   - type: image
     id: 1815
     file: 2020/12/skycavalcade_4_Sarah-Boo.jpg
+    bytes: 443203
     alt: null
     caption: null
   - type: image
     id: 1817
     file: 2020/12/skycavalcade_5_Sarah-Boo.jpg
+    bytes: 589024
     alt: null
     caption: null
 layout: default

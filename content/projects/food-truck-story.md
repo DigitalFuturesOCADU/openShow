@@ -36,21 +36,25 @@ media:
     id: 2741
     file: 2024/12/FoodTruckStory_3_Luke-DAlfonsi.png
     role: featured
+    bytes: 3603916
     alt: null
     caption: null
   - type: image
     id: 2739
     file: 2024/12/FoodTruckStory_1_Luke-DAlfonsi.png
+    bytes: 2286730
     alt: null
     caption: null
   - type: image
     id: 2740
     file: 2024/12/FoodTruckStory_2_Luke-DAlfonsi.png
+    bytes: 5151413
     alt: null
     caption: null
   - type: image
     id: 2743
     file: 2024/12/FoodTruckStory_4_Luke-DAlfonsi.png
+    bytes: 2857119
     alt: null
     caption: null
 layout: default

@@ -21,6 +21,7 @@ media:
     id: 2589
     file: 2023/12/tai.png
     role: featured
+    bytes: 237420
     alt: null
     caption: null
 layout: default

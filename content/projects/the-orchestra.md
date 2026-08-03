@@ -25,26 +25,32 @@ media:
     id: 2529
     file: 2023/12/The-orchestra_4_anonymous.jpg
     role: featured
+    bytes: 1072195
     alt: null
     caption: null
   - type: image
     id: 2526
     file: 2023/12/The-orchestra_1_anonymous.jpg
+    bytes: 154471
     alt: null
     caption: null
   - type: image
     id: 2527
     file: 2023/12/The-orchestra_2_anonymous.jpg
+    bytes: 1597564
     alt: null
     caption: null
   - type: image
     id: 2528
     file: 2023/12/The-orchestra_3_anonymous.jpg
+    bytes: 866070
     alt: null
     caption: null
   - type: image
     id: 2530
-    file: 2023/12/The-orchestra_5_anonymous-scaled.jpg
+    file: 2023/12/The-orchestra_5_anonymous.jpg
+    servedByWordpress: 2023/12/The-orchestra_5_anonymous-scaled.jpg
+    bytes: 242687
     alt: null
     caption: null
 layout: default

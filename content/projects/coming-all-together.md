@@ -21,21 +21,25 @@ media:
     id: 2731
     file: 2024/12/ComingAllTogether_3_Alexandra-Fernandez.png
     role: featured
+    bytes: 2063509
     alt: null
     caption: null
   - type: image
     id: 2729
     file: 2024/12/ComingAllTogether_1_Alexandra-Fernandez.jpg
+    bytes: 49949
     alt: null
     caption: null
   - type: image
     id: 2730
     file: 2024/12/ComingAllTogether_2_Alexandra-Fernandez.png
+    bytes: 2145384
     alt: null
     caption: null
   - type: image
     id: 2732
     file: 2024/12/ComingAllTogether_4_Alexandra-Fernandez.png
+    bytes: 2021074
     alt: null
     caption: null
 layout: default

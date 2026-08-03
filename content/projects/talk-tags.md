@@ -21,26 +21,32 @@ media:
     id: 1771
     file: 2020/12/TalkTags_1_Manisha-Laroia.jpg
     role: featured
+    bytes: 460017
     alt: null
     caption: null
   - type: image
     id: 1772
     file: 2020/12/TalkTags_2_Manisha-Laroia.jpg
+    bytes: 405765
     alt: null
     caption: null
   - type: image
     id: 1773
     file: 2020/12/TalkTags_3_Manisha-Laroia.jpg
+    bytes: 495948
     alt: null
     caption: null
   - type: image
     id: 1774
     file: 2020/12/TalkTags_4_Manisha-Laroia.gif
+    bytes: 2291839
     alt: null
     caption: null
   - type: image
     id: 1775
-    file: 2020/12/TalkTags_5_Manisha-Laroia-scaled.jpg
+    file: 2020/12/TalkTags_5_Manisha-Laroia.jpg
+    servedByWordpress: 2020/12/TalkTags_5_Manisha-Laroia-scaled.jpg
+    bytes: 2406664
     alt: null
     caption: null
 layout: default

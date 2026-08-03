@@ -22,11 +22,13 @@ media:
     id: 1914
     file: 2020/12/Jerez-Bain-JerezBainOrreryMain.png
     role: featured
+    bytes: 8580377
     alt: null
     caption: null
   - type: image
     id: 1913
     file: 2020/12/Jerez-Bain-JerezBain_screen_1920x1080_9.png
+    bytes: 1943963
     alt: null
     caption: null
 layout: default

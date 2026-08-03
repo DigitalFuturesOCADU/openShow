@@ -24,16 +24,19 @@ media:
     id: 1960
     file: 2020/12/morseCover.png
     role: featured
+    bytes: 222774
     alt: null
     caption: null
   - type: image
     id: 1659
     file: 2020/12/20201206_001045873_iOS_Krishnokoli-Roy-Chak.jpg
+    bytes: 3793793
     alt: null
     caption: null
   - type: image
     id: 1658
     file: 2020/12/20201206_001045873_iOS-copy_Krishnokoli-Roy-Chak.jpg
+    bytes: 5064446
     alt: null
     caption: null
 layout: default

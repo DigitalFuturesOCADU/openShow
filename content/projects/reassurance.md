@@ -24,21 +24,25 @@ media:
     id: 2803
     file: 2024/12/pressure_featured-image_Gillian-Blekkenhorst.png
     role: featured
+    bytes: 908446
     alt: null
     caption: null
   - type: image
     id: 2825
     file: 2024/12/img_2_Gillian-Blekkenhorst-rotated.jpg
+    bytes: 97648
     alt: null
     caption: null
   - type: image
     id: 2824
     file: 2024/12/img-4_Gillian-Blekkenhorst-rotated.jpg
+    bytes: 123371
     alt: null
     caption: null
   - type: image
     id: 2823
     file: 2024/12/img-3_Gillian-Blekkenhorst-rotated.jpg
+    bytes: 137769
     alt: null
     caption: null
 layout: default

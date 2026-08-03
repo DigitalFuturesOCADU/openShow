@@ -25,16 +25,20 @@ media:
     id: 1884
     file: 2020/12/Sanmeet-Chahil-Sanmeet_Will_3.png
     role: featured
+    bytes: 2360258
     alt: null
     caption: null
   - type: image
     id: 1883
     file: 2020/12/Sanmeet-Chahil-Sanmeet_Will_2.png
+    bytes: 2606077
     alt: null
     caption: null
   - type: image
     id: 1882
-    file: 2020/12/Sanmeet-Chahil-Sanmeet_Will_1-scaled.jpg
+    file: 2020/12/Sanmeet-Chahil-Sanmeet_Will_1.jpg
+    servedByWordpress: 2020/12/Sanmeet-Chahil-Sanmeet_Will_1-scaled.jpg
+    bytes: 11194627
     alt: null
     caption: null
 layout: default

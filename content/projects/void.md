@@ -23,6 +23,7 @@ media:
     id: 2278
     file: 2023/04/Lee.png
     role: featured
+    bytes: 8607683
     alt: null
     caption: null
 layout: default

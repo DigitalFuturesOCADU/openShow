@@ -29,11 +29,13 @@ media:
     id: 2270
     file: 2023/04/Nick-Alexander.png
     role: featured
+    bytes: 1577478
     alt: null
     caption: null
   - type: image
     id: 2271
     file: 2023/04/Nick-Alexander-2.png
+    bytes: 1849665
     alt: null
     caption: null
 layout: default

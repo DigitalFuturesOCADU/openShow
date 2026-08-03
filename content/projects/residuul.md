@@ -22,11 +22,13 @@ media:
     id: 1923
     file: 2020/12/Screen-Shot-2020-08-03-at-11.13.24.png
     role: featured
+    bytes: 3754748
     alt: null
     caption: null
   - type: image
     id: 1922
     file: 2020/12/Screen-Shot-2020-08-03-at-11.12.34.png
+    bytes: 2637628
     alt: null
     caption: null
 layout: default

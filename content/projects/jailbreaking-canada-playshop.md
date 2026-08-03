@@ -25,36 +25,43 @@ media:
     id: 3042
     file: 2025/12/Jailbreaking_1_FEATURE1.png
     role: featured
+    bytes: 39098
     alt: null
     caption: null
   - type: image
     id: 3009
     file: 2025/12/Jailbreaking_6.png
+    bytes: 140537
     alt: null
     caption: null
   - type: image
     id: 3014
     file: 2025/12/Jailbreaking_5.png
+    bytes: 189252
     alt: null
     caption: null
   - type: image
     id: 3013
     file: 2025/12/Jailbreaking_4.png
+    bytes: 140093
     alt: null
     caption: null
   - type: image
     id: 3012
     file: 2025/12/Jailbreaking_3.png
+    bytes: 308270
     alt: null
     caption: null
   - type: image
     id: 3011
     file: 2025/12/Jailbreaking_2.png
+    bytes: 142240
     alt: null
     caption: null
   - type: image
     id: 3010
     file: 2025/12/Jailbreaking_1.png
+    bytes: 43265
     alt: null
     caption: null
 layout: default

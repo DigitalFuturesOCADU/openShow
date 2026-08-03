@@ -18,18 +18,24 @@ creditsRaw: Gunner Thongmeesang
 media:
   - type: image
     id: 2519
-    file: 2023/12/Fursuit_1_anonymous-scaled.jpg
+    file: 2023/12/Fursuit_1_anonymous.jpg
     role: featured
+    servedByWordpress: 2023/12/Fursuit_1_anonymous-scaled.jpg
+    bytes: 4089046
     alt: null
     caption: null
   - type: image
     id: 2520
-    file: 2023/12/Fursuit_2_anonymous-scaled.jpg
+    file: 2023/12/Fursuit_2_anonymous.jpg
+    servedByWordpress: 2023/12/Fursuit_2_anonymous-scaled.jpg
+    bytes: 874654
     alt: null
     caption: null
   - type: image
     id: 2521
-    file: 2023/12/Fursuit_3_anonymous-scaled.jpg
+    file: 2023/12/Fursuit_3_anonymous.jpg
+    servedByWordpress: 2023/12/Fursuit_3_anonymous-scaled.jpg
+    bytes: 767101
     alt: null
     caption: null
 layout: default

@@ -20,18 +20,22 @@ creditsRaw: Yiqun Zhou
 media:
   - type: image
     id: 2746
-    file: 2024/12/RoadToHeaven_animation-test_Zhou-Yiqun-scaled.jpg
+    file: 2024/12/RoadToHeaven_animation-test_Zhou-Yiqun.jpg
     role: featured
+    servedByWordpress: 2024/12/RoadToHeaven_animation-test_Zhou-Yiqun-scaled.jpg
+    bytes: 1354809
     alt: null
     caption: null
   - type: image
     id: 2748
     file: 2024/12/RoadToHeaven_Screenshot-2024-11-24-at-19.39.15_Zhou-Yiqun.png
+    bytes: 521405
     alt: null
     caption: null
   - type: image
     id: 2747
     file: 2024/12/RoadToHeaven_RoadToHeaven_Section3_Zhou-Yiqun.jpg
+    bytes: 1221107
     alt: null
     caption: null
 layout: default

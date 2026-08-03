@@ -21,6 +21,7 @@ media:
     id: 1920
     file: 2020/12/Mustafa-Abdel-Fattah-Main-Sequence.00_28_16_13.Still001.jpg
     role: featured
+    bytes: 581934
     alt: null
     caption: null
   - type: video-embed

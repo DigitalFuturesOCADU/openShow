@@ -20,16 +20,19 @@ media:
     id: 1822
     file: 2020/12/Landing-Page_Nimah-Shoaib.jpg
     role: featured
+    bytes: 429941
     alt: null
     caption: null
   - type: image
     id: 1823
     file: 2020/12/Main-Screen_Nimah-Shoaib.jpg
+    bytes: 585563
     alt: null
     caption: null
   - type: image
     id: 1824
     file: 2020/12/Resource-Page_Nimah-Shoaib.jpg
+    bytes: 342581
     alt: null
     caption: null
 layout: default

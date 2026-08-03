@@ -21,16 +21,19 @@ media:
     id: 2875
     file: 2025/12/XtVxsG4FR1utkiDBPjsaPQ_fix1_Peng-Guan.png
     role: featured
+    bytes: 2237191
     alt: null
     caption: null
   - type: image
     id: 2873
     file: 2025/12/Unity_i9q4zJEoJW_Peng-Guan.png
+    bytes: 427144
     alt: null
     caption: null
   - type: image
     id: 2874
     file: 2025/12/Unity_eqsmyofsIk_Peng-Guan.png
+    bytes: 82634
     alt: null
     caption: null
 layout: default

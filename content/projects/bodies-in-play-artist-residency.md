@@ -22,6 +22,7 @@ media:
     id: 2718
     file: 2024/12/BIP_BIR-1024x1024_Kate-Hartman.jpg
     role: featured
+    bytes: 62824
     alt: null
     caption: null
 layout: default

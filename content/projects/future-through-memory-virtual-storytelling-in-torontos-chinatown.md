@@ -22,6 +22,7 @@ media:
     id: 2583
     file: 2023/12/china.png
     role: featured
+    bytes: 1023278
     alt: null
     caption: null
 layout: default

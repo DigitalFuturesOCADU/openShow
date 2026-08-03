@@ -23,16 +23,19 @@ media:
     id: 2138
     file: 2022/12/The-Egg-2_Niloofar-Sanandajiza.png
     role: featured
+    bytes: 920778
     alt: null
     caption: null
   - type: image
     id: 2137
     file: 2022/12/The-Egg-1_Niloofar-Sanandajiza.png
+    bytes: 78956
     alt: null
     caption: null
   - type: image
     id: 2139
     file: 2022/12/The-Egg-3_Niloofar-Sanandajiza.png
+    bytes: 2067713
     alt: null
     caption: null
 layout: default

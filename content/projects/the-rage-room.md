@@ -21,21 +21,25 @@ media:
     id: 2573
     file: 2023/12/Screenshot_20221206_104257_anonymous.png
     role: featured
+    bytes: 579533
     alt: null
     caption: null
   - type: image
     id: 2570
     file: 2023/12/Screenshot_20221205_111307_anonymous.png
+    bytes: 639476
     alt: null
     caption: null
   - type: image
     id: 2571
     file: 2023/12/Screenshot_20221205_112108_anonymous.png
+    bytes: 470470
     alt: null
     caption: null
   - type: image
     id: 2572
     file: 2023/12/Screenshot_20221205_112131_anonymous.png
+    bytes: 289066
     alt: null
     caption: null
 layout: default

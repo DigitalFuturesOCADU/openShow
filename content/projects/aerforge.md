@@ -32,6 +32,7 @@ media:
     id: 2375
     file: 2023/04/aer.png
     role: featured
+    bytes: 11762
     alt: null
     caption: null
 layout: default

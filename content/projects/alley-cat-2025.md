@@ -40,21 +40,25 @@ media:
     id: 2867
     file: 2025/12/AlleyCat5_Jackson-Crittenden.png
     role: featured
+    bytes: 1329687
     alt: null
     caption: null
   - type: image
     id: 2868
     file: 2025/12/AlleyCat6_Jackson-Crittenden.png
+    bytes: 2267070
     alt: null
     caption: null
   - type: image
     id: 2866
     file: 2025/12/AlleyCat3_Jackson-Crittenden.png
+    bytes: 773773
     alt: null
     caption: null
   - type: image
     id: 2871
     file: 2025/12/AlleyCat7_Jackson-Crittenden.png
+    bytes: 983809
     alt: null
     caption: null
 layout: default

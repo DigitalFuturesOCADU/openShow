@@ -21,26 +21,31 @@ media:
     id: 2721
     file: 2024/12/CHINATOWNCENTRE_1_Sebastian-Gorfinkel.png
     role: featured
+    bytes: 2125443
     alt: null
     caption: null
   - type: image
     id: 2722
     file: 2024/12/CHINATOWNCENTRE_2_Sebastian-Gorfinkel.png
+    bytes: 2604233
     alt: null
     caption: null
   - type: image
     id: 2720
     file: 2024/12/CHINATOWNCENTRE_5_Sebastian-Gorfinkel.png
+    bytes: 3135572
     alt: null
     caption: null
   - type: image
     id: 2723
     file: 2024/12/CHINATOWNCENTRE_3_Sebastian-Gorfinkel.png
+    bytes: 3388149
     alt: null
     caption: null
   - type: image
     id: 2724
     file: 2024/12/CHINATOWNCENTRE_4_Sebastian-Gorfinkel.png
+    bytes: 3216327
     alt: null
     caption: null
 layout: default

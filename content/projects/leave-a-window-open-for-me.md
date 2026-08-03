@@ -23,6 +23,7 @@ media:
     id: 2326
     file: 2023/04/leave-a-window.jpg
     role: featured
+    bytes: 44296
     alt: null
     caption: null
 layout: default

@@ -20,18 +20,24 @@ creditsRaw: Haru Ji, Graham Wakefield
 media:
   - type: image
     id: 1728
-    file: 2020/12/infranet_nyc_swpk_2019_2_Haru-Ji-scaled.jpg
+    file: 2020/12/infranet_nyc_swpk_2019_2_Haru-Ji.jpg
     role: featured
+    servedByWordpress: 2020/12/infranet_nyc_swpk_2019_2_Haru-Ji-scaled.jpg
+    bytes: 4312955
     alt: null
     caption: null
   - type: image
     id: 1727
-    file: 2020/12/infranet_nyc_swpk_2019_1_Haru-Ji-scaled.jpg
+    file: 2020/12/infranet_nyc_swpk_2019_1_Haru-Ji.jpg
+    servedByWordpress: 2020/12/infranet_nyc_swpk_2019_1_Haru-Ji-scaled.jpg
+    bytes: 6972258
     alt: null
     caption: null
   - type: image
     id: 1730
-    file: 2020/12/infranget_gwangju_acc_2018_1_Haru-Ji-scaled.jpg
+    file: 2020/12/infranget_gwangju_acc_2018_1_Haru-Ji.jpg
+    servedByWordpress: 2020/12/infranget_gwangju_acc_2018_1_Haru-Ji-scaled.jpg
+    bytes: 3911983
     alt: null
     caption: null
 layout: default

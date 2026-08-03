@@ -36,8 +36,10 @@ creditsRaw: Kate Hartman, Emma Westecott, Cindy Poremba, Ellie Huang, Izzie Colp
 media:
   - type: image
     id: 2150
-    file: 2022/12/20220825_131555_Cindy-Poremba-scaled.jpg
+    file: 2022/12/20220825_131555_Cindy-Poremba.jpg
     role: featured
+    servedByWordpress: 2022/12/20220825_131555_Cindy-Poremba-scaled.jpg
+    bytes: 3347637
     alt: null
     caption: null
 layout: default

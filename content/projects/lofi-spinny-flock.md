@@ -23,16 +23,19 @@ media:
     id: 3048
     file: 2025/12/lofispinny_3_Paul-Van-Rijn-FEATURE.jpg
     role: featured
+    bytes: 113619
     alt: null
     caption: null
   - type: image
     id: 2892
     file: 2025/12/lofispinny_2_Paul-Van-Rijn.png
+    bytes: 380484
     alt: null
     caption: null
   - type: image
     id: 2893
     file: 2025/12/lofispinny_3_Paul-Van-Rijn.png
+    bytes: 330747
     alt: null
     caption: null
 layout: default

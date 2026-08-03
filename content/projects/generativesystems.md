@@ -28,6 +28,7 @@ media:
     id: 2342
     file: 2023/04/generative.png
     role: featured
+    bytes: 209540
     alt: null
     caption: null
 layout: default

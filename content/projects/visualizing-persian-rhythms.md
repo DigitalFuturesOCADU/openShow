@@ -21,21 +21,25 @@ media:
     id: 2576
     file: 2023/12/Visualizing-Persian-Rhythms-2_anonymous.png
     role: featured
+    bytes: 3936501
     alt: null
     caption: null
   - type: image
     id: 2575
     file: 2023/12/Visualizing-Persian-Rhythms-1_anonymous.png
+    bytes: 3625977
     alt: null
     caption: null
   - type: image
     id: 2577
     file: 2023/12/Visualizing-Persian-Rhythms-3_anonymous.png
+    bytes: 1356348
     alt: null
     caption: null
   - type: image
     id: 2578
     file: 2023/12/Visualizing-Persian-Rhythms-4_anonymous.png
+    bytes: 792768
     alt: null
     caption: null
 layout: default

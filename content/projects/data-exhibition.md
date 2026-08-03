@@ -22,26 +22,31 @@ media:
     id: 2090
     file: 2022/12/Data-Exhibition1_Weiqi-Wu.png
     role: featured
+    bytes: 592653
     alt: null
     caption: null
   - type: image
     id: 2091
     file: 2022/12/Data-Exhibition2_Weiqi-Wu.png
+    bytes: 1127532
     alt: null
     caption: null
   - type: image
     id: 2092
     file: 2022/12/Data-Exhibition3_Weiqi-Wu.png
+    bytes: 1664244
     alt: null
     caption: null
   - type: image
     id: 2093
     file: 2022/12/Data-Exhibition4_Weiqi-Wu.png
+    bytes: 1171252
     alt: null
     caption: null
   - type: image
     id: 2094
     file: 2022/12/Data-Exhibition5_Weiqi-Wu.png
+    bytes: 1197511
     alt: null
     caption: null
 layout: default

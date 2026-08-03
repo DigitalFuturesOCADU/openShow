@@ -22,26 +22,31 @@ media:
     id: 1789
     file: 2020/12/variationsof_1_Sarah-Boo.png
     role: featured
+    bytes: 1629216
     alt: null
     caption: null
   - type: image
     id: 1790
     file: 2020/12/variationsof_2_Sarah-Boo.png
+    bytes: 1460332
     alt: null
     caption: null
   - type: image
     id: 1791
     file: 2020/12/variationsof_3_Sarah-Boo.png
+    bytes: 1405197
     alt: null
     caption: null
   - type: image
     id: 1793
     file: 2020/12/variationsof_4_Sarah-Boo.png
+    bytes: 603072
     alt: null
     caption: null
   - type: image
     id: 1794
     file: 2020/12/variationsof_5_Sarah-Boo.png
+    bytes: 1387884
     alt: null
     caption: null
 layout: default

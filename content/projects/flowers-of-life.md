@@ -23,6 +23,7 @@ media:
     id: 2324
     file: 2023/04/flower-of-life.jpg
     role: featured
+    bytes: 193515
     alt: null
     caption: null
 layout: default

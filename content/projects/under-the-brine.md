@@ -20,26 +20,31 @@ media:
     id: 2055
     file: 2022/12/1_Donna-Shahini.jpg
     role: featured
+    bytes: 154730
     alt: null
     caption: null
   - type: image
     id: 2056
     file: 2022/12/dl2_Donna-Shahini.jpg
+    bytes: 164275
     alt: null
     caption: null
   - type: image
     id: 2057
     file: 2022/12/DL3_Donna-Shahini.jpg
+    bytes: 113631
     alt: null
     caption: null
   - type: image
     id: 2058
     file: 2022/12/dl4_Donna-Shahini.jpg
+    bytes: 85533
     alt: null
     caption: null
   - type: image
     id: 2059
     file: 2022/12/dl5_Donna-Shahini.jpg
+    bytes: 68270
     alt: null
     caption: null
 layout: default

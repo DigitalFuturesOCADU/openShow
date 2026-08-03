@@ -24,6 +24,7 @@ media:
     id: 2351
     file: 2023/04/mrsive.png
     role: featured
+    bytes: 54498
     alt: null
     caption: null
 layout: default

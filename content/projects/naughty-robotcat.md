@@ -31,28 +31,35 @@ creditsRaw: Victoria Gottardi, Yueming Gao, Siyu Sun, Maryam
 media:
   - type: image
     id: 2473
-    file: 2023/12/Naughty-Robotcat-2_anonymous-scaled.jpg
+    file: 2023/12/Naughty-Robotcat-2_anonymous.jpg
     role: featured
+    servedByWordpress: 2023/12/Naughty-Robotcat-2_anonymous-scaled.jpg
+    bytes: 1331613
     alt: null
     caption: null
   - type: image
     id: 2471
     file: 2023/12/Naughty-Robotcat-5_anonymous.gif
+    bytes: 3502082
     alt: null
     caption: null
   - type: image
     id: 2474
     file: 2023/12/Naughty-Robotcat-3_anonymous.gif
+    bytes: 2493951
     alt: null
     caption: null
   - type: image
     id: 2475
     file: 2023/12/Naughty-Robotcat-4_anonymous.gif
+    bytes: 2928962
     alt: null
     caption: null
   - type: image
     id: 2472
-    file: 2023/12/Naughty-Robotcat-1_anonymous-scaled.jpg
+    file: 2023/12/Naughty-Robotcat-1_anonymous.jpg
+    servedByWordpress: 2023/12/Naughty-Robotcat-1_anonymous-scaled.jpg
+    bytes: 1064848
     alt: null
     caption: null
 layout: default

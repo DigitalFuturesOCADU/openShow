@@ -24,6 +24,7 @@ media:
     id: 2349
     file: 2023/04/the-spin.png
     role: featured
+    bytes: 234047
     alt: null
     caption: null
 layout: default

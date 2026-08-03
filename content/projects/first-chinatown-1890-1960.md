@@ -20,16 +20,19 @@ media:
     id: 1663
     file: 2020/12/LilianLeung_FirstChinatown1890-1960_IMG2_Lilian-Leung.png
     role: featured
+    bytes: 1868548
     alt: null
     caption: null
   - type: image
     id: 1662
     file: 2020/12/LilianLeung_FirstChinatown1890-1960_IMG1_Lilian-Leung.jpg
+    bytes: 192905
     alt: null
     caption: null
   - type: image
     id: 1664
     file: 2020/12/LilianLeung_FirstChinatown1890-1960_IMG3_Lilian-Leung.jpg
+    bytes: 204592
     alt: null
     caption: null
 layout: default

@@ -21,11 +21,13 @@ media:
     id: 2457
     file: 2023/12/IMG_8853_anonymous.jpg
     role: featured
+    bytes: 164103
     alt: null
     caption: null
   - type: image
     id: 2456
     file: 2023/12/IMG_8852_anonymous.jpg
+    bytes: 114653
     alt: null
     caption: null
 layout: default

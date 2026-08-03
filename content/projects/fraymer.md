@@ -20,11 +20,13 @@ media:
     id: 2898
     file: 2025/12/Splyt-banner-animated_Demilade-Olaleye.gif
     role: featured
+    bytes: 778430
     alt: null
     caption: null
   - type: image
     id: 2899
     file: 2025/12/Flyp-by-Fraymer_Demilade-Olaleye.gif
+    bytes: 434317
     alt: null
     caption: null
 layout: default

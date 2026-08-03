@@ -22,6 +22,7 @@ media:
     id: 2581
     file: 2023/12/nicole.jpeg
     role: featured
+    bytes: 1044719
     alt: null
     caption: null
 layout: default

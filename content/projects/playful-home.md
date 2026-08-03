@@ -21,18 +21,23 @@ creditsRaw: Joshua Jacob Pothen
 media:
   - type: image
     id: 2948
-    file: 2025/12/PlayfulHome_5_Joshua-Pothen-scaled.jpeg
+    file: 2025/12/PlayfulHome_5_Joshua-Pothen.jpeg
     role: featured
+    servedByWordpress: 2025/12/PlayfulHome_5_Joshua-Pothen-scaled.jpeg
+    bytes: 7337368
     alt: null
     caption: null
   - type: image
     id: 2949
     file: 2025/12/PlayfulHome_2_Joshua-Pothen.jpeg
+    bytes: 7190695
     alt: null
     caption: null
   - type: image
     id: 2950
-    file: 2025/12/PlayfulHome_3_Joshua-Pothen-scaled.jpeg
+    file: 2025/12/PlayfulHome_3_Joshua-Pothen.jpeg
+    servedByWordpress: 2025/12/PlayfulHome_3_Joshua-Pothen-scaled.jpeg
+    bytes: 6774254
     alt: null
     caption: null
 layout: default

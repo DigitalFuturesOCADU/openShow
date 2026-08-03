@@ -23,16 +23,19 @@ media:
     id: 2963
     file: 2025/12/ProjectVampurr2_Irina-Noor.png
     role: featured
+    bytes: 31433
     alt: null
     caption: null
   - type: image
     id: 2961
     file: 2025/12/ProjectVampurr3_Irina-Noor.png
+    bytes: 47423
     alt: null
     caption: null
   - type: image
     id: 2962
     file: 2025/12/ProjectVampurr1_Irina-Noor.png
+    bytes: 37552
     alt: null
     caption: null
 layout: default

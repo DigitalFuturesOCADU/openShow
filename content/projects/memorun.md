@@ -33,6 +33,7 @@ media:
     id: 2604
     file: 2023/12/umm.png
     role: featured
+    bytes: 229090
     alt: null
     caption: null
 layout: default

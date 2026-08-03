@@ -20,16 +20,20 @@ media:
     id: 2902
     file: 2025/12/LightPaint_photo01_Assal-Toudehfallah.png
     role: featured
+    bytes: 1368833
     alt: null
     caption: null
   - type: image
     id: 2901
-    file: 2025/12/LightPaint_photo03_Assal-Toudehfallah-scaled.jpeg
+    file: 2025/12/LightPaint_photo03_Assal-Toudehfallah.jpeg
+    servedByWordpress: 2025/12/LightPaint_photo03_Assal-Toudehfallah-scaled.jpeg
+    bytes: 7854990
     alt: null
     caption: null
   - type: image
     id: 2903
     file: 2025/12/LightPaint_photo02_Assal-Toudehfallah.png
+    bytes: 2442624
     alt: null
     caption: null
 layout: default

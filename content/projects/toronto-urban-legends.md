@@ -21,21 +21,25 @@ media:
     id: 2200
     file: 2022/12/TorontoUrbanLegends_4_Shuting-Zhou.jpeg
     role: featured
+    bytes: 1518320
     alt: null
     caption: null
   - type: image
     id: 2201
     file: 2022/12/TorontoUrbanLegends_3_Shuting-Zhou.jpeg
+    bytes: 1794339
     alt: null
     caption: null
   - type: image
     id: 2202
     file: 2022/12/TorontoUrbanLegends_2_Shuting-Zhou.jpeg
+    bytes: 1304118
     alt: null
     caption: null
   - type: image
     id: 2203
     file: 2022/12/TorontoUrbanLegends_1_Shuting-Zhou.jpeg
+    bytes: 2340367
     alt: null
     caption: null
 layout: default

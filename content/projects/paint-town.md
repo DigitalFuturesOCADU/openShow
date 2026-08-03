@@ -25,26 +25,31 @@ media:
     id: 1618
     file: 2020/12/PaintTown_4_Thomas-Liu.png
     role: featured
+    bytes: 183093
     alt: null
     caption: null
   - type: image
     id: 1616
     file: 2020/12/PaintTown_3_Thomas-Liu.png
+    bytes: 268112
     alt: null
     caption: null
   - type: image
     id: 1615
     file: 2020/12/PaintTown_2_Thomas-Liu.png
+    bytes: 334825
     alt: null
     caption: null
   - type: image
     id: 1614
     file: 2020/12/PaintTown_1_Thomas-Liu.png
+    bytes: 583315
     alt: null
     caption: null
   - type: image
     id: 1619
     file: 2020/12/PaintTown_5_Thomas-Liu.gif
+    bytes: 9501786
     alt: null
     caption: null
 layout: default

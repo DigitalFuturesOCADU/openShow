@@ -21,13 +21,17 @@ creditsRaw: Olivia Prior
 media:
   - type: image
     id: 2260
-    file: 2023/04/Olivia-1-scaled.jpg
+    file: 2023/04/Olivia-1.jpg
     role: featured
+    servedByWordpress: 2023/04/Olivia-1-scaled.jpg
+    bytes: 3176450
     alt: null
     caption: null
   - type: image
     id: 2261
-    file: 2023/04/Olivia-2-scaled.jpg
+    file: 2023/04/Olivia-2.jpg
+    servedByWordpress: 2023/04/Olivia-2-scaled.jpg
+    bytes: 3162332
     alt: null
     caption: null
 layout: default

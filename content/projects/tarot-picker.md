@@ -25,26 +25,31 @@ media:
     id: 2754
     file: 2024/12/Screenshot-2024-10-07-093729_Judhell-Ramirez.png
     role: featured
+    bytes: 1909729
     alt: null
     caption: null
   - type: image
     id: 2753
     file: 2024/12/Screenshot-2024-10-07-093714_Judhell-Ramirez.png
+    bytes: 1623829
     alt: null
     caption: null
   - type: image
     id: 2752
     file: 2024/12/Screenshot-2024-10-07-093651_Judhell-Ramirez.png
+    bytes: 1947368
     alt: null
     caption: null
   - type: image
     id: 2751
     file: 2024/12/Screenshot-2024-10-07-093631_Judhell-Ramirez.png
+    bytes: 1846537
     alt: null
     caption: null
   - type: image
     id: 2750
     file: 2024/12/Screenshot-2024-10-07-093620_Judhell-Ramirez.png
+    bytes: 1845525
     alt: null
     caption: null
 layout: default

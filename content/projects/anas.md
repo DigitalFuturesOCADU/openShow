@@ -21,6 +21,7 @@ media:
     id: 2280
     file: 2023/04/Raza.jpg
     role: featured
+    bytes: 1424173
     alt: null
     caption: null
 layout: default

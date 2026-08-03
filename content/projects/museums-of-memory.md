@@ -21,21 +21,27 @@ media:
     id: 1622
     file: 2020/12/final-image-1_Grace-Yuan.jpg
     role: featured
+    bytes: 818496
     alt: null
     caption: null
   - type: image
     id: 1609
-    file: 2020/12/final-image-2_Grace-Yuan-scaled.jpg
+    file: 2020/12/final-image-2_Grace-Yuan.jpg
+    servedByWordpress: 2020/12/final-image-2_Grace-Yuan-scaled.jpg
+    bytes: 3979580
     alt: null
     caption: null
   - type: image
     id: 1623
     file: 2020/12/final-image-3_Grace-Yuan.jpg
+    bytes: 1011029
     alt: null
     caption: null
   - type: image
     id: 1611
-    file: 2020/12/final-image-4_Grace-Yuan-scaled.jpg
+    file: 2020/12/final-image-4_Grace-Yuan.jpg
+    servedByWordpress: 2020/12/final-image-4_Grace-Yuan-scaled.jpg
+    bytes: 3902501
     alt: null
     caption: null
   - type: video-embed

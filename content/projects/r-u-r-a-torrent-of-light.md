@@ -20,28 +20,38 @@ creditsRaw: Social Body Lab in collaboration with Tapestry Opera
 media:
   - type: image
     id: 2219
-    file: 2022/12/RURTorrentofLight-photobyDahliaKatz-7378-scaled.jpg
+    file: 2022/12/RURTorrentofLight-photobyDahliaKatz-7378.jpg
     role: featured
+    servedByWordpress: 2022/12/RURTorrentofLight-photobyDahliaKatz-7378-scaled.jpg
+    bytes: 13206803
     alt: null
     caption: null
   - type: image
     id: 2218
-    file: 2022/12/RURTorrentofLight-photobyDahliaKatz-7236-scaled.jpg
+    file: 2022/12/RURTorrentofLight-photobyDahliaKatz-7236.jpg
+    servedByWordpress: 2022/12/RURTorrentofLight-photobyDahliaKatz-7236-scaled.jpg
+    bytes: 20292682
     alt: null
     caption: null
   - type: image
     id: 2222
-    file: 2022/12/RURTorrentofLight-photobyDahliaKatz-7308-scaled.jpg
+    file: 2022/12/RURTorrentofLight-photobyDahliaKatz-7308.jpg
+    servedByWordpress: 2022/12/RURTorrentofLight-photobyDahliaKatz-7308-scaled.jpg
+    bytes: 10490012
     alt: null
     caption: null
   - type: image
     id: 2223
-    file: 2022/12/RURTorrentofLight-photobyDahliaKatz-6818-1-scaled.jpg
+    file: 2022/12/RURTorrentofLight-photobyDahliaKatz-6818-1.jpg
+    servedByWordpress: 2022/12/RURTorrentofLight-photobyDahliaKatz-6818-1-scaled.jpg
+    bytes: 14016543
     alt: null
     caption: null
   - type: image
     id: 2224
-    file: 2022/12/assembled1-scaled.jpg
+    file: 2022/12/assembled1.jpg
+    servedByWordpress: 2022/12/assembled1-scaled.jpg
+    bytes: 4747559
     alt: null
     caption: null
 layout: default
