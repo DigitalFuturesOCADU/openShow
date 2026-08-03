@@ -7,9 +7,7 @@ year: 2025
 session: null
 affiliation: []
 medium:
-  - design
   - games
-  - playshop
 tags: []
 credits:
   - name: Suzanne Stein

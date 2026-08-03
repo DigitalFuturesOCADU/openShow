@@ -12,7 +12,6 @@ medium:
   - installation
   - sculpture
   - web
-  - wellness
 tags: []
 credits:
   - name: Orus Mateo Castaño-Suárez

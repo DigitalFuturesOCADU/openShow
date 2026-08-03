@@ -9,6 +9,7 @@ affiliation:
   - graduate
 medium:
   - digital-fabrication
+  - nime
   - physical-computing
   - sound
 tags: []

@@ -146,7 +146,7 @@ function uniqueSlug(preferred, id) {
 const records = []
 const notes = {
   generatedSlugs: [], slugCollisions: [], unresolvedYear: [], yearConflicts: [],
-  droppedTerms: new Map(), missingFiles: [], danglingIds: [], galleryMismatch: [],
+  droppedTerms: new Map(), droppedByProject: new Map(), missingFiles: [], danglingIds: [], galleryMismatch: [],
   noAlt: 0, withAlt: 0, links: [], selfHostedVideo: [], embeds: [], dedupedImages: 0,
 }
 
@@ -167,6 +167,7 @@ for (const p of projects) {
     const r = resolveConcept(t.concept)
     if (!r) {
       notes.droppedTerms.set(t.concept, (notes.droppedTerms.get(t.concept) ?? 0) + 1)
+      notes.droppedByProject.set(p.id, [...(notes.droppedByProject.get(p.id) ?? []), t.concept])
       continue
     }
     ;(r.axis === 'affiliation' ? affiliation : medium).add(r.value)
@@ -375,6 +376,15 @@ All checks passed. Counts reproduce the 2026-08-03 audit exactly.
 `)
 
 const dropped = [...notes.droppedTerms].sort((a, b) => b[1] - a[1])
+const noMedium = records.filter((r) => r.frontmatter.medium.length === 0)
+const noMediumPublished = noMedium.filter((r) => r.status === 'publish')
+
+// Two distinct things that are easy to conflate: projects that ended up with no
+// medium, and projects that lost a term to a drop decision. Report them apart,
+// and state plainly whether any drop actually cost a project its last medium.
+const touchedByDrop = records.filter((r) => notes.droppedByProject.has(String(r.frontmatter.id)))
+const strippedByDrop = touchedByDrop.filter((r) => r.frontmatter.medium.length === 0)
+
 write(out('reports/taxonomy.md'), `# Taxonomy normalisation
 
 ${rawTermNames.size} raw terms → ${vocab.medium.size} medium + ${vocab.affiliation.size} affiliation values.
@@ -392,6 +402,30 @@ ${[...vocab.affiliation].sort().map((v) => `- \`${v}\``).join('\n')}
 ## Dropped terms
 
 ${dropped.length ? table([['Term', 'Items'], ['---', '---:'], ...dropped]) : '_None dropped._'}
+
+## Cost of the drop decisions
+
+${touchedByDrop.length} project${touchedByDrop.length === 1 ? '' : 's'} lost at least one term to a drop.
+**${strippedByDrop.length} of them lost their only medium**${strippedByDrop.length === 0 ? ' — every affected project kept other mediums, so nothing became undiscoverable.' : '.'}
+
+${touchedByDrop.length
+  ? table([['ID', 'Title', 'Dropped', 'Retained'], ['---', '---', '---', '---'],
+      ...touchedByDrop.map((r) => [r.frontmatter.id, r.frontmatter.title,
+        (notes.droppedByProject.get(String(r.frontmatter.id)) ?? []).join(', '),
+        r.frontmatter.medium.join(', ') || '**none**'])])
+  : '_No terms were dropped._'}
+
+## Projects with no medium (${noMedium.length})
+
+Not caused by the drop decisions — see above. These carry no medium term in the
+source data at all, so they will not appear under any medium filter.
+${noMediumPublished.length} ${noMediumPublished.length === 1 ? 'is' : 'are'} published.
+
+${noMedium.length
+  ? table([['ID', 'Status', 'Title', 'Source terms'], ['---', '---', '---', '---'],
+      ...noMedium.map((r) => [r.frontmatter.id, r.status, r.frontmatter.title,
+        r.frontmatter.sourceTerms.length ? r.frontmatter.sourceTerms.join(', ') : '_none — no categories_'])])
+  : '_None — every project has at least one medium._'}
 `)
 
 write(out('reports/unresolved.md'), `# Needs human attention

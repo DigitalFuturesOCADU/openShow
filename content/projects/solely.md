@@ -10,7 +10,6 @@ affiliation:
   - undergraduate
 medium:
   - 3d-printing
-  - business
   - digital-fabrication
 tags: []
 credits:
