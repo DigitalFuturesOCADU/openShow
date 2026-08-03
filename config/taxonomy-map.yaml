@@ -18,6 +18,14 @@
 # Interactive Documentary (2 with Webdoc) and UX (2 with UX Design) each read as
 # single-use in the raw list but are not, so they are kept.
 
+# Display labels. Slugs are lowercase, so a label is derived from whichever
+# source term matches the slug exactly — that recovers "AI", "VR", "NIME" and
+# "3D Printing" without help. Override here only where the tidy form never
+# existed as a WordPress term and so cannot be recovered.
+labels:
+  ug-thesis: UG Thesis            # only ever written "UGThesis"
+  speculative-fiction: Speculative Fiction   # only ever written "SpeculativeFiction"
+
 affiliation:
   Undergraduate: undergraduate   # (90)
   Graduate: graduate   # (83)

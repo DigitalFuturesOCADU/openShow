@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url'
 import { dump } from 'js-yaml'
 import TurndownService from 'turndown'
 import { readWxr, byType } from './lib/wxr.mjs'
-import { parseTerm, slugify, AFFILIATION, AUTO_MERGE, REVIEW_MERGE, buildProposalYaml, loadMap } from './lib/taxonomy.mjs'
+import { parseTerm, slugify, deriveLabel, AFFILIATION, AUTO_MERGE, REVIEW_MERGE, buildProposalYaml, loadMap } from './lib/taxonomy.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const SRC = join(ROOT, 'sources/wordpress-export.xml')
@@ -132,6 +132,7 @@ function resolveConcept(concept) {
 
 // ---------------------------------------------------------------- build
 
+const labelSources = { medium: new Map(), affiliation: new Map() }
 const usedSlugs = new Map()
 function uniqueSlug(preferred, id) {
   let s = preferred || `project-${id}`
@@ -171,6 +172,12 @@ for (const p of projects) {
       continue
     }
     ;(r.axis === 'affiliation' ? affiliation : medium).add(r.value)
+    // Remember which source concepts fed each slug, so labels can recover the
+    // original casing ("AI", not "Ai") instead of guessing from the slug.
+    const src = labelSources[r.axis]
+    if (!src.has(r.value)) src.set(r.value, new Map())
+    const m = src.get(r.value)
+    m.set(t.concept, (m.get(t.concept) ?? 0) + 1)
   }
 
   // --- slug ---------------------------------------------------------------
@@ -347,13 +354,59 @@ for (const r of records) {
   r.frontmatter.medium.forEach((m) => vocab.medium.add(m))
   r.frontmatter.affiliation.forEach((a) => vocab.affiliation.add(a))
 }
+
+const overrides = reviewedMap?.labels ?? {}
+const terms = (axis) =>
+  [...vocab[axis]].sort().map((slug) => ({
+    slug,
+    label: deriveLabel(slug, labelSources[axis].get(slug) ?? new Map(), overrides),
+    count: records.filter((r) => r.frontmatter[axis].includes(slug)).length,
+  }))
+
+// WordPress collapsed year, affiliation and medium into one flat taxonomy. They
+// are not the same kind of thing, and the differences are load-bearing: they
+// dictate cardinality, who supplies the value at submission, and whether the
+// value can go stale. Recording that here keeps the filter UI, the Zod schema
+// and the future CMS config from each re-deciding it.
 write(
   out('content/vocabularies.json'),
   JSON.stringify(
     {
       $comment: 'Single source of truth for controlled vocabularies. Read by the build and, at Step 8, by the CMS config. Do not duplicate these lists.',
-      medium: [...vocab.medium].sort(),
-      affiliation: [...vocab.affiliation].sort(),
+      axes: {
+        show: {
+          describes: 'the event — which Open Show the work appeared in',
+          cardinality: 'exactly one',
+          storage: 'content/shows/*.json — a first-class record, not a string',
+          setBy: 'organiser, never the submitter',
+          volatile: false,
+        },
+        affiliation: {
+          describes: 'the people — their relationship to the school at the time',
+          cardinality: 'zero or more (23 projects span two or three)',
+          storage: 'controlled vocabulary, project-level',
+          setBy: 'submitter declares',
+          volatile: true,
+          note: 'A snapshot that ages: an undergraduate in 2019 is an alum now. The value records what was true at the time of the show and should not be updated retroactively. 60 of 264 projects carry none. Public visibility is decision D5.',
+        },
+        medium: {
+          describes: 'the work — materials, techniques, form',
+          cardinality: 'zero or more (typically two or three, up to ten)',
+          storage: 'controlled vocabulary, project-level',
+          setBy: 'submitter picks from this list',
+          volatile: false,
+        },
+        tags: {
+          describes: 'anything else — themes, curatorial groupings, one-offs',
+          cardinality: 'zero or more',
+          storage: 'free-form',
+          setBy: 'curator',
+          volatile: false,
+          note: 'Deliberately uncontrolled, so new thematics do not require a schema change. Keeping this axis open is what stops medium drifting back into a catch-all.',
+        },
+      },
+      medium: terms('medium'),
+      affiliation: terms('affiliation'),
       tags: [],
     },
     null, 2,
