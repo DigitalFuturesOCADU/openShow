@@ -157,5 +157,31 @@ export function loadMap(path) {
   return {
     affiliation: doc.affiliation ?? {},
     medium: doc.medium ?? {},
+    labels: doc.labels ?? {},
   }
+}
+
+/**
+ * Human-readable label for a normalised slug.
+ *
+ * Slugs are lowercase, so naive capitalisation renders "ai" as "Ai" and
+ * "3d-printing" as "3d Printing". The source vocabulary already had the right
+ * casing, so prefer the source concept whose slug matches the target exactly —
+ * that recovers "AI", "VR", "3D Printing" for free. Explicit overrides win.
+ *
+ * @param slug      normalised value, e.g. "ug-thesis"
+ * @param concepts  Map of source concept -> item count that resolved to it
+ * @param overrides labels: block from the reviewed map
+ */
+export function deriveLabel(slug, concepts, overrides = {}) {
+  if (overrides[slug]) return overrides[slug]
+
+  const candidates = [...concepts].sort((a, b) => b[1] - a[1])
+  const exact = candidates.find(([c]) => slugify(c) === slug)
+  if (exact) return exact[0]
+
+  const best = candidates[0]?.[0]
+  if (best) return best
+
+  return slug.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' ')
 }

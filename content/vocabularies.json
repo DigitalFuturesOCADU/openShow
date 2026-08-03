@@ -1,40 +1,200 @@
 {
   "$comment": "Single source of truth for controlled vocabularies. Read by the build and, at Step 8, by the CMS config. Do not duplicate these lists.",
+  "axes": {
+    "show": {
+      "describes": "the event — which Open Show the work appeared in",
+      "cardinality": "exactly one",
+      "storage": "content/shows/*.json — a first-class record, not a string",
+      "setBy": "organiser, never the submitter",
+      "volatile": false
+    },
+    "affiliation": {
+      "describes": "the people — their relationship to the school at the time",
+      "cardinality": "zero or more (23 projects span two or three)",
+      "storage": "controlled vocabulary, project-level",
+      "setBy": "submitter declares",
+      "volatile": true,
+      "note": "A snapshot that ages: an undergraduate in 2019 is an alum now. The value records what was true at the time of the show and should not be updated retroactively. 60 of 264 projects carry none. Public visibility is decision D5."
+    },
+    "medium": {
+      "describes": "the work — materials, techniques, form",
+      "cardinality": "zero or more (typically two or three, up to ten)",
+      "storage": "controlled vocabulary, project-level",
+      "setBy": "submitter picks from this list",
+      "volatile": false
+    },
+    "tags": {
+      "describes": "anything else — themes, curatorial groupings, one-offs",
+      "cardinality": "zero or more",
+      "storage": "free-form",
+      "setBy": "curator",
+      "volatile": false,
+      "note": "Deliberately uncontrolled, so new thematics do not require a schema change. Keeping this axis open is what stops medium drifting back into a catch-all."
+    }
+  },
   "medium": [
-    "3d-printing",
-    "ai",
-    "animation",
-    "ar",
-    "character-art",
-    "code",
-    "data-visualization",
-    "digital-fabrication",
-    "games",
-    "generative",
-    "illustration",
-    "installation",
-    "interactive-documentary",
-    "mobile",
-    "nime",
-    "performance",
-    "photography",
-    "physical-computing",
-    "robotics",
-    "sculpture",
-    "sound",
-    "speculative-fiction",
-    "ux",
-    "video",
-    "vr",
-    "wearables",
-    "web"
+    {
+      "slug": "3d-printing",
+      "label": "3D Printing",
+      "count": 12
+    },
+    {
+      "slug": "ai",
+      "label": "AI",
+      "count": 10
+    },
+    {
+      "slug": "animation",
+      "label": "Animation",
+      "count": 36
+    },
+    {
+      "slug": "ar",
+      "label": "AR",
+      "count": 20
+    },
+    {
+      "slug": "character-art",
+      "label": "Character Art",
+      "count": 2
+    },
+    {
+      "slug": "code",
+      "label": "Code",
+      "count": 112
+    },
+    {
+      "slug": "data-visualization",
+      "label": "Data Visualization",
+      "count": 4
+    },
+    {
+      "slug": "digital-fabrication",
+      "label": "Digital Fabrication",
+      "count": 48
+    },
+    {
+      "slug": "games",
+      "label": "Games",
+      "count": 60
+    },
+    {
+      "slug": "generative",
+      "label": "Generative",
+      "count": 3
+    },
+    {
+      "slug": "illustration",
+      "label": "Illustration",
+      "count": 5
+    },
+    {
+      "slug": "installation",
+      "label": "Installation",
+      "count": 99
+    },
+    {
+      "slug": "interactive-documentary",
+      "label": "Interactive Documentary",
+      "count": 2
+    },
+    {
+      "slug": "mobile",
+      "label": "Mobile",
+      "count": 13
+    },
+    {
+      "slug": "nime",
+      "label": "NIME",
+      "count": 3
+    },
+    {
+      "slug": "performance",
+      "label": "Performance",
+      "count": 35
+    },
+    {
+      "slug": "photography",
+      "label": "Photography",
+      "count": 5
+    },
+    {
+      "slug": "physical-computing",
+      "label": "Physical Computing",
+      "count": 77
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics",
+      "count": 2
+    },
+    {
+      "slug": "sculpture",
+      "label": "Sculpture",
+      "count": 20
+    },
+    {
+      "slug": "sound",
+      "label": "Sound",
+      "count": 30
+    },
+    {
+      "slug": "speculative-fiction",
+      "label": "Speculative Fiction",
+      "count": 2
+    },
+    {
+      "slug": "ux",
+      "label": "UX",
+      "count": 2
+    },
+    {
+      "slug": "video",
+      "label": "Video",
+      "count": 49
+    },
+    {
+      "slug": "vr",
+      "label": "VR",
+      "count": 27
+    },
+    {
+      "slug": "wearables",
+      "label": "Wearables",
+      "count": 29
+    },
+    {
+      "slug": "web",
+      "label": "Web",
+      "count": 42
+    }
   ],
   "affiliation": [
-    "alumni",
-    "faculty",
-    "graduate",
-    "ug-thesis",
-    "undergraduate"
+    {
+      "slug": "alumni",
+      "label": "Alumni",
+      "count": 18
+    },
+    {
+      "slug": "faculty",
+      "label": "Faculty",
+      "count": 15
+    },
+    {
+      "slug": "graduate",
+      "label": "Graduate",
+      "count": 83
+    },
+    {
+      "slug": "ug-thesis",
+      "label": "UG Thesis",
+      "count": 17
+    },
+    {
+      "slug": "undergraduate",
+      "label": "Undergraduate",
+      "count": 96
+    }
   ],
   "tags": []
 }
