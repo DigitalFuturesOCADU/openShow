@@ -12,11 +12,14 @@ medium:
   - games
 tags: []
 credits:
-  - name: Madelaine Fischer-Bernhut
+  - personId: madelaine-fischer-bernhut
+    name: Madelaine Fischer-Bernhut
     role: null
-  - name: Shiloh Light-Barnes
+  - personId: shiloh-light-barnes
+    name: Shiloh Light-Barnes
     role: null
-  - name: Sam Kingston
+  - personId: sam-kingston
+    name: Sam Kingston
     role: null
 creditsRaw: Madelaine Fischer-Bernhut, Shiloh Light-Barnes, Sam Kingston
 media:

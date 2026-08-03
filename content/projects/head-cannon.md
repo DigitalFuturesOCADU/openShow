@@ -13,7 +13,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Tania Samokhvalova
+  - personId: tania-samokhvalova
+    name: Tania Samokhvalova
     role: null
 creditsRaw: Tania Samokhvalova
 media:

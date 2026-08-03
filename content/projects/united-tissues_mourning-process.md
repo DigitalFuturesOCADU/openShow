@@ -10,7 +10,8 @@ affiliation:
 medium: []
 tags: []
 credits:
-  - name: Barbara Rauch
+  - personId: barbara-rauch
+    name: Barbara Rauch
     role: null
 creditsRaw: Barbara Rauch
 media:

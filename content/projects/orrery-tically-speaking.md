@@ -13,7 +13,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Jerez Bain
+  - personId: jerez-bain
+    name: Jerez Bain
     role: null
 creditsRaw: Jerez Bain
 media:

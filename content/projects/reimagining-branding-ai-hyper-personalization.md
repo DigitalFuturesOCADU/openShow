@@ -13,7 +13,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Mahnoor Hasan
+  - personId: mahnoor-hasan
+    name: Mahnoor Hasan
     role: null
 creditsRaw: Mahnoor Hasan
 media:

@@ -12,15 +12,16 @@ medium:
   - games
 tags: []
 credits:
-  - name: Vivan Fu
+  - personId: vivan-fu
+    name: Vivan Fu
     role: null
-  - name: Pandy Ma
+  - personId: pandy-ma
+    name: Pandy Ma
     role: null
-  - name: amp
+  - personId: sydney-pallister
+    name: Sydney Pallister
     role: null
-  - name: Sydney Pallister
-    role: null
-creditsRaw: Vivan Fu, Pandy Ma &amp; Sydney Pallister
+creditsRaw: Vivan Fu, Pandy Ma & Sydney Pallister
 media:
   - type: image
     id: 1889

@@ -12,23 +12,32 @@ medium:
   - games
 tags: []
 credits:
-  - name: Shane Colby
+  - personId: shane-colby
+    name: Shane Colby
     role: null
-  - name: Parth Vats
+  - personId: parth-vats
+    name: Parth Vats
     role: null
-  - name: Sebastian Santoni
+  - personId: sebastian-santoni
+    name: Sebastian Santoni
     role: null
-  - name: Hanmin Kim
+  - personId: hanmin-kim
+    name: Hanmin Kim
     role: null
-  - name: John Cao
+  - personId: john-cao
+    name: John Cao
     role: null
-  - name: Joe
+  - personId: joe
+    name: Joe
     role: null
-  - name: Ozan
+  - personId: ozan
+    name: Ozan
     role: null
-  - name: Jeffery Paik
+  - personId: jeffery-paik
+    name: Jeffery Paik
     role: null
-  - name: Abelia Chan
+  - personId: abelia-chan
+    name: Abelia Chan
     role: null
 creditsRaw: >-
   Shane Colby, Parth Vats, Sebastian Santoni, Hanmin Kim, John Cao, Joe, Ozan, Jeffery Paik, Abelia

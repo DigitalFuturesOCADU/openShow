@@ -13,13 +13,17 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Orus Mateo Castano Suarez
+  - personId: orus-mateo-castano-suarez
+    name: Orus Mateo Castano Suarez
     role: null
-  - name: Juan Sulca
+  - personId: juan-sulca
+    name: Juan Sulca
     role: null
-  - name: Aileen D
+  - personId: aileen-d
+    name: Aileen D
     role: null
-  - name: Yu-Shien Yang
+  - personId: yu-shien-yang
+    name: Yu-Shien Yang
     role: null
 creditsRaw: Orus Mateo Castano Suarez, Juan Sulca, Aileen D, Yu-Shien Yang
 media:

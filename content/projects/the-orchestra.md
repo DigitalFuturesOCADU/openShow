@@ -13,9 +13,11 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Abha Patil
+  - personId: abha-patil
+    name: Abha Patil
     role: null
-  - name: Jessica Patel
+  - personId: jessica-patel
+    name: Jessica Patel
     role: null
 creditsRaw: Abha Patil, Jessica Patel
 media:

@@ -10,7 +10,8 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Sebastian Gorfinkel
+  - personId: sebastian-gorfinkel
+    name: Sebastian Gorfinkel
     role: null
 creditsRaw: Sebastian Gorfinkel
 media:

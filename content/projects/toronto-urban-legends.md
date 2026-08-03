@@ -12,7 +12,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Shuting Zhou
+  - personId: shuting-zhou
+    name: Shuting Zhou
     role: null
 creditsRaw: Shuting Zhou
 media:

@@ -13,7 +13,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Zhihan Zhang
+  - personId: zhihan-zhang
+    name: Zhihan Zhang
     role: null
 creditsRaw: Zhihan Zhang
 media:

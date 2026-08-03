@@ -14,9 +14,11 @@ medium:
   - performance
 tags: []
 credits:
-  - name: Finlay Braithwaite
+  - personId: finlay-braithwaite
+    name: Finlay Braithwaite
     role: null
-  - name: Yiyi Shao
+  - personId: yiyi-shao
+    name: Yiyi Shao
     role: null
 creditsRaw: Finlay Braithwaite and Yiyi Shao
 media:

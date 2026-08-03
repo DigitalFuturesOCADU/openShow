@@ -13,9 +13,11 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Xinzhou Zhang
+  - personId: xinzhou-zhang
+    name: Xinzhou Zhang
     role: null
-  - name: Ailin Dong
+  - personId: ailin-dong
+    name: Ailin Dong
     role: null
 creditsRaw: Xinzhou Zhang, Ailin Dong
 media:

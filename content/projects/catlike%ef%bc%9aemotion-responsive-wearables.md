@@ -14,7 +14,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Thea Lu
+  - personId: thea-lu
+    name: Thea Lu
     role: null
 creditsRaw: Thea Lu
 media:

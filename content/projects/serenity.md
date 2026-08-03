@@ -11,7 +11,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Rhepa Kamal
+  - personId: rhepa-kamal
+    name: Rhepa Kamal
     role: null
 creditsRaw: Rhepa Kamal
 media:

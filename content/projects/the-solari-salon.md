@@ -13,7 +13,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Marquessa Mackenzie
+  - personId: marquessa-mackenzie
+    name: Marquessa Mackenzie
     role: null
 creditsRaw: Marquessa Mackenzie
 media:

@@ -13,13 +13,17 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Hafsa Ahmad
+  - personId: hafsa-ahmad
+    name: Hafsa Ahmad
     role: null
-  - name: Cole Kassirer
+  - personId: cole-kassirer
+    name: Cole Kassirer
     role: null
-  - name: Mika MacLOear Wall
+  - personId: mika-macloear-wall
+    name: Mika MacLOear Wall
     role: null
-  - name: Giuliana Costa
+  - personId: giuliana-costa
+    name: Giuliana Costa
     role: null
 creditsRaw: Hafsa Ahmad, Cole Kassirer, Mika MacLOear Wall, Giuliana Costa
 media:

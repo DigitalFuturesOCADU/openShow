@@ -12,7 +12,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Mehdi Farahani
+  - personId: mehdi-farahani
+    name: Mehdi Farahani
     role: null
 creditsRaw: Mehdi Farahani
 media:

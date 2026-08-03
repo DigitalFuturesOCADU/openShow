@@ -12,7 +12,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Johan Seaton
+  - personId: johan-seaton
+    name: Johan Seaton
     role: null
 creditsRaw: Johan Seaton
 media:

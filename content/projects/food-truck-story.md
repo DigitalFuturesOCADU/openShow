@@ -15,15 +15,20 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Luke D'Alfonsi
+  - personId: luke-d-alfonsi
+    name: Luke D'Alfonsi
     role: null
-  - name: Justine Magbitang
+  - personId: justine-magbitang
+    name: Justine Magbitang
     role: null
-  - name: Yannan Ma
+  - personId: yannan-ma
+    name: Yannan Ma
     role: null
-  - name: Roann Cordova
+  - personId: roann-cordova
+    name: Roann Cordova
     role: null
-  - name: Hedy Fu
+  - personId: hedy-fu
+    name: Hedy Fu
     role: null
 creditsRaw: Luke D'Alfonsi, Justine Magbitang, Yannan Ma, Roann Cordova, Hedy Fu
 media:

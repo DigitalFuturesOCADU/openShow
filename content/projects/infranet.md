@@ -10,9 +10,11 @@ affiliation:
 medium: []
 tags: []
 credits:
-  - name: Haru Ji
+  - personId: haru-ji
+    name: Haru Ji
     role: null
-  - name: Graham Wakefield
+  - personId: graham-wakefield
+    name: Graham Wakefield
     role: null
 creditsRaw: Haru Ji, Graham Wakefield
 media:

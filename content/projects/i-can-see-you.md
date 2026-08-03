@@ -15,7 +15,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Yusif Safarzade
+  - personId: yusif-safarzade
+    name: Yusif Safarzade
     role: null
 creditsRaw: Yusif Safarzade
 media:

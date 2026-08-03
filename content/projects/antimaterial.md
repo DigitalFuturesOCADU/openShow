@@ -15,11 +15,14 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Yutong Jessie Zheng
+  - personId: yutong-jessie-zheng
+    name: Yutong Jessie Zheng
     role: null
-  - name: Masha Shirokova
+  - personId: masha-shirokova
+    name: Masha Shirokova
     role: null
-  - name: Liam Clarke
+  - personId: liam-clarke
+    name: Liam Clarke
     role: null
 creditsRaw: Yutong Jessie Zheng, Masha Shirokova, Liam Clarke
 media:

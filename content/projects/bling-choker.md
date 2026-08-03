@@ -13,7 +13,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Sananda Dutta
+  - personId: sananda-dutta
+    name: Sananda Dutta
     role: null
 creditsRaw: Sananda Dutta
 media:

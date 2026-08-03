@@ -14,7 +14,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Olivia Pasian
+  - personId: olivia-pasian
+    name: Olivia Pasian
     role: null
 creditsRaw: Olivia Pasian
 media:

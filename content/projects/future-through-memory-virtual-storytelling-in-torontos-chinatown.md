@@ -13,7 +13,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Lilian Leung
+  - personId: lilian-leung
+    name: Lilian Leung
     role: null
 creditsRaw: Lilian Leung
 media:

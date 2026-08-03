@@ -16,9 +16,11 @@ medium:
   - web
 tags: []
 credits:
-  - name: Kartikay Chadha
+  - personId: kartikay-chadha
+    name: Kartikay Chadha
     role: null
-  - name: Dr. Martha Laldy
+  - personId: dr-martha-laldy
+    name: Dr. Martha Laldy
     role: null
 creditsRaw: Kartikay Chadha, Dr. Martha Laldy
 media:

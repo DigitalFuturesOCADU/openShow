@@ -13,7 +13,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Thomas Graham
+  - personId: thomas-graham
+    name: Thomas Graham
     role: null
 creditsRaw: Thomas Graham
 media:

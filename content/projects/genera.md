@@ -14,17 +14,23 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Sydney Pallister
+  - personId: sydney-pallister
+    name: Sydney Pallister
     role: null
-  - name: Johan Seaton
+  - personId: johan-seaton
+    name: Johan Seaton
     role: null
-  - name: Mika Hirata
+  - personId: mika-hirata
+    name: Mika Hirata
     role: null
-  - name: Erika Davis
+  - personId: erika-davis
+    name: Erika Davis
     role: null
-  - name: Ardy Llantino
+  - personId: ardy-llantino
+    name: Ardy Llantino
     role: null
-  - name: Pandy Ma
+  - personId: pandy-ma
+    name: Pandy Ma
     role: null
 creditsRaw: Sydney Pallister, Johan Seaton, Mika Hirata, Erika Davis, Ardy Llantino, Pandy Ma
 media:

@@ -14,15 +14,20 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Data Materialization Studio Lab
+  - personId: data-materialization-studio-lab
+    name: Data Materialization Studio Lab
     role: null
-  - name: 'collective project: Angela Atkinson'
+  - personId: collective-project-angela-atkinson
+    name: 'collective project: Angela Atkinson'
     role: null
-  - name: Michelle Gay
+  - personId: michelle-gay
+    name: Michelle Gay
     role: null
-  - name: Barbara Rauch
+  - personId: barbara-rauch
+    name: Barbara Rauch
     role: null
-  - name: Casper Sutton-Fosman
+  - personId: casper-sutton-fosman
+    name: Casper Sutton-Fosman
     role: null
 creditsRaw: >-
   Data Materialization Studio Lab, collective project: Angela Atkinson, Michelle Gay, Barbara Rauch,

@@ -16,13 +16,17 @@ medium:
   - web
 tags: []
 credits:
-  - name: Roshan Leynes
+  - personId: roshan-leynes
+    name: Roshan Leynes
     role: null
-  - name: Brian Nguyen
+  - personId: brian-nguyen
+    name: Brian Nguyen
     role: null
-  - name: Denzel Arthur
+  - personId: denzel-arthur
+    name: Denzel Arthur
     role: null
-  - name: Isaak Shingray
+  - personId: isaak-shingray
+    name: Isaak Shingray
     role: null
 creditsRaw: Roshan Leynes, Brian Nguyen, Denzel Arthur, Isaak Shingray
 media:

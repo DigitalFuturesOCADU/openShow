@@ -13,7 +13,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Social Body Lab in collaboration with Tapestry Opera
+  - personId: social-body-lab-in-collaboration-with-tapestry-opera
+    name: Social Body Lab in collaboration with Tapestry Opera
     role: null
 creditsRaw: Social Body Lab in collaboration with Tapestry Opera
 media:

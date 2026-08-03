@@ -15,7 +15,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Jignesh Gharat
+  - personId: jignesh-gharat
+    name: Jignesh Gharat
     role: null
 creditsRaw: Jignesh Gharat
 media:

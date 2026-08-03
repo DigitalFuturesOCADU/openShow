@@ -12,7 +12,8 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Vivian Wong
+  - personId: vivian-wong
+    name: Vivian Wong
     role: null
 creditsRaw: Vivian Wong
 media:

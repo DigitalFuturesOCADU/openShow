@@ -16,17 +16,23 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Yannan Ma
+  - personId: yannan-ma
+    name: Yannan Ma
     role: null
-  - name: Hedy Fu
+  - personId: hedy-fu
+    name: Hedy Fu
     role: null
-  - name: Roann Cordova
+  - personId: roann-cordova
+    name: Roann Cordova
     role: null
-  - name: Yilia Li
+  - personId: yilia-li
+    name: Yilia Li
     role: null
-  - name: Mark Lin
+  - personId: mark-lin
+    name: Mark Lin
     role: null
-  - name: Kan Huang
+  - personId: kan-huang
+    name: Kan Huang
     role: null
 creditsRaw: Yannan Ma, Hedy Fu, Roann Cordova, Yilia Li, Mark Lin, Kan Huang
 media:

@@ -12,13 +12,17 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Kunal Devi
+  - personId: kunal-devi
+    name: Kunal Devi
     role: null
-  - name: Nikhil Thomas
+  - personId: nikhil-thomas
+    name: Nikhil Thomas
     role: null
-  - name: Abha Patil
+  - personId: abha-patil
+    name: Abha Patil
     role: null
-  - name: Madhu Priya
+  - personId: madhu-priya
+    name: Madhu Priya
     role: null
 creditsRaw: Kunal Devi, Nikhil Thomas, Abha Patil, Madhu Priya
 media:

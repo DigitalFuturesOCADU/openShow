@@ -10,7 +10,8 @@ medium:
   - games
 tags: []
 credits:
-  - name: Srikripa Krishnan
+  - personId: srikripa-krishnan
+    name: Srikripa Krishnan
     role: null
 creditsRaw: Srikripa Krishnan
 media:

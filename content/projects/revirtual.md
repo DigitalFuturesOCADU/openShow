@@ -12,7 +12,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Peng Guan
+  - personId: peng-guan
+    name: Peng Guan
     role: null
 creditsRaw: Peng Guan
 media:

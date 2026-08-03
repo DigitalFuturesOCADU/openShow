@@ -15,7 +15,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Aranya Khurana
+  - personId: aranya-khurana
+    name: Aranya Khurana
     role: null
 creditsRaw: Aranya Khurana
 media:

@@ -12,9 +12,11 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Joshua Jacob Pothen
+  - personId: joshua-jacob-pothen
+    name: Joshua Jacob Pothen
     role: null
-  - name: Erinma Arki
+  - personId: erinma-arki
+    name: Erinma Arki
     role: null
 creditsRaw: Joshua Jacob Pothen, Erinma Arki
 media:

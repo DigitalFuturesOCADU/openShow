@@ -13,9 +13,11 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Abha Patil
+  - personId: abha-patil
+    name: Abha Patil
     role: null
-  - name: Juan Sulca
+  - personId: juan-sulca
+    name: Juan Sulca
     role: null
 creditsRaw: Abha Patil, Juan Sulca
 media: []

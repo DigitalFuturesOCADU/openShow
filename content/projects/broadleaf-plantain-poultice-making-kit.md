@@ -12,7 +12,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Rim Armouch
+  - personId: rim-armouch
+    name: Rim Armouch
     role: null
 creditsRaw: Rim Armouch
 media:

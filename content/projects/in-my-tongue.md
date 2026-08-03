@@ -13,9 +13,11 @@ medium:
   - web
 tags: []
 credits:
-  - name: Patricia "Trish" Kanana Mwenda
+  - personId: patricia-trish-kanana-mwenda
+    name: Patricia "Trish" Kanana Mwenda
     role: null
-  - name: Candide Uyanze
+  - personId: candide-uyanze
+    name: Candide Uyanze
     role: null
 creditsRaw: Patricia "Trish" Kanana Mwenda and Candide Uyanze
 media:

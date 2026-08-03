@@ -14,7 +14,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Sarah Boo
+  - personId: sarah-boo
+    name: Sarah Boo
     role: null
 creditsRaw: Sarah Boo
 media:

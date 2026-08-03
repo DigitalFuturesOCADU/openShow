@@ -13,9 +13,11 @@ medium:
   - web
 tags: []
 credits:
-  - name: Patricia Kanana Mwenda
+  - personId: patricia-kanana-mwenda
+    name: Patricia Kanana Mwenda
     role: null
-  - name: Candide Uyanze
+  - personId: candide-uyanze
+    name: Candide Uyanze
     role: null
 creditsRaw: Patricia Kanana Mwenda and Candide Uyanze
 media:

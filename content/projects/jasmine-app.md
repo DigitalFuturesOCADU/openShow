@@ -11,7 +11,8 @@ medium:
   - mobile
 tags: []
 credits:
-  - name: Nimah Shoaib
+  - personId: nimah-shoaib
+    name: Nimah Shoaib
     role: null
 creditsRaw: Nimah Shoaib
 media:

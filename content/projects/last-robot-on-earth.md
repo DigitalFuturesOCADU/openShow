@@ -12,19 +12,26 @@ medium:
   - games
 tags: []
 credits:
-  - name: Sabina Shin
+  - personId: sabina-shin
+    name: Sabina Shin
     role: null
-  - name: Kartik Saravana Arvind
+  - personId: kartik-saravana-arvind
+    name: Kartik Saravana Arvind
     role: null
-  - name: Thomas Liu
+  - personId: thomas-liu
+    name: Thomas Liu
     role: null
-  - name: Liam Gonzales
+  - personId: liam-gonzales
+    name: Liam Gonzales
     role: null
-  - name: Raquel Lopes
+  - personId: raquel-lopes
+    name: Raquel Lopes
     role: null
-  - name: Elizabeth Legierski
+  - personId: elizabeth-legierski
+    name: Elizabeth Legierski
     role: null
-  - name: Katharine Petkovski
+  - personId: katharine-petkovski
+    name: Katharine Petkovski
     role: null
 creditsRaw: >-
   Sabina Shin, Kartik Saravana Arvind, Thomas Liu, Liam Gonzales, Raquel Lopes, Elizabeth Legierski,

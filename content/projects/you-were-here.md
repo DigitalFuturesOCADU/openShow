@@ -12,7 +12,8 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Yang YI
+  - personId: yang-yi
+    name: Yang YI
     role: null
 creditsRaw: Yang YI
 media:

@@ -9,7 +9,8 @@ affiliation: []
 medium: []
 tags: []
 credits:
-  - name: Dikla Sinai
+  - personId: dikla-sinai
+    name: Dikla Sinai
     role: null
 creditsRaw: Dikla Sinai
 media:

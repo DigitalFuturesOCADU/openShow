@@ -15,7 +15,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Achal Shah
+  - personId: achal-shah
+    name: Achal Shah
     role: null
 creditsRaw: Achal Shah
 media:

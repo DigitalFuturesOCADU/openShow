@@ -13,7 +13,8 @@ medium:
   - games
 tags: []
 credits:
-  - name: Ziyi Wang
+  - personId: ziyi-wang
+    name: Ziyi Wang
     role: null
 creditsRaw: Ziyi Wang
 media:

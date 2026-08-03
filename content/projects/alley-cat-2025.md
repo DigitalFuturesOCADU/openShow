@@ -11,19 +11,26 @@ medium:
   - web
 tags: []
 credits:
-  - name: Jackson Crittenden
+  - personId: jackson-crittenden
+    name: Jackson Crittenden
     role: null
-  - name: Aathmaja Ananth
+  - personId: aathmaja-ananth
+    name: Aathmaja Ananth
     role: null
-  - name: Maggie Domagala
+  - personId: maggie-domagala
+    name: Maggie Domagala
     role: null
-  - name: Bryan Lee
+  - personId: bryan-lee
+    name: Bryan Lee
     role: null
-  - name: David Nguyen
+  - personId: david-nguyen
+    name: David Nguyen
     role: null
-  - name: Peter Zougas
+  - personId: peter-zougas
+    name: Peter Zougas
     role: null
-  - name: Mika Maclear Wall
+  - personId: mika-maclear-wall
+    name: Mika Maclear Wall
     role: null
 creditsRaw: >-
   Jackson Crittenden, Aathmaja Ananth, Maggie Domagala, Bryan Lee, David Nguyen, Peter Zougas, Mika

@@ -15,15 +15,20 @@ medium:
   - video
 tags: []
 credits:
-  - name: Saad Aslam Ali
+  - personId: saad-aslam-ali
+    name: Saad Aslam Ali
     role: null
-  - name: Rojina Pedramy
+  - personId: rojina-pedramy
+    name: Rojina Pedramy
     role: null
-  - name: Yusif Safarzade
+  - personId: yusif-safarzade
+    name: Yusif Safarzade
     role: null
-  - name: Menita Sriharsha
+  - personId: menita-sriharsha
+    name: Menita Sriharsha
     role: null
-  - name: Hana Zaghloul
+  - personId: hana-zaghloul
+    name: Hana Zaghloul
     role: null
 creditsRaw: Saad Aslam Ali, Rojina Pedramy, Yusif Safarzade, Menita Sriharsha, Hana Zaghloul
 media:

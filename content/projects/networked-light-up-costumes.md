@@ -13,13 +13,17 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Kate Hartman
+  - personId: kate-hartman
+    name: Kate Hartman
     role: null
-  - name: Nick Puckett
+  - personId: nick-puckett
+    name: Nick Puckett
     role: null
-  - name: Juan Sulca
+  - personId: juan-sulca
+    name: Juan Sulca
     role: null
-  - name: Adam Tindale
+  - personId: adam-tindale
+    name: Adam Tindale
     role: null
 creditsRaw: Kate Hartman, Nick Puckett, Juan Sulca, Adam Tindale
 media:

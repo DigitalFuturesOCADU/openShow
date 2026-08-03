@@ -10,7 +10,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Rojina Pedramy
+  - personId: rojina-pedramy
+    name: Rojina Pedramy
     role: null
 creditsRaw: Rojina Pedramy
 media:

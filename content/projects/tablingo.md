@@ -14,7 +14,8 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Kunal Devi
+  - personId: kunal-devi
+    name: Kunal Devi
     role: null
 creditsRaw: Kunal Devi
 media:

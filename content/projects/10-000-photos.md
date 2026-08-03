@@ -13,11 +13,14 @@ medium:
   - web
 tags: []
 credits:
-  - name: Kahani Ploessl
+  - personId: kahani-ploessl
+    name: Kahani Ploessl
     role: null
-  - name: Josh Igwe
+  - personId: josh-igwe
+    name: Josh Igwe
     role: null
-  - name: Aljumaine Gayle
+  - personId: aljumaine-gayle
+    name: Aljumaine Gayle
     role: null
 creditsRaw: Kahani Ploessl, Josh Igwe, Aljumaine Gayle
 media:

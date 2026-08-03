@@ -14,7 +14,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Meicen Zhou
+  - personId: meicen-zhou
+    name: Meicen Zhou
     role: null
 creditsRaw: Meicen Zhou
 media:

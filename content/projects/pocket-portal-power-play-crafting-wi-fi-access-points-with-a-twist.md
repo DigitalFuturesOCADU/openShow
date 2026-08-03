@@ -13,7 +13,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Candide Uyanze
+  - personId: candide-uyanze
+    name: Candide Uyanze
     role: null
 creditsRaw: Candide Uyanze
 media:

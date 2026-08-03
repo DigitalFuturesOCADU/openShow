@@ -12,7 +12,8 @@ medium:
   - illustration
 tags: []
 credits:
-  - name: Salisa Jatuweerapong
+  - personId: salisa-jatuweerapong
+    name: Salisa Jatuweerapong
     role: null
 creditsRaw: Salisa Jatuweerapong
 media:

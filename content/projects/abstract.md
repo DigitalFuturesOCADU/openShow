@@ -14,7 +14,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Georgina Yeboah
+  - personId: georgina-yeboah
+    name: Georgina Yeboah
     role: null
 creditsRaw: Georgina Yeboah
 media:

@@ -14,11 +14,14 @@ medium:
   - web
 tags: []
 credits:
-  - name: Olivia Pasian
+  - personId: olivia-pasian
+    name: Olivia Pasian
     role: null
-  - name: JC Zhang
+  - personId: jc-zhang
+    name: JC Zhang
     role: null
-  - name: Harry Zhao
+  - personId: harry-zhao
+    name: Harry Zhao
     role: null
 creditsRaw: Olivia Pasian, JC Zhang, Harry Zhao
 media:

@@ -13,15 +13,20 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Kate Hartman
+  - personId: kate-hartman
+    name: Kate Hartman
     role: null
-  - name: Nick Puckett
+  - personId: nick-puckett
+    name: Nick Puckett
     role: null
-  - name: Aranya Khurana
+  - personId: aranya-khurana
+    name: Aranya Khurana
     role: null
-  - name: Abha Patil
+  - personId: abha-patil
+    name: Abha Patil
     role: null
-  - name: Juan Sulca
+  - personId: juan-sulca
+    name: Juan Sulca
     role: null
 creditsRaw: Kate Hartman, Nick Puckett, Aranya Khurana, Abha Patil, Juan Sulca,
 media:

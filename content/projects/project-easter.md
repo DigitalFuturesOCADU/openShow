@@ -12,7 +12,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Nicholas Addeo
+  - personId: nicholas-addeo
+    name: Nicholas Addeo
     role: null
 creditsRaw: Nicholas Addeo
 media:

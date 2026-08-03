@@ -11,9 +11,11 @@ medium:
   - video
 tags: []
 credits:
-  - name: Weiqi Wu
+  - personId: weiqi-wu
+    name: Weiqi Wu
     role: null
-  - name: Qinxinrui Zhu
+  - personId: qinxinrui-zhu
+    name: Qinxinrui Zhu
     role: null
 creditsRaw: Weiqi Wu, Qinxinrui Zhu
 media:

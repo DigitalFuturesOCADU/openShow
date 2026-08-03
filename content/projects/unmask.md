@@ -13,7 +13,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Jacob Cram
+  - personId: jacob-cram
+    name: Jacob Cram
     role: null
 creditsRaw: Jacob Cram
 media: []

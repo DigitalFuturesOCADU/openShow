@@ -11,7 +11,8 @@ medium:
   - games
 tags: []
 credits:
-  - name: Prayag Ichangimath
+  - personId: prayag-ichangimath
+    name: Prayag Ichangimath
     role: null
 creditsRaw: Prayag Ichangimath
 media:

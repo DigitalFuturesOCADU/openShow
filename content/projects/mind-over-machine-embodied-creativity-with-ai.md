@@ -12,7 +12,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Anusha Menon
+  - personId: anusha-menon
+    name: Anusha Menon
     role: null
 creditsRaw: Anusha Menon
 media:

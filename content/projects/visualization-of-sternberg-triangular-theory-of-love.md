@@ -12,7 +12,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Leia Kook-Chun
+  - personId: leia-kook-chun
+    name: Leia Kook-Chun
     role: null
 creditsRaw: Leia Kook-Chun
 media: []

@@ -12,7 +12,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Samarth Reddy
+  - personId: samarth-reddy
+    name: Samarth Reddy
     role: null
 creditsRaw: Samarth Reddy
 media:

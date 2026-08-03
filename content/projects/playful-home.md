@@ -14,7 +14,8 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Joshua Jacob Pothen
+  - personId: joshua-jacob-pothen
+    name: Joshua Jacob Pothen
     role: null
 creditsRaw: Joshua Jacob Pothen
 media:

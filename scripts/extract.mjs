@@ -16,12 +16,14 @@ import { dump, load as loadYaml } from 'js-yaml'
 import TurndownService from 'turndown'
 import { readWxr, byType } from './lib/wxr.mjs'
 import { parseTerm, slugify, deriveLabel, AFFILIATION, AUTO_MERGE, REVIEW_MERGE, buildProposalYaml, loadMap } from './lib/taxonomy.mjs'
+import { splitCredits, decodeEntities, buildPeople, loadPeopleConfig, findNearDuplicates, findFuzzyDuplicates, defaultSortName, needsSortReview, nameKey as nameKeyOf } from './lib/people.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const SRC = join(ROOT, 'sources/wordpress-export.xml')
 const UPLOADS = join(ROOT, 'sources/uploads')
 const MAP_PATH = join(ROOT, 'config/taxonomy-map.yaml')
 const OVERRIDES_PATH = join(ROOT, 'config/overrides.yaml')
+const PEOPLE_PATH = join(ROOT, 'config/people.yaml')
 
 const CATS = 'royal_portfolio_cats'
 const turndown = new TurndownService({ headingStyle: 'atx', bulletListMarker: '-' })
@@ -52,13 +54,6 @@ const toMarkdown = (s) => {
   // which would mangle plain prose that merely contains an asterisk.
   return hasHtml(t) ? turndown.turndown(t).trim() : t
 }
-
-const splitCredits = (raw) =>
-  String(raw)
-    .split(/\s*(?:,|;|\band\b|&|\/)\s*/i)
-    .map((s) => s.trim())
-    .filter(Boolean)
-    .map((name) => ({ name, role: null }))
 
 function parseEmbed(html) {
   const src = String(html).match(/src=["']([^"']+)["']/)?.[1]
@@ -261,6 +256,7 @@ for (const p of projects) {
 
   records.push({
     p, slug, year, session, status,
+    credits: splitCredits(creditsRaw),
     frontmatter: {
       id: Number(p.id),
       slug,
@@ -271,8 +267,8 @@ for (const p of projects) {
       affiliation: [...affiliation].sort(),
       medium: [...medium].sort(),
       tags: [],
-      credits: splitCredits(creditsRaw),
-      creditsRaw: creditsRaw || null,
+      credits: [],
+      creditsRaw: decodeEntities(creditsRaw) || null,
       media,
       layout: 'default',
       links,
@@ -370,6 +366,83 @@ if (unknownIds.length) {
 }
 if (applied.length) console.log(`  Applied ${applied.length} manual override(s) from config/overrides.yaml\n`)
 
+// ---------------------------------------------------------------- people
+//
+// WordPress had no person entity: creators were one free-text string per
+// project, so the same human on four projects was four unrelated strings.
+// Build a real registry so creators can be captured, sorted and displayed.
+
+const allCredited = [...new Set(records.flatMap((r) => r.credits.map((c) => c.name)))].sort()
+const nearDupes = findNearDuplicates(allCredited)
+const fuzzyDupes = findFuzzyDuplicates(allCredited)
+
+if (!existsSync(PEOPLE_PATH)) {
+  const ambiguous = allCredited.filter(needsSortReview)
+  write(PEOPLE_PATH, `# Creator registry corrections — REVIEW
+#
+# Generated from ${allCredited.length} distinct credited names across ${records.filter((r) => r.credits.length).length} projects.
+# Edit and re-run "npm run extract". Regenerated only when absent, so edits survive.
+#
+# aliases:     map a spelling onto the canonical one. Both still appear in the
+#              person's "variants", so nothing is lost.
+# sortNames:   override the "Family, Given" sort key where the heuristic is wrong.
+# collectives: credits that are groups or studios rather than individuals.
+# notPeople:   credits that are not creators at all and should be discarded.
+
+# --- Same person credited two ways. Detected automatically: accents, hyphens
+# --- and spacing differ but the letters are identical. Confirm each.
+aliases:
+${nearDupes.map(([a, b]) => `  ${JSON.stringify(a)}: ${JSON.stringify(b)}`).join('\n') || '  {}'}
+
+# --- PROBABLE TYPOS: normalised names within an edit distance of 2, but not
+# --- identical. NOT applied automatically — two real people can have names one
+# --- character apart. Confirm each, then move it into aliases above.
+${fuzzyDupes.length
+  ? fuzzyDupes.map((d) => `#   ${JSON.stringify(d.a)} <-> ${JSON.stringify(d.b)}   (distance ${d.distance})`).join('\n')
+  : '#   none detected'}
+
+# --- Sort keys the heuristic is unsure about: one-word names, four or more
+# --- words, or a particle like "van"/"de". The default guess is shown.
+sortNames:
+${ambiguous.map((n) => `  ${JSON.stringify(n)}: ${JSON.stringify(defaultSortName(n))}`).join('\n') || '  {}'}
+
+# --- Groups, studios and labs. Displayed, but not treated as individuals.
+# --- Detected by name; confirm and add any the heuristic missed.
+collectives:
+${allCredited.filter((n) => /\b(collective|lab|studio|group|team|society|inc\.?)\b/i.test(n)).map((n) => `  - ${JSON.stringify(n)}`).join('\n') || '  []'}
+
+# --- Not creators at all. Detected where the credit is identical to the
+# --- project's own title, which means the field was filled in with the wrong
+# --- thing. Discarded entirely.
+notPeople:
+${(() => {
+  const selfTitled = records
+    .filter((r) => r.credits.length === 1 && nameKeyOf(r.credits[0].name) === nameKeyOf(r.frontmatter.title))
+    .map((r) => r.credits[0].name)
+  return [...new Set(selfTitled)].map((n) => `  - ${JSON.stringify(n)}`).join('\n') || '  []'
+})()}
+`)
+  console.log(`  ⚠  config/people.yaml was GENERATED and needs review.\n`)
+}
+
+const peopleCfg = loadPeopleConfig(PEOPLE_PATH)
+const people = buildPeople(records, peopleCfg)
+
+// Every credit must point at a real registry entry, or a person page will 404
+// and a participant list will silently omit someone.
+const danglingCredits = records.flatMap((r) =>
+  r.frontmatter.credits.filter((c) => !people.has(c.personId)).map((c) => ({ project: r.slug, name: c.name })),
+)
+if (danglingCredits.length) {
+  console.error(`\n  ✗ ${danglingCredits.length} credit(s) do not resolve to a registry entry:`)
+  for (const d of danglingCredits.slice(0, 10)) console.error(`      ${d.project}: ${d.name}`)
+  process.exit(1)
+}
+
+const creditLinks = records.reduce((n, r) => n + r.frontmatter.credits.length, 0)
+console.log(`  People: ${people.size} in registry, ${creditLinks} credit links, ` +
+  `${[...people.values()].filter((p) => p.projectCount > 1).length} appear in more than one project`)
+
 // ---------------------------------------------------------------- write
 
 rmSync(out('content/projects'), { recursive: true, force: true })
@@ -398,6 +471,17 @@ for (const r of records) {
 }
 for (const s of shows.values()) write(out('content/shows', `${s.id}.json`), JSON.stringify(s, null, 2) + '\n')
 
+write(
+  out('content/people.json'),
+  JSON.stringify(
+    {
+      $comment: 'Creator registry. Derived from project credits; corrections live in config/people.yaml. id is stable and safe to link to — a person page is /people/<id>.',
+      people: [...people.values()].sort((a, b) => a.sortName.localeCompare(b.sortName)),
+    },
+    null, 2,
+  ) + '\n',
+)
+
 const vocab = { medium: new Set(), affiliation: new Set() }
 for (const r of records) {
   r.frontmatter.medium.forEach((m) => vocab.medium.add(m))
@@ -405,6 +489,7 @@ for (const r of records) {
 }
 
 const overrides = reviewedMap?.labels ?? {}
+let mediumLabel = {}
 const terms = (axis) =>
   [...vocab[axis]].sort().map((slug) => ({
     slug,
@@ -417,6 +502,8 @@ const terms = (axis) =>
 // dictate cardinality, who supplies the value at submission, and whether the
 // value can go stale. Recording that here keeps the filter UI, the Zod schema
 // and the future CMS config from each re-deciding it.
+mediumLabel = Object.fromEntries(terms('medium').map((t) => [t.slug, t.label]))
+
 write(
   out('content/vocabularies.json'),
   JSON.stringify(
@@ -635,7 +722,86 @@ Every link is recorded with \`status: unchecked\`. Link-rot checking is
 EXECUTION.md §6.7 — many of these point at student portfolio sites.
 `)
 
-console.log(`  Wrote ${records.length} projects, ${shows.size} shows`)
+// ------------------------------------------------- participant + project lists
+//
+// Both directions of the same data: people-by-show grouped by affiliation, and
+// projects-by-show. Generated rather than maintained, so they cannot drift.
+
+const showIds = [...shows.keys()].sort()
+const affLabel = Object.fromEntries(terms('affiliation').map((t) => [t.slug, t.label]))
+const AFF_ORDER = ['undergraduate', 'ug-thesis', 'graduate', 'alumni', 'faculty']
+
+const participantsBody = showIds.map((showId) => {
+  const inShow = [...people.values()]
+    .map((p) => ({ p, apps: p.appearances.filter((a) => a.show === showId) }))
+    .filter((x) => x.apps.length)
+
+  const groups = new Map()
+  for (const { p, apps } of inShow) {
+    const affs = [...new Set(apps.flatMap((a) => a.affiliation))]
+    for (const a of affs.length ? affs : ['unspecified']) {
+      if (!groups.has(a)) groups.set(a, [])
+      groups.get(a).push(p)
+    }
+  }
+
+  const ordered = [...AFF_ORDER.filter((a) => groups.has(a)), ...[...groups.keys()].filter((a) => !AFF_ORDER.includes(a))]
+  const sections = ordered.map((a) => {
+    const list = groups.get(a).sort((x, y) => x.sortName.localeCompare(y.sortName))
+    return `#### ${affLabel[a] ?? 'Unspecified'} (${list.length})\n\n` +
+      list.map((p) => `- ${p.name}${p.kind === 'collective' ? ' _(collective)_' : ''}`).join('\n')
+  })
+
+  return `### ${shows.get(showId).title}\n\n${inShow.length} participants.\n\n${sections.join('\n\n')}`
+}).join('\n\n')
+
+write(out('reports/participants.md'), `# Participants by show
+
+Generated — do not edit. Re-run \`npm run extract\`.
+
+Grouped by the affiliation recorded on the projects each person was credited
+on **in that show**, not a single lifetime value: the same person can appear as
+an undergraduate one year and an alum the next.
+
+Where a show shows everyone under "Unspecified", affiliation was never recorded
+for that show — see the coverage table in \`reports/taxonomy.md\`.
+
+${participantsBody}
+`)
+
+const projectsBody = showIds.map((showId) => {
+  const inShow = records
+    .filter((r) => r.frontmatter.show === showId)
+    .sort((a, b) => a.frontmatter.title.localeCompare(b.frontmatter.title))
+  return `### ${shows.get(showId).title} (${inShow.length})\n\n` +
+    table([
+      ['Title', 'Creators', 'Medium', 'Status'],
+      ['---', '---', '---', '---'],
+      ...inShow.map((r) => [
+        r.frontmatter.title,
+        r.frontmatter.credits.map((c) => c.name).join(', ') || '—',
+        r.frontmatter.medium.map((m) => mediumLabel[m] ?? m).join(', ') || '—',
+        r.frontmatter.status,
+      ]),
+    ])
+}).join('\n\n')
+
+const orphans = records.filter((r) => !r.frontmatter.show)
+write(out('reports/projects.md'), `# Projects by show
+
+Generated — do not edit. Re-run \`npm run extract\`.
+
+${records.length} projects across ${shows.size} shows.
+
+${projectsBody}
+
+### No show assigned (${orphans.length})
+
+${table([['Title', 'Creators', 'Status'], ['---', '---', '---'],
+  ...orphans.map((r) => [r.frontmatter.title, r.frontmatter.credits.map((c) => c.name).join(', ') || '—', r.frontmatter.status])])}
+`)
+
+console.log(`  Wrote ${records.length} projects, ${shows.size} shows, ${people.size} people`)
 console.log(`  Vocabularies: ${vocab.medium.size} medium, ${vocab.affiliation.size} affiliation`)
 console.log(`  Reports in reports/`)
 if (generatedProposal) {

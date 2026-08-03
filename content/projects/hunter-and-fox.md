@@ -13,7 +13,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Manuel Quiambao
+  - personId: manuel-quiambao
+    name: Manuel Quiambao
     role: null
 creditsRaw: Manuel Quiambao
 media:

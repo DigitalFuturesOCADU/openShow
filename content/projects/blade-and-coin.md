@@ -10,19 +10,26 @@ medium:
   - games
 tags: []
 credits:
-  - name: Sofia Pacheco
+  - personId: sofia-pacheco
+    name: Sofia Pacheco
     role: null
-  - name: Emma Nguyen
+  - personId: emma-nguyen
+    name: Emma Nguyen
     role: null
-  - name: Judsia Joseph
+  - personId: judsia-joseph
+    name: Judsia Joseph
     role: null
-  - name: Liam Bisaillion
+  - personId: liam-bisaillion
+    name: Liam Bisaillion
     role: null
-  - name: Evie Conroy
+  - personId: evie-conroy
+    name: Evie Conroy
     role: null
-  - name: Refah Wais
+  - personId: refah-wais
+    name: Refah Wais
     role: null
-  - name: Quinn Powell
+  - personId: quinn-powell
+    name: Quinn Powell
     role: null
 creditsRaw: Sofia Pacheco, Emma Nguyen, Judsia Joseph, Liam Bisaillion, Evie Conroy, Refah Wais,  Quinn Powell
 media:

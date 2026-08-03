@@ -15,11 +15,14 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Tinatei Tunyan
+  - personId: tinatei-tunyan
+    name: Tinatei Tunyan
     role: null
-  - name: Brandon li
+  - personId: brandon-li
+    name: Brandon li
     role: null
-  - name: Yuhan Xia
+  - personId: yuhan-xia
+    name: Yuhan Xia
     role: null
 creditsRaw: Tinatei Tunyan, Brandon li, Yuhan Xia
 media:

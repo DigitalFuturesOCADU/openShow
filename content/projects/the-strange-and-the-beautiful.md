@@ -9,7 +9,8 @@ affiliation: []
 medium: []
 tags: []
 credits:
-  - name: Natalie Le Huenen
+  - personId: natalie-le-huenen
+    name: Natalie Le Huenen
     role: null
 creditsRaw: Natalie Le Huenen
 media:

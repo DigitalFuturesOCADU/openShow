@@ -13,7 +13,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Yiqun Zhou
+  - personId: yiqun-zhou
+    name: Yiqun Zhou
     role: null
 creditsRaw: Yiqun Zhou
 media:

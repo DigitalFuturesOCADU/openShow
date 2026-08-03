@@ -14,7 +14,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Paul Van Rijn
+  - personId: paul-van-rijn
+    name: Paul Van Rijn
     role: null
 creditsRaw: Paul Van Rijn
 media:

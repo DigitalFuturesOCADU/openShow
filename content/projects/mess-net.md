@@ -17,11 +17,14 @@ medium:
   - web
 tags: []
 credits:
-  - name: Tyson Moll
+  - personId: tyson-moll
+    name: Tyson Moll
     role: null
-  - name: Nicholas Alexander
+  - personId: nicholas-alexander
+    name: Nicholas Alexander
     role: null
-  - name: Joshua McKenna
+  - personId: joshua-mckenna
+    name: Joshua McKenna
     role: null
 creditsRaw: Tyson Moll, Nicholas Alexander, Joshua McKenna
 media:

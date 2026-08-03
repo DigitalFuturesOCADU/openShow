@@ -11,7 +11,8 @@ medium:
   - animation
 tags: []
 credits:
-  - name: Simon Rabyniuk
+  - personId: simon-rabyniuk
+    name: Simon Rabyniuk
     role: null
 creditsRaw: Simon Rabyniuk
 media:

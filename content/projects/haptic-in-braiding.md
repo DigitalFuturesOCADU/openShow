@@ -12,7 +12,8 @@ medium:
   - performance
 tags: []
 credits:
-  - name: Rina Chen
+  - personId: rina-chen
+    name: Rina Chen
     role: null
 creditsRaw: Rina Chen
 media:

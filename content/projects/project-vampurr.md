@@ -11,9 +11,11 @@ medium:
   - games
 tags: []
 credits:
-  - name: Irina Noor
+  - personId: irina-noor
+    name: Irina Noor
     role: null
-  - name: Emmy Gao
+  - personId: emmy-gao
+    name: Emmy Gao
     role: null
 creditsRaw: Irina Noor, Emmy Gao
 media:

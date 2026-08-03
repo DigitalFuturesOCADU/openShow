@@ -13,9 +13,11 @@ medium:
   - video
 tags: []
 credits:
-  - name: Sebastian Gorfinkel
+  - personId: sebastian-gorfinkel
+    name: Sebastian Gorfinkel
     role: null
-  - name: Hamid Malek
+  - personId: hamid-malek
+    name: Hamid Malek
     role: null
 creditsRaw: Sebastian Gorfinkel and Hamid Malek
 media:

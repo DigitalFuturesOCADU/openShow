@@ -14,7 +14,8 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Bernice Lai
+  - personId: bernice-lai
+    name: Bernice Lai
     role: null
 creditsRaw: Bernice Lai
 media:

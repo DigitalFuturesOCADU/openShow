@@ -14,7 +14,8 @@ medium:
   - performance
 tags: []
 credits:
-  - name: Finlay Braithwaite
+  - personId: finlay-braithwaite
+    name: Finlay Braithwaite
     role: null
 creditsRaw: Finlay Braithwaite
 media:

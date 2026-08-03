@@ -14,7 +14,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: L Wilkins
+  - personId: l-wilkins
+    name: L Wilkins
     role: null
 creditsRaw: L Wilkins
 media:

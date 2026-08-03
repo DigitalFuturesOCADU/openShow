@@ -12,7 +12,8 @@ medium:
   - performance
 tags: []
 credits:
-  - name: Leanna Barwick
+  - personId: leanna-barwick
+    name: Leanna Barwick
     role: null
 creditsRaw: Leanna Barwick
 media:

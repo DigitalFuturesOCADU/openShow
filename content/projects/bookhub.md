@@ -12,11 +12,14 @@ medium:
   - digital-fabrication
 tags: []
 credits:
-  - name: Simran Duggal
+  - personId: simran-duggal
+    name: Simran Duggal
     role: null
-  - name: Mairead Stewart
+  - personId: mairead-stewart
+    name: Mairead Stewart
     role: null
-  - name: Greg Martin
+  - personId: greg-martin
+    name: Greg Martin
     role: null
 creditsRaw: Simran Duggal, Mairead Stewart, Greg Martin
 media:

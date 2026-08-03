@@ -14,7 +14,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Sarah Parent
+  - personId: sarah-parent
+    name: Sarah Parent
     role: null
 creditsRaw: Sarah Parent
 media:

@@ -11,7 +11,8 @@ medium:
   - games
 tags: []
 credits:
-  - name: Donna Shahini
+  - personId: donna-shahini
+    name: Donna Shahini
     role: null
 creditsRaw: Donna Shahini
 media:

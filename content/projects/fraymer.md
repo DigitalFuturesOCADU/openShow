@@ -11,7 +11,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Demilade Olaleye
+  - personId: demilade-olaleye
+    name: Demilade Olaleye
     role: null
 creditsRaw: Demilade Olaleye
 media:

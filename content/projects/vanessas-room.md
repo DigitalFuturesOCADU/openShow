@@ -12,7 +12,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Vanessa Namseang
+  - personId: vanessa-namseang
+    name: Vanessa Namseang
     role: null
 creditsRaw: Vanessa Namseang
 media:

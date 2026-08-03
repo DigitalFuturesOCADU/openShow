@@ -12,7 +12,8 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Ethan Day
+  - personId: ethan-day
+    name: Ethan Day
     role: null
 creditsRaw: Ethan Day
 media:

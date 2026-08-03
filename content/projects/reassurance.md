@@ -15,7 +15,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Gillian Blekkenhorst
+  - personId: gillian-blekkenhorst
+    name: Gillian Blekkenhorst
     role: null
 creditsRaw: Gillian Blekkenhorst
 media:

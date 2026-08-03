@@ -13,11 +13,17 @@ medium:
   - installation
 tags: []
 credits:
-  - name: CAM Collective (Carisa Putri Antariksa
+  - personId: cam-collective
+    name: CAM Collective
     role: null
-  - name: Amreen Ashraf
+  - personId: carisa-putri-antariksa
+    name: Carisa Putri Antariksa
     role: null
-  - name: Maria Denise Yala).
+  - personId: amreen-ashraf
+    name: Amreen Ashraf
+    role: null
+  - personId: maria-denise-yala
+    name: Maria Denise Yala
     role: null
 creditsRaw: CAM Collective (Carisa Putri Antariksa, Amreen Ashraf, Maria Denise Yala).
 media:

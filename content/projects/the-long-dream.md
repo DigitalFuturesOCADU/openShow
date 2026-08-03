@@ -11,9 +11,11 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Mika Maclear Wall
+  - personId: mika-maclear-wall
+    name: Mika Maclear Wall
     role: null
-  - name: David Parent
+  - personId: david-parent
+    name: David Parent
     role: null
 creditsRaw: Mika Maclear Wall, David Parent
 media:

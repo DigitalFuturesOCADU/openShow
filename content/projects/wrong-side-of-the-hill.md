@@ -12,9 +12,11 @@ medium:
   - video
 tags: []
 credits:
-  - name: Mika Maclear-Wall
+  - personId: mika-maclear-wall
+    name: Mika Maclear-Wall
     role: null
-  - name: Jacob Sosulli
+  - personId: jacob-sosulli
+    name: Jacob Sosulli
     role: null
 creditsRaw: Mika Maclear-Wall, Jacob Sosulli
 media:

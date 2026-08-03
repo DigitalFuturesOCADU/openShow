@@ -11,11 +11,14 @@ medium:
   - games
 tags: []
 credits:
-  - name: Tanzil Garg
+  - personId: tanzil-garg
+    name: Tanzil Garg
     role: null
-  - name: Aitareya Sethi
+  - personId: aitareya-sethi
+    name: Aitareya Sethi
     role: null
-  - name: Shaizaan Prasla
+  - personId: shaizaan-prasla
+    name: Shaizaan Prasla
     role: null
 creditsRaw: Tanzil Garg, Aitareya Sethi, Shaizaan Prasla
 media:

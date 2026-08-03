@@ -12,7 +12,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Tor Severino
+  - personId: tor-severino
+    name: Tor Severino
     role: null
 creditsRaw: Tor Severino
 media:

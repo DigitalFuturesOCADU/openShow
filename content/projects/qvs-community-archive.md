@@ -12,7 +12,8 @@ medium:
   - performance
 tags: []
 credits:
-  - name: g blekkenhorst
+  - personId: g-blekkenhorst
+    name: g blekkenhorst
     role: null
 creditsRaw: g blekkenhorst
 media:
