@@ -16,8 +16,10 @@ creditsRaw: Samaa Ahmed
 media:
   - type: image
     id: 1573
-    file: 2020/12/Digital-Debris_1-scaled.jpg
+    file: 2020/12/Digital-Debris_1.jpg
     role: featured
+    servedByWordpress: 2020/12/Digital-Debris_1-scaled.jpg
+    bytes: 4275925
     alt: null
     caption: null
 layout: default

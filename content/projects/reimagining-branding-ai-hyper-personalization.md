@@ -22,16 +22,19 @@ media:
     id: 2981
     file: 2025/12/Reimagining-Branding-AI-Hyper-Personalizati_Mahnoor-Hasan.png
     role: featured
+    bytes: 718639
     alt: null
     caption: null
   - type: image
     id: 2982
     file: 2025/12/Reimagining-Branding-AI-Hyper-Personalizati-2_Mahnoor-Hasan.png
+    bytes: 654320
     alt: null
     caption: null
   - type: image
     id: 2983
     file: 2025/12/Reimagining-Branding-AI-Hyper-Personalizati-3_Mahnoor-Hasan.png
+    bytes: 882086
     alt: null
     caption: null
 layout: default

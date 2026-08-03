@@ -22,11 +22,13 @@ media:
     id: 1835
     file: 2020/12/Canadian_Abstracts_2_1_Jordan-Shaw.jpg
     role: featured
+    bytes: 217131
     alt: null
     caption: null
   - type: image
     id: 1836
     file: 2020/12/Canadian_Abstracts_2_2_Jordan-Shaw.jpg
+    bytes: 86301
     alt: null
     caption: null
 layout: default

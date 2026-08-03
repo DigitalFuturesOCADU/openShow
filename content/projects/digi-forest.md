@@ -20,21 +20,25 @@ media:
     id: 2195
     file: 2022/12/DigiForest_1_Kahani-Ploessl.png
     role: featured
+    bytes: 9417298
     alt: null
     caption: null
   - type: image
     id: 2196
     file: 2022/12/DigiForest_2_Kahani-Ploessl.png
+    bytes: 8891472
     alt: null
     caption: null
   - type: image
     id: 2197
     file: 2022/12/DigiForest_3_Kahani-Ploessl.png
+    bytes: 8499239
     alt: null
     caption: null
   - type: image
     id: 2198
     file: 2022/12/DigiForest_4_Kahani-Ploessl.png
+    bytes: 10727
     alt: null
     caption: null
 layout: default

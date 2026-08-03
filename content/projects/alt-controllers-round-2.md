@@ -55,6 +55,7 @@ media:
     id: 3034
     file: 2025/12/Alt-controls_Amelia-Lochhead.jpg
     role: featured
+    bytes: 457650
     alt: null
     caption: null
 layout: default

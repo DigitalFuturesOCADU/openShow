@@ -23,11 +23,13 @@ media:
     id: 2767
     file: 2024/12/ShadowPuppetryWukong_2_Meicen-Zhou.png
     role: featured
+    bytes: 3507445
     alt: null
     caption: null
   - type: image
     id: 2768
     file: 2024/12/ShadowPuppetryWukong_3_Meicen-Zhou.jpg
+    bytes: 1225359
     alt: null
     caption: null
 layout: default

@@ -40,11 +40,13 @@ media:
     id: 2598
     file: 2023/12/day.png
     role: featured
+    bytes: 137817
     alt: null
     caption: null
   - type: image
     id: 2599
     file: 2023/12/day2.jpg
+    bytes: 27252
     alt: null
     caption: null
 layout: default

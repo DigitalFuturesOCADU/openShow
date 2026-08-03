@@ -26,16 +26,20 @@ media:
     id: 2710
     file: 2024/12/binoculars-3_Minseo-Park.jpg
     role: featured
+    bytes: 152309
     alt: Binoculars
     caption: Binoculars
   - type: image
     id: 2708
-    file: 2024/12/binoculars-1_Minseo-Park-scaled.jpg
+    file: 2024/12/binoculars-1_Minseo-Park.jpg
+    servedByWordpress: 2024/12/binoculars-1_Minseo-Park-scaled.jpg
+    bytes: 1011521
     alt: Binoculars
     caption: Binoculars
   - type: image
     id: 2709
     file: 2024/12/binoculars-2_Minseo-Park.jpg
+    bytes: 124092
     alt: Binoculars
     caption: Binoculars
 layout: default

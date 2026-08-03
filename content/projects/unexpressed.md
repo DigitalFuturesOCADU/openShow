@@ -24,6 +24,7 @@ media:
     id: 2320
     file: 2023/04/unexpressed.png
     role: featured
+    bytes: 530882
     alt: null
     caption: null
 layout: default

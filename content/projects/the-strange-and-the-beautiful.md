@@ -16,23 +16,31 @@ creditsRaw: Natalie Le Huenen
 media:
   - type: image
     id: 1570
-    file: 2020/12/TheStrangeAndTheBeautiful_01-scaled.jpg
+    file: 2020/12/TheStrangeAndTheBeautiful_01.jpg
     role: featured
+    servedByWordpress: 2020/12/TheStrangeAndTheBeautiful_01-scaled.jpg
+    bytes: 9669493
     alt: null
     caption: null
   - type: image
     id: 1568
-    file: 2020/12/TheStrangeAndTheBeautiful_02-scaled.jpg
+    file: 2020/12/TheStrangeAndTheBeautiful_02.jpg
+    servedByWordpress: 2020/12/TheStrangeAndTheBeautiful_02-scaled.jpg
+    bytes: 10765813
     alt: null
     caption: null
   - type: image
     id: 1569
-    file: 2020/12/TheStrangeAndTheBeautiful_03-scaled.jpg
+    file: 2020/12/TheStrangeAndTheBeautiful_03.jpg
+    servedByWordpress: 2020/12/TheStrangeAndTheBeautiful_03-scaled.jpg
+    bytes: 12137895
     alt: null
     caption: null
   - type: image
     id: 1567
-    file: 2020/12/TheStrangeAndTheBeautiful_04-scaled.jpg
+    file: 2020/12/TheStrangeAndTheBeautiful_04.jpg
+    servedByWordpress: 2020/12/TheStrangeAndTheBeautiful_04-scaled.jpg
+    bytes: 7912256
     alt: null
     caption: null
 layout: default

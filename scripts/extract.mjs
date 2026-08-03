@@ -73,16 +73,36 @@ const projects = byType(items, 'royal_portfolio')
 const attachments = byType(items, 'attachment')
 const pages = byType(items, 'page')
 
+/**
+ * WordPress caps large uploads at 2560px and serves that as "name-scaled.jpg",
+ * keeping the untouched upload beside it as "name.jpg". The attachment record
+ * points at the scaled copy, so following it would silently archive the
+ * downsampled version and throw away the real one. 112 of the 704 referenced
+ * images are affected, and the true original is present for every one.
+ */
+function resolveOriginal(rel) {
+  if (!rel) return { file: null, servedFile: null, downsampled: false }
+  const unscaled = rel.replace(/-scaled(\.\w+)$/, '$1')
+  if (unscaled !== rel && existsSync(join(UPLOADS, unscaled))) {
+    return { file: unscaled, servedFile: rel, downsampled: true }
+  }
+  return { file: rel, servedFile: rel, downsampled: false }
+}
+
 // id -> attachment facts, so images resolve by ID and never by stored URL.
 const attIndex = new Map()
 for (const a of attachments) {
-  const rel = uploadRelPath(a.attachmentUrl)
+  const { file, servedFile, downsampled } = resolveOriginal(uploadRelPath(a.attachmentUrl))
+  const abs = file ? join(UPLOADS, file) : null
+  const present = abs ? existsSync(abs) : false
   attIndex.set(a.id, {
     id: Number(a.id),
-    file: rel,
-    exists: rel ? existsSync(join(UPLOADS, rel)) : false,
-    bytes: rel && existsSync(join(UPLOADS, rel)) ? statSync(join(UPLOADS, rel)).size : 0,
-    mime: rel ? (rel.split('.').pop() || '').toLowerCase() : '',
+    file,
+    servedFile,
+    recoveredOriginal: downsampled,
+    exists: present,
+    bytes: present ? statSync(abs).size : 0,
+    mime: file ? (file.split('.').pop() || '').toLowerCase() : '',
     alt: a.m('_wp_attachment_image_alt').trim(),
     caption: a.excerpt.trim(),
     title: a.title.trim(),
@@ -144,7 +164,7 @@ const records = []
 const notes = {
   generatedSlugs: [], slugCollisions: [], unresolvedYear: [], yearConflicts: [],
   droppedTerms: new Map(), droppedByProject: new Map(), missingFiles: [], danglingIds: [], galleryMismatch: [],
-  noAlt: 0, withAlt: 0, links: [], selfHostedVideo: [], embeds: [], dedupedImages: 0,
+  noAlt: 0, withAlt: 0, links: [], selfHostedVideo: [], embeds: [], dedupedImages: 0, recoveredOriginals: 0,
 }
 
 for (const p of projects) {
@@ -197,9 +217,12 @@ for (const p of projects) {
     seenImages.add(id)
     if (!a.exists) notes.missingFiles.push({ project: p.id, imageId: id, file: a.file })
     a.alt ? notes.withAlt++ : notes.noAlt++
+    if (a.recoveredOriginal) notes.recoveredOriginals++
     media.push({
       type: 'image', id: a.id, file: a.file,
       ...(role ? { role } : {}),
+      ...(a.recoveredOriginal ? { servedByWordpress: a.servedFile } : {}),
+      bytes: a.bytes,
       alt: a.alt || null, caption: a.caption || null,
     })
   }

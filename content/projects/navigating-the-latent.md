@@ -21,6 +21,7 @@ media:
     id: 2587
     file: 2023/12/latent.png
     role: featured
+    bytes: 555733
     alt: null
     caption: null
 layout: default

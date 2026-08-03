@@ -19,18 +19,24 @@ creditsRaw: Salisa Jatuweerapong
 media:
   - type: image
     id: 1800
-    file: 2020/12/6.Sjatuwee_KowloonShoppeInterior_Colour_Salisa-Jatuweerapong-scaled.jpg
+    file: 2020/12/6.Sjatuwee_KowloonShoppeInterior_Colour_Salisa-Jatuweerapong.jpg
     role: featured
+    servedByWordpress: 2020/12/6.Sjatuwee_KowloonShoppeInterior_Colour_Salisa-Jatuweerapong-scaled.jpg
+    bytes: 2036529
     alt: null
     caption: null
   - type: image
     id: 1802
-    file: 2020/12/6.SJatuwee_KowloonShoppeInterior_Salisa-Jatuweerapong-scaled.jpg
+    file: 2020/12/6.SJatuwee_KowloonShoppeInterior_Salisa-Jatuweerapong.jpg
+    servedByWordpress: 2020/12/6.SJatuwee_KowloonShoppeInterior_Salisa-Jatuweerapong-scaled.jpg
+    bytes: 2340754
     alt: null
     caption: null
   - type: image
     id: 1803
-    file: 2020/12/6.Sjatuwee-KowloonProprietor_Salisa-Jatuweerapong-scaled.jpg
+    file: 2020/12/6.Sjatuwee-KowloonProprietor_Salisa-Jatuweerapong.jpg
+    servedByWordpress: 2020/12/6.Sjatuwee-KowloonProprietor_Salisa-Jatuweerapong-scaled.jpg
+    bytes: 912467
     alt: null
     caption: null
 layout: default

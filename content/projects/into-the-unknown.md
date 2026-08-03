@@ -30,11 +30,13 @@ media:
     id: 2536
     file: 2023/12/WechatIMG356_anonymous.jpg
     role: featured
+    bytes: 89806
     alt: null
     caption: null
   - type: image
     id: 2535
     file: 2023/12/WechatIMG355_anonymous.jpg
+    bytes: 211053
     alt: null
     caption: null
 layout: default

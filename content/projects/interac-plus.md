@@ -20,21 +20,25 @@ media:
     id: 2108
     file: 2022/12/Interac-Plus-Photo-1_Terrell-Duke.png
     role: featured
+    bytes: 4722927
     alt: null
     caption: null
   - type: image
     id: 2109
     file: 2022/12/Interac-Plus-Photo-2_Terrell-Duke.png
+    bytes: 5719278
     alt: null
     caption: null
   - type: image
     id: 2110
     file: 2022/12/Interac-Plus-Photo-3_Terrell-Duke.png
+    bytes: 4023010
     alt: null
     caption: null
   - type: image
     id: 2111
     file: 2022/12/Interac-Plus-Photo-4_Terrell-Duke.png
+    bytes: 3636665
     alt: null
     caption: null
 layout: default

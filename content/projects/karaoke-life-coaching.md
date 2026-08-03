@@ -21,6 +21,7 @@ media:
     id: 2552
     file: 2023/12/KaraokeLifeCoaching_1_anonymous.png
     role: featured
+    bytes: 1642502
     alt: null
     caption: null
 layout: default

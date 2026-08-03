@@ -20,13 +20,17 @@ creditsRaw: Zhihan Zhang
 media:
   - type: image
     id: 2533
-    file: 2023/12/IMG_0975_anonymous-scaled.jpg
+    file: 2023/12/IMG_0975_anonymous.jpg
     role: featured
+    servedByWordpress: 2023/12/IMG_0975_anonymous-scaled.jpg
+    bytes: 3294251
     alt: null
     caption: null
   - type: image
     id: 2532
-    file: 2023/12/IMG_0967_anonymous-scaled.jpg
+    file: 2023/12/IMG_0967_anonymous.jpg
+    servedByWordpress: 2023/12/IMG_0967_anonymous-scaled.jpg
+    bytes: 3534027
     alt: null
     caption: null
 layout: default

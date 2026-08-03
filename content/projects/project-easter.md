@@ -21,26 +21,31 @@ media:
     id: 2177
     file: 2022/12/ProjectEaster_1_Nicholas-Addeo.png
     role: featured
+    bytes: 8771217
     alt: null
     caption: null
   - type: image
     id: 2178
     file: 2022/12/ProjectEaster_2_Nicholas-Addeo.jpg
+    bytes: 254569
     alt: null
     caption: null
   - type: image
     id: 2179
     file: 2022/12/ProjectEaster_3_Nicholas-Addeo.jpg
+    bytes: 263307
     alt: null
     caption: null
   - type: image
     id: 2180
     file: 2022/12/ProjectEaster_4_Nicholas-Addeo.jpg
+    bytes: 253881
     alt: null
     caption: null
   - type: image
     id: 2181
     file: 2022/12/ProjectEaster_5_Nicholas-Addeo.png
+    bytes: 9091577
     alt: null
     caption: null
 layout: default

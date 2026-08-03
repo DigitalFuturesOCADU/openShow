@@ -23,16 +23,20 @@ media:
     id: 1861
     file: 2020/12/Ardy-Llantino-ArdyDlLantino_Mockup1.png
     role: featured
+    bytes: 16077936
     alt: null
     caption: null
   - type: image
     id: 1863
     file: 2020/12/Ardy-Llantino-shutter.jpg
+    bytes: 319195
     alt: null
     caption: null
   - type: image
     id: 1860
-    file: 2020/12/Ardy-Llantino-ArdyDLlantino_Image1-scaled.jpg
+    file: 2020/12/Ardy-Llantino-ArdyDLlantino_Image1.jpg
+    servedByWordpress: 2020/12/Ardy-Llantino-ArdyDLlantino_Image1-scaled.jpg
+    bytes: 2370169
     alt: null
     caption: null
 layout: default

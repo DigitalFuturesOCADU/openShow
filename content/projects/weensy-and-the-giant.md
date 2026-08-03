@@ -40,26 +40,31 @@ media:
     id: 2121
     file: 2022/12/WnG1_Yannan-Ma.png
     role: featured
+    bytes: 628196
     alt: null
     caption: null
   - type: image
     id: 2122
     file: 2022/12/WnG2_Yannan-Ma.png
+    bytes: 523722
     alt: null
     caption: null
   - type: image
     id: 2123
     file: 2022/12/WnG3_Yannan-Ma.png
+    bytes: 818325
     alt: null
     caption: null
   - type: image
     id: 2124
     file: 2022/12/WnG4_Yannan-Ma.png
+    bytes: 448422
     alt: null
     caption: null
   - type: image
     id: 2125
     file: 2022/12/WnG5_Yannan-Ma.png
+    bytes: 121173
     alt: null
     caption: null
 layout: default

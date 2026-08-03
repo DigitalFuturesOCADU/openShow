@@ -38,6 +38,7 @@ media:
     id: 2373
     file: 2023/04/Genera.png
     role: featured
+    bytes: 1750398
     alt: null
     caption: null
 layout: default

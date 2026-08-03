@@ -30,21 +30,25 @@ media:
     id: 3045
     file: 2025/12/jungle_struggle_1_Yuhan-Xia-1_FEATURE1.jpg
     role: featured
+    bytes: 435417
     alt: null
     caption: null
   - type: image
     id: 2930
     file: 2025/12/jungle_stuggle_3_Yuhan-Xia-1.jpg
+    bytes: 5630450
     alt: null
     caption: null
   - type: image
     id: 2929
     file: 2025/12/jungle_struggle_2_Yuhan-Xia.jpg
+    bytes: 1673365
     alt: null
     caption: null
   - type: image
     id: 2928
     file: 2025/12/jungle_struggle_1_Yuhan-Xia.jpg
+    bytes: 4175586
     alt: null
     caption: null
 layout: default

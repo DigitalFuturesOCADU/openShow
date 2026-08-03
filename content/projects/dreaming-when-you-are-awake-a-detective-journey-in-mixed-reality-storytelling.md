@@ -23,16 +23,20 @@ media:
     id: 2210
     file: 2022/12/Dreaming-when-you-are-Awake_1_Bernice-Lai.png
     role: featured
+    bytes: 2401751
     alt: null
     caption: null
   - type: image
     id: 2211
     file: 2022/12/Dreaming-when-you-are-Awake_2_Bernice-Lai.png
+    bytes: 4244722
     alt: null
     caption: null
   - type: image
     id: 2212
-    file: 2022/12/Dreaming-when-you-are-Awake_3_Bernice-Lai-scaled.jpg
+    file: 2022/12/Dreaming-when-you-are-Awake_3_Bernice-Lai.jpg
+    servedByWordpress: 2022/12/Dreaming-when-you-are-Awake_3_Bernice-Lai-scaled.jpg
+    bytes: 1660772
     alt: null
     caption: null
 layout: default

@@ -19,8 +19,10 @@ creditsRaw: Arashjot Kaur
 media:
   - type: image
     id: 1906
-    file: 2020/12/Tetris_1_Arashjot-Kaur-scaled.jpg
+    file: 2020/12/Tetris_1_Arashjot-Kaur.jpg
     role: featured
+    servedByWordpress: 2020/12/Tetris_1_Arashjot-Kaur-scaled.jpg
+    bytes: 231457
     alt: null
     caption: null
 layout: default

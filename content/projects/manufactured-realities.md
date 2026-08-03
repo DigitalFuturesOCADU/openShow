@@ -28,6 +28,7 @@ media:
     id: 2361
     file: 2023/04/manufactured.png
     role: featured
+    bytes: 204544
     alt: null
     caption: null
 layout: default

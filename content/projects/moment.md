@@ -21,6 +21,7 @@ media:
     id: 1933
     file: 2020/12/anran.png
     role: featured
+    bytes: 395890
     alt: null
     caption: null
   - type: video-embed

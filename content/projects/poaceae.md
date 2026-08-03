@@ -22,11 +22,13 @@ media:
     id: 2309
     file: 2023/04/poaceae.png
     role: featured
+    bytes: 98739
     alt: null
     caption: null
   - type: image
     id: 2310
     file: 2023/04/poaceae-2.png
+    bytes: 534535
     alt: null
     caption: null
 layout: default

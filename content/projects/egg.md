@@ -21,6 +21,7 @@ media:
     id: 2213
     file: 2022/12/vlcsnap-2022-12-12-12h27m06s673.png
     role: featured
+    bytes: 219749
     alt: null
     caption: null
   - type: video-file

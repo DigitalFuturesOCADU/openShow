@@ -23,6 +23,7 @@ media:
     id: 2353
     file: 2023/04/abstract.jpg
     role: featured
+    bytes: 310926
     alt: null
     caption: null
 layout: default

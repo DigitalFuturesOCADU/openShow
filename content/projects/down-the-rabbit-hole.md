@@ -37,6 +37,7 @@ media:
     id: 2359
     file: 2023/04/rabbit.png
     role: featured
+    bytes: 143654
     alt: null
     caption: null
 layout: default

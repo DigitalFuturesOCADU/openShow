@@ -21,11 +21,14 @@ media:
     id: 2918
     file: 2025/12/orbslight_Niloofar-Sanandajiza.jpg
     role: featured
+    bytes: 239490
     alt: null
     caption: Screenshot
   - type: image
     id: 2919
-    file: 2025/12/ORBS-01_Niloofar-Sanandajiza-scaled.jpg
+    file: 2025/12/ORBS-01_Niloofar-Sanandajiza.jpg
+    servedByWordpress: 2025/12/ORBS-01_Niloofar-Sanandajiza-scaled.jpg
+    bytes: 628946
     alt: null
     caption: Screenshot
 layout: default

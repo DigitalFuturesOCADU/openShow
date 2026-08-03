@@ -27,6 +27,7 @@ media:
     id: 2288
     file: 2023/04/fisher-2.png
     role: featured
+    bytes: 907589
     alt: null
     caption: null
 layout: default

@@ -21,6 +21,7 @@ media:
     id: 2295
     file: 2023/04/shannen.jpg
     role: featured
+    bytes: 64343
     alt: null
     caption: null
 layout: default

@@ -35,11 +35,13 @@ media:
     id: 2304
     file: 2023/04/catherine-2.jpg
     role: featured
+    bytes: 106074
     alt: null
     caption: null
   - type: image
     id: 2305
     file: 2023/04/catherine.jpg
+    bytes: 76327
     alt: null
     caption: null
 layout: default

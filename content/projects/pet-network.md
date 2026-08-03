@@ -27,18 +27,24 @@ creditsRaw: Olivia Pasian, JC Zhang, Harry Zhao
 media:
   - type: image
     id: 2791
-    file: 2024/12/PetNetwork_2_Olivia-Pasian-scaled.jpg
+    file: 2024/12/PetNetwork_2_Olivia-Pasian.jpg
     role: featured
+    servedByWordpress: 2024/12/PetNetwork_2_Olivia-Pasian-scaled.jpg
+    bytes: 1465680
     alt: null
     caption: null
   - type: image
     id: 2792
-    file: 2024/12/PetNetwork_3_Olivia-Pasian-scaled.jpg
+    file: 2024/12/PetNetwork_3_Olivia-Pasian.jpg
+    servedByWordpress: 2024/12/PetNetwork_3_Olivia-Pasian-scaled.jpg
+    bytes: 1078547
     alt: null
     caption: null
   - type: image
     id: 2790
-    file: 2024/12/PetNetwork_1_Olivia-Pasian-scaled.jpg
+    file: 2024/12/PetNetwork_1_Olivia-Pasian.jpg
+    servedByWordpress: 2024/12/PetNetwork_1_Olivia-Pasian-scaled.jpg
+    bytes: 1329933
     alt: null
     caption: null
 layout: default

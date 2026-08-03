@@ -15,11 +15,13 @@ media:
     id: 1559
     file: 2020/12/Emolace1-2.jpg
     role: featured
+    bytes: 261032
     alt: null
     caption: null
   - type: image
     id: 1560
     file: 2020/12/Emolace2-1-rotated.jpg
+    bytes: 138531
     alt: null
     caption: null
 layout: default

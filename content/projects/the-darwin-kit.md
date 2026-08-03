@@ -23,16 +23,19 @@ media:
     id: 1831
     file: 2020/12/DarwinKit_1_Manisha-Laroia.jpg
     role: featured
+    bytes: 173609
     alt: null
     caption: null
   - type: image
     id: 1832
     file: 2020/12/DarwinKit_2_Manisha-Laroia.png
+    bytes: 1040413
     alt: null
     caption: null
   - type: image
     id: 1833
     file: 2020/12/DarwinKit_3_Manisha-Laroia.jpg
+    bytes: 154651
     alt: null
     caption: null
 layout: default

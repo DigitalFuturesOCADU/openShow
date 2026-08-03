@@ -25,21 +25,25 @@ media:
     id: 1690
     file: 2020/12/MIASMA_3_Nicole-Vella.png
     role: featured
+    bytes: 1701194
     alt: null
     caption: null
   - type: image
     id: 1688
     file: 2020/12/MIASMA_1_Nicole-Vella.png
+    bytes: 1018027
     alt: null
     caption: null
   - type: image
     id: 1691
     file: 2020/12/MIASMA_4_Nicole-Vella.png
+    bytes: 1002886
     alt: null
     caption: null
   - type: image
     id: 1692
     file: 2020/12/MIASMA_5_Nicole-Vella.png
+    bytes: 856686
     alt: null
     caption: null
 layout: default

@@ -21,11 +21,13 @@ media:
     id: 1876
     file: 2020/12/Vivian-W.-VivianWong-003.png
     role: featured
+    bytes: 2391412
     alt: null
     caption: null
   - type: image
     id: 1877
     file: 2020/12/Vivian-W.-VivianWong-006.png
+    bytes: 2758200
     alt: null
     caption: null
 layout: default

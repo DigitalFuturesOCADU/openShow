@@ -22,16 +22,19 @@ media:
     id: 2755
     file: 2024/12/Screenshot-2024-11-24-at-4.30.39-PM_Bryan-Lee.png
     role: featured
+    bytes: 3496106
     alt: null
     caption: null
   - type: image
     id: 2756
     file: 2024/12/Screenshot-2024-11-24-at-4.30.47-PM_Bryan-Lee.png
+    bytes: 2803246
     alt: null
     caption: null
   - type: image
     id: 2757
     file: 2024/12/Screenshot-2024-11-24-at-4.30.55-PM_Bryan-Lee.png
+    bytes: 1078502
     alt: null
     caption: null
 layout: default

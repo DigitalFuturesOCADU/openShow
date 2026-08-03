@@ -22,11 +22,13 @@ media:
     id: 1879
     file: 2020/12/HighresScreenshot00002.png
     role: featured
+    bytes: 1449440
     alt: null
     caption: null
   - type: image
     id: 1880
     file: 2020/12/Screen_Shot_2020-04-13_at_10_10_39_PM.png
+    bytes: 166143
     alt: null
     caption: null
 layout: default

@@ -20,21 +20,25 @@ media:
     id: 1829
     file: 2020/12/HeroCorpse_Erika-Davis.png
     role: featured
+    bytes: 95233
     alt: null
     caption: null
   - type: image
     id: 1826
     file: 2020/12/Hero_Corpse_Erika-Davis.gif
+    bytes: 7161810
     alt: null
     caption: null
   - type: image
     id: 1827
     file: 2020/12/HeroCorpse_Concept01_Erika-Davis.png
+    bytes: 14332
     alt: null
     caption: null
   - type: image
     id: 1828
     file: 2020/12/HeroCorpse_Concept02_Erika-Davis.png
+    bytes: 1239117
     alt: null
     caption: null
 layout: default

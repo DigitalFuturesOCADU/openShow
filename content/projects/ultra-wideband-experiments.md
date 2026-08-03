@@ -34,21 +34,25 @@ media:
     id: 3030
     file: 2025/12/SocialBodyLab_UWB1_Nicholas-Puckett.png
     role: featured
+    bytes: 1755281
     alt: null
     caption: null
   - type: image
     id: 3029
     file: 2025/12/SocialBodyLab_UWB4_Nicholas-Puckett.png
+    bytes: 1612396
     alt: null
     caption: null
   - type: image
     id: 3031
     file: 2025/12/SocialBodyLab_UWB2_Nicholas-Puckett.png
+    bytes: 1855378
     alt: null
     caption: null
   - type: image
     id: 3032
     file: 2025/12/SocialBodyLab_UWB3_Nicholas-Puckett.png
+    bytes: 1598376
     alt: null
     caption: null
 layout: default

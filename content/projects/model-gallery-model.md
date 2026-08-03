@@ -37,16 +37,19 @@ media:
     id: 2127
     file: 2022/12/Model-Gallery-model_1_Barbara-Rauch.jpg
     role: featured
+    bytes: 1837016
     alt: null
     caption: null
   - type: image
     id: 2128
     file: 2022/12/Model-Gallery-model_2_Barbara-Rauch.jpg
+    bytes: 427698
     alt: null
     caption: null
   - type: image
     id: 2129
     file: 2022/12/Model-Gallery-model_3_Barbara-Rauch.jpg
+    bytes: 1088714
     alt: null
     caption: null
 layout: default

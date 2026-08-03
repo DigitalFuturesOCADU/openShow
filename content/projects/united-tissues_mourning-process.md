@@ -19,11 +19,13 @@ media:
     id: 1962
     file: 2020/12/barbara.jpg
     role: featured
+    bytes: 145659
     alt: null
     caption: null
   - type: image
     id: 1961
     file: 2020/12/united-tissues_mourning-process.jpg
+    bytes: 435774
     alt: null
     caption: null
 layout: default

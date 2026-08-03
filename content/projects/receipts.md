@@ -30,16 +30,19 @@ media:
     id: 1909
     file: 2020/12/receipts-1_Immony-Men.jpg
     role: featured
+    bytes: 1009898
     alt: null
     caption: null
   - type: image
     id: 1910
     file: 2020/12/receipts-2_Immony-Men.jpg
+    bytes: 840856
     alt: null
     caption: null
   - type: image
     id: 1911
     file: 2020/12/receipts-3_Immony-Men.jpg
+    bytes: 1048029
     alt: null
     caption: null
 layout: default

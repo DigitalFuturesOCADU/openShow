@@ -22,21 +22,25 @@ media:
     id: 1759
     file: 2020/12/Reel1_Francisco-Samayoa.png
     role: featured
+    bytes: 1783856
     alt: null
     caption: null
   - type: image
     id: 1760
     file: 2020/12/Reel2_Francisco-Samayoa.png
+    bytes: 1866412
     alt: null
     caption: null
   - type: image
     id: 1762
     file: 2020/12/Reel3_Francisco-Samayoa.png
+    bytes: 1922050
     alt: null
     caption: null
   - type: image
     id: 1763
     file: 2020/12/Reel4_Francisco-Samayoa.png
+    bytes: 2486633
     alt: null
     caption: null
 layout: default

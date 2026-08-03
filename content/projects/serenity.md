@@ -18,23 +18,30 @@ creditsRaw: Rhepa Kamal
 media:
   - type: image
     id: 1699
-    file: 2020/12/Generative-1_Rhepa-Kamal-scaled.jpg
+    file: 2020/12/Generative-1_Rhepa-Kamal.jpg
     role: featured
+    servedByWordpress: 2020/12/Generative-1_Rhepa-Kamal-scaled.jpg
+    bytes: 475779
     alt: null
     caption: null
   - type: image
     id: 1701
-    file: 2020/12/Generative-3_Rhepa-Kamal-scaled.jpg
+    file: 2020/12/Generative-3_Rhepa-Kamal.jpg
+    servedByWordpress: 2020/12/Generative-3_Rhepa-Kamal-scaled.jpg
+    bytes: 398042
     alt: null
     caption: null
   - type: image
     id: 1702
-    file: 2020/12/generative-4_Rhepa-Kamal-scaled.jpg
+    file: 2020/12/generative-4_Rhepa-Kamal.jpg
+    servedByWordpress: 2020/12/generative-4_Rhepa-Kamal-scaled.jpg
+    bytes: 1175301
     alt: null
     caption: null
   - type: image
     id: 1703
     file: 2020/12/generative-5_Rhepa-Kamal.jpg
+    bytes: 722411
     alt: null
     caption: null
 layout: default

@@ -23,26 +23,31 @@ media:
     id: 1964
     file: 2020/12/Screen-Shot-2020-12-16-at-10.32.13_Nuo-Chen.png
     role: featured
+    bytes: 382846
     alt: null
     caption: null
   - type: image
     id: 1965
     file: 2020/12/Screen-Shot-2020-12-16-at-10.32.22_Nuo-Chen.png
+    bytes: 1132881
     alt: null
     caption: null
   - type: image
     id: 1966
     file: 2020/12/Screen-Shot-2020-12-16-at-10.32.31_Nuo-Chen.png
+    bytes: 788883
     alt: null
     caption: null
   - type: image
     id: 1967
     file: 2020/12/Screen-Shot-2020-12-16-at-10.32.47_Nuo-Chen.png
+    bytes: 668484
     alt: null
     caption: null
   - type: image
     id: 1968
     file: 2020/12/Screen-Shot-2020-12-16-at-10.33.23_Nuo-Chen.png
+    bytes: 379538
     alt: null
     caption: null
 layout: default

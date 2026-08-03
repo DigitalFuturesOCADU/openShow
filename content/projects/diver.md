@@ -18,11 +18,13 @@ media:
     id: 1970
     file: 2020/12/reyto-diver-01.png
     role: featured
+    bytes: 1202066
     alt: null
     caption: null
   - type: image
     id: 1971
     file: 2020/12/reyto-diver-02.png
+    bytes: 1146287
     alt: null
     caption: null
 layout: default

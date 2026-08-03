@@ -31,21 +31,25 @@ media:
     id: 2806
     file: 2024/12/HeartHop_1_Giuliana-Costa.png
     role: featured
+    bytes: 836120
     alt: HeartHop_1_Giuliana Costa
     caption: HeartHop_1_Giuliana Costa
   - type: image
     id: 2809
     file: 2024/12/HeartHop_4_Giuliana-Costa.png
+    bytes: 425725
     alt: null
     caption: null
   - type: image
     id: 2808
     file: 2024/12/HeartHop_3_Giuliana-Costa.png
+    bytes: 948003
     alt: null
     caption: null
   - type: image
     id: 2807
     file: 2024/12/HeartHop_2_Giuliana-Costa.png
+    bytes: 883676
     alt: null
     caption: null
 layout: default

@@ -27,21 +27,25 @@ media:
     id: 2469
     file: 2023/12/NamielleCape_anonymous-Copy.jpg
     role: featured
+    bytes: 22831
     alt: null
     caption: null
   - type: image
     id: 2465
     file: 2023/12/NamielleCape_anonymous-e1701395090801.jpg
+    bytes: 21156
     alt: null
     caption: null
   - type: image
     id: 2466
     file: 2023/12/ProcessImage4-1-1152x1536_anonymous.jpg
+    bytes: 219944
     alt: null
     caption: null
   - type: image
     id: 2467
     file: 2023/12/ProcessImage5-1-1152x1536_anonymous.jpg
+    bytes: 346811
     alt: null
     caption: null
 layout: default

@@ -20,21 +20,25 @@ media:
     id: 2448
     file: 2023/11/3_anonymous.jpeg
     role: featured
+    bytes: 132793
     alt: null
     caption: null
   - type: image
     id: 2446
     file: 2023/11/1_anonymous.jpg
+    bytes: 110592
     alt: null
     caption: null
   - type: image
     id: 2447
     file: 2023/11/2_anonymous.jpg
+    bytes: 259000
     alt: null
     caption: null
   - type: image
     id: 2449
     file: 2023/11/4_anonymous.jpg
+    bytes: 280279
     alt: null
     caption: null
 layout: default

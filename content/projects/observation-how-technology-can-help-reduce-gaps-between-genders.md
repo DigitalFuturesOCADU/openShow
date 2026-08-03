@@ -18,6 +18,7 @@ media:
     id: 1575
     file: 2020/12/observation.jpg
     role: featured
+    bytes: 753032
     alt: null
     caption: null
 layout: default

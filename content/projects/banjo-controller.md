@@ -21,6 +21,7 @@ media:
     id: 2972
     file: 2025/12/IMG_2346_Xia-Yuhan.jpeg
     role: featured
+    bytes: 316357
     alt: null
     caption: null
 layout: default

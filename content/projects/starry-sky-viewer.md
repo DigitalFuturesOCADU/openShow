@@ -20,16 +20,19 @@ media:
     id: 1898
     file: 2020/12/Starry-Sky-Viewer_1_Garance-Zhang.jpg
     role: featured
+    bytes: 482503
     alt: null
     caption: null
   - type: image
     id: 1899
     file: 2020/12/Starry-Sky-Viewer_2_Garance-Zhang.jpg
+    bytes: 208532
     alt: null
     caption: null
   - type: image
     id: 1900
     file: 2020/12/Starry-Sky-Viewer_3_Garance-Zhang.jpg
+    bytes: 117433
     alt: null
     caption: null
 layout: default

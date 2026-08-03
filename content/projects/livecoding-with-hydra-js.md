@@ -24,26 +24,31 @@ media:
     id: 2814
     file: 2024/12/LivecodingWithHydra_1_Saad-Ali.png
     role: featured
+    bytes: 1555120
     alt: null
     caption: null
   - type: image
     id: 2818
     file: 2024/12/LivecodingWithHydra_5_Saad-Ali.png
+    bytes: 4414693
     alt: null
     caption: null
   - type: image
     id: 2817
     file: 2024/12/LivecodingWithHydra_4_Saad-Ali.png
+    bytes: 4461041
     alt: null
     caption: null
   - type: image
     id: 2816
     file: 2024/12/LivecodingWithHydra_3_Saad-Ali.png
+    bytes: 1923000
     alt: null
     caption: null
   - type: image
     id: 2815
     file: 2024/12/LivecodingWithHydra_2_Saad-Ali.png
+    bytes: 1819853
     alt: null
     caption: null
 layout: default

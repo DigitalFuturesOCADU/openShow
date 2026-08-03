@@ -21,11 +21,13 @@ media:
     id: 2539
     file: 2023/12/myCanvas-2_anonymous.png
     role: featured
+    bytes: 194088
     alt: null
     caption: null
   - type: image
     id: 2538
     file: 2023/12/myCanvas-1_anonymous.png
+    bytes: 124075
     alt: null
     caption: null
 layout: default

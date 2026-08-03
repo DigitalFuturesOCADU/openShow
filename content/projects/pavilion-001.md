@@ -25,16 +25,19 @@ media:
     id: 1668
     file: 2020/12/Artboard-10_Catherine-Xu.jpg
     role: featured
+    bytes: 1651039
     alt: null
     caption: null
   - type: image
     id: 1666
     file: 2020/12/1.1_Catherine-Xu.jpg
+    bytes: 540562
     alt: null
     caption: null
   - type: image
     id: 1667
     file: 2020/12/1.2_Catherine-Xu.jpg
+    bytes: 532808
     alt: null
     caption: null
 layout: default

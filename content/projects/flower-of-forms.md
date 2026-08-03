@@ -20,16 +20,19 @@ media:
     id: 1725
     file: 2020/12/FoF4_Ryan-Boyd.png
     role: featured
+    bytes: 961436
     alt: null
     caption: null
   - type: image
     id: 1723
     file: 2020/12/FoF_Ryan-Boyd.png
+    bytes: 235277
     alt: null
     caption: null
   - type: image
     id: 1724
     file: 2020/12/FoF3_Ryan-Boyd.png
+    bytes: 957989
     alt: null
     caption: null
 layout: default

@@ -41,11 +41,13 @@ media:
     id: 2601
     file: 2023/12/robot.png
     role: featured
+    bytes: 182510
     alt: null
     caption: null
   - type: image
     id: 2602
     file: 2023/12/robot2.png
+    bytes: 191796
     alt: null
     caption: null
 layout: default

@@ -21,16 +21,19 @@ media:
     id: 1735
     file: 2020/12/SYNTH-3_Greg-Martin.png
     role: featured
+    bytes: 265951
     alt: null
     caption: null
   - type: image
     id: 1733
     file: 2020/12/SYNTH-1_Greg-Martin.png
+    bytes: 20006
     alt: null
     caption: null
   - type: image
     id: 1734
     file: 2020/12/SYNTH-2_Greg-Martin.png
+    bytes: 245857
     alt: null
     caption: null
 layout: default

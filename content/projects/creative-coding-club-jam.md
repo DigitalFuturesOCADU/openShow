@@ -34,28 +34,38 @@ creditsRaw: Saad Aslam Ali, Rojina Pedramy, Yusif Safarzade, Menita Sriharsha, H
 media:
   - type: image
     id: 2975
-    file: 2025/12/CreativeCodingClubJam_5_Saad-Ali-1-scaled.png
+    file: 2025/12/CreativeCodingClubJam_5_Saad-Ali-1.png
     role: featured
+    servedByWordpress: 2025/12/CreativeCodingClubJam_5_Saad-Ali-1-scaled.png
+    bytes: 10329649
     alt: null
     caption: null
   - type: image
     id: 2976
-    file: 2025/12/CreativeCodingClubJam_1_Saad-Ali-1-scaled.jpg
+    file: 2025/12/CreativeCodingClubJam_1_Saad-Ali-1.jpg
+    servedByWordpress: 2025/12/CreativeCodingClubJam_1_Saad-Ali-1-scaled.jpg
+    bytes: 8741794
     alt: null
     caption: null
   - type: image
     id: 2977
-    file: 2025/12/CreativeCodingClubJam_4_Saad-Ali-1-scaled.png
+    file: 2025/12/CreativeCodingClubJam_4_Saad-Ali-1.png
+    servedByWordpress: 2025/12/CreativeCodingClubJam_4_Saad-Ali-1-scaled.png
+    bytes: 7555806
     alt: null
     caption: null
   - type: image
     id: 2978
-    file: 2025/12/CreativeCodingClubJam_3_Saad-Ali-1-scaled.png
+    file: 2025/12/CreativeCodingClubJam_3_Saad-Ali-1.png
+    servedByWordpress: 2025/12/CreativeCodingClubJam_3_Saad-Ali-1-scaled.png
+    bytes: 5574362
     alt: null
     caption: null
   - type: image
     id: 2979
-    file: 2025/12/CreativeCodingClubJam_2_Saad-Ali-scaled.png
+    file: 2025/12/CreativeCodingClubJam_2_Saad-Ali.png
+    servedByWordpress: 2025/12/CreativeCodingClubJam_2_Saad-Ali-scaled.png
+    bytes: 655149
     alt: null
     caption: null
 layout: default

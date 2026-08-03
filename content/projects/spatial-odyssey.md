@@ -29,13 +29,17 @@ creditsRaw: Aishwarya Bhattbhatt, Aranya Khurana, Nastaran Bizmark, Rutooja Kham
 media:
   - type: image
     id: 2549
-    file: 2023/12/SpatialOdyssey_1_anonymous-scaled.jpg
+    file: 2023/12/SpatialOdyssey_1_anonymous.jpg
     role: featured
+    servedByWordpress: 2023/12/SpatialOdyssey_1_anonymous-scaled.jpg
+    bytes: 6086757
     alt: null
     caption: null
   - type: image
     id: 2550
-    file: 2023/12/SpatialOdyssey_2_anonymous-scaled.jpg
+    file: 2023/12/SpatialOdyssey_2_anonymous.jpg
+    servedByWordpress: 2023/12/SpatialOdyssey_2_anonymous-scaled.jpg
+    bytes: 5722535
     alt: null
     caption: null
 layout: default

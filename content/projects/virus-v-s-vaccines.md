@@ -32,31 +32,37 @@ media:
     id: 1844
     file: 2020/12/vvvv.jpg.png
     role: featured
+    bytes: 775996
     alt: null
     caption: null
   - type: image
     id: 1752
     file: 2020/12/Virus-vs-Vaccines_1_Achal-Shah.jpg
+    bytes: 73545
     alt: null
     caption: null
   - type: image
     id: 1765
     file: 2020/12/Image_3-1200x600_Simran-Duggal.jpg
+    bytes: 102280
     alt: null
     caption: null
   - type: image
     id: 1766
     file: 2020/12/Images-07-1200x936_Simran-Duggal.jpg
+    bytes: 159279
     alt: null
     caption: null
   - type: image
     id: 1767
     file: 2020/12/Images-08-1200x1544_Simran-Duggal.jpg
+    bytes: 271701
     alt: null
     caption: null
   - type: image
     id: 1769
     file: 2020/12/Screenshot-2020-11-20-at-9.52.39-PM-1200x598_Simran-Duggal.png
+    bytes: 773014
     alt: null
     caption: null
 layout: default

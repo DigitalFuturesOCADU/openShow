@@ -24,21 +24,25 @@ media:
     id: 2772
     file: 2024/12/TacTile2024_3_Aranya-Khurana.png
     role: featured
+    bytes: 9075993
     alt: null
     caption: null
   - type: image
     id: 2773
     file: 2024/12/TacTile2024_4_Aranya-Khurana.png
+    bytes: 8460122
     alt: null
     caption: null
   - type: image
     id: 2771
     file: 2024/12/TacTile2024_2_Aranya-Khurana.png
+    bytes: 9950251
     alt: null
     caption: null
   - type: image
     id: 2770
     file: 2024/12/TacTile2024_1_Aranya-Khurana.png
+    bytes: 9825971
     alt: null
     caption: null
 layout: default

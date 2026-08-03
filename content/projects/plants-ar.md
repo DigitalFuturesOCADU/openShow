@@ -20,21 +20,25 @@ media:
     id: 1696
     file: 2020/12/onirix_061108210_Arashjot-Kaur.jpg
     role: featured
+    bytes: 78028
     alt: null
     caption: null
   - type: image
     id: 1694
     file: 2020/12/onirix_011143144_Arashjot-Kaur.jpg
+    bytes: 90121
     alt: null
     caption: null
   - type: image
     id: 1695
     file: 2020/12/onirix_061100699_Arashjot-Kaur.jpg
+    bytes: 79550
     alt: null
     caption: null
   - type: image
     id: 1697
     file: 2020/12/onirix_101126896_Arashjot-Kaur.jpg
+    bytes: 89454
     alt: null
     caption: null
 layout: default

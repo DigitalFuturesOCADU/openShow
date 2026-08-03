@@ -19,31 +19,40 @@ media:
     id: 2966
     file: 2025/12/WildfireVR_1_Sebastian-Gorfinkel.png
     role: featured
+    bytes: 5115684
     alt: null
     caption: null
   - type: image
     id: 2965
-    file: 2025/12/WildfireVR_6_Sebastian-Gorfinkel-scaled.png
+    file: 2025/12/WildfireVR_6_Sebastian-Gorfinkel.png
+    servedByWordpress: 2025/12/WildfireVR_6_Sebastian-Gorfinkel-scaled.png
+    bytes: 7229091
     alt: null
     caption: null
   - type: image
     id: 2970
-    file: 2025/12/WildfireVR_5_Sebastian-Gorfinkel-scaled.png
+    file: 2025/12/WildfireVR_5_Sebastian-Gorfinkel.png
+    servedByWordpress: 2025/12/WildfireVR_5_Sebastian-Gorfinkel-scaled.png
+    bytes: 7390357
     alt: null
     caption: null
   - type: image
     id: 2969
-    file: 2025/12/WildfireVR_4_Sebastian-Gorfinkel-scaled.png
+    file: 2025/12/WildfireVR_4_Sebastian-Gorfinkel.png
+    servedByWordpress: 2025/12/WildfireVR_4_Sebastian-Gorfinkel-scaled.png
+    bytes: 5011750
     alt: null
     caption: null
   - type: image
     id: 2968
     file: 2025/12/WildfireVR_3_Sebastian-Gorfinkel.png
+    bytes: 4759218
     alt: null
     caption: null
   - type: image
     id: 2967
     file: 2025/12/WildfireVR_2_Sebastian-Gorfinkel.png
+    bytes: 3774660
     alt: null
     caption: null
 layout: default

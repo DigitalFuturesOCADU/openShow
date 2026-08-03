@@ -22,26 +22,31 @@ media:
     id: 2486
     file: 2023/12/hunterfox1_featured.png
     role: featured
+    bytes: 303977
     alt: null
     caption: null
   - type: image
     id: 2482
     file: 2023/12/hunterfox2_anonymous.png
+    bytes: 395037
     alt: null
     caption: null
   - type: image
     id: 2483
     file: 2023/12/hunterfox3_anonymous.png
+    bytes: 995025
     alt: null
     caption: null
   - type: image
     id: 2484
     file: 2023/12/hunterfox4_anonymous.png
+    bytes: 1329235
     alt: null
     caption: null
   - type: image
     id: 2485
     file: 2023/12/hunterfox1_anonymous.png
+    bytes: 378586
     alt: null
     caption: null
 layout: default

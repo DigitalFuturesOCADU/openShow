@@ -26,6 +26,7 @@ media:
     id: 2340
     file: 2023/04/pizza.png
     role: featured
+    bytes: 61428
     alt: null
     caption: null
 layout: default

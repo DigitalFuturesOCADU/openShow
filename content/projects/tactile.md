@@ -22,8 +22,10 @@ creditsRaw: Aranya Khurana
 media:
   - type: image
     id: 2492
-    file: 2023/12/NIME-Tactile_anonymous-scaled.jpg
+    file: 2023/12/NIME-Tactile_anonymous.jpg
     role: featured
+    servedByWordpress: 2023/12/NIME-Tactile_anonymous-scaled.jpg
+    bytes: 6388410
     alt: null
     caption: null
 layout: default

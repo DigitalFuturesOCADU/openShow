@@ -30,21 +30,25 @@ media:
     id: 1721
     file: 2020/12/cine4_Ryan-Boyd.png
     role: featured
+    bytes: 1057159
     alt: null
     caption: null
   - type: image
     id: 1718
     file: 2020/12/cine_Ryan-Boyd.png
+    bytes: 1014078
     alt: null
     caption: null
   - type: image
     id: 1719
     file: 2020/12/cine2_Ryan-Boyd.png
+    bytes: 1068129
     alt: null
     caption: null
   - type: image
     id: 1720
     file: 2020/12/cine3_Ryan-Boyd.png
+    bytes: 928499
     alt: null
     caption: null
 layout: default

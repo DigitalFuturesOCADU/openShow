@@ -31,21 +31,25 @@ media:
     id: 3024
     file: 2025/12/SocialBodyLab_Make94_NetworkedLightUpCostumes_Kate-Hartman.jpeg
     role: featured
+    bytes: 627577
     alt: null
     caption: null
   - type: image
     id: 3025
     file: 2025/12/SocialBodyLab_Make94_NetworkedLightUpCostumes-2_Kate-Hartman.jpeg
+    bytes: 641528
     alt: null
     caption: null
   - type: image
     id: 3026
     file: 2025/12/SocialBodyLab_Make94_NetworkedLightUpCostumes-3_Kate-Hartman.jpeg
+    bytes: 655682
     alt: null
     caption: null
   - type: image
     id: 3027
     file: 2025/12/SocialBodyLab_Make94_NetworkedLightUpCostumes-4_Kate-Hartman.jpeg
+    bytes: 624945
     alt: null
     caption: null
 layout: default

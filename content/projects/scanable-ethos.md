@@ -20,6 +20,7 @@ media:
     id: 2232
     file: 2022/12/1652651650251_Justin-Pham.jpg
     role: featured
+    bytes: 463050
     alt: null
     caption: _empty
 layout: default

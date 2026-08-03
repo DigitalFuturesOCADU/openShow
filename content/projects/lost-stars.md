@@ -22,16 +22,19 @@ media:
     id: 3040
     file: 2025/12/LostStars_Daniela-Ortiz-Correa_FEATURE.jpg
     role: featured
+    bytes: 1815811
     alt: null
     caption: null
   - type: image
     id: 3017
     file: 2025/12/LostStars_Daniela-Ortiz-Correa.jpg
+    bytes: 3253058
     alt: null
     caption: null
   - type: image
     id: 3019
     file: 2025/12/LostStarsInteraction_Daniela-Ortiz-Correa.jpeg
+    bytes: 1935152
     alt: null
     caption: null
 layout: default

@@ -22,16 +22,19 @@ media:
     id: 2104
     file: 2022/12/altarofpandora_Ryan-Boyd.png
     role: featured
+    bytes: 1827908
     alt: null
     caption: null
   - type: image
     id: 2105
     file: 2022/12/hereor_Ryan-Boyd.png
+    bytes: 623814
     alt: null
     caption: null
   - type: image
     id: 2106
     file: 2022/12/ryan-boyd-altarofpandora_Ryan-Boyd.jpg
+    bytes: 302922
     alt: null
     caption: null
 layout: default

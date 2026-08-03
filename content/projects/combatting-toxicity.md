@@ -21,16 +21,21 @@ media:
     id: 3053
     file: 2024/12/Combatting_Toxicity_1_Jessica-Patel_FEATURE1.jpg
     role: featured
+    bytes: 465429
     alt: null
     caption: null
   - type: image
     id: 2727
-    file: 2024/12/Combatting_Toxicity_2_Jessica-Patel-scaled.jpg
+    file: 2024/12/Combatting_Toxicity_2_Jessica-Patel.jpg
+    servedByWordpress: 2024/12/Combatting_Toxicity_2_Jessica-Patel-scaled.jpg
+    bytes: 1006462
     alt: null
     caption: null
   - type: image
     id: 2726
-    file: 2024/12/Combatting_Toxicity_1_Jessica-Patel-scaled.jpg
+    file: 2024/12/Combatting_Toxicity_1_Jessica-Patel.jpg
+    servedByWordpress: 2024/12/Combatting_Toxicity_1_Jessica-Patel-scaled.jpg
+    bytes: 1047959
     alt: null
     caption: null
 layout: default

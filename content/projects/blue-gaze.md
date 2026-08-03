@@ -30,21 +30,26 @@ media:
     id: 2715
     file: 2024/12/BlueGaze_3_Kasper-Zhang.jpg
     role: featured
+    bytes: 1235188
     alt: null
     caption: null
   - type: image
     id: 2713
     file: 2024/12/BlueGaze_1_Kasper-Zhang.png
+    bytes: 6195096
     alt: Blue Gaze
     caption: Blue Gaze
   - type: image
     id: 2714
-    file: 2024/12/BlueGaze_2_Kasper-Zhang-scaled.jpg
+    file: 2024/12/BlueGaze_2_Kasper-Zhang.jpg
+    servedByWordpress: 2024/12/BlueGaze_2_Kasper-Zhang-scaled.jpg
+    bytes: 4760887
     alt: null
     caption: null
   - type: image
     id: 2716
     file: 2024/12/BlueGaze_4_Kasper-Zhang.png
+    bytes: 4857520
     alt: null
     caption: null
 layout: default

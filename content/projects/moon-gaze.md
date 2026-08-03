@@ -26,6 +26,7 @@ media:
     id: 2367
     file: 2023/04/moon.jpg
     role: featured
+    bytes: 1038548
     alt: null
     caption: null
 layout: default

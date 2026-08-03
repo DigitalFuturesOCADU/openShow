@@ -23,26 +23,31 @@ media:
     id: 2160
     file: 2022/12/Screenshot_20221130_110209_Ethan-Day.png
     role: featured
+    bytes: 69668
     alt: null
     caption: null
   - type: image
     id: 2161
     file: 2022/12/Screenshot_20221201_020449_Ethan-Day.png
+    bytes: 56189
     alt: null
     caption: null
   - type: image
     id: 2162
     file: 2022/12/Screenshot_20221201_021758_Ethan-Day.png
+    bytes: 64194
     alt: null
     caption: null
   - type: image
     id: 2163
     file: 2022/12/Screenshot_20221201_023029_Ethan-Day.png
+    bytes: 559758
     alt: null
     caption: null
   - type: image
     id: 2164
     file: 2022/12/Screenshot_20221201_030722_Ethan-Day.png
+    bytes: 440303
     alt: null
     caption: null
 layout: default

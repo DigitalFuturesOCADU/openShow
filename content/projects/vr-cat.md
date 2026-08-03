@@ -18,8 +18,10 @@ creditsRaw: Thoreau Bakker
 media:
   - type: image
     id: 2240
-    file: 2022/12/IMG_4183-scaled.jpg
+    file: 2022/12/IMG_4183.jpg
     role: featured
+    servedByWordpress: 2022/12/IMG_4183-scaled.jpg
+    bytes: 815355
     alt: null
     caption: null
 layout: default

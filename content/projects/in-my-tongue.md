@@ -25,21 +25,25 @@ media:
     id: 2172
     file: 2022/12/InMyTongue_1_Candide-Uyanze.png
     role: featured
+    bytes: 3318579
     alt: null
     caption: null
   - type: image
     id: 2173
     file: 2022/12/InMyTongue_2_Candide-Uyanze.png
+    bytes: 3094806
     alt: null
     caption: null
   - type: image
     id: 2174
     file: 2022/12/InMyTongue_3_Candide-Uyanze.png
+    bytes: 3317718
     alt: null
     caption: null
   - type: image
     id: 2175
     file: 2022/12/InMyTongue_4_Candide-Uyanze.png
+    bytes: 3150101
     alt: null
     caption: null
 layout: default

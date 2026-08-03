@@ -23,16 +23,19 @@ media:
     id: 2495
     file: 2023/12/Tablingo_2_anonymous.png
     role: featured
+    bytes: 455163
     alt: null
     caption: null
   - type: image
     id: 2494
     file: 2023/12/Tablingo_1_anonymous.png
+    bytes: 578345
     alt: null
     caption: null
   - type: image
     id: 2496
     file: 2023/12/Tablingo_3_anonymous.png
+    bytes: 233330
     alt: null
     caption: null
 layout: default

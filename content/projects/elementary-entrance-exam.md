@@ -22,16 +22,19 @@ media:
     id: 2100
     file: 2022/12/1_Ryan-Boyd.png
     role: featured
+    bytes: 3212480
     alt: null
     caption: null
   - type: image
     id: 2101
     file: 2022/12/2_Ryan-Boyd.png
+    bytes: 1447167
     alt: null
     caption: null
   - type: image
     id: 2102
     file: 2022/12/3_Ryan-Boyd.png
+    bytes: 1699929
     alt: null
     caption: null
 layout: default

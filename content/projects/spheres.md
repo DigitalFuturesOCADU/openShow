@@ -21,21 +21,25 @@ media:
     id: 2183
     file: 2022/12/Spheres-1_Jacob-Cram.png
     role: featured
+    bytes: 2130952
     alt: null
     caption: null
   - type: image
     id: 2184
     file: 2022/12/Spheres-2_Jacob-Cram.png
+    bytes: 2032766
     alt: null
     caption: null
   - type: image
     id: 2185
     file: 2022/12/Spheres-3_Jacob-Cram.png
+    bytes: 1841059
     alt: null
     caption: null
   - type: image
     id: 2187
     file: 2022/12/Spheres-Info-4_Jacob-Cram.png
+    bytes: 812223
     alt: null
     caption: null
 layout: default

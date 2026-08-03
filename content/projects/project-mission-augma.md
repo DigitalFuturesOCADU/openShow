@@ -24,16 +24,19 @@ media:
     id: 2096
     file: 2022/12/Project_Mission_Augma_1_Aimee-Chen.jpg
     role: featured
+    bytes: 203278
     alt: null
     caption: null
   - type: image
     id: 2097
     file: 2022/12/Project_Mission_Augma_2_Aimee-Chen.png
+    bytes: 7144656
     alt: null
     caption: null
   - type: image
     id: 2098
     file: 2022/12/Project_Mission_Augma_3_Aimee-Chen.png
+    bytes: 5122021
     alt: null
     caption: null
 layout: default

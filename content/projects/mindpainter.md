@@ -24,6 +24,7 @@ media:
     id: 2357
     file: 2023/04/mind.jpg
     role: featured
+    bytes: 80353
     alt: null
     caption: null
 layout: default

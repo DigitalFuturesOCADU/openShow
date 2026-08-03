@@ -20,21 +20,25 @@ media:
     id: 2205
     file: 2022/12/Guard-knight_Bryan-Lee.jpg
     role: featured
+    bytes: 159682
     alt: null
     caption: null
   - type: image
     id: 2206
     file: 2022/12/Golem-Knight-Design_Bryan-Lee.jpg
+    bytes: 119554
     alt: null
     caption: null
   - type: image
     id: 2207
     file: 2022/12/Female-Knight-concept_Bryan-Lee.jpg
+    bytes: 72495
     alt: null
     caption: null
   - type: image
     id: 2208
     file: 2022/12/Executioner_Bryan-Lee.jpg
+    bytes: 233435
     alt: null
     caption: null
 layout: default

@@ -21,26 +21,31 @@ media:
     id: 1676
     file: 2020/12/pv2_03.jpg
     role: featured
+    bytes: 1324013
     alt: null
     caption: null
   - type: image
     id: 1679
     file: 2020/12/pulse.gif
+    bytes: 3225871
     alt: null
     caption: null
   - type: image
     id: 1675
     file: 2020/12/pv2_01.jpg
+    bytes: 1854286
     alt: null
     caption: null
   - type: image
     id: 1678
     file: 2020/12/pv2_06.gif
+    bytes: 1794400
     alt: null
     caption: null
   - type: image
     id: 1677
     file: 2020/12/pv2_05.jpg
+    bytes: 1464295
     alt: null
     caption: null
 layout: default

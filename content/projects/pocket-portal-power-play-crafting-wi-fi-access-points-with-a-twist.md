@@ -22,16 +22,19 @@ media:
     id: 2800
     file: 2024/12/PocketPortalPowerPlay_4-Graphic-horizontal-grain_Candide-Uyanze.png
     role: featured
+    bytes: 1679840
     alt: null
     caption: null
   - type: image
     id: 2801
     file: 2024/12/PocketPortalPowerPlay_Candide-holding-Pocket-Portal-Power-Play_Candide-Uyanze.jpg
+    bytes: 181982
     alt: null
     caption: null
   - type: image
     id: 2802
     file: 2024/12/PocketPortalPowerPlay_Phone-WEMOS-animation-Candide-Uyanze_Candide-Uyanze.gif
+    bytes: 180139
     alt: null
     caption: null
 layout: default

@@ -31,11 +31,13 @@ media:
     id: 2544
     file: 2023/12/截屏2023-11-29-下午2.37.50_anonymous.png
     role: featured
+    bytes: 1133584
     alt: null
     caption: null
   - type: image
     id: 2545
     file: 2023/12/截屏2023-11-29-下午2.38.11_anonymous.png
+    bytes: 664701
     alt: null
     caption: null
 layout: default

@@ -21,6 +21,7 @@ media:
     id: 2318
     file: 2023/04/city-block.png
     role: featured
+    bytes: 23698
     alt: null
     caption: null
 layout: default

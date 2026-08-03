@@ -21,26 +21,34 @@ media:
     id: 1804
     file: 2020/12/1.SJatuweeZeldaMap_Salisa-Jatuweerapong-1.jpg
     role: featured
+    bytes: 1163875
     alt: null
     caption: null
   - type: image
     id: 1797
-    file: 2020/12/2.SJatuweeZeldaPOV1_Salisa-Jatuweerapong-scaled.jpg
+    file: 2020/12/2.SJatuweeZeldaPOV1_Salisa-Jatuweerapong.jpg
+    servedByWordpress: 2020/12/2.SJatuweeZeldaPOV1_Salisa-Jatuweerapong-scaled.jpg
+    bytes: 2776477
     alt: null
     caption: null
   - type: image
     id: 1798
-    file: 2020/12/2.SJatuweeZeldaPOV2_Salisa-Jatuweerapong-scaled.jpg
+    file: 2020/12/2.SJatuweeZeldaPOV2_Salisa-Jatuweerapong.jpg
+    servedByWordpress: 2020/12/2.SJatuweeZeldaPOV2_Salisa-Jatuweerapong-scaled.jpg
+    bytes: 1875134
     alt: null
     caption: null
   - type: image
     id: 1799
-    file: 2020/12/3.SJatuweeZeldaPOI_Salisa-Jatuweerapong-scaled.jpg
+    file: 2020/12/3.SJatuweeZeldaPOI_Salisa-Jatuweerapong.jpg
+    servedByWordpress: 2020/12/3.SJatuweeZeldaPOI_Salisa-Jatuweerapong-scaled.jpg
+    bytes: 2129632
     alt: null
     caption: null
   - type: image
     id: 1801
     file: 2020/12/4.SJatuweeZeldaPropsModular_Salisa-Jatuweerapong.jpg
+    bytes: 1059765
     alt: null
     caption: null
 layout: default

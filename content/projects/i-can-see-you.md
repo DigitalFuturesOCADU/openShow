@@ -24,16 +24,21 @@ media:
     id: 2985
     file: 2025/12/ICanSeeYou_3_Yusif-Safarzade.jpeg
     role: featured
+    bytes: 133519
     alt: null
     caption: null
   - type: image
     id: 2987
-    file: 2025/12/ICanSeeYou_2_Yusif-Safarzade-scaled.jpeg
+    file: 2025/12/ICanSeeYou_2_Yusif-Safarzade.jpeg
+    servedByWordpress: 2025/12/ICanSeeYou_2_Yusif-Safarzade-scaled.jpeg
+    bytes: 511634
     alt: null
     caption: null
   - type: image
     id: 2986
-    file: 2025/12/ICanSeeYou_1_Yusif-Safarzade-scaled.jpeg
+    file: 2025/12/ICanSeeYou_1_Yusif-Safarzade.jpeg
+    servedByWordpress: 2025/12/ICanSeeYou_1_Yusif-Safarzade-scaled.jpeg
+    bytes: 943253
     alt: null
     caption: null
 layout: default

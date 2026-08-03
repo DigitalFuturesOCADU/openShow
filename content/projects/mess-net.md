@@ -32,6 +32,7 @@ media:
     id: 2344
     file: 2023/04/mess.png
     role: featured
+    bytes: 227580
     alt: null
     caption: null
 layout: default

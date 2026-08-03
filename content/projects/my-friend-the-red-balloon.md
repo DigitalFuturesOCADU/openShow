@@ -28,16 +28,21 @@ media:
     id: 2953
     file: 2025/12/the-red-balloon_3_Chen-Rina.png
     role: featured
+    bytes: 862766
     alt: null
     caption: null
   - type: image
     id: 2955
-    file: 2025/12/the-red-balloon_2_Chen-Rina-scaled.png
+    file: 2025/12/the-red-balloon_2_Chen-Rina.png
+    servedByWordpress: 2025/12/the-red-balloon_2_Chen-Rina-scaled.png
+    bytes: 2061070
     alt: null
     caption: null
   - type: image
     id: 2954
-    file: 2025/12/the-red-balloon_1_Chen-Rina-scaled.png
+    file: 2025/12/the-red-balloon_1_Chen-Rina.png
+    servedByWordpress: 2025/12/the-red-balloon_1_Chen-Rina-scaled.png
+    bytes: 1783561
     alt: null
     caption: null
 layout: default

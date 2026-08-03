@@ -25,6 +25,7 @@ media:
     id: 2594
     file: 2023/12/tounge.png
     role: featured
+    bytes: 1488520
     alt: null
     caption: null
 layout: default

@@ -23,11 +23,13 @@ media:
     id: 2896
     file: 2025/12/Ufzdrl_Mika-MacLear-Wall.png
     role: featured
+    bytes: 313996
     alt: null
     caption: null
   - type: image
     id: 2895
     file: 2025/12/W9wi1_Mika-MacLear-Wall.png
+    bytes: 323230
     alt: null
     caption: null
 layout: default

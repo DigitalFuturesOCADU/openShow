@@ -22,8 +22,10 @@ creditsRaw: Juan Sulca, Abha Patil
 media:
   - type: image
     id: 2938
-    file: 2025/12/Screenshot-2025-11-28-at-5.27.02-PM_Juan-Sulca-scaled.png
+    file: 2025/12/Screenshot-2025-11-28-at-5.27.02-PM_Juan-Sulca.png
     role: featured
+    servedByWordpress: 2025/12/Screenshot-2025-11-28-at-5.27.02-PM_Juan-Sulca-scaled.png
+    bytes: 1035277
     alt: null
     caption: null
 layout: default

@@ -37,6 +37,7 @@ media:
     id: 3038
     file: 2025/12/Copy-of-Protoype-Pitch-Presentation.jpg
     role: featured
+    bytes: 42874
     alt: null
     caption: null
 layout: default

@@ -22,6 +22,7 @@ media:
     id: 1874
     file: 2020/12/HFOCOVERPAGE.png
     role: featured
+    bytes: 751439
     alt: null
     caption: null
 layout: default

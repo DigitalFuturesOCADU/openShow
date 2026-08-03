@@ -33,26 +33,33 @@ media:
     id: 2459
     file: 2023/12/Bodies_in_VR_1_anonymous-scaled-e1701395207470.jpg
     role: featured
+    bytes: 826277
     alt: null
     caption: null
   - type: image
     id: 2460
-    file: 2023/12/Bodies_in_VR_2_anonymous-scaled.jpg
+    file: 2023/12/Bodies_in_VR_2_anonymous.jpg
+    servedByWordpress: 2023/12/Bodies_in_VR_2_anonymous-scaled.jpg
+    bytes: 8833796
     alt: null
     caption: null
   - type: image
     id: 2461
-    file: 2023/12/Bodies_in_VR_3_anonymous-scaled.jpg
+    file: 2023/12/Bodies_in_VR_3_anonymous.jpg
+    servedByWordpress: 2023/12/Bodies_in_VR_3_anonymous-scaled.jpg
+    bytes: 8924418
     alt: null
     caption: null
   - type: image
     id: 2462
     file: 2023/12/Bodies_in_VR_4_anonymous.png
+    bytes: 1249794
     alt: null
     caption: null
   - type: image
     id: 2463
     file: 2023/12/Bodies_in_VR_5_anonymous.png
+    bytes: 1751187
     alt: null
     caption: null
 layout: default

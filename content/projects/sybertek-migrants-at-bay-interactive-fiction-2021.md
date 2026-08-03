@@ -31,26 +31,31 @@ media:
     id: 2189
     file: 2022/12/Wandering-Sands-Remnants-pov2_Amreen-Ashraf.png
     role: featured
+    bytes: 1286568
     alt: null
     caption: null
   - type: image
     id: 2190
     file: 2022/12/Wandering-Sands-Remnants-pov3_Amreen-Ashraf.png
+    bytes: 1193369
     alt: null
     caption: null
   - type: image
     id: 2191
     file: 2022/12/Wandering-Sands-Remnants-pov4_Amreen-Ashraf.png
+    bytes: 1493281
     alt: null
     caption: null
   - type: image
     id: 2192
     file: 2022/12/Wandering-Sands-Sybertek-Surveil2_Amreen-Ashraf.png
+    bytes: 3293836
     alt: null
     caption: null
   - type: image
     id: 2193
     file: 2022/12/Wandering-Sands-3-Luxury_Amreen-Ashraf.png
+    bytes: 3894827
     alt: null
     caption: null
 layout: default

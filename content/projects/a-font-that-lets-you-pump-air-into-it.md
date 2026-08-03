@@ -21,11 +21,13 @@ media:
     id: 2701
     file: 2024/12/Screenshot-2024-11-24-at-4.53.10 PM_Abha-Patil.png
     role: featured
+    bytes: 4380048
     alt: Abha Patil Font
     caption: Abha Patil Font
   - type: image
     id: 2700
     file: 2024/12/Screenshot-2024-11-24-at-5.02.32 PM_Abha-Patil.png
+    bytes: 4027584
     alt: Abha Patil Font
     caption: Abha Patil Font
 layout: default

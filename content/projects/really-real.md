@@ -17,23 +17,30 @@ creditsRaw: Elena Misako Smillie
 media:
   - type: image
     id: 2998
-    file: 2025/12/ReallyReal_4_Elena-Smillie-scaled.jpg
+    file: 2025/12/ReallyReal_4_Elena-Smillie.jpg
     role: featured
+    servedByWordpress: 2025/12/ReallyReal_4_Elena-Smillie-scaled.jpg
+    bytes: 1936939
     alt: null
     caption: null
   - type: image
     id: 3001
-    file: 2025/12/ReallyReal_3_Elena-Smillie-scaled.jpg
+    file: 2025/12/ReallyReal_3_Elena-Smillie.jpg
+    servedByWordpress: 2025/12/ReallyReal_3_Elena-Smillie-scaled.jpg
+    bytes: 2231543
     alt: null
     caption: null
   - type: image
     id: 3000
-    file: 2025/12/ReallyReal_2_Elena-Smillie-scaled.jpg
+    file: 2025/12/ReallyReal_2_Elena-Smillie.jpg
+    servedByWordpress: 2025/12/ReallyReal_2_Elena-Smillie-scaled.jpg
+    bytes: 2321524
     alt: null
     caption: null
   - type: image
     id: 2999
     file: 2025/12/ReallyReal_1_Elena-Smillie.jpg
+    bytes: 316618
     alt: null
     caption: null
 layout: default

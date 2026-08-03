@@ -21,21 +21,25 @@ media:
     id: 2504
     file: 2023/12/BroadleafPlantain-PoulticeMakingKit_4_WEB.jpg
     role: featured
+    bytes: 544460
     alt: null
     caption: null
   - type: image
     id: 2502
     file: 2023/12/BroadleafPlantain-PoulticeMakingKit_1_WEB.jpg
+    bytes: 709026
     alt: null
     caption: null
   - type: image
     id: 2500
     file: 2023/12/BroadleafPlantain-PoulticeMakingKit_3_anonymous.jpg
+    bytes: 818324
     alt: null
     caption: null
   - type: image
     id: 2503
     file: 2023/12/BroadleafPlantain-PoulticeMakingKit_2_WEB.jpg
+    bytes: 852838
     alt: null
     caption: null
 layout: default

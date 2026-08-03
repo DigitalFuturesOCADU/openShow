@@ -22,11 +22,13 @@ media:
     id: 1854
     file: 2020/12/Enna-Kim-EnnaKim1.png
     role: featured
+    bytes: 6364713
     alt: null
     caption: null
   - type: image
     id: 1855
     file: 2020/12/Enna-Kim-EnnaKim2.png
+    bytes: 730141
     alt: null
     caption: null
 layout: default

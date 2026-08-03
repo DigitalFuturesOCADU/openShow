@@ -22,21 +22,25 @@ media:
     id: 1904
     file: 2020/12/DA0C5317-A555-4A8C-9F10-4857C60B21AF_Sananda-Dutta-1.jpeg
     role: featured
+    bytes: 613011
     alt: null
     caption: null
   - type: image
     id: 1901
     file: 2020/12/43B5FEAB-8E65-45B5-B5FF-1A225BC502DE_Sananda-Dutta-1.jpeg
+    bytes: 752089
     alt: null
     caption: null
   - type: image
     id: 1902
     file: 2020/12/A197D9B7-91E3-4D8A-A464-71BD3B075FA7_Sananda-Dutta.jpeg
+    bytes: 928533
     alt: null
     caption: null
   - type: image
     id: 1903
     file: 2020/12/C2B648FB-1582-4E51-8EB0-A0C68324A5D4_Sananda-Dutta-1.jpeg
+    bytes: 654625
     alt: null
     caption: null
 layout: default

@@ -21,26 +21,31 @@ media:
     id: 2131
     file: 2022/12/Home_Vanessa-Namseang.png
     role: featured
+    bytes: 1808787
     alt: null
     caption: null
   - type: image
     id: 2132
     file: 2022/12/House_Vanessa-Namseang.png
+    bytes: 1567513
     alt: null
     caption: null
   - type: image
     id: 2133
     file: 2022/12/Journal_Vanessa-Namseang.png
+    bytes: 1604123
     alt: null
     caption: null
   - type: image
     id: 2134
     file: 2022/12/Teddy-Bear_Vanessa-Namseang.png
+    bytes: 1589138
     alt: null
     caption: null
   - type: image
     id: 2135
     file: 2022/12/Thailand_Vanessa-Namseang.png
+    bytes: 1541995
     alt: null
     caption: null
 layout: default

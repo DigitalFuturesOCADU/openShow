@@ -23,11 +23,13 @@ media:
     id: 1866
     file: 2020/12/Sarah-Parent-retreet-first-iteration-mockups.png
     role: featured
+    bytes: 8533208
     alt: null
     caption: null
   - type: image
     id: 1865
     file: 2020/12/Sarah-Parent-retreet-final-mockups.png
+    bytes: 750139
     alt: null
     caption: null
 layout: default

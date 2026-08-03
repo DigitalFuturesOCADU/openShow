@@ -26,16 +26,19 @@ media:
     id: 2567
     file: 2023/12/PeppersGhost_mockupGhost_anonymous.png
     role: featured
+    bytes: 774056
     alt: null
     caption: null
   - type: image
     id: 2565
     file: 2023/12/mockupoutside_anonymous.png
+    bytes: 5293762
     alt: null
     caption: null
   - type: image
     id: 2566
     file: 2023/12/PeppersGhost_internalMockup_anonymous.jpg
+    bytes: 587567
     alt: null
     caption: null
 layout: default

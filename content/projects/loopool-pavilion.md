@@ -19,23 +19,31 @@ creditsRaw: Ziyao Jiang
 media:
   - type: image
     id: 1706
-    file: 2020/12/Loopool-Pavilion-ZIyao-Jiang-1_Jiang-Zi-Yao-scaled.jpg
+    file: 2020/12/Loopool-Pavilion-ZIyao-Jiang-1_Jiang-Zi-Yao.jpg
     role: featured
+    servedByWordpress: 2020/12/Loopool-Pavilion-ZIyao-Jiang-1_Jiang-Zi-Yao-scaled.jpg
+    bytes: 2307534
     alt: null
     caption: null
   - type: image
     id: 1707
-    file: 2020/12/Loopool-Pavilion-ZIyao-Jiang-2_Jiang-Zi-Yao-scaled.jpg
+    file: 2020/12/Loopool-Pavilion-ZIyao-Jiang-2_Jiang-Zi-Yao.jpg
+    servedByWordpress: 2020/12/Loopool-Pavilion-ZIyao-Jiang-2_Jiang-Zi-Yao-scaled.jpg
+    bytes: 5765517
     alt: null
     caption: null
   - type: image
     id: 1708
-    file: 2020/12/Loopool-Pavilion-ZIyao-Jiang-3_Jiang-Zi-Yao-scaled.jpg
+    file: 2020/12/Loopool-Pavilion-ZIyao-Jiang-3_Jiang-Zi-Yao.jpg
+    servedByWordpress: 2020/12/Loopool-Pavilion-ZIyao-Jiang-3_Jiang-Zi-Yao-scaled.jpg
+    bytes: 5898665
     alt: null
     caption: null
   - type: image
     id: 1711
-    file: 2020/12/Loopool-Pavilion-ZIyao-Jiang-4_Jiang-Zi-Yao-scaled.jpg
+    file: 2020/12/Loopool-Pavilion-ZIyao-Jiang-4_Jiang-Zi-Yao.jpg
+    servedByWordpress: 2020/12/Loopool-Pavilion-ZIyao-Jiang-4_Jiang-Zi-Yao-scaled.jpg
+    bytes: 5754932
     alt: null
     caption: null
 layout: default

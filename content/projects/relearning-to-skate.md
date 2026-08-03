@@ -22,16 +22,19 @@ media:
     id: 1838
     file: 2020/12/Relearning_to_Skate_1_Jordan-Shaw.jpg
     role: featured
+    bytes: 68036
     alt: null
     caption: null
   - type: image
     id: 1839
     file: 2020/12/Relearning_to_Skate_2_Jordan-Shaw.jpg
+    bytes: 110952
     alt: null
     caption: null
   - type: image
     id: 1840
     file: 2020/12/Relearning_to_Skate_3_Jordan-Shaw.png
+    bytes: 518510
     alt: null
     caption: null
 layout: default

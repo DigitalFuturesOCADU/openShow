@@ -19,13 +19,17 @@ creditsRaw: Rina Chen
 media:
   - type: image
     id: 2945
-    file: 2025/12/haptic-in-braiding_2_Chen-Rina-scaled.jpg
+    file: 2025/12/haptic-in-braiding_2_Chen-Rina.jpg
     role: featured
+    servedByWordpress: 2025/12/haptic-in-braiding_2_Chen-Rina-scaled.jpg
+    bytes: 2502613
     alt: null
     caption: null
   - type: image
     id: 2946
-    file: 2025/12/haptic-in-braiding_1_Chen-Rina-scaled.jpg
+    file: 2025/12/haptic-in-braiding_1_Chen-Rina.jpg
+    servedByWordpress: 2025/12/haptic-in-braiding_1_Chen-Rina-scaled.jpg
+    bytes: 2435157
     alt: null
     caption: null
 layout: default

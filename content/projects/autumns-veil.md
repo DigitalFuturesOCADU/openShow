@@ -23,23 +23,30 @@ creditsRaw: Assal Toudehfallah, Peter Oke
 media:
   - type: image
     id: 2705
-    file: 2024/12/AutumnsVeil_03_Assal-Toudehfallah-scaled.jpg
+    file: 2024/12/AutumnsVeil_03_Assal-Toudehfallah.jpg
     role: featured
+    servedByWordpress: 2024/12/AutumnsVeil_03_Assal-Toudehfallah-scaled.jpg
+    bytes: 1355450
     alt: Autumn's Veil
     caption: Autumn's Veil
   - type: image
     id: 2703
-    file: 2024/12/AutumnsVeil_01_Assal-Toudehfallah-scaled.jpg
+    file: 2024/12/AutumnsVeil_01_Assal-Toudehfallah.jpg
+    servedByWordpress: 2024/12/AutumnsVeil_01_Assal-Toudehfallah-scaled.jpg
+    bytes: 1253785
     alt: Autumn's Veil
     caption: null
   - type: image
     id: 2704
-    file: 2024/12/AutumnsVeil_02_Assal-Toudehfallah-scaled.jpg
+    file: 2024/12/AutumnsVeil_02_Assal-Toudehfallah.jpg
+    servedByWordpress: 2024/12/AutumnsVeil_02_Assal-Toudehfallah-scaled.jpg
+    bytes: 5506985
     alt: null
     caption: null
   - type: image
     id: 2706
     file: 2024/12/AutumnsVeil_04_Assal-Toudehfallah.jpg
+    bytes: 232239
     alt: Autumn's Veil
     caption: Autumn's Veil
 layout: default

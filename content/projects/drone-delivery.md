@@ -47,21 +47,25 @@ media:
     id: 2940
     file: 2025/12/IMG_7435_Shane-Colby.jpeg
     role: featured
+    bytes: 1214135
     alt: null
     caption: null
   - type: image
     id: 2942
     file: 2025/12/IMG_7433_Shane-Colby.jpeg
+    bytes: 971542
     alt: null
     caption: null
   - type: image
     id: 2941
     file: 2025/12/IMG_7432_Shane-Colby.jpeg
+    bytes: 1290096
     alt: null
     caption: null
   - type: image
     id: 2943
     file: 2025/12/IMG_7434_Shane-Colby.jpeg
+    bytes: 1336812
     alt: null
     caption: null
 layout: default

@@ -28,11 +28,13 @@ media:
     id: 2291
     file: 2023/04/kahani-1.jpg
     role: featured
+    bytes: 24121
     alt: null
     caption: null
   - type: image
     id: 2292
     file: 2023/04/kahani.jpg
+    bytes: 20606
     alt: null
     caption: null
 layout: default

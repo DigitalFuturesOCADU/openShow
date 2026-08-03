@@ -47,26 +47,31 @@ media:
     id: 1784
     file: 2020/12/TextileGameControllers_OpenShow_1_Kate-Hartman.jpg
     role: featured
+    bytes: 1029788
     alt: null
     caption: null
   - type: image
     id: 1785
     file: 2020/12/TextileGameControllers_OpenShow_2_Kate-Hartman.jpg
+    bytes: 1217680
     alt: null
     caption: null
   - type: image
     id: 1786
     file: 2020/12/TextileGameControllers_OpenShow_3_Kate-Hartman.jpg
+    bytes: 562525
     alt: null
     caption: null
   - type: image
     id: 1787
     file: 2020/12/TextileGameControllers_OpenShow_4_Kate-Hartman.jpg
+    bytes: 541059
     alt: null
     caption: null
   - type: image
     id: 1788
     file: 2020/12/TextileGameControllers_OpenShow_5_Kate-Hartman.jpg
+    bytes: 549347
     alt: null
     caption: null
 layout: default

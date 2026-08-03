@@ -21,11 +21,13 @@ media:
     id: 1872
     file: 2020/12/Johan-S-Johan_seaton_thesis2-rotated.jpeg
     role: featured
+    bytes: 318305
     alt: null
     caption: null
   - type: image
     id: 1871
     file: 2020/12/Johan-S-Johan_Seaton_thesis1-rotated.jpeg
+    bytes: 740307
     alt: null
     caption: null
 layout: default

@@ -19,8 +19,10 @@ creditsRaw: Christina Chen
 media:
   - type: image
     id: 2235
-    file: 2022/12/AI-Alphabet_1_Christina-Chen-scaled.gif
+    file: 2022/12/AI-Alphabet_1_Christina-Chen.gif
     role: featured
+    servedByWordpress: 2022/12/AI-Alphabet_1_Christina-Chen-scaled.gif
+    bytes: 7781213
     alt: null
     caption: null
   - type: video-file

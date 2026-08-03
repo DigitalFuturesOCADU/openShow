@@ -24,16 +24,19 @@ media:
     id: 1818
     file: 2020/12/BetweenTheCards_1_Leia-Kook-Chun.png
     role: featured
+    bytes: 1158925
     alt: null
     caption: null
   - type: image
     id: 1819
     file: 2020/12/BetweenTheCards_3_Leia-Kook-Chun.png
+    bytes: 614664
     alt: null
     caption: null
   - type: image
     id: 1820
     file: 2020/12/BetweenTheCards_4_Leia-Kook-Chun.png
+    bytes: 1344125
     alt: null
     caption: null
 layout: default

@@ -25,16 +25,19 @@ media:
     id: 2489
     file: 2023/12/Cover-image_anonymous.jpeg
     role: featured
+    bytes: 28778
     alt: null
     caption: null
   - type: image
     id: 2488
     file: 2023/12/The-ghost_anonymous.png
+    bytes: 4014617
     alt: null
     caption: null
   - type: image
     id: 2490
     file: 2023/12/The-ghost-now-stops_anonymous.png
+    bytes: 1015098
     alt: null
     caption: null
 layout: default

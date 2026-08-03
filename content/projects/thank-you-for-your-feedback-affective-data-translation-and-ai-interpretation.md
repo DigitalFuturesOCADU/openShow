@@ -21,26 +21,31 @@ media:
     id: 3003
     file: 2025/12/TYFYF_IronyHumourCoping_Clusterfuck.png
     role: featured
+    bytes: 1380912
     alt: null
     caption: null
   - type: image
     id: 3007
     file: 2025/12/TYFYF_Confusion_RecursiveDisorientation.png
+    bytes: 2226674
     alt: null
     caption: null
   - type: image
     id: 3006
     file: 2025/12/TYFYF_CollapseDysfunction_DumpsterFire.png
+    bytes: 1844464
     alt: null
     caption: null
   - type: image
     id: 3005
     file: 2025/12/TYFYF_BureaucraticDecay_SlowCorruption.png
+    bytes: 2442141
     alt: null
     caption: null
   - type: image
     id: 3004
     file: 2025/12/TYFYF_AbsenceSilence_404.png
+    bytes: 1692137
     alt: null
     caption: null
 layout: default

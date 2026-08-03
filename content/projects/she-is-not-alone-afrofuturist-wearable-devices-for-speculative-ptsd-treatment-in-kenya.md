@@ -22,21 +22,25 @@ media:
     id: 2145
     file: 2022/12/Afrofuturist-Wearable-Devices_COVER_Patricia-Mwenda.png
     role: featured
+    bytes: 520024
     alt: null
     caption: null
   - type: image
     id: 2146
     file: 2022/12/Afrofuturist-Wearable-Devices_IMAGE1_Patricia-Mwenda.gif
+    bytes: 1383164
     alt: null
     caption: null
   - type: image
     id: 2147
     file: 2022/12/Afrofuturist-Wearable-Devices_IMAGE2_Patricia-Mwenda.jpeg
+    bytes: 12911
     alt: null
     caption: null
   - type: image
     id: 2148
     file: 2022/12/Afrofuturist-Wearable-Devices_IMAGE3_Patricia-Mwenda.jpeg
+    bytes: 23561
     alt: null
     caption: null
 layout: default

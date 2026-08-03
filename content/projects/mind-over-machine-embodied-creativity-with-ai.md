@@ -19,18 +19,22 @@ creditsRaw: Anusha Menon
 media:
   - type: image
     id: 2514
-    file: 2023/12/MindOverMachine_1_anonymous-scaled.jpg
+    file: 2023/12/MindOverMachine_1_anonymous.jpg
     role: featured
+    servedByWordpress: 2023/12/MindOverMachine_1_anonymous-scaled.jpg
+    bytes: 1330927
     alt: null
     caption: null
   - type: image
     id: 2516
     file: 2023/12/MindOverMachine_3_anonymous.jpg
+    bytes: 321828
     alt: null
     caption: null
   - type: image
     id: 2517
     file: 2023/12/MindOverMachine_4_anonymous.jpg
+    bytes: 812461
     alt: null
     caption: null
 layout: default
