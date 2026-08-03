@@ -9,10 +9,10 @@
 //
 // Exits non-zero if the audit checksums in EXECUTION.md §1 do not reproduce.
 
-import { mkdirSync, writeFileSync, existsSync, rmSync, statSync } from 'node:fs'
+import { mkdirSync, writeFileSync, readFileSync, existsSync, rmSync, statSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { dump } from 'js-yaml'
+import { dump, load as loadYaml } from 'js-yaml'
 import TurndownService from 'turndown'
 import { readWxr, byType } from './lib/wxr.mjs'
 import { parseTerm, slugify, deriveLabel, AFFILIATION, AUTO_MERGE, REVIEW_MERGE, buildProposalYaml, loadMap } from './lib/taxonomy.mjs'
@@ -21,6 +21,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const SRC = join(ROOT, 'sources/wordpress-export.xml')
 const UPLOADS = join(ROOT, 'sources/uploads')
 const MAP_PATH = join(ROOT, 'config/taxonomy-map.yaml')
+const OVERRIDES_PATH = join(ROOT, 'config/overrides.yaml')
 
 const CATS = 'royal_portfolio_cats'
 const turndown = new TurndownService({ headingStyle: 'atx', bulletListMarker: '-' })
@@ -256,7 +257,7 @@ for (const p of projects) {
   const isStub = p.status === 'draft' && media.length === 0 && !description
   const status = p.status === 'publish' ? 'publish' : isStub ? 'stub' : 'draft'
 
-  if (!year) notes.unresolvedYear.push({ id: p.id, title: p.title, status, slug })
+  if (!year) notes.unresolvedYear.push({ id: p.id, title: p.title, status, slug, postDate: p.date })
 
   records.push({
     p, slug, year, session, status,
@@ -320,6 +321,54 @@ if (failures.length) {
   process.exit(1)
 }
 console.log('  → all checks passed\n')
+
+// ---------------------------------------------------------------- overrides
+//
+// Applied only after the gate. The gate measures fidelity to the export and
+// must not be silenced by hand-entered corrections: if 8 items have no
+// resolvable year in the WXR, that stays true however many are filled in here.
+
+// A comment-only overrides file is the normal starting state, and js-yaml
+// throws on a document with no content rather than returning empty.
+const readOverrides = () => {
+  if (!existsSync(OVERRIDES_PATH)) return {}
+  const text = readFileSync(OVERRIDES_PATH, 'utf8')
+  if (!text.replace(/^\s*#.*$/gm, '').trim()) return {}
+  return loadYaml(text) ?? {}
+}
+
+const overrideDoc = readOverrides()
+const byId = new Map(records.map((r) => [String(r.frontmatter.id), r]))
+const applied = []
+const unknownIds = []
+
+for (const [rawId, fields] of Object.entries(overrideDoc)) {
+  const rec = byId.get(String(rawId))
+  if (!rec) {
+    unknownIds.push(rawId)
+    continue
+  }
+  const keys = Object.keys(fields ?? {}).filter((k) => k !== 'note')
+  for (const k of keys) rec.frontmatter[k] = fields[k]
+  if (keys.length) {
+    rec.frontmatter.manualOverrides = keys.sort()
+    // Keep derived fields consistent with an overridden year/session.
+    if (keys.includes('year') || keys.includes('session')) {
+      const y = rec.frontmatter.year
+      const s = rec.frontmatter.session
+      rec.frontmatter.show = y ? (s ? `${y}-${s}` : String(y)) : null
+      rec.year = y
+      rec.session = s
+    }
+    applied.push({ id: rawId, title: rec.frontmatter.title, keys, note: fields.note ?? null })
+  }
+}
+
+if (unknownIds.length) {
+  console.error(`  ⚠  config/overrides.yaml references ${unknownIds.length} unknown post id(s): ${unknownIds.join(', ')}`)
+  console.error('     These match no project and were ignored — check for a typo.\n')
+}
+if (applied.length) console.log(`  Applied ${applied.length} manual override(s) from config/overrides.yaml\n`)
 
 // ---------------------------------------------------------------- write
 
@@ -526,10 +575,15 @@ write(out('reports/unresolved.md'), `# Needs human attention
 ## Year could not be resolved (${notes.unresolvedYear.length})
 
 These have no categories at all, so there is no prefix to read a year from.
-Assign manually in the project file's frontmatter.
+Record the decision in \`config/overrides.yaml\`, keyed by the ID below — not in
+the project file, which is regenerated on every extract.
 
-${table([['ID', 'Status', 'Title', 'Slug'], ['---', '---', '---', '---'],
-  ...notes.unresolvedYear.map((u) => [u.id, u.status, u.title, `\`${u.slug}\``])])}
+${table([['ID', 'Status', 'Title', 'Post date (hint only)'], ['---', '---', '---', '---'],
+  ...notes.unresolvedYear.map((u) => [u.id, u.status, u.title, u.postDate || '—'])])}
+
+Post dates are a starting hint and must not be trusted as the answer — the 2023
+show has items dated both April and December 2023, and the 2020 show spans
+October and November.
 
 **${notes.unresolvedYear.filter((u) => u.status === 'publish').length} of these are published** and therefore user-visible.
 
