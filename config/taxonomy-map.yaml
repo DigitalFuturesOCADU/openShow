@@ -1,0 +1,87 @@
+# Taxonomy mapping — REVIEW REQUIRED
+#
+# Generated from the 189 terms in royal_portfolio_cats. Edit this file, then
+# re-run `npm run extract` to apply it. The extractor reads this file if it
+# exists and regenerates it only when it does not, so your edits are safe.
+#
+# Left side  = concept as it appears in WordPress (year/session already stripped)
+# Right side = normalised slug, or `~` to drop the term entirely
+# Comment    = (item count) and, where relevant, why this one needs a decision
+#
+# Sections marked REVIEW are judgement calls, not typos. Everything in
+# AUTO-MERGE is a spelling or spacing variant and is safe as proposed.
+
+affiliation:
+  Undergraduate: undergraduate   # (90)
+  Graduate: graduate   # (83)
+  Alumni: alumni   # (18)
+  UGThesis: ug-thesis   # (17)
+  Faculty: faculty   # (15)
+  Undergrad: undergraduate   # (6)
+
+medium:
+
+  # --- AUTO-MERGE: spelling and spacing variants, safe as proposed ----------
+  PhysicalComputing: physical-computing   # (11) -> Physical Computing
+  "3Dprinting": 3d-printing   # (7) -> 3D Printing
+  DigitalFabrication: digital-fabrication   # (6) -> Digital Fabrication
+  Sculputure: sculpture   # (6) -> Sculpture
+  Performace: performance   # (5) -> Performance
+  SpeculativeFiction: speculative-fiction   # (2) -> Speculative Fiction
+  DataVisualization: data-visualization   # (1) -> Data Visualization
+
+  # --- REVIEW: merges that may erase a real distinction ---------------------
+  "3D Animation": animation   # (22) both used, sometimes in the same year
+  Interactive Installation: installation   # (15) 2022 used this for 15 items; every other year used "Installation". Drift or a real distinction?
+  Machine Learning: ai   # (4) one of five terms for the same concept
+  NIME: sound   # (3) NIME is a research field, not a medium — may not belong on this axis at all
+  Wearable Electronics: wearables   # (3) PLAN.md proposes this merge
+  "ML_AI": ai   # (2) one of five terms for the same concept
+  Artificial Intelligence: ai   # (1) one of five terms for the same concept
+  Audio: sound   # (1) sound-family term
+  Deep Neural Networks: ai   # (1) a technique, not a medium — merge or drop?
+  Digital Artwork: ~   # (1) too generic to be a useful facet — drop?
+  Generative Art: generative   # (1) three variants of one concept
+  Generative design: generative   # (1) three variants of one concept
+  Sonic Art: sound   # (1) sound-family term
+  UX Design: ux   # (1) spacing variant
+  visualization and analysis: data-visualization   # (1) lowercase one-off
+  Webdoc: interactive-documentary   # (1) almost certainly one concept, one item each
+
+  # --- UNAMBIGUOUS: kept as-is -------------------------------------------
+  Code: code   # (112)
+  Installation: installation   # (84)
+  Physical Computing: physical-computing   # (66)
+  Games: games   # (60)
+  Video: video   # (49)
+  Digital Fabrication: digital-fabrication   # (42)
+  Web: web   # (42)
+  Performance: performance   # (30)
+  Sound: sound   # (28)
+  VR: vr   # (27)
+  Wearables: wearables   # (26)
+  AR: ar   # (20)
+  Animation: animation   # (14)
+  Sculpture: sculpture   # (14)
+  Mobile: mobile   # (13)
+  "3D Printing": 3d-printing   # (5)
+  Illustration: illustration   # (5)
+  Photography: photography   # (5)
+  AI: ai   # (4)
+  Character Art: character-art   # (2)
+  Data Visualization: data-visualization   # (2)
+  Robotics: robotics   # (2)
+  Algorithm Design: algorithm-design   # (1) used once — keep, merge, or drop?
+  Art Movement: art-movement   # (1) used once — keep, merge, or drop?
+  Automation: automation   # (1) used once — keep, merge, or drop?
+  Business: business   # (1) used once — keep, merge, or drop?
+  Data Transformation: data-transformation   # (1) used once — keep, merge, or drop?
+  Design: design   # (1) used once — keep, merge, or drop?
+  Generative: generative   # (1) used once — keep, merge, or drop?
+  Interactive Documentary: interactive-documentary   # (1) used once — keep, merge, or drop?
+  Networked: networked   # (1) used once — keep, merge, or drop?
+  Playshop: playshop   # (1) used once — keep, merge, or drop?
+  Speculative: speculative   # (1) used once — keep, merge, or drop?
+  Typography: typography   # (1) used once — keep, merge, or drop?
+  UX: ux   # (1) used once — keep, merge, or drop?
+  Wellness: wellness   # (1) used once — keep, merge, or drop?

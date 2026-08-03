@@ -1,0 +1,19 @@
+{
+  "id": "2024",
+  "year": 2024,
+  "session": null,
+  "title": "Open Show 2024",
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "venue": null,
+  "statement": null,
+  "poster": null,
+  "theme": {
+    "tokens": {},
+    "indexLayout": "grid",
+    "defaultProjectLayout": "default"
+  },
+  "projectCount": 32
+}

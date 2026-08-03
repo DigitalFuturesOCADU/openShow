@@ -1,0 +1,19 @@
+{
+  "id": "2020",
+  "year": 2020,
+  "session": null,
+  "title": "Open Show 2020",
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "venue": null,
+  "statement": null,
+  "poster": null,
+  "theme": {
+    "tokens": {},
+    "indexLayout": "grid",
+    "defaultProjectLayout": "default"
+  },
+  "projectCount": 58
+}

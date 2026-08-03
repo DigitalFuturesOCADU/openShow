@@ -1,0 +1,11 @@
+# Source artifact checksums
+# Generated 2026-08-03. These files are the source of truth and are read-only.
+# Verify with:  shasum -a 256 -c CHECKSUMS.txt
+#   uploads/:   shasum -a 256 -c UPLOADS-MANIFEST.txt
+
+48a2987a4baed3cedcf38530c69bfe12e1b95e14789c9f4f2ff429150a7a8949  wordpress-export.xml
+149263f850c812698a6ac8a10286b859b62f8d05f17f033c9b101979a970e61b  database.sql
+
+# uploads/ tree: 8603 files, 3.0G — per-file hashes in UPLOADS-MANIFEST.txt
+# UPLOADS-MANIFEST.txt self-hash:
+6ec0b6a8ba1f298a3dce6138020f62a5e4836a68dec586bc0eab215412af2030  UPLOADS-MANIFEST.txt

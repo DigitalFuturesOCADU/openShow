@@ -1,7 +1,8 @@
 # Source-of-truth WordPress uploads tree — 3.0 GB, backed up off-machine.
 # Local-only by decision D1 in EXECUTION.md. Only the ~700 originals that
 # projects actually reference get committed, into content/images/.
-uploads/
+# sources/UPLOADS-MANIFEST.txt records a SHA-256 for every file in it.
+sources/uploads/
 
 # Build artifacts
 node_modules/
