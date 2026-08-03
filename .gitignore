@@ -1,0 +1,22 @@
+# Source-of-truth WordPress uploads tree — 3.0 GB, backed up off-machine.
+# Local-only by decision D1 in EXECUTION.md. Only the ~700 originals that
+# projects actually reference get committed, into content/images/.
+uploads/
+
+# Build artifacts
+node_modules/
+dist/
+.astro/
+.cache/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Note: the WXR export and SQL dump are deliberately NOT ignored here.
+# Step 1 relocates them to sources/ and decides tracked-vs-LFS.
