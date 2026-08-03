@@ -1,0 +1,29 @@
+{
+  "name": "openredo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "extract": "node scripts/extract.mjs",
+    "validate": "node scripts/validate-sql.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npuckett/openREDO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/npuckett/openREDO/issues"
+  },
+  "homepage": "https://github.com/npuckett/openREDO#readme",
+  "private": "true",
+  "dependencies": {
+    "fast-xml-parser": "^5.10.1",
+    "js-yaml": "^5.2.3",
+    "turndown": "^7.2.4"
+  }
+}

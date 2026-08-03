@@ -1,0 +1,19 @@
+{
+  "id": "2022",
+  "year": 2022,
+  "session": null,
+  "title": "Open Show 2022",
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "venue": null,
+  "statement": null,
+  "poster": null,
+  "theme": {
+    "tokens": {},
+    "indexLayout": "grid",
+    "defaultProjectLayout": "default"
+  },
+  "projectCount": 37
+}

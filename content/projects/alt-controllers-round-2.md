@@ -1,0 +1,65 @@
+---
+id: 3033
+slug: alt-controllers-round-2
+title: 'Alt Controllers: Round 2'
+show: '2025'
+year: 2025
+session: null
+affiliation: []
+medium:
+  - code
+  - games
+  - physical-computing
+  - sound
+  - web
+tags: []
+credits:
+  - name: Kayla Eli
+    role: null
+  - name: Yuhan Xia
+    role: null
+  - name: Tinatei Tunyan
+    role: null
+  - name: Qingxuan Li
+    role: null
+  - name: Yubhang Huang
+    role: null
+  - name: Niloofar Sanandajizadeh
+    role: null
+  - name: Amelia Lochhead
+    role: null
+  - name: Longxiang Fan
+    role: null
+  - name: Minghui Cui
+    role: null
+  - name: Jesse Xu
+    role: null
+  - name: Melanie Yan
+    role: null
+creditsRaw: >-
+  Kayla Eli,  Yuhan Xia,  Tinatei Tunyan, Qingxuan Li,  Yubhang Huang,  Niloofar Sanandajizadeh,
+  Amelia Lochhead, Longxiang Fan, Minghui Cui, Jesse Xu, Melanie Yan
+media:
+  - type: image
+    id: 3034
+    file: 2025/12/Alt-controls_Amelia-Lochhead.jpg
+    role: featured
+    alt: null
+    caption: null
+layout: default
+links: []
+status: publish
+sourceTerms:
+  - 2025 Code
+  - 2025 Games
+  - 2025 Physical Computing
+  - 2025 Sound
+  - 2025 Web
+  - Open Show 2025
+wordpress:
+  postDate: '2025-12-09 01:00:43'
+  originalSlug: alt-controllers-round-2
+  link: https://df.show/portfolio/items/alt-controllers-round-2
+---
+
+Students created a unique and experimental game controllers to duel in the classic game “Pong”.  Each device uses sensors, wireless communication, and physical augmentation to create a customized interaction for its player. From a book, a classic telephone, a pump, chattering teeth, a story and a frying pan, these devices disrupt expectation and bring delight to players and viewers of video games (adapted from creation &amp; computation).
