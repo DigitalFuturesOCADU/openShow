@@ -13,7 +13,8 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Daniela Ortiz Correa
+  - personId: daniela-ortiz-correa
+    name: Daniela Ortiz Correa
     role: null
 creditsRaw: Daniela Ortiz Correa
 media:

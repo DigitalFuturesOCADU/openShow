@@ -12,7 +12,8 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Jessica Patel
+  - personId: jessica-patel
+    name: Jessica Patel
     role: null
 creditsRaw: Jessica Patel
 media:

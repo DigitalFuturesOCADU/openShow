@@ -12,13 +12,13 @@ medium:
   - web
 tags: []
 credits:
-  - name: Shannen Guntoro
+  - personId: shannen-guntoro
+    name: Shannen Guntoro
     role: null
-  - name: amp
+  - personId: leia-kc
+    name: Leia KC
     role: null
-  - name: Leia KC
-    role: null
-creditsRaw: Shannen Guntoro &amp; Leia KC
+creditsRaw: Shannen Guntoro & Leia KC
 media:
   - type: image
     id: 1818

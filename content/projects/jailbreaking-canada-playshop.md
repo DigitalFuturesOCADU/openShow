@@ -10,11 +10,14 @@ medium:
   - games
 tags: []
 credits:
-  - name: Suzanne Stein
+  - personId: suzanne-stein
+    name: Suzanne Stein
     role: null
-  - name: Emma Westecott
+  - personId: emma-westecott
+    name: Emma Westecott
     role: null
-  - name: JC Zhang
+  - personId: jc-zhang
+    name: JC Zhang
     role: null
 creditsRaw: Suzanne Stein, Emma Westecott, JC Zhang
 media:

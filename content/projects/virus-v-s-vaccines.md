@@ -14,13 +14,17 @@ medium:
   - web
 tags: []
 credits:
-  - name: Achal
+  - personId: achal
+    name: Achal
     role: null
-  - name: Jamie
+  - personId: jamie
+    name: Jamie
     role: null
-  - name: Krishnokoli
+  - personId: krishnokoli
+    name: Krishnokoli
     role: null
-  - name: Simran
+  - personId: simran
+    name: Simran
     role: null
 creditsRaw: Achal, Jamie, Krishnokoli, Simran
 media:

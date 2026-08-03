@@ -13,9 +13,11 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Priya Bandodkar
+  - personId: priya-bandodkar
+    name: Priya Bandodkar
     role: null
-  - name: Manisha Laroia
+  - personId: manisha-laroia
+    name: Manisha Laroia
     role: null
 creditsRaw: Priya Bandodkar, Manisha Laroia
 media: []

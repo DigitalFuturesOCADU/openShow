@@ -13,9 +13,11 @@ medium:
   - video
 tags: []
 credits:
-  - name: Nicole Vella
+  - personId: nicole-vella
+    name: Nicole Vella
     role: null
-  - name: Marquessa Mackenzie
+  - personId: marquessa-mackenzie
+    name: Marquessa Mackenzie
     role: null
 creditsRaw: Nicole Vella, Marquessa Mackenzie
 media:

@@ -12,7 +12,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Xin Jiang
+  - personId: xin-jiang
+    name: Xin Jiang
     role: null
 creditsRaw: Xin Jiang
 media:

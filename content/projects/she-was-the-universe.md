@@ -13,13 +13,17 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Yanjia Yi
+  - personId: yanjia-yi
+    name: Yanjia Yi
     role: null
-  - name: Yunting He
+  - personId: yunting-he
+    name: Yunting He
     role: null
-  - name: Lanlan Chen
+  - personId: lanlan-chen
+    name: Lanlan Chen
     role: null
-  - name: Yixin Zhang
+  - personId: yixin-zhang
+    name: Yixin Zhang
     role: null
 creditsRaw: Yanjia Yi, Yunting He, Lanlan Chen, Yixin Zhang
 media:

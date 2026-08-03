@@ -14,7 +14,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Neo Chen
+  - personId: neo-chen
+    name: Neo Chen
     role: null
 creditsRaw: Neo Chen
 media:

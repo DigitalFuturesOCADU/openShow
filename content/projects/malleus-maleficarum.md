@@ -13,7 +13,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Kayli Chow
+  - personId: kayli-chow
+    name: Kayli Chow
     role: null
 creditsRaw: Kayli Chow
 media:

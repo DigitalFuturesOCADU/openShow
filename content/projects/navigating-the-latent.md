@@ -12,7 +12,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Arshia Sobhan
+  - personId: arshia-sobhan
+    name: Arshia Sobhan
     role: null
 creditsRaw: Arshia Sobhan
 media:

@@ -13,7 +13,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Nadine Valcin
+  - personId: nadine-valcin
+    name: Nadine Valcin
     role: null
 creditsRaw: Nadine Valcin
 media:

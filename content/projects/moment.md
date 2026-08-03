@@ -12,7 +12,8 @@ medium:
   - ar
 tags: []
 credits:
-  - name: Anran Zhou
+  - personId: anran-zhou
+    name: Anran Zhou
     role: null
 creditsRaw: Anran Zhou
 media:

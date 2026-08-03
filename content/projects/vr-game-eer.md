@@ -14,15 +14,20 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Ethan Day
+  - personId: ethan-day
+    name: Ethan Day
     role: null
-  - name: Luke D'Alfonsi
+  - personId: luke-d-alfonsi
+    name: Luke D'Alfonsi
     role: null
-  - name: Arteya Lutchman
+  - personId: arteya-lutchman
+    name: Arteya Lutchman
     role: null
-  - name: Ethan Shapiro
+  - personId: ethan-shapiro
+    name: Ethan Shapiro
     role: null
-  - name: Magdalena Szlapczynskials
+  - personId: magdalena-szlapczynskials
+    name: Magdalena Szlapczynskials
     role: null
 creditsRaw: Ethan Day, Luke D'Alfonsi, Arteya Lutchman, Ethan Shapiro, Magdalena Szlapczynskials
 media:

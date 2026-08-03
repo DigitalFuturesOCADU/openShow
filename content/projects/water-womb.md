@@ -13,11 +13,14 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Kayli Chow
+  - personId: kayli-chow
+    name: Kayli Chow
     role: null
-  - name: Cole Kassirer
+  - personId: cole-kassirer
+    name: Cole Kassirer
     role: null
-  - name: Mika Wall
+  - personId: mika-wall
+    name: Mika Wall
     role: null
 creditsRaw: Kayli Chow, Cole Kassirer, Mika Wall
 media:

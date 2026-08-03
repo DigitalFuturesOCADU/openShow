@@ -12,7 +12,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Abha Patil
+  - personId: abha-patil
+    name: Abha Patil
     role: null
 creditsRaw: Abha Patil
 media:

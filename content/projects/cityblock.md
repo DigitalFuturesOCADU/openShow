@@ -12,7 +12,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Rajat Kumar
+  - personId: rajat-kumar
+    name: Rajat Kumar
     role: null
 creditsRaw: Rajat Kumar
 media:

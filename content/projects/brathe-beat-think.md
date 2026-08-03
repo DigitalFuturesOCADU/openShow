@@ -14,11 +14,14 @@ medium:
   - video
 tags: []
 credits:
-  - name: Shannen Guntoro
+  - personId: shannen-guntoro
+    name: Shannen Guntoro
     role: null
-  - name: Leia Kook-Chun
+  - personId: leia-kook-chun
+    name: Leia Kook-Chun
     role: null
-  - name: Julia Andrejczuck
+  - personId: julia-andrejczuck
+    name: Julia Andrejczuck
     role: null
 creditsRaw: Shannen Guntoro, Leia Kook-Chun, Julia Andrejczuck
 media: []

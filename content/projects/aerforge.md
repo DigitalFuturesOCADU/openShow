@@ -14,13 +14,17 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Salisa Jatweerapong
+  - personId: salisa-jatweerapong
+    name: Salisa Jatweerapong
     role: null
-  - name: Melissa Roberts
+  - personId: melissa-roberts
+    name: Melissa Roberts
     role: null
-  - name: Mahnoor Shahid
+  - personId: mahnoor-shahid
+    name: Mahnoor Shahid
     role: null
-  - name: Samantha Sylvester
+  - personId: samantha-sylvester
+    name: Samantha Sylvester
     role: null
 creditsRaw: Salisa Jatweerapong, Melissa Roberts, Mahnoor Shahid, Samantha Sylvester
 media:

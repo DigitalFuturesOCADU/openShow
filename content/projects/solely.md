@@ -13,13 +13,13 @@ medium:
   - digital-fabrication
 tags: []
 credits:
-  - name: Sanmeet Chahil
+  - personId: sanmeet-chahil
+    name: Sanmeet Chahil
     role: null
-  - name: amp
+  - personId: william-selviz
+    name: William Selviz
     role: null
-  - name: William Selviz
-    role: null
-creditsRaw: Sanmeet Chahil &amp; William Selviz
+creditsRaw: Sanmeet Chahil & William Selviz
 media:
   - type: image
     id: 1884

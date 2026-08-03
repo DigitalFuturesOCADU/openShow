@@ -13,13 +13,17 @@ medium:
   - performance
 tags: []
 credits:
-  - name: Jun Li
+  - personId: jun-li
+    name: Jun Li
     role: null
-  - name: Jie Guan
+  - personId: jie-guan
+    name: Jie Guan
     role: null
-  - name: Shuai Yuan
+  - personId: shuai-yuan
+    name: Shuai Yuan
     role: null
-  - name: Adam Tindale
+  - personId: adam-tindale
+    name: Adam Tindale
     role: null
 creditsRaw: Jun Li, Jie Guan, Shuai Yuan, Adam Tindale
 media:

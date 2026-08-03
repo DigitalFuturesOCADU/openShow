@@ -12,15 +12,20 @@ medium:
   - games
 tags: []
 credits:
-  - name: Grace Yuan
+  - personId: grace-yuan
+    name: Grace Yuan
     role: null
-  - name: Jie Guan
+  - personId: jie-guan
+    name: Jie Guan
     role: null
-  - name: Renee Ge
+  - personId: renee-ge
+    name: Renee Ge
     role: null
-  - name: Wei Zhang
+  - personId: wei-zhang
+    name: Wei Zhang
     role: null
-  - name: Neo Chen
+  - personId: neo-chen
+    name: Neo Chen
     role: null
 creditsRaw: Grace Yuan, Jie Guan, Renee Ge, Wei Zhang, Neo Chen
 media:

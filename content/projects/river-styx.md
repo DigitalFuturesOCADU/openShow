@@ -18,11 +18,14 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Tyson Moll
+  - personId: tyson-moll
+    name: Tyson Moll
     role: null
-  - name: Shikhar Juyal
+  - personId: shikhar-juyal
+    name: Shikhar Juyal
     role: null
-  - name: Georgina Yeboah
+  - personId: georgina-yeboah
+    name: Georgina Yeboah
     role: null
 creditsRaw: Tyson Moll, Shikhar Juyal, Georgina Yeboah
 media:

@@ -14,9 +14,11 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Cindy Poremba
+  - personId: cindy-poremba
+    name: Cindy Poremba
     role: null
-  - name: Max Lander
+  - personId: max-lander
+    name: Max Lander
     role: null
 creditsRaw: Cindy Poremba and Max Lander
 media:

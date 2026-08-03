@@ -14,19 +14,22 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Catherine Reyto
+  - personId: catherine-reyto
+    name: Catherine Reyto
     role: null
-  - name: Jun Li
+  - personId: jun-li
+    name: Jun Li
     role: null
-  - name: Rittika Basu
+  - personId: rittika-basu
+    name: Rittika Basu
     role: null
-  - name: Sananda Dutta
+  - personId: sananda-dutta
+    name: Sananda Dutta
     role: null
-  - name: amp
+  - personId: jevi-peters
+    name: Jevi Peters
     role: null
-  - name: Jevi Peters
-    role: null
-creditsRaw: Catherine Reyto, Jun Li, Rittika Basu, Sananda Dutta &amp; Jevi Peters
+creditsRaw: Catherine Reyto, Jun Li, Rittika Basu, Sananda Dutta & Jevi Peters
 media:
   - type: image
     id: 2304

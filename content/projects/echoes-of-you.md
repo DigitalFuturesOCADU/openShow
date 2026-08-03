@@ -15,11 +15,14 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Mahnoor Hasan
+  - personId: mahnoor-hasan
+    name: Mahnoor Hasan
     role: null
-  - name: Harry Zhao
+  - personId: harry-zhao
+    name: Harry Zhao
     role: null
-  - name: Ziheng Qu
+  - personId: ziheng-qu
+    name: Ziheng Qu
     role: null
 creditsRaw: Mahnoor Hasan, Harry Zhao, Ziheng Qu
 media:

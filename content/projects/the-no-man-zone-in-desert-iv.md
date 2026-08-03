@@ -12,7 +12,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Weiqi Wu
+  - personId: weiqi-wu
+    name: Weiqi Wu
     role: null
 creditsRaw: Weiqi Wu
 media:

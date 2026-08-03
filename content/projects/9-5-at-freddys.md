@@ -11,11 +11,14 @@ medium:
   - games
 tags: []
 credits:
-  - name: Kayli Chow
+  - personId: kayli-chow
+    name: Kayli Chow
     role: null
-  - name: Cole Kassirer
+  - personId: cole-kassirer
+    name: Cole Kassirer
     role: null
-  - name: Amanda Daley
+  - personId: amanda-daley
+    name: Amanda Daley
     role: null
 creditsRaw: Kayli Chow, Cole Kassirer, Amanda Daley
 media:

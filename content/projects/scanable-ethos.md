@@ -11,7 +11,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Justin Pham
+  - personId: justin-pham
+    name: Justin Pham
     role: null
 creditsRaw: Justin Pham
 media:

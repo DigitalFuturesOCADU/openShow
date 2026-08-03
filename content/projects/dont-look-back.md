@@ -13,9 +13,11 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Madhu Priya
+  - personId: madhu-priya
+    name: Madhu Priya
     role: null
-  - name: Ethan Zhang
+  - personId: ethan-zhang
+    name: Ethan Zhang
     role: null
 creditsRaw: Madhu Priya, Ethan Zhang
 media:

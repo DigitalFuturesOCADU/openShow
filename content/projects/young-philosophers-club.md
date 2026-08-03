@@ -12,13 +12,17 @@ medium:
   - video
 tags: []
 credits:
-  - name: Ryan Boyd
+  - personId: ryan-boyd
+    name: Ryan Boyd
     role: null
-  - name: Michael Sinn
+  - personId: michael-sinn
+    name: Michael Sinn
     role: null
-  - name: Iris Andrici
+  - personId: iris-andrici
+    name: Iris Andrici
     role: null
-  - name: Alfonso Benitez
+  - personId: alfonso-benitez
+    name: Alfonso Benitez
     role: null
 creditsRaw: Ryan Boyd, Michael Sinn, Iris Andrici, Alfonso Benitez
 media:

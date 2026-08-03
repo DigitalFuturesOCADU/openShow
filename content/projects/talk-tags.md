@@ -12,7 +12,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Manisha Laroia
+  - personId: manisha-laroia
+    name: Manisha Laroia
     role: null
 creditsRaw: Manisha Laroia
 media:

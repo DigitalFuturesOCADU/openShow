@@ -14,7 +14,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Ardy Llantino
+  - personId: ardy-llantino
+    name: Ardy Llantino
     role: null
 creditsRaw: Ardy Llantino
 media:

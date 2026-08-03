@@ -9,10 +9,12 @@ affiliation: []
 medium: []
 tags: []
 credits:
-  - name: Ziqi Guo (Director)
-    role: null
-  - name: Yi Liu (Actor)
-    role: null
+  - personId: ziqi-guo
+    name: Ziqi Guo
+    role: Director
+  - personId: yi-liu
+    name: Yi Liu
+    role: Actor
 creditsRaw: Ziqi Guo (Director); Yi Liu (Actor)
 media:
   - type: image

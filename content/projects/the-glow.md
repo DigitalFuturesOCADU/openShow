@@ -11,17 +11,23 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Orus Mateo Castaño-Suárez
+  - personId: orus-mateo-castano-suarez
+    name: Orus Mateo Castaño-Suárez
     role: null
-  - name: Jessica Patel
+  - personId: jessica-patel
+    name: Jessica Patel
     role: null
-  - name: Yu-Shien Yang
+  - personId: yu-shien-yang
+    name: Yu-Shien Yang
     role: null
-  - name: Vitor Fiacadori Costa
+  - personId: vitor-fiacadori-costa
+    name: Vitor Fiacadori Costa
     role: null
-  - name: Matthew Nazarian
+  - personId: matthew-nazarian
+    name: Matthew Nazarian
     role: null
-  - name: Zubin Isaac
+  - personId: zubin-isaac
+    name: Zubin Isaac
     role: null
 creditsRaw: >-
   Orus Mateo Castaño-Suárez, Jessica Patel, Yu-Shien Yang, Vitor Fiacadori Costa, Matthew Nazarian,

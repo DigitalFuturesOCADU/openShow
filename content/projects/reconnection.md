@@ -17,7 +17,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Niloofar Sanandaji Zadeh
+  - personId: niloofar-sanandajizadeh
+    name: Niloofar Sanandaji Zadeh
     role: null
 creditsRaw: Niloofar Sanandaji Zadeh
 media:

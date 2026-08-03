@@ -15,21 +15,29 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Kate Hartman
+  - personId: kate-hartman
+    name: Kate Hartman
     role: null
-  - name: Emma Westecott
+  - personId: emma-westecott
+    name: Emma Westecott
     role: null
-  - name: Izzie Colpitts-Campbell
+  - personId: izzie-colpitts-campbell
+    name: Izzie Colpitts-Campbell
     role: null
-  - name: Jennie Robinson Faber
+  - personId: jennie-robinson-faber
+    name: Jennie Robinson Faber
     role: null
-  - name: Yiyi Shao
+  - personId: yiyi-shao
+    name: Yiyi Shao
     role: null
-  - name: Chris Luginbuhl
+  - personId: chris-luginbuhl
+    name: Chris Luginbuhl
     role: null
-  - name: Olivia Prior
+  - personId: olivia-prior
+    name: Olivia Prior
     role: null
-  - name: Manisha Laroia
+  - personId: manisha-laroia
+    name: Manisha Laroia
     role: null
 creditsRaw: >-
   Kate Hartman, Emma Westecott, Izzie Colpitts-Campbell, Jennie Robinson Faber, Yiyi Shao, Chris

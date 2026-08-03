@@ -11,7 +11,8 @@ medium:
   - games
 tags: []
 credits:
-  - name: Lee Seung Ho
+  - personId: lee-seung-ho
+    name: Lee Seung Ho
     role: null
 creditsRaw: Lee Seung Ho
 media:

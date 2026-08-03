@@ -12,7 +12,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Madhu Priya
+  - personId: madhu-priya
+    name: Madhu Priya
     role: null
 creditsRaw: Madhu Priya
 media:

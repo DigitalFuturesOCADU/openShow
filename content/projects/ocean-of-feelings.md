@@ -10,17 +10,23 @@ medium:
   - games
 tags: []
 credits:
-  - name: Alexander Song
+  - personId: alexander-song
+    name: Alexander Song
     role: null
-  - name: Tiffany Mou
+  - personId: tiffany-mou
+    name: Tiffany Mou
     role: null
-  - name: Hailey Gonsalvez
+  - personId: hailey-gonsalvez
+    name: Hailey Gonsalvez
     role: null
-  - name: Rodrigo Luna
+  - personId: rodrigo-luna
+    name: Rodrigo Luna
     role: null
-  - name: Bill Fung
+  - personId: bill-fung
+    name: Bill Fung
     role: null
-  - name: Nia Nguyen
+  - personId: nia-nguyen
+    name: Nia Nguyen
     role: null
 creditsRaw: Alexander Song, Tiffany Mou, Hailey Gonsalvez, Rodrigo Luna, Bill Fung, Nia Nguyen
 media: []

@@ -11,7 +11,8 @@ medium:
   - digital-fabrication
 tags: []
 credits:
-  - name: Thoreau Bakker
+  - personId: thoreau-bakker
+    name: Thoreau Bakker
     role: null
 creditsRaw: Thoreau Bakker
 media:

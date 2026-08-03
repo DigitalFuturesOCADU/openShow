@@ -13,7 +13,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Kate Hartman
+  - personId: kate-hartman
+    name: Kate Hartman
     role: null
 creditsRaw: Kate Hartman
 media:

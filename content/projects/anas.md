@@ -12,7 +12,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Raza
+  - personId: raza
+    name: Raza
     role: null
 creditsRaw: Raza
 media:

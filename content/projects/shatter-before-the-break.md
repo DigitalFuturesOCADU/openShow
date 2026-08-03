@@ -10,7 +10,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Nooshin Mohtashami
+  - personId: nooshin-mohtashami
+    name: Nooshin Mohtashami
     role: null
 creditsRaw: Nooshin Mohtashami
 media:

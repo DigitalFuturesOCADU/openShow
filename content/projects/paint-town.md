@@ -13,9 +13,11 @@ medium:
   - web
 tags: []
 credits:
-  - name: Thomas Liu
+  - personId: thomas-liu
+    name: Thomas Liu
     role: null
-  - name: Max Shapovalov
+  - personId: max-shapovalov
+    name: Max Shapovalov
     role: null
 creditsRaw: Thomas Liu and Max Shapovalov
 media:

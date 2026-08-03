@@ -13,7 +13,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Quinn Shoreman
+  - personId: quinn-shoreman
+    name: Quinn Shoreman
     role: null
 creditsRaw: Quinn Shoreman
 media:

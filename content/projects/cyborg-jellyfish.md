@@ -14,13 +14,17 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Tyler Beatty
+  - personId: tyler-beatty
+    name: Tyler Beatty
     role: null
-  - name: Mona Safari
+  - personId: mona-safari
+    name: Mona Safari
     role: null
-  - name: Gavin Tao
+  - personId: gavin-tao
+    name: Gavin Tao
     role: null
-  - name: Mufaro Mukoki
+  - personId: mufaro-mukoki
+    name: Mufaro Mukoki
     role: null
 creditsRaw: Tyler Beatty, Mona Safari, Gavin Tao, Mufaro Mukoki
 media:

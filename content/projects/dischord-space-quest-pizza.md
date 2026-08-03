@@ -11,11 +11,14 @@ medium:
   - games
 tags: []
 credits:
-  - name: Ladan
+  - personId: ladan
+    name: Ladan
     role: null
-  - name: Shikhar
+  - personId: shikhar
+    name: Shikhar
     role: null
-  - name: Peiheng
+  - personId: peiheng
+    name: Peiheng
     role: null
 creditsRaw: Ladan, Shikhar, Peiheng
 media:

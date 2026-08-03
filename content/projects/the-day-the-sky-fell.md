@@ -11,20 +11,27 @@ medium:
   - games
 tags: []
 credits:
-  - name: Shannon Callaghan
+  - personId: shannon-callaghan
+    name: Shannon Callaghan
     role: null
-  - name: Salisa Jatuweerapong
+  - personId: salisa-jatuweerapong
+    name: Salisa Jatuweerapong
     role: null
-  - name: Mirabelle Jien
+  - personId: mirabelle-jien
+    name: Mirabelle Jien
     role: null
-  - name: Jackie Liu
+  - personId: jackie-liu
+    name: Jackie Liu
     role: null
-  - name: Ling Xiao Lu
+  - personId: ling-xiao-lu
+    name: Ling Xiao Lu
     role: null
-  - name: Cassie Mann
+  - personId: cassie-mann
+    name: Cassie Mann
     role: null
-  - name: Chingkwan Wai (TR)
-    role: null
+  - personId: chingkwan-wai
+    name: Chingkwan Wai
+    role: TR
 creditsRaw: >-
   Shannon Callaghan, Salisa Jatuweerapong, Mirabelle Jien, Jackie Liu, Ling Xiao Lu, Cassie Mann,
   Chingkwan Wai (TR)

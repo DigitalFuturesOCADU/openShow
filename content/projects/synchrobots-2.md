@@ -14,11 +14,14 @@ medium:
   - robotics
 tags: []
 credits:
-  - name: Amreen Ashraf
+  - personId: amreen-ashraf
+    name: Amreen Ashraf
     role: null
-  - name: Lauren Connell-Whitney
+  - personId: lauren-connell-whitney
+    name: Lauren Connell-Whitney
     role: null
-  - name: Olivia Prior
+  - personId: olivia-prior
+    name: Olivia Prior
     role: null
 creditsRaw: Amreen Ashraf, Lauren Connell-Whitney, and Olivia Prior
 media:

@@ -13,11 +13,14 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Carisa Antariksa
+  - personId: carisa-antariksa
+    name: Carisa Antariksa
     role: null
-  - name: Joshua McKenna
+  - personId: joshua-mckenna
+    name: Joshua McKenna
     role: null
-  - name: Ladan Siad
+  - personId: ladan-siad
+    name: Ladan Siad
     role: null
 creditsRaw: Carisa Antariksa, Joshua McKenna, Ladan Siad
 media:

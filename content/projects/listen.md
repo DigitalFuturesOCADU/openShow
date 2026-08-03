@@ -12,7 +12,8 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Shannen Guntoro
+  - personId: shannen-guntoro
+    name: Shannen Guntoro
     role: null
 creditsRaw: Shannen Guntoro
 media:

@@ -13,7 +13,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Arshia Sobhan Sarbandi
+  - personId: arshia-sobhan-sarbandi
+    name: Arshia Sobhan Sarbandi
     role: null
 creditsRaw: Arshia Sobhan Sarbandi
 media:

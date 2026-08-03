@@ -11,7 +11,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Assal Toudehfallah
+  - personId: assal-toudehfallah
+    name: Assal Toudehfallah
     role: null
 creditsRaw: Assal Toudehfallah
 media:

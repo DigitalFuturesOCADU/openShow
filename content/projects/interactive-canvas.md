@@ -11,7 +11,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Arsalan Akhtar
+  - personId: arsalan-akhtar
+    name: Arsalan Akhtar
     role: null
 creditsRaw: Arsalan Akhtar
 media: []

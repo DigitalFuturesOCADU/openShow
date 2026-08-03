@@ -16,7 +16,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Catherine Xu
+  - personId: catherine-xu
+    name: Catherine Xu
     role: null
 creditsRaw: Catherine Xu
 media:

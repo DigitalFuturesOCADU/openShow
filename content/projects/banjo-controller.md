@@ -12,7 +12,8 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Yuhan Xia
+  - personId: yuhan-xia
+    name: Yuhan Xia
     role: null
 creditsRaw: Yuhan Xia
 media:

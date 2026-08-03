@@ -17,11 +17,14 @@ medium:
   - web
 tags: []
 credits:
-  - name: Kartikay Chadha
+  - personId: kartikay-chadha
+    name: Kartikay Chadha
     role: null
-  - name: Martha Ladly
+  - personId: martha-ladly
+    name: Martha Ladly
     role: null
-  - name: Katrina Keefer
+  - personId: katrina-keefer
+    name: Katrina Keefer
     role: null
 creditsRaw: Kartikay Chadha, Martha Ladly, Katrina Keefer
 media: []

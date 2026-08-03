@@ -10,7 +10,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Jordan Shaw
+  - personId: jordan-shaw
+    name: Jordan Shaw
     role: null
 creditsRaw: Jordan Shaw
 media: []

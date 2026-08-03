@@ -14,7 +14,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Mazin Chabayta
+  - personId: mazin-chabayta
+    name: Mazin Chabayta
     role: null
 creditsRaw: Mazin Chabayta
 media:

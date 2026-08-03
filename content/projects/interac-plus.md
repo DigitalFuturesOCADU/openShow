@@ -11,7 +11,8 @@ medium:
   - ux
 tags: []
 credits:
-  - name: Terrell Duke
+  - personId: terrell-duke
+    name: Terrell Duke
     role: null
 creditsRaw: Terrell Duke
 media:

@@ -12,7 +12,8 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Ecem Ozturk
+  - personId: ecem-ozturk
+    name: Ecem Ozturk
     role: null
 creditsRaw: Ecem Ozturk
 media:

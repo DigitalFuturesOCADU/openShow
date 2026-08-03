@@ -12,13 +12,17 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Jiayun Qiu
+  - personId: jiayun-qiu
+    name: Jiayun Qiu
     role: null
-  - name: Aileen Dong
+  - personId: aileen-dong
+    name: Aileen Dong
     role: null
-  - name: Juan Sulca
+  - personId: juan-sulca
+    name: Juan Sulca
     role: null
-  - name: Xinzhou Zhang
+  - personId: xinzhou-zhang
+    name: Xinzhou Zhang
     role: null
 creditsRaw: Jiayun Qiu, Aileen Dong, Juan Sulca, Xinzhou Zhang
 media:

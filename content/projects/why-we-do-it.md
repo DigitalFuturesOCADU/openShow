@@ -12,7 +12,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Mustafa Abdel Fattah
+  - personId: mustafa-abdel-fattah
+    name: Mustafa Abdel Fattah
     role: null
 creditsRaw: Mustafa Abdel Fattah
 media:

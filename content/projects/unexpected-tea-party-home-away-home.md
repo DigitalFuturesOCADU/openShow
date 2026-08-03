@@ -15,7 +15,8 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Melanie Yan
+  - personId: melanie-yan
+    name: Melanie Yan
     role: null
 creditsRaw: Melanie Yan
 media:

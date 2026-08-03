@@ -11,11 +11,14 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Iris Zhang
+  - personId: iris-zhang
+    name: Iris Zhang
     role: null
-  - name: Pranya Gulati
+  - personId: pranya-gulati
+    name: Pranya Gulati
     role: null
-  - name: Yiqun Zhou
+  - personId: yiqun-zhou
+    name: Yiqun Zhou
     role: null
 creditsRaw: Iris Zhang, Pranya Gulati, Yiqun Zhou
 media:

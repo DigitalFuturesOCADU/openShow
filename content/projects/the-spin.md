@@ -15,7 +15,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Alicia Blakey
+  - personId: alicia-blakey
+    name: Alicia Blakey
     role: null
 creditsRaw: Alicia Blakey
 media:

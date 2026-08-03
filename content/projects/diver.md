@@ -9,7 +9,8 @@ affiliation: []
 medium: []
 tags: []
 credits:
-  - name: Catherine Reyto
+  - personId: catherine-reyto
+    name: Catherine Reyto
     role: null
 creditsRaw: Catherine Reyto
 media:

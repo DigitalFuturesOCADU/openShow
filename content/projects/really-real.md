@@ -10,7 +10,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Elena Misako Smillie
+  - personId: elena-misako-smillie
+    name: Elena Misako Smillie
     role: null
 creditsRaw: Elena Misako Smillie
 media:

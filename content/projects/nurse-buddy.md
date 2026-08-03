@@ -12,7 +12,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Veda Adnani
+  - personId: veda-adnani
+    name: Veda Adnani
     role: null
 creditsRaw: Veda Adnani
 media: []

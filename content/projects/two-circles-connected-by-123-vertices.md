@@ -15,9 +15,11 @@ medium:
   - video
 tags: []
 credits:
-  - name: Nicole Vella
+  - personId: nicole-vella
+    name: Nicole Vella
     role: null
-  - name: Sara Boo
+  - personId: sara-boo
+    name: Sara Boo
     role: null
 creditsRaw: Nicole Vella, Sara Boo
 media:

@@ -14,7 +14,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Joshua Igwe
+  - personId: joshua-igwe
+    name: Joshua Igwe
     role: null
 creditsRaw: Joshua Igwe
 media:

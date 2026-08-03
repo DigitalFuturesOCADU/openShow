@@ -13,11 +13,14 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Rina Chen
+  - personId: rina-chen
+    name: Rina Chen
     role: null
-  - name: Amelia Lochhead
+  - personId: amelia-lochhead
+    name: Amelia Lochhead
     role: null
-  - name: Niloofar Sanandajizadeh
+  - personId: niloofar-sanandajizadeh
+    name: Niloofar Sanandajizadeh
     role: null
 creditsRaw: Rina Chen, Amelia Lochhead, Niloofar Sanandajizadeh
 media:

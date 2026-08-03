@@ -12,7 +12,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Yutong Jessie Zheng
+  - personId: yutong-jessie-zheng
+    name: Yutong Jessie Zheng
     role: null
 creditsRaw: Yutong Jessie Zheng
 media:

@@ -14,7 +14,8 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Hamid Malek
+  - personId: hamid-malek
+    name: Hamid Malek
     role: null
 creditsRaw: Hamid Malek
 media: []

@@ -15,7 +15,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Jad Rabbaa
+  - personId: jad-rabbaa
+    name: Jad Rabbaa
     role: null
 creditsRaw: Jad Rabbaa
 media:

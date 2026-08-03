@@ -12,7 +12,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Atharva Jadhav
+  - personId: atharva-jadhav
+    name: Atharva Jadhav
     role: null
 creditsRaw: Atharva Jadhav
 media:

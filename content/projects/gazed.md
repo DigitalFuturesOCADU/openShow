@@ -13,9 +13,11 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Thea Lu
+  - personId: thea-lu
+    name: Thea Lu
     role: null
-  - name: Golnoush Mir Salari
+  - personId: golnoush-mir-salari
+    name: Golnoush Mir Salari
     role: null
 creditsRaw: Thea Lu, Golnoush Mir Salari
 media:

@@ -14,7 +14,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Nicole Vella
+  - personId: nicole-vella
+    name: Nicole Vella
     role: null
 creditsRaw: Nicole Vella
 media:

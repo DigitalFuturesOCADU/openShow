@@ -14,11 +14,14 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: April De Zen
+  - personId: april-de-zen
+    name: April De Zen
     role: null
-  - name: Veda Adnani
+  - personId: veda-adnani
+    name: Veda Adnani
     role: null
-  - name: Omid Ettehadi
+  - personId: omid-ettehadi
+    name: Omid Ettehadi
     role: null
 creditsRaw: April De Zen, Veda Adnani and Omid Ettehadi
 media: []

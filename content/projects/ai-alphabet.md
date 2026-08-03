@@ -12,7 +12,8 @@ medium:
   - code
 tags: []
 credits:
-  - name: Christina Chen
+  - personId: christina-chen
+    name: Christina Chen
     role: null
 creditsRaw: Christina Chen
 media:

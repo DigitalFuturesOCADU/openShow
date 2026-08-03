@@ -13,7 +13,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Bryan Lee
+  - personId: bryan-lee
+    name: Bryan Lee
     role: null
 creditsRaw: Bryan Lee
 media:

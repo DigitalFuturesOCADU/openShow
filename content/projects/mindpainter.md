@@ -15,7 +15,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Nick Alexander
+  - personId: nick-alexander
+    name: Nick Alexander
     role: null
 creditsRaw: Nick Alexander
 media:

@@ -12,13 +12,17 @@ medium:
   - web
 tags: []
 credits:
-  - name: Dave Colangelo
+  - personId: dave-colangelo
+    name: Dave Colangelo
     role: null
-  - name: Patricio Dávila
+  - personId: patricio-davila
+    name: Patricio Dávila
     role: null
-  - name: Lilian Leung
+  - personId: lilian-leung
+    name: Lilian Leung
     role: null
-  - name: Immony Mèn
+  - personId: immony-men
+    name: Immony Mèn
     role: null
 creditsRaw: Dave Colangelo, Patricio Dávila, Lilian Leung and Immony Mèn
 media:

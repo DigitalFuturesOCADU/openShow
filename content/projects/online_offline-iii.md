@@ -13,7 +13,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Enna Kim
+  - personId: enna-kim
+    name: Enna Kim
     role: null
 creditsRaw: Enna Kim
 media:

@@ -12,11 +12,14 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Kayli Chow
+  - personId: kayli-chow
+    name: Kayli Chow
     role: null
-  - name: Shane Colby
+  - personId: shane-colby
+    name: Shane Colby
     role: null
-  - name: JD Ramirez
+  - personId: jd-ramirez
+    name: JD Ramirez
     role: null
 creditsRaw: Kayli Chow, Shane Colby, JD Ramirez
 media:

@@ -1,0 +1,65 @@
+# Creator registry corrections — REVIEW
+#
+# Generated from 347 distinct credited names across 262 projects.
+# Edit and re-run "npm run extract". Regenerated only when absent, so edits survive.
+#
+# aliases:     map a spelling onto the canonical one. Both still appear in the
+#              person's "variants", so nothing is lost.
+# sortNames:   override the "Family, Given" sort key where the heuristic is wrong.
+# collectives: credits that are groups or studios rather than individuals.
+# notPeople:   credits that are not creators at all and should be discarded.
+
+# --- Same person credited two ways. Detected automatically: accents, hyphens
+# --- and spacing differ but the letters are identical. Confirm each.
+aliases:
+  "Mika Maclear Wall": "Mika Maclear-Wall"
+  "Niloofar Sanandaji Zadeh": "Niloofar Sanandajizadeh"
+  "Orus Mateo Castano Suarez": "Orus Mateo Castaño-Suárez"
+
+# --- PROBABLE TYPOS: normalised names within an edit distance of 2, but not
+# --- identical. NOT applied automatically — two real people can have names one
+# --- character apart. Confirm each, then move it into aliases above.
+#   "Mika MacLOear Wall" <-> "Mika Maclear Wall"   (distance 1)
+#   "Mika MacLOear Wall" <-> "Mika Maclear-Wall"   (distance 1)
+#   "Salisa Jatuweerapong" <-> "Salisa Jatweerapong"   (distance 1)
+#   "Aileen Dong" <-> "Ailin Dong"   (distance 2)
+#   "Josh Igwe" <-> "Joshua Igwe"   (distance 2)
+
+# --- Sort keys the heuristic is unsure about: one-word names, four or more
+# --- words, or a particle like "van"/"de". The default guess is shown.
+sortNames:
+  "Achal": "Achal"
+  "April De Zen": "De Zen, April"
+  "Data Materialization Studio Lab": "Lab, Data Materialization Studio"
+  "Emolace": "Emolace"
+  "Jamie": "Jamie"
+  "Joe": "Joe"
+  "Krishnokoli": "Krishnokoli"
+  "Ladan": "Ladan"
+  "Maryam": "Maryam"
+  "Natalie Le Huenen": "Le Huenen, Natalie"
+  "Orus Mateo Castano Suarez": "Suarez, Orus Mateo Castano"
+  "Ozan": "Ozan"
+  "Patricia \"Trish\" Kanana Mwenda": "Mwenda, Patricia \"Trish\" Kanana"
+  "Paul Van Rijn": "Van Rijn, Paul"
+  "Peiheng": "Peiheng"
+  "Raza": "Raza"
+  "Shikhar": "Shikhar"
+  "Simran": "Simran"
+  "Social Body Lab in collaboration with Tapestry Opera": "Opera, Social Body Lab in collaboration with Tapestry"
+  "collective project: Angela Atkinson": "Atkinson, collective project: Angela"
+
+# --- Groups, studios and labs. Displayed, but not treated as individuals.
+# --- Detected by name; confirm and add any the heuristic missed.
+collectives:
+  - "CAM Collective"
+  - "Data Materialization Studio Lab"
+  - "Social Body Lab in collaboration with Tapestry Opera"
+  - "collective project: Angela Atkinson"
+
+# --- Not creators at all. Detected where the credit is identical to the
+# --- project's own title, which means the field was filled in with the wrong
+# --- thing. Discarded entirely.
+notPeople:
+  - "Emolace"
+  - "Museums of Memory"

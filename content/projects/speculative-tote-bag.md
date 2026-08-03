@@ -12,7 +12,8 @@ medium:
   - ar
 tags: []
 credits:
-  - name: Mika Hirata
+  - personId: mika-hirata
+    name: Mika Hirata
     role: null
 creditsRaw: Mika Hirata
 media:

@@ -15,13 +15,17 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Emma Westecott
+  - personId: emma-westecott
+    name: Emma Westecott
     role: null
-  - name: Tyler Beatty
+  - personId: tyler-beatty
+    name: Tyler Beatty
     role: null
-  - name: Ryan Boyd
+  - personId: ryan-boyd
+    name: Ryan Boyd
     role: null
-  - name: Kahani Ploessl
+  - personId: kahani-ploessl
+    name: Kahani Ploessl
     role: null
 creditsRaw: Emma Westecott, Tyler Beatty, Ryan Boyd, Kahani Ploessl
 media:

@@ -15,7 +15,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Yixuan Xiao
+  - personId: yixuan-xiao
+    name: Yixuan Xiao
     role: null
 creditsRaw: Yixuan Xiao
 media:

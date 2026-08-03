@@ -12,9 +12,11 @@ medium:
   - video
 tags: []
 credits:
-  - name: Aimee Chen
+  - personId: aimee-chen
+    name: Aimee Chen
     role: null
-  - name: Doris Gao
+  - personId: doris-gao
+    name: Doris Gao
     role: null
 creditsRaw: Aimee Chen and Doris Gao
 media:

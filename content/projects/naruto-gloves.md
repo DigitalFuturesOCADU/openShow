@@ -13,11 +13,14 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Salisa Jatuweerapong
+  - personId: salisa-jatuweerapong
+    name: Salisa Jatuweerapong
     role: null
-  - name: Brian Nguyen
+  - personId: brian-nguyen
+    name: Brian Nguyen
     role: null
-  - name: Madelaine Fischer-Bernhut
+  - personId: madelaine-fischer-bernhut
+    name: Madelaine Fischer-Bernhut
     role: null
 creditsRaw: Salisa Jatuweerapong, Brian Nguyen, Madelaine Fischer-Bernhut
 media:

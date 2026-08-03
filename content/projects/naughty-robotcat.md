@@ -15,13 +15,17 @@ medium:
   - video
 tags: []
 credits:
-  - name: Victoria Gottardi
+  - personId: victoria-gottardi
+    name: Victoria Gottardi
     role: null
-  - name: Yueming Gao
+  - personId: yueming-gao
+    name: Yueming Gao
     role: null
-  - name: Siyu Sun
+  - personId: siyu-sun
+    name: Siyu Sun
     role: null
-  - name: Maryam
+  - personId: maryam
+    name: Maryam
     role: null
 creditsRaw: Victoria Gottardi, Yueming Gao, Siyu Sun, Maryam
 media:

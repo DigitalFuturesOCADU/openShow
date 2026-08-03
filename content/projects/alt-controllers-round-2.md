@@ -14,27 +14,38 @@ medium:
   - web
 tags: []
 credits:
-  - name: Kayla Eli
+  - personId: kayla-eli
+    name: Kayla Eli
     role: null
-  - name: Yuhan Xia
+  - personId: yuhan-xia
+    name: Yuhan Xia
     role: null
-  - name: Tinatei Tunyan
+  - personId: tinatei-tunyan
+    name: Tinatei Tunyan
     role: null
-  - name: Qingxuan Li
+  - personId: qingxuan-li
+    name: Qingxuan Li
     role: null
-  - name: Yubhang Huang
+  - personId: yubhang-huang
+    name: Yubhang Huang
     role: null
-  - name: Niloofar Sanandajizadeh
+  - personId: niloofar-sanandajizadeh
+    name: Niloofar Sanandajizadeh
     role: null
-  - name: Amelia Lochhead
+  - personId: amelia-lochhead
+    name: Amelia Lochhead
     role: null
-  - name: Longxiang Fan
+  - personId: longxiang-fan
+    name: Longxiang Fan
     role: null
-  - name: Minghui Cui
+  - personId: minghui-cui
+    name: Minghui Cui
     role: null
-  - name: Jesse Xu
+  - personId: jesse-xu
+    name: Jesse Xu
     role: null
-  - name: Melanie Yan
+  - personId: melanie-yan
+    name: Melanie Yan
     role: null
 creditsRaw: >-
   Kayla Eli,  Yuhan Xia,  Tinatei Tunyan, Qingxuan Li,  Yubhang Huang,  Niloofar Sanandajizadeh,

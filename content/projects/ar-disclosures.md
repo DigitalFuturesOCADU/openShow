@@ -11,7 +11,8 @@ medium:
   - code
 tags: []
 credits:
-  - name: Maria Yala
+  - personId: maria-yala
+    name: Maria Yala
     role: null
 creditsRaw: Maria Yala
 media: []

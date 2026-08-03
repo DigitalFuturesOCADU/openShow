@@ -13,15 +13,20 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Catherine Reyto
+  - personId: catherine-reyto
+    name: Catherine Reyto
     role: null
-  - name: Jun Li
+  - personId: jun-li
+    name: Jun Li
     role: null
-  - name: Rittika Basu
+  - personId: rittika-basu
+    name: Rittika Basu
     role: null
-  - name: Sananda Dutta
+  - personId: sananda-dutta
+    name: Sananda Dutta
     role: null
-  - name: Jevonne Peters
+  - personId: jevonne-peters
+    name: Jevonne Peters
     role: null
 creditsRaw: Catherine Reyto, Jun Li, Rittika Basu, Sananda Dutta, Jevonne Peters
 media: []

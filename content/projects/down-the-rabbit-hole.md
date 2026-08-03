@@ -13,17 +13,23 @@ medium:
   - vr
 tags: []
 credits:
-  - name: Enna Kim
+  - personId: enna-kim
+    name: Enna Kim
     role: null
-  - name: Anran Zhou
+  - personId: anran-zhou
+    name: Anran Zhou
     role: null
-  - name: Bomi Doh
+  - personId: bomi-doh
+    name: Bomi Doh
     role: null
-  - name: Natalie Le Huenen
+  - personId: natalie-le-huenen
+    name: Natalie Le Huenen
     role: null
-  - name: Sarah Parent
+  - personId: sarah-parent
+    name: Sarah Parent
     role: null
-  - name: Vivian Wong
+  - personId: vivian-wong
+    name: Vivian Wong
     role: null
 creditsRaw: Enna Kim, Anran Zhou, Bomi Doh, Natalie Le Huenen, Sarah Parent and Vivian Wong
 media:

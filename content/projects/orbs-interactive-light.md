@@ -12,7 +12,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Niloofar Sanandaji
+  - personId: niloofar-sanandaji
+    name: Niloofar Sanandaji
     role: null
 creditsRaw: Niloofar Sanandaji
 media:

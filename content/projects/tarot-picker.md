@@ -16,7 +16,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Judhell Dhy Ramirez
+  - personId: judhell-dhy-ramirez
+    name: Judhell Dhy Ramirez
     role: null
 creditsRaw: Judhell Dhy Ramirez
 media:

@@ -12,7 +12,8 @@ medium:
   - video
 tags: []
 credits:
-  - name: Alexandra Fernandez Espinosa
+  - personId: alexandra-fernandez-espinosa
+    name: Alexandra Fernandez Espinosa
     role: null
 creditsRaw: Alexandra Fernandez Espinosa
 media:

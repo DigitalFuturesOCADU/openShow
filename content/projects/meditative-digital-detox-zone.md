@@ -14,13 +14,17 @@ medium:
   - web
 tags: []
 credits:
-  - name: Orus Mateo Castaño-Suárez
+  - personId: orus-mateo-castano-suarez
+    name: Orus Mateo Castaño-Suárez
     role: null
-  - name: Lanlan Chen
+  - personId: lanlan-chen
+    name: Lanlan Chen
     role: null
-  - name: Jiayun Qiu
+  - personId: jiayun-qiu
+    name: Jiayun Qiu
     role: null
-  - name: Samarth Reddy
+  - personId: samarth-reddy
+    name: Samarth Reddy
     role: null
 creditsRaw: Orus Mateo Castaño-Suárez,  Lanlan Chen,  Jiayun Qiu,  Samarth Reddy
 media:

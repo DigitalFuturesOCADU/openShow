@@ -11,7 +11,8 @@ medium:
   - digital-fabrication
 tags: []
 credits:
-  - name: Kyle Kubica
+  - personId: kyle-kubica
+    name: Kyle Kubica
     role: null
 creditsRaw: Kyle Kubica
 media:

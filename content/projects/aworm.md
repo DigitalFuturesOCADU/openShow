@@ -13,7 +13,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Harry Zhao
+  - personId: harry-zhao
+    name: Harry Zhao
     role: null
 creditsRaw: Harry Zhao
 media:

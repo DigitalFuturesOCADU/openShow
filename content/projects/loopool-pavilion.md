@@ -12,7 +12,8 @@ medium:
   - digital-fabrication
 tags: []
 credits:
-  - name: Ziyao Jiang
+  - personId: ziyao-jiang
+    name: Ziyao Jiang
     role: null
 creditsRaw: Ziyao Jiang
 media:

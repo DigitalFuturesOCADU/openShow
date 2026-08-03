@@ -14,9 +14,7 @@ medium:
   - installation
   - physical-computing
 tags: []
-credits:
-  - name: Museums of Memory
-    role: null
+credits: []
 creditsRaw: Museums of Memory
 media:
   - type: image

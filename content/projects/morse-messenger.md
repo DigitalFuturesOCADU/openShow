@@ -12,9 +12,11 @@ medium:
   - physical-computing
 tags: []
 credits:
-  - name: Clinton Akomea-Agyin
+  - personId: clinton-akomea-agyin
+    name: Clinton Akomea-Agyin
     role: null
-  - name: Krishnokoli Roy Chakraborty
+  - personId: krishnokoli-roy-chakraborty
+    name: Krishnokoli Roy Chakraborty
     role: null
 creditsRaw: Clinton Akomea-Agyin, Krishnokoli Roy Chakraborty
 media:

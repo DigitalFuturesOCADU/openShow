@@ -12,7 +12,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Greg Martin
+  - personId: greg-martin
+    name: Greg Martin
     role: null
 creditsRaw: Greg Martin
 media:

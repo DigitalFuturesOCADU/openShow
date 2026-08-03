@@ -15,11 +15,14 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Olivia Pasian
+  - personId: olivia-pasian
+    name: Olivia Pasian
     role: null
-  - name: Paul Van Rijn
+  - personId: paul-van-rijn
+    name: Paul Van Rijn
     role: null
-  - name: Kasper Zhang
+  - personId: kasper-zhang
+    name: Kasper Zhang
     role: null
 creditsRaw: Olivia Pasian, Paul Van Rijn, Kasper Zhang
 media:

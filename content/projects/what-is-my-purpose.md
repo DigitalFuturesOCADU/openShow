@@ -13,7 +13,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Nilam Sari
+  - personId: nilam-sari
+    name: Nilam Sari
     role: null
 creditsRaw: Nilam Sari
 media: []

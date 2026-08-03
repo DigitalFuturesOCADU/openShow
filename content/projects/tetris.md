@@ -12,7 +12,8 @@ medium:
   - games
 tags: []
 credits:
-  - name: Arashjot Kaur
+  - personId: arashjot-kaur
+    name: Arashjot Kaur
     role: null
 creditsRaw: Arashjot Kaur
 media:

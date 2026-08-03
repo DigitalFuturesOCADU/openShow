@@ -13,7 +13,8 @@ medium:
   - web
 tags: []
 credits:
-  - name: Francisco Samayoa
+  - personId: francisco-samayoa
+    name: Francisco Samayoa
     role: null
 creditsRaw: Francisco Samayoa
 media:

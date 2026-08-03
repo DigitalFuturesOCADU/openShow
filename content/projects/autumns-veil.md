@@ -13,9 +13,11 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Assal Toudehfallah
+  - personId: assal-toudehfallah
+    name: Assal Toudehfallah
     role: null
-  - name: Peter Oke
+  - personId: peter-oke
+    name: Peter Oke
     role: null
 creditsRaw: Assal Toudehfallah, Peter Oke
 media:

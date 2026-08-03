@@ -11,11 +11,14 @@ medium:
   - video
 tags: []
 credits:
-  - name: Charles Pollack
+  - personId: charles-pollack
+    name: Charles Pollack
     role: null
-  - name: Daniela Ortiz Correa
+  - personId: daniela-ortiz-correa
+    name: Daniela Ortiz Correa
     role: null
-  - name: Minseo Park
+  - personId: minseo-park
+    name: Minseo Park
     role: null
 creditsRaw: Charles Pollack, Daniela Ortiz Correa, Minseo Park
 media:

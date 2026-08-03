@@ -9,7 +9,8 @@ affiliation: []
 medium: []
 tags: []
 credits:
-  - name: Samaa Ahmed
+  - personId: samaa-ahmed
+    name: Samaa Ahmed
     role: null
 creditsRaw: Samaa Ahmed
 media:

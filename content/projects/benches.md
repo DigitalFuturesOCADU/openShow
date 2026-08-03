@@ -14,7 +14,8 @@ medium:
   - sculpture
 tags: []
 credits:
-  - name: Olivia Prior
+  - personId: olivia-prior
+    name: Olivia Prior
     role: null
 creditsRaw: Olivia Prior
 media:

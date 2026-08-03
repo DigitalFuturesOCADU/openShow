@@ -14,17 +14,23 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Kate Hartman
+  - personId: kate-hartman
+    name: Kate Hartman
     role: null
-  - name: Emma Westecott
+  - personId: emma-westecott
+    name: Emma Westecott
     role: null
-  - name: Cindy Poremba
+  - personId: cindy-poremba
+    name: Cindy Poremba
     role: null
-  - name: Ellie Huang
+  - personId: ellie-huang
+    name: Ellie Huang
     role: null
-  - name: Izzie Colpitts-Campbell
+  - personId: izzie-colpitts-campbell
+    name: Izzie Colpitts-Campbell
     role: null
-  - name: Santo Aveiro
+  - personId: santo-aveiro
+    name: Santo Aveiro
     role: null
 creditsRaw: Kate Hartman, Emma Westecott, Cindy Poremba, Ellie Huang, Izzie Colpitts-Campbell, Santo Aveiro
 media:

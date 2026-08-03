@@ -11,7 +11,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Gunner Thongmeesang
+  - personId: gunner-thongmeesang
+    name: Gunner Thongmeesang
     role: null
 creditsRaw: Gunner Thongmeesang
 media:

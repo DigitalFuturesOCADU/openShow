@@ -11,7 +11,8 @@ medium:
   - digital-fabrication
 tags: []
 credits:
-  - name: Garance Zhang
+  - personId: garance-zhang
+    name: Garance Zhang
     role: null
 creditsRaw: Garance Zhang
 media:

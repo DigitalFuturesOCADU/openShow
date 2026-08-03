@@ -12,7 +12,8 @@ medium:
   - installation
 tags: []
 credits:
-  - name: Nick Puckett
+  - personId: nick-puckett
+    name: Nick Puckett
     role: null
 creditsRaw: Nick Puckett
 media:

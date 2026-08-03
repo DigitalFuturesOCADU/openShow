@@ -14,7 +14,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - name: Neo Nuo Chen
+  - personId: neo-nuo-chen
+    name: Neo Nuo Chen
     role: null
 creditsRaw: Neo Nuo Chen
 media:

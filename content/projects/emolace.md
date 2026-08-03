@@ -8,9 +8,7 @@ session: null
 affiliation: []
 medium: []
 tags: []
-credits:
-  - name: Emolace
-    role: null
+credits: []
 creditsRaw: Emolace
 media:
   - type: image

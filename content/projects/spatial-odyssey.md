@@ -13,13 +13,17 @@ medium:
   - sound
 tags: []
 credits:
-  - name: Aishwarya Bhattbhatt
+  - personId: aishwarya-bhattbhatt
+    name: Aishwarya Bhattbhatt
     role: null
-  - name: Aranya Khurana
+  - personId: aranya-khurana
+    name: Aranya Khurana
     role: null
-  - name: Nastaran Bizmark
+  - personId: nastaran-bizmark
+    name: Nastaran Bizmark
     role: null
-  - name: Rutooja Khamkar
+  - personId: rutooja-khamkar
+    name: Rutooja Khamkar
     role: null
 creditsRaw: Aishwarya Bhattbhatt, Aranya Khurana, Nastaran Bizmark, Rutooja Khamkar
 media:

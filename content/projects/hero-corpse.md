@@ -11,7 +11,8 @@ medium:
   - games
 tags: []
 credits:
-  - name: Erika Davis
+  - personId: erika-davis
+    name: Erika Davis
     role: null
 creditsRaw: Erika Davis
 media:
