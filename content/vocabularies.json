@@ -14,7 +14,11 @@
       "storage": "controlled vocabulary, project-level",
       "setBy": "submitter declares",
       "volatile": true,
-      "note": "A snapshot that ages: an undergraduate in 2019 is an alum now. The value records what was true at the time of the show and should not be updated retroactively. 60 of 264 projects carry none. Public visibility is decision D5."
+      "note": "A snapshot that ages: an undergraduate in 2019 is an alum now. The value records what was true at the time of the show and should not be updated retroactively. 60 of 264 projects carry none. Public visibility is decision D5.",
+      "subsets": {
+        "ug-thesis": "undergraduate"
+      },
+      "subsetNote": "All 17 ug-thesis projects are also undergraduate; it never occurs alone. Kept on this axis by decision, but the two are not independent — a filter UI should not present them as equal siblings."
     },
     "medium": {
       "describes": "the work — materials, techniques, form",
