@@ -3,18 +3,23 @@
 ## Year could not be resolved (8)
 
 These have no categories at all, so there is no prefix to read a year from.
-Assign manually in the project file's frontmatter.
+Record the decision in `config/overrides.yaml`, keyed by the ID below — not in
+the project file, which is regenerated on every extract.
 
-| ID | Status | Title | Slug |
+| ID | Status | Title | Post date (hint only) |
 | --- | --- | --- | --- |
-| 1553 | draft | Emolace | `emolace` |
-| 1572 | draft | Digital Debris | `digital-debris` |
-| 1574 | draft | Observation. How technology can help reduce gaps between genders | `observation-how-technology-can-help-reduce-gaps-between-genders` |
-| 1576 | draft | The Strange and the Beautiful | `the-strange-and-the-beautiful` |
-| 2333 | stub | Synchrobots | `synchrobots` |
-| 2595 | stub | Vibrating Knee Brace | `vibrating-knee-brace` |
-| 1969 | publish | Diver | `diver` |
-| 2118 | publish | MetaHospital | `metahospital` |
+| 1553 | draft | Emolace | 2020-12-09 18:41:01 |
+| 1572 | draft | Digital Debris | 2020-12-09 19:57:57 |
+| 1574 | draft | Observation. How technology can help reduce gaps between genders | 2020-12-09 19:50:23 |
+| 1576 | draft | The Strange and the Beautiful | 2020-12-09 19:56:20 |
+| 2333 | stub | Synchrobots | 2023-04-28 05:52:26 |
+| 2595 | stub | Vibrating Knee Brace | 2023-12-21 04:22:04 |
+| 1969 | publish | Diver | 2020-12-16 22:00:06 |
+| 2118 | publish | MetaHospital | 2022-12-12 14:09:23 |
+
+Post dates are a starting hint and must not be trusted as the answer — the 2023
+show has items dated both April and December 2023, and the 2020 show spans
+October and November.
 
 **2 of these are published** and therefore user-visible.
 

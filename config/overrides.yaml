@@ -1,0 +1,44 @@
+# Manual corrections, applied on top of the extracted data.
+#
+# WHY THIS FILE EXISTS
+# `npm run extract` deletes and regenerates content/projects/ on every run, so
+# editing those files by hand does not survive. Anything entered here does.
+# Keep manual data here; treat content/ as build output.
+#
+# Keyed by WordPress post id, not slug — ids are stable, slugs can be
+# regenerated. The id is in each project's frontmatter as `id`.
+#
+# Any frontmatter field can be overridden. Values here win over the WXR, and
+# each project records which fields were overridden in `manualOverrides`, so a
+# reader can always tell what came from WordPress and what a human supplied.
+#
+# Overrides are applied AFTER the audit gate. The gate measures fidelity to the
+# source export and must not be silenced by hand-entered corrections — if the
+# gate says 8 items have no resolvable year, that stays true of the export no
+# matter how many years are filled in here.
+
+# --------------------------------------------------------------------------
+# Year assignment for the 8 items that carry no categories at all.
+# See reports/unresolved.md. Post dates are shown there as a hint but are NOT
+# reliable — the 2023 show has items dated both April and December 2023.
+# The two published ones matter most.
+# --------------------------------------------------------------------------
+
+# 1969:                     # Diver (published)
+#   year: 20XX
+#   session: null
+
+# 2118:                     # MetaHospital (published)
+#   year: 20XX
+
+# --------------------------------------------------------------------------
+# 2025 affiliation backfill.
+# The 2025 show recorded no affiliation terms for any of its 38 items, while
+# 2019-2024 is 94% complete. See the coverage table in reports/taxonomy.md.
+# Valid values: undergraduate, graduate, alumni, faculty, ug-thesis
+# Worth doing while the people who ran the show still remember; it is not
+# blocking anything until affiliation becomes a public filter (decision D5).
+# --------------------------------------------------------------------------
+
+# 3001:
+#   affiliation: [undergraduate]
