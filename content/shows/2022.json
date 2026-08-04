@@ -4,6 +4,7 @@
   "session": null,
   "title": "Open Show 2022",
   "current": false,
+  "visibility": "open",
   "dates": {
     "start": "2022-12-13",
     "end": "2022-12-13"
@@ -25,5 +26,6 @@
     "indexLayout": "grid",
     "defaultProjectLayout": "default"
   },
-  "projectCount": 37
+  "projectCount": 37,
+  "stagedCount": 0
 }

@@ -110,12 +110,19 @@ const hasFacts = Boolean(when || d.time || d.venue || d.rooms.length)
 
   <section>
     <h2 class="works-head">Works</h2>
-    {projects.length > 0
-      ? <Tiles projects={projects} />
-      : <p class="empty">No published work is filed under this show yet.</p>}
+    {projects.length > 0 ? (
+      <Tiles projects={projects} />
+    ) : d.visibility === 'announced' ? (
+      <p class="empty">
+        Work goes online when the show opens{when ? ` on ${when}` : ''}.
+        {d.stagedCount > 0 && ` ${d.stagedCount} ${d.stagedCount === 1 ? 'piece is' : 'pieces are'} ready.`}
+      </p>
+    ) : (
+      <p class="empty">No published work is filed under this show yet.</p>
+    )}
   </section>
 
-  {exhibitors.length > 0 && (
+  {exhibitors.length > 0 && d.visibility === 'open' && (
     <section class="exhibitors">
       <h2 class="works-head">Exhibitors <span class="n">{exhibitors.length}</span></h2>
       <ul>
