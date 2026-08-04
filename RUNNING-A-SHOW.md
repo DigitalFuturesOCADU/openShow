@@ -213,7 +213,11 @@ npm run links     # checks external links, marks dead ones so they stop showing
 
 ## Starting a show over
 
-If an ingest went badly wrong, reset the show and begin again:
+In the console this is the red section at the bottom: choose the show, press
+**See what would be deleted**, read the report, then type the show's name to arm
+the delete button.
+
+From the terminal:
 
 ```bash
 npm run reset -- --show 2026
