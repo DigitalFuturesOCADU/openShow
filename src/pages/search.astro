@@ -2,34 +2,96 @@
 import Base from '../layouts/Base.astro'
 const base = import.meta.env.BASE_URL
 ---
-<Base title="Search — Digital Futures Open Show" description="Search 240 projects by title, creator, description or medium.">
+
+<Base title="Search — Digital Futures Open Show" section="search"
+      description="Search every project by title, creator, description or medium.">
   <h1>Search</h1>
   <p class="lede">Titles, creators, descriptions and medium across every show.</p>
+
   <div id="search" data-base={base}></div>
-  <noscript><p>Search needs JavaScript. <a href={`${base}browse`}>Browse by facet</a> instead.</p></noscript>
+
+  <p id="search-error" hidden role="alert">
+    Search could not load. <a href={`${base}topics`}>Browse by topic</a> instead.
+  </p>
+
+  <noscript>
+    <p>Search needs JavaScript. <a href={`${base}topics`}>Browse by topic</a> instead.</p>
+  </noscript>
 </Base>
 
 <script>
-  // Pagefind indexes the built HTML, so the index is generated after the Astro
-  // build and loaded at runtime rather than bundled.
-  const el = document.getElementById('search')!
-  const base = el.dataset.base ?? '/'
-  const { PagefindUI } = await import(/* @vite-ignore */ `${base}pagefind/pagefind-ui.js`)
-  const ui = new PagefindUI({ element: '#search', showSubResults: true, showImages: true, autofocus: true })
+  // Pagefind's assets are produced AFTER the Astro build — the index is made by
+  // scanning the built HTML — so they cannot be imported at build time and are
+  // loaded at runtime instead.
+  //
+  // pagefind-ui.js is a CLASSIC script that assigns window.PagefindUI, not an ES
+  // module. An earlier version did `const { PagefindUI } = await import(...)`,
+  // which resolved to an empty namespace, so PagefindUI was undefined and
+  // `new undefined()` threw into nothing. The page loaded, the box never
+  // appeared, and there was no error to see. Hence the visible failure state.
+  const el = document.getElementById('search') as HTMLElement | null
+  const errorEl = document.getElementById('search-error') as HTMLElement | null
 
-  // The sidebar box is a plain GET form, so arriving here with ?q= should run
-  // that query rather than land on an empty page.
-  const q = new URLSearchParams(location.search).get('q')
-  if (q) ui.triggerSearch(q)
+  const fail = (why: string) => {
+    console.error('Search failed to load:', why)
+    if (errorEl) errorEl.hidden = false
+  }
+
+  if (el) {
+    const base = el.dataset.base || '/'
+
+    const stylesheet = document.createElement('link')
+    stylesheet.rel = 'stylesheet'
+    stylesheet.href = `${base}pagefind/pagefind-ui.css`
+    document.head.append(stylesheet)
+
+    const script = document.createElement('script')
+    script.src = `${base}pagefind/pagefind-ui.js`
+    script.onerror = () => fail(`could not load ${script.src}`)
+    script.onload = () => {
+      const PagefindUI = (window as any).PagefindUI
+      if (typeof PagefindUI !== 'function') return fail('PagefindUI global missing')
+
+      const ui = new PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        showImages: true,
+        autofocus: true,
+      })
+
+      // The sidebar box is a plain GET form, so arriving with ?q= should run
+      // that query rather than land on an empty page.
+      const q = new URLSearchParams(location.search).get('q')
+      if (q) {
+        const input = el.querySelector<HTMLInputElement>('input[type="text"]')
+        if (input) {
+          input.value = q
+          input.dispatchEvent(new Event('input', { bubbles: true }))
+        } else {
+          ui.triggerSearch?.(q)
+        }
+      }
+    }
+    document.head.append(script)
+  }
 </script>
 
 <style is:global>
-  #search { margin-top: 1.5rem; }
-  .pagefind-ui { --pagefind-ui-primary: var(--ink); --pagefind-ui-text: var(--ink);
-                 --pagefind-ui-background: var(--paper); --pagefind-ui-border: var(--rule);
-                 --pagefind-ui-font: inherit; }
+  .pagefind-ui {
+    --pagefind-ui-primary: var(--ink);
+    --pagefind-ui-text: var(--ink);
+    --pagefind-ui-background: var(--paper);
+    --pagefind-ui-border: var(--rule);
+    --pagefind-ui-tag: var(--rule);
+    --pagefind-ui-font: inherit;
+    --pagefind-ui-border-radius: 0;
+    --pagefind-ui-border-width: 1px;
+  }
 </style>
+
 <style>
-  h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin: 0 0 .25rem; }
-  .lede { color: var(--muted); margin: 0 0 1rem; }
+  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .2rem; letter-spacing: -.01em; }
+  .lede { color: var(--muted); margin: 0 0 1.5rem; }
+  #search { margin-top: 1rem; }
+  #search-error { color: var(--muted); }
 </style>
