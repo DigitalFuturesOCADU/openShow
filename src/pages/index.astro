@@ -1,53 +1,39 @@
 ---
-import { getCollection, render } from 'astro:content'
+import { getCollection } from 'astro:content'
 import Base from '../layouts/Base.astro'
-import Tiles from '../components/Tiles.astro'
+import Show from '../components/Show.astro'
+import { PEOPLE } from '../lib/site'
 
-// The front page foregrounds the current show; everything earlier lives in the
-// archive. Which show is current is a field on the record, not a hardcode.
+// The front page IS the current show — the same page as /shows/<id>, not a
+// variation on it. Which show that is comes from the `current` flag on the show
+// record, so changing it is one line in config/overrides.yaml:
+//
+//   show:2026:
+//     current: true
+//
+// scripts/publish.mjs --create sets it automatically and stands the previous
+// show down, so in normal use nobody edits this by hand.
 const shows = (await getCollection('shows')).sort((a, b) => b.data.year - a.data.year)
 const current = shows.find((s) => s.data.current) ?? shows[0]
-const pages = await getCollection('pages')
-const about = pages.find((p) => p.id === current?.data.aboutPage)
-const AboutContent = about ? (await render(about)).Content : null
 
-const all = await getCollection('projects', (p) => p.data.status === 'publish')
-const currentProjects = all
+const projects = (await getCollection('projects', (p) => p.data.status === 'publish'))
   .filter((p) => p.data.show === current?.id)
   .sort((a, b) => a.data.title.localeCompare(b.data.title))
+
+const credited = new Set(projects.flatMap((p) => p.data.credits.map((c) => c.personId)))
+const exhibitors = PEOPLE
+  .filter((person) => credited.has(person.id))
+  .sort((a, b) => a.sortName.localeCompare(b.sortName))
+
+const pages = await getCollection('pages')
+const about = pages.find((p) => p.id === current?.data.aboutPage) ?? null
 ---
-<Base title="Digital Futures Open Show" theme={current?.data.theme.tokens}
-      description={`${current?.data.title}. ${all.length} projects archived since 2019.`}>
-  <header class="head">
-    <h1>{current?.data.title}</h1>
-    <p class="label">Current show · {currentProjects.length} works</p>
-  </header>
 
-  {AboutContent && <div class="about"><AboutContent /></div>}
-
-  <Tiles projects={currentProjects} />
-
-  <section class="more">
-    <h2>Earlier shows</h2>
-    <ul>
-      {shows.filter((s) => s.id !== current?.id).map((s) => (
-        <li>
-          <a href={`${import.meta.env.BASE_URL}shows/${s.id}`}>{s.data.title}</a>
-          <span class="n">{s.data.projectCount}</span>
-        </li>
-      ))}
-    </ul>
-  </section>
+<Base
+  title="Digital Futures Open Show"
+  description={current?.data.statement ?? `${current?.data.title}. ${projects.length} works.`}
+  theme={current?.data.theme.tokens}
+  section={`show:${current?.id}`}
+>
+  <Show show={current} projects={projects} exhibitors={exhibitors} about={about} />
 </Base>
-
-<style>
-  .head { margin-bottom: 1.25rem; }
-  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .2rem; letter-spacing: -.01em; }
-  .head .label { margin: 0; }
-  .about { max-width: var(--measure); margin-bottom: 2.5rem; }
-  .about :global(p) { margin: 0 0 1rem; }
-  .more { margin-top: 4rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; }
-  .more h2 { font-size: 1rem; font-weight: 500; margin: 0 0 .75rem; }
-  .more ul { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
-  .more .n { color: var(--muted); font-size: .75rem; }
-</style>

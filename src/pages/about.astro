@@ -4,30 +4,49 @@ import Base from '../layouts/Base.astro'
 
 // "What Is OPEN Show?" is evergreen — it belongs to the current show and to the
 // archive equally, so it hangs off the shell rather than off any one show.
+//
+// No wrapper heading: the content opens with its own "OPEN Show!", and two
+// headings saying the same thing at the top of a short page is one too many.
+// The page's name lives in <title> and in the navigation.
 const pages = await getCollection('pages')
 const page = pages.find((p) => p.id === 'what-is-open-show')
-const aboutDF = pages.find((p) => p.id === 'about-df')
 const Content = page ? (await render(page)).Content : null
-const DFContent = aboutDF ? (await render(aboutDF)).Content : null
 ---
+
 <Base title="What Is OPEN Show? — Digital Futures Open Show" section="about"
       description="An annual exhibition of work happening right now across the Digital Futures community at OCAD University.">
   <article class="prose">
-    <h1>{page?.data.title ?? 'What Is OPEN Show?'}</h1>
     {Content && <Content />}
-    {DFContent && (
-      <>
-        <h2>{aboutDF?.data.title}</h2>
-        <DFContent />
-      </>
-    )}
   </article>
 </Base>
 
 <style>
   .prose { max-width: var(--measure); }
-  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 1rem; letter-spacing: -.01em; }
-  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; }
+
+  /* The content's own opening heading now carries the page, so it is sized to. */
+  .prose :global(h2:first-of-type) {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    letter-spacing: -.01em;
+    line-height: 1.15;
+    margin: 0 0 1rem;
+  }
+  .prose :global(h2) { font-size: 1.15rem; margin: 2rem 0 .6rem; }
+  .prose :global(h3), .prose :global(h4) { font-size: 1rem; margin: 1.5rem 0 .4rem; }
   .prose :global(p) { margin: 0 0 1rem; }
   .prose :global(a) { color: inherit; }
+
+  /* The four photographs arrive as a markdown list, which is the right markup
+     for a set of images but reads as a stack. Two by two, full width of the
+     page rather than the text measure — they are the only pictures here. */
+  .prose :global(ul:has(img)) {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--tile-gap);
+    width: min(100%, 46rem);
+  }
+  .prose :global(ul:has(img) li) { margin: 0; }
+  .prose :global(ul:has(img) img) { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
 </style>
