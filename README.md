@@ -48,6 +48,30 @@ src/            the website
 scripts/        the tools
 ```
 
+### Images are in a second repository
+
+The 227 MB of web-master images live in
+**[openShow-images](https://github.com/DigitalFuturesOCADU/openShow-images)**,
+checked out to `content/images`. This repository is 15 MB, so cloning it gives
+you every project record, every document and the whole site source without
+waiting for 700 photographs. The deploy workflow checks out both, so the
+published site is complete.
+
+You only need the images locally if you want to preview the site yourself:
+
+```bash
+git clone https://github.com/DigitalFuturesOCADU/openShow-images content/images
+```
+
+Or regenerate them from the originals, which takes about three minutes:
+
+```bash
+node scripts/sync-media.mjs
+```
+
+Everything else — editing text, fixing data, reviewing submissions, reading the
+reports — works without them.
+
 The rule that matters: **`config/` is editable and permanent, `content/` is
 rebuilt and disposable.** A correction typed into `content/` disappears on the
 next run.

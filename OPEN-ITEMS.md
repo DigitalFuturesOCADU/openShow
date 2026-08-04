@@ -55,21 +55,19 @@ The build reads `base` and `site` from the environment, so either choice works
 without code changes. Still needed before Step 6 can ship, but nothing hangs on
 which way it goes.
 
-### 1.3 D7 — images in plain git or LFS — *now blocking*
+### 1.3 D7 — images in a second repository — **decided, needs creating**
 
-**A fresh clone of this repository cannot build the site.** `content/images/` is
-git-ignored pending this decision, and the build does not degrade gracefully
-without it — Astro fails outright on the first missing image. So nobody else can
-work on this, and it cannot deploy, until the images are committed.
+Web masters live in `DigitalFuturesOCADU/openShow-images`, checked out to
+`content/images` by the deploy workflow. This repository stays at 15 MB so a
+colleague can clone it without waiting for 700 photographs, and CI takes both so
+the published site is complete.
 
-710 files, 228 MB. Recommendation: plain git. Images arrive in one annual batch
-and never change afterwards, which is the case LFS does not help with. GitHub's
-repository size limit is a policy ceiling that cannot be bought past, but at
-~75 MB/year it is a decade away.
+**The images repository does not exist yet.** Until it is created and pushed,
+the Pages build fails at the "Fetch images" step. Setup is in the README.
 
-The images regenerate locally in about three minutes with
-`node scripts/sync-media.mjs`, but only from `sources/uploads`, which is also
-git-ignored and 3 GB — so that is not a route anyone else can take.
+Not Git LFS: an LFS checkout in Actions spends its full size against a 10 GB
+monthly bandwidth allowance on *every build* — roughly 44 builds, failing at the
+end of a busy month rather than when anyone would notice.
 
 ---
 
