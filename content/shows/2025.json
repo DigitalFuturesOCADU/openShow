@@ -4,6 +4,7 @@
   "session": null,
   "title": "Open Show 2025",
   "current": true,
+  "visibility": "open",
   "dates": {
     "start": "2025-12-11",
     "end": "2025-12-11"
@@ -28,5 +29,6 @@
     "indexLayout": "grid",
     "defaultProjectLayout": "default"
   },
-  "projectCount": 36
+  "projectCount": 36,
+  "stagedCount": 0
 }

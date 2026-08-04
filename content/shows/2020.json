@@ -4,6 +4,7 @@
   "session": null,
   "title": "Open Show 2020",
   "current": false,
+  "visibility": "open",
   "dates": {
     "start": "2020-12-16",
     "end": "2020-12-16"
@@ -22,5 +23,6 @@
     "indexLayout": "grid",
     "defaultProjectLayout": "default"
   },
-  "projectCount": 58
+  "projectCount": 58,
+  "stagedCount": 0
 }

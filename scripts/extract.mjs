@@ -414,9 +414,35 @@ if (applied.length) console.log(`  Applied ${applied.length} manual override(s) 
 // The record of them is not lost: reports/unresolved.md and reports/drafts.md
 // list every one, and re-running with KEEP_DRAFTS=1 emits them again.
 
+// Shows can be declared in config/overrides.yaml before any work exists, so a
+// page can advertise the show months ahead. `visibility` is the second gate:
+//   announced — page is live, staged work stays hidden
+//   open      — work appears
+// Default is open, so every archived show behaves as before.
+const showDecl = new Map(
+  Object.entries(overrideDoc)
+    .filter(([k]) => k.startsWith('show:'))
+    .map(([k, v]) => [k.slice(5), v ?? {}]),
+)
+const isOpen = (showId) => (showDecl.get(showId)?.visibility ?? 'open') === 'open'
+
 const KEEP_DRAFTS = process.env.KEEP_DRAFTS === '1'
-const excluded = KEEP_DRAFTS ? [] : records.filter((r) => r.frontmatter.status !== 'publish')
-const published = KEEP_DRAFTS ? records : records.filter((r) => r.frontmatter.status === 'publish')
+// Two independent gates. `status: publish` means a human reviewed this work.
+// The show being `open` means the exhibition has started. Both must hold — so a
+// year's worth of reviewed work can sit staged and invisible until one switch
+// flips on opening night.
+const visible = (r) => r.frontmatter.status === 'publish' && (!r.frontmatter.show || isOpen(r.frontmatter.show))
+const excluded = KEEP_DRAFTS ? [] : records.filter((r) => !visible(r))
+const published = KEEP_DRAFTS ? records : records.filter(visible)
+
+const embargoed = excluded.filter((r) => r.frontmatter.status === 'publish')
+if (embargoed.length) {
+  const byShow = {}
+  for (const r of embargoed) byShow[r.frontmatter.show] = (byShow[r.frontmatter.show] ?? 0) + 1
+  for (const [id, n] of Object.entries(byShow)) {
+    console.log(`  Show ${id} is announced but not open — ${n} reviewed work(s) staged and hidden`)
+  }
+}
 
 if (excluded.length) {
   const byStatus = {}
@@ -585,6 +611,24 @@ if (pageImagesDropped.length) {
 }
 
 const shows = new Map()
+
+const blankShow = (id) => {
+  const [y, session] = id.split('-')
+  return {
+    id, year: Number(y), session: session ?? null,
+    title: `Open Show ${y}${session ? ` — ${session[0].toUpperCase()}${session.slice(1)}` : ''}`,
+    current: false, visibility: 'open',
+    dates: { start: null, end: null }, time: null, venue: null, rooms: [],
+    logo: null, poster: null, teamPhoto: null, team: [], statement: null,
+    aboutPage: null,
+    theme: { tokens: {}, indexLayout: 'grid', defaultProjectLayout: 'default' },
+    projectCount: 0, stagedCount: 0,
+  }
+}
+
+// Declared shows exist whether or not any work references them yet.
+for (const id of showDecl.keys()) if (/^\d{4}(-\w+)?$/.test(id)) shows.set(id, blankShow(id))
+
 for (const r of records) {
   if (!r.year) continue
   const id = r.frontmatter.show
@@ -595,6 +639,7 @@ for (const r of records) {
       // Identity a show carries beyond its projects. All null until filled in
       // via config/overrides.yaml or a future form — the archive has none of it.
       current: false,
+      visibility: 'open',
       dates: { start: null, end: null },
       time: null,
       venue: null,
@@ -607,7 +652,7 @@ for (const r of records) {
       // Editorial page from WordPress that describes this show, if one exists.
       aboutPage: null,
       theme: { tokens: {}, indexLayout: 'grid', defaultProjectLayout: 'default' },
-      projectCount: 0,
+      projectCount: 0, stagedCount: 0,
     })
   }
   shows.get(id).projectCount++
@@ -626,6 +671,9 @@ const newest = [...shows.values()].sort((a, b) => b.year - a.year || String(b.se
 if (newest) newest.current = true
 
 for (const sh of shows.values()) {
+  // Work that exists and is reviewed but is not public yet, so an organiser can
+  // see the show is loaded without it being visible to anyone else.
+  sh.stagedCount = embargoed.filter((r) => r.frontmatter.show === sh.id).length
   const ov = overrideDoc[`show:${sh.id}`]
   if (ov) Object.assign(sh, ov)
   write(out('content/shows', `${sh.id}.json`), JSON.stringify(sh, null, 2) + '\n')

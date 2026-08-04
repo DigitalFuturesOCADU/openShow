@@ -38,6 +38,56 @@ Notable during execution: 2025 affiliation went from 0/38 to 37/38, recovered fr
 
 ---
 
+## Running a show
+
+The sequence an organiser follows, start to finish.
+
+**1. Announce it, months early.** Declare the show in `config/overrides.yaml`
+before any work exists:
+
+```yaml
+show:2026:
+  dates: { start: "2026-12-09", end: "2026-12-09" }
+  time: "5:00 – 8:00 pm"
+  venue: "205 Richmond Street West"
+  rooms: ["Graduate Gallery"]
+  current: true
+```
+
+`npm run extract` creates the show; `/shows/2026` goes live with the date, time
+and location and no works. Shows used to be derived from their projects, so one
+with none could not exist — a declared show now exists on its own.
+
+**2. Ingest submissions as they arrive.**
+
+```bash
+node scripts/ingest.mjs --sheet <sheet>.xlsx --show 2026 --media <folder>
+```
+
+Everything lands as `status: draft`. Nothing is public yet, and re-running is
+safe: already-ingested work is compared and reported, never overwritten.
+
+**3. Review, and it goes live.**
+
+```bash
+node scripts/publish.mjs --show 2026 --review   # draft -> publish
+npm run extract && npm run build
+```
+
+Reviewed work appears immediately. **That is the default and the usual case** —
+the work is the best advertisement the show has.
+
+**4. Only if you want to hold it back.** Set `visibility: announced` on the show
+and reviewed work stays staged and invisible; the page says how many pieces are
+ready. `node scripts/publish.mjs --show 2026 --open` releases the lot in one
+switch. Off unless asked for.
+
+So there are two independent gates. `status: publish` means a human looked at
+the work; a show being `open` means the exhibition has started. Both default to
+letting work through, and either can hold it back on its own.
+
+---
+
 ## 1. Pre-flight findings
 
 Phase 0 is complete — all three artifacts are on disk. I verified them against the audit checksums in PLAN.md before planning anything.

@@ -4,6 +4,7 @@
   "session": "february",
   "title": "Open Show 2019 — February",
   "current": false,
+  "visibility": "open",
   "dates": {
     "start": null,
     "end": null
@@ -22,5 +23,6 @@
     "indexLayout": "grid",
     "defaultProjectLayout": "default"
   },
-  "projectCount": 18
+  "projectCount": 18,
+  "stagedCount": 0
 }

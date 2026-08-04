@@ -11,7 +11,8 @@
     "media": "node scripts/sync-media.mjs",
     "build": "astro build && pagefind --site dist",
     "dev": "astro dev",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "publish": "node scripts/publish.mjs"
   },
   "repository": {
     "type": "git",

@@ -103,6 +103,8 @@ const shows = defineCollection({
     rooms: z.array(z.string()).default([]),
     statement: z.string().nullable(),
     current: z.boolean().default(false),
+    visibility: z.enum(['announced', 'open']).default('open'),
+    stagedCount: z.number().default(0),
     logo: z.string().nullable(),
     poster: z.union([z.number(), z.string()]).nullable(),
     teamPhoto: z.string().nullable().default(null),
