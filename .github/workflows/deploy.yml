@@ -1,0 +1,69 @@
+# Build the site and publish it to GitHub Pages.
+#
+# Replaces the default "upload the repository" template, which cannot work here:
+# the repository holds source, and the site has to be built from it first.
+#
+# The build runs `astro build && pagefind --site dist` and nothing else. It
+# never runs extract, ingest or sync-media — those are deliberate local steps,
+# so what deploys is exactly what was committed and reviewed.
+#
+# BASE_PATH matters. On a project page the site is served from
+# https://<org>.github.io/openShow/, so every asset and link must be prefixed.
+# Astro reads this at build time; without it every stylesheet and image 404s.
+# When this eventually moves under the larger site, change these two values and
+# nothing else.
+
+name: Build and deploy to Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # Pinned rather than "latest": a silent major bump is a confusing way
+          # to discover a build failure.
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build
+        env:
+          BASE_PATH: /openShow/
+          SITE_URL: https://digitalfuturesocadu.github.io
+        run: npm run build
+
+      - name: Check every page has a working address
+        run: npm test
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
