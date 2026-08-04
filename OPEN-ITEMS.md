@@ -87,11 +87,19 @@ writing by someone who saw the work, or they stay as they are.
 | `Mika MacLOear Wall` ↔ `Mika Maclear-Wall` | distance 1 |
 | `Salisa Jatuweerapong` ↔ `Salisa Jatweerapong` | distance 1 |
 | `Josh Igwe` ↔ `Joshua Igwe` | distance 2 |
-| `Aileen Dong` ↔ `Ailin Dong` | distance 2 |
+| `Aileen Dong` ↔ `Ailin Dong` ↔ `Aileen D` | 3 variants, all 2023 |
 
 Never merged automatically: `Aileen`/`Ailin` may well be two different people,
-and merging would erase someone's credit. Move confirmed ones into `aliases:`
-and re-run extract.
+and merging would erase someone's credit.
+
+**The Dong case is now visible in the interface.** The 2023 Exhibitors list
+shows `Aileen D`, `Aileen Dong` and `Ailin Dong` as three separate people, one
+project each — `Ctrl_Space`, `Into the Unknown` and `Xdaeta music space`. They
+never appear together on one project, which is consistent with them being one
+person credited three ways, but is not proof. Someone who was there will know.
+
+Move confirmed merges into `aliases:` in `config/people.yaml` and re-run
+extract.
 
 ### 2.3 Eight projects with no resolvable year
 

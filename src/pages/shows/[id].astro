@@ -4,6 +4,7 @@ import { Image } from 'astro:assets'
 import Base from '../../layouts/Base.astro'
 import Tiles from '../../components/Tiles.astro'
 import { resolveImage } from '../../lib/images'
+import { PEOPLE } from '../../lib/site'
 
 // A show page is not the archive. It carries this show's own identity — logo,
 // dates, venue, poster, team — and only its work. The archive is the union.
@@ -11,19 +12,27 @@ export async function getStaticPaths() {
   const shows = await getCollection('shows')
   const projects = await getCollection('projects', (p) => p.data.status === 'publish')
   const pages = await getCollection('pages')
-  return shows.map((show) => ({
-    params: { id: show.id },
-    props: {
-      show,
-      projects: projects
-        .filter((p) => p.data.show === show.id)
-        .sort((a, b) => a.data.title.localeCompare(b.data.title)),
-      about: pages.find((pg) => pg.id === show.data.aboutPage) ?? null,
-    },
-  }))
+  return shows.map((show) => {
+    const mine = projects
+      .filter((p) => p.data.show === show.id)
+      .sort((a, b) => a.data.title.localeCompare(b.data.title))
+
+    // Everyone credited on work in this show, from the registry rather than by
+    // re-splitting credit strings — so aliases are already resolved and one
+    // person credited on three projects appears once.
+    const credited = new Set(mine.flatMap((p) => p.data.credits.map((c) => c.personId)))
+    const exhibitors = PEOPLE
+      .filter((person) => credited.has(person.id))
+      .sort((a, b) => a.sortName.localeCompare(b.sortName))
+
+    return {
+      params: { id: show.id },
+      props: { show, projects: mine, exhibitors, about: pages.find((pg) => pg.id === show.data.aboutPage) ?? null },
+    }
+  })
 }
 
-const { show, projects, about } = Astro.props
+const { show, projects, exhibitors, about } = Astro.props
 const d = show.data
 
 // The editorial page is NOT rendered here. Those pages state the date and venue
@@ -105,6 +114,20 @@ const hasFacts = Boolean(when || d.time || d.venue || d.rooms.length)
       ? <Tiles projects={projects} />
       : <p class="empty">No published work is filed under this show yet.</p>}
   </section>
+
+  {exhibitors.length > 0 && (
+    <section class="exhibitors">
+      <h2 class="works-head">Exhibitors <span class="n">{exhibitors.length}</span></h2>
+      <ul>
+        {exhibitors.map((person: any) => (
+          <li>
+            <a href={`${import.meta.env.BASE_URL}people/${person.id}`}>{person.name}</a>
+            {person.kind === 'collective' && <span class="kind"> collective</span>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 </Base>
 
 <style>
@@ -126,4 +149,12 @@ const hasFacts = Boolean(when || d.time || d.venue || d.rooms.length)
   .works-head { font-size: 1rem; font-weight: 500; border-top: 1px solid var(--rule);
                 padding-top: 1rem; margin: 2.5rem 0 1.25rem; }
   .empty { color: var(--muted); }
+  .works-head .n { color: var(--muted); font-size: .75rem; font-weight: 400; }
+  .exhibitors ul { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 2.5rem; }
+  @media (min-width: 44rem) { .exhibitors ul { columns: 3; } }
+  @media (min-width: 68rem) { .exhibitors ul { columns: 4; } }
+  .exhibitors li { break-inside: avoid; padding: .15rem 0; font-size: .9375rem; }
+  .exhibitors a { text-decoration: none; }
+  .exhibitors a:hover { text-decoration: underline; }
+  .kind { color: var(--muted); font-size: .75rem; }
 </style>
