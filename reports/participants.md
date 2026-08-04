@@ -11,11 +11,10 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 ### Open Show 2019 — December
 
-38 participants.
+26 participants.
 
-#### Undergraduate (10)
+#### Undergraduate (9)
 
-- Julia Andrejczuck
 - Madelaine Fischer-Bernhut
 - Aljumaine Gayle
 - Shannen Guntoro
@@ -26,12 +25,9 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Kahani Ploessl
 - Raza
 
-#### Graduate (23)
+#### Graduate (16)
 
-- Veda Adnani
-- Arsalan Akhtar
 - Nick Alexander
-- Priya Bandodkar
 - Rittika Basu
 - Mazin Chabayta
 - Neo Chen
@@ -39,15 +35,11 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Sananda Dutta
 - Jignesh Gharat
 - Rajat Kumar
-- Manisha Laroia
-- Lilian Leung
 - Jun Li
 - Jevi Peters
-- Jevonne Peters
 - Olivia Prior
 - Catherine Reyto
 - Arshia Sobhan Sarbandi
-- Nilam Sari
 - Masha Shirokova
 - Nadine Valcin
 - Yutong Jessie Zheng
@@ -56,30 +48,16 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 - L Wilkins
 
-#### Faculty (3)
-
-- Kartikay Chadha
-- Katrina Keefer
-- Martha Ladly
-
-#### Unspecified (1)
-
-- Maria Yala
-
 ### Open Show 2019 — February
 
-44 participants.
+43 participants.
 
 † 2 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
-#### Undergraduate (24)
+#### Undergraduate (20)
 
-- Veda Adnani
-- Jacob Cram
 - Erika Davis
-- April De Zen
 - Bomi Doh
-- Omid Ettehadi
 - Madelaine Fischer-Bernhut
 - Mika Hirata
 - Salisa Jatuweerapong
@@ -98,10 +76,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Samantha Sylvester
 - Vivian Wong
 - Anran Zhou
-
-#### UG Thesis (1)
-
-- Jacob Cram
 
 #### Graduate (21)
 
@@ -400,7 +374,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 ### Open Show 2023
 
-54 participants.
+51 participants.
 
 † 4 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
@@ -418,7 +392,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Gunner Thongmeesang
 - Zhihan Zhang
 
-#### Graduate (39)
+#### Graduate (36)
 
 - Rim Armouch
 - Tyler Beatty †
@@ -427,7 +401,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Ryan Boyd †
 - Orus Mateo Castaño-Suárez
 - Lanlan Chen
-- Vitor Fiacadori Costa
 - Aileen D
 - Kunal Devi
 - Ailin Dong
@@ -435,12 +408,10 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Victoria Gottardi
 - Pranya Gulati
 - Yunting He
-- Zubin Isaac
 - Rutooja Khamkar
 - Aranya Khurana
 - Maryam
 - Anusha Menon
-- Matthew Nazarian
 - Ecem Ozturk
 - Jessica Patel
 - Abha Patil
@@ -483,9 +454,9 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 ### Open Show 2024
 
-52 participants.
+49 participants.
 
-#### Undergraduate (17)
+#### Undergraduate (16)
 
 - Hafsa Ahmad
 - Saad Aslam Ali
@@ -495,7 +466,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Cole Kassirer
 - Bryan Lee
 - Mika Maclear-Wall
-- Hamid Malek
 - Shaizaan Prasla
 - Judhell Dhy Ramirez
 - Niloofar Sanandajizadeh
@@ -505,7 +475,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Yixuan Xiao
 - Meicen Zhou
 
-#### Graduate (19)
+#### Graduate (18)
 
 - Erinma Arki
 - Gillian Blekkenhorst
@@ -520,7 +490,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Madhu Priya
 - Ziheng Qu
 - Golnoush Mir Salari
-- Juan Sulca
 - Assal Toudehfallah
 - Paul Van Rijn
 - JC Zhang
@@ -540,7 +509,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 - Kate Hartman
 
-#### Unspecified (9)
+#### Unspecified (8)
 
 - Kayli Chow
 - Daniela Ortiz Correa
@@ -548,17 +517,16 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Minseo Park
 - Rojina Pedramy
 - Charles Pollack
-- Jordan Shaw
 - Mika Wall
 - Yiqun Zhou
 
 ### Open Show 2025
 
-81 participants.
+75 participants.
 
 † 6 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
-#### Undergraduate (37)
+#### Undergraduate (31)
 
 - Saad Aslam Ali
 - Aathmaja Ananth
@@ -570,20 +538,15 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Jackson Crittenden
 - Amanda Daley
 - Maggie Domagala
-- Bill Fung
 - Emmy Gao
-- Hailey Gonsalvez
 - Sebastian Gorfinkel
 - Joe
 - Cole Kassirer
 - Hanmin Kim
 - Srikripa Krishnan
 - Bryan Lee
-- Rodrigo Luna
 - Mika Maclear-Wall
-- Tiffany Mou
 - David Nguyen
-- Nia Nguyen
 - Irina Noor
 - Ozan
 - Jeffery Paik
@@ -592,7 +555,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Yusif Safarzade
 - Sebastian Santoni
 - Elena Misako Smillie
-- Alexander Song
 - Menita Sriharsha
 - Parth Vats
 - Hana Zaghloul

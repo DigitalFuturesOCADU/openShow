@@ -40,22 +40,22 @@
     {
       "slug": "3d-printing",
       "label": "3D Printing",
-      "count": 12
+      "count": 11
     },
     {
       "slug": "ai",
       "label": "AI",
-      "count": 10
+      "count": 9
     },
     {
       "slug": "animation",
       "label": "Animation",
-      "count": 36
+      "count": 33
     },
     {
       "slug": "ar",
       "label": "AR",
-      "count": 20
+      "count": 19
     },
     {
       "slug": "character-art",
@@ -65,22 +65,22 @@
     {
       "slug": "code",
       "label": "Code",
-      "count": 112
+      "count": 102
     },
     {
       "slug": "data-visualization",
       "label": "Data Visualization",
-      "count": 4
+      "count": 3
     },
     {
       "slug": "digital-fabrication",
       "label": "Digital Fabrication",
-      "count": 48
+      "count": 44
     },
     {
       "slug": "games",
       "label": "Games",
-      "count": 60
+      "count": 59
     },
     {
       "slug": "generative",
@@ -95,7 +95,7 @@
     {
       "slug": "installation",
       "label": "Installation",
-      "count": 99
+      "count": 89
     },
     {
       "slug": "interactive-documentary",
@@ -115,7 +115,7 @@
     {
       "slug": "performance",
       "label": "Performance",
-      "count": 35
+      "count": 34
     },
     {
       "slug": "photography",
@@ -125,7 +125,7 @@
     {
       "slug": "physical-computing",
       "label": "Physical Computing",
-      "count": 77
+      "count": 70
     },
     {
       "slug": "robotics",
@@ -135,12 +135,12 @@
     {
       "slug": "sculpture",
       "label": "Sculpture",
-      "count": 20
+      "count": 19
     },
     {
       "slug": "sound",
       "label": "Sound",
-      "count": 30
+      "count": 28
     },
     {
       "slug": "speculative-fiction",
@@ -150,12 +150,12 @@
     {
       "slug": "ux",
       "label": "UX",
-      "count": 2
+      "count": 1
     },
     {
       "slug": "video",
       "label": "Video",
-      "count": 49
+      "count": 48
     },
     {
       "slug": "vr",
@@ -165,12 +165,12 @@
     {
       "slug": "wearables",
       "label": "Wearables",
-      "count": 29
+      "count": 28
     },
     {
       "slug": "web",
       "label": "Web",
-      "count": 42
+      "count": 41
     }
   ],
   "affiliation": [
@@ -182,22 +182,22 @@
     {
       "slug": "faculty",
       "label": "Faculty",
-      "count": 18
+      "count": 17
     },
     {
       "slug": "graduate",
       "label": "Graduate",
-      "count": 102
+      "count": 93
     },
     {
       "slug": "ug-thesis",
       "label": "UG Thesis",
-      "count": 17
+      "count": 16
     },
     {
       "slug": "undergraduate",
       "label": "Undergraduate",
-      "count": 108
+      "count": 103
     }
   ],
   "tags": []

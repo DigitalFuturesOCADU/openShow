@@ -2,44 +2,34 @@
 
 Generated — do not edit. Re-run `npm run extract`.
 
-264 projects across 8 shows.
+240 projects across 8 shows.
 
-### Open Show 2019 — December (30)
+### Open Show 2019 — December (20)
 
 | Title | Creators | Medium | Status |
 | --- | --- | --- | --- |
 | (Un)seen | Nadine Valcin | Code, Installation, Video | publish |
 | 10 000 Photos | Kahani Ploessl, Josh Igwe, Aljumaine Gayle | Code, Performance, Web | publish |
-| Absolutely on Music | Lilian Leung | Digital Fabrication, Installation, Physical Computing | draft |
 | Anas | Raza | VR, Wearables | publish |
 | antimaterial | Yutong Jessie Zheng, Masha Shirokova, Liam Clarke | 3D Printing, Code, Digital Fabrication, Installation, Physical Computing | publish |
-| AR Disclosures | Maria Yala | AR, Code | draft |
 | Benches | Olivia Prior | Code, Installation, Physical Computing, Sculpture | publish |
-| Birds of a Feather | Catherine Reyto, Jun Li, Rittika Basu, Sananda Dutta, Jevonne Peters | Code, Digital Fabrication, Installation | draft |
-| Brathe . Beat. Think | Shannen Guntoro, Leia Kook-Chun, Julia Andrejczuck | Animation, Code, Installation, Video | draft |
 | CityBLOCK | Rajat Kumar | Installation, Physical Computing | publish |
 | Eternal Forms | Catherine Reyto, Jun Li, Rittika Basu, Sananda Dutta, Jevi Peters | Code, Digital Fabrication, Installation, Physical Computing | publish |
 | Finger Painting | Nick Alexander | AR, Code, Games, Installation, Performance, Physical Computing, Sculpture, Video, VR, Wearables | publish |
 | Flowers of Life | Mazin Chabayta | Digital Fabrication, Installation, Physical Computing, Sculpture | publish |
-| Interactive Canvas | Arsalan Akhtar | Physical Computing | draft |
 | Invisible 'Kelk' | Arshia Sobhan Sarbandi | Code, Installation, Physical Computing | publish |
 | Leave a window open for me | Neo Chen | 3D Printing, Code, Digital Fabrication, Installation | publish |
 | Listen | Shannen Guntoro | Code, Sound | publish |
 | Monster Identifier | Shannen Guntoro | AI, Code, Web | publish |
-| Nurse Buddy | Veda Adnani | UX, Wearables | draft |
-| OK to Touch!? | Priya Bandodkar, Manisha Laroia | Digital Fabrication, Installation, Physical Computing | draft |
 | Paper Plane Poetry | Leia Kook-Chun | Code, Installation, Mobile | publish |
 | Poaceae | Kahani Ploessl | Code, Installation, Video | publish |
 | Rorschach | Kahani Ploessl | Code, Installation, Video | publish |
-| The Decoding Origins Web Portal: Creating a Visual Database with Archival Sources from the Era of African Slavery | Kartikay Chadha, Martha Ladly, Katrina Keefer | AI, Code, Data Visualization, Web | draft |
 | Time Turn | Mazin Chabayta | Installation, Physical Computing | publish |
 | Unexpressed? | Jignesh Gharat | Code, Digital Fabrication, Installation, Physical Computing, Sculpture | publish |
-| Visualization of Sternberg Triangular Theory of Love | Leia Kook-Chun | Animation, Code, Installation | draft |
 | void | L Wilkins | Digital Fabrication, Installation, Physical Computing, Sculpture | publish |
 | Waiver - A Balancing Act | Madelaine Fischer-Bernhut, Shiloh Light-Barnes, Sam Kingston | Animation, Games | publish |
-| What Is My Purpose? | Nilam Sari | 3D Printing, Physical Computing, Sculpture | draft |
 
-### Open Show 2019 — February (20)
+### Open Show 2019 — February (18)
 
 | Title | Creators | Medium | Status |
 | --- | --- | --- | --- |
@@ -59,10 +49,8 @@ Generated — do not edit. Re-run `npm run extract`.
 | MRsive, The AGO Immersive Tour | Jad Rabbaa | AR, Code, Mobile, Performance, Wearables | publish |
 | Naruto Gloves | Salisa Jatuweerapong, Brian Nguyen, Madelaine Fischer-Bernhut | Games, Physical Computing, Wearables | publish |
 | River Styx | Tyson Moll, Shikhar Juyal, Georgina Yeboah | Animation, Code, Digital Fabrication, Games, Performance, Physical Computing, Video, VR | publish |
-| Sound Synthesis | April De Zen, Veda Adnani, Omid Ettehadi | Code, Installation, Performance, Physical Computing | draft |
 | Synchrobots | Amreen Ashraf, Lauren Connell-Whitney, Olivia Prior | Code, Installation, Physical Computing, Robotics | publish |
 | The Spin | Alicia Blakey | Code, Installation, Mobile, Physical Computing, Video | publish |
-| Unmask | Jacob Cram | Code, Installation | draft |
 
 ### Open Show 2020 (58)
 
@@ -185,7 +173,7 @@ Generated — do not edit. Re-run `npm run extract`.
 | VR Game: EER | Ethan Day, Luke D'Alfonsi, Arteya Lutchman, Ethan Shapiro, Magdalena Szlapczynskials | Code, Games, Performance, VR | publish |
 | Weensy and the Giant | Yannan Ma, Hedy Fu, Roann Cordova, Yilia Li, Mark Lin, Kan Huang | Code, Games, Performance, Video, VR, Wearables | publish |
 
-### Open Show 2023 (30)
+### Open Show 2023 (29)
 
 | Title | Creators | Medium | Status |
 | --- | --- | --- | --- |
@@ -213,14 +201,13 @@ Generated — do not edit. Re-run `npm run extract`.
 | TABLINGO | Kunal Devi | Digital Fabrication, NIME, Physical Computing, Sound | publish |
 | TacTile | Aranya Khurana | Code, Digital Fabrication, NIME, Physical Computing, Sound, Wearables | publish |
 | Take a <br/> | Kunal Devi, Nikhil Thomas, Abha Patil, Madhu Priya | Code, Installation | publish |
-| The Glow | Orus Mateo Castaño-Suárez, Jessica Patel, Yu-Shien Yang, Vitor Fiacadori Costa, Matthew Nazarian, Zubin Isaac | Installation | draft |
 | The Orchestra | Abha Patil, Jessica Patel | Installation, Performance, Physical Computing | publish |
 | The Parlour Room | Marquessa Mackenzie | Digital Fabrication, Installation, Physical Computing | publish |
 | The Rage Room | Ethan Day | Games, VR | publish |
 | Visualizing Persian Rhythms | Mehdi Farahani | Code, Web | publish |
 | Xdaeta music space | Xinzhou Zhang, Ailin Dong | Games, NIME, VR | publish |
 
-### Open Show 2024 (32)
+### Open Show 2024 (29)
 
 | Title | Creators | Medium | Status |
 | --- | --- | --- | --- |
@@ -232,15 +219,12 @@ Generated — do not edit. Re-run `npm run extract`.
 | CHINATOWN CENTRE - 文華中心 | Sebastian Gorfinkel | Sound, Video, VR | publish |
 | Combatting Toxicity | Jessica Patel | Games, Sound | publish |
 | Coming All Together | Alexandra Fernandez Espinosa | Installation, Video | publish |
-| Connected Landscapes | Jordan Shaw | Physical Computing | draft |
-| Conway’s Game of Life | Abha Patil, Juan Sulca | Code, Installation, Physical Computing | draft |
 | Echoes of You | Mahnoor Hasan, Harry Zhao, Ziheng Qu | Code, Installation, Performance, Physical Computing, Sound | publish |
 | Food Truck Story | Luke D'Alfonsi, Justine Magbitang, Yannan Ma, Roann Cordova, Hedy Fu | Animation, Code, Games, Mobile, VR | publish |
 | Gazed | Thea Lu, Golnoush Mir Salari | Installation, Performance, Physical Computing | publish |
 | Heart Hop | Hafsa Ahmad, Cole Kassirer, Mika MacLOear Wall, Giuliana Costa | Code, Games, Installation | publish |
 | Ignominious retreat | Rojina Pedramy | Video | publish |
 | Livecoding with Hydra.js | Saad Aslam Ali | Code, Installation, Performance, Sound, Video | publish |
-| Memory Maps | Hamid Malek | Animation, Code, Installation, Sound | draft |
 | Pet Network | Olivia Pasian, JC Zhang, Harry Zhao | Code, Performance, Sound, Web | publish |
 | Pocket Portal Power Play: Crafting Wi-Fi Access Points with a Twist | Candide Uyanze | Code, Physical Computing, Web | publish |
 | reassurance | Gillian Blekkenhorst | Code, Digital Fabrication, Installation, Physical Computing, Sculpture | publish |
@@ -257,7 +241,7 @@ Generated — do not edit. Re-run `npm run extract`.
 | Water/Womb | Kayli Chow, Cole Kassirer, Mika Wall | Installation, Performance, Physical Computing, Sound | publish |
 | Wrong Side of The Hill | Mika Maclear-Wall, Jacob Sosulli | Sound, Video | publish |
 
-### Open Show 2025 (38)
+### Open Show 2025 (36)
 
 | Title | Creators | Medium | Status |
 | --- | --- | --- | --- |
@@ -265,7 +249,6 @@ Generated — do not edit. Re-run `npm run extract`.
 | Alley Cat (2025) | Jackson Crittenden, Aathmaja Ananth, Maggie Domagala, Bryan Lee, David Nguyen, Peter Zougas, Mika Maclear Wall | Games, Web | publish |
 | Alt Controllers: Round 2 | Kayla Eli, Yuhan Xia, Tinatei Tunyan, Qingxuan Li, Yubhang Huang, Niloofar Sanandajizadeh, Amelia Lochhead, Longxiang Fan, Minghui Cui, Jesse Xu, Melanie Yan | Code, Games, Physical Computing, Sound, Web | publish |
 | AWORM | Harry Zhao | 3D Printing, Digital Fabrication, Physical Computing, Sculpture | publish |
-| Banjo controller | Yuhan Xia | Code, Digital Fabrication, Sound | draft |
 | Blade & Coin | Sofia Pacheco, Emma Nguyen, Judsia Joseph, Liam Bisaillion, Evie Conroy, Refah Wais, Quinn Powell | Games | publish |
 | CatLike：Emotion-Responsive Wearables | Thea Lu | 3D Printing, Code, Digital Fabrication, Installation, Wearables | publish |
 | Creative Coding Club Jam | Saad Aslam Ali, Rojina Pedramy, Yusif Safarzade, Menita Sriharsha, Hana Zaghloul | Code, Installation, Performance, Physical Computing, Sound, Video | publish |
@@ -284,7 +267,6 @@ Generated — do not edit. Re-run `npm run extract`.
 | Lost Stars | Daniela Ortiz Correa | AR, Installation, Sculpture, Sound | publish |
 | My Friend the Red Balloon | Rina Chen, Amelia Lochhead, Niloofar Sanandajizadeh | Code, Digital Fabrication, Installation, Physical Computing | publish |
 | Networked Light-Up Costumes | Kate Hartman, Nick Puckett, Juan Sulca, Adam Tindale | Code, Digital Fabrication, Physical Computing, Wearables | publish |
-| Ocean of Feelings | Alexander Song, Tiffany Mou, Hailey Gonsalvez, Rodrigo Luna, Bill Fung, Nia Nguyen | Games | draft |
 | Orbs Interactive Light | Niloofar Sanandaji | Code, Physical Computing, Sculpture | publish |
 | Playful Home | Joshua Jacob Pothen | 3D Printing, Code, Digital Fabrication, Physical Computing, Sound | publish |
 | Project Vampurr | Irina Noor, Emmy Gao | Code, Games | publish |
@@ -300,15 +282,9 @@ Generated — do not edit. Re-run `npm run extract`.
 | Wildfire VR | Sebastian Gorfinkel | VR | publish |
 | You Were Here | Yang YI | Code, Games, Sound | publish |
 
-### No show assigned (8)
+### No show assigned (2)
 
 | Title | Creators | Status |
 | --- | --- | --- |
-| Emolace | — | draft |
-| Digital Debris | Samaa Ahmed | draft |
-| Observation. How technology can help reduce gaps between genders | Dikla Sinai | draft |
-| The Strange and the Beautiful | Natalie Le Huenen | draft |
-| Synchrobots | — | stub |
-| Vibrating Knee Brace | — | stub |
 | Diver | Catherine Reyto | publish |
 | MetaHospital | Ziqi Guo, Yi Liu | publish |

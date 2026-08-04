@@ -404,6 +404,29 @@ if (unknownIds.length) {
 }
 if (applied.length) console.log(`  Applied ${applied.length} manual override(s) from config/overrides.yaml\n`)
 
+// ---------------------------------------------------------------- publish gate
+//
+// Drafts and stubs are extracted, counted and audited — that is fidelity to the
+// export, and the gate above still asserts all 264 — but they are not carried
+// into the site. They were never published, several are empty, and a show page
+// counting work nobody can open is worse than one counting only what exists.
+//
+// The record of them is not lost: reports/unresolved.md and reports/drafts.md
+// list every one, and re-running with KEEP_DRAFTS=1 emits them again.
+
+const KEEP_DRAFTS = process.env.KEEP_DRAFTS === '1'
+const excluded = KEEP_DRAFTS ? [] : records.filter((r) => r.frontmatter.status !== 'publish')
+const published = KEEP_DRAFTS ? records : records.filter((r) => r.frontmatter.status === 'publish')
+
+if (excluded.length) {
+  const byStatus = {}
+  for (const r of excluded) byStatus[r.frontmatter.status] = (byStatus[r.frontmatter.status] ?? 0) + 1
+  console.log(`  Excluded ${excluded.length} unpublished (${Object.entries(byStatus).map(([k, v]) => `${v} ${k}`).join(', ')}) — set KEEP_DRAFTS=1 to include`)
+}
+
+records.length = 0
+records.push(...published)
+
 // ---------------------------------------------------------------- people
 //
 // WordPress had no person entity: creators were one free-text string per
@@ -795,6 +818,35 @@ ${noMedium.length
       ...noMedium.map((r) => [r.frontmatter.id, r.status, r.frontmatter.title,
         r.frontmatter.sourceTerms.length ? r.frontmatter.sourceTerms.join(', ') : '_none — no categories_'])])
   : '_None — every project has at least one medium._'}
+`)
+
+write(out('reports/drafts.md'), `# Unpublished work
+
+${excluded.length} of 264 projects were never published in WordPress and are not
+carried into the site. They remain in the export and are still audited — the
+gate asserts 264 total, 240 published, 24 not — so nothing about the archive's
+completeness is being hidden. This is the list of what is held back.
+
+Re-run with \`KEEP_DRAFTS=1 npm run extract\` to emit them as content.
+
+${excluded.length ? table([
+  ['ID', 'Status', 'Title', 'Show', 'Images', 'Has description', 'Credits'],
+  ['---', '---', '---', '---', '---:', '---', '---:'],
+  ...excluded
+    .sort((a, b) => (b.frontmatter.year ?? 0) - (a.frontmatter.year ?? 0) || a.frontmatter.title.localeCompare(b.frontmatter.title))
+    .map((r) => [
+      r.frontmatter.id, r.frontmatter.status, r.frontmatter.title,
+      r.frontmatter.show ?? '—',
+      r.frontmatter.media.filter((m) => m.type === 'image').length,
+      r.description ? 'yes' : 'no',
+      r.frontmatter.credits.length,
+    ]),
+]) : '_None._'}
+
+**Worth a look before discarding any of them permanently:** several carry a
+description and a full credit list and simply never got images attached.
+\`Ocean of Feelings\` is a 2025 draft with six credits whose images exist in the
+SharePoint submission folder — it could be completed rather than dropped.
 `)
 
 write(out('reports/unresolved.md'), `# Needs human attention

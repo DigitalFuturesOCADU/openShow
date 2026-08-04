@@ -66,20 +66,20 @@ coverage: an axis at 0% for a given year means that year vanishes from it.
 
 | Show | Items | Has affiliation | Has medium |
 | --- | ---: | ---: | ---: |
-| 2019-december | 30 | 28/30 (93%) | 30/30 |
-| 2019-february | 20 | 20/20 | 20/20 |
+| 2019-december | 20 | 20/20 | 20/20 |
+| 2019-february | 18 | 18/18 | 18/18 |
 | 2020 | 58 | 58/58 | 56/58 (97%) |
 | 2021 | 11 | 11/11 | 11/11 |
 | 2022 | 37 | 33/37 (89%) | 37/37 |
-| 2023 | 30 | 28/30 (93%) | 30/30 |
-| 2024 | 32 | 26/32 (81%) | 32/32 |
-| 2025 | 38 | 37/38 (97%) | 38/38 |
-| no show | 8 | 0/8 (0%) | 0/8 (0%) |
+| 2023 | 29 | 27/29 (93%) | 29/29 |
+| 2024 | 29 | 24/29 (83%) | 29/29 |
+| 2025 | 36 | 35/36 (97%) | 36/36 |
+| no show | 2 | 0/2 (0%) | 0/2 (0%) |
 
 **WordPress recorded no affiliation for the 2025 show at all** — not scatter or
-export loss, simply no 2025 term carrying one. 37 of 38 have since been recovered from the Microsoft Forms submission sheet and applied through `config/overrides.yaml` (37 overrides). The remaining 1 are listed there and need a human.
+export loss, simply no 2025 term carrying one. 35 of 36 have since been recovered from the Microsoft Forms submission sheet and applied through `config/overrides.yaml` (35 overrides). The remaining 1 are listed there and need a human.
 
-Across 2019–2024 the same axis is 204/218 (94%) complete, so the gap was a
+Across 2019–2024 the same axis is 191/202 (95%) complete, so the gap was a
 single-year regression rather than long-standing decay.
 
 The lasting point is that the submission form already collects this cleanly, as
@@ -88,12 +88,11 @@ form to the content is what stops the next such year, which is Step 7.
 
 ## Cost of the drop decisions
 
-9 projects lost at least one term to a drop.
+8 projects lost at least one term to a drop.
 **0 of them lost their only medium** — every affected project kept other mediums, so nothing became undiscoverable.
 
 | ID | Title | Dropped | Retained |
 | --- | --- | --- | --- |
-| 2258 | The Decoding Origins Web Portal: Creating a Visual Database with Archival Sources from the Era of African Slavery | Data Transformation | ai, code, data-visualization, web |
 | 1881 | Solely | Business | 3d-printing, digital-fabrication |
 | 2450 | Meditative Digital Detox Zone | Wellness | code, installation, sculpture, web |
 | 2041 | AI Alphabet | Typography | ai, code |
@@ -103,7 +102,7 @@ form to the content is what stops the next such year, which is Step 7.
 | 2580 | Into The Deaths Of Space | Digital Artwork | code, digital-fabrication, photography |
 | 3008 | Jailbreaking Canada Playshop | Design, Playshop | games |
 
-## Projects with no medium (10)
+## Projects with no medium (4)
 
 Not caused by the drop decisions — see above. These carry no medium term in the
 source data at all, so they will not appear under any medium filter.
@@ -111,12 +110,6 @@ source data at all, so they will not appear under any medium filter.
 
 | ID | Status | Title | Source terms |
 | --- | --- | --- | --- |
-| 1553 | draft | Emolace | _none — no categories_ |
-| 1572 | draft | Digital Debris | _none — no categories_ |
-| 1574 | draft | Observation. How technology can help reduce gaps between genders | _none — no categories_ |
-| 1576 | draft | The Strange and the Beautiful | _none — no categories_ |
-| 2333 | stub | Synchrobots | _none — no categories_ |
-| 2595 | stub | Vibrating Knee Brace | _none — no categories_ |
 | 1726 | publish | Infranet | 2020 Faculty, Open Show 2020 |
 | 1959 | publish | united tissues_mourning process | 2020 Faculty, Open Show 2020 |
 | 1969 | publish | Diver | _none — no categories_ |
