@@ -31,3 +31,4 @@ Thumbs.db
 
 # Note: the WXR export and SQL dump are deliberately NOT ignored here.
 # Step 1 relocates them to sources/ and decides tracked-vs-LFS.
+sources/submissions/

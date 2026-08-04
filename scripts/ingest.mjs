@@ -17,7 +17,7 @@
 // Column mapping and vocabularies live in config/form-map.yaml. Only mapped
 // columns are read, so a new PII column in next year's Form cannot leak.
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync, copyFileSync } from 'node:fs'
 import { join, dirname, basename, extname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { load, dump } from 'js-yaml'
@@ -40,6 +40,11 @@ const UPDATE = argv.includes('--update')
 const SHEET = arg('sheet')
 const SHOW = arg('show')
 const MEDIA_DIR = arg('media')
+// Submitted files are archived under their ORIGINAL names, exactly as
+// sources/uploads holds WordPress's. The archive keeps provenance; the served
+// copy is renamed to <show>/<slug>_<n> by scripts/sync-media.mjs. Renaming the
+// archive would throw away the only record of what a submitter actually sent.
+const ARCHIVE_DIR = join(ROOT, 'sources/submissions')
 
 if (!SHEET || !SHOW) {
   console.error(`
@@ -165,11 +170,24 @@ function resolveMedia(cell, flags, title) {
     const found = mediaIndex.get(name.toLowerCase())
     if (!found && MEDIA_DIR) flags.missingFiles.push({ title, name })
 
+    // Copy into the archive under the original name, and record the path
+    // relative to sources/submissions — the same shape sync-media expects.
+    let archiveRel = null
+    if (found) {
+      archiveRel = `${SHOW}/${name}`
+      const dest = join(ARCHIVE_DIR, archiveRel)
+      if (!existsSync(dest)) {
+        mkdirSync(dirname(dest), { recursive: true })
+        copyFileSync(found, dest)
+        flags.archived.push(archiveRel)
+      }
+    }
+
     const orderMatch = name.match(orderRe)
     out.push({
       type: IMG.has(ext) ? 'image' : 'video-file',
       sourceName: name,
-      file: found ? found.replace(ROOT + '/', '') : null,
+      file: archiveRel,
       hero: heroRe.test(name),
       order: orderMatch ? Number(orderMatch[1]) : i + 1,
       alt: null,
@@ -195,7 +213,7 @@ function resolveMedia(cell, flags, title) {
 const flags = {
   pastedLinks: [], missingFiles: [], heroGuessed: [],
   unmappedMedium: new Map(), unmappedAffiliation: new Map(),
-  noConsent: [], noMedia: [],
+  noConsent: [], noMedia: [], archived: [],
 }
 
 const mapList = (raw, table, valid, bucket, title) => {
@@ -382,6 +400,10 @@ section('Referenced file not found in --media folder', flags.missingFiles,
 section('No hero marked — first image assumed', flags.heroGuessed,
   (f) => `${f.title} -> ${f.file}`)
 section('No media at all', flags.noMedia, (f) => f.title)
+if (flags.archived.length) {
+  console.log(`\n  Archived ${flags.archived.length} submitted file(s) to sources/submissions/${SHOW}/`)
+  console.log(`      Original names kept. Run sync-media to produce renamed web masters.`)
+}
 section('Did NOT consent — must not be published', flags.noConsent,
   (f) => `${f.title} (answered ${JSON.stringify(f.answer)})`)
 

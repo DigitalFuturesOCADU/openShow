@@ -237,6 +237,12 @@ Three tiers:
 
 This is Goal F implemented directly: preserve large, serve optimized.
 
+**Served files are renamed; archived files never are.** The archive keeps whatever name a file arrived with — `WhatsApp Image 2025-11-11 at 19.32.19 (1)_Srikripa Krishnan.jpeg` and all — because that is the only record of what was actually submitted, because `UPLOADS-MANIFEST.txt` keys 8,603 SHA-256 hashes on those exact paths, and because both the WXR and the SQL dump reference them. Renaming there would break the ability to re-derive anything from source.
+
+The served copy is renamed to `<show>/<slug>_<n>.<ext>`. This costs nothing, because project frontmatter refers to images by archive path and `content/image-manifest.json` does the mapping — no project record changes. Two things are gained: predictable URLs, and **478 of 704 public URLs stop containing a student's name.**
+
+New submissions follow the same rule. `ingest.mjs` archives uploads under their original names in `sources/submissions/<show>/`, and `sync-media.mjs` resolves against either archive root.
+
 ---
 
 ## 5. Build order
