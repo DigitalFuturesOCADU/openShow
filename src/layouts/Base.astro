@@ -2,7 +2,16 @@
 interface Props { title: string; description?: string }
 const { title, description } = Astro.props
 const base = import.meta.env.BASE_URL
+const href = (p: string) => `${base}${p}`.replace(/\/{2,}/g, '/')
+const nav = [
+  ['', 'Archive'],
+  ['browse', 'Browse'],
+  ['people', 'People'],
+  ['search', 'Search'],
+] as const
+const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '')
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,12 +19,19 @@ const base = import.meta.env.BASE_URL
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
-    <style>
-      :root { --ink: #111; --paper: #fff; --muted: #666; --rule: #e5e5e5; }
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href={Astro.url.href} />
+    <style is:global>
+      :root {
+        --ink: #111; --paper: #fff; --muted: #666; --rule: #e5e5e5; --focus: #0b5fff;
+      }
       @media (prefers-color-scheme: dark) {
-        :root { --ink: #f2f2f2; --paper: #111; --muted: #9a9a9a; --rule: #2a2a2a; }
+        :root { --ink: #f2f2f2; --paper: #111; --muted: #9a9a9a; --rule: #2a2a2a; --focus: #7aa8ff; }
       }
       * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
       body {
         margin: 0; background: var(--paper); color: var(--ink);
         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -23,12 +39,39 @@ const base = import.meta.env.BASE_URL
       main { max-width: 68rem; margin: 0 auto; padding: 2rem 1.25rem 6rem; }
       a { color: inherit; }
       img { max-width: 100%; height: auto; display: block; }
+      :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+      /* Visible only once focused — the first stop for a keyboard user. */
+      .skip {
+        position: absolute; left: -9999px; top: 0; background: var(--ink); color: var(--paper);
+        padding: .6rem 1rem; z-index: 10;
+      }
+      .skip:focus { left: 0; }
       header.site { border-bottom: 1px solid var(--rule); }
-      header.site div { max-width: 68rem; margin: 0 auto; padding: 1rem 1.25rem; }
+      header.site > div {
+        max-width: 68rem; margin: 0 auto; padding: .85rem 1.25rem;
+        display: flex; gap: 1.25rem; align-items: baseline; flex-wrap: wrap;
+      }
+      header.site .wordmark { font-weight: 600; text-decoration: none; }
+      header.site nav { display: flex; gap: 1rem; }
+      header.site nav a { text-decoration: none; color: var(--muted); font-size: .9375rem; }
+      header.site nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      }
     </style>
   </head>
   <body>
-    <header class="site"><div><a href={base}>Digital Futures Open Show</a></div></header>
-    <main><slot /></main>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site">
+      <div>
+        <a class="wordmark" href={href('')}>Digital Futures Open Show</a>
+        <nav aria-label="Main">
+          {nav.map(([path, text]) => (
+            <a href={href(path)} aria-current={here === path ? 'page' : undefined}>{text}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
   </body>
 </html>
