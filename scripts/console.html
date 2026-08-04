@@ -42,6 +42,33 @@
     .hint { margin-left:0; }
   }
 
+  .stack { display:flex; gap:.5rem; align-items:center; min-width:0; }
+  .stack select, .stack input { min-width:0; }
+  .filebtn { border:1px solid var(--rule); padding:.4rem .7rem; cursor:pointer; white-space:nowrap;
+             color:var(--ink); font-size:.875rem; }
+  .filebtn input { display:none; }
+
+  #picker { border:1px solid var(--rule); padding:.75rem; margin:-.25rem 0 0 8.75rem; max-width:27rem; }
+  .pickpath { font:12.5px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace; color:var(--muted);
+              margin:0 0 .5rem; overflow-wrap:anywhere; }
+  .picklist { list-style:none; margin:0 0 .75rem; padding:0; max-height:13rem; overflow:auto;
+              border-top:1px solid var(--rule); }
+  .picklist li { border-bottom:1px solid var(--rule); }
+  .picklist button { width:100%; text-align:left; background:none; color:var(--ink); border:0;
+                     padding:.35rem .25rem; font-size:.875rem; }
+  .picklist button:hover { background:var(--rule); }
+
+  .steps { list-style:none; counter-reset:step; padding:0; margin:0; max-width:44rem; }
+  .steps li { counter-increment:step; display:grid; grid-template-columns:1.5rem 1fr auto auto;
+              gap:.75rem; align-items:baseline; padding:.7rem 0; border-bottom:1px solid var(--rule); }
+  .steps li::before { content:counter(step); color:var(--muted); font-size:.8125rem; }
+  .steps li.optional::before { content:'·'; }
+  .steps b { font-weight:600; display:block; }
+  .why { color:var(--muted); font-size:.8125rem; display:block; }
+  .state { font-size:.6875rem; letter-spacing:.06em; text-transform:uppercase; white-space:nowrap; }
+  .state.needed { color:var(--bad); }
+  .state.done { color:var(--muted); }
+
   .actions { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.25rem; }
   button { font:inherit; cursor:pointer; background:var(--ink); color:var(--paper);
            border:1px solid var(--ink); border-radius:0; padding:.4rem .9rem; }
@@ -80,10 +107,30 @@
   <h2>2 · Bring in submissions</h2>
   <form id="f-ingest">
     <div class="row"><label for="i-show">Show</label><select id="i-show"></select></div>
-    <div class="row"><label for="i-sheet">Spreadsheet</label><select id="i-sheet"></select></div>
+    <div class="row">
+      <label for="i-sheet">Spreadsheet</label>
+      <div class="stack">
+        <select id="i-sheet"></select>
+        <label class="filebtn">Choose a file…<input type="file" id="i-upload" accept=".xlsx"></label>
+      </div>
+    </div>
     <p class="hint" id="sheet-hint"></p>
-    <div class="row"><label for="i-media">Image folder</label><input id="i-media" placeholder="/Users/you/OneDrive/DF_OPEN_SHOW/Submissions"></div>
-    <p class="hint">The synced SharePoint folder. Remembered for next time.</p>
+
+    <div class="row">
+      <label for="i-media">Image folder</label>
+      <div class="stack">
+        <input id="i-media" placeholder="Not chosen yet" readonly>
+        <button type="button" class="ghost" id="b-pick">Choose folder…</button>
+      </div>
+    </div>
+    <div id="picker" hidden>
+      <p class="pickpath" id="pick-path"></p>
+      <ul class="picklist" id="pick-list"></ul>
+      <div class="actions">
+        <button type="button" id="pick-use">Use this folder</button>
+        <button type="button" class="ghost" id="pick-cancel">Cancel</button>
+      </div>
+    </div>
     <div class="actions">
       <button type="button" data-dry="1" class="ghost">Check first</button>
       <button type="submit">Bring them in</button>
@@ -101,13 +148,34 @@
   </form>
 
   <h2>4 · Build the site</h2>
-  <div class="actions">
-    <button type="button" data-run="extract" class="ghost">Rebuild content</button>
-    <button type="button" data-run="media" class="ghost">Prepare images</button>
-    <button type="button" id="b-build">Build the site</button>
-    <button type="button" data-run="test" class="ghost">Check addresses</button>
-    <button type="button" data-run="links" class="ghost">Check external links</button>
-  </div>
+  <p class="sub">Run these in order. Each says whether it is needed right now.</p>
+  <ol class="steps">
+    <li>
+      <div><b>Prepare images</b><span class="why">Makes web-sized copies of any new photographs. Only needed after bringing in submissions.</span></div>
+      <span class="state" id="s-media"></span>
+      <button type="button" data-run="media" class="ghost">Run</button>
+    </li>
+    <li>
+      <div><b>Rebuild content</b><span class="why">Reassembles every page from the originals plus your corrections. Safe to run any time.</span></div>
+      <span class="state" id="s-extract"></span>
+      <button type="button" data-run="extract" class="ghost">Run</button>
+    </li>
+    <li>
+      <div><b>Build the site</b><span class="why">Produces the finished site ready to upload. Takes a minute or two.</span></div>
+      <span class="state" id="s-build"></span>
+      <button type="button" id="b-build">Run</button>
+    </li>
+    <li class="optional">
+      <div><b>Check addresses</b><span class="why">Confirms every page has a working web address and none clash. Optional.</span></div>
+      <span class="state"></span>
+      <button type="button" data-run="test" class="ghost">Run</button>
+    </li>
+    <li class="optional">
+      <div><b>Check external links</b><span class="why">Tests links out to student sites and hides any that have died. Optional, takes a few minutes.</span></div>
+      <span class="state"></span>
+      <button type="button" data-run="links" class="ghost">Run</button>
+    </li>
+  </ol>
 
   <pre id="log" aria-live="polite" aria-label="Output"></pre>
 </div>
@@ -186,6 +254,15 @@ async function refresh() {
     : 'Put the exported spreadsheet in the "inbox" folder, then reload this page.'
 
   if (s.prefs.media && !$('#i-media').value) $('#i-media').value = s.prefs.media
+
+  const mark = (el, needed, doneText) => {
+    el.className = 'state ' + (needed ? 'needed' : 'done')
+    el.textContent = needed ? 'needed' : doneText
+  }
+  mark($('#s-media'), s.stale.media > 0, 'up to date')
+  if (s.stale.media > 0) $('#s-media').textContent = `${s.stale.media} to prepare`
+  mark($('#s-extract'), s.stale.content, 'up to date')
+  mark($('#s-build'), s.stale.build, 'up to date')
   updateReviewHint(s)
   window.__state = s
 }
@@ -218,6 +295,47 @@ const ingest = (dryRun) => {
   run({ action: 'ingest', show: $('#i-show').value, sheet: $('#i-sheet').value, media, dryRun })
 }
 $('#f-ingest').addEventListener('submit', (e) => { e.preventDefault(); ingest(false) })
+
+// Upload the spreadsheet straight into inbox/ rather than asking anyone to
+// find that folder themselves.
+$('#i-upload').addEventListener('change', async (e) => {
+  const file = e.target.files[0]
+  if (!file) return
+  $('#sheet-hint').textContent = `Copying ${file.name}…`
+  const res = await fetch('/api/upload?name=' + encodeURIComponent(file.name), { method: 'POST', body: file })
+  const out = await res.json()
+  if (out.error) { $('#sheet-hint').textContent = out.error; return }
+  await refresh()
+  $('#i-sheet').value = out.name
+  $('#sheet-hint').textContent = `${out.name} is ready.`
+  e.target.value = ''
+})
+
+// Folder picker. The server walks the filesystem and returns directory names;
+// the page just navigates. A file input cannot give a real path.
+let pickAt = null
+async function openPicker(path) {
+  const d = await (await fetch('/api/browse' + (path ? '?path=' + encodeURIComponent(path) : ''))).json()
+  pickAt = d.path
+  $('#picker').hidden = false
+  $('#pick-path').textContent = d.path + (d.images ? `  — ${d.images} images here` : '')
+  $('#pick-list').innerHTML =
+    (d.up ? `<li><button type="button" data-go="${d.up.replace(/"/g, '&quot;')}">↑ up one level</button></li>` : '') +
+    (d.dirs.length
+      ? d.dirs.map((n) => `<li><button type="button" data-go="${(d.path + '/' + n).replace(/"/g, '&quot;')}">${n}</button></li>`).join('')
+      : '<li><button type="button" disabled>no subfolders</button></li>')
+}
+$('#b-pick').addEventListener('click', () => openPicker($('#i-media').value || null))
+$('#pick-cancel').addEventListener('click', () => ($('#picker').hidden = true))
+$('#pick-list').addEventListener('click', (e) => {
+  const go = e.target.closest('[data-go]')
+  if (go) openPicker(go.dataset.go)
+})
+$('#pick-use').addEventListener('click', () => {
+  $('#i-media').value = pickAt
+  $('#picker').hidden = true
+  fetch('/api/prefs', { method: 'POST', body: JSON.stringify({ media: pickAt }) })
+})
 $('[data-dry]').addEventListener('click', () => ingest(true))
 
 $('#f-review').addEventListener('submit', (e) => {

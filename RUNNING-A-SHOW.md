@@ -30,9 +30,14 @@ You still type that one command to start it. Everything after that is clicking.
 The panel is only reachable from your own machine — it is not a website and
 cannot be opened by anyone else, even on the same network.
 
-**Where the spreadsheet goes:** drop the exported responses into the `inbox`
-folder in this repository and it appears in the console's list. Those files are
-never committed, because they contain student email addresses.
+**The spreadsheet** is chosen with "Choose a file…" and copied into place for
+you. **The image folder** is chosen by browsing to it — the console walks your
+folders because a web page cannot be handed a real folder path, and it remembers
+the choice. Spreadsheets are never committed to the repository, because they
+contain student email addresses.
+
+**Stage 4 tells you what needs running.** Each step says whether it is up to date
+or needed, so you are not guessing which buttons to press or in what order.
 
 The rest of this document explains what each stage does, and gives the terminal
 equivalent if you prefer it or something goes wrong.
