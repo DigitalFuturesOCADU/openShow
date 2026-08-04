@@ -51,9 +51,11 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          # Pinned rather than "latest": a silent major bump is a confusing way
-          # to discover a build failure.
-          node-version: 22
+          # Read from .nvmrc so local and CI cannot drift. They did: the
+          # lockfile was written by npm 11 under Node 26, and Node 22's npm 10
+          # resolved a different tree, so `npm ci` refused it as out of sync
+          # while passing locally. One declared version, one answer.
+          node-version-file: .nvmrc
           cache: npm
 
       - run: npm ci
