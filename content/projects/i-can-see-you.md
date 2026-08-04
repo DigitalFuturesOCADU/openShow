@@ -48,7 +48,8 @@ links:
   - label: Project
     url: >-
       https://yusifsaf.github.io/Atelier1Project2/%20You%20can%20run%20this%20website%20on%20your%20laptop%20or%20phone%20to%20test%20:
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:03.182Z'
 status: publish
 sourceTerms:
   - 2025 AI

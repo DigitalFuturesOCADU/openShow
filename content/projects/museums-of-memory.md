@@ -51,7 +51,8 @@ layout: default
 links:
   - label: Project
     url: https://graceyuan.net/work/museums-of-memory
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:04.303Z'
 status: publish
 sourceTerms:
   - 2020 3D Animation

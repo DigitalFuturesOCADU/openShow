@@ -36,7 +36,8 @@ layout: default
 links:
   - label: Project
     url: https://www.instagram.com/tv/CM2DIX5A6MC/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:14.291Z'
 status: publish
 sourceTerms:
   - 2021 Code

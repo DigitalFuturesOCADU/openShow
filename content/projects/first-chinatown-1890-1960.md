@@ -40,7 +40,8 @@ layout: default
 links:
   - label: Project
     url: http://firstchinatown.inchinatown-to.ca/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:01.732Z'
 status: publish
 sourceTerms:
   - 2020 Graduate

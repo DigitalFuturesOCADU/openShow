@@ -43,7 +43,8 @@ layout: default
 links:
   - label: Project
     url: https://blog.ocad.ca/wordpress/digf2004-fw201802-01/2018/12/aerforge/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:38:57.202Z'
 status: publish
 sourceTerms:
   - 2019 February Code

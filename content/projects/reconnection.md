@@ -41,7 +41,8 @@ links:
   - label: Project
     url: >-
       https://ocaduniversity.sharepoint.com/teams/Team_DF_OPEN_SHOW/Shared%20Documents/Open%20Show%202024%20(Dec)/vimeo
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:08.657Z'
 status: publish
 sourceTerms:
   - 2024 3D Animation

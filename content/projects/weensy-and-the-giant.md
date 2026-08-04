@@ -77,7 +77,8 @@ layout: default
 links:
   - label: Project
     url: https://1lyalee.itch.io/atelier-iii-weensy-and-the-giant
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:13.544Z'
 status: publish
 sourceTerms:
   - 2022 Code

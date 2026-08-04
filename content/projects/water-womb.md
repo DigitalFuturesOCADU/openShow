@@ -50,7 +50,9 @@ layout: default
 links:
   - label: Project
     url: https://youtu.be/6ummaWvxii8
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:17.156Z'
+    finalUrl: https://www.youtube.com/watch?v=6ummaWvxii8&feature=youtu.be
 status: publish
 sourceTerms:
   - 2024 Installation

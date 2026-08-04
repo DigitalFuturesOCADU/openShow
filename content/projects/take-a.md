@@ -41,7 +41,9 @@ layout: default
 links:
   - label: Project
     url: https://cc23.ocaduwebspace.ca/uncategorized/take-a-break/
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:28.686Z'
+    finalUrl: https://cc23.ocaduwebspace.ca/4-interstitial-spaces/take-a-break/
 status: publish
 sourceTerms:
   - 2023 Code

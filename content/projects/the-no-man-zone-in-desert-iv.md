@@ -48,7 +48,8 @@ layout: default
 links:
   - label: Project
     url: https://vickikiwu.wixsite.com/the-no-man-zone
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:16.118Z'
 status: publish
 sourceTerms:
   - 2022 AR

@@ -37,7 +37,8 @@ layout: default
 links:
   - label: Project
     url: https://retreetthesis.format.com/
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:10.659Z'
 status: publish
 sourceTerms:
   - 2020 AR

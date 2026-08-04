@@ -9,8 +9,10 @@ interface Props {
   theme?: Record<string, string>
   /** Marks which nav item is current. */
   section?: string
+  /** Absolute URL of an image to use as the social card. */
+  ogImage?: string
 }
-const { title, description, theme, section } = Astro.props
+const { title, description, theme, section, ogImage } = Astro.props
 
 const base = import.meta.env.BASE_URL
 const href = (p: string) => `${base}${p}`.replace(/([^:])\/{2,}/g, '$1/')
@@ -37,6 +39,12 @@ const tokenStyle = theme
     <meta property="og:title" content={title} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    {/* The work is a better social card than anything generated around it —
+        these are visual projects, and a composed card with a title over a
+        gradient would say less than the photograph does. */}
+    {ogImage && <meta property="og:image" content={new URL(ogImage, Astro.site ?? Astro.url).href} />}
+    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
     <link rel="canonical" href={Astro.url.href} />
   </head>
   <body style={tokenStyle}>

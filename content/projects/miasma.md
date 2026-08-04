@@ -52,7 +52,8 @@ layout: default
 links:
   - label: Project
     url: https://vimeo.com/407816661
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:24.657Z'
 status: publish
 sourceTerms:
   - 2020 3D Animation

@@ -45,7 +45,8 @@ layout: default
 links:
   - label: Project
     url: https://www.youtube.com/watch?v=Q22-nRugWCs
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:04.478Z'
 status: publish
 sourceTerms:
   - 2021 Games

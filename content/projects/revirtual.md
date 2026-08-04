@@ -42,7 +42,8 @@ layout: default
 links:
   - label: Project
     url: https://snowtv.itch.io/revirtual%20(use%20password:%20snowRevirtual)
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:10.476Z'
 status: publish
 sourceTerms:
   - 2025 Games

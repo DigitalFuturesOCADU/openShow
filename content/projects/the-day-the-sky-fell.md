@@ -60,7 +60,8 @@ layout: default
 links:
   - label: Project
     url: https://jackieliu.itch.io/the-day-the-sky-fell
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:15.492Z'
 status: publish
 sourceTerms:
   - 2021 Games

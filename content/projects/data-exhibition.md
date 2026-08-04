@@ -54,7 +54,8 @@ layout: default
 links:
   - label: Project
     url: https://vickikiwu.wixsite.com/open-show
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:02.309Z'
 status: publish
 sourceTerms:
   - 2022 Animation

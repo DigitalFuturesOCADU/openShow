@@ -43,7 +43,8 @@ layout: default
 links:
   - label: Project
     url: https://blekkenhorst.ca/bleed/%20
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:26.025Z'
 status: publish
 sourceTerms:
   - 2025 Games

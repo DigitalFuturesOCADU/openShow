@@ -24,6 +24,7 @@ const UPLOADS = join(ROOT, 'sources/uploads')
 const MAP_PATH = join(ROOT, 'config/taxonomy-map.yaml')
 const OVERRIDES_PATH = join(ROOT, 'config/overrides.yaml')
 const PEOPLE_PATH = join(ROOT, 'config/people.yaml')
+const LINK_STATUS_PATH = join(ROOT, 'config/link-status.json')
 
 const CATS = 'royal_portfolio_cats'
 const turndown = new TurndownService({ headingStyle: 'atx', bulletListMarker: '-' })
@@ -108,6 +109,13 @@ for (const a of attachments) {
     title: a.title.trim(),
   })
 }
+
+// Link health, measured separately by scripts/check-links.mjs. Kept out of
+// content/ because this file regenerates it, and out of the extractor because
+// a pure exports-in-files-out function must not make network calls.
+const linkStatus = existsSync(LINK_STATUS_PATH)
+  ? JSON.parse(readFileSync(LINK_STATUS_PATH, 'utf8')).links ?? {}
+  : {}
 
 // ---------------------------------------------------------------- taxonomy
 
@@ -263,7 +271,14 @@ for (const p of projects) {
     const u = p.m(key).trim()
     if (u && !seenUrls.has(u)) {
       seenUrls.add(u)
-      links.push({ label, url: u, status: 'unchecked' })
+      const health = linkStatus[u]
+      links.push({
+        label,
+        url: u,
+        status: health?.state ?? 'unchecked',
+        ...(health?.checkedAt ? { checkedAt: health.checkedAt } : {}),
+        ...(health?.finalUrl ? { finalUrl: health.finalUrl } : {}),
+      })
       notes.links.push({ project: p.id, url: u })
     }
   }
@@ -841,8 +856,32 @@ ${table([['Project', 'Provider', 'ID'], ['---', '---', '---'],
 
 ## External links (${notes.links.length})
 
-Every link is recorded with \`status: unchecked\`. Link-rot checking is
-EXECUTION.md §6.7 — many of these point at student portfolio sites.
+${(() => {
+  const tally = {}
+  for (const l of notes.links) {
+    const st = linkStatus[l.url]?.state ?? 'unchecked'
+    tally[st] = (tally[st] ?? 0) + 1
+  }
+  const rows = Object.entries(tally).sort((a, b) => b[1] - a[1])
+  const broken = notes.links.filter((l) => ['dead', 'unreachable'].includes(linkStatus[l.url]?.state))
+  const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, '') } catch { return '?' } }
+  const byHost = {}
+  for (const l of broken) byHost[host(l.url)] = (byHost[host(l.url)] ?? 0) + 1
+  const worst = Object.entries(byHost).sort((a, b) => b[1] - a[1]).slice(0, 6)
+
+  return table([['State', 'Links'], ['---', '---:'], ...rows]) + `
+
+**${broken.length} of ${notes.links.length} link nowhere.** That is decay, not a
+migration fault — these were live when they were submitted.
+
+` + (worst.length ? `Concentrated by host, which matters: this is mostly one
+platform going away rather than scattered rot.
+
+` + table([['Host', 'Broken'], ['---', '---:'], ...worst]) : '')
+})()}
+
+Re-check with \`node scripts/check-links.mjs\`, or \`--stale 30\` to refresh only
+entries older than a month.
 `)
 
 // ------------------------------------------------- participant + project lists

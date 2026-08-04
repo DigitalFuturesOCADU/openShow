@@ -56,7 +56,8 @@ layout: default
 links:
   - label: Project
     url: https://mitoyager.itch.io/you-were-here
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:14.563Z'
 status: publish
 sourceTerms:
   - 2025 Code

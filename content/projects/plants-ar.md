@@ -47,7 +47,8 @@ links:
   - label: Project
     url: >-
       http://blog.ocad.ca/wordpress/digf2014-fw2019-001/2020/11/exp-3-3-3-review/?doing_wp_cron=1607804894.6388719081878662109375
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:09.730Z'
 status: publish
 sourceTerms:
   - 2020 AR

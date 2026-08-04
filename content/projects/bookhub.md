@@ -37,7 +37,8 @@ layout: default
 links:
   - label: Project
     url: http://blog.ocad.ca/wordpress/digf6037-fw2020-01/2020/12/bookhub-by-greg-mairead-and-simran/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:38:59.161Z'
 status: publish
 sourceTerms:
   - 2020 Code

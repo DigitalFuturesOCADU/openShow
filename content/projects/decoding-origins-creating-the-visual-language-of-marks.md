@@ -37,7 +37,8 @@ layout: default
 links:
   - label: Project
     url: https://www2.ocadu.ca/research/val/project/creating-a-visual-language-of-marks
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:00.760Z'
 status: publish
 sourceTerms:
   - 2019 February Alumni

@@ -41,7 +41,8 @@ layout: default
 links:
   - label: Project
     url: https://atharva-jadhav.format.com/43b2fc47bb-gallery
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:05.880Z'
 status: publish
 sourceTerms:
   - 2022 Code

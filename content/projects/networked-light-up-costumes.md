@@ -62,7 +62,8 @@ layout: default
 links:
   - label: Project
     url: https://socialbodylab.com/networked-light-up-costumes/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:09.673Z'
 status: publish
 sourceTerms:
   - 2025 Code

@@ -24,7 +24,8 @@ links:
   - label: Project
     url: >-
       http://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/project-proposal-what-is-my-purpose/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:18.032Z'
 status: draft
 sourceTerms:
   - 2019 December 3Dprinting

@@ -30,7 +30,8 @@ layout: default
 links:
   - label: Project
     url: https://bodiesinplay.org/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:38:59.992Z'
 status: publish
 sourceTerms:
   - 2024 AR

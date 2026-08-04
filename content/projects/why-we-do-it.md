@@ -32,7 +32,8 @@ layout: default
 links:
   - label: Project
     url: https://msta.format.com/the-process
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:19.836Z'
 status: publish
 sourceTerms:
   - 2020 UGThesis

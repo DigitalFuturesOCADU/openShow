@@ -30,7 +30,8 @@ layout: default
 links:
   - label: Project
     url: https://webspace.ocad.ca/~3178741/tetris.html
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:28.695Z'
 status: publish
 sourceTerms:
   - 2020 Code

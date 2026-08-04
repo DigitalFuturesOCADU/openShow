@@ -43,7 +43,8 @@ layout: default
 links:
   - label: Project
     url: https://scroll-test-tan.vercel.app/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:27.176Z'
 status: publish
 sourceTerms:
   - 2024 Code

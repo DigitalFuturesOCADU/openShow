@@ -50,7 +50,8 @@ layout: default
 links:
   - label: Project
     url: https://df.show/portfolio/items/tactile
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:14.163Z'
 status: publish
 sourceTerms:
   - 2024 Code

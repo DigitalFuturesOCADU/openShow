@@ -73,7 +73,8 @@ layout: default
 links:
   - label: Project
     url: https://uneasyjackson.itch.io/alleycat%20
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:38:59.037Z'
 status: publish
 sourceTerms:
   - 2025 Games

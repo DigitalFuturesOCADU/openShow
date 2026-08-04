@@ -43,7 +43,8 @@ layout: default
 links:
   - label: Project
     url: http://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/12/river-styx-2018/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:10.251Z'
 status: publish
 sourceTerms:
   - 2019 February 3D Animation

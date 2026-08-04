@@ -43,7 +43,9 @@ layout: default
 links:
   - label: Project
     url: http://nickalexander.ca
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:02.364Z'
+    finalUrl: https://www.nickalexander.ca/
 status: publish
 sourceTerms:
   - 2019 December AR

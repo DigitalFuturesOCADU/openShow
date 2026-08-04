@@ -43,7 +43,8 @@ layout: default
 links:
   - label: Project
     url: https://jessica-patel.github.io/portfolio-website/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:21.909Z'
 status: publish
 sourceTerms:
   - 2024 Games

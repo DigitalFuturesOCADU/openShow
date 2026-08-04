@@ -46,7 +46,8 @@ layout: default
 links:
   - label: Project
     url: https://joshuapothen.notion.site/joshua-thesis-log
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:07.571Z'
 status: publish
 sourceTerms:
   - 2025 3D Printing

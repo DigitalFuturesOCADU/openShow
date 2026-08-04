@@ -56,7 +56,8 @@ links:
   - label: Project
     url: >-
       https://grasshopper-parakeet-djce.squarespace.com/home%20PASSWORD:%20OCADU%20https://docs.google.com/presentation/d/1kkADkB38jY-WDVgM62N2-1QUhK-JYmK84HBLDlVq92c/edit?usp=sharing%20
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:14.425Z'
 status: publish
 sourceTerms:
   - 2022 Animation

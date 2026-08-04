@@ -35,7 +35,8 @@ layout: default
 links:
   - label: Project
     url: https://juansulca.me,%20https://abhapatil.com/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:03.852Z'
 status: publish
 sourceTerms:
   - 2025 Digital Fabrication

@@ -71,7 +71,8 @@ layout: default
 links:
   - label: Project
     url: https://2022atil3-eer.itch.io/projecteer%20https://youtu.be/ciRlHf0c3cg
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:19.699Z'
 status: publish
 sourceTerms:
   - 2022 Code

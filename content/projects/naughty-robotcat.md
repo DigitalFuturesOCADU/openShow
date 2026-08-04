@@ -70,7 +70,8 @@ layout: default
 links:
   - label: Project
     url: https://blog.ocad.ca/wordpress/digf-s5005-501-w2023/2023/04/project2-naughty-robotcat-group1/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:05.687Z'
 status: publish
 sourceTerms:
   - 2023 Digital Fabrication

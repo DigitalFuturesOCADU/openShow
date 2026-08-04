@@ -53,7 +53,9 @@ layout: default
 links:
   - label: Project
     url: https://puckettrand.com/resistorv1-1
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:09.748Z'
+    finalUrl: https://puckettrand.com/
 status: publish
 sourceTerms:
   - 2020 Code

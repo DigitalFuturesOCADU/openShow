@@ -52,7 +52,8 @@ layout: default
 links:
   - label: Project
     url: https://itchykritchnanxx.itch.io/full-stomach-empty-bladder
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:03.376Z'
 status: publish
 sourceTerms:
   - 2025 Games

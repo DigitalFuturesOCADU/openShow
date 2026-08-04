@@ -28,7 +28,8 @@ layout: default
 links:
   - label: Project
     url: https://www.houseofnoosh.art/shatter-before-the-break/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:10.846Z'
 status: publish
 sourceTerms:
   - 2025 Installation

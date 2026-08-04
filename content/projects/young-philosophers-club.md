@@ -59,7 +59,9 @@ layout: default
 links:
   - label: Project
     url: https://youtu.be/pl5nuGB_1co
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:18.776Z'
+    finalUrl: https://www.youtube.com/watch?v=pl5nuGB_1co&feature=youtu.be
 status: publish
 sourceTerms:
   - 2020 3D Animation

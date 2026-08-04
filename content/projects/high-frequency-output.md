@@ -30,7 +30,8 @@ layout: default
 links:
   - label: Project
     url: https://quinn-shoreman-gukr.format.com/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:23.578Z'
 status: publish
 sourceTerms:
   - 2020 Animation

@@ -51,7 +51,8 @@ layout: default
 links:
   - label: Project
     url: https://prometheus.format.com//
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:08.373Z'
 status: publish
 sourceTerms:
   - 2021 AI

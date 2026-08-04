@@ -29,7 +29,9 @@ layout: default
 links:
   - label: Project
     url: https://www.notion.so/Running-on-Empty-149db22922b380ef8fc9c83684b2eaaa?pvs=4
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:07.169Z'
+    finalUrl: https://app.notion.com/p/Running-on-Empty-149db22922b380ef8fc9c83684b2eaaa?pvs=4
 status: publish
 sourceTerms:
   - 2024 AR

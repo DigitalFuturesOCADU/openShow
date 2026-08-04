@@ -29,7 +29,9 @@ layout: default
 links:
   - label: Project
     url: https://www.arshsobhan.com/latent
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:05.308Z'
+    finalUrl: https://arshiasobhan.com/latent
 status: publish
 sourceTerms:
   - 2021 Graduate

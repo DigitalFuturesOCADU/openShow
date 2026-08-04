@@ -58,7 +58,8 @@ layout: default
 links:
   - label: Project
     url: https://webspace.ocad.ca/~3168781/painttown/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:09.183Z'
 status: publish
 sourceTerms:
   - 2020 Code

@@ -43,7 +43,8 @@ layout: default
 links:
   - label: Project
     url: https://mahnoorh.substack.com/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:26.217Z'
 status: publish
 sourceTerms:
   - 2025 AI

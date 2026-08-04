@@ -61,7 +61,8 @@ layout: default
 links:
   - label: Project
     url: https://www.youtube.com/@tr4nsluc3nt
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:15.563Z'
 status: publish
 sourceTerms:
   - 2025 VR

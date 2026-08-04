@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config'
+import sitemap from '@astrojs/sitemap'
 
 // `base` and `site` are read from the environment so the same build can be
 // deployed at a domain root or under a path on a larger site (decision D6,
@@ -7,6 +8,8 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   site: process.env.SITE_URL ?? 'https://df.show',
   base: process.env.BASE_PATH ?? '/',
+  // Discoverability: an archive nobody can find is an archive nobody reads.
+  integrations: [sitemap()],
   trailingSlash: 'ignore',
   build: { format: 'directory' },
   image: {

@@ -46,7 +46,9 @@ layout: default
 links:
   - label: Project
     url: https://www.8thwall.com/kahani/wasamakicollage
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:02.353Z'
+    finalUrl: https://8thwall.org/?site_path=kahani%2Fwasamakicollage
 status: publish
 sourceTerms:
   - 2022 AR

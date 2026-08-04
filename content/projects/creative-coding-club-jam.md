@@ -78,7 +78,8 @@ layout: default
 links:
   - label: Project
     url: https://www.instagram.com/creativecodingclub.ocadu/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:02.022Z'
 status: publish
 sourceTerms:
   - 2025 Code

@@ -35,7 +35,8 @@ layout: default
 links:
   - label: Project
     url: https://www.figma.com/@fraymer
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:23.434Z'
 status: publish
 sourceTerms:
   - 2025 Animation

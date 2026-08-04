@@ -51,7 +51,8 @@ layout: default
 links:
   - label: Project
     url: https://docs.google.com/document/d/1PmrhIHbII8jRNiuSlIVmscg8JWhHEnrgR7--9WeYznA/edit
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:04.231Z'
 status: publish
 sourceTerms:
   - 2019 February 3D Animation

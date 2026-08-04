@@ -44,7 +44,8 @@ layout: default
 links:
   - label: Project
     url: https://drive.google.com/file/d/1d3t3TzoFwI9YmkOBb433n3MIKomOQ7qf/view?usp=sharing
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:06.696Z'
 status: publish
 sourceTerms:
   - 2025 Code

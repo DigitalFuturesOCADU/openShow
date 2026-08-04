@@ -48,7 +48,8 @@ layout: default
 links:
   - label: Project
     url: https://www.instagram.com/kyloid.exe/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:24.321Z'
 status: publish
 sourceTerms:
   - 2022 Digital Fabrication

@@ -52,7 +52,8 @@ layout: default
 links:
   - label: Project
     url: https://ziyiwang.net/the-girl
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:38:57.464Z'
 status: publish
 sourceTerms:
   - 2020 Alumni

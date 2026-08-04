@@ -47,7 +47,9 @@ layout: default
 links:
   - label: Project
     url: https://shutingzhou2279.wixsite.com/mysite/toronto-urban-legends
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:32.913Z'
+    finalUrl: https://www.shutingdesign.com/toronto-urban-legends
 status: publish
 sourceTerms:
   - 2022 AR

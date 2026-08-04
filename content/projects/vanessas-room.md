@@ -54,7 +54,8 @@ links:
   - label: Project
     url: >-
       https://xd.adobe.com/view/5107d6c7-4ad0-41d8-92b0-cec2a5de3b97-0454/screen/7bbd6f2c-8976-4645-83dc-5a9860fb2a31
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:11.815Z'
 status: publish
 sourceTerms:
   - 2022 Interactive Installation

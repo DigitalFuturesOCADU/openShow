@@ -42,7 +42,8 @@ layout: default
 links:
   - label: Project
     url: https://atelier3.ocaduwebspace.ca/TheShopkeeping.html
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:13.546Z'
 status: publish
 sourceTerms:
   - 2024 Character Art

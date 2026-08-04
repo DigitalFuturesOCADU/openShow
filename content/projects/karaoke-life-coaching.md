@@ -29,7 +29,8 @@ layout: default
 links:
   - label: Project
     url: https://creativerising.ca/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:24.149Z'
 status: publish
 sourceTerms:
   - 2023 Alumni

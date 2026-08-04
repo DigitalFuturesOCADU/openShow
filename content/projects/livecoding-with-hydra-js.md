@@ -56,7 +56,8 @@ layout: default
 links:
   - label: Project
     url: https://www.saadaslamali.com/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:04.343Z'
 status: publish
 sourceTerms:
   - 2024 Code

@@ -28,7 +28,8 @@ layout: default
 links:
   - label: Project
     url: https://webspace.ocad.ca/~jpham/CodeCLass/CodeCLass/index.html
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:10.666Z'
 status: publish
 sourceTerms:
   - 2022 AR

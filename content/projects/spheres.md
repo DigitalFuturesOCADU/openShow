@@ -47,7 +47,8 @@ layout: default
 links:
   - label: Project
     url: https://jacobcram.xyz/spheres
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:12.950Z'
 status: publish
 sourceTerms:
   - 2022 Alumni

@@ -48,7 +48,8 @@ layout: default
 links:
   - label: Project
     url: https://vimeo.com/388419551
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:38:58.821Z'
 status: publish
 sourceTerms:
   - 2020 Code

@@ -66,7 +66,8 @@ layout: default
 links:
   - label: Project
     url: https://camcollective.itch.io/migrants-at-bay
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:11.888Z'
 status: publish
 sourceTerms:
   - 2022 Alumni

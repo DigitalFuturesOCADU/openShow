@@ -52,7 +52,9 @@ layout: default
 links:
   - label: Project
     url: https://twitter.com/artist_donna/status/1588632528411205632
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:17.660Z'
+    finalUrl: https://twitter.com/donna_dreaming/status/1588632528411205632
 status: publish
 sourceTerms:
   - 2022 Games

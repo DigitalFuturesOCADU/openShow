@@ -48,7 +48,8 @@ layout: default
 links:
   - label: Project
     url: https://natalielehuenen.com/the-strange-and-the-beautiful/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:16.960Z'
 status: draft
 sourceTerms: []
 wordpress:

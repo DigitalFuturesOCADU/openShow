@@ -43,7 +43,8 @@ layout: default
 links:
   - label: Project
     url: https://nime2023.ocaduwebspace.ca/category/tablingo/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:12.535Z'
 status: publish
 sourceTerms:
   - 2023 Digital Fabrication

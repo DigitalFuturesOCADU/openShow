@@ -43,7 +43,9 @@ layout: default
 links:
   - label: Project
     url: https://twitter.com/gunoo3KT/media
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:02.104Z'
+    finalUrl: https://x.com/gunoo3KT/media
 status: publish
 sourceTerms:
   - 2023 Undergraduate

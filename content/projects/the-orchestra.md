@@ -59,7 +59,8 @@ layout: default
 links:
   - label: Project
     url: https://www.youtube.com/watch?v=A1sq8NQLgOI&ab_channel=AbhaPatil
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:14.434Z'
 status: publish
 sourceTerms:
   - 2023 Graduate

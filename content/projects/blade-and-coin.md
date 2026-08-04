@@ -51,7 +51,8 @@ layout: default
 links:
   - label: Project
     url: https://quinnvp.ocaduwebspace.ca/sctm2005/modules/bladeandcoin/blcn.html
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:38:59.156Z'
 status: publish
 sourceTerms:
   - 2025 Games

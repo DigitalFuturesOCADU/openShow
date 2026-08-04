@@ -37,7 +37,8 @@ layout: default
 links:
   - label: Project
     url: https://blogs.ocaduwebspace.ca/digf3008-302-2024fa/2024/11/19/meicenz-project2-v1/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:27.717Z'
 status: publish
 sourceTerms:
   - 2024 Digital Fabrication

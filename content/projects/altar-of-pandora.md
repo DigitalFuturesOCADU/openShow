@@ -42,7 +42,8 @@ layout: default
 links:
   - label: Project
     url: https://dreamxrchitect.artstation.com/projects/aGVxgk
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:38:58.405Z'
 status: publish
 sourceTerms:
   - 2022 Animation

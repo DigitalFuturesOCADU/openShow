@@ -39,7 +39,8 @@ links:
   - label: Project
     url: >-
       https://blogs.ocaduwebspace.ca/digf-6037-301-2025fa/2025/09/25/haptic-kumihimo-measuring-force-in-braiding/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:03.011Z'
 status: publish
 sourceTerms:
   - 2025 Code

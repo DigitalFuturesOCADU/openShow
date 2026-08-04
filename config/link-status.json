@@ -1,0 +1,1202 @@
+{
+  "$comment": "External link health. Written by scripts/check-links.mjs and read back by extract.mjs, which stamps each link. Kept out of content/ because that is regenerated.",
+  "checkedAt": "2026-08-04T11:39:33.765Z",
+  "links": {
+    "http://blog.ocad.ca/wordpress/digf2014-fw201902-01/2019/10/10-000-photos/?doing_wp_cron=1681796745.7998449802398681640625": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:38:57.200Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/11/abstract-2018-by-georgina-yeboah/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:38:57.202Z"
+    },
+    "https://blog.ocad.ca/wordpress/digf2004-fw201802-01/2018/12/aerforge/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:38:57.202Z"
+    },
+    "https://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/final-assignment-une-sculpture-cinetique/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:38:57.290Z"
+    },
+    "https://ziyiwang.net/the-girl": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:38:57.464Z"
+    },
+    "https://abha.cargo.site/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:57.532Z"
+    },
+    "https://anasraza.com/project/vrocadu": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:38:57.717Z"
+    },
+    "https://3168045.wixsite.com/betweenthecards": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:58.082Z"
+    },
+    "https://bakaretsu.itch.io/plus1": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:58.144Z"
+    },
+    "https://kayliphobia.itch.io/9-5-at-freddys": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:58.240Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-6037-301-2024fa/2024/11/12/autumns-veil/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:58.399Z"
+    },
+    "https://dreamxrchitect.artstation.com/projects/aGVxgk": {
+      "state": "dead",
+      "httpStatus": 403,
+      "checkedAt": "2026-08-04T11:38:58.405Z"
+    },
+    "https://www.youtube.com/watch?v=w5mkH2RZ438&feature=youtu.be": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:58.455Z"
+    },
+    "https://vimeo.com/388419551": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:58.821Z"
+    },
+    "http://auria.format.com": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:38:58.915Z"
+    },
+    "https://christinalj.com/ai-alphabet": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.christinalj.com/2022/ai-alphabet",
+      "checkedAt": "2026-08-04T11:38:58.923Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-6037-301-2024fa/2024/11/12/blue-gaze/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:58.926Z"
+    },
+    "https://uneasyjackson.itch.io/alleycat%20": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:38:59.037Z"
+    },
+    "https://www.artstation.com/bryanshlee": {
+      "state": "dead",
+      "httpStatus": 403,
+      "checkedAt": "2026-08-04T11:38:59.101Z"
+    },
+    "https://quinnvp.ocaduwebspace.ca/sctm2005/modules/bladeandcoin/blcn.html": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:59.156Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw2020-01/2020/12/bookhub-by-greg-mairead-and-simran/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:38:59.161Z"
+    },
+    "https://www.youtube.com/watch?v=FM8SG_r9YqI": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:59.421Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf2014-fw2019-001/2020/12/conduction-e-textile-body-movement-sensors-for-live-performance/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:38:59.429Z"
+    },
+    "https://drive.google.com/drive/folders/1poETKSRWWC3H7ZH1KKFna1JZp0sP-FGE?usp=sharing": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:59.748Z"
+    },
+    "https://bodiesinplay.org/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:38:59.992Z"
+    },
+    "https://youtu.be/neTOFkXYfj4": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=neTOFkXYfj4&feature=youtu.be",
+      "checkedAt": "2026-08-04T11:39:00.015Z"
+    },
+    "https://www.unnikrishnankalidas.com/audiocloudscape": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:00.080Z"
+    },
+    "https://salisajat.format.com/story": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:00.403Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/11/dischord-space-quest-pizza/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:00.408Z"
+    },
+    "https://youtube.com/@tr4nsluc3nt?si=s-1wiWqMLhb1zbIl%20%20%20%20%20%20%20%20(my%20youtube,%20a%20walkthrough%20video%20will%20be%20posted%20soon)": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/@tr4nsluc3nt?si=s-1wiWqMLhb1zbIl++++++++%28my+youtube%2C+a+walkthrough+video+will+be+posted+soon%29",
+      "checkedAt": "2026-08-04T11:39:00.501Z"
+    },
+    "https://flipdots.cargo.site/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:00.688Z"
+    },
+    "https://www2.ocadu.ca/research/val/project/creating-a-visual-language-of-marks": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:00.760Z"
+    },
+    "https://cc23.ocaduwebspace.ca/connected-systems/dont-look-back/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:00.882Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-6037-301-2024fa/2024/11/12/echoes-of-you/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:00.889Z"
+    },
+    "https://youtu.be/wSSzp1uAi0g": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=wSSzp1uAi0g&feature=youtu.be",
+      "checkedAt": "2026-08-04T11:39:00.997Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201702-01/2017/12/emolace/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:01.003Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/12/flowers-of-life/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:01.007Z"
+    },
+    "https://advancedwearables2023.ocaduwebspace.ca/uncategorized/solar-wearable-cape-based-on-namielle-armour/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://advancedwearables2023.ocaduwebspace.ca/2-solar-wearables/solar-wearable-cape-based-on-namielle-armour/",
+      "checkedAt": "2026-08-04T11:39:01.075Z"
+    },
+    "https://cloobot.itch.io/as-the-end-drew-near": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://gameplaylab.itch.io/as-the-end-drew-near",
+      "checkedAt": "2026-08-04T11:39:01.175Z"
+    },
+    "https://www.jordanshaw.com/home/connected-landscapes": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:01.436Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-6037-301-2024fa/2024/11/12/gazed/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:01.503Z"
+    },
+    "https://www.youtube.com/watch?v=LuyTy-Mc6cc": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:01.694Z"
+    },
+    "http://firstchinatown.inchinatown-to.ca/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:01.732Z"
+    },
+    "https://ocaduniversity-my.sharepoint.com/:v:/g/personal/minseop_ocadu_ca/EdsKdRE9RnxIv8HmLWtkM_EBMz0Hp3afUPAWbNMxOcO4-w?e=E4WxOr": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:01.734Z"
+    },
+    "https://gd.games/cork/heart-hop": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:01.766Z"
+    },
+    "https://bip.dmg.to/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:01.790Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/cityblock/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:01.794Z"
+    },
+    "https://inmytongue.wixsite.com/interactive-doc": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:01.919Z"
+    },
+    "https://imgur.com/a/Ik39Pmd/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:02.012Z"
+    },
+    "https://www.instagram.com/creativecodingclub.ocadu/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:02.022Z"
+    },
+    "https://twitter.com/gunoo3KT/media": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://x.com/gunoo3KT/media",
+      "checkedAt": "2026-08-04T11:39:02.104Z"
+    },
+    "https://vickikiwu.wixsite.com/open-show": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:02.309Z"
+    },
+    "https://www.8thwall.com/kahani/wasamakicollage": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://8thwall.org/?site_path=kahani%2Fwasamakicollage",
+      "checkedAt": "2026-08-04T11:39:02.353Z"
+    },
+    "http://nickalexander.ca": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.nickalexander.ca/",
+      "checkedAt": "2026-08-04T11:39:02.364Z"
+    },
+    "https://drive.google.com/file/d/1zinLtYira-Qq-A5GcWedVXi-c-2B4t02/view": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:02.581Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-6037-301-2025fa/2025/09/25/haptic-kumihimo-measuring-force-in-braiding/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:03.011Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-6037-301-2025fa/2025/11/18/jungle-struggle/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:03.059Z"
+    },
+    "https://drive.google.com/drive/folders/1x1NF6qDE3lz6sH51w1LVzCeDBZhOyf2-?usp=share_link": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:03.062Z"
+    },
+    "https://yusifsaf.github.io/Atelier1Project2/%20You%20can%20run%20this%20website%20on%20your%20laptop%20or%20phone%20to%20test%20:": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:03.182Z"
+    },
+    "https://www.terrellechai.com/interac-plus": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:03.225Z"
+    },
+    "https://itchykritchnanxx.itch.io/full-stomach-empty-bladder": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:03.376Z"
+    },
+    "https://junli.art/genesis": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:03.404Z"
+    },
+    "https://vimeo.com/472052087": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:03.434Z"
+    },
+    "https://webspace.ocad.ca/~manuelq/final_project/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:03.462Z"
+    },
+    "https://parthv.itch.io/drone-delivery": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:03.476Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw2020-01/2020/11/enter-the-void/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:03.481Z"
+    },
+    "http://suburbstudios.com": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:03.551Z"
+    },
+    "https://www.instagram.com/ar/642234764786948/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:03.603Z"
+    },
+    "https://www.joshigwe.com/isoworld": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:03.653Z"
+    },
+    "https://cc23.ocaduwebspace.ca/uncategorized/light-as-a-language/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://cc23.ocaduwebspace.ca/4-interstitial-spaces/light-as-a-language/",
+      "checkedAt": "2026-08-04T11:39:03.851Z"
+    },
+    "https://juansulca.me,%20https://abhapatil.com/": {
+      "state": "unreachable",
+      "error": "ERR_INVALID_URL",
+      "checkedAt": "2026-08-04T11:39:03.852Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/11/mess-net/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:03.864Z"
+    },
+    "https://www.gameplaylab.ca/jailbreaking-canada-playshop/%20": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gameplaylab.ca/jailbreaking-canada-playshop/",
+      "checkedAt": "2026-08-04T11:39:03.981Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/experiment-5-leave-a-window-open-for-me/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:03.985Z"
+    },
+    "https://docs.google.com/document/d/1PmrhIHbII8jRNiuSlIVmscg8JWhHEnrgR7--9WeYznA/edit": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:04.231Z"
+    },
+    "https://anranzhou.format.com/": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:04.257Z"
+    },
+    "https://futurethroughmemory.ca/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:04.294Z"
+    },
+    "https://graceyuan.net/work/museums-of-memory": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:04.303Z"
+    },
+    "https://www.saadaslamali.com/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:04.343Z"
+    },
+    "https://tania-samokhvalova.format.com/": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:04.471Z"
+    },
+    "https://www.youtube.com/watch?v=Q22-nRugWCs": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:04.478Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/11/mindpainter/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:04.483Z"
+    },
+    "https://twitter.com/HeroCorpse": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:04.572Z"
+    },
+    "https://bakaretsu.itch.io/last-robot-on-earth": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:04.634Z"
+    },
+    "https://franciscosamayoa.format.com/": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:04.777Z"
+    },
+    "https://cc23.ocaduwebspace.ca/uncategorized/peppers-ghost/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://cc23.ocaduwebspace.ca/4-interstitial-spaces/peppers-ghost/",
+      "checkedAt": "2026-08-04T11:39:04.913Z"
+    },
+    "https://inmytongue.net": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://inmytongue.wixsite.com/interactive-doc",
+      "checkedAt": "2026-08-04T11:39:04.983Z"
+    },
+    "https://vickikiwu.wixsite.com/impossible-self": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:05.163Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/interactive-canvas/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:05.169Z"
+    },
+    "https://shannenguntoro.wordpress.com/2019/11/23/listen/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:05.197Z"
+    },
+    "https://www.arshsobhan.com/latent": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://arshiasobhan.com/latent",
+      "checkedAt": "2026-08-04T11:39:05.308Z"
+    },
+    "https://cc23.ocaduwebspace.ca/multiscreen-experiences/meditative-digital-detox-zone/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:05.466Z"
+    },
+    "https://vimeo.com/manage/videos/1123954320%20%20https://vimeo.com/manage/videos/1123964014": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:05.490Z"
+    },
+    "https://cc23.ocaduwebspace.ca/uncategorized/into-the-unknown/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://cc23.ocaduwebspace.ca/4-interstitial-spaces/into-the-unknown/",
+      "checkedAt": "2026-08-04T11:39:05.512Z"
+    },
+    "https://webspace.ocad.ca/~3164558/JJH/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:05.524Z"
+    },
+    "https://anushamenon.myportfolio.com/mind-over-machine-creative-collaboration-with-ai": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:05.678Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw2020-01/2020/12/morse-messenger/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:05.683Z"
+    },
+    "https://blog.ocad.ca/wordpress/digf-s5005-501-w2023/2023/04/project2-naughty-robotcat-group1/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:05.687Z"
+    },
+    "https://assal-tdfh.my.canva.site/lightpaint": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:05.733Z"
+    },
+    "https://atharva-jadhav.format.com/43b2fc47bb-gallery": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:05.880Z"
+    },
+    "https://aimeechen42.art/mission-augma": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:05.916Z"
+    },
+    "https://fongkikid.format.com/": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:05.985Z"
+    },
+    "https://www.figma.com/proto/i16OswH89b00GnXi5AT508/Jasmine-App?node-id=1%3A13&scaling=scale-down": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:06.138Z"
+    },
+    "https://wangziyi.format.com/": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:06.416Z"
+    },
+    "https://www.youtube.com/watch?v=ncIRkjK-ywk": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:06.487Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-6037-301-2024fa/2024/10/22/pet-networking/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:06.521Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-6037-301-2024fa/2024/09/23/reassurance/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:06.529Z"
+    },
+    "https://residuul.format.com/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:06.650Z"
+    },
+    "https://drive.google.com/file/d/1d3t3TzoFwI9YmkOBb433n3MIKomOQ7qf/view?usp=sharing": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:06.696Z"
+    },
+    "https://drive.google.com/file/d/1m6qYbaoGD6PKKkoL0pOWNtzQip_rN8vM/view?usp=sharing": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:06.797Z"
+    },
+    "https://www.are.na/hamid-malek/memorymap": {
+      "state": "dead",
+      "httpStatus": 401,
+      "checkedAt": "2026-08-04T11:39:07.006Z"
+    },
+    "https://www.notion.so/Running-on-Empty-149db22922b380ef8fc9c83684b2eaaa?pvs=4": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://app.notion.com/p/Running-on-Empty-149db22922b380ef8fc9c83684b2eaaa?pvs=4",
+      "checkedAt": "2026-08-04T11:39:07.169Z"
+    },
+    "http://www.ichangimath.org/ouros": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:07.223Z"
+    },
+    "https://youtu.be/nyr7hDG8SZc%20": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=nyr7hDG8SZc+&feature=youtu.be",
+      "checkedAt": "2026-08-04T11:39:07.291Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf2014-fw201902-01/2019/10/monster-of-the-week-identifier/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:07.300Z"
+    },
+    "https://vimeo.com/778873403": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:07.324Z"
+    },
+    "https://www.jadrabbaa.com/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:07.500Z"
+    },
+    "https://joshuapothen.notion.site/joshua-thesis-log": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:07.571Z"
+    },
+    "https://trishkanana.format.com/portfolio_thesis%20": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:07.716Z"
+    },
+    "https://tapestryopera.com/performances/r-u-r-a-torrent-of-light/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:07.750Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-6037-301-2025fa/2025/11/18/my-friend-the-red-balloon/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:07.936Z"
+    },
+    "https://prometheus.format.com//": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:08.373Z"
+    },
+    "https://www.youtube.com/watch?v=hSEvQc_7xJs": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:08.472Z"
+    },
+    "https://cc23.ocaduwebspace.ca/?p=1688": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:08.476Z"
+    },
+    "https://blog.ocad.ca/wordpress/digf2014-fw201902-01/2019/11/rorschach/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:08.486Z"
+    },
+    "https://ocaduniversity.sharepoint.com/teams/Team_DF_OPEN_SHOW/Shared%20Documents/Open%20Show%202024%20(Dec)/vimeo": {
+      "state": "dead",
+      "httpStatus": 401,
+      "checkedAt": "2026-08-04T11:39:08.657Z"
+    },
+    "https://vimeo.com/490833200": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:08.780Z"
+    },
+    "https://editor.p5js.org/JDEXTER/full/PtOpuLITR": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:08.945Z"
+    },
+    "https://drive.google.com/file/d/1UgXynsMoFOL0Fkqtk6AEAD861gzbdUoE/view?usp=sharing": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:09.171Z"
+    },
+    "https://webspace.ocad.ca/~3168781/painttown/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:09.183Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf2014-fw201902-01/2019/11/poaceae/?doing_wp_cron=1681847271.3282480239868164062500": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:09.189Z"
+    },
+    "https://github.com/Leanna-B/DF-Open-Show-2025": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:09.328Z"
+    },
+    "https://socialbodylab.com/networked-light-up-costumes/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:09.673Z"
+    },
+    "https://www.orrery.design/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:09.722Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf2014-fw2019-001/2020/11/exp-3-3-3-review/?doing_wp_cron=1607804894.6388719081878662109375": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:09.730Z"
+    },
+    "https://puckettrand.com/resistorv1-1": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://puckettrand.com/",
+      "checkedAt": "2026-08-04T11:39:09.748Z"
+    },
+    "https://iwinya.itch.io/project-vampurr": {
+      "state": "dead",
+      "httpStatus": 429,
+      "checkedAt": "2026-08-04T11:39:10.024Z"
+    },
+    "https://cc23.ocaduwebspace.ca/uncategorized/reflections-of-self/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://cc23.ocaduwebspace.ca/4-interstitial-spaces/reflections-of-self/",
+      "checkedAt": "2026-08-04T11:39:10.246Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/12/river-styx-2018/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:10.251Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf2014-fw2019-001/2020/10/serenity/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:10.254Z"
+    },
+    "https://quentin-hd.itch.io/the-long-dream": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:10.333Z"
+    },
+    "https://vimeo.com/489518406": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:10.397Z"
+    },
+    "https://snowtv.itch.io/revirtual%20(use%20password:%20snowRevirtual)": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:10.476Z"
+    },
+    "https://marquessa.art/the-solari-salon": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:10.575Z"
+    },
+    "https://retreetthesis.format.com/": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:10.659Z"
+    },
+    "https://webspace.ocad.ca/~jpham/CodeCLass/CodeCLass/index.html": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:10.666Z"
+    },
+    "https://www.houseofnoosh.art/shatter-before-the-break/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:10.846Z"
+    },
+    "https://hackaday.io/project/175784-sky-cavalcade": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:10.923Z"
+    },
+    "https://cc23.ocaduwebspace.ca/uncategorized/coral/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://cc23.ocaduwebspace.ca/4-interstitial-spaces/coral/",
+      "checkedAt": "2026-08-04T11:39:11.166Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-1007-501-2024wi/2024/11/17/ujesca/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:11.207Z"
+    },
+    "https://mikahirata.format.com/": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:11.422Z"
+    },
+    "https://xd.adobe.com/view/5107d6c7-4ad0-41d8-92b0-cec2a5de3b97-0454/screen/7bbd6f2c-8976-4645-83dc-5a9860fb2a31": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:11.815Z"
+    },
+    "https://www.houseofnoosh.art/dance-transform/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:11.830Z"
+    },
+    "https://shutterst.ca/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:11.874Z"
+    },
+    "https://camcollective.itch.io/migrants-at-bay": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:11.888Z"
+    },
+    "https://natalielehuenen.com/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:12.099Z"
+    },
+    "https://nime2023.ocaduwebspace.ca/category/tablingo/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:12.535Z"
+    },
+    "http://leecyb.org/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:12.537Z"
+    },
+    "https://nime2023.ocaduwebspace.ca/category/tactile/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:12.690Z"
+    },
+    "https://www.youtube.com/watch?v=1Tj50Anlcew&ab_channel=amreenashraf": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:12.692Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf3010-fw201903-01/2020/04/talktags/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:12.697Z"
+    },
+    "https://jacobcram.xyz/spheres": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:12.950Z"
+    },
+    "http://socialbodylab.com/textile-game-controllers/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://socialbodylab.com/textile-game-controllers/",
+      "checkedAt": "2026-08-04T11:39:12.994Z"
+    },
+    "https://vimeo.com/533815044": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:13.002Z"
+    },
+    "https://cc23.ocaduwebspace.ca/uncategorized/the-glow/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://cc23.ocaduwebspace.ca/4-interstitial-spaces/the-glow/",
+      "checkedAt": "2026-08-04T11:39:13.489Z"
+    },
+    "https://1lyalee.itch.io/atelier-iii-weensy-and-the-giant": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:13.544Z"
+    },
+    "https://atelier3.ocaduwebspace.ca/TheShopkeeping.html": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:13.546Z"
+    },
+    "https://theworld.org/stories/2019-04-04/archivists-race-digitize-slavery-records-history-lost": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:13.800Z"
+    },
+    "https://xiaoyixuan777.wixsite.com/yixuan-xiao": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:13.814Z"
+    },
+    "https://df.show/portfolio/items/tactile": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:14.163Z"
+    },
+    "https://www.instagram.com/tv/CM2DIX5A6MC/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:14.291Z"
+    },
+    "https://blog.ocad.ca/wordpress/digf6037-fw201902-01/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:14.298Z"
+    },
+    "https://grasshopper-parakeet-djce.squarespace.com/home%20PASSWORD:%20OCADU%20https://docs.google.com/presentation/d/1kkADkB38jY-WDVgM62N2-1QUhK-JYmK84HBLDlVq92c/edit?usp=sharing%20": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:14.425Z"
+    },
+    "https://www.youtube.com/watch?v=A1sq8NQLgOI&ab_channel=AbhaPatil": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:14.434Z"
+    },
+    "https://mitoyager.itch.io/you-were-here": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:14.563Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf-6037-301-2024fa/2024/11/12/the-weight-we-share/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:14.900Z"
+    },
+    "https://df.show%20%20%20%20%20%20%20%20%20%20%20melanieyan.com%20%20%20%20%20%20%20%20%20%20https://www.instagram.com/melatonien/%20%20%20%20%20": {
+      "state": "unreachable",
+      "error": "ERR_INVALID_URL",
+      "checkedAt": "2026-08-04T11:39:14.901Z"
+    },
+    "https://wong-vivian.format.com/": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:15.167Z"
+    },
+    "https://fischer-bernhut-madelaine.format.com/blindsided-2019": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:15.393Z"
+    },
+    "https://jackieliu.itch.io/the-day-the-sky-fell": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:15.492Z"
+    },
+    "https://www.youtube.com/@tr4nsluc3nt": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:15.563Z"
+    },
+    "https://www.manishalaroia.com/the-darwin-kit": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:15.928Z"
+    },
+    "https://vickikiwu.wixsite.com/the-no-man-zone": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:16.118Z"
+    },
+    "http://www.mehdifarahani.com": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:16.443Z"
+    },
+    "https://themagatimes.nicolevella.com": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://nicolevella.com/",
+      "checkedAt": "2026-08-04T11:39:16.823Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201802-01/page/2/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:16.831Z"
+    },
+    "https://natalielehuenen.com/the-strange-and-the-beautiful/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:16.960Z"
+    },
+    "https://socialbodylab.com/ultra-wideband-experiments/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:17.031Z"
+    },
+    "https://youtu.be/6ummaWvxii8": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=6ummaWvxii8&feature=youtu.be",
+      "checkedAt": "2026-08-04T11:39:17.156Z"
+    },
+    "https://nime2023.ocaduwebspace.ca/uncategorized/update-3-immersive-music-vr-space/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:17.510Z"
+    },
+    "https://twitter.com/artist_donna/status/1588632528411205632": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://twitter.com/donna_dreaming/status/1588632528411205632",
+      "checkedAt": "2026-08-04T11:39:17.660Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw2020-01/2020/11/virus-vs-vaccines/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:17.668Z"
+    },
+    "https://variationsof.online/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:17.707Z"
+    },
+    "https://www.thoreaubakker.com/vrcat": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:18.025Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/project-proposal-what-is-my-purpose/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:18.032Z"
+    },
+    "https://youtu.be/pl5nuGB_1co": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=pl5nuGB_1co&feature=youtu.be",
+      "checkedAt": "2026-08-04T11:39:18.776Z"
+    },
+    "https://2022atil3-eer.itch.io/projecteer%20https://youtu.be/ciRlHf0c3cg": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:19.699Z"
+    },
+    "https://msta.format.com/the-process": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:19.836Z"
+    },
+    "https://damesmakinggames.org/bodies-in-play/": {
+      "state": "unreachable",
+      "error": "UND_ERR_CONNECT_TIMEOUT",
+      "checkedAt": "2026-08-04T11:39:21.745Z"
+    },
+    "https://jessica-patel.github.io/portfolio-website/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:21.909Z"
+    },
+    "https://cc23.ocaduwebspace.ca/connected-systems/ctrl-space": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:22.487Z"
+    },
+    "https://vimeo.com/491282452": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:22.841Z"
+    },
+    "https://advancedwearables2023.ocaduwebspace.ca/1-wearable-game-controller/game-earmuff-earphone/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:23.322Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/eternal-forms/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:23.333Z"
+    },
+    "https://www.figma.com/@fraymer": {
+      "state": "dead",
+      "httpStatus": 403,
+      "checkedAt": "2026-08-04T11:39:23.434Z"
+    },
+    "https://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/12/generativesystems/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:23.443Z"
+    },
+    "https://quinn-shoreman-gukr.format.com/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:23.578Z"
+    },
+    "https://artificialnature.net/#infranet": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://artificialnature.net/",
+      "checkedAt": "2026-08-04T11:39:23.733Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/an-interface-to-interact-with-persian-calligraphy/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:23.738Z"
+    },
+    "https://creativerising.ca/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:24.149Z"
+    },
+    "https://www.instagram.com/kyloid.exe/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:24.321Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/11/manufactured-realities/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:24.328Z"
+    },
+    "https://vimeo.com/407816661": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:24.657Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw201702-01/2017/11/moon-gaze/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:24.663Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf2004-fw201802-01/2018/11/experiment-3-naruto-glove-game-controller/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:24.668Z"
+    },
+    "https://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/experiment-5-ok-to-touch/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:24.677Z"
+    },
+    "https://editor.p5js.org/LeiaKC/full/mzd21rMB3": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:25.154Z"
+    },
+    "https://www.candide.xyz/wifi-portal-oshwa/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.candide.xyz/pocket-portal/",
+      "checkedAt": "2026-08-04T11:39:25.696Z"
+    },
+    "https://blekkenhorst.ca/bleed/%20": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:26.025Z"
+    },
+    "https://mahnoorh.substack.com/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:26.217Z"
+    },
+    "https://scroll-test-tan.vercel.app/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:27.176Z"
+    },
+    "https://blogs.ocaduwebspace.ca/digf3008-302-2024fa/2024/11/19/meicenz-project2-v1/": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:27.717Z"
+    },
+    "http://solelythesis.webflow.io/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://solelythesis.webflow.io/",
+      "checkedAt": "2026-08-04T11:39:28.085Z"
+    },
+    "https://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/11/synchrobots/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:28.096Z"
+    },
+    "https://cc23.ocaduwebspace.ca/uncategorized/take-a-break/": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://cc23.ocaduwebspace.ca/4-interstitial-spaces/take-a-break/",
+      "checkedAt": "2026-08-04T11:39:28.686Z"
+    },
+    "https://webspace.ocad.ca/~3178741/tetris.html": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:28.695Z"
+    },
+    "https://www.niloofarsanandaji.com/blog-1-1/Blog%20Post%20Title%20One-6zamh": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:29.084Z"
+    },
+    "https://2022atil3-eer.itch.io/projecteer%20": {
+      "state": "dead",
+      "httpStatus": 404,
+      "checkedAt": "2026-08-04T11:39:31.069Z"
+    },
+    "https://shutingzhou2279.wixsite.com/mysite/toronto-urban-legends": {
+      "state": "redirect",
+      "httpStatus": 200,
+      "finalUrl": "https://www.shutingdesign.com/toronto-urban-legends",
+      "checkedAt": "2026-08-04T11:39:32.913Z"
+    },
+    "https://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/experiment-5-unexpressed/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:32.924Z"
+    },
+    "http://blog.ocad.ca/wordpress/digf6037-fw2020-01/2020/10/visual-narration/": {
+      "state": "unreachable",
+      "error": "ENOTFOUND",
+      "checkedAt": "2026-08-04T11:39:32.929Z"
+    },
+    "https://vimeo.com/374827162?fbclid=IwAR33VgAcXHclMehReJVYZuWntqT7jyN1A8qpWRW7lAIe6G3FsmGk-W0gbXI": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:33.415Z"
+    },
+    "https://vimeo.com/1032904223?share=copy": {
+      "state": "ok",
+      "httpStatus": 200,
+      "checkedAt": "2026-08-04T11:39:33.765Z"
+    }
+  }
+}

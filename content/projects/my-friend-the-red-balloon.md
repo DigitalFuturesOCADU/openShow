@@ -53,7 +53,8 @@ layout: default
 links:
   - label: Project
     url: https://blogs.ocaduwebspace.ca/digf-6037-301-2025fa/2025/11/18/my-friend-the-red-balloon/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:07.936Z'
 status: publish
 sourceTerms:
   - 2025 Code

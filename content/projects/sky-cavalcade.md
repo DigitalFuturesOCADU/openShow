@@ -54,7 +54,8 @@ layout: default
 links:
   - label: Project
     url: https://hackaday.io/project/175784-sky-cavalcade
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:10.923Z'
 status: publish
 sourceTerms:
   - 2020 DigitalFabrication

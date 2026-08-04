@@ -59,7 +59,9 @@ layout: default
 links:
   - label: Project
     url: https://cloobot.itch.io/as-the-end-drew-near
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:01.175Z'
+    finalUrl: https://gameplaylab.itch.io/as-the-end-drew-near
 status: publish
 sourceTerms:
   - 2022 Alumni

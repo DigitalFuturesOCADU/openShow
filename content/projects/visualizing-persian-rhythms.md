@@ -47,7 +47,8 @@ layout: default
 links:
   - label: Project
     url: http://www.mehdifarahani.com
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:16.443Z'
 status: publish
 sourceTerms:
   - 2023 Alumni

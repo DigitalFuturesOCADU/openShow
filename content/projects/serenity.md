@@ -49,7 +49,8 @@ layout: default
 links:
   - label: Project
     url: http://blog.ocad.ca/wordpress/digf2014-fw2019-001/2020/10/serenity/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:10.254Z'
 status: publish
 sourceTerms:
   - 2020 Undergraduate

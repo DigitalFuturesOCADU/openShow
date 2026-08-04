@@ -48,7 +48,8 @@ layout: default
 links:
   - label: Project
     url: https://trishkanana.format.com/portfolio_thesis%20
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:07.716Z'
 status: publish
 sourceTerms:
   - 2022 Alumni

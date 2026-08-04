@@ -35,7 +35,9 @@ layout: default
 links:
   - label: Project
     url: https://cc23.ocaduwebspace.ca/uncategorized/reflections-of-self/
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:10.246Z'
+    finalUrl: https://cc23.ocaduwebspace.ca/4-interstitial-spaces/reflections-of-self/
 status: publish
 sourceTerms:
   - 2023 Code

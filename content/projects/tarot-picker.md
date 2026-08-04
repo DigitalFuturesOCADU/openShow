@@ -57,7 +57,8 @@ layout: default
 links:
   - label: Project
     url: https://editor.p5js.org/JDEXTER/full/PtOpuLITR
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:08.945Z'
 status: publish
 sourceTerms:
   - 2024 Code

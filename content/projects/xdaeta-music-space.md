@@ -40,7 +40,8 @@ layout: default
 links:
   - label: Project
     url: https://nime2023.ocaduwebspace.ca/uncategorized/update-3-immersive-music-vr-space/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:17.510Z'
 status: publish
 sourceTerms:
   - 2023 Games

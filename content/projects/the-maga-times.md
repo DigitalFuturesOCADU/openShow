@@ -55,7 +55,9 @@ layout: default
 links:
   - label: Project
     url: https://themagatimes.nicolevella.com
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:16.823Z'
+    finalUrl: https://nicolevella.com/
 status: publish
 sourceTerms:
   - 2020 Code

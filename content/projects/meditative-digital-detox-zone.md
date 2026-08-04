@@ -62,7 +62,8 @@ layout: default
 links:
   - label: Project
     url: https://cc23.ocaduwebspace.ca/multiscreen-experiences/meditative-digital-detox-zone/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:05.466Z'
 status: publish
 sourceTerms:
   - 2023 Code
