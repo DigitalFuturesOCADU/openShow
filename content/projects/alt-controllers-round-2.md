@@ -18,36 +18,47 @@ credits:
   - personId: kayla-eli
     name: Kayla Eli
     role: null
+    affiliation: null
   - personId: yuhan-xia
     name: Yuhan Xia
     role: null
+    affiliation: null
   - personId: tinatei-tunyan
     name: Tinatei Tunyan
     role: null
+    affiliation: null
   - personId: qingxuan-li
     name: Qingxuan Li
     role: null
+    affiliation: null
   - personId: yubhang-huang
     name: Yubhang Huang
     role: null
+    affiliation: null
   - personId: niloofar-sanandajizadeh
     name: Niloofar Sanandajizadeh
     role: null
+    affiliation: null
   - personId: amelia-lochhead
     name: Amelia Lochhead
     role: null
+    affiliation: null
   - personId: longxiang-fan
     name: Longxiang Fan
     role: null
+    affiliation: null
   - personId: minghui-cui
     name: Minghui Cui
     role: null
+    affiliation: null
   - personId: jesse-xu
     name: Jesse Xu
     role: null
+    affiliation: null
   - personId: melanie-yan
     name: Melanie Yan
     role: null
+    affiliation: null
 creditsRaw: >-
   Kayla Eli,  Yuhan Xia,  Tinatei Tunyan, Qingxuan Li,  Yubhang Huang,  Niloofar Sanandajizadeh,
   Amelia Lochhead, Longxiang Fan, Minghui Cui, Jesse Xu, Melanie Yan

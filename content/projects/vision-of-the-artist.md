@@ -15,6 +15,7 @@ credits:
   - personId: vivian-wong
     name: Vivian Wong
     role: null
+    affiliation: null
 creditsRaw: Vivian Wong
 media:
   - type: image

@@ -16,9 +16,11 @@ credits:
   - personId: sanmeet-chahil
     name: Sanmeet Chahil
     role: null
+    affiliation: null
   - personId: william-selviz
     name: William Selviz
     role: null
+    affiliation: null
 creditsRaw: Sanmeet Chahil & William Selviz
 media:
   - type: image

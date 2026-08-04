@@ -14,6 +14,7 @@ credits:
   - personId: maria-yala
     name: Maria Yala
     role: null
+    affiliation: null
 creditsRaw: Maria Yala
 media: []
 layout: default

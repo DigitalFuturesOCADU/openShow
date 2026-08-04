@@ -15,6 +15,7 @@ credits:
   - personId: mika-hirata
     name: Mika Hirata
     role: null
+    affiliation: null
 creditsRaw: Mika Hirata
 media:
   - type: image

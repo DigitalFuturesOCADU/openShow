@@ -12,6 +12,7 @@ credits:
   - personId: natalie-le-huenen
     name: Natalie Le Huenen
     role: null
+    affiliation: null
 creditsRaw: Natalie Le Huenen
 media:
   - type: image

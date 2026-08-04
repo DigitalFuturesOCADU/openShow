@@ -21,12 +21,15 @@ credits:
   - personId: tyson-moll
     name: Tyson Moll
     role: null
+    affiliation: null
   - personId: shikhar-juyal
     name: Shikhar Juyal
     role: null
+    affiliation: null
   - personId: georgina-yeboah
     name: Georgina Yeboah
     role: null
+    affiliation: null
 creditsRaw: Tyson Moll, Shikhar Juyal, Georgina Yeboah
 media:
   - type: image

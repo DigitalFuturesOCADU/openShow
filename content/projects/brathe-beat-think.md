@@ -17,12 +17,15 @@ credits:
   - personId: shannen-guntoro
     name: Shannen Guntoro
     role: null
+    affiliation: null
   - personId: leia-kook-chun
     name: Leia Kook-Chun
     role: null
+    affiliation: null
   - personId: julia-andrejczuck
     name: Julia Andrejczuck
     role: null
+    affiliation: null
 creditsRaw: Shannen Guntoro, Leia Kook-Chun, Julia Andrejczuck
 media: []
 layout: default

@@ -18,27 +18,35 @@ credits:
   - personId: kate-hartman
     name: Kate Hartman
     role: null
+    affiliation: null
   - personId: emma-westecott
     name: Emma Westecott
     role: null
+    affiliation: null
   - personId: izzie-colpitts-campbell
     name: Izzie Colpitts-Campbell
     role: null
+    affiliation: null
   - personId: jennie-robinson-faber
     name: Jennie Robinson Faber
     role: null
+    affiliation: null
   - personId: yiyi-shao
     name: Yiyi Shao
     role: null
+    affiliation: null
   - personId: chris-luginbuhl
     name: Chris Luginbuhl
     role: null
+    affiliation: null
   - personId: olivia-prior
     name: Olivia Prior
     role: null
+    affiliation: null
   - personId: manisha-laroia
     name: Manisha Laroia
     role: null
+    affiliation: null
 creditsRaw: >-
   Kate Hartman, Emma Westecott, Izzie Colpitts-Campbell, Jennie Robinson Faber, Yiyi Shao, Chris
   Luginbuhl, Olivia Prior, Manisha Laroia

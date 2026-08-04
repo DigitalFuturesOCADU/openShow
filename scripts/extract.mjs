@@ -763,11 +763,13 @@ const participantsBody = showIds.map((showId) => {
     .filter((x) => x.apps.length)
 
   const groups = new Map()
+  let approx = 0
   for (const { p, apps } of inShow) {
     const affs = [...new Set(apps.flatMap((a) => a.affiliation))]
+    if (apps.some((a) => a.affiliationExact === false)) approx++
     for (const a of affs.length ? affs : ['unspecified']) {
       if (!groups.has(a)) groups.set(a, [])
-      groups.get(a).push(p)
+      groups.get(a).push({ ...p, _approx: apps.some((x) => x.affiliationExact === false) })
     }
   }
 
@@ -775,10 +777,16 @@ const participantsBody = showIds.map((showId) => {
   const sections = ordered.map((a) => {
     const list = groups.get(a).sort((x, y) => x.sortName.localeCompare(y.sortName))
     return `#### ${affLabel[a] ?? 'Unspecified'} (${list.length})\n\n` +
-      list.map((p) => `- ${p.name}${p.kind === 'collective' ? ' _(collective)_' : ''}`).join('\n')
+      list.map((p) => `- ${p.name}${p.kind === 'collective' ? ' _(collective)_' : ''}${p._approx ? ' †' : ''}`).join('\n')
   })
 
-  return `### ${shows.get(showId).title}\n\n${inShow.length} participants.\n\n${sections.join('\n\n')}`
+  const caveat = approx
+    ? `\n\n† ${approx} of these are on a mixed team whose affiliation was recorded ` +
+      `per project, not per person, so they appear under every affiliation their ` +
+      `team held. Counts below are therefore an over-estimate for this show. ` +
+      `Submissions from 2026 record affiliation per person and will be exact.`
+    : ''
+  return `### ${shows.get(showId).title}\n\n${inShow.length} participants.${caveat}\n\n${sections.join('\n\n')}`
 }).join('\n\n')
 
 write(out('reports/participants.md'), `# Participants by show

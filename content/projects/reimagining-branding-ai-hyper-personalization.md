@@ -17,6 +17,7 @@ credits:
   - personId: mahnoor-hasan
     name: Mahnoor Hasan
     role: null
+    affiliation: null
 creditsRaw: Mahnoor Hasan
 media:
   - type: image

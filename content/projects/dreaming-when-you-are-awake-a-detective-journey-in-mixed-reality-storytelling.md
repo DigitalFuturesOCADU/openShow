@@ -17,6 +17,7 @@ credits:
   - personId: bernice-lai
     name: Bernice Lai
     role: null
+    affiliation: null
 creditsRaw: Bernice Lai
 media:
   - type: image

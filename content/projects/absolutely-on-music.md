@@ -16,6 +16,7 @@ credits:
   - personId: lilian-leung
     name: Lilian Leung
     role: null
+    affiliation: null
 creditsRaw: Lilian Leung
 media: []
 layout: default

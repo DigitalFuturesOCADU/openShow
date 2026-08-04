@@ -17,15 +17,19 @@ credits:
   - personId: tyler-beatty
     name: Tyler Beatty
     role: null
+    affiliation: null
   - personId: mona-safari
     name: Mona Safari
     role: null
+    affiliation: null
   - personId: gavin-tao
     name: Gavin Tao
     role: null
+    affiliation: null
   - personId: mufaro-mukoki
     name: Mufaro Mukoki
     role: null
+    affiliation: null
 creditsRaw: Tyler Beatty, Mona Safari, Gavin Tao, Mufaro Mukoki
 media:
   - type: image

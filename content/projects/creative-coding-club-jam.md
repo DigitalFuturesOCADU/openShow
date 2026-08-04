@@ -19,18 +19,23 @@ credits:
   - personId: saad-aslam-ali
     name: Saad Aslam Ali
     role: null
+    affiliation: null
   - personId: rojina-pedramy
     name: Rojina Pedramy
     role: null
+    affiliation: null
   - personId: yusif-safarzade
     name: Yusif Safarzade
     role: null
+    affiliation: null
   - personId: menita-sriharsha
     name: Menita Sriharsha
     role: null
+    affiliation: null
   - personId: hana-zaghloul
     name: Hana Zaghloul
     role: null
+    affiliation: null
 creditsRaw: Saad Aslam Ali, Rojina Pedramy, Yusif Safarzade, Menita Sriharsha, Hana Zaghloul
 media:
   - type: image

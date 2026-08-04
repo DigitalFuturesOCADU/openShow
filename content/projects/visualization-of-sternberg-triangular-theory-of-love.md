@@ -15,6 +15,7 @@ credits:
   - personId: leia-kook-chun
     name: Leia Kook-Chun
     role: null
+    affiliation: null
 creditsRaw: Leia Kook-Chun
 media: []
 layout: default

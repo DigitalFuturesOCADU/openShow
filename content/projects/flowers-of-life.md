@@ -17,6 +17,7 @@ credits:
   - personId: mazin-chabayta
     name: Mazin Chabayta
     role: null
+    affiliation: null
 creditsRaw: Mazin Chabayta
 media:
   - type: image

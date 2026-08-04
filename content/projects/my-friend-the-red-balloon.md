@@ -17,12 +17,15 @@ credits:
   - personId: rina-chen
     name: Rina Chen
     role: null
+    affiliation: null
   - personId: amelia-lochhead
     name: Amelia Lochhead
     role: null
+    affiliation: null
   - personId: niloofar-sanandajizadeh
     name: Niloofar Sanandajizadeh
     role: null
+    affiliation: null
 creditsRaw: Rina Chen, Amelia Lochhead, Niloofar Sanandajizadeh
 media:
   - type: image

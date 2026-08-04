@@ -16,21 +16,27 @@ credits:
   - personId: enna-kim
     name: Enna Kim
     role: null
+    affiliation: null
   - personId: anran-zhou
     name: Anran Zhou
     role: null
+    affiliation: null
   - personId: bomi-doh
     name: Bomi Doh
     role: null
+    affiliation: null
   - personId: natalie-le-huenen
     name: Natalie Le Huenen
     role: null
+    affiliation: null
   - personId: sarah-parent
     name: Sarah Parent
     role: null
+    affiliation: null
   - personId: vivian-wong
     name: Vivian Wong
     role: null
+    affiliation: null
 creditsRaw: Enna Kim, Anran Zhou, Bomi Doh, Natalie Le Huenen, Sarah Parent and Vivian Wong
 media:
   - type: image

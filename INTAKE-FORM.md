@@ -68,6 +68,68 @@ Currently order comes from upload order, which is probably fine. If order
 matters to submitters, ask them to number their files `01_`, `02_` — ingest
 already reads a numeric prefix.
 
+### 1d. Affiliation **per person**, not per project — **fixes a real error**
+
+**Problem.** Affiliation is currently recorded once for the whole project. On a
+mixed team that loses who is what. `Bodies in Play Zine` has six people and the
+affiliations `alumni, faculty, graduate` — but nothing says which of the six is
+the faculty member.
+
+This is not just imprecise, it produces wrong output. The participants list has
+to put every member in every group their team held, so those six people
+generate eighteen entries. Across the archive:
+
+| | |
+| --- | ---: |
+| Projects with a mixed team of more than one person | 10 |
+| People on them | 40 |
+| Participant-list entries they currently generate | 90 |
+| **Over-count** | **50 (125%)** |
+
+Worst cases: `Bodies in Play Zine` 6 × 3 = 18 entries, `Textile Game
+Controllers` 8 × 2 = 16, `Bodies in VR` 4 × 3 = 12.
+
+Asking per person makes "participants in 2026, grouped by affiliation" exact
+instead of an over-estimate. It also means project-level affiliation no longer
+needs asking at all — it is simply the set of the team's answers, so there is
+one fewer question, not one more.
+
+**Fix — two options.**
+
+*Option A: fixed optional slots (recommended).* Eight pairs of questions —
+"Team member N: name" and "Team member N: connection to Digital Futures" —
+with only the first pair required and the rest optional. No branching logic to
+build or break, and Forms handles blanks fine. Add one overflow text field for
+the rare huge team.
+
+*Option B: a count question driving branching.* "How many people worked on
+this?" then branch to a section with that many slots. Closer to what you
+described and tidier for the submitter, but Microsoft Forms branches to whole
+sections rather than individual questions, so it means maintaining several
+near-duplicate sections. More to go wrong at the moment it matters.
+
+**Sizing, from the archive:**
+
+| Team size | Projects |
+| --- | ---: |
+| 1 | 166 |
+| 2–4 | 73 |
+| 5–8 | 19 |
+| 9+ | 2 |
+
+63% of projects are solo, so keep that path fast — one required slot, the rest
+optional and visibly so. Eight slots covers all but two projects ever recorded
+(`Alt Controllers: Round 2` with 11, `Drone Delivery` with 9), and an overflow
+field catches those.
+
+**Use the same five values as the current affiliation question:**
+`DF Undergrad Student` · `DF Grad Student` · `DF Alumni` · `DF Faculty` ·
+`UG Thesis`
+
+**Until then**, the participant lists mark affected people with a dagger and
+state the over-count in the report, rather than presenting inflated numbers as
+fact.
+
 ---
 
 ## 2. Fix the drift already in the form

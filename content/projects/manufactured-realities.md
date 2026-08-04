@@ -16,12 +16,15 @@ credits:
   - personId: april-de-zen
     name: April De Zen
     role: null
+    affiliation: null
   - personId: veda-adnani
     name: Veda Adnani
     role: null
+    affiliation: null
   - personId: omid-ettehadi
     name: Omid Ettehadi
     role: null
+    affiliation: null
 creditsRaw: April De Zen, Veda Adnani and Omid Ettehadi
 media:
   - type: image

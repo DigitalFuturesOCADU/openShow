@@ -16,6 +16,7 @@ credits:
   - personId: sarah-boo
     name: Sarah Boo
     role: null
+    affiliation: null
 creditsRaw: Sarah Boo
 media:
   - type: image

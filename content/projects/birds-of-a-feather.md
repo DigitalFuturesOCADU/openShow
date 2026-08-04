@@ -16,18 +16,23 @@ credits:
   - personId: catherine-reyto
     name: Catherine Reyto
     role: null
+    affiliation: null
   - personId: jun-li
     name: Jun Li
     role: null
+    affiliation: null
   - personId: rittika-basu
     name: Rittika Basu
     role: null
+    affiliation: null
   - personId: sananda-dutta
     name: Sananda Dutta
     role: null
+    affiliation: null
   - personId: jevonne-peters
     name: Jevonne Peters
     role: null
+    affiliation: null
 creditsRaw: Catherine Reyto, Jun Li, Rittika Basu, Sananda Dutta, Jevonne Peters
 media: []
 layout: default

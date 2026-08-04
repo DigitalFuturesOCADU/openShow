@@ -16,6 +16,7 @@ credits:
   - personId: yuhan-xia
     name: Yuhan Xia
     role: null
+    affiliation: null
 creditsRaw: Yuhan Xia
 media:
   - type: image

@@ -18,6 +18,7 @@ credits:
   - personId: paul-van-rijn
     name: Paul Van Rijn
     role: null
+    affiliation: null
 creditsRaw: Paul Van Rijn
 media:
   - type: image

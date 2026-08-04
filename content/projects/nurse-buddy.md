@@ -15,6 +15,7 @@ credits:
   - personId: veda-adnani
     name: Veda Adnani
     role: null
+    affiliation: null
 creditsRaw: Veda Adnani
 media: []
 layout: default

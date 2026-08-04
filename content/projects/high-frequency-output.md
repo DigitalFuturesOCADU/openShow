@@ -16,6 +16,7 @@ credits:
   - personId: quinn-shoreman
     name: Quinn Shoreman
     role: null
+    affiliation: null
 creditsRaw: Quinn Shoreman
 media:
   - type: image

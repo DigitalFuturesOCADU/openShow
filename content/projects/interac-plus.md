@@ -14,6 +14,7 @@ credits:
   - personId: terrell-duke
     name: Terrell Duke
     role: null
+    affiliation: null
 creditsRaw: Terrell Duke
 media:
   - type: image

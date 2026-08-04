@@ -17,6 +17,7 @@ credits:
   - personId: sarah-parent
     name: Sarah Parent
     role: null
+    affiliation: null
 creditsRaw: Sarah Parent
 media:
   - type: image

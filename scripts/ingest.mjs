@@ -74,10 +74,12 @@ ws.getRow(1).eachCell({ includeEmpty: true }, (cell, n) => {
 // Match columns by pattern so a reworded question does not silently drop data.
 const colOf = {}
 const unmatched = []
-for (const [field, pattern] of Object.entries(cfg.columns)) {
+for (const [field, pattern] of Object.entries({ ...cfg.columns, ...(cfg.optionalColumns ?? {}) })) {
   const re = new RegExp(pattern, 'i')
   const idx = headers.findIndex((h) => h && re.test(h))
-  if (idx === -1) unmatched.push(field)
+  // Only a missing REQUIRED column means data is being dropped. Optional ones
+  // are forward-looking questions the form may not ask yet.
+  if (idx === -1) { if (field in cfg.columns) unmatched.push(field) }
   else colOf[field] = idx
 }
 if (unmatched.length) {
@@ -226,11 +228,26 @@ for (const [slug, get] of bySlug) {
   const media = resolveMedia(get('images'), flags, title)
   if (!media.length) flags.noMedia.push({ title })
 
-  const credits = splitCredits(get('team')).map((c) => ({
+  // Per-person affiliation (INTAKE-FORM.md 1d). When the form supplies named
+  // slots, use them — that is the only way to know which member of a mixed
+  // team is the faculty one. Fall back to splitting the single free-text field.
+  const slotted = []
+  for (let n = 1; n <= 8; n++) {
+    const nm = get(`person${n}Name`)
+    if (!nm) continue
+    const aff = cfg.affiliation[get(`person${n}Affiliation`)] ?? null
+    slotted.push({ name: nm, role: null, affiliation: validAffiliation.has(aff) ? aff : null })
+  }
+
+  const credits = (slotted.length ? slotted : splitCredits(get('team'))).map((c) => ({
     personId: personSlug(c.name),
     name: c.name,
     role: c.role ?? null,
+    affiliation: c.affiliation ?? null,
   }))
+
+  // With per-person data the project-level value is derived, not asked.
+  const perPerson = [...new Set(credits.map((c) => c.affiliation).filter(Boolean))].sort()
 
   const links = []
   const url = get('link')
@@ -243,7 +260,7 @@ for (const [slug, get] of bySlug) {
     show: String(SHOW),
     year: Number(String(SHOW).slice(0, 4)),
     session: null,
-    affiliation: aff.mapped,
+    affiliation: perPerson.length ? perPerson : aff.mapped,
     medium: med.mapped,
     tags: [...med.extra, ...aff.extra].sort(),
     credits,

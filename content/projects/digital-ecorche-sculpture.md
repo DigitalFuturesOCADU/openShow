@@ -16,6 +16,7 @@ credits:
   - personId: xin-jiang
     name: Xin Jiang
     role: null
+    affiliation: null
 creditsRaw: Xin Jiang
 media:
   - type: image

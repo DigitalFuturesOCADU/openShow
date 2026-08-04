@@ -15,9 +15,11 @@ credits:
   - personId: shannen-guntoro
     name: Shannen Guntoro
     role: null
+    affiliation: null
   - personId: leia-kc
     name: Leia KC
     role: null
+    affiliation: null
 creditsRaw: Shannen Guntoro & Leia KC
 media:
   - type: image

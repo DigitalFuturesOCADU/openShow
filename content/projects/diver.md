@@ -12,6 +12,7 @@ credits:
   - personId: catherine-reyto
     name: Catherine Reyto
     role: null
+    affiliation: null
 creditsRaw: Catherine Reyto
 media:
   - type: image

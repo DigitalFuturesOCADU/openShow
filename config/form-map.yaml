@@ -33,6 +33,31 @@ columns:
   #   Name, Primary Contact Name    — duplicated by the team field, which is
   #                                   what gets credited publicly
 
+# Columns that may not exist yet. Missing ones are silent; missing REQUIRED
+# columns above are warned about loudly, because those mean data is being
+# dropped.
+#
+# Per-person affiliation, for 2026 (INTAKE-FORM.md 1d). Eight optional
+# name/connection pairs. These patterns are a guess at the wording — check them
+# against the real headers the first time the new form is exported.
+optionalColumns:
+person1Name: 'team member 1.*name'
+person1Affiliation: 'team member 1.*connection'
+person2Name: 'team member 2.*name'
+person2Affiliation: 'team member 2.*connection'
+person3Name: 'team member 3.*name'
+person3Affiliation: 'team member 3.*connection'
+person4Name: 'team member 4.*name'
+person4Affiliation: 'team member 4.*connection'
+person5Name: 'team member 5.*name'
+person5Affiliation: 'team member 5.*connection'
+person6Name: 'team member 6.*name'
+person6Affiliation: 'team member 6.*connection'
+person7Name: 'team member 7.*name'
+person7Affiliation: 'team member 7.*connection'
+person8Name: 'team member 8.*name'
+person8Affiliation: 'team member 8.*connection'
+
 # Form choice -> affiliation slug. Must resolve to a value in
 # content/vocabularies.json.
 affiliation:

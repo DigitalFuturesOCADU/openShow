@@ -16,15 +16,19 @@ credits:
   - personId: hafsa-ahmad
     name: Hafsa Ahmad
     role: null
+    affiliation: null
   - personId: cole-kassirer
     name: Cole Kassirer
     role: null
+    affiliation: null
   - personId: mika-macloear-wall
     name: Mika MacLOear Wall
     role: null
+    affiliation: null
   - personId: giuliana-costa
     name: Giuliana Costa
     role: null
+    affiliation: null
 creditsRaw: Hafsa Ahmad, Cole Kassirer, Mika MacLOear Wall, Giuliana Costa
 media:
   - type: image

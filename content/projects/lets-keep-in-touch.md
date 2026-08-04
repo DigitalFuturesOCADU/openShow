@@ -18,6 +18,7 @@ credits:
   - personId: olivia-pasian
     name: Olivia Pasian
     role: null
+    affiliation: null
 creditsRaw: Olivia Pasian
 media:
   - type: image

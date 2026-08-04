@@ -16,6 +16,7 @@ credits:
   - personId: jordan-shaw
     name: Jordan Shaw
     role: null
+    affiliation: null
 creditsRaw: Jordan Shaw
 media:
   - type: image

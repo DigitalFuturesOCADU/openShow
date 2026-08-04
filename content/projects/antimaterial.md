@@ -18,12 +18,15 @@ credits:
   - personId: yutong-jessie-zheng
     name: Yutong Jessie Zheng
     role: null
+    affiliation: null
   - personId: masha-shirokova
     name: Masha Shirokova
     role: null
+    affiliation: null
   - personId: liam-clarke
     name: Liam Clarke
     role: null
+    affiliation: null
 creditsRaw: Yutong Jessie Zheng, Masha Shirokova, Liam Clarke
 media:
   - type: image

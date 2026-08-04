@@ -14,12 +14,15 @@ credits:
   - personId: iris-zhang
     name: Iris Zhang
     role: null
+    affiliation: null
   - personId: pranya-gulati
     name: Pranya Gulati
     role: null
+    affiliation: null
   - personId: yiqun-zhou
     name: Yiqun Zhou
     role: null
+    affiliation: null
 creditsRaw: Iris Zhang, Pranya Gulati, Yiqun Zhou
 media:
   - type: image

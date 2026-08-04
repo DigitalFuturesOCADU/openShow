@@ -16,6 +16,7 @@ credits:
   - personId: nadine-valcin
     name: Nadine Valcin
     role: null
+    affiliation: null
 creditsRaw: Nadine Valcin
 media:
   - type: image

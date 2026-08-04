@@ -17,15 +17,19 @@ credits:
   - personId: achal
     name: Achal
     role: null
+    affiliation: null
   - personId: jamie
     name: Jamie
     role: null
+    affiliation: null
   - personId: krishnokoli
     name: Krishnokoli
     role: null
+    affiliation: null
   - personId: simran
     name: Simran
     role: null
+    affiliation: null
 creditsRaw: Achal, Jamie, Krishnokoli, Simran
 media:
   - type: image

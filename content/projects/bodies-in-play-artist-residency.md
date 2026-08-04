@@ -16,6 +16,7 @@ credits:
   - personId: kate-hartman
     name: Kate Hartman
     role: null
+    affiliation: null
 creditsRaw: Kate Hartman
 media:
   - type: image

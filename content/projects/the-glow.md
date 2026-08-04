@@ -14,21 +14,27 @@ credits:
   - personId: orus-mateo-castano-suarez
     name: Orus Mateo Castaño-Suárez
     role: null
+    affiliation: null
   - personId: jessica-patel
     name: Jessica Patel
     role: null
+    affiliation: null
   - personId: yu-shien-yang
     name: Yu-Shien Yang
     role: null
+    affiliation: null
   - personId: vitor-fiacadori-costa
     name: Vitor Fiacadori Costa
     role: null
+    affiliation: null
   - personId: matthew-nazarian
     name: Matthew Nazarian
     role: null
+    affiliation: null
   - personId: zubin-isaac
     name: Zubin Isaac
     role: null
+    affiliation: null
 creditsRaw: >-
   Orus Mateo Castaño-Suárez, Jessica Patel, Yu-Shien Yang, Vitor Fiacadori Costa, Matthew Nazarian,
   Zubin Isaac

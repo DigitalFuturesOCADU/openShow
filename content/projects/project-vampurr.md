@@ -15,9 +15,11 @@ credits:
   - personId: irina-noor
     name: Irina Noor
     role: null
+    affiliation: null
   - personId: emmy-gao
     name: Emmy Gao
     role: null
+    affiliation: null
 creditsRaw: Irina Noor, Emmy Gao
 media:
   - type: image

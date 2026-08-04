@@ -15,6 +15,7 @@ credits:
   - personId: anusha-menon
     name: Anusha Menon
     role: null
+    affiliation: null
 creditsRaw: Anusha Menon
 media:
   - type: image

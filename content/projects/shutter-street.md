@@ -17,6 +17,7 @@ credits:
   - personId: ardy-llantino
     name: Ardy Llantino
     role: null
+    affiliation: null
 creditsRaw: Ardy Llantino
 media:
   - type: image

@@ -18,6 +18,7 @@ credits:
   - personId: nick-alexander
     name: Nick Alexander
     role: null
+    affiliation: null
 creditsRaw: Nick Alexander
 media:
   - type: image

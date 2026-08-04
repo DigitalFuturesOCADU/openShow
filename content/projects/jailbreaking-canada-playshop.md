@@ -14,12 +14,15 @@ credits:
   - personId: suzanne-stein
     name: Suzanne Stein
     role: null
+    affiliation: null
   - personId: emma-westecott
     name: Emma Westecott
     role: null
+    affiliation: null
   - personId: jc-zhang
     name: JC Zhang
     role: null
+    affiliation: null
 creditsRaw: Suzanne Stein, Emma Westecott, JC Zhang
 media:
   - type: image

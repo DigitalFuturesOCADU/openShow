@@ -18,9 +18,11 @@ credits:
   - personId: nicole-vella
     name: Nicole Vella
     role: null
+    affiliation: null
   - personId: sara-boo
     name: Sara Boo
     role: null
+    affiliation: null
 creditsRaw: Nicole Vella, Sara Boo
 media:
   - type: image

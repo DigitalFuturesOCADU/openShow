@@ -15,6 +15,7 @@ credits:
   - personId: greg-martin
     name: Greg Martin
     role: null
+    affiliation: null
 creditsRaw: Greg Martin
 media:
   - type: image

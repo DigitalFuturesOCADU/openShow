@@ -15,6 +15,7 @@ credits:
   - personId: jacob-cram
     name: Jacob Cram
     role: null
+    affiliation: null
 creditsRaw: Jacob Cram
 media:
   - type: image

@@ -15,6 +15,7 @@ credits:
   - personId: yutong-jessie-zheng
     name: Yutong Jessie Zheng
     role: null
+    affiliation: null
 creditsRaw: Yutong Jessie Zheng
 media:
   - type: image

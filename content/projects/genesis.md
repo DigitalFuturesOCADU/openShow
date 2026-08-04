@@ -16,15 +16,19 @@ credits:
   - personId: jun-li
     name: Jun Li
     role: null
+    affiliation: null
   - personId: jie-guan
     name: Jie Guan
     role: null
+    affiliation: null
   - personId: shuai-yuan
     name: Shuai Yuan
     role: null
+    affiliation: null
   - personId: adam-tindale
     name: Adam Tindale
     role: null
+    affiliation: null
 creditsRaw: Jun Li, Jie Guan, Shuai Yuan, Adam Tindale
 media:
   - type: image

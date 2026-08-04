@@ -15,6 +15,7 @@ credits:
   - personId: demilade-olaleye
     name: Demilade Olaleye
     role: null
+    affiliation: null
 creditsRaw: Demilade Olaleye
 media:
   - type: image

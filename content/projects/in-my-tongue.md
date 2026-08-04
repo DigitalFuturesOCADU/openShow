@@ -16,9 +16,11 @@ credits:
   - personId: patricia-trish-kanana-mwenda
     name: Patricia "Trish" Kanana Mwenda
     role: null
+    affiliation: null
   - personId: candide-uyanze
     name: Candide Uyanze
     role: null
+    affiliation: null
 creditsRaw: Patricia "Trish" Kanana Mwenda and Candide Uyanze
 media:
   - type: image

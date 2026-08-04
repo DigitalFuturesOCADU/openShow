@@ -14,6 +14,7 @@ credits:
   - personId: justin-pham
     name: Justin Pham
     role: null
+    affiliation: null
 creditsRaw: Justin Pham
 media:
   - type: image

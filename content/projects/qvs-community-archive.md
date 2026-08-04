@@ -16,6 +16,7 @@ credits:
   - personId: g-blekkenhorst
     name: g blekkenhorst
     role: null
+    affiliation: null
 creditsRaw: g blekkenhorst
 media:
   - type: image

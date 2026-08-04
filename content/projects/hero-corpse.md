@@ -14,6 +14,7 @@ credits:
   - personId: erika-davis
     name: Erika Davis
     role: null
+    affiliation: null
 creditsRaw: Erika Davis
 media:
   - type: image

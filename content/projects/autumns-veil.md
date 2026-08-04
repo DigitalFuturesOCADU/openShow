@@ -16,9 +16,11 @@ credits:
   - personId: assal-toudehfallah
     name: Assal Toudehfallah
     role: null
+    affiliation: null
   - personId: peter-oke
     name: Peter Oke
     role: null
+    affiliation: null
 creditsRaw: Assal Toudehfallah, Peter Oke
 media:
   - type: image

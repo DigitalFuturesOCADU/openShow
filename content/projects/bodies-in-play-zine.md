@@ -17,21 +17,27 @@ credits:
   - personId: kate-hartman
     name: Kate Hartman
     role: null
+    affiliation: null
   - personId: emma-westecott
     name: Emma Westecott
     role: null
+    affiliation: null
   - personId: cindy-poremba
     name: Cindy Poremba
     role: null
+    affiliation: null
   - personId: ellie-huang
     name: Ellie Huang
     role: null
+    affiliation: null
   - personId: izzie-colpitts-campbell
     name: Izzie Colpitts-Campbell
     role: null
+    affiliation: null
   - personId: santo-aveiro
     name: Santo Aveiro
     role: null
+    affiliation: null
 creditsRaw: Kate Hartman, Emma Westecott, Cindy Poremba, Ellie Huang, Izzie Colpitts-Campbell, Santo Aveiro
 media:
   - type: image

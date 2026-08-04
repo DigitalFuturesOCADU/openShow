@@ -19,15 +19,19 @@ credits:
   - personId: roshan-leynes
     name: Roshan Leynes
     role: null
+    affiliation: null
   - personId: brian-nguyen
     name: Brian Nguyen
     role: null
+    affiliation: null
   - personId: denzel-arthur
     name: Denzel Arthur
     role: null
+    affiliation: null
   - personId: isaak-shingray
     name: Isaak Shingray
     role: null
+    affiliation: null
 creditsRaw: Roshan Leynes, Brian Nguyen, Denzel Arthur, Isaak Shingray
 media:
   - type: image

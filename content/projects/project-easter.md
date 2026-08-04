@@ -15,6 +15,7 @@ credits:
   - personId: nicholas-addeo
     name: Nicholas Addeo
     role: null
+    affiliation: null
 creditsRaw: Nicholas Addeo
 media:
   - type: image

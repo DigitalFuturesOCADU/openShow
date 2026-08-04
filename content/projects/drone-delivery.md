@@ -16,30 +16,39 @@ credits:
   - personId: shane-colby
     name: Shane Colby
     role: null
+    affiliation: null
   - personId: parth-vats
     name: Parth Vats
     role: null
+    affiliation: null
   - personId: sebastian-santoni
     name: Sebastian Santoni
     role: null
+    affiliation: null
   - personId: hanmin-kim
     name: Hanmin Kim
     role: null
+    affiliation: null
   - personId: john-cao
     name: John Cao
     role: null
+    affiliation: null
   - personId: joe
     name: Joe
     role: null
+    affiliation: null
   - personId: ozan
     name: Ozan
     role: null
+    affiliation: null
   - personId: jeffery-paik
     name: Jeffery Paik
     role: null
+    affiliation: null
   - personId: abelia-chan
     name: Abelia Chan
     role: null
+    affiliation: null
 creditsRaw: >-
   Shane Colby, Parth Vats, Sebastian Santoni, Hanmin Kim, John Cao, Joe, Ozan, Jeffery Paik, Abelia
   Chan

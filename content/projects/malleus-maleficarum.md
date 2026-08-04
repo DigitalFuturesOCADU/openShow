@@ -16,6 +16,7 @@ credits:
   - personId: kayli-chow
     name: Kayli Chow
     role: null
+    affiliation: null
 creditsRaw: Kayli Chow
 media:
   - type: image

@@ -15,6 +15,7 @@ credits:
   - personId: ziyao-jiang
     name: Ziyao Jiang
     role: null
+    affiliation: null
 creditsRaw: Ziyao Jiang
 media:
   - type: image

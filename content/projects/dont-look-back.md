@@ -16,9 +16,11 @@ credits:
   - personId: madhu-priya
     name: Madhu Priya
     role: null
+    affiliation: null
   - personId: ethan-zhang
     name: Ethan Zhang
     role: null
+    affiliation: null
 creditsRaw: Madhu Priya, Ethan Zhang
 media:
   - type: image

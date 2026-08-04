@@ -15,6 +15,7 @@ credits:
   - personId: atharva-jadhav
     name: Atharva Jadhav
     role: null
+    affiliation: null
 creditsRaw: Atharva Jadhav
 media:
   - type: image

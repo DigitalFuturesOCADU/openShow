@@ -16,12 +16,15 @@ credits:
   - personId: salisa-jatuweerapong
     name: Salisa Jatuweerapong
     role: null
+    affiliation: null
   - personId: brian-nguyen
     name: Brian Nguyen
     role: null
+    affiliation: null
   - personId: madelaine-fischer-bernhut
     name: Madelaine Fischer-Bernhut
     role: null
+    affiliation: null
 creditsRaw: Salisa Jatuweerapong, Brian Nguyen, Madelaine Fischer-Bernhut
 media:
   - type: image

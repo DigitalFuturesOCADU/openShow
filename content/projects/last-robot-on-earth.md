@@ -15,24 +15,31 @@ credits:
   - personId: sabina-shin
     name: Sabina Shin
     role: null
+    affiliation: null
   - personId: kartik-saravana-arvind
     name: Kartik Saravana Arvind
     role: null
+    affiliation: null
   - personId: thomas-liu
     name: Thomas Liu
     role: null
+    affiliation: null
   - personId: liam-gonzales
     name: Liam Gonzales
     role: null
+    affiliation: null
   - personId: raquel-lopes
     name: Raquel Lopes
     role: null
+    affiliation: null
   - personId: elizabeth-legierski
     name: Elizabeth Legierski
     role: null
+    affiliation: null
   - personId: katharine-petkovski
     name: Katharine Petkovski
     role: null
+    affiliation: null
 creditsRaw: >-
   Sabina Shin, Kartik Saravana Arvind, Thomas Liu, Liam Gonzales, Raquel Lopes, Elizabeth Legierski,
   Katharine Petkovski

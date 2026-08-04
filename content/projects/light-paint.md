@@ -15,6 +15,7 @@ credits:
   - personId: assal-toudehfallah
     name: Assal Toudehfallah
     role: null
+    affiliation: null
 creditsRaw: Assal Toudehfallah
 media:
   - type: image

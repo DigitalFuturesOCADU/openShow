@@ -14,6 +14,7 @@ credits:
   - personId: thoreau-bakker
     name: Thoreau Bakker
     role: null
+    affiliation: null
 creditsRaw: Thoreau Bakker
 media:
   - type: image

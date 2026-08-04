@@ -16,9 +16,11 @@ credits:
   - personId: abha-patil
     name: Abha Patil
     role: null
+    affiliation: null
   - personId: jessica-patel
     name: Jessica Patel
     role: null
+    affiliation: null
 creditsRaw: Abha Patil, Jessica Patel
 media:
   - type: image

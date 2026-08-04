@@ -14,6 +14,7 @@ credits:
   - personId: simon-rabyniuk
     name: Simon Rabyniuk
     role: null
+    affiliation: null
 creditsRaw: Simon Rabyniuk
 media:
   - type: image

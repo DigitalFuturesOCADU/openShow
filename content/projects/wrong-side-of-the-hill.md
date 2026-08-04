@@ -15,9 +15,11 @@ credits:
   - personId: mika-maclear-wall
     name: Mika Maclear-Wall
     role: null
+    affiliation: null
   - personId: jacob-sosulli
     name: Jacob Sosulli
     role: null
+    affiliation: null
 creditsRaw: Mika Maclear-Wall, Jacob Sosulli
 media:
   - type: image

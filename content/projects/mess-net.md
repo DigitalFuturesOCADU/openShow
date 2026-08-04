@@ -20,12 +20,15 @@ credits:
   - personId: tyson-moll
     name: Tyson Moll
     role: null
+    affiliation: null
   - personId: nicholas-alexander
     name: Nicholas Alexander
     role: null
+    affiliation: null
   - personId: joshua-mckenna
     name: Joshua McKenna
     role: null
+    affiliation: null
 creditsRaw: Tyson Moll, Nicholas Alexander, Joshua McKenna
 media:
   - type: image

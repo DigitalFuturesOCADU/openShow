@@ -16,15 +16,19 @@ credits:
   - personId: orus-mateo-castano-suarez
     name: Orus Mateo Castano Suarez
     role: null
+    affiliation: null
   - personId: juan-sulca
     name: Juan Sulca
     role: null
+    affiliation: null
   - personId: aileen-d
     name: Aileen D
     role: null
+    affiliation: null
   - personId: yu-shien-yang
     name: Yu-Shien Yang
     role: null
+    affiliation: null
 creditsRaw: Orus Mateo Castano Suarez, Juan Sulca, Aileen D, Yu-Shien Yang
 media:
   - type: image

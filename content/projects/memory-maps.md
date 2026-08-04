@@ -17,6 +17,7 @@ credits:
   - personId: hamid-malek
     name: Hamid Malek
     role: null
+    affiliation: null
 creditsRaw: Hamid Malek
 media: []
 layout: default

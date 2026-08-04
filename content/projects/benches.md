@@ -17,6 +17,7 @@ credits:
   - personId: olivia-prior
     name: Olivia Prior
     role: null
+    affiliation: null
 creditsRaw: Olivia Prior
 media:
   - type: image

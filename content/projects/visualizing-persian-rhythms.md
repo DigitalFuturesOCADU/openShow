@@ -15,6 +15,7 @@ credits:
   - personId: mehdi-farahani
     name: Mehdi Farahani
     role: null
+    affiliation: null
 creditsRaw: Mehdi Farahani
 media:
   - type: image

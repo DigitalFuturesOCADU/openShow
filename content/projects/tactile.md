@@ -18,6 +18,7 @@ credits:
   - personId: aranya-khurana
     name: Aranya Khurana
     role: null
+    affiliation: null
 creditsRaw: Aranya Khurana
 media:
   - type: image

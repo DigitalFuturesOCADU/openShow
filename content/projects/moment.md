@@ -15,6 +15,7 @@ credits:
   - personId: anran-zhou
     name: Anran Zhou
     role: null
+    affiliation: null
 creditsRaw: Anran Zhou
 media:
   - type: image

@@ -18,15 +18,19 @@ credits:
   - personId: victoria-gottardi
     name: Victoria Gottardi
     role: null
+    affiliation: null
   - personId: yueming-gao
     name: Yueming Gao
     role: null
+    affiliation: null
   - personId: siyu-sun
     name: Siyu Sun
     role: null
+    affiliation: null
   - personId: maryam
     name: Maryam
     role: null
+    affiliation: null
 creditsRaw: Victoria Gottardi, Yueming Gao, Siyu Sun, Maryam
 media:
   - type: image

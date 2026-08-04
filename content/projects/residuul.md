@@ -16,6 +16,7 @@ credits:
   - personId: thomas-graham
     name: Thomas Graham
     role: null
+    affiliation: null
 creditsRaw: Thomas Graham
 media:
   - type: image

@@ -14,9 +14,11 @@ credits:
   - personId: weiqi-wu
     name: Weiqi Wu
     role: null
+    affiliation: null
   - personId: qinxinrui-zhu
     name: Qinxinrui Zhu
     role: null
+    affiliation: null
 creditsRaw: Weiqi Wu, Qinxinrui Zhu
 media:
   - type: image

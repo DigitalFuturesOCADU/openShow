@@ -14,6 +14,7 @@ credits:
   - personId: nimah-shoaib
     name: Nimah Shoaib
     role: null
+    affiliation: null
 creditsRaw: Nimah Shoaib
 media:
   - type: image

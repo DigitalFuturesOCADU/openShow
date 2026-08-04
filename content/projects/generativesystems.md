@@ -16,12 +16,15 @@ credits:
   - personId: carisa-antariksa
     name: Carisa Antariksa
     role: null
+    affiliation: null
   - personId: joshua-mckenna
     name: Joshua McKenna
     role: null
+    affiliation: null
   - personId: ladan-siad
     name: Ladan Siad
     role: null
+    affiliation: null
 creditsRaw: Carisa Antariksa, Joshua McKenna, Ladan Siad
 media:
   - type: image

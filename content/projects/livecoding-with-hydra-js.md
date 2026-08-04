@@ -18,6 +18,7 @@ credits:
   - personId: saad-aslam-ali
     name: Saad Aslam Ali
     role: null
+    affiliation: null
 creditsRaw: Saad Aslam Ali
 media:
   - type: image

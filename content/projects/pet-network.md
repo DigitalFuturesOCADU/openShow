@@ -17,12 +17,15 @@ credits:
   - personId: olivia-pasian
     name: Olivia Pasian
     role: null
+    affiliation: null
   - personId: jc-zhang
     name: JC Zhang
     role: null
+    affiliation: null
   - personId: harry-zhao
     name: Harry Zhao
     role: null
+    affiliation: null
 creditsRaw: Olivia Pasian, JC Zhang, Harry Zhao
 media:
   - type: image

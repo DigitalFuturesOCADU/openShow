@@ -15,6 +15,7 @@ credits:
   - personId: nick-puckett
     name: Nick Puckett
     role: null
+    affiliation: null
 creditsRaw: Nick Puckett
 media:
   - type: image

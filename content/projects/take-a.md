@@ -15,15 +15,19 @@ credits:
   - personId: kunal-devi
     name: Kunal Devi
     role: null
+    affiliation: null
   - personId: nikhil-thomas
     name: Nikhil Thomas
     role: null
+    affiliation: null
   - personId: abha-patil
     name: Abha Patil
     role: null
+    affiliation: null
   - personId: madhu-priya
     name: Madhu Priya
     role: null
+    affiliation: null
 creditsRaw: Kunal Devi, Nikhil Thomas, Abha Patil, Madhu Priya
 media:
   - type: image

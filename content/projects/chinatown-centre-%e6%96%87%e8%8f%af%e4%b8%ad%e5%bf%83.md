@@ -15,6 +15,7 @@ credits:
   - personId: sebastian-gorfinkel
     name: Sebastian Gorfinkel
     role: null
+    affiliation: null
 creditsRaw: Sebastian Gorfinkel
 media:
   - type: image

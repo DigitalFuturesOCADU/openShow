@@ -15,12 +15,15 @@ credits:
   - personId: kayli-chow
     name: Kayli Chow
     role: null
+    affiliation: null
   - personId: shane-colby
     name: Shane Colby
     role: null
+    affiliation: null
   - personId: jd-ramirez
     name: JD Ramirez
     role: null
+    affiliation: null
 creditsRaw: Kayli Chow, Shane Colby, JD Ramirez
 media:
   - type: image

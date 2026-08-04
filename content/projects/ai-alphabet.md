@@ -15,6 +15,7 @@ credits:
   - personId: christina-chen
     name: Christina Chen
     role: null
+    affiliation: null
 creditsRaw: Christina Chen
 media:
   - type: image

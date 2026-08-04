@@ -14,12 +14,15 @@ credits:
   - personId: charles-pollack
     name: Charles Pollack
     role: null
+    affiliation: null
   - personId: daniela-ortiz-correa
     name: Daniela Ortiz Correa
     role: null
+    affiliation: null
   - personId: minseo-park
     name: Minseo Park
     role: null
+    affiliation: null
 creditsRaw: Charles Pollack, Daniela Ortiz Correa, Minseo Park
 media:
   - type: image

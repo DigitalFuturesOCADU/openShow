@@ -16,12 +16,15 @@ credits:
   - personId: kahani-ploessl
     name: Kahani Ploessl
     role: null
+    affiliation: null
   - personId: josh-igwe
     name: Josh Igwe
     role: null
+    affiliation: null
   - personId: aljumaine-gayle
     name: Aljumaine Gayle
     role: null
+    affiliation: null
 creditsRaw: Kahani Ploessl, Josh Igwe, Aljumaine Gayle
 media:
   - type: image

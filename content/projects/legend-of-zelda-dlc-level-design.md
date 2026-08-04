@@ -15,6 +15,7 @@ credits:
   - personId: salisa-jatuweerapong
     name: Salisa Jatuweerapong
     role: null
+    affiliation: null
 creditsRaw: Salisa Jatuweerapong
 media:
   - type: image

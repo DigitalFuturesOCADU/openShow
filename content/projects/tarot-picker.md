@@ -19,6 +19,7 @@ credits:
   - personId: judhell-dhy-ramirez
     name: Judhell Dhy Ramirez
     role: null
+    affiliation: null
 creditsRaw: Judhell Dhy Ramirez
 media:
   - type: image

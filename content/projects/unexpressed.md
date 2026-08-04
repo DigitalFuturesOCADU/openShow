@@ -18,6 +18,7 @@ credits:
   - personId: jignesh-gharat
     name: Jignesh Gharat
     role: null
+    affiliation: null
 creditsRaw: Jignesh Gharat
 media:
   - type: image

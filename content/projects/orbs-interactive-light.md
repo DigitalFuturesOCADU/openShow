@@ -16,6 +16,7 @@ credits:
   - personId: niloofar-sanandaji
     name: Niloofar Sanandaji
     role: null
+    affiliation: null
 creditsRaw: Niloofar Sanandaji
 media:
   - type: image

@@ -15,6 +15,7 @@ credits:
   - personId: manisha-laroia
     name: Manisha Laroia
     role: null
+    affiliation: null
 creditsRaw: Manisha Laroia
 media:
   - type: image

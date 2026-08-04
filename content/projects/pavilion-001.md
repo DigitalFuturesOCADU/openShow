@@ -19,6 +19,7 @@ credits:
   - personId: catherine-xu
     name: Catherine Xu
     role: null
+    affiliation: null
 creditsRaw: Catherine Xu
 media:
   - type: image

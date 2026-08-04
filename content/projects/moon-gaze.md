@@ -17,9 +17,11 @@ credits:
   - personId: finlay-braithwaite
     name: Finlay Braithwaite
     role: null
+    affiliation: null
   - personId: yiyi-shao
     name: Yiyi Shao
     role: null
+    affiliation: null
 creditsRaw: Finlay Braithwaite and Yiyi Shao
 media:
   - type: image

@@ -19,21 +19,27 @@ credits:
   - personId: yannan-ma
     name: Yannan Ma
     role: null
+    affiliation: null
   - personId: hedy-fu
     name: Hedy Fu
     role: null
+    affiliation: null
   - personId: roann-cordova
     name: Roann Cordova
     role: null
+    affiliation: null
   - personId: yilia-li
     name: Yilia Li
     role: null
+    affiliation: null
   - personId: mark-lin
     name: Mark Lin
     role: null
+    affiliation: null
   - personId: kan-huang
     name: Kan Huang
     role: null
+    affiliation: null
 creditsRaw: Yannan Ma, Hedy Fu, Roann Cordova, Yilia Li, Mark Lin, Kan Huang
 media:
   - type: image

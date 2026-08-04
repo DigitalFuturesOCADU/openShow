@@ -18,6 +18,7 @@ credits:
   - personId: yixuan-xiao
     name: Yixuan Xiao
     role: null
+    affiliation: null
 creditsRaw: Yixuan Xiao
 media:
   - type: image

@@ -16,6 +16,7 @@ credits:
   - personId: patricia-mwenda
     name: Patricia Mwenda
     role: null
+    affiliation: null
 creditsRaw: Patricia Mwenda
 media:
   - type: image

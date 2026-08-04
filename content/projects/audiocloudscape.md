@@ -16,6 +16,7 @@ credits:
   - personId: unnikrishnan-kalidas
     name: Unnikrishnan Kalidas
     role: null
+    affiliation: null
 creditsRaw: Unnikrishnan Kalidas
 media:
   - type: image

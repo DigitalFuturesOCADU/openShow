@@ -15,6 +15,7 @@ credits:
   - personId: vanessa-namseang
     name: Vanessa Namseang
     role: null
+    affiliation: null
 creditsRaw: Vanessa Namseang
 media:
   - type: image

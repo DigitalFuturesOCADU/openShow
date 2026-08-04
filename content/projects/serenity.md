@@ -14,6 +14,7 @@ credits:
   - personId: rhepa-kamal
     name: Rhepa Kamal
     role: null
+    affiliation: null
 creditsRaw: Rhepa Kamal
 media:
   - type: image

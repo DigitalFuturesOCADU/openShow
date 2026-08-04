@@ -17,6 +17,7 @@ credits:
   - personId: harry-zhao
     name: Harry Zhao
     role: null
+    affiliation: null
 creditsRaw: Harry Zhao
 media:
   - type: image

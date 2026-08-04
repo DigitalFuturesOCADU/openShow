@@ -70,6 +70,8 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 44 participants.
 
+† 2 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
+
 #### Undergraduate (24)
 
 - Veda Adnani
@@ -127,17 +129,19 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 #### Alumni (2)
 
-- Kartikay Chadha
-- Dr. Martha Laldy
+- Kartikay Chadha †
+- Dr. Martha Laldy †
 
 #### Faculty (2)
 
-- Kartikay Chadha
-- Dr. Martha Laldy
+- Kartikay Chadha †
+- Dr. Martha Laldy †
 
 ### Open Show 2020
 
 73 participants.
+
+† 17 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
 #### Undergraduate (39)
 
@@ -146,10 +150,10 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Alfonso Benitez
 - Sarah Boo
 - Ryan Boyd
-- Sanmeet Chahil
+- Sanmeet Chahil †
 - Erika Davis
 - Mustafa Abdel Fattah
-- Vivan Fu
+- Vivan Fu †
 - Thomas Graham
 - Shannen Guntoro
 - Mika Hirata
@@ -162,14 +166,14 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Natalie Le Huenen
 - Thomas Liu
 - Ardy Llantino
-- Pandy Ma
+- Pandy Ma †
 - Marquessa Mackenzie
-- Sydney Pallister
+- Sydney Pallister †
 - Sarah Parent
 - Francisco Samayoa
 - Tania Samokhvalova
 - Johan Seaton
-- William Selviz
+- William Selviz †
 - Max Shapovalov
 - Nimah Shoaib
 - Quinn Shoreman
@@ -184,20 +188,20 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 #### UG Thesis (19)
 
 - Jerez Bain
-- Sanmeet Chahil
+- Sanmeet Chahil †
 - Mustafa Abdel Fattah
-- Vivan Fu
+- Vivan Fu †
 - Thomas Graham
 - Mika Hirata
 - Enna Kim
 - Natalie Le Huenen
 - Ardy Llantino
-- Pandy Ma
-- Sydney Pallister
+- Pandy Ma †
+- Sydney Pallister †
 - Sarah Parent
 - Tania Samokhvalova
 - Johan Seaton
-- William Selviz
+- William Selviz †
 - Quinn Shoreman
 - Ziyi Wang
 - Vivian Wong
@@ -209,27 +213,27 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Clinton Akomea-Agyin
 - Krishnokoli Roy Chakraborty
 - Neo Nuo Chen
-- Izzie Colpitts-Campbell
+- Izzie Colpitts-Campbell †
 - Simran Duggal
 - Sananda Dutta
-- Jennie Robinson Faber
-- Jie Guan
-- Kate Hartman
+- Jennie Robinson Faber †
+- Jie Guan †
+- Kate Hartman †
 - Jamie
 - Krishnokoli
-- Manisha Laroia
+- Manisha Laroia †
 - Lilian Leung
-- Jun Li
-- Chris Luginbuhl
+- Jun Li †
+- Chris Luginbuhl †
 - Greg Martin
-- Olivia Prior
+- Olivia Prior †
 - Achal Shah
-- Yiyi Shao
+- Yiyi Shao †
 - Simran
 - Mairead Stewart
-- Adam Tindale
-- Emma Westecott
-- Shuai Yuan
+- Adam Tindale †
+- Emma Westecott †
+- Shuai Yuan †
 
 #### Alumni (2)
 
@@ -239,26 +243,26 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 #### Faculty (21)
 
 - Dave Colangelo
-- Izzie Colpitts-Campbell
+- Izzie Colpitts-Campbell †
 - Patricio Dávila
-- Jennie Robinson Faber
-- Jie Guan
-- Kate Hartman
+- Jennie Robinson Faber †
+- Jie Guan †
+- Kate Hartman †
 - Haru Ji
-- Manisha Laroia
+- Manisha Laroia †
 - Lilian Leung
-- Jun Li
-- Chris Luginbuhl
+- Jun Li †
+- Chris Luginbuhl †
 - Immony Mèn
-- Olivia Prior
+- Olivia Prior †
 - Nick Puckett
 - Simon Rabyniuk
 - Barbara Rauch
-- Yiyi Shao
-- Adam Tindale
+- Yiyi Shao †
+- Adam Tindale †
 - Graham Wakefield
-- Emma Westecott
-- Shuai Yuan
+- Emma Westecott †
+- Shuai Yuan †
 
 ### Open Show 2021
 
@@ -305,6 +309,8 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 59 participants.
 
+† 7 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
+
 #### Undergraduate (27)
 
 - Nicholas Addeo
@@ -337,55 +343,55 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 #### Graduate (14)
 
-- Santo Aveiro
+- Santo Aveiro †
 - Tyler Beatty
-- Izzie Colpitts-Campbell
-- Kate Hartman
-- Ellie Huang
+- Izzie Colpitts-Campbell †
+- Kate Hartman †
+- Ellie Huang †
 - Prayag Ichangimath
 - Unnikrishnan Kalidas
 - Bernice Lai
 - Mufaro Mukoki
-- Cindy Poremba
+- Cindy Poremba †
 - Mona Safari
 - Gavin Tao
-- Emma Westecott
+- Emma Westecott †
 - Shuting Zhou
 
 #### Alumni (16)
 
 - Carisa Putri Antariksa
 - Amreen Ashraf
-- Santo Aveiro
+- Santo Aveiro †
 - Thoreau Bakker
 - CAM Collective _(collective)_
-- Izzie Colpitts-Campbell
+- Izzie Colpitts-Campbell †
 - Jacob Cram
-- Kate Hartman
-- Ellie Huang
-- Max Lander
+- Kate Hartman †
+- Ellie Huang †
+- Max Lander †
 - Patricia Mwenda
 - Patricia "Trish" Kanana Mwenda
-- Cindy Poremba
+- Cindy Poremba †
 - Candide Uyanze
-- Emma Westecott
+- Emma Westecott †
 - Maria Denise Yala
 
 #### Faculty (13)
 
 - collective project: Angela Atkinson _(collective)_
-- Santo Aveiro
-- Izzie Colpitts-Campbell
+- Santo Aveiro †
+- Izzie Colpitts-Campbell †
 - Michelle Gay
-- Kate Hartman
-- Ellie Huang
+- Kate Hartman †
+- Ellie Huang †
 - Data Materialization Studio Lab _(collective)_
-- Max Lander
+- Max Lander †
 - Social Body Lab in collaboration with Tapestry Opera _(collective)_
-- Cindy Poremba
+- Cindy Poremba †
 - Barbara Rauch
 - Casper Sutton-Fosman
-- Emma Westecott
+- Emma Westecott †
 
 #### Unspecified (2)
 
@@ -395,6 +401,8 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 ### Open Show 2023
 
 54 participants.
+
+† 4 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
 #### Undergraduate (11)
 
@@ -413,10 +421,10 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 #### Graduate (39)
 
 - Rim Armouch
-- Tyler Beatty
+- Tyler Beatty †
 - Aishwarya Bhattbhatt
 - Nastaran Bizmark
-- Ryan Boyd
+- Ryan Boyd †
 - Orus Mateo Castaño-Suárez
 - Lanlan Chen
 - Vitor Fiacadori Costa
@@ -436,14 +444,14 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Ecem Ozturk
 - Jessica Patel
 - Abha Patil
-- Kahani Ploessl
+- Kahani Ploessl †
 - Madhu Priya
 - Jiayun Qiu
 - Samarth Reddy
 - Juan Sulca
 - Siyu Sun
 - Nikhil Thomas
-- Emma Westecott
+- Emma Westecott †
 - Yu-Shien Yang
 - Yanjia Yi
 - Ethan Zhang
@@ -455,19 +463,19 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 #### Alumni (7)
 
 - Leanna Barwick
-- Tyler Beatty
-- Ryan Boyd
+- Tyler Beatty †
+- Ryan Boyd †
 - Mehdi Farahani
 - Nooshin Mohtashami
-- Kahani Ploessl
-- Emma Westecott
+- Kahani Ploessl †
+- Emma Westecott †
 
 #### Faculty (4)
 
-- Tyler Beatty
-- Ryan Boyd
-- Kahani Ploessl
-- Emma Westecott
+- Tyler Beatty †
+- Ryan Boyd †
+- Kahani Ploessl †
+- Emma Westecott †
 
 #### Unspecified (1)
 
@@ -548,6 +556,8 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 81 participants.
 
+† 6 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
+
 #### Undergraduate (37)
 
 - Saad Aslam Ali
@@ -620,23 +630,23 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 #### Alumni (8)
 
 - Leanna Barwick
-- Kate Hartman
-- Aranya Khurana
+- Kate Hartman †
+- Aranya Khurana †
 - Nooshin Mohtashami
-- Abha Patil
-- Nick Puckett
-- Juan Sulca
-- Adam Tindale
+- Abha Patil †
+- Nick Puckett †
+- Juan Sulca †
+- Adam Tindale †
 
 #### Faculty (9)
 
-- Kate Hartman
-- Aranya Khurana
-- Abha Patil
-- Nick Puckett
+- Kate Hartman †
+- Aranya Khurana †
+- Abha Patil †
+- Nick Puckett †
 - Suzanne Stein
-- Juan Sulca
-- Adam Tindale
+- Juan Sulca †
+- Adam Tindale †
 - Emma Westecott
 - JC Zhang
 

@@ -12,6 +12,7 @@ credits:
   - personId: samaa-ahmed
     name: Samaa Ahmed
     role: null
+    affiliation: null
 creditsRaw: Samaa Ahmed
 media:
   - type: image

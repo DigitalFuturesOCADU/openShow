@@ -14,24 +14,31 @@ credits:
   - personId: shannon-callaghan
     name: Shannon Callaghan
     role: null
+    affiliation: null
   - personId: salisa-jatuweerapong
     name: Salisa Jatuweerapong
     role: null
+    affiliation: null
   - personId: mirabelle-jien
     name: Mirabelle Jien
     role: null
+    affiliation: null
   - personId: jackie-liu
     name: Jackie Liu
     role: null
+    affiliation: null
   - personId: ling-xiao-lu
     name: Ling Xiao Lu
     role: null
+    affiliation: null
   - personId: cassie-mann
     name: Cassie Mann
     role: null
+    affiliation: null
   - personId: chingkwan-wai
     name: Chingkwan Wai
     role: TR
+    affiliation: null
 creditsRaw: >-
   Shannon Callaghan, Salisa Jatuweerapong, Mirabelle Jien, Jackie Liu, Ling Xiao Lu, Cassie Mann,
   Chingkwan Wai (TR)

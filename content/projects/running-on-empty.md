@@ -15,6 +15,7 @@ credits:
   - personId: madhu-priya
     name: Madhu Priya
     role: null
+    affiliation: null
 creditsRaw: Madhu Priya
 media:
   - type: image

@@ -15,6 +15,7 @@ credits:
   - personId: tor-severino
     name: Tor Severino
     role: null
+    affiliation: null
 creditsRaw: Tor Severino
 media:
   - type: image

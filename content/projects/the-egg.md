@@ -17,6 +17,7 @@ credits:
   - personId: niloofar-sanandajizadeh
     name: Niloofar Sanandajizadeh
     role: null
+    affiliation: null
 creditsRaw: Niloofar Sanandajizadeh
 media:
   - type: image

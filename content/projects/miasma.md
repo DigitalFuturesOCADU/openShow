@@ -16,9 +16,11 @@ credits:
   - personId: nicole-vella
     name: Nicole Vella
     role: null
+    affiliation: null
   - personId: marquessa-mackenzie
     name: Marquessa Mackenzie
     role: null
+    affiliation: null
 creditsRaw: Nicole Vella, Marquessa Mackenzie
 media:
   - type: image

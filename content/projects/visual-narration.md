@@ -18,6 +18,7 @@ credits:
   - personId: achal-shah
     name: Achal Shah
     role: null
+    affiliation: null
 creditsRaw: Achal Shah
 media:
   - type: image

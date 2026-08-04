@@ -16,6 +16,7 @@ credits:
   - personId: rina-chen
     name: Rina Chen
     role: null
+    affiliation: null
 creditsRaw: Rina Chen
 media:
   - type: image

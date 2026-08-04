@@ -14,6 +14,7 @@ credits:
   - personId: donna-shahini
     name: Donna Shahini
     role: null
+    affiliation: null
 creditsRaw: Donna Shahini
 media:
   - type: image

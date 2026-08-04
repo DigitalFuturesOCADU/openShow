@@ -14,6 +14,7 @@ credits:
   - personId: lee-seung-ho
     name: Lee Seung Ho
     role: null
+    affiliation: null
 creditsRaw: Lee Seung Ho
 media:
   - type: image

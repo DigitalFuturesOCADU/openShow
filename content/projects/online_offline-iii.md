@@ -16,6 +16,7 @@ credits:
   - personId: enna-kim
     name: Enna Kim
     role: null
+    affiliation: null
 creditsRaw: Enna Kim
 media:
   - type: image

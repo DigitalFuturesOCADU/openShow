@@ -15,6 +15,7 @@ credits:
   - personId: rim-armouch
     name: Rim Armouch
     role: null
+    affiliation: null
 creditsRaw: Rim Armouch
 media:
   - type: image

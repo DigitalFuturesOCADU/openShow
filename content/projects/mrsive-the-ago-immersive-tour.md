@@ -18,6 +18,7 @@ credits:
   - personId: jad-rabbaa
     name: Jad Rabbaa
     role: null
+    affiliation: null
 creditsRaw: Jad Rabbaa
 media:
   - type: image

@@ -17,12 +17,15 @@ credits:
   - personId: amreen-ashraf
     name: Amreen Ashraf
     role: null
+    affiliation: null
   - personId: lauren-connell-whitney
     name: Lauren Connell-Whitney
     role: null
+    affiliation: null
   - personId: olivia-prior
     name: Olivia Prior
     role: null
+    affiliation: null
 creditsRaw: Amreen Ashraf, Lauren Connell-Whitney, and Olivia Prior
 media:
   - type: image

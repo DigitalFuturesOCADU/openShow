@@ -16,6 +16,7 @@ credits:
   - personId: manuel-quiambao
     name: Manuel Quiambao
     role: null
+    affiliation: null
 creditsRaw: Manuel Quiambao
 media:
   - type: image
