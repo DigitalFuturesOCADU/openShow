@@ -76,37 +76,12 @@
         "Veda Adnani"
       ],
       "projects": [
-        "manufactured-realities",
-        "nurse-buddy",
-        "sound-synthesis"
+        "manufactured-realities"
       ],
       "shows": [
-        "2019-december",
         "2019-february"
       ],
       "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "nurse-buddy",
-          "title": "Nurse Buddy",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
-        {
-          "show": "2019-february",
-          "year": 2019,
-          "project": "sound-synthesis",
-          "title": "Sound Synthesis",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2019-february",
           "year": 2019,
@@ -120,10 +95,9 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 3,
+      "projectCount": 1,
       "affiliations": [
-        "graduate",
-        "undergraduate"
+        "graduate"
       ]
     },
     {
@@ -157,66 +131,6 @@
       "projectCount": 1,
       "affiliations": [
         "undergraduate"
-      ]
-    },
-    {
-      "id": "samaa-ahmed",
-      "name": "Samaa Ahmed",
-      "sortName": "Ahmed, Samaa",
-      "kind": "person",
-      "variants": [
-        "Samaa Ahmed"
-      ],
-      "projects": [
-        "digital-debris"
-      ],
-      "shows": [],
-      "appearances": [
-        {
-          "show": null,
-          "year": null,
-          "project": "digital-debris",
-          "title": "Digital Debris",
-          "affiliation": [],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": []
-    },
-    {
-      "id": "arsalan-akhtar",
-      "name": "Arsalan Akhtar",
-      "sortName": "Akhtar, Arsalan",
-      "kind": "person",
-      "variants": [
-        "Arsalan Akhtar"
-      ],
-      "projects": [
-        "interactive-canvas"
-      ],
-      "shows": [
-        "2019-december"
-      ],
-      "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "interactive-canvas",
-          "title": "Interactive Canvas",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
       ]
     },
     {
@@ -397,39 +311,6 @@
           "year": 2025,
           "project": "alley-cat-2025",
           "title": "Alley Cat (2025)",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
-      ]
-    },
-    {
-      "id": "julia-andrejczuck",
-      "name": "Julia Andrejczuck",
-      "sortName": "Andrejczuck, Julia",
-      "kind": "person",
-      "variants": [
-        "Julia Andrejczuck"
-      ],
-      "projects": [
-        "brathe-beat-think"
-      ],
-      "shows": [
-        "2019-december"
-      ],
-      "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "brathe-beat-think",
-          "title": "Brathe . Beat. Think",
           "affiliation": [
             "undergraduate"
           ],
@@ -860,39 +741,6 @@
       ]
     },
     {
-      "id": "priya-bandodkar",
-      "name": "Priya Bandodkar",
-      "sortName": "Bandodkar, Priya",
-      "kind": "person",
-      "variants": [
-        "Priya Bandodkar"
-      ],
-      "projects": [
-        "ok-to-touch"
-      ],
-      "shows": [
-        "2019-december"
-      ],
-      "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "ok-to-touch",
-          "title": "OK to Touch!?",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
       "id": "leanna-barwick",
       "name": "Leanna Barwick",
       "sortName": "Barwick, Leanna",
@@ -947,24 +795,12 @@
         "Rittika Basu"
       ],
       "projects": [
-        "birds-of-a-feather",
         "eternal-forms"
       ],
       "shows": [
         "2019-december"
       ],
       "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "birds-of-a-feather",
-          "title": "Birds of a Feather",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2019-december",
           "year": 2019,
@@ -978,7 +814,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 2,
+      "projectCount": 1,
       "affiliations": [
         "graduate"
       ]
@@ -1593,24 +1429,12 @@
       ],
       "projects": [
         "ctrl_space",
-        "meditative-digital-detox-zone",
-        "the-glow"
+        "meditative-digital-detox-zone"
       ],
       "shows": [
         "2023"
       ],
       "appearances": [
-        {
-          "show": "2023",
-          "year": 2023,
-          "project": "the-glow",
-          "title": "The Glow",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2023",
           "year": 2023,
@@ -1635,7 +1459,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 3,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
       ]
@@ -1694,25 +1518,12 @@
         "Kartikay Chadha"
       ],
       "projects": [
-        "decoding-origins-creating-the-visual-language-of-marks",
-        "the-decoding-origins-web-portal-creating-a-visual-database-with-archival-sources-from-the-era-of-african-slavery"
+        "decoding-origins-creating-the-visual-language-of-marks"
       ],
       "shows": [
-        "2019-december",
         "2019-february"
       ],
       "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "the-decoding-origins-web-portal-creating-a-visual-database-with-archival-sources-from-the-era-of-african-slavery",
-          "title": "The Decoding Origins Web Portal: Creating a Visual Database with Archival Sources from the Era of African Slavery",
-          "affiliation": [
-            "faculty"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2019-february",
           "year": 2019,
@@ -1727,7 +1538,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 2,
+      "projectCount": 1,
       "affiliations": [
         "alumni",
         "faculty"
@@ -2489,39 +2300,6 @@
       ]
     },
     {
-      "id": "vitor-fiacadori-costa",
-      "name": "Vitor Fiacadori Costa",
-      "sortName": "Costa, Vitor Fiacadori",
-      "kind": "person",
-      "variants": [
-        "Vitor Fiacadori Costa"
-      ],
-      "projects": [
-        "the-glow"
-      ],
-      "shows": [
-        "2023"
-      ],
-      "appearances": [
-        {
-          "show": "2023",
-          "year": 2023,
-          "project": "the-glow",
-          "title": "The Glow",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
       "id": "jacob-cram",
       "name": "Jacob Cram",
       "sortName": "Cram, Jacob",
@@ -2530,26 +2308,12 @@
         "Jacob Cram"
       ],
       "projects": [
-        "spheres",
-        "unmask"
+        "spheres"
       ],
       "shows": [
-        "2019-february",
         "2022"
       ],
       "appearances": [
-        {
-          "show": "2019-february",
-          "year": 2019,
-          "project": "unmask",
-          "title": "Unmask",
-          "affiliation": [
-            "ug-thesis",
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2022",
           "year": 2022,
@@ -2563,11 +2327,9 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 2,
+      "projectCount": 1,
       "affiliations": [
-        "alumni",
-        "ug-thesis",
-        "undergraduate"
+        "alumni"
       ]
     },
     {
@@ -2895,24 +2657,12 @@
         "April De Zen"
       ],
       "projects": [
-        "manufactured-realities",
-        "sound-synthesis"
+        "manufactured-realities"
       ],
       "shows": [
         "2019-february"
       ],
       "appearances": [
-        {
-          "show": "2019-february",
-          "year": 2019,
-          "project": "sound-synthesis",
-          "title": "Sound Synthesis",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2019-february",
           "year": 2019,
@@ -2926,10 +2676,9 @@
         }
       ],
       "sortReviewed": true,
-      "projectCount": 2,
+      "projectCount": 1,
       "affiliations": [
-        "graduate",
-        "undergraduate"
+        "graduate"
       ]
     },
     {
@@ -3180,7 +2929,6 @@
         "Sananda Dutta"
       ],
       "projects": [
-        "birds-of-a-feather",
         "bling-choker",
         "eternal-forms"
       ],
@@ -3189,17 +2937,6 @@
         "2020"
       ],
       "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "birds-of-a-feather",
-          "title": "Birds of a Feather",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2019-december",
           "year": 2019,
@@ -3224,7 +2961,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 3,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
       ]
@@ -3304,24 +3041,12 @@
         "Omid Ettehadi"
       ],
       "projects": [
-        "manufactured-realities",
-        "sound-synthesis"
+        "manufactured-realities"
       ],
       "shows": [
         "2019-february"
       ],
       "appearances": [
-        {
-          "show": "2019-february",
-          "year": 2019,
-          "project": "sound-synthesis",
-          "title": "Sound Synthesis",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2019-february",
           "year": 2019,
@@ -3335,10 +3060,9 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 2,
+      "projectCount": 1,
       "affiliations": [
-        "graduate",
-        "undergraduate"
+        "graduate"
       ]
     },
     {
@@ -3606,39 +3330,6 @@
       ]
     },
     {
-      "id": "bill-fung",
-      "name": "Bill Fung",
-      "sortName": "Fung, Bill",
-      "kind": "person",
-      "variants": [
-        "Bill Fung"
-      ],
-      "projects": [
-        "ocean-of-feelings"
-      ],
-      "shows": [
-        "2025"
-      ],
-      "appearances": [
-        {
-          "show": "2025",
-          "year": 2025,
-          "project": "ocean-of-feelings",
-          "title": "Ocean of Feelings",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
-      ]
-    },
-    {
       "id": "doris-gao",
       "name": "Doris Gao",
       "sortName": "Gao, Doris",
@@ -3900,39 +3591,6 @@
       "projectCount": 1,
       "affiliations": [
         "graduate"
-      ]
-    },
-    {
-      "id": "hailey-gonsalvez",
-      "name": "Hailey Gonsalvez",
-      "sortName": "Gonsalvez, Hailey",
-      "kind": "person",
-      "variants": [
-        "Hailey Gonsalvez"
-      ],
-      "projects": [
-        "ocean-of-feelings"
-      ],
-      "shows": [
-        "2025"
-      ],
-      "appearances": [
-        {
-          "show": "2025",
-          "year": 2025,
-          "project": "ocean-of-feelings",
-          "title": "Ocean of Feelings",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
       ]
     },
     {
@@ -4217,7 +3875,6 @@
       ],
       "projects": [
         "between-the-cards",
-        "brathe-beat-think",
         "listen",
         "monster-identifier"
       ],
@@ -4226,17 +3883,6 @@
         "2020"
       ],
       "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "brathe-beat-think",
-          "title": "Brathe . Beat. Think",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2019-december",
           "year": 2019,
@@ -4272,7 +3918,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 4,
+      "projectCount": 3,
       "affiliations": [
         "undergraduate"
       ]
@@ -4755,39 +4401,6 @@
       "projectCount": 1,
       "affiliations": [
         "undergraduate"
-      ]
-    },
-    {
-      "id": "zubin-isaac",
-      "name": "Zubin Isaac",
-      "sortName": "Isaac, Zubin",
-      "kind": "person",
-      "variants": [
-        "Zubin Isaac"
-      ],
-      "projects": [
-        "the-glow"
-      ],
-      "shows": [
-        "2023"
-      ],
-      "appearances": [
-        {
-          "show": "2023",
-          "year": 2023,
-          "project": "the-glow",
-          "title": "The Glow",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
       ]
     },
     {
@@ -5388,39 +5001,6 @@
       ]
     },
     {
-      "id": "katrina-keefer",
-      "name": "Katrina Keefer",
-      "sortName": "Keefer, Katrina",
-      "kind": "person",
-      "variants": [
-        "Katrina Keefer"
-      ],
-      "projects": [
-        "the-decoding-origins-web-portal-creating-a-visual-database-with-archival-sources-from-the-era-of-african-slavery"
-      ],
-      "shows": [
-        "2019-december"
-      ],
-      "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "the-decoding-origins-web-portal-creating-a-visual-database-with-archival-sources-from-the-era-of-african-slavery",
-          "title": "The Decoding Origins Web Portal: Creating a Visual Database with Archival Sources from the Era of African Slavery",
-          "affiliation": [
-            "faculty"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "faculty"
-      ]
-    },
-    {
       "id": "rutooja-khamkar",
       "name": "Rutooja Khamkar",
       "sortName": "Khamkar, Rutooja",
@@ -5648,34 +5228,12 @@
         "Leia Kook-Chun"
       ],
       "projects": [
-        "brathe-beat-think",
-        "paper-plane-poetry",
-        "visualization-of-sternberg-triangular-theory-of-love"
+        "paper-plane-poetry"
       ],
       "shows": [
         "2019-december"
       ],
       "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "visualization-of-sternberg-triangular-theory-of-love",
-          "title": "Visualization of Sternberg Triangular Theory of Love",
-          "affiliation": [],
-          "affiliationExact": true,
-          "role": null
-        },
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "brathe-beat-think",
-          "title": "Brathe . Beat. Think",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2019-december",
           "year": 2019,
@@ -5689,7 +5247,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 3,
+      "projectCount": 1,
       "affiliations": [
         "undergraduate"
       ]
@@ -5893,39 +5451,6 @@
       ]
     },
     {
-      "id": "martha-ladly",
-      "name": "Martha Ladly",
-      "sortName": "Ladly, Martha",
-      "kind": "person",
-      "variants": [
-        "Martha Ladly"
-      ],
-      "projects": [
-        "the-decoding-origins-web-portal-creating-a-visual-database-with-archival-sources-from-the-era-of-african-slavery"
-      ],
-      "shows": [
-        "2019-december"
-      ],
-      "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "the-decoding-origins-web-portal-creating-a-visual-database-with-archival-sources-from-the-era-of-african-slavery",
-          "title": "The Decoding Origins Web Portal: Creating a Visual Database with Archival Sources from the Era of African Slavery",
-          "affiliation": [
-            "faculty"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "faculty"
-      ]
-    },
-    {
       "id": "bernice-lai",
       "name": "Bernice Lai",
       "sortName": "Lai, Bernice",
@@ -6037,27 +5562,14 @@
         "Manisha Laroia"
       ],
       "projects": [
-        "ok-to-touch",
         "talk-tags",
         "textile-game-controllers",
         "the-darwin-kit"
       ],
       "shows": [
-        "2019-december",
         "2020"
       ],
       "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "ok-to-touch",
-          "title": "OK to Touch!?",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2020",
           "year": 2020,
@@ -6094,7 +5606,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 4,
+      "projectCount": 3,
       "affiliations": [
         "faculty",
         "graduate"
@@ -6110,8 +5622,7 @@
       ],
       "projects": [
         "down-the-rabbit-hole",
-        "spatial-flow",
-        "the-strange-and-the-beautiful"
+        "spatial-flow"
       ],
       "shows": [
         "2019-february",
@@ -6140,19 +5651,10 @@
           ],
           "affiliationExact": true,
           "role": null
-        },
-        {
-          "show": null,
-          "year": null,
-          "project": "the-strange-and-the-beautiful",
-          "title": "The Strange and the Beautiful",
-          "affiliation": [],
-          "affiliationExact": true,
-          "role": null
         }
       ],
       "sortReviewed": true,
-      "projectCount": 3,
+      "projectCount": 2,
       "affiliations": [
         "ug-thesis",
         "undergraduate"
@@ -6259,28 +5761,15 @@
         "Lilian Leung"
       ],
       "projects": [
-        "absolutely-on-music",
         "first-chinatown-1890-1960",
         "future-through-memory-virtual-storytelling-in-torontos-chinatown",
         "receipts"
       ],
       "shows": [
-        "2019-december",
         "2020",
         "2021"
       ],
       "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "absolutely-on-music",
-          "title": "Absolutely on Music",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2020",
           "year": 2020,
@@ -6316,7 +5805,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 4,
+      "projectCount": 3,
       "affiliations": [
         "faculty",
         "graduate"
@@ -6397,7 +5886,6 @@
         "Jun Li"
       ],
       "projects": [
-        "birds-of-a-feather",
         "eternal-forms",
         "genesis"
       ],
@@ -6406,17 +5894,6 @@
         "2020"
       ],
       "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "birds-of-a-feather",
-          "title": "Birds of a Feather",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2019-december",
           "year": 2019,
@@ -6442,7 +5919,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 3,
+      "projectCount": 2,
       "affiliations": [
         "faculty",
         "graduate"
@@ -6940,39 +6417,6 @@
       ]
     },
     {
-      "id": "rodrigo-luna",
-      "name": "Rodrigo Luna",
-      "sortName": "Luna, Rodrigo",
-      "kind": "person",
-      "variants": [
-        "Rodrigo Luna"
-      ],
-      "projects": [
-        "ocean-of-feelings"
-      ],
-      "shows": [
-        "2025"
-      ],
-      "appearances": [
-        {
-          "show": "2025",
-          "year": 2025,
-          "project": "ocean-of-feelings",
-          "title": "Ocean of Feelings",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
-      ]
-    },
-    {
       "id": "arteya-lutchman",
       "name": "Arteya Lutchman",
       "sortName": "Lutchman, Arteya",
@@ -7247,12 +6691,10 @@
         "Hamid Malek"
       ],
       "projects": [
-        "instagram-filters",
-        "memory-maps"
+        "instagram-filters"
       ],
       "shows": [
-        "2023",
-        "2024"
+        "2023"
       ],
       "appearances": [
         {
@@ -7265,21 +6707,10 @@
           ],
           "affiliationExact": true,
           "role": null
-        },
-        {
-          "show": "2024",
-          "year": 2024,
-          "project": "memory-maps",
-          "title": "Memory Maps",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
         }
       ],
       "sortReviewed": false,
-      "projectCount": 2,
+      "projectCount": 1,
       "affiliations": [
         "undergraduate"
       ]
@@ -7598,39 +7029,6 @@
       ]
     },
     {
-      "id": "tiffany-mou",
-      "name": "Tiffany Mou",
-      "sortName": "Mou, Tiffany",
-      "kind": "person",
-      "variants": [
-        "Tiffany Mou"
-      ],
-      "projects": [
-        "ocean-of-feelings"
-      ],
-      "shows": [
-        "2025"
-      ],
-      "appearances": [
-        {
-          "show": "2025",
-          "year": 2025,
-          "project": "ocean-of-feelings",
-          "title": "Ocean of Feelings",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
-      ]
-    },
-    {
       "id": "mufaro-mukoki",
       "name": "Mufaro Mukoki",
       "sortName": "Mukoki, Mufaro",
@@ -7796,39 +7194,6 @@
       ]
     },
     {
-      "id": "matthew-nazarian",
-      "name": "Matthew Nazarian",
-      "sortName": "Nazarian, Matthew",
-      "kind": "person",
-      "variants": [
-        "Matthew Nazarian"
-      ],
-      "projects": [
-        "the-glow"
-      ],
-      "shows": [
-        "2023"
-      ],
-      "appearances": [
-        {
-          "show": "2023",
-          "year": 2023,
-          "project": "the-glow",
-          "title": "The Glow",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
       "id": "brian-nguyen",
       "name": "Brian Nguyen",
       "sortName": "Nguyen, Brian",
@@ -7935,39 +7300,6 @@
       "sortReviewed": false,
       "projectCount": 1,
       "affiliations": []
-    },
-    {
-      "id": "nia-nguyen",
-      "name": "Nia Nguyen",
-      "sortName": "Nguyen, Nia",
-      "kind": "person",
-      "variants": [
-        "Nia Nguyen"
-      ],
-      "projects": [
-        "ocean-of-feelings"
-      ],
-      "shows": [
-        "2025"
-      ],
-      "appearances": [
-        {
-          "show": "2025",
-          "year": 2025,
-          "project": "ocean-of-feelings",
-          "title": "Ocean of Feelings",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
-      ]
     },
     {
       "id": "irina-noor",
@@ -8455,7 +7787,6 @@
       ],
       "projects": [
         "combatting-toxicity",
-        "the-glow",
         "the-orchestra"
       ],
       "shows": [
@@ -8463,17 +7794,6 @@
         "2024"
       ],
       "appearances": [
-        {
-          "show": "2023",
-          "year": 2023,
-          "project": "the-glow",
-          "title": "The Glow",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2023",
           "year": 2023,
@@ -8498,7 +7818,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 3,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
       ]
@@ -8513,7 +7833,6 @@
       ],
       "projects": [
         "a-font-that-lets-you-pump-air-into-it",
-        "conways-game-of-life",
         "logic-fed-scene-randomizer",
         "take-a",
         "the-orchestra",
@@ -8541,17 +7860,6 @@
           "year": 2023,
           "project": "take-a",
           "title": "Take a <br/>",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
-        {
-          "show": "2024",
-          "year": 2024,
-          "project": "conways-game-of-life",
-          "title": "Conway’s Game of Life",
           "affiliation": [
             "graduate"
           ],
@@ -8594,7 +7902,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 6,
+      "projectCount": 5,
       "affiliations": [
         "alumni",
         "faculty",
@@ -8698,39 +8006,6 @@
           "year": 2019,
           "project": "eternal-forms",
           "title": "Eternal Forms",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
-      "id": "jevonne-peters",
-      "name": "Jevonne Peters",
-      "sortName": "Peters, Jevonne",
-      "kind": "person",
-      "variants": [
-        "Jevonne Peters"
-      ],
-      "projects": [
-        "birds-of-a-feather"
-      ],
-      "shows": [
-        "2019-december"
-      ],
-      "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "birds-of-a-feather",
-          "title": "Birds of a Feather",
           "affiliation": [
             "graduate"
           ],
@@ -9645,7 +8920,6 @@
         "Catherine Reyto"
       ],
       "projects": [
-        "birds-of-a-feather",
         "diver",
         "eternal-forms"
       ],
@@ -9653,17 +8927,6 @@
         "2019-december"
       ],
       "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "birds-of-a-feather",
-          "title": "Birds of a Feather",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2019-december",
           "year": 2019,
@@ -9686,7 +8949,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 3,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
       ]
@@ -10062,39 +9325,6 @@
           "year": 2019,
           "project": "invisible-kelk",
           "title": "Invisible 'Kelk'",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
-      "id": "nilam-sari",
-      "name": "Nilam Sari",
-      "sortName": "Sari, Nilam",
-      "kind": "person",
-      "variants": [
-        "Nilam Sari"
-      ],
-      "projects": [
-        "what-is-my-purpose"
-      ],
-      "shows": [
-        "2019-december"
-      ],
-      "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "what-is-my-purpose",
-          "title": "What Is My Purpose?",
           "affiliation": [
             "graduate"
           ],
@@ -10492,12 +9722,10 @@
       ],
       "projects": [
         "canadian-abstracts-2",
-        "connected-landscapes",
         "relearning-to-skate"
       ],
       "shows": [
-        "2020",
-        "2024"
+        "2020"
       ],
       "appearances": [
         {
@@ -10521,19 +9749,10 @@
           ],
           "affiliationExact": true,
           "role": null
-        },
-        {
-          "show": "2024",
-          "year": 2024,
-          "project": "connected-landscapes",
-          "title": "Connected Landscapes",
-          "affiliation": [],
-          "affiliationExact": true,
-          "role": null
         }
       ],
       "sortReviewed": false,
-      "projectCount": 3,
+      "projectCount": 2,
       "affiliations": [
         "alumni"
       ]
@@ -10805,33 +10024,6 @@
       ]
     },
     {
-      "id": "dikla-sinai",
-      "name": "Dikla Sinai",
-      "sortName": "Sinai, Dikla",
-      "kind": "person",
-      "variants": [
-        "Dikla Sinai"
-      ],
-      "projects": [
-        "observation-how-technology-can-help-reduce-gaps-between-genders"
-      ],
-      "shows": [],
-      "appearances": [
-        {
-          "show": null,
-          "year": null,
-          "project": "observation-how-technology-can-help-reduce-gaps-between-genders",
-          "title": "Observation. How technology can help reduce gaps between genders",
-          "affiliation": [],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": []
-    },
-    {
       "id": "michael-sinn",
       "name": "Michael Sinn",
       "sortName": "Sinn, Michael",
@@ -10928,39 +10120,6 @@
       "projectCount": 1,
       "affiliations": [
         "graduate"
-      ]
-    },
-    {
-      "id": "alexander-song",
-      "name": "Alexander Song",
-      "sortName": "Song, Alexander",
-      "kind": "person",
-      "variants": [
-        "Alexander Song"
-      ],
-      "projects": [
-        "ocean-of-feelings"
-      ],
-      "shows": [
-        "2025"
-      ],
-      "appearances": [
-        {
-          "show": "2025",
-          "year": 2025,
-          "project": "ocean-of-feelings",
-          "title": "Ocean of Feelings",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
       ]
     },
     {
@@ -11104,7 +10263,6 @@
         "Juan Sulca"
       ],
       "projects": [
-        "conways-game-of-life",
         "ctrl_space",
         "into-the-unknown",
         "logic-fed-scene-randomizer",
@@ -11113,7 +10271,6 @@
       ],
       "shows": [
         "2023",
-        "2024",
         "2025"
       ],
       "appearances": [
@@ -11134,17 +10291,6 @@
           "project": "into-the-unknown",
           "title": "Into the Unknown",
           "affiliation": [],
-          "affiliationExact": true,
-          "role": null
-        },
-        {
-          "show": "2024",
-          "year": 2024,
-          "project": "conways-game-of-life",
-          "title": "Conway’s Game of Life",
-          "affiliation": [
-            "graduate"
-          ],
           "affiliationExact": true,
           "role": null
         },
@@ -11185,7 +10331,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 6,
+      "projectCount": 5,
       "affiliations": [
         "alumni",
         "faculty",
@@ -12234,24 +11380,12 @@
       ],
       "projects": [
         "alt-controllers-round-2",
-        "banjo-controller",
         "jungle-straggle"
       ],
       "shows": [
         "2025"
       ],
       "appearances": [
-        {
-          "show": "2025",
-          "year": 2025,
-          "project": "banjo-controller",
-          "title": "Banjo controller",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2025",
           "year": 2025,
@@ -12276,7 +11410,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 3,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
       ]
@@ -12381,35 +11515,6 @@
       ]
     },
     {
-      "id": "maria-yala",
-      "name": "Maria Yala",
-      "sortName": "Yala, Maria",
-      "kind": "person",
-      "variants": [
-        "Maria Yala"
-      ],
-      "projects": [
-        "ar-disclosures"
-      ],
-      "shows": [
-        "2019-december"
-      ],
-      "appearances": [
-        {
-          "show": "2019-december",
-          "year": 2019,
-          "project": "ar-disclosures",
-          "title": "AR Disclosures",
-          "affiliation": [],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": []
-    },
-    {
       "id": "maria-denise-yala",
       "name": "Maria Denise Yala",
       "sortName": "Yala, Maria Denise",
@@ -12496,24 +11601,12 @@
         "Yu-Shien Yang"
       ],
       "projects": [
-        "ctrl_space",
-        "the-glow"
+        "ctrl_space"
       ],
       "shows": [
         "2023"
       ],
       "appearances": [
-        {
-          "show": "2023",
-          "year": 2023,
-          "project": "the-glow",
-          "title": "The Glow",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
         {
           "show": "2023",
           "year": 2023,
@@ -12527,7 +11620,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 2,
+      "projectCount": 1,
       "affiliations": [
         "graduate"
       ]
