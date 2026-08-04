@@ -123,13 +123,6 @@ const tokenStyle = theme
      asset is trimmed to its bounding box, so its left edge is the artwork's
      left edge and both start at the same rule. */
   .wordmark { display: block; margin-bottom: 1.5rem; max-width: 10.5rem; }
-  /* The logo is dark artwork on transparency, so it disappears against a dark
-     background. Inverting keeps one asset working in both schemes rather than
-     needing a second file that would then have to be kept in step. */
-  @media (prefers-color-scheme: dark) {
-    .wordmark :global(img) { filter: invert(1); }
-  }
-
   nav { display: flex; flex-direction: column; gap: .3rem; }
   nav a { text-decoration: none; font-size: .9375rem; }
   nav a[aria-current="page"] { font-weight: 700; }
