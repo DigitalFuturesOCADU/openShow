@@ -17,6 +17,7 @@ import TurndownService from 'turndown'
 import { readWxr, byType } from './lib/wxr.mjs'
 import { parseTerm, slugify, deriveLabel, AFFILIATION, AUTO_MERGE, REVIEW_MERGE, buildProposalYaml, loadMap } from './lib/taxonomy.mjs'
 import { splitCredits, decodeEntities, buildPeople, loadPeopleConfig, findNearDuplicates, findFuzzyDuplicates, defaultSortName, needsSortReview, nameKey as nameKeyOf } from './lib/people.mjs'
+import { readSubmissions, submittedShows } from './lib/submissions.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const SRC = join(ROOT, 'sources/wordpress-export.xml')
@@ -356,6 +357,36 @@ if (failures.length) {
 }
 console.log('  → all checks passed\n')
 
+// ------------------------------------------------------------- submissions
+//
+// Work ingested from the submission form, merged in after the gate — the gate
+// asserts the WordPress export reproduced exactly, and adding a new year must
+// not move those numbers.
+//
+// These records are regenerated from the spreadsheet by scripts/ingest.mjs, so
+// correcting the sheet and re-ingesting updates the site. Overrides below are
+// applied to them too, which is how a correction that cannot come from the form
+// survives that.
+
+const submitted = readSubmissions(ROOT)
+if (submitted.length) {
+  for (const sub of submitted) {
+    records.push({
+      p: { id: String(sub.frontmatter.id), status: sub.frontmatter.status, date: '', slug: sub.slug, title: sub.frontmatter.title, link: '' },
+      slug: sub.slug,
+      year: sub.frontmatter.year ?? null,
+      session: sub.frontmatter.session ?? null,
+      status: sub.frontmatter.status,
+      credits: (sub.frontmatter.credits ?? []).map((c) => ({ name: c.name, role: c.role ?? null, affiliation: c.affiliation ?? null })),
+      frontmatter: sub.frontmatter,
+      description: sub.body,
+      body: '',
+    })
+  }
+  const shows = [...new Set(submitted.map((s) => s.show))].sort()
+  console.log(`  Merged ${submitted.length} submitted project(s) from ${shows.join(', ')}`)
+}
+
 // ---------------------------------------------------------------- overrides
 //
 // Applied only after the gate. The gate measures fidelity to the export and
@@ -628,6 +659,7 @@ const blankShow = (id) => {
 
 // Declared shows exist whether or not any work references them yet.
 for (const id of showDecl.keys()) if (/^\d{4}(-\w+)?$/.test(id)) shows.set(id, blankShow(id))
+for (const id of submittedShows(ROOT)) if (!shows.has(id) && /^\d{4}(-\w+)?$/.test(id)) shows.set(id, blankShow(id))
 
 for (const r of records) {
   if (!r.year) continue

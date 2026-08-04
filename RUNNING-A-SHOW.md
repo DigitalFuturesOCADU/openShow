@@ -140,8 +140,14 @@ npm run dev            # look at it
 
 Everything arrives as **draft**. Nothing is public yet.
 
-**Running it twice is safe.** Work already brought in is compared and reported,
-never overwritten — so a correction you made last week survives.
+**The spreadsheet is the source.** If something is wrong in a submission, fix it
+in the spreadsheet and run this again — the records are rebuilt from what it now
+says. A submission removed from the sheet is removed here too.
+
+That means anything you type directly into `submissions/` will be overwritten.
+Corrections that cannot come from the form — merging two spellings of a name,
+assigning a medium, fixing a year — go in `config/`, which is applied afterwards
+and survives every re-ingest.
 
 ### If no images are found
 
@@ -202,6 +208,32 @@ Before uploading it is worth running:
 npm test          # checks every page has a working address
 npm run links     # checks external links, marks dead ones so they stop showing
 ```
+
+---
+
+## Starting a show over
+
+If an ingest went badly wrong, reset the show and begin again:
+
+```bash
+npm run reset -- --show 2026
+```
+
+That only reports: how many records would go, how much archived material, how
+many corrections. Nothing is deleted. To go through with it, type the show
+again:
+
+```bash
+npm run reset -- --show 2026 --confirm 2026
+```
+
+It deletes what was brought **in** — the ingested records, the archived copies of
+submitted files, the show's declaration and the corrections attached to its
+projects. `config/overrides.yaml` is backed up first.
+
+It will refuse to reset a show from the WordPress archive (2019–2025). Those
+projects are regenerated from the export every run, so deleting them achieves
+nothing, and it would throw away the dates and affiliations recovered by hand.
 
 ---
 

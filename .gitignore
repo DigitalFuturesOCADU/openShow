@@ -35,3 +35,5 @@ sources/submissions/
 inbox/*.xlsx
 inbox/~$*
 config/console.json
+submissions/*/media/
+config/overrides.yaml.bak
