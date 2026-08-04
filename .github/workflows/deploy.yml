@@ -35,6 +35,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Images live in their own repository so a colleague can clone this one in
+      # 15 MB rather than 227 MB. The build needs them, so CI takes both.
+      # If this step fails, the images repository does not exist yet or is
+      # private to this workflow — see README.
+      - name: Fetch images
+        uses: actions/checkout@v4
+        with:
+          repository: DigitalFuturesOCADU/openShow-images
+          path: content/images
+
       - uses: actions/setup-node@v4
         with:
           # Pinned rather than "latest": a silent major bump is a confusing way
