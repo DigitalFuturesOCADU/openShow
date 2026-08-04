@@ -1,0 +1,206 @@
+{
+  "$comment": "Work held back from the site, by show. Written by scripts/extract.mjs.",
+  "total": 24,
+  "byShow": {
+    "2023": 1,
+    "2024": 3,
+    "2025": 2,
+    "unassigned": 6,
+    "2019-december": 10,
+    "2019-february": 2
+  },
+  "items": [
+    {
+      "id": 1553,
+      "title": "Emolace",
+      "show": null,
+      "status": "draft",
+      "images": 2,
+      "hasDescription": true
+    },
+    {
+      "id": 2568,
+      "title": "The Glow",
+      "show": "2023",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 1572,
+      "title": "Digital Debris",
+      "show": null,
+      "status": "draft",
+      "images": 1,
+      "hasDescription": true
+    },
+    {
+      "id": 1574,
+      "title": "Observation. How technology can help reduce gaps between genders",
+      "show": null,
+      "status": "draft",
+      "images": 1,
+      "hasDescription": true
+    },
+    {
+      "id": 1576,
+      "title": "The Strange and the Beautiful",
+      "show": null,
+      "status": "draft",
+      "images": 4,
+      "hasDescription": true
+    },
+    {
+      "id": 2258,
+      "title": "The Decoding Origins Web Portal: Creating a Visual Database with Archival Sources from the Era of African Slavery",
+      "show": "2019-december",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2267,
+      "title": "What Is My Purpose?",
+      "show": "2019-december",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2268,
+      "title": "Nurse Buddy",
+      "show": "2019-december",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2272,
+      "title": "Birds of a Feather",
+      "show": "2019-december",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2276,
+      "title": "OK to Touch!?",
+      "show": "2019-december",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2293,
+      "title": "Absolutely on Music",
+      "show": "2019-december",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2298,
+      "title": "AR Disclosures",
+      "show": "2019-december",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2314,
+      "title": "Visualization of Sternberg Triangular Theory of Love",
+      "show": "2019-december",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2315,
+      "title": "Brathe . Beat. Think",
+      "show": "2019-december",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2316,
+      "title": "Interactive Canvas",
+      "show": "2019-december",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2333,
+      "title": "Synchrobots",
+      "show": null,
+      "status": "stub",
+      "images": 0,
+      "hasDescription": false
+    },
+    {
+      "id": 2347,
+      "title": "Unmask",
+      "show": "2019-february",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2365,
+      "title": "Sound Synthesis",
+      "show": "2019-february",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2595,
+      "title": "Vibrating Knee Brace",
+      "show": null,
+      "status": "stub",
+      "images": 0,
+      "hasDescription": false
+    },
+    {
+      "id": 2733,
+      "title": "Conway’s Game of Life",
+      "show": "2024",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2819,
+      "title": "Memory Maps",
+      "show": "2024",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2839,
+      "title": "Connected Landscapes",
+      "show": "2024",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    },
+    {
+      "id": 2971,
+      "title": "Banjo controller",
+      "show": "2025",
+      "status": "draft",
+      "images": 1,
+      "hasDescription": true
+    },
+    {
+      "id": 3036,
+      "title": "Ocean of Feelings",
+      "show": "2025",
+      "status": "draft",
+      "images": 0,
+      "hasDescription": true
+    }
+  ]
+}
