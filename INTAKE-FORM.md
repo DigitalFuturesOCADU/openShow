@@ -285,9 +285,12 @@ Note that `UG Thesis` never appears alone; all 17 archived cases are also
 3. Check the warnings. If a column header was reworded, ingest says
    `no column matched: <field>` — fix the pattern in `config/form-map.yaml`,
    not the code.
-4. Confirm the synced filenames still carry the `_<Submitter Name>` suffix that
-   ingest matches on. If the sync client changes that, resolution breaks
-   silently and every project reports missing files.
+4. **Confirm the synced filenames carry the `_<Submitter Name>` suffix that
+   ingest matches on.** This has never been tested against a real synced
+   folder — see [OPEN-ITEMS.md](OPEN-ITEMS.md) §1.1. It fails all-or-nothing,
+   so ingest detects the signature (zero matches against a non-empty folder)
+   and says so rather than listing every file. If names disagree, the fix is
+   confined to `resolveMedia()` in `scripts/ingest.mjs`.
 
 **Never add a column containing student emails or ID numbers to the mapping.**
 `config/form-map.yaml` is a whitelist precisely so that a new PII column in the

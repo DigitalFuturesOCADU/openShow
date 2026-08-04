@@ -397,6 +397,29 @@ section('Pasted a link instead of uploading — collect by hand', flags.pastedLi
   (f) => `${f.title}\n        ${f.url.slice(0, 90)}`)
 section('Referenced file not found in --media folder', flags.missingFiles,
   (f) => `${f.title}: ${f.name}`)
+
+// UNVERIFIED ASSUMPTION, called out at the point it fails.
+//
+// Filename matching assumes the SharePoint sync client preserves the
+// "<original>_<Submitter Name>.<ext>" name that Microsoft Forms writes. That
+// held for the 2025 response sheet's URLs, but has never been checked against a
+// genuinely synced folder — none was available when this was written. If the
+// client rewrites names, EVERY file misses at once, and the failure is silent
+// unless it is named. See OPEN-ITEMS.md.
+// Every uploaded file the sheet points at. Missing ones are a subset of this,
+// not an addition to it — they are still emitted, with a null path.
+const referenced = built.reduce(
+  (n, b) => n + b.frontmatter.media.filter((m) => m.type === 'image' || m.type === 'video-file').length, 0)
+if (MEDIA_DIR && mediaIndex.size > 0 && referenced > 0 && flags.missingFiles.length === referenced) {
+  console.error(`\n  ✗ NONE of the ${referenced} referenced files matched, though the folder holds ${mediaIndex.size}.`)
+  console.error(`    That pattern means the names in the sheet and the names on disk disagree —`)
+  console.error(`    most likely the sync client rewrote the "_<Submitter Name>" suffix that`)
+  console.error(`    matching depends on. Compare one filename in the sheet against the folder`)
+  console.error(`    and adjust the lookup in resolveMedia(). This assumption is unverified;`)
+  console.error(`    see OPEN-ITEMS.md.\n`)
+} else if (MEDIA_DIR && flags.missingFiles.length && flags.missingFiles.length < referenced) {
+  console.log(`\n  ${flags.missingFiles.length} of ${referenced} files missing — individual gaps, not a naming mismatch.`)
+}
 section('No hero marked — first image assumed', flags.heroGuessed,
   (f) => `${f.title} -> ${f.file}`)
 section('No media at all', flags.noMedia, (f) => f.title)
