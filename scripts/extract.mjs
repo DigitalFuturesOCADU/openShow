@@ -477,6 +477,63 @@ for (const r of records) {
   write(out('content/projects', `${r.slug}.md`), `---\n${fm}---\n\n${bodyParts.join('\n\n')}\n`)
 }
 
+// ---------------------------------------------------------------- pages
+//
+// 22 pages exist; 13 have content. The per-year "Projects" pages are all empty
+// shells that only ever rendered a dynamic listing, which the archive now does
+// properly, so they are dropped. What remains is real editorial copy.
+rmSync(out('content/pages'), { recursive: true, force: true })
+const SKIP_PAGE = /^(open\d|open$|coming-soon|gradex|open-show-testing)/
+const pageRecords = []
+const pageImages = new Set()
+const pageImagesDropped = []
+
+/**
+ * Page bodies reference images by absolute df.show URL. Rewrite those to the
+ * local archive so the pages stop depending on the site being migrated away
+ * from. Anything that is not a real upload — the Visual Composer template
+ * placeholder "|!|vcvUploadUrl|!|" survives in one page — is dropped rather
+ * than left to fail the build, and reported for hand cleaning.
+ */
+function rewritePageImages(md, title) {
+  return md.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (whole, alt, url) => {
+    const m = url.match(/\/wp-content\/uploads\/(.+)$/)
+    if (!m || url.includes('|!|')) {
+      pageImagesDropped.push({ page: title, url })
+      return ''
+    }
+    const rel = decodeURIComponent(m[1])
+    if (!existsSync(join(UPLOADS, rel))) {
+      pageImagesDropped.push({ page: title, url })
+      return ''
+    }
+    pageImages.add(rel)
+    return `![${alt}](../images/${rel})`
+  })
+}
+
+for (const pg of pages) {
+  const body = rewritePageImages(toMarkdown(pg.content), pg.title.trim())
+  if (!body.trim()) continue
+  const slug = pg.slug || slugify(pg.title)
+  if (SKIP_PAGE.test(slug)) continue
+  pageRecords.push({ slug, title: pg.title.trim(), status: pg.status, body })
+  write(out('content/pages', `${slug}.md`), `---\n${dump({
+    slug, title: pg.title.trim(), status: pg.status,
+    wordpress: { originalSlug: pg.slug || null, link: pg.link || null },
+  }, { noRefs: true, lineWidth: 100, quotingType: '"' })}---\n\n${body}\n`)
+}
+
+write(out('content/page-images.json'), JSON.stringify({
+  $comment: 'Images referenced by editorial pages. Not project media, so not in the 704 — scripts/sync-media.mjs copies these verbatim so the markdown paths stay valid.',
+  images: [...pageImages].sort(),
+}, null, 2) + '\n')
+
+if (pageImagesDropped.length) {
+  console.log(`  ⚠  ${pageImagesDropped.length} unresolvable page image(s) dropped:`)
+  for (const d of pageImagesDropped) console.log(`      ${d.page}: ${d.url.slice(0, 64)}`)
+}
+
 const shows = new Map()
 for (const r of records) {
   if (!r.year) continue
@@ -485,14 +542,42 @@ for (const r of records) {
     shows.set(id, {
       id, year: r.year, session: r.session,
       title: `Open Show ${r.year}${r.session ? ` — ${r.session[0].toUpperCase()}${r.session.slice(1)}` : ''}`,
-      dates: { start: null, end: null }, venue: null, statement: null, poster: null,
+      // Identity a show carries beyond its projects. All null until filled in
+      // via config/overrides.yaml or a future form — the archive has none of it.
+      current: false,
+      dates: { start: null, end: null },
+      venue: null,
+      logo: null,
+      poster: null,
+      teamPhoto: null,
+      team: [],
+      statement: null,
+      // Editorial page from WordPress that describes this show, if one exists.
+      aboutPage: null,
       theme: { tokens: {}, indexLayout: 'grid', defaultProjectLayout: 'default' },
       projectCount: 0,
     })
   }
   shows.get(id).projectCount++
 }
-for (const s of shows.values()) write(out('content/shows', `${s.id}.json`), JSON.stringify(s, null, 2) + '\n')
+// Attach each show's editorial page. WordPress named them inconsistently —
+// "2023 Events", "About Open Show 2025" — so match on the year in the title.
+for (const sh of shows.values()) {
+  const hit = pageRecords.find((pg) => {
+    if (!new RegExp(`\\b${sh.year}\\b`).test(pg.title)) return false
+    return /events|about open show/i.test(pg.title)
+  })
+  if (hit) sh.aboutPage = hit.slug
+}
+// The most recent show is current unless overridden.
+const newest = [...shows.values()].sort((a, b) => b.year - a.year || String(b.session).localeCompare(String(a.session)))[0]
+if (newest) newest.current = true
+
+for (const sh of shows.values()) {
+  const ov = overrideDoc[`show:${sh.id}`]
+  if (ov) Object.assign(sh, ov)
+  write(out('content/shows', `${sh.id}.json`), JSON.stringify(sh, null, 2) + '\n')
+}
 
 write(
   out('content/people.json'),

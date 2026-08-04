@@ -98,7 +98,12 @@ const shows = defineCollection({
     dates: z.object({ start: z.string().nullable(), end: z.string().nullable() }),
     venue: z.string().nullable(),
     statement: z.string().nullable(),
+    current: z.boolean().default(false),
+    logo: z.string().nullable(),
     poster: z.union([z.number(), z.string()]).nullable(),
+    teamPhoto: z.string().nullable().default(null),
+    team: z.array(z.union([z.string(), z.object({ name: z.string(), role: z.string().nullable() })])).default([]),
+    aboutPage: z.string().nullable().default(null),
     theme: z.object({
       tokens: z.record(z.string(), z.string()),
       indexLayout: z.string(),
@@ -108,4 +113,14 @@ const shows = defineCollection({
   }),
 })
 
-export const collections = { projects, shows }
+const pages = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './content/pages' }),
+  schema: z.object({
+    slug: z.string(),
+    title: z.string(),
+    status: z.string(),
+    wordpress: z.object({ originalSlug: z.string().nullable(), link: z.string().nullable() }).optional(),
+  }),
+})
+
+export const collections = { projects, shows, pages }

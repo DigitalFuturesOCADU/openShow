@@ -1,15 +1,30 @@
 ---
-interface Props { title: string; description?: string }
-const { title, description } = Astro.props
+import '../styles/theme.css'
+import { getCollection } from 'astro:content'
+
+interface Props {
+  title: string
+  description?: string
+  /** Show whose theme tokens should apply. Omit for archive-wide pages. */
+  theme?: Record<string, string>
+  /** Marks which nav item is current. */
+  section?: string
+}
+const { title, description, theme, section } = Astro.props
+
 const base = import.meta.env.BASE_URL
-const href = (p: string) => `${base}${p}`.replace(/\/{2,}/g, '/')
-const nav = [
-  ['', 'Archive'],
-  ['browse', 'Browse'],
-  ['people', 'People'],
-  ['search', 'Search'],
-] as const
-const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '')
+const href = (p: string) => `${base}${p}`.replace(/([^:])\/{2,}/g, '$1/')
+
+const shows = (await getCollection('shows')).sort(
+  (a, b) => b.data.year - a.data.year || String(a.data.session).localeCompare(String(b.data.session)),
+)
+const current = shows.find((s) => s.data.current) ?? shows[0]
+
+// Per-show tokens are applied as inline custom properties, so a show restyles
+// itself without forking the template. Everything unset falls back to default.
+const tokenStyle = theme
+  ? Object.entries(theme).map(([k, v]) => `${k.startsWith('--') ? k : `--${k}`}:${v}`).join(';')
+  : undefined
 ---
 
 <!doctype html>
@@ -23,55 +38,93 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '')
     {description && <meta property="og:description" content={description} />}
     <meta property="og:type" content="website" />
     <link rel="canonical" href={Astro.url.href} />
-    <style is:global>
-      :root {
-        --ink: #111; --paper: #fff; --muted: #666; --rule: #e5e5e5; --focus: #0b5fff;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root { --ink: #f2f2f2; --paper: #111; --muted: #9a9a9a; --rule: #2a2a2a; --focus: #7aa8ff; }
-      }
-      * { box-sizing: border-box; }
-      html { -webkit-text-size-adjust: 100%; }
-      body {
-        margin: 0; background: var(--paper); color: var(--ink);
-        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
-      }
-      main { max-width: 68rem; margin: 0 auto; padding: 2rem 1.25rem 6rem; }
-      a { color: inherit; }
-      img { max-width: 100%; height: auto; display: block; }
-      :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
-      /* Visible only once focused — the first stop for a keyboard user. */
-      .skip {
-        position: absolute; left: -9999px; top: 0; background: var(--ink); color: var(--paper);
-        padding: .6rem 1rem; z-index: 10;
-      }
-      .skip:focus { left: 0; }
-      header.site { border-bottom: 1px solid var(--rule); }
-      header.site > div {
-        max-width: 68rem; margin: 0 auto; padding: .85rem 1.25rem;
-        display: flex; gap: 1.25rem; align-items: baseline; flex-wrap: wrap;
-      }
-      header.site .wordmark { font-weight: 600; text-decoration: none; }
-      header.site nav { display: flex; gap: 1rem; }
-      header.site nav a { text-decoration: none; color: var(--muted); font-size: .9375rem; }
-      header.site nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; }
-      @media (prefers-reduced-motion: reduce) {
-        *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
-      }
-    </style>
   </head>
-  <body>
+  <body style={tokenStyle}>
     <a class="skip" href="#main">Skip to content</a>
-    <header class="site">
-      <div>
-        <a class="wordmark" href={href('')}>Digital Futures Open Show</a>
+
+    <div class="shell">
+      <header class="sidebar">
+        <a class="wordmark" href={href('')}>
+          <span class="label">Digital&nbsp;Futures&nbsp;→</span>
+          <span class="lockup">OPEN<span>SHOW</span></span>
+        </a>
+
         <nav aria-label="Main">
-          {nav.map(([path, text]) => (
-            <a href={href(path)} aria-current={here === path ? 'page' : undefined}>{text}</a>
-          ))}
+          <a href={href('about')} aria-current={section === 'about' ? 'page' : undefined}>What Is OPEN Show?</a>
+          {current && (
+            <a href={href(`shows/${current.id}`)} aria-current={section === `show:${current.id}` ? 'page' : undefined}>
+              About {current.data.title}
+            </a>
+          )}
+          <a href={href('archive')} aria-current={section === 'archive' ? 'page' : undefined}>Archive</a>
+          <a href={href('browse')} aria-current={section === 'browse' ? 'page' : undefined}>Browse</a>
+          <a href={href('people')} aria-current={section === 'people' ? 'page' : undefined}>People</a>
+          <a href={href('search')} aria-current={section === 'search' ? 'page' : undefined}>Search</a>
         </nav>
-      </div>
-    </header>
-    <main id="main"><slot /></main>
+
+        <nav class="shows" aria-label="Shows">
+          <p class="label">Shows</p>
+          <div>
+            {shows.map((s) => (
+              <a href={href(`shows/${s.id}`)} aria-current={section === `show:${s.id}` ? 'page' : undefined}>
+                {s.data.title.replace('Open Show ', '')} <span class="n">{s.data.projectCount}</span>
+              </a>
+            ))}
+          </div>
+        </nav>
+      </header>
+
+      <main id="main"><slot /></main>
+    </div>
   </body>
 </html>
+
+<style>
+  .shell { display: block; }
+
+  .sidebar {
+    padding: 1.25rem var(--gutter) 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .wordmark { text-decoration: none; display: block; margin-bottom: 1.25rem; }
+  .lockup {
+    display: block; font-weight: 700; font-size: 1.75rem; line-height: .95;
+    letter-spacing: -0.02em; margin-top: .35rem;
+  }
+  .lockup span { display: block; font-size: .75em; letter-spacing: .18em; font-weight: 500; }
+
+  nav { display: flex; flex-direction: column; gap: .3rem; }
+  nav a { text-decoration: none; font-size: .9375rem; }
+  nav a[aria-current="page"] { font-weight: 700; }
+  nav a:hover { text-decoration: underline; }
+
+  .shows > div { display: flex; flex-direction: column; gap: .3rem; }
+  .shows { margin-top: 1.25rem; }
+  .shows .label { margin: 0 0 .4rem; }
+  .shows .n { color: var(--muted); font-size: .75rem; }
+
+  /* On narrow screens the rail stacks above the content, so a vertical list of
+     eight shows would push everything below the fold. Lay them out as a
+     scrollable row instead — same links, a fraction of the height. */
+  @media (max-width: 51.99rem) {
+    nav { flex-direction: row; flex-wrap: wrap; gap: .3rem .9rem; }
+    .shows { display: flex; flex-direction: column; }
+    .shows > div {
+      display: flex; gap: .9rem; overflow-x: auto; padding-bottom: .25rem;
+      scrollbar-width: thin; -webkit-overflow-scrolling: touch;
+    }
+    .shows a { white-space: nowrap; }
+  }
+
+  main { padding: 1.5rem var(--gutter) 5rem; min-width: 0; }
+
+  /* The original theme's fixed left rail, kept for wide screens only. */
+  @media (min-width: 52rem) {
+    .shell { display: grid; grid-template-columns: var(--sidebar-width) minmax(0, 1fr); }
+    .sidebar {
+      position: sticky; top: 0; align-self: start; height: 100vh; overflow-y: auto;
+      border-bottom: 0; border-right: 1px solid var(--rule); padding-top: 1.75rem;
+    }
+    main { padding: 1.75rem 2rem 6rem; }
+  }
+</style>

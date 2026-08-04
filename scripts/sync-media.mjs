@@ -47,7 +47,25 @@ for (const fn of readdirSync(join(ROOT, 'content/projects'))) {
     if (m.type === 'image' && m.file) images.set(m.file, { id: m.id, bytes: m.bytes ?? 0 })
   }
 }
-console.log(`${images.size} source images referenced by projects\n`)
+// Editorial pages reference a handful of images too. They are copied verbatim
+// rather than re-encoded, so the relative paths written into the markdown stay
+// valid whatever the original extension was.
+let pageImageCount = 0
+try {
+  const pageList = JSON.parse(readFileSync(join(ROOT, 'content/page-images.json'), 'utf8')).images ?? []
+  for (const rel of pageList) {
+    const src = join(UPLOADS, rel)
+    if (!existsSync(src)) continue
+    if (!DRY) {
+      mkdirSync(dirname(join(DEST, rel)), { recursive: true })
+      copyFileSync(src, join(DEST, rel))
+    }
+    pageImageCount++
+  }
+} catch {}
+
+console.log(`${images.size} source images referenced by projects` +
+  (pageImageCount ? `, plus ${pageImageCount} on editorial pages` : '') + '\n')
 
 // ---------------------------------------------------------------- process
 
