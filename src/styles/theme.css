@@ -42,17 +42,11 @@
   --gutter: 1.25rem;
   --measure: 34rem;
   --tile-gap: 0.5rem;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink: #f2f2f2;
-    --paper: #101010;
-    --muted: #9a9a9a;
-    --rule: #2b2b2b;
-    --accent: #f2f2f2;
-    --focus: #7aa8ff;
-  }
+  /* Light for everyone, whatever the visitor's system is set to. Declaring it
+     also keeps native controls light — the search field and dropdowns would
+     otherwise render dark against a light page on a dark-mode machine. */
+  color-scheme: light;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
