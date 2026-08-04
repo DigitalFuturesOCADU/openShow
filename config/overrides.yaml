@@ -169,3 +169,10 @@
 2884:
   affiliation: [graduate]
   note: "2025 Forms submission — You Were Here"
+
+# Resolved: the sheet's "Jungle Straggle" is this project. The WordPress slug
+# is 'jungle-straggle' — the typo is fossilised in the URL and the title was
+# corrected later, so the sheet matches the original spelling.
+2926:
+  affiliation: [graduate]
+  note: "2025 Forms submission — Jungle Struggle (sheet spells it Jungle Straggle)"

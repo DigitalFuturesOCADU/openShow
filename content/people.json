@@ -6137,13 +6137,17 @@
           "year": 2025,
           "project": "jungle-straggle",
           "title": "Jungle Struggle",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         }
       ],
       "sortReviewed": false,
       "projectCount": 1,
-      "affiliations": []
+      "affiliations": [
+        "graduate"
+      ]
     },
     {
       "id": "jun-li",
@@ -11102,7 +11106,9 @@
           "year": 2025,
           "project": "jungle-straggle",
           "title": "Jungle Struggle",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         },
         {
@@ -11786,7 +11792,9 @@
           "year": 2025,
           "project": "jungle-straggle",
           "title": "Jungle Struggle",
-          "affiliation": [],
+          "affiliation": [
+            "graduate"
+          ],
           "role": null
         },
         {

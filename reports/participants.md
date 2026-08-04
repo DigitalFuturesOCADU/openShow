@@ -588,7 +588,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Hana Zaghloul
 - Peter Zougas
 
-#### Graduate (25)
+#### Graduate (26)
 
 - g blekkenhorst
 - Rina Chen
@@ -599,6 +599,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Mahnoor Hasan
 - Yubhang Huang
 - Xin Jiang
+- Brandon li
 - Qingxuan Li
 - Amelia Lochhead
 - Thea Lu
@@ -639,12 +640,11 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Emma Westecott
 - JC Zhang
 
-#### Unspecified (8)
+#### Unspecified (7)
 
 - Liam Bisaillion
 - Evie Conroy
 - Judsia Joseph
-- Brandon li
 - Emma Nguyen
 - Sofia Pacheco
 - Quinn Powell

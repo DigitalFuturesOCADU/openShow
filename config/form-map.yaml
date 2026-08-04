@@ -1,0 +1,79 @@
+# Microsoft Forms -> content schema mapping.
+#
+# The Form's question wording changes between years, so columns are matched by
+# a regular expression against the header text rather than by position or exact
+# string. When a question is reworded, fix the pattern here — not the code.
+#
+# ANYTHING NOT LISTED HERE IS NOT IMPORTED. That is deliberate: the response
+# sheet contains student email addresses, and a whitelist means a new PII
+# column added to the Form next year cannot leak into git by default.
+
+columns:
+  responseId: '^id$'
+  submitted: 'completion time'
+  title: 'project title'
+  team: 'name.*team members'
+  description: 'project description'
+  wallCard: 'additional wall card'
+  link: 'project page|site link'
+  images: 'project images'
+  tags: 'tags that apply'
+  affiliation: 'connection.*digital futures'
+  consent: 'committing to|by submitting'
+  presentation: 'presentation method'
+  stage: 'stage of project development'
+  soundNeeds: '^sound\?'
+  lighting: 'light or dark'
+  screen: 'screen display'
+  course: 'where did you create'
+  createdWhen: 'when in \d{4} was it created'
+  submitterNotes: 'anything else we should know'
+  # Explicitly NOT mapped, and must stay that way:
+  #   Email, Primary Contact Email  — PII
+  #   Name, Primary Contact Name    — duplicated by the team field, which is
+  #                                   what gets credited publicly
+
+# Form choice -> affiliation slug. Must resolve to a value in
+# content/vocabularies.json.
+affiliation:
+  DF Grad Student: graduate
+  DF Undergrad Student: undergraduate
+  DF Alumni: alumni
+  DF Faculty: faculty
+  Faculty: faculty          # drift: two Form options for one thing, fix in the Form
+
+# Form tag -> medium slug. `~` routes the value to `tags` instead, for anything
+# that is not really a medium.
+medium:
+  code: code
+  games: games
+  physical computing: physical-computing
+  digital fabrication: digital-fabrication
+  installation: installation
+  performance: performance
+  sound: sound
+  audio/sound: sound        # drift: two Form options for one thing, fix in the Form
+  3D printing: 3d-printing
+  3D animation: animation
+  web: web
+  video: video
+  sculpture: sculpture
+  wearables: wearables
+  illustration: illustration
+  AI: ai
+  augmented reality: ar
+  virtual reality: vr
+  mobile: mobile
+  data visualization: data-visualization
+
+# Hero image and ordering.
+#
+# A filename marker is the fallback, not the primary signal — add an explicit
+# "which image is the main one?" question to the Form and it will be used first.
+# The marker has been reliable so far: 10 of the archived projects use it and it
+# agreed with the WordPress featured image in all 10.
+media:
+  heroPattern: '_(feature|featured|featured-image|hero|heroshot)'
+  orderPattern: '^(\d{1,2})[_-]'
+  imageExtensions: [jpg, jpeg, png, gif, webp, tif, tiff]
+  videoExtensions: [mp4, mov, m4v, webm]
