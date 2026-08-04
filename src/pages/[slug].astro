@@ -1,0 +1,49 @@
+---
+import { getCollection, render } from 'astro:content'
+import Base from '../layouts/Base.astro'
+
+/**
+ * Editorial pages, served at their ORIGINAL WordPress slugs.
+ *
+ * Two things this buys. Nothing extracted is orphaned — a page whose content
+ * survived migration but that nothing links to is content lost in a slower way.
+ * And `/contact-us`, `/what-is-open-show`, `/about-df` were real URLs on the
+ * old site, so serving them here keeps them resolving, the same as
+ * /portfolio/items/<slug>.
+ *
+ * Generated routes win any collision: /archive is a live listing of 240
+ * projects, whereas the WordPress page of that name was a hand-maintained list
+ * of links to year pages that no longer exist. Keeping the URL and replacing
+ * the content is the better outcome.
+ */
+export async function getStaticPaths() {
+  // Declared inside: Astro extracts getStaticPaths into its own chunk, so it
+  // cannot see consts from the component scope around it.
+  const RESERVED = new Set(['archive', 'about', 'browse', 'people', 'search', 'index'])
+  const pages = await getCollection('pages')
+  return pages
+    .filter((p) => !RESERVED.has(p.id))
+    .map((page) => ({ params: { slug: page.id }, props: { page } }))
+}
+
+const { page } = Astro.props
+const { Content } = await render(page)
+---
+
+<Base title={`${page.data.title} — Digital Futures Open Show`} section={`page:${page.id}`}>
+  <article class="prose">
+    <h1>{page.data.title}</h1>
+    <Content />
+  </article>
+</Base>
+
+<style>
+  .prose { max-width: var(--measure); }
+  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 1rem; letter-spacing: -.01em; }
+  .prose :global(h2) { font-size: 1.15rem; margin: 2rem 0 .6rem; }
+  .prose :global(h3), .prose :global(h4) { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  .prose :global(p) { margin: 0 0 1rem; }
+  .prose :global(ul) { margin: 0 0 1rem; padding-left: 1.2rem; }
+  .prose :global(img) { margin: 1.25rem 0; }
+  .prose :global(a) { color: inherit; }
+</style>

@@ -46,13 +46,13 @@ data; unresolvable without it.
 
 ### 1.2 D6 — canonical domain vs. subpath
 
-Blocks deployment, not the build. If the archive moves to a path under a larger
-site, every existing `df.show` URL breaks unless df.show stays alive as a
-permanent redirect layer. Those URLs are on students' CVs.
+**Downgraded.** This was blocking because moving to a subpath would break every
+existing `df.show` URL. URL preservation has since been dropped — the
+re-organisation changes them anyway — so this is now a preference, not a cost.
 
-Recommendation: keep df.show canonical, integrate visually. The build already
-reads `base` and `site` from the environment, so either choice works without
-code changes.
+The build reads `base` and `site` from the environment, so either choice works
+without code changes. Still needed before Step 6 can ship, but nothing hangs on
+which way it goes.
 
 ### 1.3 D7 — images in plain git or LFS
 
