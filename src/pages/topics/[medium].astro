@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content'
+import Base from '../../layouts/Base.astro'
+import Tiles from '../../components/Tiles.astro'
+import { MEDIUM, label, showTitle } from '../../lib/site'
+
+// A topic is one medium across every show. Grouping by show keeps the
+// chronology visible — "installation work, year by year" rather than a flat
+// wall of 99 tiles with no sense of when.
+export async function getStaticPaths() {
+  const projects = await getCollection('projects', (p) => p.data.status === 'publish')
+  const shows = await getCollection('shows')
+  const order = [...shows].sort((a, b) =>
+    b.data.year - a.data.year || String(a.data.session).localeCompare(String(b.data.session)))
+
+  const used = new Set(projects.flatMap((p) => p.data.medium))
+  return [...used].map((slug) => {
+    const mine = projects.filter((p) => p.data.medium.includes(slug))
+    const groups = order
+      .map((sh) => ({
+        id: sh.id,
+        projects: mine.filter((p) => p.data.show === sh.id)
+          .sort((a, b) => a.data.title.localeCompare(b.data.title)),
+      }))
+      .filter((g) => g.projects.length)
+    const unassigned = mine.filter((p) => !p.data.show)
+    return { params: { medium: slug }, props: { slug, groups, unassigned, total: mine.length } }
+  })
+}
+
+const { slug, groups, unassigned, total } = Astro.props
+const base = import.meta.env.BASE_URL
+const others = MEDIUM.filter((t) => t.slug !== slug)
+---
+
+<Base
+  title={`${label('medium', slug)} — Digital Futures Open Show`}
+  section={`topic:${slug}`}
+  description={`${total} works in ${label('medium', slug)} across the Open Show archive.`}
+>
+  <header class="head">
+    <h1>{label('medium', slug)}</h1>
+    <p class="label">{total} {total === 1 ? 'work' : 'works'} · {groups.length} {groups.length === 1 ? 'show' : 'shows'}</p>
+  </header>
+
+  {groups.map((g: any) => (
+    <section>
+      <h2><a href={`${base}shows/${g.id}`}>{showTitle(g.id)}</a> <span class="n">{g.projects.length}</span></h2>
+      <Tiles projects={g.projects} />
+    </section>
+  ))}
+
+  {unassigned.length > 0 && (
+    <section>
+      <h2>No show assigned <span class="n">{unassigned.length}</span></h2>
+      <Tiles projects={unassigned} />
+    </section>
+  )}
+
+  <nav class="others" aria-label="Other topics">
+    <p class="label">Other topics</p>
+    <ul>
+      {others.map((t) => (
+        <li><a href={`${base}topics/${t.slug}`}>{t.label}</a> <span class="n">{t.count}</span></li>
+      ))}
+    </ul>
+  </nav>
+</Base>
+
+<style>
+  .head { margin-bottom: 2rem; }
+  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .2rem; letter-spacing: -.01em; }
+  .head .label { margin: 0; }
+  section { margin-bottom: 2.5rem; }
+  h2 { font-size: 1rem; font-weight: 500; margin: 0 0 1rem;
+       border-top: 1px solid var(--rule); padding-top: 1rem; }
+  h2 a { text-decoration: none; }
+  h2 a:hover { text-decoration: underline; }
+  .n { color: var(--muted); font-size: .75rem; font-weight: 400; }
+  .others { border-top: 1px solid var(--rule); padding-top: 1rem; margin-top: 3rem; }
+  .others .label { margin: 0 0 .5rem; }
+  .others ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; }
+  .others a { text-decoration: none; }
+  .others a:hover { text-decoration: underline; }
+</style>

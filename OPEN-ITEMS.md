@@ -163,6 +163,9 @@ Re-check with `node scripts/check-links.mjs --stale 30`. Results live in
 
 ## 4. Not started
 
+- **Multi-facet filtering was dropped** with /browse. Topics filter by medium
+  only; combining medium + year + affiliation is no longer possible in the
+  interface. The data still supports it if it is wanted back.
 - **Per-show theme tokens** — the mechanism works; no design direction yet.
 - **Project page layout** — matches the original three-column shape; flagged as
   needing more work.
