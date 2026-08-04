@@ -7,15 +7,15 @@ wordpress:
   link: https://df.show/about-open-show
 ---
 
-# DIGITAL FUTURES OPEN SHOW **2025** is happening...
+## DIGITAL FUTURES OPEN SHOW **2025** is happening...
 
-## _on_ Thursday, **December 11th**
+### _on_ Thursday, **December 11th**
 
-## _from_ **5:00 to 8:00 PM**
+### _from_ **5:00 to 8:00 PM**
 
-## _at_ **205 Richmond Street West**
+### _at_ **205 Richmond Street West**
 
-## _in_ **the Graduate Gallery, Experimental Media Space, and rooms 115, 118, 120**.
+### _in_ **the Graduate Gallery, Experimental Media Space, and rooms 115, 118, 120**.
 
 This event is where we show the work that is happening **RIGHT NOW**.
 
@@ -23,4 +23,4 @@ This event is where we show the work that is happening **RIGHT NOW**.
 
 For anyone who has asked the question “What IS Digital Futures anyway?” – this project showcase will help to provide some answers.
 
-### see you there!
+#### see you there!

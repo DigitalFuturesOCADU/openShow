@@ -16,7 +16,7 @@ wordpress:
 -   ![](../images/2020/12/DFOpenShow2018.jpg)
     
 
-# OPEN Show!
+## OPEN Show!
 
 The Digital Futures OPEN Show is an annual exhibition where we show our best and most interesting work that’s happening RIGHT NOW!
 
