@@ -1,6 +1,6 @@
 {
   "$comment": "External link health. Written by scripts/check-links.mjs and read back by extract.mjs, which stamps each link. Kept out of content/ because that is regenerated.",
-  "checkedAt": "2026-08-04T11:39:33.765Z",
+  "checkedAt": "2026-08-04T13:03:17.649Z",
   "links": {
     "http://blog.ocad.ca/wordpress/digf2014-fw201902-01/2019/10/10-000-photos/?doing_wp_cron=1681796745.7998449802398681640625": {
       "state": "unreachable",

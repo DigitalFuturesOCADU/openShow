@@ -12,7 +12,8 @@
     "build": "astro build && pagefind --site dist",
     "dev": "astro dev",
     "preview": "astro preview",
-    "publish": "node scripts/publish.mjs"
+    "publish": "node scripts/publish.mjs",
+    "links": "node scripts/check-links.mjs"
   },
   "repository": {
     "type": "git",

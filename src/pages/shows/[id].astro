@@ -118,7 +118,10 @@ const hasFacts = Boolean(when || d.time || d.venue || d.rooms.length)
         {d.stagedCount > 0 && ` ${d.stagedCount} ${d.stagedCount === 1 ? 'piece is' : 'pieces are'} ready.`}
       </p>
     ) : (
-      <p class="empty">No published work is filed under this show yet.</p>
+      /* A newly announced show has no work yet, which is the normal state for
+         months. "No published work is filed" reads like a fault; this reads
+         like a show that has not happened. */
+      <p class="empty">Works will appear here as they are added.</p>
     )}
   </section>
 
