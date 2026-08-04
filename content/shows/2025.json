@@ -5,10 +5,18 @@
   "title": "Open Show 2025",
   "current": true,
   "dates": {
-    "start": null,
-    "end": null
+    "start": "2025-12-11",
+    "end": "2025-12-11"
   },
-  "venue": null,
+  "time": "5:00 – 8:00 pm",
+  "venue": "205 Richmond Street West",
+  "rooms": [
+    "Graduate Gallery",
+    "Experimental Media Space",
+    "Room 115",
+    "Room 118",
+    "Room 120"
+  ],
   "logo": null,
   "poster": null,
   "teamPhoto": null,

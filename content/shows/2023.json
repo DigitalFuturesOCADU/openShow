@@ -5,10 +5,12 @@
   "title": "Open Show 2023",
   "current": false,
   "dates": {
-    "start": null,
-    "end": null
+    "start": "2023-12-07",
+    "end": "2023-12-07"
   },
-  "venue": null,
+  "time": "6:00 – 8:00 pm",
+  "venue": "205 Richmond Street West",
+  "rooms": [],
   "logo": null,
   "poster": null,
   "teamPhoto": null,

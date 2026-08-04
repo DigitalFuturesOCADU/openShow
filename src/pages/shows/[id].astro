@@ -25,12 +25,26 @@ export async function getStaticPaths() {
 
 const { show, projects, about } = Astro.props
 const d = show.data
-const AboutContent = about ? (await render(about)).Content : null
+
+// The editorial page is NOT rendered here. Those pages state the date and venue
+// in prose, wrapped in boilerplate that repeats year to year and duplicates the
+// About page. The facts are transcribed into the show record instead and shown
+// in one consistent block. The full announcement keeps its own URL.
 const logo = d.logo ? resolveImage(d.logo) : null
 const poster = d.poster && typeof d.poster === 'string' ? resolveImage(d.poster) : null
 const teamPhoto = d.teamPhoto ? resolveImage(d.teamPhoto) : null
 
-const when = [d.dates.start, d.dates.end].filter(Boolean).join(' – ')
+// One format for every show, however its source page happened to word it.
+const fmtDate = (iso: string) =>
+  new Date(`${iso}T12:00:00`).toLocaleDateString('en-CA', {
+    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
+  })
+const when = d.dates.start
+  ? d.dates.end && d.dates.end !== d.dates.start
+    ? `${fmtDate(d.dates.start)} – ${fmtDate(d.dates.end)}`
+    : fmtDate(d.dates.start)
+  : null
+const hasFacts = Boolean(when || d.time || d.venue || d.rooms.length)
 ---
 
 <Base
@@ -49,21 +63,27 @@ const when = [d.dates.start, d.dates.end].filter(Boolean).join(' – ')
       {projects.length} {projects.length === 1 ? 'work' : 'works'}
     </p>
 
-    {/* Only render the facts list when there is something beyond the count.
-        Earlier shows have no venue, dates, poster or team recorded — that data
-        was never kept — and a list of empty rows would read as broken rather
-        than as an archive whose content is the work itself. */}
-    {(when || d.venue) && (
+    {/* Only rendered when there is something to say. Four shows have these
+        facts; 2019 (both), 2021 and 2024 never recorded them, and a list of
+        empty rows would read as broken rather than as an archive whose content
+        is the work itself. */}
+    {hasFacts && (
       <dl class="facts">
-        {when && (<><dt class="label">When</dt><dd>{when}</dd></>)}
-        {d.venue && (<><dt class="label">Where</dt><dd>{d.venue}</dd></>)}
+        {when && (<><dt class="label">Date</dt><dd>{when}</dd></>)}
+        {d.time && (<><dt class="label">Time</dt><dd>{d.time}</dd></>)}
+        {d.venue && (<><dt class="label">Location</dt><dd>{d.venue}</dd></>)}
+        {d.rooms.length > 0 && (<><dt class="label">Rooms</dt><dd>{d.rooms.join(', ')}</dd></>)}
       </dl>
     )}
 
     {d.statement && <p class="statement">{d.statement}</p>}
-  </header>
 
-  {AboutContent && <div class="about"><AboutContent /></div>}
+    {about && (
+      <p class="announcement">
+        <a href={`${import.meta.env.BASE_URL}${about.id}`}>Read the full announcement →</a>
+      </p>
+    )}
+  </header>
 
   {poster && (
     <figure class="poster">
@@ -94,12 +114,11 @@ const when = [d.dates.start, d.dates.end].filter(Boolean).join(' – ')
   .current { margin-right: .5rem; }
   .current::after { content: ' ·'; }
   .show-head > .label { margin: 0 0 1rem; }
-  .facts { display: grid; grid-template-columns: 5rem 1fr; gap: .15rem 1rem; margin: 0 0 1.25rem; }
+  .facts { display: grid; grid-template-columns: 5.5rem 1fr; gap: .2rem 1rem; margin: 0 0 1.25rem; }
   .facts dt { padding-top: .15rem; }
   .facts dd { margin: 0; }
   .statement { margin: 0; }
-  .about { max-width: var(--measure); margin-bottom: 2.5rem; }
-  .about :global(p) { margin: 0 0 1rem; }
+  .announcement { margin: 0; font-size: .875rem; }
   .poster { margin: 0 0 2.5rem; max-width: 30rem; }
   .team { margin-bottom: 2.5rem; max-width: var(--measure); }
   .team h2 { margin: 0 0 .3rem; }
