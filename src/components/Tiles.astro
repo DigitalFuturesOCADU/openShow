@@ -2,34 +2,61 @@
 import { Image } from 'astro:assets'
 import { projectPath } from '../lib/slugs'
 import { resolveImage } from '../lib/images'
-import { featuredImage, altFor, label } from '../lib/site'
+import { featuredImage, altFor, label, personById } from '../lib/site'
 
-interface Props { projects: any[]; showYear?: boolean }
-const { projects, showYear = false } = Astro.props
+interface Props {
+  projects: any[]
+  showYear?: boolean
+  /** Emit data-* attributes so /browse can filter these client-side. */
+  filterable?: boolean
+}
+const { projects, showYear = false, filterable = false } = Astro.props
+const base = import.meta.env.BASE_URL
 ---
+
+{/*
+  The tile is not one big link. Creator names link to their own pages, and an
+  anchor cannot contain another anchor — so the image and the title each link to
+  the project, and the names link to people. Wrapping the lot in a single anchor
+  would make the names unclickable, which is the point of having them.
+*/}
 <ul class="tiles">
   {projects.map((p) => {
     const f = featuredImage(p)
     const img = f?.type === 'image' ? resolveImage(f.file) : null
     const total = p.data.media.filter((m: any) => m.type === 'image').length
+    const href = projectPath(p.data.slug)
     return (
-      <li>
-        <a href={projectPath(p.data.slug)}>
-          <div class="frame">
-            {img
-              ? <Image src={img} alt={altFor(p.data.title, f?.type === 'image' ? f.alt : null, 0, total)}
-                       widths={[320, 640]} sizes="(max-width: 40rem) 50vw, 20rem" loading="lazy" />
-              : <div class="placeholder" aria-hidden="true"></div>}
-          </div>
-          <div class="cap">
-            <h3>{p.data.title}</h3>
-            {p.data.creditsRaw && <p class="by">{p.data.creditsRaw}</p>}
-            <p class="label">
-              {showYear && p.data.year}{showYear && p.data.medium.length > 0 && ' · '}
-              {p.data.medium.map((m: string) => label('medium', m)).join(' · ')}
-            </p>
-          </div>
+      <li
+        data-year={filterable ? (p.data.year ?? '') : undefined}
+        data-medium={filterable ? p.data.medium.join(' ') : undefined}
+        data-affiliation={filterable ? p.data.affiliation.join(' ') : undefined}
+      >
+        <a class="frame" href={href} tabindex="-1" aria-hidden="true">
+          {img
+            ? <Image src={img} alt={altFor(p.data.title, f?.type === 'image' ? f.alt : null, 0, total)}
+                     widths={[320, 640]} sizes="(max-width: 40rem) 50vw, 20rem" loading="lazy" />
+            : <span class="placeholder"></span>}
         </a>
+        <div class="cap">
+          <h3><a href={href}>{p.data.title}</a></h3>
+          {p.data.credits.length > 0 && (
+            <p class="by">
+              {p.data.credits.map((c: any, i: number) => (
+                <>
+                  {i > 0 && <span aria-hidden="true">, </span>}
+                  {personById.has(c.personId)
+                    ? <a href={`${base}people/${c.personId}`}>{c.name}</a>
+                    : <span>{c.name}</span>}
+                </>
+              ))}
+            </p>
+          )}
+          <p class="label">
+            {showYear && p.data.year}{showYear && p.data.medium.length > 0 && ' · '}
+            {p.data.medium.map((m: string) => label('medium', m)).join(' · ')}
+          </p>
+        </div>
       </li>
     )
   })}
@@ -39,13 +66,20 @@ const { projects, showYear = false } = Astro.props
   .tiles { list-style: none; padding: 0; margin: 0;
            display: grid; gap: 1.75rem var(--tile-gap);
            grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); }
-  .tiles a { text-decoration: none; display: block; }
-  .frame { aspect-ratio: 1; overflow: hidden; background: var(--rule); }
+
+  .frame { display: block; aspect-ratio: 1; overflow: hidden; background: var(--rule); }
   .frame :global(img) { width: 100%; height: 100%; object-fit: cover; }
-  .placeholder { width: 100%; height: 100%; }
+  .placeholder { display: block; width: 100%; height: 100%; }
+
   .cap { padding: .5rem .25rem 0; }
   h3 { font-size: .9375rem; font-weight: 500; margin: 0 0 .1rem; line-height: 1.3; }
-  .by { margin: 0 0 .15rem; font-size: .8125rem; color: var(--muted); }
+  h3 a { text-decoration: none; }
+  h3 a:hover { text-decoration: underline; }
+
+  /* Names read as content, not metadata — same weight of colour as the title. */
+  .by { margin: 0 0 .15rem; font-size: .8125rem; }
+  .by a { color: inherit; text-decoration: none; }
+  .by a:hover { text-decoration: underline; }
+
   .cap .label { margin: 0; }
-  .tiles a:hover h3 { text-decoration: underline; }
 </style>

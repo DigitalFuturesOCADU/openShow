@@ -1,98 +1,100 @@
 ---
 import { getCollection } from 'astro:content'
-import { Image } from 'astro:assets'
 import Base from '../../layouts/Base.astro'
-import { projectPath } from '../../lib/slugs'
-import { resolveImage } from '../../lib/images'
-import { PEOPLE, label, featuredImage, altFor, showTitle } from '../../lib/site'
+import Tiles from '../../components/Tiles.astro'
+import { PEOPLE, label, showTitle } from '../../lib/site'
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects', (p) => p.data.status === 'publish')
+  const shows = await getCollection('shows')
+  const order = [...shows].sort((a, b) =>
+    b.data.year - a.data.year || String(a.data.session).localeCompare(String(b.data.session)))
   const bySlug = new Map(projects.map((p) => [p.data.slug, p]))
-  return PEOPLE.map((person) => ({
-    params: { id: person.id },
-    props: { person, projects: person.projects.map((s) => bySlug.get(s)).filter(Boolean) },
-  }))
+
+  return PEOPLE.map((person) => {
+    const mine = person.projects.map((s) => bySlug.get(s)).filter(Boolean)
+
+    // Grouped by show: someone with six projects across three years should see
+    // three years, not one undifferentiated grid.
+    const groups = order
+      .map((sh) => ({
+        show: sh,
+        // Affiliation is per appearance — the same person can be an
+        // undergraduate one year and an alum the next.
+        affiliation: [...new Set(
+          person.appearances.filter((a) => a.show === sh.id).flatMap((a) => a.affiliation),
+        )],
+        approximate: person.appearances.some((a) => a.show === sh.id && a.affiliationExact === false),
+        projects: mine.filter((p) => p!.data.show === sh.id)
+          .sort((a, b) => a!.data.title.localeCompare(b!.data.title)),
+      }))
+      .filter((g) => g.projects.length)
+
+    const unassigned = mine.filter((p) => !p!.data.show)
+    return { params: { id: person.id }, props: { person, groups, unassigned } }
+  })
 }
 
-const { person, projects } = Astro.props
-// Affiliation is per appearance, never rolled up: the same person can be an
-// undergraduate one year and an alum the next.
-const appearances = [...person.appearances].sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
-const approx = appearances.some((a) => a.affiliationExact === false)
+const { person, groups, unassigned } = Astro.props
+const approx = groups.some((g: any) => g.approximate)
+const total = groups.reduce((n: number, g: any) => n + g.projects.length, 0) + unassigned.length
 ---
 
-<Base title={`${person.name} — Digital Futures Open Show`}>
-  <h1>{person.name}</h1>
-  <p class="lede">
-    {person.projectCount} {person.projectCount === 1 ? 'project' : 'projects'}
-    {person.shows.length > 1 && ` across ${person.shows.length} shows`}
-    {person.kind === 'collective' && ' · collective'}
-  </p>
+<Base title={`${person.name} — Digital Futures Open Show`} section="people">
+  <header class="head">
+    <h1>{person.name}</h1>
+    <p class="label">
+      {total} {total === 1 ? 'work' : 'works'}
+      {groups.length > 1 && ` · ${groups.length} shows`}
+      {person.kind === 'collective' && ' · collective'}
+    </p>
+    {person.variants.length > 1 && (
+      <p class="variants">Also credited as {person.variants.filter((v: string) => v !== person.name).join(', ')}.</p>
+    )}
+  </header>
 
-  {person.variants.length > 1 && (
-    <p class="variants">Also credited as {person.variants.filter((v) => v !== person.name).join(', ')}.</p>
+  {groups.map((g: any) => (
+    <section>
+      <h2>
+        <a href={`${import.meta.env.BASE_URL}shows/${g.show.id}`}>{showTitle(g.show.id)}</a>
+        {g.affiliation.length > 0 && (
+          <span class="aff">
+            {g.affiliation.map((a: string) => label('affiliation', a)).join(', ')}
+            {g.approximate && <abbr title="Recorded for the project, not per person">†</abbr>}
+          </span>
+        )}
+      </h2>
+      <Tiles projects={g.projects} />
+    </section>
+  ))}
+
+  {unassigned.length > 0 && (
+    <section>
+      <h2>No show assigned</h2>
+      <Tiles projects={unassigned} />
+    </section>
   )}
-
-  <ul class="appearances">
-    {appearances.map((a) => (
-      <li>
-        <span class="year">{a.show ? showTitle(a.show) : '—'}</span>
-        <span class="aff">
-          {a.affiliation.map((x) => label('affiliation', x)).join(', ') || 'unspecified'}
-          {a.affiliationExact === false && <abbr title="Recorded per project, not per person">†</abbr>}
-        </span>
-        {a.role && <span class="role">{a.role}</span>}
-      </li>
-    ))}
-  </ul>
 
   {approx && (
     <p class="note">
       † On a mixed team whose affiliation was recorded for the project rather than
-      per person, so the value above may belong to a collaborator. Submissions from
+      per person, so the value shown may belong to a collaborator. Submissions from
       2026 record it per person.
     </p>
   )}
-
-  <ul class="grid">
-    {projects.map((p: any) => {
-      const f = featuredImage(p)
-      const img = f?.type === 'image' ? resolveImage(f.file) : null
-      const images = p.data.media.filter((m: any) => m.type === 'image')
-      return (
-        <li>
-          <a href={projectPath(p.data.slug)}>
-            {img && (
-              <Image
-                src={img}
-                alt={altFor(p.data.title, f?.type === 'image' ? f.alt : null, 0, images.length)}
-                widths={[320, 640]}
-                sizes="(max-width: 40rem) 50vw, 18rem"
-                loading="lazy"
-              />
-            )}
-            <h2>{p.data.title}</h2>
-            <p class="tags">{p.data.year}</p>
-          </a>
-        </li>
-      )
-    })}
-  </ul>
 </Base>
 
 <style>
-  h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin: 0 0 .25rem; }
-  .lede, .variants { color: var(--muted); margin: 0 0 .5rem; }
-  .appearances { list-style: none; padding: 0; margin: 1.5rem 0; border-top: 1px solid var(--rule); }
-  .appearances li { display: flex; gap: 1rem; padding: .5rem 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
-  .year { min-width: 9rem; }
-  .aff, .role { color: var(--muted); }
-  .note { color: var(--muted); font-size: .875rem; max-width: 44rem; }
-  .grid { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 2rem 1.5rem;
-          grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); }
-  .grid a { text-decoration: none; display: block; }
-  .grid img { aspect-ratio: 4 / 3; object-fit: cover; background: var(--rule); margin-bottom: .6rem; }
-  h2 { font-size: 1rem; margin: 0 0 .2rem; }
-  .tags { margin: 0; font-size: .8125rem; color: var(--muted); }
+  .head { margin-bottom: 2rem; }
+  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .2rem; letter-spacing: -.01em; }
+  .head .label { margin: 0; }
+  .variants { color: var(--muted); margin: .4rem 0 0; font-size: .875rem; }
+  section { margin-bottom: 2.5rem; }
+  h2 { font-size: 1rem; font-weight: 500; margin: 0 0 1rem;
+       border-top: 1px solid var(--rule); padding-top: 1rem;
+       display: flex; gap: .75rem; align-items: baseline; flex-wrap: wrap; }
+  h2 a { text-decoration: none; }
+  h2 a:hover { text-decoration: underline; }
+  .aff { font-size: .6875rem; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+  .note { color: var(--muted); font-size: .875rem; max-width: var(--measure); }
 </style>
