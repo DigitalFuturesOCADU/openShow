@@ -118,7 +118,11 @@ const tokenStyle = theme
     padding: 1.25rem var(--gutter) 2rem;
     border-bottom: 1px solid var(--rule);
   }
-  .wordmark { display: block; margin-bottom: 1.25rem; max-width: 13rem; }
+  /* The source PNG carried 70px of transparent margin on a 640px canvas — an
+     11% inset that pushed the artwork out of line with the nav beneath it. The
+     asset is trimmed to its bounding box, so its left edge is the artwork's
+     left edge and both start at the same rule. */
+  .wordmark { display: block; margin-bottom: 1.5rem; max-width: 10.5rem; }
   /* The logo is dark artwork on transparency, so it disappears against a dark
      background. Inverting keeps one asset working in both schemes rather than
      needing a second file that would then have to be kept in step. */
