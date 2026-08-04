@@ -144,9 +144,11 @@ one decommissioned university platform, plus 5 on `webspace.ocad.ca`. This is
 mostly one host going away, not scattered rot — which means a single archival
 effort could recover a lot of it.
 
-Dead links are not presented as working. The project page strikes them through,
-says "no longer available", and offers an Internet Archive lookup, which often
-still holds the page.
+Dead links are simply not shown. A struck-through label is clutter on a page
+whose job is to present the work. The status stays recorded in the project file
+and in `config/link-status.json`, so nothing is lost — a re-check can bring a
+link back if a host returns, and the data is there if anyone wants to attempt
+recovery from the Internet Archive.
 
 Re-check with `node scripts/check-links.mjs --stale 30`. Results live in
 `config/link-status.json` and are stamped onto projects by extract.

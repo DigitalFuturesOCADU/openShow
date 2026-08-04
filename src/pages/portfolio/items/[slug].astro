@@ -59,6 +59,13 @@ const ogSrc = slides.find((m) => m.type === 'image')
 const ogImg = ogSrc?.type === 'image' ? resolveImage(ogSrc.file) : null
 const og = ogImg ? await getImage({ src: ogImg, width: 1200, height: 630, fit: 'cover', format: 'jpeg' }) : null
 
+// 93 of 235 external links no longer resolve, mostly one decommissioned
+// university blog. Dead ones are simply not shown — a struck-through label is
+// clutter on a page whose job is to present the work. The status is still
+// recorded in the project file and in config/link-status.json, so nothing is
+// lost and a future re-check can bring a link back.
+const liveLinks = d.links.filter((l) => l.status !== 'dead' && l.status !== 'unreachable')
+
 const embedSrc = (m: { provider: string; videoId?: string }) =>
   m.provider === 'vimeo'
     ? `https://player.vimeo.com/video/${m.videoId}`
@@ -174,24 +181,11 @@ const embedSrc = (m: { provider: string; videoId?: string }) =>
         <dd>{d.affiliation.map((a) => label('affiliation', a)).join(', ')}</dd></>)}
     </dl>
 
-    {d.links.length > 0 && (
+    {liveLinks.length > 0 && (
       <p class="links">
-        {d.links.map((l) => {
-          // 93 of 235 external links no longer resolve — mostly one
-          // decommissioned university blog. Presenting a dead link as a live
-          // one wastes the reader's time and hides the loss.
-          const gone = l.status === 'dead' || l.status === 'unreachable'
-          return gone ? (
-            <span class="dead">
-              <span>{l.label} — no longer available</span>
-              <a href={`https://web.archive.org/web/2020/${l.url}`} rel="noopener noreferrer external">
-                Try the Internet Archive ↗
-              </a>
-            </span>
-          ) : (
-            <a href={l.finalUrl ?? l.url} rel="noopener noreferrer external">{l.label} ↗</a>
-          )
-        })}
+        {liveLinks.map((l) => (
+          <a href={l.finalUrl ?? l.url} rel="noopener noreferrer external">{l.label} ↗</a>
+        ))}
       </p>
     )}
   </div>
@@ -293,8 +287,5 @@ const embedSrc = (m: { provider: string; videoId?: string }) =>
            margin: 1.5rem 0 1.25rem; border-top: 1px solid var(--rule); padding-top: .85rem; }
   .facts dt { padding-top: .1rem; }
   .facts dd { margin: 0; font-size: .875rem; }
-  .links { display: flex; flex-direction: column; gap: .5rem; margin: 0; font-size: .875rem; }
-  .dead { display: flex; flex-direction: column; }
-  .dead > span { color: var(--muted); text-decoration: line-through; }
-  .dead > a { color: var(--muted); }
+  .links { display: flex; flex-direction: column; gap: .4rem; margin: 0; font-size: .875rem; }
 </style>
