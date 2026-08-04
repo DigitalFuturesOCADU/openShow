@@ -73,11 +73,11 @@ coverage: an axis at 0% for a given year means that year vanishes from it.
 | 2022 | 37 | 33/37 (89%) | 37/37 |
 | 2023 | 30 | 28/30 (93%) | 30/30 |
 | 2024 | 32 | 26/32 (81%) | 32/32 |
-| 2025 | 38 | 36/38 (95%) | 38/38 |
+| 2025 | 38 | 37/38 (97%) | 38/38 |
 | no show | 8 | 0/8 (0%) | 0/8 (0%) |
 
 **WordPress recorded no affiliation for the 2025 show at all** — not scatter or
-export loss, simply no 2025 term carrying one. 36 of 38 have since been recovered from the Microsoft Forms submission sheet and applied through `config/overrides.yaml` (36 overrides). The remaining 2 are listed there and need a human.
+export loss, simply no 2025 term carrying one. 37 of 38 have since been recovered from the Microsoft Forms submission sheet and applied through `config/overrides.yaml` (37 overrides). The remaining 1 are listed there and need a human.
 
 Across 2019–2024 the same axis is 204/218 (94%) complete, so the gap was a
 single-year regression rather than long-standing decay.

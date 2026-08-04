@@ -5,7 +5,8 @@ title: Jungle Struggle
 show: '2025'
 year: 2025
 session: null
-affiliation: []
+affiliation:
+  - graduate
 medium:
   - code
   - digital-fabrication
@@ -69,6 +70,8 @@ wordpress:
   postDate: '2025-12-08 23:51:23'
   originalSlug: jungle-straggle
   link: https://df.show/portfolio/items/jungle-straggle
+manualOverrides:
+  - affiliation
 ---
 
 Our project is a gesture-based interactive game set inside a jungle-themed tunnel. The concept was partly inspired by carnival-style games where players complete small tasks through simple physical actions, but we changed the format by using hand tracking instead of physical controls. Players use a pinch gesture, measured by the distance between the thumb and index finger, to lift and lower objects inside the tunnel. This distance is mapped to a servo motor that rotates from 0 to 180 degrees, creating a responsive up and down motion. The game includes three interactions. These involve lowering a coconut for a thirsty monkey, lowering a Nepenthes plant to save a dragonfly, and lowering branches so the river can flow again.

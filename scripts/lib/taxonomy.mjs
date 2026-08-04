@@ -38,11 +38,25 @@ export function parseTerm(name) {
   return { kind: 'concept', year: null, session: null, concept: raw }
 }
 
+/**
+ * Slug from arbitrary text.
+ *
+ * Accents are transliterated, not stripped: "Digital Écorché Sculpture" must
+ * become "digital-ecorche-sculpture", not "digital-corch-sculpture". And any
+ * punctuation separates rather than vanishing, so "Tea Party/Home Away Home"
+ * does not collapse into "tea-partyhome-away-home". Both bugs silently
+ * produced slugs that matched nothing, which in an additive ingest means
+ * creating a duplicate of a project that already exists.
+ */
 export const slugify = (s) =>
-  s
+  String(s)
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
     .toLowerCase()
-    .replace(/[_\s]+/g, '-')
-    .replace(/[^a-z0-9-]/g, '')
+    // Apostrophes close a word rather than splitting it: "Let's" is "lets",
+    // not "let-s". Every other punctuation mark separates.
+    .replace(/['’‘`]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
     .replace(/-+/g, '-')
     .replace(/^-|-$/g, '')
 

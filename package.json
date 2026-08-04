@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "extract": "node scripts/extract.mjs",
-    "validate": "node scripts/validate-sql.mjs"
+    "validate": "node scripts/validate-sql.mjs",
+    "ingest": "node scripts/ingest.mjs",
+    "media": "node scripts/sync-media.mjs"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "homepage": "https://github.com/npuckett/openREDO#readme",
   "private": "true",
   "dependencies": {
+    "exceljs": "^4.4.0",
     "fast-xml-parser": "^5.10.1",
     "js-yaml": "^5.2.3",
     "sharp": "^0.35.3",
