@@ -25,12 +25,20 @@ const arg = (n) => { const i = argv.indexOf(`--${n}`); return i === -1 ? null : 
 const SHOW = arg('show')
 const DRY = argv.includes('--dry-run')
 
-if (!SHOW || (!argv.includes('--review') && !argv.includes('--open'))) {
+const CREATE = argv.includes('--create')
+if (!SHOW || (!CREATE && !argv.includes('--review') && !argv.includes('--open'))) {
   console.error(`
-  Usage: node scripts/publish.mjs --show <id> [--review] [--open] [--dry-run]
+  Usage: node scripts/publish.mjs --show <id> [options]
 
+    --create   declare a new show so its page can go up before any work
+                 --date  2026-12-09        --time  "5:00 – 8:00 pm"
+                 --venue "205 Richmond Street West"
+                 --rooms "Graduate Gallery, X Fab Space"
     --review   mark every draft in this show as reviewed (draft -> publish)
-    --open     open the show, so reviewed work becomes public
+    --open     release work held back by "visibility: announced"
+    --dry-run  print what would change and write nothing
+
+  Then: npm run extract && npm run build
 `)
   process.exit(1)
 }
@@ -41,6 +49,33 @@ const projects = readdirSync(join(ROOT, 'content/projects'))
 
 let text = existsSync(OV) ? readFileSync(OV, 'utf8') : ''
 const additions = []
+
+if (CREATE) {
+  if (new RegExp(`^show:${SHOW}:`, 'm').test(text)) {
+    console.log(`  ${SHOW} is already declared in config/overrides.yaml — nothing to do`)
+  } else {
+    const rooms = arg('rooms')
+    const date = arg('date')
+    additions.push([
+      `show:${SHOW}:`,
+      `  current: true`,
+      date ? `  dates: { start: "${date}", end: "${arg('end') ?? date}" }` : `  dates: { start: null, end: null }`,
+      arg('time') ? `  time: "${arg('time')}"` : null,
+      arg('venue') ? `  venue: "${arg('venue')}"` : null,
+      rooms ? `  rooms: [${rooms.split(',').map((r) => `"${r.trim()}"`).join(', ')}]` : null,
+    ].filter(Boolean).join('\n'))
+    console.log(`  ${SHOW}: declared${date ? `, ${date}` : ''}`)
+
+    // Only one show is the current one.
+    const others = [...text.matchAll(/^show:(\S+):/gm)].map((m) => m[1]).filter((id) => id !== SHOW)
+    const stillCurrent = others.filter((id) =>
+      new RegExp(`^show:${id}:(?:\\n\\s+.*)*?\\n\\s+current:\\s*true`, 'm').test(text))
+    for (const id of stillCurrent) {
+      text = text.replace(new RegExp(`(show:${id}:(?:\\n\\s+.*)*?\\n\\s+current:\\s*)true`), '$1false')
+      console.log(`  ${id}: current -> false`)
+    }
+  }
+}
 
 if (argv.includes('--review')) {
   const drafts = projects.filter((p) => p.status !== 'publish')

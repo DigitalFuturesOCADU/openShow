@@ -1,7 +1,8 @@
 # Open items
 
-Everything outstanding, in one place. [EXECUTION.md](EXECUTION.md) is the plan;
-this is what the plan is still waiting on.
+Everything outstanding, in one place. [EXECUTION.md](EXECUTION.md) is the plan,
+[RUNNING-A-SHOW.md](RUNNING-A-SHOW.md) is how to operate it, and this is what
+the plan is still waiting on.
 
 Ordered by when it bites, not by size.
 
