@@ -2399,39 +2399,6 @@
       ]
     },
     {
-      "id": "aileen-d",
-      "name": "Aileen D",
-      "sortName": "D, Aileen",
-      "kind": "person",
-      "variants": [
-        "Aileen D"
-      ],
-      "projects": [
-        "ctrl_space"
-      ],
-      "shows": [
-        "2023"
-      ],
-      "appearances": [
-        {
-          "show": "2023",
-          "year": 2023,
-          "project": "ctrl_space",
-          "title": "Ctrl_Space",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
       "id": "luke-d-alfonsi",
       "name": "Luke D'Alfonsi",
       "sortName": "D'Alfonsi, Luke",
@@ -2793,20 +2760,46 @@
       ]
     },
     {
-      "id": "aileen-dong",
-      "name": "Aileen Dong",
-      "sortName": "Dong, Aileen",
+      "id": "ailin-dong",
+      "name": "Ailin Dong",
+      "sortName": "Dong, Ailin",
       "kind": "person",
       "variants": [
-        "Aileen Dong"
+        "Aileen D",
+        "Aileen Dong",
+        "Ailin Dong"
       ],
       "projects": [
-        "into-the-unknown"
+        "ctrl_space",
+        "into-the-unknown",
+        "xdaeta-music-space"
       ],
       "shows": [
         "2023"
       ],
       "appearances": [
+        {
+          "show": "2023",
+          "year": 2023,
+          "project": "ctrl_space",
+          "title": "Ctrl_Space",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
+        {
+          "show": "2023",
+          "year": 2023,
+          "project": "xdaeta-music-space",
+          "title": "Xdaeta music space",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
         {
           "show": "2023",
           "year": 2023,
@@ -2818,38 +2811,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": []
-    },
-    {
-      "id": "ailin-dong",
-      "name": "Ailin Dong",
-      "sortName": "Dong, Ailin",
-      "kind": "person",
-      "variants": [
-        "Ailin Dong"
-      ],
-      "projects": [
-        "xdaeta-music-space"
-      ],
-      "shows": [
-        "2023"
-      ],
-      "appearances": [
-        {
-          "show": "2023",
-          "year": 2023,
-          "project": "xdaeta-music-space",
-          "title": "Xdaeta music space",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 3,
       "affiliations": [
         "graduate"
       ]
@@ -4338,18 +4300,21 @@
       ]
     },
     {
-      "id": "josh-igwe",
-      "name": "Josh Igwe",
-      "sortName": "Igwe, Josh",
+      "id": "joshua-igwe",
+      "name": "Joshua Igwe",
+      "sortName": "Igwe, Joshua",
       "kind": "person",
       "variants": [
-        "Josh Igwe"
+        "Josh Igwe",
+        "Joshua Igwe"
       ],
       "projects": [
-        "10-000-photos"
+        "10-000-photos",
+        "isoworld"
       ],
       "shows": [
-        "2019-december"
+        "2019-december",
+        "2021"
       ],
       "appearances": [
         {
@@ -4362,29 +4327,7 @@
           ],
           "affiliationExact": true,
           "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
-      ]
-    },
-    {
-      "id": "joshua-igwe",
-      "name": "Joshua Igwe",
-      "sortName": "Igwe, Joshua",
-      "kind": "person",
-      "variants": [
-        "Joshua Igwe"
-      ],
-      "projects": [
-        "isoworld"
-      ],
-      "shows": [
-        "2021"
-      ],
-      "appearances": [
+        },
         {
           "show": "2021",
           "year": 2021,
@@ -4398,7 +4341,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 2,
       "affiliations": [
         "undergraduate"
       ]
@@ -4475,9 +4418,11 @@
       "sortName": "Jatuweerapong, Salisa",
       "kind": "person",
       "variants": [
-        "Salisa Jatuweerapong"
+        "Salisa Jatuweerapong",
+        "Salisa Jatweerapong"
       ],
       "projects": [
+        "aerforge",
         "cyberpunk-kowloon-concept-art",
         "legend-of-zelda-dlc-level-design",
         "naruto-gloves",
@@ -4494,6 +4439,17 @@
           "year": 2019,
           "project": "naruto-gloves",
           "title": "Naruto Gloves",
+          "affiliation": [
+            "undergraduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
+        {
+          "show": "2019-february",
+          "year": 2019,
+          "project": "aerforge",
+          "title": "AerForge",
           "affiliation": [
             "undergraduate"
           ],
@@ -4535,40 +4491,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 4,
-      "affiliations": [
-        "undergraduate"
-      ]
-    },
-    {
-      "id": "salisa-jatweerapong",
-      "name": "Salisa Jatweerapong",
-      "sortName": "Jatweerapong, Salisa",
-      "kind": "person",
-      "variants": [
-        "Salisa Jatweerapong"
-      ],
-      "projects": [
-        "aerforge"
-      ],
-      "shows": [
-        "2019-february"
-      ],
-      "appearances": [
-        {
-          "show": "2019-february",
-          "year": 2019,
-          "project": "aerforge",
-          "title": "AerForge",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 5,
       "affiliations": [
         "undergraduate"
       ]
@@ -6586,65 +6509,6 @@
       ],
       "sortReviewed": false,
       "projectCount": 2,
-      "affiliations": [
-        "undergraduate"
-      ]
-    },
-    {
-      "id": "mika-maclear-wall",
-      "name": "Mika Maclear-Wall",
-      "sortName": "Maclear-Wall, Mika",
-      "kind": "person",
-      "variants": [
-        "Mika Maclear Wall",
-        "Mika Maclear-Wall"
-      ],
-      "projects": [
-        "alley-cat-2025",
-        "the-long-dream",
-        "wrong-side-of-the-hill"
-      ],
-      "shows": [
-        "2024",
-        "2025"
-      ],
-      "appearances": [
-        {
-          "show": "2024",
-          "year": 2024,
-          "project": "wrong-side-of-the-hill",
-          "title": "Wrong Side of The Hill",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
-        {
-          "show": "2025",
-          "year": 2025,
-          "project": "alley-cat-2025",
-          "title": "Alley Cat (2025)",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        },
-        {
-          "show": "2025",
-          "year": 2025,
-          "project": "the-long-dream",
-          "title": "The Long Dream",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 3,
       "affiliations": [
         "undergraduate"
       ]
@@ -9291,13 +9155,16 @@
       "sortName": "Sarbandi, Arshia Sobhan",
       "kind": "person",
       "variants": [
+        "Arshia Sobhan",
         "Arshia Sobhan Sarbandi"
       ],
       "projects": [
-        "invisible-kelk"
+        "invisible-kelk",
+        "navigating-the-latent"
       ],
       "shows": [
-        "2019-december"
+        "2019-december",
+        "2021"
       ],
       "appearances": [
         {
@@ -9310,10 +9177,21 @@
           ],
           "affiliationExact": true,
           "role": null
+        },
+        {
+          "show": "2021",
+          "year": 2021,
+          "project": "navigating-the-latent",
+          "title": "Navigating the Latent",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
       ]
@@ -10067,39 +9945,6 @@
       "projectCount": 1,
       "affiliations": [
         "undergraduate"
-      ]
-    },
-    {
-      "id": "arshia-sobhan",
-      "name": "Arshia Sobhan",
-      "sortName": "Sobhan, Arshia",
-      "kind": "person",
-      "variants": [
-        "Arshia Sobhan"
-      ],
-      "projects": [
-        "navigating-the-latent"
-      ],
-      "shows": [
-        "2021"
-      ],
-      "appearances": [
-        {
-          "show": "2021",
-          "year": 2021,
-          "project": "navigating-the-latent",
-          "title": "Navigating the Latent",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
       ]
     },
     {
@@ -11057,18 +10902,24 @@
       "affiliations": []
     },
     {
-      "id": "mika-macloear-wall",
-      "name": "Mika MacLOear Wall",
-      "sortName": "Wall, Mika MacLOear",
+      "id": "mika-maclear-wall",
+      "name": "Mika Maclear Wall",
+      "sortName": "Wall, Mika Maclear",
       "kind": "person",
       "variants": [
-        "Mika MacLOear Wall"
+        "Mika MacLOear Wall",
+        "Mika Maclear Wall",
+        "Mika Maclear-Wall"
       ],
       "projects": [
-        "heart-hop"
+        "alley-cat-2025",
+        "heart-hop",
+        "the-long-dream",
+        "wrong-side-of-the-hill"
       ],
       "shows": [
-        "2024"
+        "2024",
+        "2025"
       ],
       "appearances": [
         {
@@ -11081,10 +10932,43 @@
           ],
           "affiliationExact": true,
           "role": null
+        },
+        {
+          "show": "2024",
+          "year": 2024,
+          "project": "wrong-side-of-the-hill",
+          "title": "Wrong Side of The Hill",
+          "affiliation": [
+            "undergraduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
+        {
+          "show": "2025",
+          "year": 2025,
+          "project": "alley-cat-2025",
+          "title": "Alley Cat (2025)",
+          "affiliation": [
+            "undergraduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
+        {
+          "show": "2025",
+          "year": 2025,
+          "project": "the-long-dream",
+          "title": "The Long Dream",
+          "affiliation": [
+            "undergraduate"
+          ],
+          "affiliationExact": true,
+          "role": null
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 4,
       "affiliations": [
         "undergraduate"
       ]
