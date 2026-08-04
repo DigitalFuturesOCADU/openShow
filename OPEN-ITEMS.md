@@ -55,15 +55,21 @@ The build reads `base` and `site` from the environment, so either choice works
 without code changes. Still needed before Step 6 can ship, but nothing hangs on
 which way it goes.
 
-### 1.3 D7 — images in plain git or LFS
+### 1.3 D7 — images in plain git or LFS — *now blocking*
 
-220 MB, 704 files. Recommendation: plain git. Images arrive in one annual batch
+**A fresh clone of this repository cannot build the site.** `content/images/` is
+git-ignored pending this decision, and the build does not degrade gracefully
+without it — Astro fails outright on the first missing image. So nobody else can
+work on this, and it cannot deploy, until the images are committed.
+
+710 files, 228 MB. Recommendation: plain git. Images arrive in one annual batch
 and never change afterwards, which is the case LFS does not help with. GitHub's
 repository size limit is a policy ceiling that cannot be bought past, but at
 ~75 MB/year it is a decade away.
 
-`content/images/` is git-ignored pending this; regenerating takes about three
-minutes with `node scripts/sync-media.mjs`.
+The images regenerate locally in about three minutes with
+`node scripts/sync-media.mjs`, but only from `sources/uploads`, which is also
+git-ignored and 3 GB — so that is not a route anyone else can take.
 
 ---
 
