@@ -1,17 +1,19 @@
 ---
-import { getCollection, render } from 'astro:content'
-import { Image } from 'astro:assets'
+import { getCollection } from 'astro:content'
 import Base from '../../layouts/Base.astro'
-import Tiles from '../../components/Tiles.astro'
-import { resolveImage } from '../../lib/images'
+import Show from '../../components/Show.astro'
 import { PEOPLE } from '../../lib/site'
 
 // A show page is not the archive. It carries this show's own identity — logo,
 // dates, venue, poster, team — and only its work. The archive is the union.
+//
+// The body lives in components/Show.astro because the front page renders the
+// same thing for whichever show is current.
 export async function getStaticPaths() {
   const shows = await getCollection('shows')
   const projects = await getCollection('projects', (p) => p.data.status === 'publish')
   const pages = await getCollection('pages')
+
   return shows.map((show) => {
     const mine = projects
       .filter((p) => p.data.show === show.id)
@@ -34,137 +36,13 @@ export async function getStaticPaths() {
 
 const { show, projects, exhibitors, about } = Astro.props
 const d = show.data
-
-// The editorial page is NOT rendered here. Those pages state the date and venue
-// in prose, wrapped in boilerplate that repeats year to year and duplicates the
-// About page. The facts are transcribed into the show record instead and shown
-// in one consistent block. The full announcement keeps its own URL.
-const logo = d.logo ? resolveImage(d.logo) : null
-const poster = d.poster && typeof d.poster === 'string' ? resolveImage(d.poster) : null
-const teamPhoto = d.teamPhoto ? resolveImage(d.teamPhoto) : null
-
-// One format for every show, however its source page happened to word it.
-const fmtDate = (iso: string) =>
-  new Date(`${iso}T12:00:00`).toLocaleDateString('en-CA', {
-    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
-  })
-const when = d.dates.start
-  ? d.dates.end && d.dates.end !== d.dates.start
-    ? `${fmtDate(d.dates.start)} – ${fmtDate(d.dates.end)}`
-    : fmtDate(d.dates.start)
-  : null
-const hasFacts = Boolean(when || d.time || d.venue || d.rooms.length)
 ---
 
 <Base
   title={`${d.title} — Digital Futures Open Show`}
-  description={d.statement ?? `${d.projectCount} projects.`}
+  description={d.statement ?? `${projects.length} projects.`}
   theme={d.theme.tokens}
   section={`show:${show.id}`}
 >
-  <header class="show-head">
-    {logo
-      ? <Image src={logo} alt={d.title} widths={[320, 640]} loading="eager" class="logo" />
-      : <h1>{d.title}</h1>}
-
-    <p class="label">
-      {d.current && <span class="current">Current show</span>}
-      {projects.length} {projects.length === 1 ? 'work' : 'works'}
-    </p>
-
-    {/* Only rendered when there is something to say. Four shows have these
-        facts; 2019 (both), 2021 and 2024 never recorded them, and a list of
-        empty rows would read as broken rather than as an archive whose content
-        is the work itself. */}
-    {hasFacts && (
-      <dl class="facts">
-        {when && (<><dt class="label">Date</dt><dd>{when}</dd></>)}
-        {d.time && (<><dt class="label">Time</dt><dd>{d.time}</dd></>)}
-        {d.venue && (<><dt class="label">Location</dt><dd>{d.venue}</dd></>)}
-        {d.rooms.length > 0 && (<><dt class="label">Rooms</dt><dd>{d.rooms.join(', ')}</dd></>)}
-      </dl>
-    )}
-
-    {d.statement && <p class="statement">{d.statement}</p>}
-
-    {about && (
-      <p class="announcement">
-        <a href={`${import.meta.env.BASE_URL}${about.id}`}>Read the full announcement →</a>
-      </p>
-    )}
-  </header>
-
-  {poster && (
-    <figure class="poster">
-      <Image src={poster} alt={`${d.title} poster`} widths={[480, 960]} loading="lazy" />
-    </figure>
-  )}
-
-  {d.team.length > 0 && (
-    <section class="team">
-      <h2 class="label">Organised by</h2>
-      <p>{d.team.map((t) => (typeof t === 'string' ? t : t.name)).join(', ')}</p>
-      {teamPhoto && <Image src={teamPhoto} alt={`${d.title} team`} widths={[640, 1280]} loading="lazy" />}
-    </section>
-  )}
-
-  <section>
-    <h2 class="works-head">Works</h2>
-    {projects.length > 0 ? (
-      <Tiles projects={projects} />
-    ) : d.visibility === 'announced' ? (
-      <p class="empty">
-        Work goes online when the show opens{when ? ` on ${when}` : ''}.
-        {d.stagedCount > 0 && ` ${d.stagedCount} ${d.stagedCount === 1 ? 'piece is' : 'pieces are'} ready.`}
-      </p>
-    ) : (
-      /* A newly announced show has no work yet, which is the normal state for
-         months. "No published work is filed" reads like a fault; this reads
-         like a show that has not happened. */
-      <p class="empty">Works will appear here as they are added.</p>
-    )}
-  </section>
-
-  {exhibitors.length > 0 && d.visibility === 'open' && (
-    <section class="exhibitors">
-      <h2 class="works-head">Exhibitors <span class="n">{exhibitors.length}</span></h2>
-      <ul>
-        {exhibitors.map((person: any) => (
-          <li>
-            <a href={`${import.meta.env.BASE_URL}people/${person.id}`}>{person.name}</a>
-            {person.kind === 'collective' && <span class="kind"> collective</span>}
-          </li>
-        ))}
-      </ul>
-    </section>
-  )}
+  <Show show={show} projects={projects} exhibitors={exhibitors} about={about} />
 </Base>
-
-<style>
-  .show-head { margin-bottom: 2rem; max-width: var(--measure); }
-  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .25rem; letter-spacing: -.01em; }
-  .logo { max-width: 22rem; margin-bottom: .5rem; }
-  .current { margin-right: .5rem; }
-  .current::after { content: ' ·'; }
-  .show-head > .label { margin: 0 0 1rem; }
-  .facts { display: grid; grid-template-columns: 5.5rem 1fr; gap: .2rem 1rem; margin: 0 0 1.25rem; }
-  .facts dt { padding-top: .15rem; }
-  .facts dd { margin: 0; }
-  .statement { margin: 0; }
-  .announcement { margin: 0; font-size: .875rem; }
-  .poster { margin: 0 0 2.5rem; max-width: 30rem; }
-  .team { margin-bottom: 2.5rem; max-width: var(--measure); }
-  .team h2 { margin: 0 0 .3rem; }
-  .team p { margin: 0 0 1rem; }
-  .works-head { font-size: 1rem; font-weight: 500; border-top: 1px solid var(--rule);
-                padding-top: 1rem; margin: 2.5rem 0 1.25rem; }
-  .empty { color: var(--muted); }
-  .works-head .n { color: var(--muted); font-size: .75rem; font-weight: 400; }
-  .exhibitors ul { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 2.5rem; }
-  @media (min-width: 44rem) { .exhibitors ul { columns: 3; } }
-  @media (min-width: 68rem) { .exhibitors ul { columns: 4; } }
-  .exhibitors li { break-inside: avoid; padding: .15rem 0; font-size: .9375rem; }
-  .exhibitors a { text-decoration: none; }
-  .exhibitors a:hover { text-decoration: underline; }
-  .kind { color: var(--muted); font-size: .75rem; }
-</style>
