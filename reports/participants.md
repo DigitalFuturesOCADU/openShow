@@ -522,7 +522,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 ### Open Show 2025
 
-75 participants.
+74 participants.
 
 † 6 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
@@ -560,7 +560,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Hana Zaghloul
 - Peter Zougas
 
-#### Graduate (26)
+#### Graduate (25)
 
 - g blekkenhorst
 - Rina Chen
@@ -578,7 +578,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Demilade Olaleye
 - Olivia Pasian
 - Joshua Jacob Pothen
-- Niloofar Sanandaji
 - Niloofar Sanandajizadeh
 - Assal Toudehfallah
 - Tinatei Tunyan

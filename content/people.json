@@ -9167,50 +9167,19 @@
       ]
     },
     {
-      "id": "niloofar-sanandaji",
-      "name": "Niloofar Sanandaji",
-      "sortName": "Sanandaji, Niloofar",
-      "kind": "person",
-      "variants": [
-        "Niloofar Sanandaji"
-      ],
-      "projects": [
-        "orbs-interactive-light"
-      ],
-      "shows": [
-        "2025"
-      ],
-      "appearances": [
-        {
-          "show": "2025",
-          "year": 2025,
-          "project": "orbs-interactive-light",
-          "title": "Orbs Interactive Light",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
       "id": "niloofar-sanandajizadeh",
       "name": "Niloofar Sanandajizadeh",
       "sortName": "Sanandajizadeh, Niloofar",
       "kind": "person",
       "variants": [
+        "Niloofar Sanandaji",
         "Niloofar Sanandaji Zadeh",
         "Niloofar Sanandajizadeh"
       ],
       "projects": [
         "alt-controllers-round-2",
         "my-friend-the-red-balloon",
+        "orbs-interactive-light",
         "reconnection",
         "the-egg"
       ],
@@ -9245,6 +9214,17 @@
         {
           "show": "2025",
           "year": 2025,
+          "project": "orbs-interactive-light",
+          "title": "Orbs Interactive Light",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
+        {
+          "show": "2025",
+          "year": 2025,
           "project": "my-friend-the-red-balloon",
           "title": "My Friend the Red Balloon",
           "affiliation": [
@@ -9266,7 +9246,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 4,
+      "projectCount": 5,
       "affiliations": [
         "graduate",
         "undergraduate"
