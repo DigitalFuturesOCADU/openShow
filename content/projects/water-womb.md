@@ -21,7 +21,7 @@ credits:
     name: Cole Kassirer
     role: null
     affiliation: null
-  - personId: mika-wall
+  - personId: mika-maclear-wall
     name: Mika Wall
     role: null
     affiliation: null
