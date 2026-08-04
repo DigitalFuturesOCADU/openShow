@@ -18,18 +18,23 @@ credits:
   - personId: luke-d-alfonsi
     name: Luke D'Alfonsi
     role: null
+    affiliation: null
   - personId: justine-magbitang
     name: Justine Magbitang
     role: null
+    affiliation: null
   - personId: yannan-ma
     name: Yannan Ma
     role: null
+    affiliation: null
   - personId: roann-cordova
     name: Roann Cordova
     role: null
+    affiliation: null
   - personId: hedy-fu
     name: Hedy Fu
     role: null
+    affiliation: null
 creditsRaw: Luke D'Alfonsi, Justine Magbitang, Yannan Ma, Roann Cordova, Hedy Fu
 media:
   - type: image

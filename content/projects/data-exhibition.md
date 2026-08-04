@@ -16,6 +16,7 @@ credits:
   - personId: weiqi-wu
     name: Weiqi Wu
     role: null
+    affiliation: null
 creditsRaw: Weiqi Wu
 media:
   - type: image

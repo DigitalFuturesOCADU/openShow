@@ -15,6 +15,7 @@ credits:
   - personId: ecem-ozturk
     name: Ecem Ozturk
     role: null
+    affiliation: null
 creditsRaw: Ecem Ozturk
 media:
   - type: image

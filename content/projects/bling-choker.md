@@ -16,6 +16,7 @@ credits:
   - personId: sananda-dutta
     name: Sananda Dutta
     role: null
+    affiliation: null
 creditsRaw: Sananda Dutta
 media:
   - type: image

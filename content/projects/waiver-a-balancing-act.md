@@ -15,12 +15,15 @@ credits:
   - personId: madelaine-fischer-bernhut
     name: Madelaine Fischer-Bernhut
     role: null
+    affiliation: null
   - personId: shiloh-light-barnes
     name: Shiloh Light-Barnes
     role: null
+    affiliation: null
   - personId: sam-kingston
     name: Sam Kingston
     role: null
+    affiliation: null
 creditsRaw: Madelaine Fischer-Bernhut, Shiloh Light-Barnes, Sam Kingston
 media:
   - type: image

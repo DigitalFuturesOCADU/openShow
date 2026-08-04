@@ -14,6 +14,7 @@ credits:
   - personId: garance-zhang
     name: Garance Zhang
     role: null
+    affiliation: null
 creditsRaw: Garance Zhang
 media:
   - type: image

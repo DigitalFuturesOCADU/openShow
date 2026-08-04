@@ -19,12 +19,15 @@ credits:
   - personId: tinatei-tunyan
     name: Tinatei Tunyan
     role: null
+    affiliation: null
   - personId: brandon-li
     name: Brandon li
     role: null
+    affiliation: null
   - personId: yuhan-xia
     name: Yuhan Xia
     role: null
+    affiliation: null
 creditsRaw: Tinatei Tunyan, Brandon li, Yuhan Xia
 media:
   - type: image

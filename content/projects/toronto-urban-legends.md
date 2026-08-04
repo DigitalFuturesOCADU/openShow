@@ -15,6 +15,7 @@ credits:
   - personId: shuting-zhou
     name: Shuting Zhou
     role: null
+    affiliation: null
 creditsRaw: Shuting Zhou
 media:
   - type: image

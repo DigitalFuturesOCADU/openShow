@@ -17,15 +17,19 @@ credits:
   - personId: orus-mateo-castano-suarez
     name: Orus Mateo Castaño-Suárez
     role: null
+    affiliation: null
   - personId: lanlan-chen
     name: Lanlan Chen
     role: null
+    affiliation: null
   - personId: jiayun-qiu
     name: Jiayun Qiu
     role: null
+    affiliation: null
   - personId: samarth-reddy
     name: Samarth Reddy
     role: null
+    affiliation: null
 creditsRaw: Orus Mateo Castaño-Suárez,  Lanlan Chen,  Jiayun Qiu,  Samarth Reddy
 media:
   - type: image

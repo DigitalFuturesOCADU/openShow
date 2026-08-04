@@ -16,12 +16,15 @@ credits:
   - personId: kayli-chow
     name: Kayli Chow
     role: null
+    affiliation: null
   - personId: cole-kassirer
     name: Cole Kassirer
     role: null
+    affiliation: null
   - personId: mika-wall
     name: Mika Wall
     role: null
+    affiliation: null
 creditsRaw: Kayli Chow, Cole Kassirer, Mika Wall
 media:
   - type: image

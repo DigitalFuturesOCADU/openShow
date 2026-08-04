@@ -15,9 +15,11 @@ credits:
   - personId: mika-maclear-wall
     name: Mika Maclear Wall
     role: null
+    affiliation: null
   - personId: david-parent
     name: David Parent
     role: null
+    affiliation: null
 creditsRaw: Mika Maclear Wall, David Parent
 media:
   - type: image

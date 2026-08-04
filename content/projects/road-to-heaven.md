@@ -16,6 +16,7 @@ credits:
   - personId: yiqun-zhou
     name: Yiqun Zhou
     role: null
+    affiliation: null
 creditsRaw: Yiqun Zhou
 media:
   - type: image

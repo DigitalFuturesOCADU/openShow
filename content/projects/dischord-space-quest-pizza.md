@@ -14,12 +14,15 @@ credits:
   - personId: ladan
     name: Ladan
     role: null
+    affiliation: null
   - personId: shikhar
     name: Shikhar
     role: null
+    affiliation: null
   - personId: peiheng
     name: Peiheng
     role: null
+    affiliation: null
 creditsRaw: Ladan, Shikhar, Peiheng
 media:
   - type: image

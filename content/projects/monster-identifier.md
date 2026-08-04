@@ -16,6 +16,7 @@ credits:
   - personId: shannen-guntoro
     name: Shannen Guntoro
     role: null
+    affiliation: null
 creditsRaw: Shannen Guntoro
 media:
   - type: image

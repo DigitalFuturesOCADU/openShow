@@ -14,6 +14,7 @@ credits:
   - personId: kahani-ploessl
     name: Kahani Ploessl
     role: null
+    affiliation: null
 creditsRaw: Kahani Ploessl
 media:
   - type: image

@@ -16,15 +16,19 @@ credits:
   - personId: aishwarya-bhattbhatt
     name: Aishwarya Bhattbhatt
     role: null
+    affiliation: null
   - personId: aranya-khurana
     name: Aranya Khurana
     role: null
+    affiliation: null
   - personId: nastaran-bizmark
     name: Nastaran Bizmark
     role: null
+    affiliation: null
   - personId: rutooja-khamkar
     name: Rutooja Khamkar
     role: null
+    affiliation: null
 creditsRaw: Aishwarya Bhattbhatt, Aranya Khurana, Nastaran Bizmark, Rutooja Khamkar
 media:
   - type: image

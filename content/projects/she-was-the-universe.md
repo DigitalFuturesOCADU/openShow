@@ -16,15 +16,19 @@ credits:
   - personId: yanjia-yi
     name: Yanjia Yi
     role: null
+    affiliation: null
   - personId: yunting-he
     name: Yunting He
     role: null
+    affiliation: null
   - personId: lanlan-chen
     name: Lanlan Chen
     role: null
+    affiliation: null
   - personId: yixin-zhang
     name: Yixin Zhang
     role: null
+    affiliation: null
 creditsRaw: Yanjia Yi, Yunting He, Lanlan Chen, Yixin Zhang
 media:
   - type: image

@@ -15,6 +15,7 @@ credits:
   - personId: samarth-reddy
     name: Samarth Reddy
     role: null
+    affiliation: null
 creditsRaw: Samarth Reddy
 media:
   - type: image

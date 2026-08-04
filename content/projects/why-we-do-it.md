@@ -15,6 +15,7 @@ credits:
   - personId: mustafa-abdel-fattah
     name: Mustafa Abdel Fattah
     role: null
+    affiliation: null
 creditsRaw: Mustafa Abdel Fattah
 media:
   - type: image

@@ -14,6 +14,7 @@ credits:
   - personId: arsalan-akhtar
     name: Arsalan Akhtar
     role: null
+    affiliation: null
 creditsRaw: Arsalan Akhtar
 media: []
 layout: default

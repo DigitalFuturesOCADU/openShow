@@ -16,9 +16,11 @@ credits:
   - personId: priya-bandodkar
     name: Priya Bandodkar
     role: null
+    affiliation: null
   - personId: manisha-laroia
     name: Manisha Laroia
     role: null
+    affiliation: null
 creditsRaw: Priya Bandodkar, Manisha Laroia
 media: []
 layout: default

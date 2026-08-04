@@ -18,12 +18,15 @@ credits:
   - personId: mahnoor-hasan
     name: Mahnoor Hasan
     role: null
+    affiliation: null
   - personId: harry-zhao
     name: Harry Zhao
     role: null
+    affiliation: null
   - personId: ziheng-qu
     name: Ziheng Qu
     role: null
+    affiliation: null
 creditsRaw: Mahnoor Hasan, Harry Zhao, Ziheng Qu
 media:
   - type: image

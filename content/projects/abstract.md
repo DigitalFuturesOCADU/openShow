@@ -17,6 +17,7 @@ credits:
   - personId: georgina-yeboah
     name: Georgina Yeboah
     role: null
+    affiliation: null
 creditsRaw: Georgina Yeboah
 media:
   - type: image

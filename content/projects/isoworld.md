@@ -17,6 +17,7 @@ credits:
   - personId: joshua-igwe
     name: Joshua Igwe
     role: null
+    affiliation: null
 creditsRaw: Joshua Igwe
 media:
   - type: image

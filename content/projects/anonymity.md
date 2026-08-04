@@ -14,6 +14,7 @@ credits:
   - personId: ziyi-wang
     name: Ziyi Wang
     role: null
+    affiliation: null
 creditsRaw: Ziyi Wang
 media:
   - type: image

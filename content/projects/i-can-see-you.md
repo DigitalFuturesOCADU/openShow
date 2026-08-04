@@ -19,6 +19,7 @@ credits:
   - personId: yusif-safarzade
     name: Yusif Safarzade
     role: null
+    affiliation: null
 creditsRaw: Yusif Safarzade
 media:
   - type: image

@@ -15,15 +15,19 @@ credits:
   - personId: jiayun-qiu
     name: Jiayun Qiu
     role: null
+    affiliation: null
   - personId: aileen-dong
     name: Aileen Dong
     role: null
+    affiliation: null
   - personId: juan-sulca
     name: Juan Sulca
     role: null
+    affiliation: null
   - personId: xinzhou-zhang
     name: Xinzhou Zhang
     role: null
+    affiliation: null
 creditsRaw: Jiayun Qiu, Aileen Dong, Juan Sulca, Xinzhou Zhang
 media:
   - type: image

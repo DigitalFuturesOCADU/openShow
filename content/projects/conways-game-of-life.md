@@ -16,9 +16,11 @@ credits:
   - personId: abha-patil
     name: Abha Patil
     role: null
+    affiliation: null
   - personId: juan-sulca
     name: Juan Sulca
     role: null
+    affiliation: null
 creditsRaw: Abha Patil, Juan Sulca
 media: []
 layout: default

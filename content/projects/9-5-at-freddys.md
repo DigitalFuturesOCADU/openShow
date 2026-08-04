@@ -15,12 +15,15 @@ credits:
   - personId: kayli-chow
     name: Kayli Chow
     role: null
+    affiliation: null
   - personId: cole-kassirer
     name: Cole Kassirer
     role: null
+    affiliation: null
   - personId: amanda-daley
     name: Amanda Daley
     role: null
+    affiliation: null
 creditsRaw: Kayli Chow, Cole Kassirer, Amanda Daley
 media:
   - type: image

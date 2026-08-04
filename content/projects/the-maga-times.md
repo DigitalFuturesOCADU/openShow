@@ -17,6 +17,7 @@ credits:
   - personId: nicole-vella
     name: Nicole Vella
     role: null
+    affiliation: null
 creditsRaw: Nicole Vella
 media:
   - type: image

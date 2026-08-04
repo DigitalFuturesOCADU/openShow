@@ -13,6 +13,7 @@ credits:
   - personId: rojina-pedramy
     name: Rojina Pedramy
     role: null
+    affiliation: null
 creditsRaw: Rojina Pedramy
 media:
   - type: image

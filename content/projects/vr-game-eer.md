@@ -17,18 +17,23 @@ credits:
   - personId: ethan-day
     name: Ethan Day
     role: null
+    affiliation: null
   - personId: luke-d-alfonsi
     name: Luke D'Alfonsi
     role: null
+    affiliation: null
   - personId: arteya-lutchman
     name: Arteya Lutchman
     role: null
+    affiliation: null
   - personId: ethan-shapiro
     name: Ethan Shapiro
     role: null
+    affiliation: null
   - personId: magdalena-szlapczynskials
     name: Magdalena Szlapczynskials
     role: null
+    affiliation: null
 creditsRaw: Ethan Day, Luke D'Alfonsi, Arteya Lutchman, Ethan Shapiro, Magdalena Szlapczynskials
 media:
   - type: image

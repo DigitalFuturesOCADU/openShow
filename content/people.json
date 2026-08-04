@@ -24,6 +24,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -56,6 +57,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -91,6 +93,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -101,6 +104,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -111,6 +115,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -144,6 +149,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -172,6 +178,7 @@
           "project": "digital-debris",
           "title": "Digital Debris",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -202,6 +209,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -234,6 +242,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -266,6 +275,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -300,6 +310,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -310,6 +321,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -344,6 +356,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -354,6 +367,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -386,6 +400,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -418,6 +433,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -450,6 +466,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -482,6 +499,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -514,6 +532,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -546,6 +565,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -578,6 +598,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -610,6 +631,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -642,6 +664,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -676,6 +699,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -686,6 +710,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -719,6 +744,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -753,6 +779,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -788,6 +815,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -821,6 +849,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -853,6 +882,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -887,6 +917,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -897,6 +928,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -930,6 +962,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -940,6 +973,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -974,6 +1008,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -986,6 +1021,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -1020,6 +1056,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1052,6 +1089,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1082,6 +1120,7 @@
           "project": "blade-and-coin",
           "title": "Blade & Coin",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1112,6 +1151,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1144,6 +1184,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1176,6 +1217,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1208,6 +1250,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1240,6 +1283,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1274,6 +1318,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1284,6 +1329,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1294,6 +1340,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1332,6 +1379,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1342,6 +1390,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1352,6 +1401,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1362,6 +1412,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1374,6 +1425,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -1410,6 +1462,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1420,6 +1473,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1452,6 +1506,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1484,6 +1539,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1516,6 +1572,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1551,6 +1608,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1561,6 +1619,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1571,6 +1630,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1604,6 +1664,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1614,6 +1675,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1648,6 +1710,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1659,6 +1722,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -1693,6 +1757,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -1726,6 +1791,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1758,6 +1824,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1790,6 +1857,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1822,6 +1890,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1855,6 +1924,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1865,6 +1935,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1899,6 +1970,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1909,6 +1981,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1941,6 +2014,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -1974,6 +2048,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -1984,6 +2059,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2022,6 +2098,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2032,6 +2109,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2040,6 +2118,7 @@
           "project": "water-womb",
           "title": "Water/Womb",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2050,6 +2129,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2082,6 +2162,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2114,6 +2195,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2148,6 +2230,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2158,6 +2241,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2193,6 +2277,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -2205,6 +2290,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -2239,6 +2325,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2269,6 +2356,7 @@
           "project": "blade-and-coin",
           "title": "Blade & Coin",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2301,6 +2389,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2311,6 +2400,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2344,6 +2434,7 @@
           "project": "binoculars",
           "title": "Binoculars",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2354,6 +2445,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2386,6 +2478,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2418,6 +2511,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2453,6 +2547,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2463,6 +2558,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2497,6 +2593,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2529,6 +2626,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2561,6 +2659,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2595,6 +2694,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2605,6 +2705,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2638,6 +2739,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2670,6 +2772,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2704,6 +2807,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2714,6 +2818,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2749,6 +2854,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2759,6 +2865,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2769,6 +2876,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2802,6 +2910,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2812,6 +2921,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2846,6 +2956,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -2856,6 +2967,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2888,6 +3000,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2920,6 +3033,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2950,6 +3064,7 @@
           "project": "into-the-unknown",
           "title": "Into the Unknown",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -2980,6 +3095,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3012,6 +3128,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3044,6 +3161,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3079,6 +3197,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -3089,6 +3208,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -3099,6 +3219,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3131,6 +3252,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3163,6 +3285,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3196,6 +3319,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -3206,6 +3330,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3240,6 +3365,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -3273,6 +3399,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3305,6 +3432,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3338,6 +3466,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3373,6 +3502,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -3383,6 +3513,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3417,6 +3548,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -3427,6 +3559,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3461,6 +3594,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -3494,6 +3628,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3526,6 +3661,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3558,6 +3694,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3590,6 +3727,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3622,6 +3760,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3654,6 +3793,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3686,6 +3826,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3718,6 +3859,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3750,6 +3892,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3782,6 +3925,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3814,6 +3958,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3850,6 +3995,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -3858,6 +4004,7 @@
           "project": "chinatown-centre-%e6%96%87%e8%8f%af%e4%b8%ad%e5%bf%83",
           "title": "CHINATOWN CENTRE - 文華中心",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -3868,6 +4015,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3900,6 +4048,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3933,6 +4082,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -3969,6 +4119,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -3979,6 +4130,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4012,6 +4164,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4044,6 +4197,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4080,6 +4234,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -4090,6 +4245,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -4100,6 +4256,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -4110,6 +4267,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4138,6 +4296,7 @@
           "project": "metahospital",
           "title": "MetaHospital",
           "affiliation": [],
+          "affiliationExact": true,
           "role": "Director"
         }
       ],
@@ -4176,6 +4335,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -4188,6 +4348,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -4198,6 +4359,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -4209,6 +4371,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -4220,6 +4383,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -4256,6 +4420,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -4266,6 +4431,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4298,6 +4464,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4332,6 +4499,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -4343,6 +4511,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4376,6 +4545,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4410,6 +4580,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -4444,6 +4615,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4476,6 +4648,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4508,6 +4681,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4540,6 +4714,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4572,6 +4747,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4604,6 +4780,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4636,6 +4813,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4668,6 +4846,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4705,6 +4884,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -4715,6 +4895,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -4725,6 +4906,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -4735,6 +4917,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4767,6 +4950,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4799,6 +4983,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4831,6 +5016,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4863,6 +5049,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4895,6 +5082,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4927,6 +5115,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4957,6 +5146,7 @@
           "project": "blade-and-coin",
           "title": "Blade & Coin",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -4987,6 +5177,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5019,6 +5210,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5051,6 +5243,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5086,6 +5279,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5094,6 +5288,7 @@
           "project": "water-womb",
           "title": "Water/Womb",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5104,6 +5299,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5137,6 +5333,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5147,6 +5344,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5179,6 +5377,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5211,6 +5410,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5243,6 +5443,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5278,6 +5479,7 @@
           "project": "tactile",
           "title": "TacTile",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5288,6 +5490,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5298,6 +5501,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5309,6 +5513,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -5345,6 +5550,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5356,6 +5562,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5389,6 +5596,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5421,6 +5629,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5453,6 +5662,7 @@
           "project": "visualization-of-sternberg-triangular-theory-of-love",
           "title": "Visualization of Sternberg Triangular Theory of Love",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5463,6 +5673,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5473,6 +5684,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5505,6 +5717,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5537,6 +5750,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5569,6 +5783,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5601,6 +5816,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5633,6 +5849,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5665,6 +5882,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5697,6 +5915,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5729,6 +5948,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5762,6 +5982,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -5796,6 +6017,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -5833,6 +6055,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5843,6 +6066,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5854,6 +6078,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -5864,6 +6089,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5900,6 +6126,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5911,6 +6138,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5919,6 +6147,7 @@
           "project": "the-strange-and-the-beautiful",
           "title": "The Strange and the Beautiful",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -5956,6 +6185,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5966,6 +6196,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -5976,6 +6207,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6008,6 +6240,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6045,6 +6278,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6055,6 +6289,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6065,6 +6300,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6075,6 +6311,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6108,6 +6345,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6140,6 +6378,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6175,6 +6414,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6185,6 +6425,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6196,6 +6437,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -6229,6 +6471,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6261,6 +6504,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6293,6 +6537,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6325,6 +6570,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6357,6 +6603,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6393,6 +6640,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6403,6 +6651,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6413,6 +6662,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6441,6 +6691,7 @@
           "project": "metahospital",
           "title": "MetaHospital",
           "affiliation": [],
+          "affiliationExact": true,
           "role": "Actor"
         }
       ],
@@ -6473,6 +6724,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6484,6 +6736,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6518,6 +6771,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6528,6 +6782,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6560,6 +6815,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6592,6 +6848,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6626,6 +6883,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6636,6 +6894,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6669,6 +6928,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -6702,6 +6962,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6734,6 +6995,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6768,6 +7030,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6779,6 +7042,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -6814,6 +7078,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6824,6 +7089,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6859,6 +7125,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6869,6 +7136,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6905,6 +7173,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6915,6 +7184,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -6925,6 +7195,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6957,6 +7228,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -6991,6 +7263,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -7001,6 +7274,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7033,6 +7307,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7066,6 +7341,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -7076,6 +7352,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7108,6 +7385,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7141,6 +7419,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -7151,6 +7430,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7183,6 +7463,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7215,6 +7496,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7249,6 +7531,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -7259,6 +7542,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7292,6 +7576,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -7302,6 +7587,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7334,6 +7620,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7366,6 +7653,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7398,6 +7686,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7430,6 +7719,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7462,6 +7752,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7494,6 +7785,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7526,6 +7818,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7560,6 +7853,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -7570,6 +7864,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7602,6 +7897,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7632,6 +7928,7 @@
           "project": "blade-and-coin",
           "title": "Blade & Coin",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7662,6 +7959,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7694,6 +7992,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7726,6 +8025,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7758,6 +8058,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7790,6 +8091,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7822,6 +8124,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7854,6 +8157,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7884,6 +8188,7 @@
           "project": "blade-and-coin",
           "title": "Blade & Coin",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7914,6 +8219,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -7948,6 +8254,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -7959,6 +8266,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -7992,6 +8300,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8026,6 +8335,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8037,6 +8347,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8068,6 +8379,7 @@
           "project": "binoculars",
           "title": "Binoculars",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8101,6 +8413,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8111,6 +8424,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8121,6 +8435,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8156,6 +8471,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8166,6 +8482,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8176,6 +8493,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8215,6 +8533,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8225,6 +8544,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8235,6 +8555,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8245,6 +8566,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8255,6 +8577,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8266,6 +8589,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -8300,6 +8624,7 @@
           "project": "ignominious-retreat",
           "title": "Ignominious retreat",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8310,6 +8635,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8342,6 +8668,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8374,6 +8701,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8406,6 +8734,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8438,6 +8767,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8468,6 +8798,7 @@
           "project": "scanable-ethos",
           "title": "Scanable Ethos",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8505,6 +8836,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8515,6 +8847,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8525,6 +8858,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8535,6 +8869,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8543,6 +8878,7 @@
           "project": "digi-forest",
           "title": "Digi Forest",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8555,6 +8891,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -8588,6 +8925,7 @@
           "project": "binoculars",
           "title": "Binoculars",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8620,6 +8958,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -8632,6 +8971,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -8668,6 +9008,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8678,6 +9019,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8708,6 +9050,7 @@
           "project": "blade-and-coin",
           "title": "Blade & Coin",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8738,6 +9081,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8774,6 +9118,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8784,6 +9129,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8795,6 +9141,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -8831,6 +9178,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8841,6 +9189,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8851,6 +9200,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8886,6 +9236,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8897,6 +9248,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -8908,6 +9260,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -8942,6 +9295,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -8950,6 +9304,7 @@
           "project": "into-the-unknown",
           "title": "Into the Unknown",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -8982,6 +9337,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9014,6 +9370,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9046,6 +9403,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9078,6 +9436,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9110,6 +9469,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9142,6 +9502,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9176,6 +9537,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -9186,6 +9548,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9218,6 +9581,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9251,6 +9615,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -9261,6 +9626,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9295,6 +9661,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -9305,6 +9672,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -9313,6 +9681,7 @@
           "project": "diver",
           "title": "Diver",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9345,6 +9714,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9377,6 +9747,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9410,6 +9781,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -9420,6 +9792,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9452,6 +9825,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9484,6 +9858,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9517,6 +9892,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9550,6 +9926,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9588,6 +9965,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -9598,6 +9976,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -9608,6 +9987,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -9618,6 +9998,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9651,6 +10032,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9683,6 +10065,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9715,6 +10098,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9749,6 +10133,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -9760,6 +10145,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9794,6 +10180,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -9827,6 +10214,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9859,6 +10247,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9892,6 +10281,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -9902,6 +10292,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9934,6 +10325,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -9966,6 +10358,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10000,6 +10393,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -10011,6 +10405,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -10044,6 +10439,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10076,6 +10472,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10111,6 +10508,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -10121,6 +10519,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -10129,6 +10528,7 @@
           "project": "connected-landscapes",
           "title": "Connected Landscapes",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10161,6 +10561,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10193,6 +10594,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10225,6 +10627,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10257,6 +10660,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10289,6 +10693,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10322,6 +10727,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10355,6 +10761,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10387,6 +10794,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10415,6 +10823,7 @@
           "project": "observation-how-technology-can-help-reduce-gaps-between-genders",
           "title": "Observation. How technology can help reduce gaps between genders",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10445,6 +10854,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10477,6 +10887,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10509,6 +10920,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10541,6 +10953,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10573,6 +10986,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10605,6 +11019,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10637,6 +11052,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10669,6 +11085,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10708,6 +11125,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -10716,6 +11134,7 @@
           "project": "into-the-unknown",
           "title": "Into the Unknown",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -10726,6 +11145,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -10736,6 +11156,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -10747,6 +11168,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -10758,6 +11180,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -10792,6 +11215,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10824,6 +11248,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10856,6 +11281,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10888,6 +11314,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10920,6 +11347,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10952,6 +11380,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -10984,6 +11413,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11019,6 +11449,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -11030,6 +11461,7 @@
             "alumni",
             "faculty"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -11066,6 +11498,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11076,6 +11509,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11109,6 +11543,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11119,6 +11554,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11155,6 +11591,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11165,6 +11602,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11175,6 +11613,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11208,6 +11647,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11242,6 +11682,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11252,6 +11693,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11284,6 +11726,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11320,6 +11763,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11330,6 +11774,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11340,6 +11785,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11350,6 +11796,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11382,6 +11829,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": "TR"
         }
       ],
@@ -11412,6 +11860,7 @@
           "project": "blade-and-coin",
           "title": "Blade & Coin",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11442,6 +11891,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11472,6 +11922,7 @@
           "project": "water-womb",
           "title": "Water/Womb",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11502,6 +11953,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11536,6 +11988,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11546,6 +11999,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11587,6 +12041,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -11599,6 +12054,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -11611,6 +12067,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         },
         {
@@ -11621,6 +12078,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11655,6 +12113,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11689,6 +12148,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11700,6 +12160,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11733,6 +12194,7 @@
           "project": "the-no-man-zone-in-desert-iv",
           "title": "The No-Man Zone in Desert IV",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11741,6 +12203,7 @@
           "project": "impossible-self",
           "title": "Impossible Self",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11751,6 +12214,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11785,6 +12249,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11795,6 +12260,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -11805,6 +12271,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11837,6 +12304,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11869,6 +12337,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11901,6 +12370,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11931,6 +12401,7 @@
           "project": "ar-disclosures",
           "title": "AR Disclosures",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11961,6 +12432,7 @@
           "affiliation": [
             "alumni"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -11994,6 +12466,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -12004,6 +12477,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12037,6 +12511,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -12047,6 +12522,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12080,6 +12556,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -12090,6 +12567,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12122,6 +12600,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12154,6 +12633,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12186,6 +12666,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12219,6 +12700,7 @@
             "faculty",
             "graduate"
           ],
+          "affiliationExact": false,
           "role": null
         }
       ],
@@ -12252,6 +12734,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12284,6 +12767,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12316,6 +12800,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12348,6 +12833,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12382,6 +12868,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -12392,6 +12879,7 @@
           "affiliation": [
             "faculty"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12425,6 +12913,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12457,6 +12946,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12490,6 +12980,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -12498,6 +12989,7 @@
           "project": "into-the-unknown",
           "title": "Into the Unknown",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12530,6 +13022,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12562,6 +13055,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12597,6 +13091,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -12607,6 +13102,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -12617,6 +13113,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12651,6 +13148,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -12661,6 +13159,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12695,6 +13194,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -12706,6 +13206,7 @@
             "ug-thesis",
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12739,6 +13240,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12771,6 +13273,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12805,6 +13308,7 @@
           "affiliation": [
             "graduate"
           ],
+          "affiliationExact": true,
           "role": null
         },
         {
@@ -12813,6 +13317,7 @@
           "project": "road-to-heaven",
           "title": "Road to Heaven",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12843,6 +13348,7 @@
           "project": "impossible-self",
           "title": "Impossible Self",
           "affiliation": [],
+          "affiliationExact": true,
           "role": null
         }
       ],
@@ -12873,6 +13379,7 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
           "role": null
         }
       ],

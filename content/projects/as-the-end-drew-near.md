@@ -17,9 +17,11 @@ credits:
   - personId: cindy-poremba
     name: Cindy Poremba
     role: null
+    affiliation: null
   - personId: max-lander
     name: Max Lander
     role: null
+    affiliation: null
 creditsRaw: Cindy Poremba and Max Lander
 media:
   - type: image

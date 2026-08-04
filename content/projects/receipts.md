@@ -15,15 +15,19 @@ credits:
   - personId: dave-colangelo
     name: Dave Colangelo
     role: null
+    affiliation: null
   - personId: patricio-davila
     name: Patricio Dávila
     role: null
+    affiliation: null
   - personId: lilian-leung
     name: Lilian Leung
     role: null
+    affiliation: null
   - personId: immony-men
     name: Immony Mèn
     role: null
+    affiliation: null
 creditsRaw: Dave Colangelo, Patricio Dávila, Lilian Leung and Immony Mèn
 media:
   - type: image

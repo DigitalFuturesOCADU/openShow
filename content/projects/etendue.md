@@ -15,6 +15,7 @@ credits:
   - personId: johan-seaton
     name: Johan Seaton
     role: null
+    affiliation: null
 creditsRaw: Johan Seaton
 media:
   - type: image

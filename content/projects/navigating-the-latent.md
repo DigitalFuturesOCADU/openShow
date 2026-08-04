@@ -15,6 +15,7 @@ credits:
   - personId: arshia-sobhan
     name: Arshia Sobhan
     role: null
+    affiliation: null
 creditsRaw: Arshia Sobhan
 media:
   - type: image

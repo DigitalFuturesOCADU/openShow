@@ -19,9 +19,11 @@ credits:
   - personId: kartikay-chadha
     name: Kartikay Chadha
     role: null
+    affiliation: null
   - personId: dr-martha-laldy
     name: Dr. Martha Laldy
     role: null
+    affiliation: null
 creditsRaw: Kartikay Chadha, Dr. Martha Laldy
 media:
   - type: image

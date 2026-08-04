@@ -17,6 +17,7 @@ credits:
   - personId: meicen-zhou
     name: Meicen Zhou
     role: null
+    affiliation: null
 creditsRaw: Meicen Zhou
 media:
   - type: image

@@ -16,9 +16,11 @@ credits:
   - personId: sebastian-gorfinkel
     name: Sebastian Gorfinkel
     role: null
+    affiliation: null
   - personId: hamid-malek
     name: Hamid Malek
     role: null
+    affiliation: null
 creditsRaw: Sebastian Gorfinkel and Hamid Malek
 media:
   - type: image

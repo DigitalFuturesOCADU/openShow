@@ -14,6 +14,7 @@ credits:
   - personId: elena-misako-smillie
     name: Elena Misako Smillie
     role: null
+    affiliation: null
 creditsRaw: Elena Misako Smillie
 media:
   - type: image

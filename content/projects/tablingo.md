@@ -17,6 +17,7 @@ credits:
   - personId: kunal-devi
     name: Kunal Devi
     role: null
+    affiliation: null
 creditsRaw: Kunal Devi
 media:
   - type: image

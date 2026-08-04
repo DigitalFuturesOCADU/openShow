@@ -209,19 +209,34 @@ export function buildPeople(records, cfg) {
       // can be an undergraduate in 2019 and an alum in 2023. So it is recorded
       // per appearance, never rolled up to a single value on the person. This
       // is what makes "participants in 2024, grouped by affiliation" answerable.
+      // Where the project records more than one affiliation and has more than
+      // one person, the project-level value cannot say WHICH person is which.
+      // Inheriting the whole set puts every member in every group, which
+      // inflates participant counts. Flag it rather than pretend precision.
+      const teamIsMixed = r.frontmatter.affiliation.length > 1 && r.credits.length > 1
       p.appearances.push({
         show: show ?? null,
         year: r.frontmatter.year ?? null,
         project: r.slug,
         title: r.frontmatter.title,
-        affiliation: [...r.frontmatter.affiliation],
+        affiliation: credit.affiliation ? [credit.affiliation] : [...r.frontmatter.affiliation],
+        affiliationExact: Boolean(credit.affiliation) || !teamIsMixed,
         role: credit.role ?? null,
       })
 
       if (!variantsSeen.has(cslug)) variantsSeen.set(cslug, new Set())
       variantsSeen.get(cslug).add(credited)
 
-      resolved.push({ personId: cslug, name: credited, role: credit.role ?? null })
+      resolved.push({
+        personId: cslug,
+        name: credited,
+        role: credit.role ?? null,
+        // Per-person affiliation. Always null for migrated data: WordPress
+        // recorded affiliation on the project, so a mixed team of one faculty
+        // member and three grads is indistinguishable from four of each.
+        // The 2026 form asks per person — see INTAKE-FORM.md.
+        affiliation: credit.affiliation ?? null,
+      })
     }
     r.frontmatter.credits = resolved
   }

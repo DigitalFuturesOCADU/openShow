@@ -14,6 +14,7 @@ credits:
   - personId: nooshin-mohtashami
     name: Nooshin Mohtashami
     role: null
+    affiliation: null
 creditsRaw: Nooshin Mohtashami
 media:
   - type: image

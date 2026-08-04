@@ -17,6 +17,7 @@ credits:
   - personId: l-wilkins
     name: L Wilkins
     role: null
+    affiliation: null
 creditsRaw: L Wilkins
 media:
   - type: image

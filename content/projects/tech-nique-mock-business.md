@@ -17,6 +17,7 @@ credits:
   - personId: ethan-day
     name: Ethan Day
     role: null
+    affiliation: null
 creditsRaw: Ethan Day
 media:
   - type: image

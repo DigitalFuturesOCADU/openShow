@@ -14,6 +14,7 @@ credits:
   - personId: kyle-kubica
     name: Kyle Kubica
     role: null
+    affiliation: null
 creditsRaw: Kyle Kubica
 media:
   - type: image

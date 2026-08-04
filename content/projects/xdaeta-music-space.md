@@ -16,9 +16,11 @@ credits:
   - personId: xinzhou-zhang
     name: Xinzhou Zhang
     role: null
+    affiliation: null
   - personId: ailin-dong
     name: Ailin Dong
     role: null
+    affiliation: null
 creditsRaw: Xinzhou Zhang, Ailin Dong
 media:
   - type: image

@@ -18,12 +18,15 @@ credits:
   - personId: olivia-pasian
     name: Olivia Pasian
     role: null
+    affiliation: null
   - personId: paul-van-rijn
     name: Paul Van Rijn
     role: null
+    affiliation: null
   - personId: kasper-zhang
     name: Kasper Zhang
     role: null
+    affiliation: null
 creditsRaw: Olivia Pasian, Paul Van Rijn, Kasper Zhang
 media:
   - type: image

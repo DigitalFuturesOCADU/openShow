@@ -14,6 +14,7 @@ credits:
   - personId: ryan-boyd
     name: Ryan Boyd
     role: null
+    affiliation: null
 creditsRaw: Ryan Boyd
 media:
   - type: image

@@ -16,9 +16,11 @@ credits:
   - personId: thea-lu
     name: Thea Lu
     role: null
+    affiliation: null
   - personId: golnoush-mir-salari
     name: Golnoush Mir Salari
     role: null
+    affiliation: null
 creditsRaw: Thea Lu, Golnoush Mir Salari
 media:
   - type: image

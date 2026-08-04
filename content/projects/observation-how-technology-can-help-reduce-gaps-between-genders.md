@@ -12,6 +12,7 @@ credits:
   - personId: dikla-sinai
     name: Dikla Sinai
     role: null
+    affiliation: null
 creditsRaw: Dikla Sinai
 media:
   - type: image

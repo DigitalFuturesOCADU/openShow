@@ -16,6 +16,7 @@ credits:
   - personId: francisco-samayoa
     name: Francisco Samayoa
     role: null
+    affiliation: null
 creditsRaw: Francisco Samayoa
 media:
   - type: image

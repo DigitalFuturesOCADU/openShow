@@ -17,6 +17,7 @@ credits:
   - personId: finlay-braithwaite
     name: Finlay Braithwaite
     role: null
+    affiliation: null
 creditsRaw: Finlay Braithwaite
 media:
   - type: image

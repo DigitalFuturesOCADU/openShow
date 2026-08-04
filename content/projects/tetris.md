@@ -15,6 +15,7 @@ credits:
   - personId: arashjot-kaur
     name: Arashjot Kaur
     role: null
+    affiliation: null
 creditsRaw: Arashjot Kaur
 media:
   - type: image

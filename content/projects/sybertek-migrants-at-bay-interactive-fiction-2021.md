@@ -16,15 +16,19 @@ credits:
   - personId: cam-collective
     name: CAM Collective
     role: null
+    affiliation: null
   - personId: carisa-putri-antariksa
     name: Carisa Putri Antariksa
     role: null
+    affiliation: null
   - personId: amreen-ashraf
     name: Amreen Ashraf
     role: null
+    affiliation: null
   - personId: maria-denise-yala
     name: Maria Denise Yala
     role: null
+    affiliation: null
 creditsRaw: CAM Collective (Carisa Putri Antariksa, Amreen Ashraf, Maria Denise Yala).
 media:
   - type: image

@@ -18,6 +18,7 @@ credits:
   - personId: alicia-blakey
     name: Alicia Blakey
     role: null
+    affiliation: null
 creditsRaw: Alicia Blakey
 media:
   - type: image

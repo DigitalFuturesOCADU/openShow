@@ -18,6 +18,7 @@ credits:
   - personId: thea-lu
     name: Thea Lu
     role: null
+    affiliation: null
 creditsRaw: Thea Lu
 media:
   - type: image

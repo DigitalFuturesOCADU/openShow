@@ -15,15 +15,19 @@ credits:
   - personId: ryan-boyd
     name: Ryan Boyd
     role: null
+    affiliation: null
   - personId: michael-sinn
     name: Michael Sinn
     role: null
+    affiliation: null
   - personId: iris-andrici
     name: Iris Andrici
     role: null
+    affiliation: null
   - personId: alfonso-benitez
     name: Alfonso Benitez
     role: null
+    affiliation: null
 creditsRaw: Ryan Boyd, Michael Sinn, Iris Andrici, Alfonso Benitez
 media:
   - type: image

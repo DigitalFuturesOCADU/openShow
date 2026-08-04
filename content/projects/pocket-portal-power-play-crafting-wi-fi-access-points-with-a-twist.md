@@ -16,6 +16,7 @@ credits:
   - personId: candide-uyanze
     name: Candide Uyanze
     role: null
+    affiliation: null
 creditsRaw: Candide Uyanze
 media:
   - type: image

@@ -19,6 +19,7 @@ credits:
   - personId: melanie-yan
     name: Melanie Yan
     role: null
+    affiliation: null
 creditsRaw: Melanie Yan
 media:
   - type: image

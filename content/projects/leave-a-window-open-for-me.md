@@ -17,6 +17,7 @@ credits:
   - personId: neo-chen
     name: Neo Chen
     role: null
+    affiliation: null
 creditsRaw: Neo Chen
 media:
   - type: image

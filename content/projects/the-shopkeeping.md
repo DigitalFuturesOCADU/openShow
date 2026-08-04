@@ -16,6 +16,7 @@ credits:
   - personId: bryan-lee
     name: Bryan Lee
     role: null
+    affiliation: null
 creditsRaw: Bryan Lee
 media:
   - type: image

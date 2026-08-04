@@ -16,6 +16,7 @@ credits:
   - personId: marquessa-mackenzie
     name: Marquessa Mackenzie
     role: null
+    affiliation: null
 creditsRaw: Marquessa Mackenzie
 media:
   - type: image

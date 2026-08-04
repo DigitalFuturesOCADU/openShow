@@ -15,6 +15,7 @@ credits:
   - personId: rajat-kumar
     name: Rajat Kumar
     role: null
+    affiliation: null
 creditsRaw: Rajat Kumar
 media:
   - type: image

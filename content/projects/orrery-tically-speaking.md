@@ -16,6 +16,7 @@ credits:
   - personId: jerez-bain
     name: Jerez Bain
     role: null
+    affiliation: null
 creditsRaw: Jerez Bain
 media:
   - type: image

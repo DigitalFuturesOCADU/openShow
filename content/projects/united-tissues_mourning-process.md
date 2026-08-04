@@ -13,6 +13,7 @@ credits:
   - personId: barbara-rauch
     name: Barbara Rauch
     role: null
+    affiliation: null
 creditsRaw: Barbara Rauch
 media:
   - type: image

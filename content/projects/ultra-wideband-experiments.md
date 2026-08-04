@@ -18,18 +18,23 @@ credits:
   - personId: kate-hartman
     name: Kate Hartman
     role: null
+    affiliation: null
   - personId: nick-puckett
     name: Nick Puckett
     role: null
+    affiliation: null
   - personId: aranya-khurana
     name: Aranya Khurana
     role: null
+    affiliation: null
   - personId: abha-patil
     name: Abha Patil
     role: null
+    affiliation: null
   - personId: juan-sulca
     name: Juan Sulca
     role: null
+    affiliation: null
 creditsRaw: Kate Hartman, Nick Puckett, Aranya Khurana, Abha Patil, Juan Sulca,
 media:
   - type: image

@@ -14,12 +14,15 @@ credits:
   - personId: tanzil-garg
     name: Tanzil Garg
     role: null
+    affiliation: null
   - personId: aitareya-sethi
     name: Aitareya Sethi
     role: null
+    affiliation: null
   - personId: shaizaan-prasla
     name: Shaizaan Prasla
     role: null
+    affiliation: null
 creditsRaw: Tanzil Garg, Aitareya Sethi, Shaizaan Prasla
 media:
   - type: image

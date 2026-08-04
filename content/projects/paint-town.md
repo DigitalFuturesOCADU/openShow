@@ -16,9 +16,11 @@ credits:
   - personId: thomas-liu
     name: Thomas Liu
     role: null
+    affiliation: null
   - personId: max-shapovalov
     name: Max Shapovalov
     role: null
+    affiliation: null
 creditsRaw: Thomas Liu and Max Shapovalov
 media:
   - type: image

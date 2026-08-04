@@ -15,9 +15,11 @@ credits:
   - personId: clinton-akomea-agyin
     name: Clinton Akomea-Agyin
     role: null
+    affiliation: null
   - personId: krishnokoli-roy-chakraborty
     name: Krishnokoli Roy Chakraborty
     role: null
+    affiliation: null
 creditsRaw: Clinton Akomea-Agyin, Krishnokoli Roy Chakraborty
 media:
   - type: image

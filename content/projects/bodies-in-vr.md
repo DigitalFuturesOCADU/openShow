@@ -18,15 +18,19 @@ credits:
   - personId: emma-westecott
     name: Emma Westecott
     role: null
+    affiliation: null
   - personId: tyler-beatty
     name: Tyler Beatty
     role: null
+    affiliation: null
   - personId: ryan-boyd
     name: Ryan Boyd
     role: null
+    affiliation: null
   - personId: kahani-ploessl
     name: Kahani Ploessl
     role: null
+    affiliation: null
 creditsRaw: Emma Westecott, Tyler Beatty, Ryan Boyd, Kahani Ploessl
 media:
   - type: image

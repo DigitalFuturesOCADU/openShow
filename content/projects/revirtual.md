@@ -16,6 +16,7 @@ credits:
   - personId: peng-guan
     name: Peng Guan
     role: null
+    affiliation: null
 creditsRaw: Peng Guan
 media:
   - type: image

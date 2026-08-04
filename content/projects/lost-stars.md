@@ -17,6 +17,7 @@ credits:
   - personId: daniela-ortiz-correa
     name: Daniela Ortiz Correa
     role: null
+    affiliation: null
 creditsRaw: Daniela Ortiz Correa
 media:
   - type: image

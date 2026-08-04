@@ -16,6 +16,7 @@ credits:
   - personId: yang-yi
     name: Yang YI
     role: null
+    affiliation: null
 creditsRaw: Yang YI
 media:
   - type: image

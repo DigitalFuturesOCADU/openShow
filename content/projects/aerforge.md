@@ -17,15 +17,19 @@ credits:
   - personId: salisa-jatweerapong
     name: Salisa Jatweerapong
     role: null
+    affiliation: null
   - personId: melissa-roberts
     name: Melissa Roberts
     role: null
+    affiliation: null
   - personId: mahnoor-shahid
     name: Mahnoor Shahid
     role: null
+    affiliation: null
   - personId: samantha-sylvester
     name: Samantha Sylvester
     role: null
+    affiliation: null
 creditsRaw: Salisa Jatweerapong, Melissa Roberts, Mahnoor Shahid, Samantha Sylvester
 media:
   - type: image

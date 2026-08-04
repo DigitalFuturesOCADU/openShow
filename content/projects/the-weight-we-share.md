@@ -15,9 +15,11 @@ credits:
   - personId: joshua-jacob-pothen
     name: Joshua Jacob Pothen
     role: null
+    affiliation: null
   - personId: erinma-arki
     name: Erinma Arki
     role: null
+    affiliation: null
 creditsRaw: Joshua Jacob Pothen, Erinma Arki
 media:
   - type: image

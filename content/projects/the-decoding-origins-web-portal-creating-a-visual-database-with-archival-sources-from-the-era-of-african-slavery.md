@@ -20,12 +20,15 @@ credits:
   - personId: kartikay-chadha
     name: Kartikay Chadha
     role: null
+    affiliation: null
   - personId: martha-ladly
     name: Martha Ladly
     role: null
+    affiliation: null
   - personId: katrina-keefer
     name: Katrina Keefer
     role: null
+    affiliation: null
 creditsRaw: Kartikay Chadha, Martha Ladly, Katrina Keefer
 media: []
 layout: default

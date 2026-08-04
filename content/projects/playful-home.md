@@ -18,6 +18,7 @@ credits:
   - personId: joshua-jacob-pothen
     name: Joshua Jacob Pothen
     role: null
+    affiliation: null
 creditsRaw: Joshua Jacob Pothen
 media:
   - type: image

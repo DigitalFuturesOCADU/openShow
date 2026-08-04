@@ -13,24 +13,31 @@ credits:
   - personId: sofia-pacheco
     name: Sofia Pacheco
     role: null
+    affiliation: null
   - personId: emma-nguyen
     name: Emma Nguyen
     role: null
+    affiliation: null
   - personId: judsia-joseph
     name: Judsia Joseph
     role: null
+    affiliation: null
   - personId: liam-bisaillion
     name: Liam Bisaillion
     role: null
+    affiliation: null
   - personId: evie-conroy
     name: Evie Conroy
     role: null
+    affiliation: null
   - personId: refah-wais
     name: Refah Wais
     role: null
+    affiliation: null
   - personId: quinn-powell
     name: Quinn Powell
     role: null
+    affiliation: null
 creditsRaw: Sofia Pacheco, Emma Nguyen, Judsia Joseph, Liam Bisaillion, Evie Conroy, Refah Wais,  Quinn Powell
 media:
   - type: image

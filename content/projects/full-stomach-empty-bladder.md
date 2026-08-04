@@ -14,6 +14,7 @@ credits:
   - personId: srikripa-krishnan
     name: Srikripa Krishnan
     role: null
+    affiliation: null
 creditsRaw: Srikripa Krishnan
 media:
   - type: image

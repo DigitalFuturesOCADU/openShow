@@ -15,6 +15,7 @@ credits:
   - personId: abha-patil
     name: Abha Patil
     role: null
+    affiliation: null
 creditsRaw: Abha Patil
 media:
   - type: image

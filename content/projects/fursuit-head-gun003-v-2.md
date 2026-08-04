@@ -14,6 +14,7 @@ credits:
   - personId: gunner-thongmeesang
     name: Gunner Thongmeesang
     role: null
+    affiliation: null
 creditsRaw: Gunner Thongmeesang
 media:
   - type: image

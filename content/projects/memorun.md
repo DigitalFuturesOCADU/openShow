@@ -15,18 +15,23 @@ credits:
   - personId: grace-yuan
     name: Grace Yuan
     role: null
+    affiliation: null
   - personId: jie-guan
     name: Jie Guan
     role: null
+    affiliation: null
   - personId: renee-ge
     name: Renee Ge
     role: null
+    affiliation: null
   - personId: wei-zhang
     name: Wei Zhang
     role: null
+    affiliation: null
   - personId: neo-chen
     name: Neo Chen
     role: null
+    affiliation: null
 creditsRaw: Grace Yuan, Jie Guan, Renee Ge, Wei Zhang, Neo Chen
 media:
   - type: image

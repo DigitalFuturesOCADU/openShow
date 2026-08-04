@@ -15,12 +15,15 @@ credits:
   - personId: vivan-fu
     name: Vivan Fu
     role: null
+    affiliation: null
   - personId: pandy-ma
     name: Pandy Ma
     role: null
+    affiliation: null
   - personId: sydney-pallister
     name: Sydney Pallister
     role: null
+    affiliation: null
 creditsRaw: Vivan Fu, Pandy Ma & Sydney Pallister
 media:
   - type: image

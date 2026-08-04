@@ -16,6 +16,7 @@ credits:
   - personId: tania-samokhvalova
     name: Tania Samokhvalova
     role: null
+    affiliation: null
 creditsRaw: Tania Samokhvalova
 media:
   - type: image

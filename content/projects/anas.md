@@ -15,6 +15,7 @@ credits:
   - personId: raza
     name: Raza
     role: null
+    affiliation: null
 creditsRaw: Raza
 media:
   - type: image

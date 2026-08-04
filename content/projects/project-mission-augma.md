@@ -15,9 +15,11 @@ credits:
   - personId: aimee-chen
     name: Aimee Chen
     role: null
+    affiliation: null
   - personId: doris-gao
     name: Doris Gao
     role: null
+    affiliation: null
 creditsRaw: Aimee Chen and Doris Gao
 media:
   - type: image

@@ -17,21 +17,27 @@ credits:
   - personId: sydney-pallister
     name: Sydney Pallister
     role: null
+    affiliation: null
   - personId: johan-seaton
     name: Johan Seaton
     role: null
+    affiliation: null
   - personId: mika-hirata
     name: Mika Hirata
     role: null
+    affiliation: null
   - personId: erika-davis
     name: Erika Davis
     role: null
+    affiliation: null
   - personId: ardy-llantino
     name: Ardy Llantino
     role: null
+    affiliation: null
   - personId: pandy-ma
     name: Pandy Ma
     role: null
+    affiliation: null
 creditsRaw: Sydney Pallister, Johan Seaton, Mika Hirata, Erika Davis, Ardy Llantino, Pandy Ma
 media:
   - type: image

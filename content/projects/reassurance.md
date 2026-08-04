@@ -18,6 +18,7 @@ credits:
   - personId: gillian-blekkenhorst
     name: Gillian Blekkenhorst
     role: null
+    affiliation: null
 creditsRaw: Gillian Blekkenhorst
 media:
   - type: image

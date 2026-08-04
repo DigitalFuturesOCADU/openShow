@@ -15,6 +15,7 @@ credits:
   - personId: alexandra-fernandez-espinosa
     name: Alexandra Fernandez Espinosa
     role: null
+    affiliation: null
 creditsRaw: Alexandra Fernandez Espinosa
 media:
   - type: image

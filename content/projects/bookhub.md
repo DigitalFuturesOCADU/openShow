@@ -15,12 +15,15 @@ credits:
   - personId: simran-duggal
     name: Simran Duggal
     role: null
+    affiliation: null
   - personId: mairead-stewart
     name: Mairead Stewart
     role: null
+    affiliation: null
   - personId: greg-martin
     name: Greg Martin
     role: null
+    affiliation: null
 creditsRaw: Simran Duggal, Mairead Stewart, Greg Martin
 media:
   - type: image

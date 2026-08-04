@@ -16,6 +16,7 @@ credits:
   - personId: arshia-sobhan-sarbandi
     name: Arshia Sobhan Sarbandi
     role: null
+    affiliation: null
 creditsRaw: Arshia Sobhan Sarbandi
 media:
   - type: image

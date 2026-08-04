@@ -17,18 +17,23 @@ credits:
   - personId: data-materialization-studio-lab
     name: Data Materialization Studio Lab
     role: null
+    affiliation: null
   - personId: collective-project-angela-atkinson
     name: 'collective project: Angela Atkinson'
     role: null
+    affiliation: null
   - personId: michelle-gay
     name: Michelle Gay
     role: null
+    affiliation: null
   - personId: barbara-rauch
     name: Barbara Rauch
     role: null
+    affiliation: null
   - personId: casper-sutton-fosman
     name: Casper Sutton-Fosman
     role: null
+    affiliation: null
 creditsRaw: >-
   Data Materialization Studio Lab, collective project: Angela Atkinson, Michelle Gay, Barbara Rauch,
   Casper Sutton-Fosman

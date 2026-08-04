@@ -15,6 +15,7 @@ credits:
   - personId: leanna-barwick
     name: Leanna Barwick
     role: null
+    affiliation: null
 creditsRaw: Leanna Barwick
 media:
   - type: image

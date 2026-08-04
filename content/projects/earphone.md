@@ -16,6 +16,7 @@ credits:
   - personId: zhihan-zhang
     name: Zhihan Zhang
     role: null
+    affiliation: null
 creditsRaw: Zhihan Zhang
 media:
   - type: image

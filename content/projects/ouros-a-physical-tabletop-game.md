@@ -14,6 +14,7 @@ credits:
   - personId: prayag-ichangimath
     name: Prayag Ichangimath
     role: null
+    affiliation: null
 creditsRaw: Prayag Ichangimath
 media:
   - type: image
