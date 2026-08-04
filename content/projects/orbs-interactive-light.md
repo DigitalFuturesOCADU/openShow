@@ -13,7 +13,7 @@ medium:
   - sculpture
 tags: []
 credits:
-  - personId: niloofar-sanandaji
+  - personId: niloofar-sanandajizadeh
     name: Niloofar Sanandaji
     role: null
     affiliation: null

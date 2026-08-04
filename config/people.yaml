@@ -14,6 +14,9 @@
 aliases:
   "Mika Maclear Wall": "Mika Maclear-Wall"
   "Niloofar Sanandaji Zadeh": "Niloofar Sanandajizadeh"
+  # Confirmed by hand. Too short for the edit-distance check to propose, since
+  # one name is a prefix of the other rather than a misspelling of it.
+  "Niloofar Sanandaji": "Niloofar Sanandajizadeh"
   "Orus Mateo Castano Suarez": "Orus Mateo Castaño-Suárez"
 
 # --- PROBABLE TYPOS: normalised names within an edit distance of 2, but not
