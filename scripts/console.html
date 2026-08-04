@@ -69,6 +69,12 @@
   .state.needed { color:var(--bad); }
   .state.done { color:var(--muted); }
 
+  .danger-head { color:var(--bad); border-top-color:var(--bad); }
+  .danger { border:1px solid var(--bad); padding:1rem; max-width:36rem; }
+  .danger > p { margin:0 0 1rem; color:var(--muted); font-size:.875rem; }
+  button.bad { background:var(--bad); border-color:var(--bad); color:#fff; }
+  button.bad:disabled { opacity:.4; }
+
   .actions { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.25rem; }
   button { font:inherit; cursor:pointer; background:var(--ink); color:var(--paper);
            border:1px solid var(--ink); border-radius:0; padding:.4rem .9rem; }
@@ -177,6 +183,27 @@
     </li>
   </ol>
 
+  <h2 class="danger-head">Start a show over</h2>
+  <div class="danger">
+    <p>Deletes everything brought in for a show — the submitted work, the archived
+    files, and its corrections — so you can ingest it again from scratch. Shows
+    from the 2019–2025 archive cannot be reset.</p>
+    <form id="f-reset">
+      <div class="row"><label for="x-show">Show</label><select id="x-show"></select></div>
+      <div class="actions">
+        <button type="button" class="ghost" id="b-reset-report">See what would be deleted</button>
+      </div>
+      <div id="reset-confirm" hidden>
+        <div class="row">
+          <label for="x-confirm">Type the show</label>
+          <input id="x-confirm" autocomplete="off" placeholder="">
+        </div>
+        <p class="hint">Read the report below first. This cannot be undone from here.</p>
+        <div class="actions"><button type="button" id="b-reset-go" class="bad" disabled>Delete and start over</button></div>
+      </div>
+    </form>
+  </div>
+
   <pre id="log" aria-live="polite" aria-label="Output"></pre>
 </div>
 
@@ -220,7 +247,15 @@ async function run(body, endpoint = '/api/run') {
   }
   busy = false
   document.querySelectorAll('button').forEach((b) => (b.disabled = false))
+  // …except the delete button, which is armed only by typing the show name.
+  // Re-enabling everything blindly left it clickable with an empty field.
+  armReset()
   refresh()
+}
+
+function armReset() {
+  const btn = $('#b-reset-go')
+  if (btn) btn.disabled = $('#x-confirm').value.trim() !== $('#x-show').value
 }
 
 async function refresh() {
@@ -240,7 +275,7 @@ async function refresh() {
     : '<p class="empty">No shows yet. Announce one below.</p>'
 
   const opts = s.shows.map((sh) => `<option value="${sh.id}">${sh.title.replace('Open Show ', '')}</option>`).join('')
-  for (const sel of ['#i-show', '#r-show']) {
+  for (const sel of ['#i-show', '#r-show', '#x-show']) {
     const cur = $(sel).value
     $(sel).innerHTML = opts
     if (cur) $(sel).value = cur
@@ -347,6 +382,28 @@ $('#b-build').addEventListener('click', () => run({}, '/api/build'))
 for (const b of document.querySelectorAll('[data-run]')) {
   b.addEventListener('click', () => run({ action: b.dataset.run }))
 }
+
+// Reset. Reporting and confirming are separate requests, and the confirm button
+// stays disabled until the typed show matches exactly — the server checks it
+// again anyway, so a tampered page gains nothing.
+$('#b-reset-report').addEventListener('click', async () => {
+  const show = $('#x-show').value
+  $('#x-confirm').value = ''
+  $('#x-confirm').placeholder = show
+  $('#b-reset-go').disabled = true
+  $('#reset-confirm').hidden = false
+  await run({ action: 'reset-report', show })
+})
+$('#x-confirm').addEventListener('input', armReset)
+$('#x-show').addEventListener('change', () => {
+  $('#reset-confirm').hidden = true
+  $('#x-confirm').value = ''
+})
+$('#b-reset-go').addEventListener('click', async () => {
+  await run({ action: 'reset-confirm', show: $('#x-show').value, confirm: $('#x-confirm').value })
+  $('#reset-confirm').hidden = true
+  $('#x-confirm').value = ''
+})
 
 refresh()
 </script>
