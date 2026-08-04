@@ -573,7 +573,9 @@ for (const r of records) {
       // via config/overrides.yaml or a future form — the archive has none of it.
       current: false,
       dates: { start: null, end: null },
+      time: null,
       venue: null,
+      rooms: [],
       logo: null,
       poster: null,
       teamPhoto: null,

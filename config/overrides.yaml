@@ -208,3 +208,39 @@
 # Images referenced here must exist under sources/uploads and be listed in
 # content/page-images.json, or add them to sync-media's copy list.
 # ==========================================================================
+
+# ==========================================================================
+# Show dates, times and locations.
+#
+# Transcribed by hand from the WordPress "Events" and "About" pages, which
+# stated them in prose amid a lot of repeated boilerplate. Only four shows ever
+# had such a page; 2019 (both), 2021 and 2024 have none, and there is nowhere
+# to recover them from.
+#
+# Held here rather than parsed at build time: four records read straight off
+# the page are more reliable than a regex over four differently-worded
+# paragraphs, and this is the last time it has to be done by hand — the
+# submission form supplies it structurally from 2026.
+# ==========================================================================
+
+show:2020:
+  dates: { start: "2020-12-16", end: "2020-12-16" }
+  time: "10:00 am – 9:00 pm EST"
+  venue: "Online, via Zoom"
+
+show:2022:
+  dates: { start: "2022-12-13", end: "2022-12-13" }
+  time: "7:00 – 9:00 pm"
+  venue: "205 Richmond Street West"
+  rooms: ["Graduate Gallery", "X Fab Space (basement)"]
+
+show:2023:
+  dates: { start: "2023-12-07", end: "2023-12-07" }
+  time: "6:00 – 8:00 pm"
+  venue: "205 Richmond Street West"
+
+show:2025:
+  dates: { start: "2025-12-11", end: "2025-12-11" }
+  time: "5:00 – 8:00 pm"
+  venue: "205 Richmond Street West"
+  rooms: ["Graduate Gallery", "Experimental Media Space", "Room 115", "Room 118", "Room 120"]

@@ -129,9 +129,15 @@ layout can honestly do.
 
 ### 3.3 Show identity is forward-looking
 
-No archived show has a logo, poster, team photo, venue or dates — it was never
-recorded. Show pages render only what they have. If material surfaces later it
-drops into `config/overrides.yaml` under a `show:<id>` key with no code change.
+No archived show has a logo, poster or team photo — it was never recorded. Show
+pages render only what they have. If material surfaces later it drops into
+`config/overrides.yaml` under a `show:<id>` key with no code change.
+
+Date, time, location and rooms **have** been recovered for the four shows whose
+WordPress "Events" or "About" page stated them, and transcribed by hand into
+overrides. **2019 (both), 2021 and 2024 have none** — those pages never existed,
+and there is nowhere to recover them from. Those show pages show their title and
+work count only.
 
 ### 3.4 External links: 93 of 235 are dead
 

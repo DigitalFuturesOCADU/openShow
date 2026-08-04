@@ -5,10 +5,15 @@
   "title": "Open Show 2022",
   "current": false,
   "dates": {
-    "start": null,
-    "end": null
+    "start": "2022-12-13",
+    "end": "2022-12-13"
   },
-  "venue": null,
+  "time": "7:00 – 9:00 pm",
+  "venue": "205 Richmond Street West",
+  "rooms": [
+    "Graduate Gallery",
+    "X Fab Space (basement)"
+  ],
   "logo": null,
   "poster": null,
   "teamPhoto": null,
