@@ -176,3 +176,35 @@
 2926:
   affiliation: [graduate]
   note: "2025 Forms submission — Jungle Struggle (sheet spells it Jungle Straggle)"
+
+# ==========================================================================
+# SHOW IDENTITY — forward-looking.
+#
+# Shows carry more than their projects: a logo, poster, team photo, venue,
+# dates, an organising team. None of it exists for the archived shows. It was
+# never recorded in WordPress, and inventing placeholders would be worse than
+# the absence — a show page whose only content is the work reads as an archive,
+# whereas empty rows read as broken.
+#
+# So this is set for new shows going forward. If the material for earlier shows
+# turns up later — posters in a drive, photos in someone's folder — it drops in
+# here with no code change and the pages fill themselves in.
+#
+# Keyed "show:<id>", matching content/shows/<id>.json.
+#
+#   show:2026:
+#     venue: "205 Richmond Street West"
+#     dates: { start: "2026-12-10", end: "2026-12-10" }
+#     statement: "One line about this year's show."
+#     logo: "2026/12/open-show-2026-logo.png"      # path under sources/uploads
+#     poster: "2026/12/open-show-2026-poster.jpg"
+#     teamPhoto: "2026/12/team.jpg"
+#     team: ["Name One", "Name Two"]
+#     theme:
+#       tokens: { "--accent": "#ff3b00" }
+#       indexLayout: grid
+#       defaultProjectLayout: default
+#
+# Images referenced here must exist under sources/uploads and be listed in
+# content/page-images.json, or add them to sync-media's copy list.
+# ==========================================================================

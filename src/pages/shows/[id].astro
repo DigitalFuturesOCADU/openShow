@@ -43,13 +43,22 @@ const when = [d.dates.start, d.dates.end].filter(Boolean).join(' – ')
     {logo
       ? <Image src={logo} alt={d.title} widths={[320, 640]} loading="eager" class="logo" />
       : <h1>{d.title}</h1>}
-    {d.current && <p class="label current">Current show</p>}
 
-    <dl class="facts">
-      {when && (<><dt class="label">When</dt><dd>{when}</dd></>)}
-      {d.venue && (<><dt class="label">Where</dt><dd>{d.venue}</dd></>)}
-      <dt class="label">Works</dt><dd>{projects.length}</dd>
-    </dl>
+    <p class="label">
+      {d.current && <span class="current">Current show</span>}
+      {projects.length} {projects.length === 1 ? 'work' : 'works'}
+    </p>
+
+    {/* Only render the facts list when there is something beyond the count.
+        Earlier shows have no venue, dates, poster or team recorded — that data
+        was never kept — and a list of empty rows would read as broken rather
+        than as an archive whose content is the work itself. */}
+    {(when || d.venue) && (
+      <dl class="facts">
+        {when && (<><dt class="label">When</dt><dd>{when}</dd></>)}
+        {d.venue && (<><dt class="label">Where</dt><dd>{d.venue}</dd></>)}
+      </dl>
+    )}
 
     {d.statement && <p class="statement">{d.statement}</p>}
   </header>
@@ -82,7 +91,9 @@ const when = [d.dates.start, d.dates.end].filter(Boolean).join(' – ')
   .show-head { margin-bottom: 2rem; max-width: var(--measure); }
   h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .25rem; letter-spacing: -.01em; }
   .logo { max-width: 22rem; margin-bottom: .5rem; }
-  .current { margin: 0 0 1rem; }
+  .current { margin-right: .5rem; }
+  .current::after { content: ' ·'; }
+  .show-head > .label { margin: 0 0 1rem; }
   .facts { display: grid; grid-template-columns: 5rem 1fr; gap: .15rem 1rem; margin: 0 0 1.25rem; }
   .facts dt { padding-top: .15rem; }
   .facts dd { margin: 0; }

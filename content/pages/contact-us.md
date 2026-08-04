@@ -7,7 +7,7 @@ wordpress:
   link: https://df.show/contact-us
 ---
 
-### Digital Futures Graduate Program
+#### Digital Futures Graduate Program
 
 **Kim Guanzura**  
 Graduate Program Coordinator, Digital Futures  
@@ -18,7 +18,7 @@ Graduate Program Coordinator, Digital Futures
 Graduate Program Director, Digital Futures  
 [cporemba@ocadu.ca](mailto:cporemba@ocadu.ca)
 
-### Digital Futures Undergraduate Program
+#### Digital Futures Undergraduate Program
 
 **John Rubino**  
 Undergraduate Program Coordinator, Digital Futures  

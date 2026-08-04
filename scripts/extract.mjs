@@ -495,6 +495,15 @@ const pageImagesDropped = []
  * placeholder "|!|vcvUploadUrl|!|" survives in one page — is dropped rather
  * than left to fail the build, and reported for hand cleaning.
  */
+/**
+ * Page bodies are rendered inside a page that already has its own h1, so a
+ * heading imported from WordPress at level 1 produces two h1s and competes
+ * with the real title. Demote every heading one level, capped at h6.
+ */
+function demoteHeadings(md) {
+  return md.replace(/^(#{1,5})\s/gm, (_, hashes) => `${hashes}# `)
+}
+
 function rewritePageImages(md, title) {
   return md.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (whole, alt, url) => {
     const m = url.match(/\/wp-content\/uploads\/(.+)$/)
@@ -513,7 +522,7 @@ function rewritePageImages(md, title) {
 }
 
 for (const pg of pages) {
-  const body = rewritePageImages(toMarkdown(pg.content), pg.title.trim())
+  const body = demoteHeadings(rewritePageImages(toMarkdown(pg.content), pg.title.trim()))
   if (!body.trim()) continue
   const slug = pg.slug || slugify(pg.title)
   if (SKIP_PAGE.test(slug)) continue

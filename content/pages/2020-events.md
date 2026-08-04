@@ -9,7 +9,7 @@ wordpress:
 
 Digital Futures Open Show 2020 will include works from current Digital Futures undergraduate students, graduate students, faculty (both full-time and sessional), AND alumni created in this whirlwind year of 2020. While we haven't been able to be co-present for most of this year our community has expanded tremendously - covering more time zones and more regions of the globe than ever before. It is our hope that this year's OPEN SHOW will act as the connective tissue that brings together the ambitious and impressive work that has been completed this year.
 
-### Schedule
+#### Schedule
 
 Open Show 2020 will take place on Wednesday, December 16th. Happenings are as follows:
 

@@ -197,6 +197,10 @@ Three notes on this shape.
 
 `sourceTerms` is the audit trail — every taxonomy decision stays reversible without re-parsing the WXR.
 
+**Show identity is forward-looking.** A show record carries a logo, poster, team photo, venue, dates and organising team. None of it exists for the archived shows — WordPress never recorded it, and there is nowhere to recover it from. Rather than invent placeholders, show pages render only what they have: a page whose content is simply the work reads as an archive, whereas a scaffold of empty rows reads as broken. Four of the eight shows do have editorial copy, recovered from their WordPress "Events" and "About" pages.
+
+If the material for earlier shows surfaces later — posters in a drive, photographs in someone's folder — it drops into `config/overrides.yaml` under a `show:<id>` key with no code change, and the pages fill themselves in. The documented shape is at the end of that file.
+
 **Theming is tokens plus named layouts, not free-form CSS.** This is a deliberate constraint. Arbitrary per-show CSS multiplies the responsive-QA surface across every year forever, and every theme has to keep working on mobile in perpetuity. Tokens and a handful of named layouts get most of the expressive range at a fraction of the maintenance cost. Same argument applies to per-show project layouts — a project opts into a named layout; the show sets the default.
 
 ### 4.3 Staying CMS-ready
