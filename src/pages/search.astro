@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro'
+const base = import.meta.env.BASE_URL
+---
+<Base title="Search — Digital Futures Open Show" description="Search 240 projects by title, creator, description or medium.">
+  <h1>Search</h1>
+  <p class="lede">Titles, creators, descriptions and medium across every show.</p>
+  <div id="search" data-base={base}></div>
+  <noscript><p>Search needs JavaScript. <a href={`${base}browse`}>Browse by facet</a> instead.</p></noscript>
+</Base>
+
+<script>
+  // Pagefind indexes the built HTML, so the index is generated after the Astro
+  // build and loaded at runtime rather than bundled.
+  const el = document.getElementById('search')!
+  const base = el.dataset.base ?? '/'
+  const { PagefindUI } = await import(/* @vite-ignore */ `${base}pagefind/pagefind-ui.js`)
+  new PagefindUI({ element: '#search', showSubResults: true, showImages: true })
+</script>
+
+<style is:global>
+  #search { margin-top: 1.5rem; }
+  .pagefind-ui { --pagefind-ui-primary: var(--ink); --pagefind-ui-text: var(--ink);
+                 --pagefind-ui-background: var(--paper); --pagefind-ui-border: var(--rule);
+                 --pagefind-ui-font: inherit; }
+</style>
+<style>
+  h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin: 0 0 .25rem; }
+  .lede { color: var(--muted); margin: 0 0 1rem; }
+</style>

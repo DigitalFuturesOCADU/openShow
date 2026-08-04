@@ -1,0 +1,98 @@
+---
+import { getCollection } from 'astro:content'
+import { Image } from 'astro:assets'
+import Base from '../../layouts/Base.astro'
+import { projectPath } from '../../lib/slugs'
+import { resolveImage } from '../../lib/images'
+import { PEOPLE, label, featuredImage, altFor, showTitle } from '../../lib/site'
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects', (p) => p.data.status === 'publish')
+  const bySlug = new Map(projects.map((p) => [p.data.slug, p]))
+  return PEOPLE.map((person) => ({
+    params: { id: person.id },
+    props: { person, projects: person.projects.map((s) => bySlug.get(s)).filter(Boolean) },
+  }))
+}
+
+const { person, projects } = Astro.props
+// Affiliation is per appearance, never rolled up: the same person can be an
+// undergraduate one year and an alum the next.
+const appearances = [...person.appearances].sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
+const approx = appearances.some((a) => a.affiliationExact === false)
+---
+
+<Base title={`${person.name} — Digital Futures Open Show`}>
+  <h1>{person.name}</h1>
+  <p class="lede">
+    {person.projectCount} {person.projectCount === 1 ? 'project' : 'projects'}
+    {person.shows.length > 1 && ` across ${person.shows.length} shows`}
+    {person.kind === 'collective' && ' · collective'}
+  </p>
+
+  {person.variants.length > 1 && (
+    <p class="variants">Also credited as {person.variants.filter((v) => v !== person.name).join(', ')}.</p>
+  )}
+
+  <ul class="appearances">
+    {appearances.map((a) => (
+      <li>
+        <span class="year">{a.show ? showTitle(a.show) : '—'}</span>
+        <span class="aff">
+          {a.affiliation.map((x) => label('affiliation', x)).join(', ') || 'unspecified'}
+          {a.affiliationExact === false && <abbr title="Recorded per project, not per person">†</abbr>}
+        </span>
+        {a.role && <span class="role">{a.role}</span>}
+      </li>
+    ))}
+  </ul>
+
+  {approx && (
+    <p class="note">
+      † On a mixed team whose affiliation was recorded for the project rather than
+      per person, so the value above may belong to a collaborator. Submissions from
+      2026 record it per person.
+    </p>
+  )}
+
+  <ul class="grid">
+    {projects.map((p: any) => {
+      const f = featuredImage(p)
+      const img = f?.type === 'image' ? resolveImage(f.file) : null
+      const images = p.data.media.filter((m: any) => m.type === 'image')
+      return (
+        <li>
+          <a href={projectPath(p.data.slug)}>
+            {img && (
+              <Image
+                src={img}
+                alt={altFor(p.data.title, f?.type === 'image' ? f.alt : null, 0, images.length)}
+                widths={[320, 640]}
+                sizes="(max-width: 40rem) 50vw, 18rem"
+                loading="lazy"
+              />
+            )}
+            <h2>{p.data.title}</h2>
+            <p class="tags">{p.data.year}</p>
+          </a>
+        </li>
+      )
+    })}
+  </ul>
+</Base>
+
+<style>
+  h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin: 0 0 .25rem; }
+  .lede, .variants { color: var(--muted); margin: 0 0 .5rem; }
+  .appearances { list-style: none; padding: 0; margin: 1.5rem 0; border-top: 1px solid var(--rule); }
+  .appearances li { display: flex; gap: 1rem; padding: .5rem 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
+  .year { min-width: 9rem; }
+  .aff, .role { color: var(--muted); }
+  .note { color: var(--muted); font-size: .875rem; max-width: 44rem; }
+  .grid { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 2rem 1.5rem;
+          grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); }
+  .grid a { text-decoration: none; display: block; }
+  .grid img { aspect-ratio: 4 / 3; object-fit: cover; background: var(--rule); margin-bottom: .6rem; }
+  h2 { font-size: 1rem; margin: 0 0 .2rem; }
+  .tags { margin: 0; font-size: .8125rem; color: var(--muted); }
+</style>
