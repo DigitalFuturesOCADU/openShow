@@ -244,3 +244,11 @@ show:2025:
   time: "5:00 – 8:00 pm"
   venue: "205 Richmond Street West"
   rooms: ["Graduate Gallery", "Experimental Media Space", "Room 115", "Room 118", "Room 120"]
+
+# 2024: venue and rooms as 2022 (the show returned to the same spaces),
+# with its own date and time.
+show:2024:
+  dates: { start: "2024-12-10", end: "2024-12-10" }
+  time: "5:00 – 8:00 pm"
+  venue: "205 Richmond Street West"
+  rooms: ["Graduate Gallery", "X Fab Space (basement)"]
