@@ -17,6 +17,11 @@ Companion to [PLAN.md](PLAN.md). PLAN.md is the original brief and stays as writ
 | 7 — Submissions | **Done early.** `scripts/ingest.mjs`, tested against the real 2025 sheet |
 | 8 — CMS | Deferred. The spreadsheet covers it (D3) |
 
+Outstanding work is tracked in [OPEN-ITEMS.md](OPEN-ITEMS.md). The one to know
+about before the next submission round is §1.1: filename matching between the
+response sheet and a synced SharePoint folder has never been run against real
+data, and fails all-or-nothing.
+
 **Goal A is discharged.** 264 projects, 342 people and 704 images survive with no dependency on WordPress.
 
 Things that exist now and did not in revision 2:
