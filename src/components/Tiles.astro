@@ -52,9 +52,25 @@ const base = import.meta.env.BASE_URL
               ))}
             </p>
           )}
+          {/*
+            These were clickable when the whole tile was one link, and stopped
+            being so when it was split up to make the names clickable. They now
+            go somewhere more useful than the project they sit under: the year
+            to its show, each medium to its topic.
+          */}
           <p class="label">
-            {showYear && p.data.year}{showYear && p.data.medium.length > 0 && ' · '}
-            {p.data.medium.map((m: string) => label('medium', m)).join(' · ')}
+            {showYear && p.data.show && (
+              <>
+                <a href={`${base}shows/${p.data.show}`}>{p.data.year}</a>
+                {p.data.medium.length > 0 && ' · '}
+              </>
+            )}
+            {p.data.medium.map((m: string, i: number) => (
+              <>
+                {i > 0 && ' · '}
+                <a href={`${base}topics/${m}`}>{label('medium', m)}</a>
+              </>
+            ))}
           </p>
         </div>
       </li>
@@ -82,4 +98,6 @@ const base = import.meta.env.BASE_URL
   .by a:hover { text-decoration: underline; }
 
   .cap .label { margin: 0; }
+  .cap .label a { color: inherit; text-decoration: none; }
+  .cap .label a:hover { text-decoration: underline; }
 </style>
