@@ -1,0 +1,136 @@
+---
+import { getCollection, render } from 'astro:content'
+import { Image } from 'astro:assets'
+import Base from '../../../layouts/Base.astro'
+import { toRouteParam } from '../../../lib/slugs'
+import { resolveImage } from '../../../lib/images'
+import vocab from '../../../../content/vocabularies.json'
+
+// URLs are preserved exactly: /portfolio/items/<slug>. The route parameter is
+// the DECODED slug so the encoder reproduces WordPress's original percent
+// escapes — see src/lib/slugs.ts. Verified by scripts/test-routes.mjs.
+export async function getStaticPaths() {
+  const projects = await getCollection('projects', (p) => p.data.status === 'publish')
+  return projects.map((project) => ({
+    params: { slug: toRouteParam(project.data.slug) },
+    props: { project },
+  }))
+}
+
+const { project } = Astro.props
+const d = project.data
+const { Content } = await render(project)
+
+const label = (axis: 'medium' | 'affiliation', slug: string) =>
+  vocab[axis].find((t: { slug: string; label: string }) => t.slug === slug)?.label ?? slug
+
+const images = d.media.filter((m) => m.type === 'image')
+const featured = images.find((m) => m.role === 'featured') ?? images[0]
+const rest = images.filter((m) => m !== featured)
+const embeds = d.media.filter((m) => m.type === 'video-embed')
+const videoFiles = d.media.filter((m) => m.type === 'video-file')
+---
+
+<Base title={`${d.title} — Digital Futures Open Show`} description={d.creditsRaw ?? undefined}>
+  <article>
+    <h1>{d.title}</h1>
+
+    {d.credits.length > 0 && (
+      <p class="credits">
+        {d.credits.map((c, i) => (
+          <>
+            {i > 0 && ', '}
+            <span>{c.name}</span>
+            {c.role && <span class="role"> ({c.role})</span>}
+          </>
+        ))}
+      </p>
+    )}
+
+    <p class="meta">
+      {d.year && <span>{d.session ? `${d.session} ${d.year}` : d.year}</span>}
+      {d.medium.map((m) => <span class="tag">{label('medium', m)}</span>)}
+      {d.affiliation.map((a) => <span class="tag muted">{label('affiliation', a)}</span>)}
+    </p>
+
+    {featured?.type === 'image' && resolveImage(featured.file) && (
+      <figure>
+        <Image
+          src={resolveImage(featured.file)!}
+          alt={featured.alt ?? ''}
+          widths={[640, 1024, 1600]}
+          sizes="(max-width: 68rem) 100vw, 68rem"
+          loading="eager"
+        />
+        {featured.caption && <figcaption>{featured.caption}</figcaption>}
+      </figure>
+    )}
+
+    <div class="body"><Content /></div>
+
+    {embeds.map((m) =>
+      m.type === 'video-embed' && m.videoId ? (
+        <div class="embed">
+          <iframe
+            src={m.provider === 'vimeo'
+              ? `https://player.vimeo.com/video/${m.videoId}`
+              : `https://www.youtube-nocookie.com/embed/${m.videoId}`}
+            title={`${d.title} — video`}
+            loading="lazy"
+            allowfullscreen
+          />
+        </div>
+      ) : null,
+    )}
+
+    {videoFiles.map((m) =>
+      m.type === 'video-file' && m.file ? (
+        <video controls preload="metadata" src={`/${m.file}`}></video>
+      ) : null,
+    )}
+
+    {rest.length > 0 && (
+      <div class="gallery">
+        {rest.map((m) =>
+          m.type === 'image' && resolveImage(m.file) ? (
+            <figure>
+              <Image
+                src={resolveImage(m.file)!}
+                alt={m.alt ?? ''}
+                widths={[480, 960]}
+                sizes="(max-width: 40rem) 100vw, 33rem"
+                loading="lazy"
+              />
+              {m.caption && <figcaption>{m.caption}</figcaption>}
+            </figure>
+          ) : null,
+        )}
+      </div>
+    )}
+
+    {d.links.length > 0 && (
+      <p class="links">
+        {d.links.map((l) => (
+          <a href={l.url} rel="noopener noreferrer external">{l.label} ↗</a>
+        ))}
+      </p>
+    )}
+  </article>
+</Base>
+
+<style>
+  h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); line-height: 1.15; margin: 0 0 .25rem; }
+  .credits { margin: 0 0 1rem; font-size: 1.05rem; }
+  .role { color: var(--muted); }
+  .meta { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 2rem; color: var(--muted); font-size: .875rem; }
+  .tag { border: 1px solid var(--rule); border-radius: 999px; padding: .1rem .6rem; }
+  .tag.muted { opacity: .7; }
+  figure { margin: 0 0 1.5rem; }
+  figcaption { color: var(--muted); font-size: .875rem; margin-top: .5rem; }
+  .body { max-width: 44rem; margin: 0 0 2rem; }
+  .gallery { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); }
+  .embed { position: relative; aspect-ratio: 16 / 9; margin: 0 0 1.5rem; }
+  .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  video { width: 100%; margin: 0 0 1.5rem; }
+  .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+</style>

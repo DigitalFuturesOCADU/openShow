@@ -2,7 +2,34 @@
 
 Companion to [PLAN.md](PLAN.md). PLAN.md is the original brief and stays as written. This is the verified starting state, the expanded requirements, and the build order.
 
-**Revision 2** — adds the requirements raised after the first draft: multi-media, per-show theming, layout flexibility, archive tiering, and broader-site integration.
+**Revision 3.** Revision 2 added multi-media, per-show theming, layout flexibility, archive tiering and broader-site integration. This revision records what execution changed — most significantly that the submission question answered itself (§3, D3).
+
+## Status
+
+| Step | State |
+| --- | --- |
+| 1 — Lock sources | **Done.** `sources/` is read-only with SHA-256 manifests |
+| 2 — Extract | **Done.** 264 projects, 19 gates, independent SQL cross-validation |
+| 3 — Taxonomy | **Done.** 189 terms → 27 medium + 5 affiliation |
+| 4 — Media | **Done.** 704 images resolved to true originals; web masters built |
+| 5 — Astro site | **Next** |
+| 6 — Deploy | After 5. Needs D6 |
+| 7 — Submissions | **Done early.** `scripts/ingest.mjs`, tested against the real 2025 sheet |
+| 8 — CMS | Deferred. The spreadsheet covers it (D3) |
+
+**Goal A is discharged.** 264 projects, 342 people and 704 images survive with no dependency on WordPress.
+
+Things that exist now and did not in revision 2:
+
+- `scripts/ingest.mjs` — Microsoft Forms sheet → content, the ongoing intake
+- `scripts/sync-media.mjs` — true originals → web masters
+- `scripts/validate-sql.mjs` — independent cross-check from the SQL dump
+- `content/people.json` — creator registry, 342 people, the gap WordPress never filled
+- `config/overrides.yaml` — manual corrections that survive re-extraction
+- `config/people.yaml`, `config/form-map.yaml` — reviewable inputs
+- `INTAKE-FORM.md` — form changes for 2026
+
+Notable during execution: 2025 affiliation went from 0/38 to 37/38, recovered from the Forms sheet; `rf_project_url` turned out to be the real link field, not `rf_project_ext_url` as PLAN.md had it; and alt text could not be migrated at all, because it was never recorded.
 
 ---
 
@@ -71,20 +98,25 @@ PLAN.md's three outcomes, restated with the expanded requirements folded in.
 | --- | --- | --- |
 | D1 | `uploads/` storage | **Decided** — git-ignored, backup confirmed off-machine |
 | D2 | Deploy target | **Effectively decided** — Cloudflare, forced by video (§4.3) |
-| D3 | Submission / review loop | **Decided** — PR-based first, CMS deferred to Step 8 |
+| D3 | Submission / review loop | **Superseded** — the spreadsheet is the CMS (below) |
 | D4 | The 24 drafts | Proposed below |
 | D5 | Is `affiliation` a public filter? | Open, not blocking |
-| D6 | Canonical domain vs. subpath | **Needs confirmation** — conflicts with Goal D |
+| D6 | Canonical domain vs. subpath | **Needs confirmation.** Blocks Step 6, not Step 5 |
+| D7 | Images: plain git or LFS | Open. 220 MB. Recommendation: plain git |
 
 **D1 — DECIDED.** `uploads/` is git-ignored, backup confirmed off-machine. 3.0 GB, 8,603 files, of which 7,583 are WordPress derivatives the build regenerates. The tree stays local as source-of-truth; only the ~700 originals projects actually use get committed.
 
 **D2 — Effectively decided by the video requirement.** Self-hosted video does not fit static-files-on-shared-hosting. See §4.4 for the numbers. Cloudflare Pages + R2 handles it; HostGator does not.
 
-**D3 — DECIDED: pull-request review first, CMS as a later stage.** Reviewers are technical for now, so Step 7 ships PR-based review and the site goes live without waiting on an admin UI. The CMS is a real requirement, not a maybe — it is deferred, not declined, and lands as Step 8.
+**D3 — SUPERSEDED. The spreadsheet and image folder are the CMS.**
 
-That distinction changes what gets built now. "No CMS" would license shortcuts in the data model; "CMS later" does not. The constraints in §4.2 exist to keep Step 8 a configuration exercise rather than a migration, and they cost nothing to honour today.
+Both original candidates — form-opens-a-PR and form-feeds-Airtable — assumed the form had to be built. It does not. Submissions already arrive as a Microsoft Forms response sheet plus a SharePoint folder, students already use it, and the institution already runs the auth and backups. There is nothing to build but the ingest step.
 
-It also softens the Goal B tension: PR review depends on a technical person, but only until Step 8 removes that dependency.
+This is better than either candidate on the thing that matters most: Forms enforces the controlled vocabulary at the point of entry, which is a stronger guarantee against drift than a CMS gives, because a dropdown cannot be typed into.
+
+`scripts/ingest.mjs` implements it. The governing rule is that **the spreadsheet is intake, not storage**: once ingested, the markdown file is canonical and ingest never overwrites it. New submissions are written; already-ingested ones are compared and reported, and changed only with `--update`. This is deliberately the opposite of `extract.mjs`, which fully regenerates because the WordPress export is frozen. Living data cannot be regenerated safely — without this rule, running ingest in 2028 would silently destroy two years of corrections.
+
+Step 8 remains available and unchanged: a Git-based CMS still reads the same files. It is now a convenience rather than a plan.
 
 **D4 — The 24 drafts. Proposed:** extract all 24, publish none, mark the 19 image-less stubs `status: "stub"` and the 5 substantive ones `status: "draft"`. A human reviews only those 5.
 
@@ -205,14 +237,14 @@ This is Goal F implemented directly: preserve large, serve optimized.
 
 ## 5. Build order
 
-### Step 1 — Lock the sources
+### Step 1 — Lock the sources ✅
 
 - `.gitignore`: `uploads/`, `node_modules/`, `dist/`, `.astro/`
 - SHA-256 manifest committed as `sources/CHECKSUMS.txt`
 - Move artifacts into `sources/`, `chmod -w`
 - Confirm the 3 GB tree is backed up — **done**
 
-### Step 2 — The extractor
+### Step 2 — The extractor ✅
 
 Node, keeping one toolchain with Astro. Streaming XML parse. Pure function: exports in, JSON out, deterministic, re-runnable, no network.
 
@@ -220,7 +252,7 @@ Emits `content/projects/`, `content/shows/`, and a `reports/` directory.
 
 **Gate:** prints the §1 checksum table and exits non-zero on any mismatch. Enforced in code, not by eyeball.
 
-### Step 3 — The taxonomy map ← *critical path*
+### Step 3 — The taxonomy map ✅
 
 Its own reviewed step, not a line inside Step 2. Every term is `[<session>] <year> <concept>` plus 7 bare `Open Show <year>` parents, so the mechanical split is reliable and year resolution is proven at 256/264.
 
@@ -248,13 +280,13 @@ Parent terms are unreliable and must not be used for year — `Open Show 2024` c
 
 **Outputs:** reviewed map, `reports/merged-terms.md`, and `reports/unresolved.md` — the 8 items needing manual year assignment, of which `MetaHospital` and `Diver` are published.
 
-### Step 4 — Media
+### Step 4 — Media ✅
 
 Resolve each of the 704 referenced IDs to its true original: prefer un-suffixed, fall back through `-scaled`, never take a `WxH` derivative. Carry alt text and caption from attachment records — the accessibility data only the WXR provides.
 
 Populate `media[]`, migrating existing `rf_video_embed` values into it. Establish the three storage tiers. Verify all 704 land.
 
-### Step 5 — Astro
+### Step 5 — Astro ← *next*
 
 Content collections over both record types, Zod schemas mirroring §4.2, images through `astro:assets` and sharp. Configurable `base`, no hardcoded absolute URLs.
 
@@ -268,7 +300,7 @@ Then page triage: review the 13 non-empty pages, port what's worth keeping, hand
 
 Old-URL verification against a generated list of all 264, not spot-checked. WordPress stays running but unlinked through a grace period.
 
-### Step 7 — Submissions
+### Step 7 — Submissions ✅
 
 PR-based per D3. A form writes a record and opens a pull request; review is a diff plus a preview deploy. Form fields match the §4.2 schema exactly, with medium and affiliation read from `content/vocabularies.json` — the thing that stops the drift recurring.
 
