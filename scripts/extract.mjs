@@ -483,7 +483,10 @@ for (const r of records) {
 // shells that only ever rendered a dynamic listing, which the archive now does
 // properly, so they are dropped. What remains is real editorial copy.
 rmSync(out('content/pages'), { recursive: true, force: true })
-const SKIP_PAGE = /^(open\d|open$|coming-soon|gradex|open-show-testing)/
+// 'archive' is dropped because the generated /archive listing replaces it:
+// the WordPress page was a hand-maintained list of links to year pages that
+// no longer exist. The URL survives with better content.
+const SKIP_PAGE = /^(open\d|open$|coming-soon|gradex|open-show-testing|archive$)/
 const pageRecords = []
 const pageImages = new Set()
 const pageImagesDropped = []

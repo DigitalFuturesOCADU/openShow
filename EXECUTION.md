@@ -89,7 +89,13 @@ PLAN.md's three outcomes, restated with the expanded requirements folded in.
 
 **C. The archive stays queryable in ten years.** 189 terms for ~30 concepts is what happens without a controlled vocabulary. Cleaning it once is the smaller half; the input form preventing recurrence is the larger half.
 
-**D. Old URLs keep resolving.** Students put these links on CVs, portfolios, and grad school applications. A dead link is a real cost to a specific person years after they can do anything about it. See Decision D6 — this now needs active protection.
+**D. ~~Old URLs keep resolving.~~ DROPPED — the re-organisation changes them anyway.**
+
+This was originally ranked near the top: students put these links on CVs and grad-school applications, and a dead link is a real cost to a specific person years later. That reasoning still holds in the abstract, but the site is being re-organised around shows and the archive, so the URLs change regardless. Accepted deliberately rather than by neglect.
+
+Two consequences. **D6 stops being a conflict** — moving the archive to a path under a larger site no longer breaks a promise, so that decision is now about preference rather than cost. And `scripts/test-routes.mjs` keeps running, but its purpose changes: it now proves internal consistency — that all 264 slugs round-trip and no two resolve to the same URL, so nothing is unreachable *within* the new site.
+
+If old links do matter later, redirects can be generated from `wordpress.link`, which every project record still carries.
 
 **E. Presentation is flexible without being bespoke.** Per-show theming, per-project layout variants, and arbitrary re-slicing of the taxonomy — all without hand-editing HTML.
 
@@ -106,7 +112,7 @@ PLAN.md's three outcomes, restated with the expanded requirements folded in.
 | D3 | Submission / review loop | **Superseded** — the spreadsheet is the CMS (below) |
 | D4 | The 24 drafts | Proposed below |
 | D5 | Is `affiliation` a public filter? | Open, not blocking |
-| D6 | Canonical domain vs. subpath | **Needs confirmation.** Blocks Step 6, not Step 5 |
+| D6 | Canonical domain vs. subpath | Open, but **no longer a conflict** — see Goal D |
 | D7 | Images: plain git or LFS | Open. 220 MB. Recommendation: plain git |
 
 **D1 — DECIDED.** `uploads/` is git-ignored, backup confirmed off-machine. 3.0 GB, 8,603 files, of which 7,583 are WordPress derivatives the build regenerates. The tree stays local as source-of-truth; only the ~700 originals projects actually use get committed.
