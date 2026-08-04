@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node scripts/test-routes.mjs",
     "extract": "node scripts/extract.mjs",
     "validate": "node scripts/validate-sql.mjs",
     "ingest": "node scripts/ingest.mjs",
-    "media": "node scripts/sync-media.mjs"
+    "media": "node scripts/sync-media.mjs",
+    "build": "astro build",
+    "dev": "astro dev",
+    "preview": "astro preview"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
   "homepage": "https://github.com/npuckett/openREDO#readme",
   "private": "true",
   "dependencies": {
+    "astro": "^7.1.6",
     "exceljs": "^4.4.0",
     "fast-xml-parser": "^5.10.1",
     "js-yaml": "^5.2.3",
