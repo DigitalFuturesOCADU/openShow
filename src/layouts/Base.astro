@@ -1,6 +1,9 @@
 ---
 import '../styles/theme.css'
 import { getCollection } from 'astro:content'
+import { label as mediumLabelOf } from '../lib/site'
+
+const mediumLabel = (slug: string) => mediumLabelOf('medium', slug)
 
 interface Props {
   title: string
@@ -21,6 +24,13 @@ const shows = (await getCollection('shows')).sort(
   (a, b) => b.data.year - a.data.year || String(a.data.session).localeCompare(String(b.data.session)),
 )
 const current = shows.find((s) => s.data.current) ?? shows[0]
+
+const projects = await getCollection('projects', (p) => p.data.status === 'publish')
+const topicCounts = new Map<string, number>()
+for (const p of projects) for (const m of p.data.medium) topicCounts.set(m, (topicCounts.get(m) ?? 0) + 1)
+const topics = [...topicCounts]
+  .map(([slug, count]) => ({ slug, count, label: mediumLabel(slug) }))
+  .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
 
 // Per-show tokens are applied as inline custom properties, so a show restyles
 // itself without forking the template. Everything unset falls back to default.
@@ -64,18 +74,36 @@ const tokenStyle = theme
               About {current.data.title}
             </a>
           )}
-          <a href={href('archive')} aria-current={section === 'archive' ? 'page' : undefined}>Archive</a>
-          <a href={href('browse')} aria-current={section === 'browse' ? 'page' : undefined}>Browse</a>
-          <a href={href('people')} aria-current={section === 'people' ? 'page' : undefined}>People</a>
-          <a href={href('search')} aria-current={section === 'search' ? 'page' : undefined}>Search</a>
         </nav>
 
-        <nav class="shows" aria-label="Shows">
-          <p class="label">Shows</p>
+        {/* A GET form, so it works before any script runs — the search page
+            reads ?q= and runs the query. */}
+        <form class="find" role="search" action={href('search')} method="get">
+          <label class="sr" for="q">Search the archive</label>
+          <input type="search" id="q" name="q" placeholder="Search" autocomplete="off" />
+        </form>
+
+        <nav class="group" aria-label="People">
+          <a class="head" href={href('people')} aria-current={section === 'people' ? 'page' : undefined}>People</a>
+        </nav>
+
+        <nav class="group" aria-label="Shows">
+          <a class="head" href={href(`shows/${current?.id ?? ''}`)}>Shows</a>
           <div>
             {shows.map((s) => (
               <a href={href(`shows/${s.id}`)} aria-current={section === `show:${s.id}` ? 'page' : undefined}>
                 {s.data.title.replace('Open Show ', '')} <span class="n">{s.data.projectCount}</span>
+              </a>
+            ))}
+          </div>
+        </nav>
+
+        <nav class="group" aria-label="Topics">
+          <a class="head" href={href('topics')} aria-current={section === 'topics' ? 'page' : undefined}>Topics</a>
+          <div>
+            {topics.map((t) => (
+              <a href={href(`topics/${t.slug}`)} aria-current={section === `topic:${t.slug}` ? 'page' : undefined}>
+                {t.label} <span class="n">{t.count}</span>
               </a>
             ))}
           </div>
@@ -106,22 +134,37 @@ const tokenStyle = theme
   nav a[aria-current="page"] { font-weight: 700; }
   nav a:hover { text-decoration: underline; }
 
-  .shows > div { display: flex; flex-direction: column; gap: .3rem; }
-  .shows { margin-top: 1.25rem; }
-  .shows .label { margin: 0 0 .4rem; }
-  .shows .n { color: var(--muted); font-size: .75rem; }
+  .find { margin: 1.25rem 0; }
+  .find input {
+    width: 100%; font: inherit; font-size: .9375rem; color: inherit;
+    background: none; border: 0; border-bottom: 1px solid var(--rule);
+    padding: .3rem 0; border-radius: 0;
+  }
+  .find input:focus { outline: none; border-bottom-color: var(--ink); }
+  .find input::placeholder { color: var(--muted); }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 
-  /* On narrow screens the rail stacks above the content, so a vertical list of
-     eight shows would push everything below the fold. Lay them out as a
-     scrollable row instead — same links, a fraction of the height. */
+  .group { margin-top: 1.25rem; }
+  .group > div { display: flex; flex-direction: column; gap: .25rem; margin-top: .4rem; }
+  .group .head {
+    font-size: .6875rem; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none;
+  }
+  .group .head:hover, .group .head[aria-current="page"] { color: var(--ink); }
+  .group > div a { font-size: .875rem; }
+  .group .n { color: var(--muted); font-size: .75rem; }
+
+  /* On narrow screens the rail stacks above the content, so three vertical
+     lists would push everything below the fold. Lay them out as scrollable
+     rows instead — same links, a fraction of the height. */
   @media (max-width: 51.99rem) {
-    nav { flex-direction: row; flex-wrap: wrap; gap: .3rem .9rem; }
-    .shows { display: flex; flex-direction: column; }
-    .shows > div {
-      display: flex; gap: .9rem; overflow-x: auto; padding-bottom: .25rem;
+    nav[aria-label="Main"] { flex-direction: row; flex-wrap: wrap; gap: .3rem .9rem; }
+    .group { margin-top: .9rem; }
+    .group > div {
+      flex-direction: row; gap: .9rem; overflow-x: auto; padding-bottom: .25rem;
       scrollbar-width: thin; -webkit-overflow-scrolling: touch;
     }
-    .shows a { white-space: nowrap; }
+    .group > div a { white-space: nowrap; }
   }
 
   main { padding: 1.5rem var(--gutter) 5rem; min-width: 0; }

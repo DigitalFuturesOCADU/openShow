@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content'
+import Base from '../../layouts/Base.astro'
+import { facetCounts } from '../../lib/site'
+
+const projects = await getCollection('projects', (p) => p.data.status === 'publish')
+const topics = facetCounts(projects, 'medium')
+const base = import.meta.env.BASE_URL
+---
+<Base title="Topics — Digital Futures Open Show" section="topics"
+      description={`${topics.length} media and techniques across ${projects.length} projects.`}>
+  <header class="head">
+    <h1>Topics</h1>
+    <p class="label">{topics.length} media and techniques across {projects.length} works</p>
+  </header>
+
+  <ul class="topics">
+    {topics.map((t) => (
+      <li>
+        <a href={`${base}topics/${t.slug}`}>{t.label}</a>
+        <span class="n">{t.count}</span>
+      </li>
+    ))}
+  </ul>
+</Base>
+
+<style>
+  .head { margin-bottom: 2rem; }
+  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .2rem; letter-spacing: -.01em; }
+  .head .label { margin: 0; }
+  .topics { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 2.5rem; }
+  @media (min-width: 52rem) { .topics { columns: 3; } }
+  .topics li { break-inside: avoid; padding: .25rem 0; display: flex; gap: .5rem; align-items: baseline; }
+  .topics a { text-decoration: none; }
+  .topics a:hover { text-decoration: underline; }
+  .n { color: var(--muted); font-size: .75rem; }
+</style>
