@@ -14,7 +14,8 @@
     "preview": "astro preview",
     "publish": "node scripts/publish.mjs",
     "links": "node scripts/check-links.mjs",
-    "start": "node scripts/console.mjs"
+    "start": "node scripts/console.mjs",
+    "reset": "node scripts/reset-show.mjs"
   },
   "repository": {
     "type": "git",

@@ -1,29 +1,31 @@
 #!/usr/bin/env node
-// Microsoft Forms submissions -> content/projects/
+// Microsoft Forms submissions -> submissions/<show>/projects/
 //
-// The spreadsheet is INTAKE, not storage. Once a project is ingested, its
-// markdown file is canonical and this tool must never overwrite it — a typo
-// fixed in 2027 has to survive a re-run in 2028. So ingest is ADDITIVE:
+// THE SPREADSHEET IS THE SOURCE. Fix something in it, run this again, and the
+// records are rebuilt from what it now says. Re-ingesting is how you correct
+// submitted data, so it overwrites rather than merges.
 //
-//   new submission      -> write the file
-//   already ingested    -> compare, report the difference, change nothing
-//   --update            -> apply differences for named fields only
+// Nothing hand-made is lost by that, because nothing hand-made lives here.
+// Corrections that cannot come from the form — merging two spellings of a
+// name, assigning a medium, fixing a year — go in config/ and are applied by
+// extract.mjs afterwards, so they survive every re-ingest.
 //
-// That is the opposite of extract.mjs, which fully regenerates because the
-// WordPress export is frozen. Living data cannot be regenerated safely.
+// Records are written to submissions/, not content/projects/, because extract
+// clears that directory on every run and would otherwise delete them.
 //
 //   node scripts/ingest.mjs --sheet <x.xlsx> --show 2026 --media <folder> [--dry-run]
 //
 // Column mapping and vocabularies live in config/form-map.yaml. Only mapped
 // columns are read, so a new PII column in next year's Form cannot leak.
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync, copyFileSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync, copyFileSync, rmSync } from 'node:fs'
 import { join, dirname, basename, extname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { load, dump } from 'js-yaml'
 import ExcelJS from 'exceljs'
 import { splitCredits, decodeEntities, personSlug } from './lib/people.mjs'
 import { slugify } from './lib/taxonomy.mjs'
+import { SUBMISSIONS_DIR } from './lib/submissions.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -35,7 +37,7 @@ const arg = (name, fallback = null) => {
   return i === -1 ? fallback : (argv[i + 1] ?? true)
 }
 const DRY = argv.includes('--dry-run')
-const UPDATE = argv.includes('--update')
+const KEEP = argv.includes('--keep')
 
 const SHEET = arg('sheet')
 const SHOW = arg('show')
@@ -55,7 +57,7 @@ if (!SHEET || !SHOW) {
                        the Form must not ask submitters for the year)
     --media   <dir>    folder of synced submission files, for resolving uploads
     --dry-run          report only, write nothing
-    --update           apply changes to already-ingested projects (off by default)
+    --keep             leave existing records alone instead of rebuilding them
 `)
   process.exit(1)
 }
@@ -313,66 +315,35 @@ for (const b of built.sort((a, b) => a.slug.localeCompare(b.slug))) b.frontmatte
 
 // ---------------------------------------------------------------- write
 
-const CHANGEABLE = ['affiliation', 'medium', 'tags', 'links', 'consent', 'submission']
-const created = []
-const unchanged = []
-const differing = []
+const OUT_DIR = join(ROOT, SUBMISSIONS_DIR, String(SHOW), 'projects')
+const written = []
+const kept = []
+const removed = []
 
-// Match an existing project by NORMALISED TITLE as well as by slug. Slugs are
-// derived and can differ between WordPress and this tool for the same project
-// — accents, punctuation, percent-encoding. Title is the stable human identity,
-// and getting this wrong means creating a duplicate of a project that exists.
-const titleKey = (s) =>
-  String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '')
+// Rebuilt from the sheet each time. Anything previously ingested for this show
+// that the sheet no longer lists has been withdrawn, so it goes too — otherwise
+// a deleted submission would linger forever.
+const existingFiles = existsSync(OUT_DIR) ? readdirSync(OUT_DIR).filter((f) => f.endsWith('.md')) : []
+const wanted = new Set(built.map((b) => `${b.slug}.md`))
 
-const existingByTitle = new Map()
-const projectsDir = join(ROOT, 'content/projects')
-if (existsSync(projectsDir)) {
-  for (const fn of readdirSync(projectsDir)) {
-    if (!fn.endsWith('.md')) continue
-    try {
-      const fm = load(readFileSync(join(projectsDir, fn), 'utf8').split('---')[1]) ?? {}
-      if (fm.title) existingByTitle.set(titleKey(fm.title), fn.replace(/\.md$/, ''))
-    } catch {}
+for (const b of built) {
+  const path = join(OUT_DIR, `${b.slug}.md`)
+  if (KEEP && existsSync(path)) {
+    kept.push(b.slug)
+    continue
+  }
+  const body = `---\n${dump(b.frontmatter, { noRefs: true, lineWidth: 100, quotingType: '"' })}---\n\n${b.description}\n`
+  written.push(b.slug)
+  if (!DRY) {
+    mkdirSync(OUT_DIR, { recursive: true })
+    writeFileSync(path, body)
   }
 }
 
-for (const b of built) {
-  const matchedSlug = existingByTitle.get(titleKey(b.frontmatter.title))
-  if (matchedSlug && matchedSlug !== b.slug) {
-    // Keep the established slug — URLs depend on it.
-    b.slug = matchedSlug
-    b.frontmatter.slug = matchedSlug
-  }
-  const path = join(ROOT, 'content/projects', `${b.slug}.md`)
-  const body = `---\n${dump(b.frontmatter, { noRefs: true, lineWidth: 100, quotingType: '"' })}---\n\n${b.description}\n`
-
-  if (!existsSync(path)) {
-    created.push(b.slug)
-    if (!DRY) {
-      mkdirSync(dirname(path), { recursive: true })
-      writeFileSync(path, body)
-    }
-    continue
-  }
-
-  // Already ingested. Compare, never clobber.
-  const existing = load(readFileSync(path, 'utf8').split('---')[1]) ?? {}
-  const diffs = CHANGEABLE.filter(
-    (k) => JSON.stringify(existing[k] ?? null) !== JSON.stringify(b.frontmatter[k] ?? null),
-  )
-  if (!diffs.length) {
-    unchanged.push(b.slug)
-    continue
-  }
-  differing.push({ slug: b.slug, diffs })
-  if (UPDATE && !DRY) {
-    const merged = { ...existing }
-    for (const k of diffs) merged[k] = b.frontmatter[k]
-    const raw = readFileSync(path, 'utf8')
-    const bodyText = raw.slice(raw.indexOf('---', 3) + 3).replace(/^\n+/, '')
-    writeFileSync(path, `---\n${dump(merged, { noRefs: true, lineWidth: 100, quotingType: '"' })}---\n\n${bodyText}`)
-  }
+for (const f of existingFiles) {
+  if (wanted.has(f)) continue
+  removed.push(f.replace(/\.md$/, ''))
+  if (!DRY && !KEEP) rmSync(join(OUT_DIR, f))
 }
 
 // ---------------------------------------------------------------- report
@@ -380,12 +351,11 @@ for (const b of built) {
 const line = (n, label) => console.log(`  ${String(n).padStart(4)}  ${label}`)
 
 console.log('  RESULT')
-line(created.length, DRY ? 'would be created' : 'created')
-line(unchanged.length, 'already ingested, identical')
-line(differing.length, `already ingested, differ${UPDATE && !DRY ? ' (updated)' : ' (left alone — pass --update to apply)'}`)
+line(written.length, DRY ? 'would be written from the sheet' : 'written from the sheet')
+if (kept.length) line(kept.length, 'left alone (--keep)')
+if (removed.length) line(removed.length, DRY ? 'would be removed — no longer in the sheet' : 'removed — no longer in the sheet')
 if (superseded.length) line(superseded.length, 'superseded by a later resubmission')
-
-for (const d of differing.slice(0, 10)) console.log(`        ${d.slug}: ${d.diffs.join(', ')}`)
+for (const r of removed.slice(0, 10)) console.log(`        ${r}`)
 
 const section = (title, items, fmt) => {
   if (!items.length) return
@@ -436,5 +406,7 @@ for (const [label, bucket] of [['medium', flags.unmappedMedium], ['affiliation',
   for (const [v, n] of [...bucket].sort((a, b) => b[1] - a[1])) console.log(`      ${n}x  ${JSON.stringify(v)}`)
 }
 
-console.log(`\n  Everything lands as status: draft. Promote to publish after review.`)
+console.log(`\n  Records are in ${SUBMISSIONS_DIR}/${SHOW}/projects/. Run extract to build the site.`)
+console.log(`  Everything lands as status: draft. Promote to publish after review.`)
+console.log(`  Corrections that cannot come from the form belong in config/ — they survive re-ingest.`)
 console.log(DRY ? '  Dry run — nothing written.\n' : '')
