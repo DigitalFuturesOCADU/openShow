@@ -29,6 +29,13 @@ import sharp from 'sharp'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const UPLOADS = join(ROOT, 'sources/uploads')
+const SUBMISSIONS = join(ROOT, 'sources/submissions')
+
+// Historical media came from WordPress; new media comes from the submission
+// form. Both are archives of record under their original names, so resolve
+// against either.
+const archiveRoot = (rel) =>
+  existsSync(join(UPLOADS, rel)) ? UPLOADS : existsSync(join(SUBMISSIONS, rel)) ? SUBMISSIONS : UPLOADS
 const DEST = join(ROOT, 'content/images')
 const DRY = process.argv.includes('--dry-run')
 
@@ -38,13 +45,49 @@ const JPEG_QUALITY = 82
 
 const mb = (n) => (n / 1e6).toFixed(1) + ' MB'
 
+/** <show>/<slug>_<n>.<ext> — predictable, and free of anyone's name. */
+const servedName = (meta, ext) => `${meta.show}/${meta.slug}_${meta.index}.${ext}`
+
 // ---------------------------------------------------------------- collect
 
-const images = new Map() // file -> {id, bytes}
+/**
+ * Served files are renamed to <show>/<slug>_<n>.<ext>.
+ *
+ * The archive keeps its original filenames and is never touched — sources/ is
+ * mode 0444, UPLOADS-MANIFEST.txt keys 8,603 SHA-256 hashes on those exact
+ * paths, and both the WXR and the SQL dump reference them. Renaming there would
+ * break the ability to re-derive anything from source, which is the one thing
+ * the whole archive rests on.
+ *
+ * Renaming what is SERVED costs nothing, because project frontmatter refers to
+ * images by archive path and image-manifest.json does the mapping. Two things
+ * are gained: predictable URLs, and 478 of 704 public URLs stop containing a
+ * student's name.
+ */
+const images = new Map() // archive path -> {id, bytes, slug, show, index, originalName}
+const claimed = new Map()
+const contested = []
+
 for (const fn of readdirSync(join(ROOT, 'content/projects'))) {
   const fm = load(readFileSync(join(ROOT, 'content/projects', fn), 'utf8').split('---')[1])
+  const slug = fm.slug ?? fn.replace(/\.md$/, '')
+  const show = fm.show ?? 'unassigned'
+  let n = 0
   for (const m of fm.media ?? []) {
-    if (m.type === 'image' && m.file) images.set(m.file, { id: m.id, bytes: m.bytes ?? 0 })
+    if (m.type !== 'image' || !m.file) continue
+    n++
+    // An image referenced by two projects would want two names. It does not
+    // happen in this archive (704 references, 704 distinct files) but a future
+    // ingest could do it, and silently overwriting one would lose an image.
+    if (claimed.has(m.file)) {
+      contested.push({ file: m.file, first: claimed.get(m.file), second: slug })
+      continue
+    }
+    claimed.set(m.file, slug)
+    images.set(m.file, {
+      id: m.id, bytes: m.bytes ?? 0, slug, show, index: n,
+      originalName: m.file.split('/').pop(),
+    })
   }
 }
 // Editorial pages reference a handful of images too. They are copied verbatim
@@ -80,16 +123,16 @@ const manifest = {}
 let converted = 0
 
 for (const [rel, meta] of images) {
-  const src = join(UPLOADS, rel)
+  const src = join(archiveRoot(rel), rel)
   if (!existsSync(src)) {
     failures.push({ rel, why: 'missing from uploads' })
     continue
   }
   inBytes += statSync(src).size
 
-  const dst = join(DEST, rel)
-
   const copyVerbatim = async (why) => {
+    const outRel = servedName(meta, rel.split('.').pop().toLowerCase())
+    const dst = join(DEST, outRel)
     if (!DRY) {
       mkdirSync(dirname(dst), { recursive: true })
       copyFileSync(src, dst)
@@ -102,7 +145,7 @@ for (const [rel, meta] of images) {
       const m = await sharp(src, { failOn: 'none', limitInputPixels: false }).metadata()
       w = m.width; h = m.height
     } catch {}
-    manifest[rel] = { file: rel, bytes, width: w, height: h }
+    manifest[rel] = { file: outRel, bytes, width: w, height: h, originalName: meta.originalName }
     if (why) verbatimReasons.push({ rel, why })
   }
 
@@ -152,7 +195,7 @@ for (const [rel, meta] of images) {
       : pipeline.png({ compressionLevel: 9 })
 
     const buf = await pipeline.toBuffer()
-    const outRel = rel.replace(/\.\w+$/, '.' + ext)
+    const outRel = servedName(meta, ext)
     const outDst = join(DEST, outRel)
 
     // A "web master" larger than the original helps nobody.
@@ -165,7 +208,7 @@ for (const [rel, meta] of images) {
     if (buf.length > 4e6) oversize.push({ rel: outRel, bytes: buf.length })
     if (ext !== rel.split('.').pop().toLowerCase()) converted++
 
-    manifest[rel] = { file: outRel, bytes: buf.length, width: null, height: null }
+    manifest[rel] = { file: outRel, bytes: buf.length, width: null, height: null, originalName: meta.originalName }
     const meta2 = await sharp(buf).metadata()
     manifest[rel].width = meta2.width
     manifest[rel].height = meta2.height
@@ -185,6 +228,11 @@ for (const [rel, meta] of images) {
 }
 
 // ---------------------------------------------------------------- report
+
+if (contested.length) {
+  console.log(`\n  ⚠  ${contested.length} image(s) referenced by more than one project — kept with the first:`)
+  for (const c of contested.slice(0, 5)) console.log(`      ${c.file}\n        ${c.first} / ${c.second}`)
+}
 
 console.log(`  archive tier (true originals):  ${mb(inBytes)}`)
 console.log(`  source tier  (web masters):     ${mb(outBytes)}   ${(100 * (1 - outBytes / inBytes)).toFixed(0)}% smaller`)
