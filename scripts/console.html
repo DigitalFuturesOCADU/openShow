@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Show console</title>
+<style>
+  :root { --ink:#111; --paper:#fff; --muted:#666; --rule:#e4e4e4; --ok:#0a7a34; --bad:#b3261e; --focus:#0b5fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#f2f2f2; --paper:#111; --muted:#9a9a9a; --rule:#2b2b2b; --ok:#5ec27e; --bad:#ff8a80; --focus:#7aa8ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  .wrap { max-width:64rem; margin:0 auto; padding:2rem 1.25rem 5rem; }
+  h1 { font-size:1.5rem; margin:0 0 .2rem; letter-spacing:-.01em; }
+  .sub { color:var(--muted); margin:0 0 2rem; }
+  h2 { font-size:.6875rem; letter-spacing:.09em; text-transform:uppercase; color:var(--muted);
+       margin:2.5rem 0 .75rem; border-top:1px solid var(--rule); padding-top:1rem; }
+  :focus-visible { outline:3px solid var(--focus); outline-offset:2px; }
+
+  .shows { display:grid; gap:.4rem; margin:0 0 .5rem; }
+  .show { display:grid; grid-template-columns:9.5rem minmax(0,1fr) auto; gap:1rem; align-items:baseline;
+          padding:.5rem 0; border-bottom:1px solid var(--rule); }
+  .show b { font-weight:600; }
+  .show .meta { color:var(--muted); font-size:.875rem; }
+  .pill { font-size:.6875rem; letter-spacing:.06em; text-transform:uppercase; padding:.1rem .5rem;
+          border:1px solid var(--rule); border-radius:999px; color:var(--muted); white-space:nowrap; }
+  .pill.now { border-color:var(--ink); color:var(--ink); }
+  .pill.hold { border-color:var(--bad); color:var(--bad); }
+
+  /* One column. An earlier version put grid-column:2 on the hints, which are
+     siblings of the rows rather than children, so the form sprouted implicit
+     columns and fields sat side by side. */
+  form { display:grid; grid-template-columns:1fr; gap:.75rem; max-width:36rem; }
+  .row { display:grid; grid-template-columns:8rem minmax(0,1fr); gap:.75rem; align-items:center; }
+  label { color:var(--muted); font-size:.875rem; }
+  input, select { font:inherit; color:inherit; background:var(--paper); border:1px solid var(--rule);
+                  border-radius:0; padding:.4rem .5rem; width:100%; }
+  .hint { color:var(--muted); font-size:.8125rem; margin:-.5rem 0 0 8.75rem; }
+  @media (max-width:34rem) {
+    .row { grid-template-columns:1fr; gap:.25rem; }
+    .hint { margin-left:0; }
+  }
+
+  .actions { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.25rem; }
+  button { font:inherit; cursor:pointer; background:var(--ink); color:var(--paper);
+           border:1px solid var(--ink); border-radius:0; padding:.4rem .9rem; }
+  button.ghost { background:none; color:var(--ink); border-color:var(--rule); }
+  button:disabled { opacity:.45; cursor:progress; }
+
+  #log { margin-top:2rem; border:1px solid var(--rule); background:var(--paper);
+         font:12.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace; padding:.75rem;
+         max-height:22rem; overflow:auto; white-space:pre-wrap; display:none; }
+  #log.on { display:block; }
+  #log .ok { color:var(--ok); }
+  #log .bad { color:var(--bad); }
+  .empty { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Open Show console</h1>
+  <p class="sub">Everything needed to run a show. Nothing here goes online until you publish.</p>
+
+  <h2>Shows</h2>
+  <div class="shows" id="shows"></div>
+
+  <h2>1 · Announce a show</h2>
+  <form id="f-create">
+    <div class="row"><label for="c-show">Show</label><input id="c-show" placeholder="2026" required></div>
+    <p class="hint">The year. Use 2026-december only if there are two shows in one year.</p>
+    <div class="row"><label for="c-date">Date</label><input id="c-date" type="date"></div>
+    <div class="row"><label for="c-time">Time</label><input id="c-time" placeholder="5:00 – 8:00 pm"></div>
+    <div class="row"><label for="c-venue">Location</label><input id="c-venue" placeholder="205 Richmond Street West"></div>
+    <div class="row"><label for="c-rooms">Rooms</label><input id="c-rooms" placeholder="Graduate Gallery, X Fab Space"></div>
+    <p class="hint">Separate rooms with commas. Leave blank if not booked yet.</p>
+    <div class="actions"><button type="submit">Announce show</button></div>
+  </form>
+
+  <h2>2 · Bring in submissions</h2>
+  <form id="f-ingest">
+    <div class="row"><label for="i-show">Show</label><select id="i-show"></select></div>
+    <div class="row"><label for="i-sheet">Spreadsheet</label><select id="i-sheet"></select></div>
+    <p class="hint" id="sheet-hint"></p>
+    <div class="row"><label for="i-media">Image folder</label><input id="i-media" placeholder="/Users/you/OneDrive/DF_OPEN_SHOW/Submissions"></div>
+    <p class="hint">The synced SharePoint folder. Remembered for next time.</p>
+    <div class="actions">
+      <button type="button" data-dry="1" class="ghost">Check first</button>
+      <button type="submit">Bring them in</button>
+    </div>
+  </form>
+
+  <h2>3 · Review and publish</h2>
+  <form id="f-review">
+    <div class="row"><label for="r-show">Show</label><select id="r-show"></select></div>
+    <p class="hint" id="review-hint"></p>
+    <div class="actions">
+      <button type="submit">Mark all reviewed</button>
+      <button type="button" id="b-open" class="ghost">Open the show</button>
+    </div>
+  </form>
+
+  <h2>4 · Build the site</h2>
+  <div class="actions">
+    <button type="button" data-run="extract" class="ghost">Rebuild content</button>
+    <button type="button" data-run="media" class="ghost">Prepare images</button>
+    <button type="button" id="b-build">Build the site</button>
+    <button type="button" data-run="test" class="ghost">Check addresses</button>
+    <button type="button" data-run="links" class="ghost">Check external links</button>
+  </div>
+
+  <pre id="log" aria-live="polite" aria-label="Output"></pre>
+</div>
+
+<script type="module">
+const $ = (s) => document.querySelector(s)
+const log = $('#log')
+let busy = false
+
+function print(line, cls = '') {
+  const el = document.createElement('span')
+  el.className = cls
+  el.textContent = line + '\n'
+  log.append(el)
+  log.scrollTop = log.scrollHeight
+}
+
+async function run(body, endpoint = '/api/run') {
+  if (busy) return
+  busy = true
+  document.querySelectorAll('button').forEach((b) => (b.disabled = true))
+  log.classList.add('on')
+  log.textContent = ''
+  print(`▸ ${body.action ?? 'build'}…`)
+
+  const res = await fetch(endpoint, { method: 'POST', body: JSON.stringify(body) })
+  const reader = res.body.getReader()
+  const dec = new TextDecoder()
+  let buf = ''
+  for (;;) {
+    const { value, done } = await reader.read()
+    if (done) break
+    buf += dec.decode(value, { stream: true })
+    const parts = buf.split('\n\n')
+    buf = parts.pop()
+    for (const p of parts) {
+      if (!p.startsWith('data: ')) continue
+      const msg = JSON.parse(p.slice(6))
+      if (msg.line) print(msg.line, /✗|error|failed/i.test(msg.line) ? 'bad' : /✓|→/.test(msg.line) ? 'ok' : '')
+      if (msg.done) print(msg.code === 0 ? '✓ done' : `✗ stopped (code ${msg.code})`, msg.code === 0 ? 'ok' : 'bad')
+    }
+  }
+  busy = false
+  document.querySelectorAll('button').forEach((b) => (b.disabled = false))
+  refresh()
+}
+
+async function refresh() {
+  const s = await (await fetch('/api/state')).json()
+
+  $('#shows').innerHTML = s.shows.length
+    ? s.shows.map((sh) => {
+        const when = sh.dates?.start ?? ''
+        const bits = [when, sh.time, sh.venue].filter(Boolean).join(' · ')
+        const drafts = s.drafts[sh.id] ?? 0
+        return `<div class="show">
+          <b>${sh.title.replace('Open Show ', '')}</b>
+          <span class="meta">${bits || 'no date set'} — ${sh.projectCount} live${drafts ? `, ${drafts} awaiting review` : ''}</span>
+          <span>${sh.current ? '<span class="pill now">current</span> ' : ''}${sh.visibility === 'announced' ? '<span class="pill hold">held back</span>' : ''}</span>
+        </div>`
+      }).join('')
+    : '<p class="empty">No shows yet. Announce one below.</p>'
+
+  const opts = s.shows.map((sh) => `<option value="${sh.id}">${sh.title.replace('Open Show ', '')}</option>`).join('')
+  for (const sel of ['#i-show', '#r-show']) {
+    const cur = $(sel).value
+    $(sel).innerHTML = opts
+    if (cur) $(sel).value = cur
+  }
+
+  $('#i-sheet').innerHTML = s.sheets.length
+    ? s.sheets.map((f) => `<option value="${f.name}">${f.name}</option>`).join('')
+    : '<option value="">— none found —</option>'
+  $('#sheet-hint').textContent = s.sheets.length
+    ? 'Found in the inbox folder.'
+    : 'Put the exported spreadsheet in the "inbox" folder, then reload this page.'
+
+  if (s.prefs.media && !$('#i-media').value) $('#i-media').value = s.prefs.media
+  updateReviewHint(s)
+  window.__state = s
+}
+
+function updateReviewHint(s = window.__state) {
+  if (!s) return
+  const id = $('#r-show').value
+  const n = s.drafts[id] ?? 0
+  $('#review-hint').textContent = n
+    ? `${n} piece${n === 1 ? '' : 's'} awaiting review in this show.`
+    : 'Nothing awaiting review in this show.'
+}
+$('#r-show').addEventListener('change', () => updateReviewHint())
+
+$('#f-create').addEventListener('submit', (e) => {
+  e.preventDefault()
+  run({
+    action: 'create-show',
+    show: $('#c-show').value.trim(),
+    date: $('#c-date').value,
+    time: $('#c-time').value,
+    venue: $('#c-venue').value,
+    rooms: $('#c-rooms').value,
+  })
+})
+
+const ingest = (dryRun) => {
+  const media = $('#i-media').value.trim()
+  if (media) fetch('/api/prefs', { method: 'POST', body: JSON.stringify({ media }) })
+  run({ action: 'ingest', show: $('#i-show').value, sheet: $('#i-sheet').value, media, dryRun })
+}
+$('#f-ingest').addEventListener('submit', (e) => { e.preventDefault(); ingest(false) })
+$('[data-dry]').addEventListener('click', () => ingest(true))
+
+$('#f-review').addEventListener('submit', (e) => {
+  e.preventDefault()
+  run({ action: 'review', show: $('#r-show').value })
+})
+$('#b-open').addEventListener('click', () => run({ action: 'open', show: $('#r-show').value }))
+$('#b-build').addEventListener('click', () => run({}, '/api/build'))
+for (const b of document.querySelectorAll('[data-run]')) {
+  b.addEventListener('click', () => run({ action: b.dataset.run }))
+}
+
+refresh()
+</script>
+</body>
+</html>

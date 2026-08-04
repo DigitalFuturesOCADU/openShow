@@ -868,6 +868,24 @@ ${noMedium.length
   : '_None — every project has at least one medium._'}
 `)
 
+// Machine-readable alongside the prose. The console reads this rather than
+// parsing the markdown table, which misaligns whenever a column is empty.
+write(out('reports/drafts.json'), JSON.stringify({
+  $comment: 'Work held back from the site, by show. Written by scripts/extract.mjs.',
+  total: excluded.length,
+  byShow: excluded.reduce((acc, r) => {
+    const k = r.frontmatter.show ?? 'unassigned'
+    acc[k] = (acc[k] ?? 0) + 1
+    return acc
+  }, {}),
+  items: excluded.map((r) => ({
+    id: r.frontmatter.id, title: r.frontmatter.title, show: r.frontmatter.show,
+    status: r.frontmatter.status,
+    images: r.frontmatter.media.filter((m) => m.type === 'image').length,
+    hasDescription: Boolean(r.description),
+  })),
+}, null, 2) + '\n')
+
 write(out('reports/drafts.md'), `# Unpublished work
 
 ${excluded.length} of 264 projects were never published in WordPress and are not

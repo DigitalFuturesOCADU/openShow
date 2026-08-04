@@ -10,9 +10,32 @@ out. Once, before anything else:
 npm install
 ```
 
-Every command below is run from the repository folder. Nothing here talks to a
-server — you change files, rebuild, and look at the result before anyone else
-sees it.
+---
+
+## The easy way: the console
+
+Everything below can be done from a window rather than a terminal:
+
+```bash
+npm start
+```
+
+That opens a control panel at <http://localhost:4322> with the same five stages
+as buttons and forms — announce a show, bring in submissions, review, build. It
+shows every show with its date, how many works are live and how many are waiting
+for review, and prints what each step is doing as it runs.
+
+You still type that one command to start it. Everything after that is clicking.
+
+The panel is only reachable from your own machine — it is not a website and
+cannot be opened by anyone else, even on the same network.
+
+**Where the spreadsheet goes:** drop the exported responses into the `inbox`
+folder in this repository and it appears in the console's list. Those files are
+never committed, because they contain student email addresses.
+
+The rest of this document explains what each stage does, and gives the terminal
+equivalent if you prefer it or something goes wrong.
 
 ---
 
