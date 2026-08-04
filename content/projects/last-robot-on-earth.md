@@ -61,7 +61,8 @@ layout: default
 links:
   - label: Project
     url: https://bakaretsu.itch.io/last-robot-on-earth
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:04.634Z'
 status: publish
 sourceTerms:
   - 2021 Code

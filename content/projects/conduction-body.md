@@ -50,7 +50,8 @@ links:
   - label: Project
     url: >-
       http://blog.ocad.ca/wordpress/digf2014-fw2019-001/2020/12/conduction-e-textile-body-movement-sensors-for-live-performance/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:38:59.429Z'
 status: publish
 sourceTerms:
   - 2020 Code

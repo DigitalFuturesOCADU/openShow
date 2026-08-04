@@ -50,7 +50,8 @@ layout: default
 links:
   - label: Project
     url: https://cc23.ocaduwebspace.ca/?p=1688
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:08.476Z'
 status: publish
 sourceTerms:
   - 2023 Graduate

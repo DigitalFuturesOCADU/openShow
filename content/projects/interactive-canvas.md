@@ -21,7 +21,8 @@ layout: default
 links:
   - label: Project
     url: http://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/interactive-canvas/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:05.169Z'
 status: draft
 sourceTerms:
   - 2019 December Graduate

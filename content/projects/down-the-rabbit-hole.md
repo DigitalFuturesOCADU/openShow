@@ -50,7 +50,8 @@ layout: default
 links:
   - label: Project
     url: https://drive.google.com/file/d/1zinLtYira-Qq-A5GcWedVXi-c-2B4t02/view
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:02.581Z'
 status: publish
 sourceTerms:
   - 2019 February 3D Animation

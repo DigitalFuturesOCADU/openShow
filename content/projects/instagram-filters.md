@@ -37,7 +37,8 @@ layout: default
 links:
   - label: Project
     url: https://www.instagram.com/ar/642234764786948/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:03.603Z'
 status: publish
 sourceTerms:
   - 2023 AR

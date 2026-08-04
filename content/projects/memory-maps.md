@@ -24,7 +24,8 @@ layout: default
 links:
   - label: Project
     url: https://www.are.na/hamid-malek/memorymap
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:07.006Z'
 status: draft
 sourceTerms:
   - 2024 3D Animation

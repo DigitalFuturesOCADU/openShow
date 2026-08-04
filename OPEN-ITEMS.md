@@ -133,11 +133,23 @@ No archived show has a logo, poster, team photo, venue or dates — it was never
 recorded. Show pages render only what they have. If material surfaces later it
 drops into `config/overrides.yaml` under a `show:<id>` key with no code change.
 
-### 3.4 External links are unchecked
+### 3.4 External links: 93 of 235 are dead
 
-233 projects link to external sites, many of them student portfolios that will
-have rotted. Every link carries `status: "unchecked"`. Checking them once and
-recording the result is EXECUTION.md §6.7.
+Checked 2026-08-04 by `scripts/check-links.mjs`. 111 resolve, 31 redirect,
+and **93 link nowhere** — 40%. That is decay rather than a migration fault;
+they were live when submitted.
+
+The pattern matters more than the number: **38 of the 93 are `blog.ocad.ca`**,
+one decommissioned university platform, plus 5 on `webspace.ocad.ca`. This is
+mostly one host going away, not scattered rot — which means a single archival
+effort could recover a lot of it.
+
+Dead links are not presented as working. The project page strikes them through,
+says "no longer available", and offers an Internet Archive lookup, which often
+still holds the page.
+
+Re-check with `node scripts/check-links.mjs --stale 30`. Results live in
+`config/link-status.json` and are stamped onto projects by extract.
 
 ---
 

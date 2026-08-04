@@ -1,14 +1,16 @@
 ---
 import { getCollection, render } from 'astro:content'
-import { Image } from 'astro:assets'
+import { Image, getImage } from 'astro:assets'
 import Base from '../../../layouts/Base.astro'
 import { toRouteParam, projectPath } from '../../../lib/slugs'
 import { resolveImage } from '../../../lib/images'
 import { label, altFor, personById } from '../../../lib/site'
 
-// URLs are preserved exactly: /portfolio/items/<slug>. The route parameter is
-// the DECODED slug so the encoder reproduces WordPress's original percent
-// escapes — see src/lib/slugs.ts, verified by scripts/test-routes.mjs.
+// Matching WordPress's URLs is no longer a goal — the re-organisation changes
+// them. The decode-then-encode dance in src/lib/slugs.ts still matters though:
+// two slugs are percent-encoded, and handing those to the router raw would
+// double-encode them into a 404. scripts/test-routes.mjs proves all 264
+// round-trip and that no two collide.
 export async function getStaticPaths() {
   const all = await getCollection('projects', (p) => p.data.status === 'publish')
   const shows = await getCollection('shows')
@@ -48,11 +50,16 @@ const rest = images.filter((m) => m !== featured)
 const embeds = d.media.filter((m) => m.type === 'video-embed')
 const videos = d.media.filter((m) => m.type === 'video-file')
 const base = import.meta.env.BASE_URL
+
+// Social card: a 1200x630 crop of the project's own featured image.
+const ogSrc = featured?.type === 'image' ? resolveImage(featured.file) : null
+const og = ogSrc ? await getImage({ src: ogSrc, width: 1200, height: 630, fit: 'cover', format: 'jpeg' }) : null
 ---
 
 <Base
   title={`${d.title} — Digital Futures Open Show`}
   description={d.creditsRaw ?? undefined}
+  ogImage={og?.src}
   theme={theme}
   section={`show:${d.show}`}
 >
@@ -142,7 +149,23 @@ const base = import.meta.env.BASE_URL
 
       {d.links.length > 0 && (
         <p class="links">
-          {d.links.map((l) => <a href={l.url} rel="noopener noreferrer external">{l.label} ↗</a>)}
+          {d.links.map((l) => {
+            // 93 of 235 external links no longer resolve — mostly one
+            // decommissioned university blog. Presenting a dead link as a live
+            // one wastes the reader's time and hides the loss. Say it is gone,
+            // and offer the Internet Archive, which often still has it.
+            const gone = l.status === 'dead' || l.status === 'unreachable'
+            return gone ? (
+              <span class="dead">
+                <span>{l.label} — no longer available</span>
+                <a href={`https://web.archive.org/web/2020/${l.url}`} rel="noopener noreferrer external">
+                  Try the Internet Archive ↗
+                </a>
+              </span>
+            ) : (
+              <a href={l.finalUrl ?? l.url} rel="noopener noreferrer external">{l.label} ↗</a>
+            )
+          })}
         </p>
       )}
     </aside>
@@ -180,7 +203,10 @@ const base = import.meta.env.BASE_URL
   .facts dt { padding-top: .1rem; }
   .facts dd { margin: 0; font-size: .875rem; }
 
-  .links { display: flex; flex-direction: column; gap: .3rem; margin: 0; font-size: .875rem; }
+  .links { display: flex; flex-direction: column; gap: .5rem; margin: 0; font-size: .875rem; }
+  .dead { display: flex; flex-direction: column; }
+  .dead > span { color: var(--muted); text-decoration: line-through; }
+  .dead > a { color: var(--muted); }
 
   .embed { position: relative; aspect-ratio: 16 / 9; margin: 0 0 var(--tile-gap); }
   .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }

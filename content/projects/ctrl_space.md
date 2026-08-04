@@ -63,7 +63,8 @@ layout: default
 links:
   - label: Project
     url: https://cc23.ocaduwebspace.ca/connected-systems/ctrl-space
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:22.487Z'
 status: publish
 sourceTerms:
   - 2023 Code

@@ -86,7 +86,9 @@ layout: default
 links:
   - label: Project
     url: http://socialbodylab.com/textile-game-controllers/
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:12.994Z'
+    finalUrl: https://socialbodylab.com/textile-game-controllers/
 status: publish
 sourceTerms:
   - 2020 Code

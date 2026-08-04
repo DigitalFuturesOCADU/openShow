@@ -42,7 +42,8 @@ layout: default
 links:
   - label: Project
     url: https://assal-tdfh.my.canva.site/lightpaint
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:05.733Z'
 status: publish
 sourceTerms:
   - 2025 Installation

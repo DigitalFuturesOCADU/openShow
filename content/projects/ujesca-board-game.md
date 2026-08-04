@@ -54,7 +54,8 @@ layout: default
 links:
   - label: Project
     url: https://blogs.ocaduwebspace.ca/digf-1007-501-2024wi/2024/11/17/ujesca/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:11.207Z'
 status: publish
 sourceTerms:
   - 2024 Games

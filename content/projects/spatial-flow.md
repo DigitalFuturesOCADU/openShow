@@ -36,7 +36,8 @@ layout: default
 links:
   - label: Project
     url: https://natalielehuenen.com/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:12.099Z'
 status: publish
 sourceTerms:
   - 2020 AR

@@ -30,7 +30,8 @@ layout: default
 links:
   - label: Project
     url: https://futurethroughmemory.ca/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:04.294Z'
 status: publish
 sourceTerms:
   - 2021 Graduate

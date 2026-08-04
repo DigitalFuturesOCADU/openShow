@@ -42,7 +42,8 @@ layout: default
 links:
   - label: Project
     url: https://drive.google.com/drive/folders/1x1NF6qDE3lz6sH51w1LVzCeDBZhOyf2-?usp=share_link
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:03.062Z'
 status: publish
 sourceTerms:
   - 2022 Animation

@@ -48,7 +48,9 @@ layout: default
 links:
   - label: Project
     url: https://cc23.ocaduwebspace.ca/uncategorized/coral/
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:11.166Z'
+    finalUrl: https://cc23.ocaduwebspace.ca/4-interstitial-spaces/coral/
 status: publish
 sourceTerms:
   - 2023 Digital Fabrication

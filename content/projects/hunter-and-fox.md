@@ -54,7 +54,8 @@ layout: default
 links:
   - label: Project
     url: https://webspace.ocad.ca/~manuelq/final_project/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:03.462Z'
 status: publish
 sourceTerms:
   - 2023 Code

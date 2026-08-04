@@ -46,7 +46,8 @@ layout: default
 links:
   - label: Project
     url: https://www.artstation.com/bryanshlee
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:38:59.101Z'
 status: publish
 sourceTerms:
   - 2023 Character Art

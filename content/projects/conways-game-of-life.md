@@ -27,7 +27,8 @@ layout: default
 links:
   - label: Project
     url: https://flipdots.cargo.site/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:00.688Z'
 status: draft
 sourceTerms:
   - 2024 Code

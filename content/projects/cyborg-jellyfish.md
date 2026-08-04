@@ -55,7 +55,9 @@ layout: default
 links:
   - label: Project
     url: https://youtu.be/neTOFkXYfj4
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:00.015Z'
+    finalUrl: https://www.youtube.com/watch?v=neTOFkXYfj4&feature=youtu.be
 status: publish
 sourceTerms:
   - 2022 Animation

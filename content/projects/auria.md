@@ -49,7 +49,8 @@ layout: default
 links:
   - label: Project
     url: http://auria.format.com
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:38:58.915Z'
 status: publish
 sourceTerms:
   - 2020 Games

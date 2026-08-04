@@ -82,7 +82,8 @@ layout: default
 links:
   - label: Project
     url: https://parthv.itch.io/drone-delivery
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:03.476Z'
 status: publish
 sourceTerms:
   - 2025 Animation

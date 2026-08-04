@@ -59,7 +59,8 @@ layout: default
 links:
   - label: Project
     url: https://blogs.ocaduwebspace.ca/digf-6037-301-2025fa/2025/11/18/jungle-struggle/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:03.059Z'
 status: publish
 sourceTerms:
   - 2025 Code

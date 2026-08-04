@@ -35,7 +35,9 @@ layout: default
 links:
   - label: Project
     url: https://cc23.ocaduwebspace.ca/uncategorized/light-as-a-language/
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:03.851Z'
+    finalUrl: https://cc23.ocaduwebspace.ca/4-interstitial-spaces/light-as-a-language/
 status: publish
 sourceTerms:
   - 2023 Graduate

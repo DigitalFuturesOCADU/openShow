@@ -48,7 +48,8 @@ layout: default
 links:
   - label: Project
     url: https://marquessa.art/the-solari-salon
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:10.575Z'
 status: publish
 sourceTerms:
   - 2023 Digital Fabrication

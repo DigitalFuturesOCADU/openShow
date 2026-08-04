@@ -34,7 +34,8 @@ layout: default
 links:
   - label: Project
     url: https://inmytongue.wixsite.com/interactive-doc
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:01.919Z'
 status: publish
 sourceTerms:
   - 2021 Code

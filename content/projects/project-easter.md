@@ -53,7 +53,8 @@ layout: default
 links:
   - label: Project
     url: https://drive.google.com/file/d/1m6qYbaoGD6PKKkoL0pOWNtzQip_rN8vM/view?usp=sharing
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:06.797Z'
 status: publish
 sourceTerms:
   - 2022 Interactive Installation

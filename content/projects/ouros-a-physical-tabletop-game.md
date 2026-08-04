@@ -57,7 +57,8 @@ layout: default
 links:
   - label: Project
     url: http://www.ichangimath.org/ouros
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:07.223Z'
 status: publish
 sourceTerms:
   - 2022 Games

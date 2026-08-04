@@ -45,7 +45,8 @@ layout: default
 links:
   - label: Project
     url: https://aimeechen42.art/mission-augma
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:05.916Z'
 status: publish
 sourceTerms:
   - 2022 Animation

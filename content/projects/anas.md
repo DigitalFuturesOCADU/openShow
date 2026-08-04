@@ -29,7 +29,8 @@ layout: default
 links:
   - label: Project
     url: https://anasraza.com/project/vrocadu
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:38:57.717Z'
 status: publish
 sourceTerms:
   - 2019 December Undergraduate

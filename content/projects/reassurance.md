@@ -50,7 +50,8 @@ layout: default
 links:
   - label: Project
     url: https://blogs.ocaduwebspace.ca/digf-6037-301-2024fa/2024/09/23/reassurance/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:06.529Z'
 status: publish
 sourceTerms:
   - 2024 Code

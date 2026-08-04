@@ -44,7 +44,8 @@ layout: default
 links:
   - label: Project
     url: https://vickikiwu.wixsite.com/impossible-self
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:05.163Z'
 status: publish
 sourceTerms:
   - 2022 Interactive Installation

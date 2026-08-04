@@ -52,7 +52,8 @@ layout: default
 links:
   - label: Project
     url: https://bip.dmg.to/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:01.790Z'
 status: publish
 sourceTerms:
   - 2022 Alumni

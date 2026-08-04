@@ -39,7 +39,8 @@ links:
   - label: Project
     url: >-
       https://advancedwearables2023.ocaduwebspace.ca/1-wearable-game-controller/game-earmuff-earphone/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:23.322Z'
 status: publish
 sourceTerms:
   - 2023 Digital Fabrication

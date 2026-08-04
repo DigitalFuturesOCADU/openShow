@@ -57,7 +57,8 @@ layout: default
 links:
   - label: Project
     url: https://vimeo.com/1032904223?share=copy
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:33.765Z'
 status: publish
 sourceTerms:
   - 2024 Sound

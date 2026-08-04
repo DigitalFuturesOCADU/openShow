@@ -56,7 +56,10 @@ links:
   - label: Project
     url: >-
       https://advancedwearables2023.ocaduwebspace.ca/uncategorized/solar-wearable-cape-based-on-namielle-armour/
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:01.075Z'
+    finalUrl: >-
+      https://advancedwearables2023.ocaduwebspace.ca/2-solar-wearables/solar-wearable-cape-based-on-namielle-armour/
 status: publish
 sourceTerms:
   - 2023 Physical Computing

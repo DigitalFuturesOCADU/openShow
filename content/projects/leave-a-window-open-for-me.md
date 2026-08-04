@@ -32,7 +32,8 @@ links:
   - label: Project
     url: >-
       http://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/experiment-5-leave-a-window-open-for-me/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:03.985Z'
 status: publish
 sourceTerms:
   - 2019 December 3Dprinting

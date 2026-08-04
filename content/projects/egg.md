@@ -32,7 +32,8 @@ layout: default
 links:
   - label: Project
     url: https://www.youtube.com/watch?v=LuyTy-Mc6cc
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:01.694Z'
 status: publish
 sourceTerms:
   - 2022 Animation

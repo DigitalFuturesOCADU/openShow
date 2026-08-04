@@ -30,7 +30,9 @@ layout: default
 links:
   - label: Project
     url: https://youtu.be/nyr7hDG8SZc%20
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:07.291Z'
+    finalUrl: https://www.youtube.com/watch?v=nyr7hDG8SZc+&feature=youtu.be
 status: publish
 sourceTerms: []
 wordpress:

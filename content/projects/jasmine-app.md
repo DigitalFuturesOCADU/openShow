@@ -41,7 +41,8 @@ links:
   - label: Project
     url: >-
       https://www.figma.com/proto/i16OswH89b00GnXi5AT508/Jasmine-App?node-id=1%3A13&scaling=scale-down
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:06.138Z'
 status: publish
 sourceTerms:
   - 2020 Mobile

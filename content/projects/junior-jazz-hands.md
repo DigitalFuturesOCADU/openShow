@@ -31,7 +31,8 @@ layout: default
 links:
   - label: Project
     url: https://webspace.ocad.ca/~3164558/JJH/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:05.524Z'
 status: publish
 sourceTerms:
   - 2019 February 3D Animation

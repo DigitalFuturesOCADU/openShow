@@ -45,7 +45,8 @@ links:
   - label: Project
     url: >-
       http://blog.ocad.ca/wordpress/digf2014-fw201902-01/2019/10/10-000-photos/?doing_wp_cron=1681796745.7998449802398681640625
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:38:57.200Z'
 status: publish
 sourceTerms:
   - 2019 December Code

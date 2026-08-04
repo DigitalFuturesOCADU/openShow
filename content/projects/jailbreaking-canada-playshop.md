@@ -72,7 +72,9 @@ layout: default
 links:
   - label: Project
     url: https://www.gameplaylab.ca/jailbreaking-canada-playshop/%20
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:03.981Z'
+    finalUrl: https://www.gameplaylab.ca/jailbreaking-canada-playshop/
 status: publish
 sourceTerms:
   - 2025 Design

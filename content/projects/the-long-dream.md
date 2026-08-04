@@ -39,7 +39,8 @@ layout: default
 links:
   - label: Project
     url: https://quentin-hd.itch.io/the-long-dream
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:10.333Z'
 status: publish
 sourceTerms:
   - 2025 Games

@@ -52,7 +52,9 @@ layout: default
 links:
   - label: Project
     url: https://inmytongue.net
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:04.983Z'
+    finalUrl: https://inmytongue.wixsite.com/interactive-doc
 status: publish
 sourceTerms:
   - 2022 Alumni

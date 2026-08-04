@@ -39,7 +39,8 @@ layout: default
 links:
   - label: Project
     url: https://www.youtube.com/watch?v=w5mkH2RZ438&feature=youtu.be
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:38:58.455Z'
 status: publish
 sourceTerms:
   - 2019 December Code

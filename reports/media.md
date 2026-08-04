@@ -34,5 +34,27 @@ placeholders ("Person Image", "Abha Patil Font") rather than descriptions.
 
 ## External links (235)
 
-Every link is recorded with `status: unchecked`. Link-rot checking is
-EXECUTION.md §6.7 — many of these point at student portfolio sites.
+| State | Links |
+| --- | ---: |
+| ok | 111 |
+| unreachable | 58 |
+| dead | 35 |
+| redirect | 31 |
+
+**93 of 235 link nowhere.** That is decay, not a
+migration fault — these were live when they were submitted.
+
+Concentrated by host, which matters: this is mostly one
+platform going away rather than scattered rot.
+
+| Host | Broken |
+| --- | ---: |
+| blog.ocad.ca | 38 |
+| webspace.ocad.ca | 5 |
+| artstation.com | 2 |
+| 2022atil3-eer.itch.io | 2 |
+| ? | 2 |
+| theworld.org | 1 |
+
+Re-check with `node scripts/check-links.mjs`, or `--stale 30` to refresh only
+entries older than a month.

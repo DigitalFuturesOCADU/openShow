@@ -31,7 +31,8 @@ layout: default
 links:
   - label: Project
     url: http://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/11/abstract-2018-by-georgina-yeboah/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:38:57.202Z'
 status: publish
 sourceTerms:
   - 2019 February Code

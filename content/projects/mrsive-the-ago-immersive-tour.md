@@ -32,7 +32,8 @@ layout: default
 links:
   - label: Project
     url: https://www.jadrabbaa.com/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:07.500Z'
 status: publish
 sourceTerms:
   - 2019 February AR

@@ -41,7 +41,8 @@ layout: default
 links:
   - label: Project
     url: https://drive.google.com/file/d/1UgXynsMoFOL0Fkqtk6AEAD861gzbdUoE/view?usp=sharing
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:09.171Z'
 status: draft
 sourceTerms:
   - 2025 Games

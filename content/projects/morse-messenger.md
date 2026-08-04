@@ -45,7 +45,8 @@ layout: default
 links:
   - label: Project
     url: http://blog.ocad.ca/wordpress/digf6037-fw2020-01/2020/12/morse-messenger/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:05.683Z'
 status: publish
 sourceTerms:
   - 2020 Code

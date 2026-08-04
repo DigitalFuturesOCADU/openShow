@@ -50,7 +50,8 @@ links:
   - label: Project
     url: >-
       https://ocaduniversity-my.sharepoint.com/:v:/g/personal/minseop_ocadu_ca/EdsKdRE9RnxIv8HmLWtkM_EBMz0Hp3afUPAWbNMxOcO4-w?e=E4WxOr
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:01.734Z'
 status: publish
 sourceTerms:
   - 2024 Sound

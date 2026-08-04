@@ -43,7 +43,8 @@ layout: default
 links:
   - label: Project
     url: https://www.niloofarsanandaji.com/blog-1-1/Blog%20Post%20Title%20One-6zamh
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:29.084Z'
 status: publish
 sourceTerms:
   - 2022 Animation

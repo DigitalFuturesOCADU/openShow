@@ -59,7 +59,8 @@ layout: default
 links:
   - label: Project
     url: https://mikahirata.format.com/
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:11.422Z'
 status: publish
 sourceTerms:
   - 2020 AR

@@ -70,7 +70,8 @@ layout: default
 links:
   - label: Project
     url: https://damesmakinggames.org/bodies-in-play/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:21.745Z'
 status: publish
 sourceTerms:
   - 2023 3D Animation

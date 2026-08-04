@@ -54,7 +54,8 @@ layout: default
 links:
   - label: Project
     url: https://github.com/Leanna-B/DF-Open-Show-2025
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:09.328Z'
 status: publish
 sourceTerms:
   - 2025 AI

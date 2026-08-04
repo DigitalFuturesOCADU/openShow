@@ -54,7 +54,10 @@ links:
   - label: Project
     url: >-
       https://youtube.com/@tr4nsluc3nt?si=s-1wiWqMLhb1zbIl%20%20%20%20%20%20%20%20(my%20youtube,%20a%20walkthrough%20video%20will%20be%20posted%20soon)
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:00.501Z'
+    finalUrl: >-
+      https://www.youtube.com/@tr4nsluc3nt?si=s-1wiWqMLhb1zbIl++++++++%28my+youtube%2C+a+walkthrough+video+will+be+posted+soon%29
 status: publish
 sourceTerms:
   - 2024 Sound

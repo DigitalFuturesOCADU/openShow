@@ -36,7 +36,8 @@ layout: default
 links:
   - label: Project
     url: https://editor.p5js.org/LeiaKC/full/mzd21rMB3
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:25.154Z'
 status: publish
 sourceTerms:
   - 2019 December Code

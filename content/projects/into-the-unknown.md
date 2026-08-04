@@ -47,7 +47,9 @@ layout: default
 links:
   - label: Project
     url: https://cc23.ocaduwebspace.ca/uncategorized/into-the-unknown/
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:05.512Z'
+    finalUrl: https://cc23.ocaduwebspace.ca/4-interstitial-spaces/into-the-unknown/
 status: publish
 sourceTerms:
   - 2023 Digital Fabrication

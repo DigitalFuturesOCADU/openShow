@@ -42,7 +42,8 @@ layout: default
 links:
   - label: Project
     url: https://blog.ocad.ca/wordpress/digf2014-fw201902-01/2019/11/rorschach/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:08.486Z'
 status: publish
 sourceTerms:
   - 2019 December Code

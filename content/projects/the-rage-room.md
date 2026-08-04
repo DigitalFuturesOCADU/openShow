@@ -47,7 +47,8 @@ layout: default
 links:
   - label: Project
     url: https://2022atil3-eer.itch.io/projecteer%20
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:31.069Z'
 status: publish
 sourceTerms:
   - 2023 Games

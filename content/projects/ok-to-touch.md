@@ -27,7 +27,8 @@ layout: default
 links:
   - label: Project
     url: https://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/experiment-5-ok-to-touch/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:24.677Z'
 status: draft
 sourceTerms:
   - 2019 December Digital Fabrication

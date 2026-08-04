@@ -36,7 +36,8 @@ layout: default
 links:
   - label: Project
     url: https://tania-samokhvalova.format.com/
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:04.471Z'
 status: publish
 sourceTerms:
   - 2020 Installation

@@ -45,7 +45,8 @@ layout: default
 links:
   - label: Project
     url: https://3168045.wixsite.com/betweenthecards
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:38:58.082Z'
 status: publish
 sourceTerms:
   - 2020 Games

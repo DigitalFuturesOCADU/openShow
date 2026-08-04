@@ -42,7 +42,8 @@ layout: default
 links:
   - label: Project
     url: https://anushamenon.myportfolio.com/mind-over-machine-creative-collaboration-with-ai
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:05.678Z'
 status: publish
 sourceTerms:
   - 2023 Generative

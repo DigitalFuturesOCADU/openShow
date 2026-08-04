@@ -31,7 +31,8 @@ layout: default
 links:
   - label: Project
     url: http://leecyb.org/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:12.537Z'
 status: publish
 sourceTerms:
   - 2019 December Alumni

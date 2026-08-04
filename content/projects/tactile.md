@@ -33,7 +33,8 @@ layout: default
 links:
   - label: Project
     url: https://nime2023.ocaduwebspace.ca/category/tactile/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:12.690Z'
 status: publish
 sourceTerms:
   - 2023 Code

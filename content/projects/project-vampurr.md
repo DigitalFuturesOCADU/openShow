@@ -45,7 +45,8 @@ layout: default
 links:
   - label: Project
     url: https://iwinya.itch.io/project-vampurr
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:10.024Z'
 status: publish
 sourceTerms:
   - 2025 Code

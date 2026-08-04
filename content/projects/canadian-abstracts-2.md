@@ -36,7 +36,8 @@ layout: default
 links:
   - label: Project
     url: https://www.youtube.com/watch?v=FM8SG_r9YqI
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:38:59.421Z'
 status: publish
 sourceTerms:
   - 2020 Alumni

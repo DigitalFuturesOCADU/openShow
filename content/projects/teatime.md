@@ -44,7 +44,8 @@ layout: default
 links:
   - label: Project
     url: https://xiaoyixuan777.wixsite.com/yixuan-xiao
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:13.814Z'
 status: publish
 sourceTerms:
   - 2024 Installation

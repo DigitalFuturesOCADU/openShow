@@ -60,7 +60,8 @@ layout: default
 links:
   - label: Project
     url: https://gd.games/cork/heart-hop
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:01.766Z'
 status: publish
 sourceTerms:
   - 2024 Code

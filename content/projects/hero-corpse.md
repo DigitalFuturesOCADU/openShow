@@ -46,7 +46,8 @@ layout: default
 links:
   - label: Project
     url: https://twitter.com/HeroCorpse
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:04.572Z'
 status: publish
 sourceTerms:
   - 2020 Games

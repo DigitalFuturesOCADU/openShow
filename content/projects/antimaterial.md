@@ -41,7 +41,8 @@ links:
   - label: Project
     url: >-
       https://blog.ocad.ca/wordpress/digf6037-fw201902-01/2019/11/final-assignment-une-sculpture-cinetique/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:38:57.290Z'
 status: publish
 sourceTerms:
   - 2019 December 3Dprinting

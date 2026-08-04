@@ -43,7 +43,9 @@ layout: default
 links:
   - label: Project
     url: https://cc23.ocaduwebspace.ca/uncategorized/the-glow/
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:13.489Z'
+    finalUrl: https://cc23.ocaduwebspace.ca/4-interstitial-spaces/the-glow/
 status: draft
 sourceTerms:
   - 2023 Graduate

@@ -54,7 +54,8 @@ layout: default
 links:
   - label: Project
     url: https://blogs.ocaduwebspace.ca/digf-6037-301-2024fa/2024/10/22/pet-networking/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:06.521Z'
 status: publish
 sourceTerms:
   - 2024 Code

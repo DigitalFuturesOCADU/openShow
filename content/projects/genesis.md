@@ -56,7 +56,8 @@ layout: default
 links:
   - label: Project
     url: https://junli.art/genesis
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:03.404Z'
 status: publish
 sourceTerms:
   - 2020 Code

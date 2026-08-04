@@ -35,7 +35,8 @@ layout: default
 links:
   - label: Project
     url: https://www.houseofnoosh.art/dance-transform/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:11.830Z'
 status: publish
 sourceTerms:
   - 2023 Alumni

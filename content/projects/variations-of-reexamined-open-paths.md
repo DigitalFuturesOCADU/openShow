@@ -54,7 +54,8 @@ layout: default
 links:
   - label: Project
     url: https://variationsof.online/
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:17.707Z'
 status: publish
 sourceTerms:
   - 2020 Code

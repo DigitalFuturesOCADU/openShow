@@ -37,7 +37,8 @@ layout: default
 links:
   - label: Project
     url: https://vimeo.com/manage/videos/1123954320%20%20https://vimeo.com/manage/videos/1123964014
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:05.490Z'
 status: publish
 sourceTerms:
   - 2025 Code

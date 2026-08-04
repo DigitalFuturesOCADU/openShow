@@ -32,7 +32,8 @@ layout: default
 links:
   - label: Project
     url: https://anranzhou.format.com/
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:04.257Z'
 status: publish
 sourceTerms:
   - 2020 AR

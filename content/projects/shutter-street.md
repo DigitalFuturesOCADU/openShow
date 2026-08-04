@@ -44,7 +44,8 @@ layout: default
 links:
   - label: Project
     url: https://shutterst.ca/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:11.874Z'
 status: publish
 sourceTerms:
   - 2020 Mobile

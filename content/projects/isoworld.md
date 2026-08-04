@@ -31,7 +31,8 @@ layout: default
 links:
   - label: Project
     url: https://www.joshigwe.com/isoworld
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:03.653Z'
 status: publish
 sourceTerms:
   - 2021 Games

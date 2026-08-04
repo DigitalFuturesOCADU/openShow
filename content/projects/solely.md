@@ -47,7 +47,9 @@ layout: default
 links:
   - label: Project
     url: http://solelythesis.webflow.io/
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:28.085Z'
+    finalUrl: https://solelythesis.webflow.io/
 status: publish
 sourceTerms:
   - 2020 3Dprinting

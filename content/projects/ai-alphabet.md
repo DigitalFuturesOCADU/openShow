@@ -33,7 +33,9 @@ layout: default
 links:
   - label: Project
     url: https://christinalj.com/ai-alphabet
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:38:58.923Z'
+    finalUrl: https://www.christinalj.com/2022/ai-alphabet
 status: publish
 sourceTerms:
   - 2022 Artificial Intelligence

@@ -37,11 +37,13 @@ layout: default
 links:
   - label: Project
     url: https://fischer-bernhut-madelaine.format.com/blindsided-2019
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:15.393Z'
   - label: External
     url: >-
       https://vimeo.com/374827162?fbclid=IwAR33VgAcXHclMehReJVYZuWntqT7jyN1A8qpWRW7lAIe6G3FsmGk-W0gbXI
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:33.415Z'
 status: publish
 sourceTerms:
   - 2019 December 3D Animation

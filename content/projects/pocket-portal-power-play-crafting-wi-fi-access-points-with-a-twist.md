@@ -42,7 +42,9 @@ layout: default
 links:
   - label: Project
     url: https://www.candide.xyz/wifi-portal-oshwa/
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:25.696Z'
+    finalUrl: https://www.candide.xyz/pocket-portal/
 status: publish
 sourceTerms:
   - 2024 Alumni

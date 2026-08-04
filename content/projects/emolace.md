@@ -28,7 +28,8 @@ layout: default
 links:
   - label: Project
     url: http://blog.ocad.ca/wordpress/digf6037-fw201702-01/2017/12/emolace/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:01.003Z'
 status: draft
 sourceTerms: []
 wordpress:

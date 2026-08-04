@@ -44,7 +44,8 @@ layout: default
 links:
   - label: Project
     url: https://salisajat.format.com/story
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:00.403Z'
 status: publish
 sourceTerms:
   - 2020 Games

@@ -35,7 +35,8 @@ layout: default
 links:
   - label: Project
     url: https://theworld.org/stories/2019-04-04/archivists-race-digitize-slavery-records-history-lost
-    status: unchecked
+    status: dead
+    checkedAt: '2026-08-04T11:39:13.800Z'
 status: draft
 sourceTerms:
   - 2019 December Code

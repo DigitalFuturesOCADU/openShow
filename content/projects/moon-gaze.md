@@ -35,7 +35,8 @@ layout: default
 links:
   - label: Project
     url: http://blog.ocad.ca/wordpress/digf6037-fw201702-01/2017/11/moon-gaze/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:24.663Z'
 status: publish
 sourceTerms:
   - 2019 February 3D Animation

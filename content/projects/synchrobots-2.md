@@ -39,10 +39,12 @@ layout: default
 links:
   - label: Project
     url: https://blog.ocad.ca/wordpress/digf6037-fw201802-01/2018/11/synchrobots/
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:28.096Z'
   - label: External
     url: https://www.youtube.com/watch?v=1Tj50Anlcew&ab_channel=amreenashraf
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:12.692Z'
 status: publish
 sourceTerms:
   - 2019 February Code

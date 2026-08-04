@@ -66,7 +66,8 @@ layout: default
 links:
   - label: Project
     url: http://suburbstudios.com
-    status: unchecked
+    status: unreachable
+    checkedAt: '2026-08-04T11:39:03.551Z'
 status: publish
 sourceTerms:
   - 2024 3D Animation

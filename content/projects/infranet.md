@@ -46,7 +46,9 @@ layout: default
 links:
   - label: Project
     url: https://artificialnature.net/#infranet
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:23.733Z'
+    finalUrl: https://artificialnature.net/
 status: publish
 sourceTerms:
   - 2020 Faculty

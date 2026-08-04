@@ -70,7 +70,9 @@ const projects = defineCollection({
       z.object({
         label: z.string(),
         url: z.string(),
-        status: z.enum(['unchecked', 'ok', 'dead']).default('unchecked'),
+        status: z.enum(['unchecked', 'ok', 'dead', 'unreachable', 'redirect']).default('unchecked'),
+        checkedAt: z.string().optional(),
+        finalUrl: z.string().optional(),
       }),
     ),
     status: z.enum(['publish', 'draft', 'stub']),

@@ -55,7 +55,8 @@ layout: default
 links:
   - label: Project
     url: https://kayliphobia.itch.io/9-5-at-freddys
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:38:58.240Z'
 status: publish
 sourceTerms:
   - 2025 Code

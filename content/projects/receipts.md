@@ -53,7 +53,8 @@ layout: default
 links:
   - label: Project
     url: https://vimeo.com/489518406
-    status: unchecked
+    status: ok
+    checkedAt: '2026-08-04T11:39:10.397Z'
 status: publish
 sourceTerms:
   - 2020 Faculty

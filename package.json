@@ -27,6 +27,7 @@
   "homepage": "https://github.com/npuckett/openREDO#readme",
   "private": "true",
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.1.6",
     "exceljs": "^4.4.0",
     "fast-xml-parser": "^5.10.1",

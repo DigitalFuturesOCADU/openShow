@@ -44,7 +44,9 @@ layout: default
 links:
   - label: Project
     url: https://youtu.be/wSSzp1uAi0g
-    status: unchecked
+    status: redirect
+    checkedAt: '2026-08-04T11:39:00.997Z'
+    finalUrl: https://www.youtube.com/watch?v=wSSzp1uAi0g&feature=youtu.be
 status: publish
 sourceTerms:
   - 2022 AR
