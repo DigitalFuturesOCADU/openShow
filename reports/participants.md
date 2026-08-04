@@ -448,7 +448,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 ### Open Show 2024
 
-48 participants.
+47 participants.
 
 #### Undergraduate (15)
 
@@ -502,7 +502,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 - Kate Hartman
 
-#### Unspecified (8)
+#### Unspecified (7)
 
 - Kayli Chow
 - Daniela Ortiz Correa
@@ -510,7 +510,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Minseo Park
 - Rojina Pedramy
 - Charles Pollack
-- Mika Wall
 - Yiqun Zhou
 
 ### Open Show 2025

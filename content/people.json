@@ -10873,35 +10873,6 @@
       ]
     },
     {
-      "id": "mika-wall",
-      "name": "Mika Wall",
-      "sortName": "Wall, Mika",
-      "kind": "person",
-      "variants": [
-        "Mika Wall"
-      ],
-      "projects": [
-        "water-womb"
-      ],
-      "shows": [
-        "2024"
-      ],
-      "appearances": [
-        {
-          "show": "2024",
-          "year": 2024,
-          "project": "water-womb",
-          "title": "Water/Womb",
-          "affiliation": [],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": []
-    },
-    {
       "id": "mika-maclear-wall",
       "name": "Mika Maclear Wall",
       "sortName": "Wall, Mika Maclear",
@@ -10909,12 +10880,14 @@
       "variants": [
         "Mika MacLOear Wall",
         "Mika Maclear Wall",
-        "Mika Maclear-Wall"
+        "Mika Maclear-Wall",
+        "Mika Wall"
       ],
       "projects": [
         "alley-cat-2025",
         "heart-hop",
         "the-long-dream",
+        "water-womb",
         "wrong-side-of-the-hill"
       ],
       "shows": [
@@ -10930,6 +10903,15 @@
           "affiliation": [
             "undergraduate"
           ],
+          "affiliationExact": true,
+          "role": null
+        },
+        {
+          "show": "2024",
+          "year": 2024,
+          "project": "water-womb",
+          "title": "Water/Womb",
+          "affiliation": [],
           "affiliationExact": true,
           "role": null
         },
@@ -10968,7 +10950,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 4,
+      "projectCount": 5,
       "affiliations": [
         "undergraduate"
       ]
