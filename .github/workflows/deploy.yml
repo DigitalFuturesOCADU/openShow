@@ -39,6 +39,10 @@ jobs:
       # 15 MB rather than 227 MB. The build needs them, so CI takes both.
       # If this step fails, the images repository does not exist yet or is
       # private to this workflow — see README.
+      #
+      # On Cloudflare Pages, which connects one repository per project, this
+      # becomes a shallow clone prepended to the build command instead. Same
+      # effect, one line; see README.
       - name: Fetch images
         uses: actions/checkout@v4
         with:

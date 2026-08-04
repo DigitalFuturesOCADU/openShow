@@ -72,6 +72,27 @@ node scripts/sync-media.mjs
 Everything else — editing text, fixing data, reviewing submissions, reading the
 reports — works without them.
 
+**If deployment moves to Cloudflare Pages**, its git integration connects one
+repository per project, so there is no equivalent of the second checkout the
+GitHub workflow uses. Fetch the images in the build command instead:
+
+```
+git clone --depth 1 https://github.com/DigitalFuturesOCADU/openShow-images content/images && npm run build
+```
+
+`--depth 1` takes only the current state, not the history. This is why the
+images repository should be **public**: a shallow clone of a public repository
+needs no credentials, whereas a private one means putting a token in the build
+environment. The images are already published on df.show, so there is nothing to
+protect.
+
+Or skip git integration entirely and upload the finished folder from a machine
+that already has the images:
+
+```bash
+npm run build && npx wrangler pages deploy dist
+```
+
 The rule that matters: **`config/` is editable and permanent, `content/` is
 rebuilt and disposable.** A correction typed into `content/` disappears on the
 next run.
