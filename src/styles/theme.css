@@ -1,0 +1,92 @@
+/*
+ * Default theme — used by the archive and by every show unless that show
+ * overrides tokens in its own record. Overrides are CSS custom properties set
+ * on a wrapper, so a show can restyle without forking a template.
+ *
+ * TYPEFACE. Gotham is licensed commercially from Hoefler&Co and cannot be
+ * redistributed here. The stack falls through to Helvetica, which is what the
+ * design is drawn against anyway. To activate Gotham, drop the licensed webfont
+ * files into public/fonts/ and uncomment the @font-face blocks below — nothing
+ * else needs to change.
+ */
+
+/*
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Book.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+*/
+
+:root {
+  --font-sans: 'Gotham', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+
+  --ink: #111111;
+  --paper: #ffffff;
+  --muted: #6b6b6b;
+  --rule: #e4e4e4;
+  --accent: #111111;
+  --focus: #0b5fff;
+
+  --sidebar-width: 15rem;
+  --gutter: 1.25rem;
+  --measure: 34rem;
+  --tile-gap: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f2f2f2;
+    --paper: #101010;
+    --muted: #9a9a9a;
+    --rule: #2b2b2b;
+    --accent: #f2f2f2;
+    --focus: #7aa8ff;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* Uppercase micro-label, used throughout the original theme. */
+.label {
+  font-size: 0.6875rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 20;
+  background: var(--ink); color: var(--paper); padding: 0.6rem 1rem;
+}
+.skip:focus { left: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

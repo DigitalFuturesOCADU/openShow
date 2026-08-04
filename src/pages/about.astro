@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from 'astro:content'
+import Base from '../layouts/Base.astro'
+
+// "What Is OPEN Show?" is evergreen — it belongs to the current show and to the
+// archive equally, so it hangs off the shell rather than off any one show.
+const pages = await getCollection('pages')
+const page = pages.find((p) => p.id === 'what-is-open-show')
+const aboutDF = pages.find((p) => p.id === 'about-df')
+const Content = page ? (await render(page)).Content : null
+const DFContent = aboutDF ? (await render(aboutDF)).Content : null
+---
+<Base title="What Is OPEN Show? — Digital Futures Open Show" section="about"
+      description="An annual exhibition of work happening right now across the Digital Futures community at OCAD University.">
+  <article class="prose">
+    <h1>{page?.data.title ?? 'What Is OPEN Show?'}</h1>
+    {Content && <Content />}
+    {DFContent && (
+      <>
+        <h2>{aboutDF?.data.title}</h2>
+        <DFContent />
+      </>
+    )}
+  </article>
+</Base>
+
+<style>
+  .prose { max-width: var(--measure); }
+  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 1rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; }
+  .prose :global(p) { margin: 0 0 1rem; }
+  .prose :global(a) { color: inherit; }
+</style>

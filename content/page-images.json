@@ -1,0 +1,11 @@
+{
+  "$comment": "Images referenced by editorial pages. Not project media, so not in the 704 — scripts/sync-media.mjs copies these verbatim so the markdown paths stay valid.",
+  "images": [
+    "2020/12/DFOpenShow2017-1024x1024.jpg",
+    "2020/12/DFOpenShow2018.jpg",
+    "2020/12/DFOpenShow2019-1.jpg",
+    "2020/12/DFOpenShow2019-2.jpg",
+    "2022/12/new_banner.jpg",
+    "2023/11/Screenshot-2023-11-22-171449-198x300.png"
+  ]
+}

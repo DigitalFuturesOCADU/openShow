@@ -1,78 +1,54 @@
 ---
-import { getCollection } from 'astro:content'
-import { Image } from 'astro:assets'
+import { getCollection, render } from 'astro:content'
 import Base from '../layouts/Base.astro'
-import { projectPath } from '../lib/slugs'
-import { resolveImage } from '../lib/images'
-import vocab from '../../content/vocabularies.json'
+import Tiles from '../components/Tiles.astro'
 
-const projects = await getCollection('projects', (p) => p.data.status === 'publish')
-const shows = (await getCollection('shows')).sort((a, b) =>
-  b.data.year - a.data.year || String(a.data.session).localeCompare(String(b.data.session)),
-)
+// The front page foregrounds the current show; everything earlier lives in the
+// archive. Which show is current is a field on the record, not a hardcode.
+const shows = (await getCollection('shows')).sort((a, b) => b.data.year - a.data.year)
+const current = shows.find((s) => s.data.current) ?? shows[0]
+const pages = await getCollection('pages')
+const about = pages.find((p) => p.id === current?.data.aboutPage)
+const AboutContent = about ? (await render(about)).Content : null
 
-const byShow = new Map<string, typeof projects>()
-for (const p of projects) {
-  const key = p.data.show ?? 'unassigned'
-  if (!byShow.has(key)) byShow.set(key, [])
-  byShow.get(key)!.push(p)
-}
-for (const list of byShow.values()) list.sort((a, b) => a.data.title.localeCompare(b.data.title))
-
-const label = (slug: string) =>
-  vocab.medium.find((t: { slug: string; label: string }) => t.slug === slug)?.label ?? slug
+const all = await getCollection('projects', (p) => p.data.status === 'publish')
+const currentProjects = all
+  .filter((p) => p.data.show === current?.id)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title))
 ---
+<Base title="Digital Futures Open Show" theme={current?.data.theme.tokens}
+      description={`${current?.data.title}. ${all.length} projects archived since 2019.`}>
+  <header class="head">
+    <h1>{current?.data.title}</h1>
+    <p class="label">Current show · {currentProjects.length} works</p>
+  </header>
 
-<Base title="Digital Futures Open Show" description={`${projects.length} projects across ${shows.length} shows.`}>
-  <h1>Open Show archive</h1>
-  <p class="lede">{projects.length} projects across {shows.length} shows, 2019 to 2025.</p>
+  {AboutContent && <div class="about"><AboutContent /></div>}
 
-  {shows.map((show) => {
-    const list = byShow.get(show.id) ?? []
-    if (!list.length) return null
-    return (
-      <section>
-        <h2>{show.data.title} <span class="count">{list.length}</span></h2>
-        <ul class="grid">
-          {list.map((p) => {
-            const featured = p.data.media.find((m) => m.type === 'image' && m.role === 'featured')
-              ?? p.data.media.find((m) => m.type === 'image')
-            const img = featured?.type === 'image' ? resolveImage(featured.file) : null
-            return (
-              <li>
-                <a href={projectPath(p.data.slug)}>
-                  {img && (
-                    <Image
-                      src={img}
-                      alt={featured?.type === 'image' ? (featured.alt ?? '') : ''}
-                      widths={[320, 640]}
-                      sizes="(max-width: 40rem) 50vw, 20rem"
-                      loading="lazy"
-                    />
-                  )}
-                  <h3>{p.data.title}</h3>
-                  {p.data.creditsRaw && <p class="by">{p.data.creditsRaw}</p>}
-                  <p class="tags">{p.data.medium.map((m) => label(m)).join(' · ')}</p>
-                </a>
-              </li>
-            )
-          })}
-        </ul>
-      </section>
-    )
-  })}
+  <Tiles projects={currentProjects} />
+
+  <section class="more">
+    <h2>Earlier shows</h2>
+    <ul>
+      {shows.filter((s) => s.id !== current?.id).map((s) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}shows/${s.id}`}>{s.data.title}</a>
+          <span class="n">{s.data.projectCount}</span>
+        </li>
+      ))}
+    </ul>
+    <p><a href={`${import.meta.env.BASE_URL}archive`}>Browse the full archive →</a></p>
+  </section>
 </Base>
 
 <style>
-  h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin: 0 0 .25rem; }
-  .lede { color: var(--muted); margin: 0 0 3rem; }
-  h2 { font-size: 1.25rem; border-top: 1px solid var(--rule); padding-top: 1rem; margin: 3rem 0 1.25rem; }
-  .count { color: var(--muted); font-weight: 400; font-size: .875rem; }
-  .grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 2rem 1.5rem;
-          grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); }
-  .grid a { text-decoration: none; display: block; }
-  .grid img { aspect-ratio: 4 / 3; object-fit: cover; background: var(--rule); margin-bottom: .6rem; }
-  h3 { font-size: 1rem; margin: 0 0 .2rem; line-height: 1.3; }
-  .by { margin: 0 0 .2rem; font-size: .875rem; color: var(--muted); }
-  .tags { margin: 0; font-size: .8125rem; color: var(--muted); }
+  .head { margin-bottom: 1.25rem; }
+  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .2rem; letter-spacing: -.01em; }
+  .head .label { margin: 0; }
+  .about { max-width: var(--measure); margin-bottom: 2.5rem; }
+  .about :global(p) { margin: 0 0 1rem; }
+  .more { margin-top: 4rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; }
+  .more h2 { font-size: 1rem; font-weight: 500; margin: 0 0 .75rem; }
+  .more ul { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+  .more .n { color: var(--muted); font-size: .75rem; }
 </style>
