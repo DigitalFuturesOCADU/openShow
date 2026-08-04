@@ -16,7 +16,6 @@ export async function getStaticPaths() {
   const shows = await getCollection('shows')
   const themeOf = new Map(shows.map((s) => [s.id, s.data.theme.tokens]))
 
-  // Neighbours within the same show, matching the original theme's prev/next.
   const byShow = new Map<string, typeof all>()
   for (const p of all) {
     const k = p.data.show ?? 'unassigned'
@@ -43,17 +42,27 @@ export async function getStaticPaths() {
 const { project, theme, prev, next } = Astro.props
 const d = project.data
 const { Content } = await render(project)
-
-const images = d.media.filter((m) => m.type === 'image')
-const featured = images.find((m) => m.role === 'featured') ?? images[0]
-const rest = images.filter((m) => m !== featured)
-const embeds = d.media.filter((m) => m.type === 'video-embed')
-const videos = d.media.filter((m) => m.type === 'video-file')
 const base = import.meta.env.BASE_URL
 
-// Social card: a 1200x630 crop of the project's own featured image.
-const ogSrc = featured?.type === 'image' ? resolveImage(featured.file) : null
-const og = ogSrc ? await getImage({ src: ogSrc, width: 1200, height: 630, fit: 'cover', format: 'jpeg' }) : null
+// Everything showable, in media order — which already starts with the featured
+// image. Videos sit in the same sequence as images so the strip reads as one
+// run of frames rather than images followed by a separate video section.
+const slides = d.media.filter(
+  (m) =>
+    (m.type === 'image' && resolveImage(m.file)) ||
+    (m.type === 'video-embed' && m.videoId) ||
+    (m.type === 'video-file' && m.file),
+)
+const imageCount = d.media.filter((m) => m.type === 'image').length
+
+const ogSrc = slides.find((m) => m.type === 'image')
+const ogImg = ogSrc?.type === 'image' ? resolveImage(ogSrc.file) : null
+const og = ogImg ? await getImage({ src: ogImg, width: 1200, height: 630, fit: 'cover', format: 'jpeg' }) : null
+
+const embedSrc = (m: { provider: string; videoId?: string }) =>
+  m.provider === 'vimeo'
+    ? `https://player.vimeo.com/video/${m.videoId}`
+    : `https://www.youtube-nocookie.com/embed/${m.videoId}`
 ---
 
 <Base
@@ -69,108 +78,172 @@ const og = ogSrc ? await getImage({ src: ogSrc, width: 1200, height: 630, fit: '
     <a href={projectPath(next.data.slug)} rel="next" aria-label={`Next: ${next.data.title}`}>→</a>
   </nav>
 
-  <article class="project">
-    <div class="media">
-      <h1>{d.title}</h1>
+  <header class="head">
+    <h1>{d.title}</h1>
+    {d.credits.length > 0 && (
+      <p class="by">
+        {d.credits.map((c, i) => (
+          <>
+            {i > 0 && <span aria-hidden="true">, </span>}
+            {personById.has(c.personId)
+              ? <a href={`${base}people/${c.personId}`}>{c.name}</a>
+              : <span>{c.name}</span>}
+            {c.role && <span class="role"> ({c.role})</span>}
+          </>
+        ))}
+      </p>
+    )}
+  </header>
 
-      {featured?.type === 'image' && resolveImage(featured.file) && (
-        <figure>
-          <Image
-            src={resolveImage(featured.file)!}
-            alt={altFor(d.title, featured.alt, 0, images.length)}
-            widths={[640, 1024, 1600]}
-            sizes="(max-width: 52rem) 100vw, 44rem"
-            loading="eager"
-          />
-          {featured.caption && <figcaption>{featured.caption}</figcaption>}
-        </figure>
-      )}
-
-      {embeds.map((m) =>
-        m.type === 'video-embed' && m.videoId ? (
-          <div class="embed">
-            <iframe
-              src={m.provider === 'vimeo'
-                ? `https://player.vimeo.com/video/${m.videoId}`
-                : `https://www.youtube-nocookie.com/embed/${m.videoId}`}
-              title={`${d.title} — video`}
-              loading="lazy"
-              allowfullscreen
-            />
+  {slides.length > 0 && (
+    <div class="lightbox" data-lightbox>
+      {/* Without JavaScript every slide stays visible and stacked, which is a
+          perfectly good page. The script adds .is-interactive, and only then
+          does anything hide. */}
+      <div class="stage">
+        {slides.map((m, i) => (
+          <div class="slide" data-slide={i} id={`slide-${i}`} role="tabpanel" aria-labelledby={`thumb-${i}`}>
+            {m.type === 'image' && (
+              <figure>
+                <Image
+                  src={resolveImage(m.file)!}
+                  alt={altFor(d.title, m.alt, i, imageCount)}
+                  widths={[640, 1024, 1600, 2048]}
+                  sizes="(max-width: 60rem) 100vw, 58rem"
+                  loading={i === 0 ? 'eager' : 'lazy'}
+                />
+                {m.caption && <figcaption>{m.caption}</figcaption>}
+              </figure>
+            )}
+            {m.type === 'video-embed' && (
+              <div class="embed">
+                {/* Deferred to data-src so three players do not load on a page
+                    where two are never watched. */}
+                <iframe
+                  data-src={embedSrc(m)}
+                  src={i === 0 ? embedSrc(m) : undefined}
+                  title={`${d.title} — video`}
+                  loading="lazy"
+                  allowfullscreen
+                />
+              </div>
+            )}
+            {m.type === 'video-file' && (
+              <video controls preload="metadata" playsinline src={`${base}${m.file}`}></video>
+            )}
           </div>
-        ) : null,
-      )}
+        ))}
+      </div>
 
-      {videos.map((m) =>
-        m.type === 'video-file' && m.file ? <video controls preload="metadata" src={`/${m.file}`}></video> : null,
-      )}
-
-      {rest.map((m, i) =>
-        m.type === 'image' && resolveImage(m.file) ? (
-          <figure>
-            <Image
-              src={resolveImage(m.file)!}
-              alt={altFor(d.title, m.alt, i + 1, images.length)}
-              widths={[640, 1024]}
-              sizes="(max-width: 52rem) 100vw, 44rem"
-              loading="lazy"
-            />
-            {m.caption && <figcaption>{m.caption}</figcaption>}
-          </figure>
-        ) : null,
-      )}
-    </div>
-
-    <aside class="info">
-      {d.credits.length > 0 && (
-        <p class="by">
-          {d.credits.map((c, i) => (
-            <>
-              {i > 0 && <span aria-hidden="true">, </span>}
-              {personById.has(c.personId)
-                ? <a href={`${base}people/${c.personId}`}>{c.name}</a>
-                : <span>{c.name}</span>}
-              {c.role && <span class="role"> ({c.role})</span>}
-            </>
-          ))}
-        </p>
-      )}
-
-      <div class="body"><Content /></div>
-
-      <dl class="facts">
-        {d.show && (<><dt class="label">Show</dt>
-          <dd><a href={`${base}shows/${d.show}`}>{d.session ? `${d.session} ${d.year}` : d.year}</a></dd></>)}
-        {d.medium.length > 0 && (<><dt class="label">Medium</dt>
-          <dd>{d.medium.map((m) => label('medium', m)).join(', ')}</dd></>)}
-        {d.affiliation.length > 0 && (<><dt class="label">Affiliation</dt>
-          <dd>{d.affiliation.map((a) => label('affiliation', a)).join(', ')}</dd></>)}
-      </dl>
-
-      {d.links.length > 0 && (
-        <p class="links">
-          {d.links.map((l) => {
-            // 93 of 235 external links no longer resolve — mostly one
-            // decommissioned university blog. Presenting a dead link as a live
-            // one wastes the reader's time and hides the loss. Say it is gone,
-            // and offer the Internet Archive, which often still has it.
-            const gone = l.status === 'dead' || l.status === 'unreachable'
-            return gone ? (
-              <span class="dead">
-                <span>{l.label} — no longer available</span>
-                <a href={`https://web.archive.org/web/2020/${l.url}`} rel="noopener noreferrer external">
-                  Try the Internet Archive ↗
-                </a>
-              </span>
-            ) : (
-              <a href={l.finalUrl ?? l.url} rel="noopener noreferrer external">{l.label} ↗</a>
+      {slides.length > 1 && (
+        <ul class="thumbs" role="tablist" aria-label="Images and video">
+          {slides.map((m, i) => {
+            const thumb = m.type === 'image' ? resolveImage(m.file) : null
+            return (
+              <li role="presentation">
+                <button
+                  type="button"
+                  role="tab"
+                  id={`thumb-${i}`}
+                  aria-controls={`slide-${i}`}
+                  aria-selected={i === 0 ? 'true' : 'false'}
+                  data-thumb={i}
+                >
+                  {thumb
+                    ? <Image src={thumb} alt="" widths={[160, 320]} sizes="9rem" loading="lazy" />
+                    : <span class="vthumb" aria-hidden="true">▶</span>}
+                  <span class="sr">{m.type === 'image' ? `Image ${i + 1}` : `Video ${i + 1}`}</span>
+                </button>
+              </li>
             )
           })}
-        </p>
+        </ul>
       )}
-    </aside>
-  </article>
+    </div>
+  )}
+
+  <div class="details">
+    <div class="body"><Content /></div>
+
+    <dl class="facts">
+      {d.show && (<><dt class="label">Show</dt>
+        <dd><a href={`${base}shows/${d.show}`}>{d.session ? `${d.session} ${d.year}` : d.year}</a></dd></>)}
+      {d.medium.length > 0 && (<><dt class="label">Medium</dt>
+        <dd>{d.medium.map((m) => label('medium', m)).join(', ')}</dd></>)}
+      {d.affiliation.length > 0 && (<><dt class="label">Affiliation</dt>
+        <dd>{d.affiliation.map((a) => label('affiliation', a)).join(', ')}</dd></>)}
+    </dl>
+
+    {d.links.length > 0 && (
+      <p class="links">
+        {d.links.map((l) => {
+          // 93 of 235 external links no longer resolve — mostly one
+          // decommissioned university blog. Presenting a dead link as a live
+          // one wastes the reader's time and hides the loss.
+          const gone = l.status === 'dead' || l.status === 'unreachable'
+          return gone ? (
+            <span class="dead">
+              <span>{l.label} — no longer available</span>
+              <a href={`https://web.archive.org/web/2020/${l.url}`} rel="noopener noreferrer external">
+                Try the Internet Archive ↗
+              </a>
+            </span>
+          ) : (
+            <a href={l.finalUrl ?? l.url} rel="noopener noreferrer external">{l.label} ↗</a>
+          )
+        })}
+      </p>
+    )}
+  </div>
 </Base>
+
+<script>
+  for (const box of document.querySelectorAll<HTMLElement>('[data-lightbox]')) {
+    const slides = [...box.querySelectorAll<HTMLElement>('[data-slide]')]
+    const thumbs = [...box.querySelectorAll<HTMLButtonElement>('[data-thumb]')]
+    if (slides.length < 2) continue
+
+    // Only now does anything hide — without this class the page is a stack.
+    box.classList.add('is-interactive')
+
+    const show = (n: number, focus = false) => {
+      slides.forEach((s, i) => { s.hidden = i !== n })
+      thumbs.forEach((t, i) => t.setAttribute('aria-selected', String(i === n)))
+
+      const active = slides[n]
+      const frame = active.querySelector<HTMLIFrameElement>('iframe[data-src]')
+      if (frame && !frame.getAttribute('src')) frame.src = frame.dataset.src!
+
+      // Leaving a slide should stop whatever was playing in it.
+      slides.forEach((s, i) => {
+        if (i === n) return
+        s.querySelector('video')?.pause()
+        const f = s.querySelector<HTMLIFrameElement>('iframe[data-src]')
+        if (f?.getAttribute('src')) f.src = f.getAttribute('src')!
+      })
+
+      if (focus) thumbs[n].focus()
+    }
+
+    thumbs.forEach((t, i) => t.addEventListener('click', () => show(i)))
+
+    // Arrow keys walk the strip, which is what a tablist is expected to do.
+    box.querySelector('[role="tablist"]')?.addEventListener('keydown', (e) => {
+      const key = (e as KeyboardEvent).key
+      const cur = thumbs.findIndex((t) => t.getAttribute('aria-selected') === 'true')
+      let next = cur
+      if (key === 'ArrowRight' || key === 'ArrowDown') next = (cur + 1) % thumbs.length
+      else if (key === 'ArrowLeft' || key === 'ArrowUp') next = (cur - 1 + thumbs.length) % thumbs.length
+      else if (key === 'Home') next = 0
+      else if (key === 'End') next = thumbs.length - 1
+      else return
+      e.preventDefault()
+      show(next, true)
+    })
+
+    show(0)
+  }
+</script>
 
 <style>
   .pager { display: flex; gap: 1rem; align-items: center; justify-content: flex-end;
@@ -178,37 +251,50 @@ const og = ogSrc ? await getImage({ src: ogSrc, width: 1200, height: 630, fit: '
   .pager a { text-decoration: none; padding: .1rem .4rem; }
   .pager a:hover { text-decoration: underline; }
 
-  .project { display: grid; gap: 2rem; align-items: start; }
-  @media (min-width: 60rem) {
-    .project { grid-template-columns: minmax(0, 1fr) 19rem; gap: 3rem; }
-    .info { position: sticky; top: 1.75rem; }
-  }
-
+  .head { margin: 0 0 1.25rem; }
   h1 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); font-weight: 500; letter-spacing: -.01em;
-       line-height: 1.1; margin: 0 0 1rem; }
-
-  figure { margin: 0 0 var(--tile-gap); }
-  figcaption { color: var(--muted); font-size: .8125rem; margin-top: .4rem; }
-
-  .by { margin: 0 0 1rem; font-size: 1rem; letter-spacing: .04em; text-transform: uppercase; }
+       line-height: 1.1; margin: 0 0 .3rem; }
+  .by { margin: 0; font-size: 1.0625rem; }
   .by a { text-decoration: none; }
   .by a:hover { text-decoration: underline; }
-  .role { color: var(--muted); text-transform: none; letter-spacing: 0; }
+  .role { color: var(--muted); }
 
-  .body { margin: 0 0 1.5rem; }
+  /* Light table: one full-width frame, a strip of frames beneath it. */
+  .lightbox { margin: 0 0 2rem; }
+  .stage { display: grid; gap: var(--tile-gap); }
+  .is-interactive .stage { display: block; }
+  .slide[hidden] { display: none; }
+
+  figure { margin: 0; }
+  .stage :global(img) { width: 100%; height: auto; }
+  figcaption { color: var(--muted); font-size: .8125rem; margin-top: .4rem; }
+
+  .embed { position: relative; aspect-ratio: 16 / 9; background: var(--rule); }
+  .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  video { width: 100%; display: block; background: #000; }
+
+  .thumbs { list-style: none; display: flex; flex-wrap: wrap; gap: var(--tile-gap);
+            padding: 0; margin: var(--tile-gap) 0 0; }
+  .thumbs button {
+    position: relative; display: block; padding: 0; background: none; cursor: pointer;
+    border: 1px solid transparent; width: 9rem; line-height: 0;
+  }
+  .thumbs button :global(img) { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .thumbs button[aria-selected="true"] { border-color: var(--ink); }
+  .thumbs button:hover { border-color: var(--muted); }
+  .vthumb { display: grid; place-items: center; width: 100%; aspect-ratio: 4 / 3;
+            background: var(--rule); color: var(--muted); font-size: 1.25rem; line-height: 1; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+
+  /* Text sits under the work, not beside it. */
+  .details { max-width: var(--measure); }
   .body :global(p) { margin: 0 0 .85rem; }
-
-  .facts { display: grid; grid-template-columns: auto 1fr; gap: .2rem .75rem; margin: 0 0 1.25rem;
-           border-top: 1px solid var(--rule); padding-top: .85rem; }
+  .facts { display: grid; grid-template-columns: auto 1fr; gap: .2rem .75rem;
+           margin: 1.5rem 0 1.25rem; border-top: 1px solid var(--rule); padding-top: .85rem; }
   .facts dt { padding-top: .1rem; }
   .facts dd { margin: 0; font-size: .875rem; }
-
   .links { display: flex; flex-direction: column; gap: .5rem; margin: 0; font-size: .875rem; }
   .dead { display: flex; flex-direction: column; }
   .dead > span { color: var(--muted); text-decoration: line-through; }
   .dead > a { color: var(--muted); }
-
-  .embed { position: relative; aspect-ratio: 16 / 9; margin: 0 0 var(--tile-gap); }
-  .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-  video { width: 100%; margin: 0 0 var(--tile-gap); }
 </style>
