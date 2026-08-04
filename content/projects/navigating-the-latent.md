@@ -12,7 +12,7 @@ medium:
   - video
 tags: []
 credits:
-  - personId: arshia-sobhan
+  - personId: arshia-sobhan-sarbandi
     name: Arshia Sobhan
     role: null
     affiliation: null

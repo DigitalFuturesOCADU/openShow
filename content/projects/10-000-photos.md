@@ -17,7 +17,7 @@ credits:
     name: Kahani Ploessl
     role: null
     affiliation: null
-  - personId: josh-igwe
+  - personId: joshua-igwe
     name: Josh Igwe
     role: null
     affiliation: null

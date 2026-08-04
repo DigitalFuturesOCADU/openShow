@@ -14,7 +14,7 @@ medium:
   - wearables
 tags: []
 credits:
-  - personId: salisa-jatweerapong
+  - personId: salisa-jatuweerapong
     name: Salisa Jatweerapong
     role: null
     affiliation: null

@@ -12,7 +12,17 @@
 # --- Same person credited two ways. Detected automatically: accents, hyphens
 # --- and spacing differ but the letters are identical. Confirm each.
 aliases:
-  "Mika Maclear Wall": "Mika Maclear-Wall"
+  # Canonical spellings confirmed by hand, 2026-08-04. Several of these the
+  # automatic checks could not have proposed: an edit-distance check will not
+  # cross five characters, and one name being a prefix of another is not a
+  # misspelling at all.
+  "Mika Maclear-Wall": "Mika Maclear Wall"
+  "Mika MacLOear Wall": "Mika Maclear Wall"
+  "Salisa Jatweerapong": "Salisa Jatuweerapong"
+  "Josh Igwe": "Joshua Igwe"
+  "Aileen Dong": "Ailin Dong"
+  "Aileen D": "Ailin Dong"
+  "Arshia Sobhan": "Arshia Sobhan Sarbandi"
   "Niloofar Sanandaji Zadeh": "Niloofar Sanandajizadeh"
   # Confirmed by hand. Too short for the edit-distance check to propose, since
   # one name is a prefix of the other rather than a misspelling of it.

@@ -18,7 +18,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Madelaine Fischer-Bernhut
 - Aljumaine Gayle
 - Shannen Guntoro
-- Josh Igwe
+- Joshua Igwe
 - Sam Kingston
 - Leia Kook-Chun
 - Shiloh Light-Barnes
@@ -50,18 +50,17 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 ### Open Show 2019 — February
 
-43 participants.
+42 participants.
 
 † 2 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
-#### Undergraduate (20)
+#### Undergraduate (19)
 
 - Erika Davis
 - Bomi Doh
 - Madelaine Fischer-Bernhut
 - Mika Hirata
 - Salisa Jatuweerapong
-- Salisa Jatweerapong
 - Enna Kim
 - Natalie Le Huenen
 - Thomas Liu
@@ -273,7 +272,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Jie Guan
 - Lilian Leung
 - Patricia Kanana Mwenda
-- Arshia Sobhan
+- Arshia Sobhan Sarbandi
 - Candide Uyanze
 - Grace Yuan
 - Wei Zhang
@@ -374,7 +373,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 ### Open Show 2023
 
-51 participants.
+49 participants.
 
 † 4 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
@@ -392,7 +391,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Gunner Thongmeesang
 - Zhihan Zhang
 
-#### Graduate (36)
+#### Graduate (35)
 
 - Rim Armouch
 - Tyler Beatty †
@@ -401,7 +400,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Ryan Boyd †
 - Orus Mateo Castaño-Suárez
 - Lanlan Chen
-- Aileen D
 - Kunal Devi
 - Ailin Dong
 - Yueming Gao
@@ -448,15 +446,11 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Kahani Ploessl †
 - Emma Westecott †
 
-#### Unspecified (1)
-
-- Aileen Dong
-
 ### Open Show 2024
 
-49 participants.
+48 participants.
 
-#### Undergraduate (16)
+#### Undergraduate (15)
 
 - Hafsa Ahmad
 - Saad Aslam Ali
@@ -465,13 +459,12 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Tanzil Garg
 - Cole Kassirer
 - Bryan Lee
-- Mika Maclear-Wall
 - Shaizaan Prasla
 - Judhell Dhy Ramirez
 - Niloofar Sanandajizadeh
 - Aitareya Sethi
 - Jacob Sosulli
-- Mika MacLOear Wall
+- Mika Maclear Wall
 - Yixuan Xiao
 - Meicen Zhou
 
@@ -545,7 +538,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Hanmin Kim
 - Srikripa Krishnan
 - Bryan Lee
-- Mika Maclear-Wall
 - David Nguyen
 - Irina Noor
 - Ozan
@@ -557,6 +549,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Elena Misako Smillie
 - Menita Sriharsha
 - Parth Vats
+- Mika Maclear Wall
 - Hana Zaghloul
 - Peter Zougas
 

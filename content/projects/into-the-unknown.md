@@ -16,7 +16,7 @@ credits:
     name: Jiayun Qiu
     role: null
     affiliation: null
-  - personId: aileen-dong
+  - personId: ailin-dong
     name: Aileen Dong
     role: null
     affiliation: null
