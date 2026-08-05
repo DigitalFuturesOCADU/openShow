@@ -117,11 +117,15 @@ as a hint but are not reliable. Record decisions in `config/overrides.yaml`.
 The last 2025 project without one — it has no row in the submission sheet.
 2025 is otherwise 37/38.
 
-### 2.5 D5 — is affiliation a public filter?
+### 2.5 D5 — affiliation is a public filter — **decided**
 
-Affects the browse UI, not the schema. Worth knowing: 60 of 264 projects carry
-no affiliation, and affiliation on a mixed team is recorded per project rather
-than per person until the form change lands.
+Settled by making the affiliation on a project page clickable: it now leads to
+`/affiliation/<slug>`, listing that group's work grouped by show.
+
+Two caveats the pages state rather than hide. 14 of 240 published projects carry
+no affiliation, so they appear under none of them. And a project recording more
+than one affiliation cannot say which member of the team held which, so it shows
+under each — the page says how many of its works that applies to.
 
 ---
 

@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content'
+import Base from '../../layouts/Base.astro'
+import Tiles from '../../components/Tiles.astro'
+import { AFFILIATION, label, showTitle } from '../../lib/site'
+
+// Work by who made it, across every show. These pages exist because the
+// affiliation on a project page should lead somewhere — and that decides D5:
+// affiliation is public.
+//
+// Grouped by show, because affiliation is a snapshot rather than a fact. The
+// same person can be an undergraduate one year and an alum the next, so
+// "graduate work" only means anything within a year.
+export async function getStaticPaths() {
+  const projects = await getCollection('projects', (p) => p.data.status === 'publish')
+  const shows = await getCollection('shows')
+  const order = [...shows].sort((a, b) =>
+    b.data.year - a.data.year || String(a.data.session).localeCompare(String(b.data.session)))
+
+  const used = new Set(projects.flatMap((p) => p.data.affiliation))
+  return [...used].map((slug) => {
+    const mine = projects.filter((p) => p.data.affiliation.includes(slug))
+    const groups = order
+      .map((sh) => ({
+        id: sh.id,
+        projects: mine.filter((p) => p.data.show === sh.id)
+          .sort((a, b) => a.data.title.localeCompare(b.data.title)),
+      }))
+      .filter((g) => g.projects.length)
+    const unassigned = mine.filter((p) => !p.data.show)
+
+    // A project recording more than one affiliation cannot say which member of
+    // the team held which — see INTAKE-FORM.md §1d. Worth admitting on a page
+    // built entirely on that field.
+    const approximate = mine.filter((p) => p.data.affiliation.length > 1 && p.data.credits.length > 1).length
+
+    return { params: { slug }, props: { slug, groups, unassigned, total: mine.length, approximate } }
+  })
+}
+
+const { slug, groups, unassigned, total, approximate } = Astro.props
+const base = import.meta.env.BASE_URL
+const others = AFFILIATION.filter((t) => t.slug !== slug)
+---
+
+<Base
+  title={`${label('affiliation', slug)} — Digital Futures Open Show`}
+  section={`affiliation:${slug}`}
+  description={`${total} works by ${label('affiliation', slug).toLowerCase()} across the Open Show archive.`}
+>
+  <header class="head">
+    <h1>{label('affiliation', slug)}</h1>
+    <p class="label">{total} {total === 1 ? 'work' : 'works'} · {groups.length} {groups.length === 1 ? 'show' : 'shows'}</p>
+  </header>
+
+  {groups.map((g: any) => (
+    <section>
+      <h2><a href={`${base}shows/${g.id}`}>{showTitle(g.id)}</a> <span class="n">{g.projects.length}</span></h2>
+      <Tiles projects={g.projects} />
+    </section>
+  ))}
+
+  {unassigned.length > 0 && (
+    <section>
+      <h2>No show assigned <span class="n">{unassigned.length}</span></h2>
+      <Tiles projects={unassigned} />
+    </section>
+  )}
+
+  {approximate > 0 && (
+    <p class="note">
+      {approximate} of these were made by mixed teams whose affiliation was recorded
+      for the project rather than for each person, so they appear under every
+      affiliation their team held. Submissions from 2026 record it per person.
+    </p>
+  )}
+
+  <nav class="others" aria-label="Other affiliations">
+    <p class="label">Other affiliations</p>
+    <ul>
+      {others.map((t) => (
+        <li><a href={`${base}affiliation/${t.slug}`}>{t.label}</a> <span class="n">{t.count}</span></li>
+      ))}
+    </ul>
+  </nav>
+</Base>
+
+<style>
+  .head { margin-bottom: 2rem; }
+  h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .2rem; letter-spacing: -.01em; }
+  .head .label { margin: 0; }
+  section { margin-bottom: 2.5rem; }
+  h2 { font-size: 1rem; font-weight: 500; margin: 0 0 1rem;
+       border-top: 1px solid var(--rule); padding-top: 1rem; }
+  h2 a { text-decoration: none; }
+  h2 a:hover { text-decoration: underline; }
+  .n { color: var(--muted); font-size: .75rem; font-weight: 400; }
+  .note { color: var(--muted); font-size: .875rem; max-width: var(--measure); }
+  .others { border-top: 1px solid var(--rule); padding-top: 1rem; margin-top: 3rem; }
+  .others .label { margin: 0 0 .5rem; }
+  .others ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; }
+  .others a { text-decoration: none; }
+  .others a:hover { text-decoration: underline; }
+</style>
