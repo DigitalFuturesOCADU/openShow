@@ -69,6 +69,19 @@ function parseEmbed(html) {
 
 // ---------------------------------------------------------------- read
 
+// The export is kept out of git — it holds the old site's accounts and email
+// addresses — so a fresh clone does not have it. Say so plainly rather than
+// fail with ENOENT.
+if (!existsSync(SRC)) {
+  console.error(
+    'sources/wordpress-export.xml is missing.\n' +
+    'It is deliberately not in the repository (see README, "What is deliberately\n' +
+    'not in this repository"). Get a copy from whoever holds the archive, put it\n' +
+    'in sources/, and check it with:  cd sources && shasum -a 256 -c CHECKSUMS.txt',
+  )
+  process.exit(1)
+}
+
 console.log('Reading WXR…')
 const { items } = readWxr(SRC)
 const projects = byType(items, 'royal_portfolio')

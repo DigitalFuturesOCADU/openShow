@@ -40,7 +40,7 @@ added retroactively — a question not asked is data that does not exist.
 ## How it fits together
 
 ```
-sources/        the WordPress export and its uploads — read-only, never edited
+sources/        the WordPress export and its uploads — read-only, local only
 submissions/    work ingested from the submission form
 config/         corrections a human made — survives every rebuild
 content/        generated from the above; never edit these by hand
@@ -110,6 +110,20 @@ next run.
 | `npm test` | Check every page has a working address |
 | `npm run links` | Check external links, hide dead ones |
 | `npm run reset` | Delete a show and start it over |
+
+## What is deliberately not in this repository
+
+The WordPress export (`sources/wordpress-export.xml`), the database dump
+(`sources/database.sql`) and every submission spreadsheet stay on the machine
+of whoever runs the show. The export and dump contain the old site's user
+accounts, password hashes, stored credentials and email addresses; the
+spreadsheets contain students' email addresses. `.gitignore` blocks all three.
+
+You don't need them to edit text, fix data in `config/`, review submissions or
+build the site — `content/` is committed and the build reads only that. You do
+need the export to run `npm run extract`, which regenerates `content/` after a
+change to `config/` (merging two people, for instance). Get a copy from whoever
+holds the archive and check it against `sources/CHECKSUMS.txt`.
 
 ## Integrity
 

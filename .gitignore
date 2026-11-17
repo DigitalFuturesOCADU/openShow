@@ -38,11 +38,24 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Note: the WXR export and SQL dump are deliberately NOT ignored here.
-# Step 1 relocates them to sources/ and decides tracked-vs-LFS.
+# The WordPress export and database dump are NEVER committed. They hold the
+# site's user accounts and password hashes, stored mail and hosting
+# credentials, and every author's and commenter's email address. They were
+# public in this repository from 2026-08-04 to 2026-11-17 and were purged from
+# its history. Keep them local; sources/CHECKSUMS.txt verifies a copy.
+sources/wordpress-export.xml
+sources/database.sql
+sources/*.xml
+sources/*.sql
+
+# Submission spreadsheets carry students' names and email addresses. Ignored
+# everywhere, not only in inbox/ — the 2025 sheet was committed from the repo
+# root, where an inbox-only rule did not reach it.
+*.xlsx
+*.xls
+*.csv
+~$*
 sources/submissions/
-inbox/*.xlsx
-inbox/~$*
 config/console.json
 submissions/*/media/
 config/overrides.yaml.bak
