@@ -13,7 +13,7 @@ medium:
 tags: []
 credits:
   - personId: arshia-sobhan-sarbandi
-    name: Arshia Sobhan
+    name: Arshia Sobhan Sarbandi
     role: null
     affiliation: null
 creditsRaw: Arshia Sobhan

@@ -2,39 +2,6 @@
   "$comment": "Creator registry. Derived from project credits; corrections live in config/people.yaml. id is stable and safe to link to — a person page is /people/<id>.",
   "people": [
     {
-      "id": "achal",
-      "name": "Achal",
-      "sortName": "Achal",
-      "kind": "person",
-      "variants": [
-        "Achal"
-      ],
-      "projects": [
-        "virus-v-s-vaccines"
-      ],
-      "shows": [
-        "2020"
-      ],
-      "appearances": [
-        {
-          "show": "2020",
-          "year": 2020,
-          "project": "virus-v-s-vaccines",
-          "title": "Virus v/s Vaccines",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": true,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
       "id": "nicholas-addeo",
       "name": "Nicholas Addeo",
       "sortName": "Addeo, Nicholas",
@@ -167,48 +134,17 @@
       ]
     },
     {
-      "id": "nicholas-alexander",
-      "name": "Nicholas Alexander",
-      "sortName": "Alexander, Nicholas",
-      "kind": "person",
-      "variants": [
-        "Nicholas Alexander"
-      ],
-      "projects": [
-        "mess-net"
-      ],
-      "shows": [
-        "2019-february"
-      ],
-      "appearances": [
-        {
-          "show": "2019-february",
-          "year": 2019,
-          "project": "mess-net",
-          "title": "MESS.net",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
       "id": "nick-alexander",
       "name": "Nick Alexander",
       "sortName": "Alexander, Nick",
       "kind": "person",
       "variants": [
+        "Nicholas Alexander",
         "Nick Alexander"
       ],
       "projects": [
         "finger-painting",
+        "mess-net",
         "mindpainter"
       ],
       "shows": [
@@ -230,6 +166,17 @@
         {
           "show": "2019-february",
           "year": 2019,
+          "project": "mess-net",
+          "title": "MESS.net",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
+        {
+          "show": "2019-february",
+          "year": 2019,
           "project": "mindpainter",
           "title": "MindPainter",
           "affiliation": [
@@ -240,7 +187,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 2,
+      "projectCount": 3,
       "affiliations": [
         "graduate"
       ]
@@ -358,18 +305,21 @@
       ]
     },
     {
-      "id": "carisa-antariksa",
-      "name": "Carisa Antariksa",
-      "sortName": "Antariksa, Carisa",
+      "id": "carisa-putri-antariksa",
+      "name": "Carisa Putri Antariksa",
+      "sortName": "Antariksa, Carisa Putri",
       "kind": "person",
       "variants": [
-        "Carisa Antariksa"
+        "Carisa Antariksa",
+        "Carisa Putri Antariksa"
       ],
       "projects": [
-        "generativesystems"
+        "generativesystems",
+        "sybertek-migrants-at-bay-interactive-fiction-2021"
       ],
       "shows": [
-        "2019-february"
+        "2019-february",
+        "2022"
       ],
       "appearances": [
         {
@@ -382,29 +332,7 @@
           ],
           "affiliationExact": true,
           "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
-      "id": "carisa-putri-antariksa",
-      "name": "Carisa Putri Antariksa",
-      "sortName": "Antariksa, Carisa Putri",
-      "kind": "person",
-      "variants": [
-        "Carisa Putri Antariksa"
-      ],
-      "projects": [
-        "sybertek-migrants-at-bay-interactive-fiction-2021"
-      ],
-      "shows": [
-        "2022"
-      ],
-      "appearances": [
+        },
         {
           "show": "2022",
           "year": 2022,
@@ -418,9 +346,10 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 2,
       "affiliations": [
-        "alumni"
+        "alumni",
+        "graduate"
       ]
     },
     {
@@ -603,10 +532,10 @@
       ]
     },
     {
-      "id": "collective-project-angela-atkinson",
-      "name": "collective project: Angela Atkinson",
-      "sortName": "Atkinson, collective project: Angela",
-      "kind": "collective",
+      "id": "angela-atkinson",
+      "name": "Angela Atkinson",
+      "sortName": "Atkinson, Angela",
+      "kind": "person",
       "variants": [
         "collective project: Angela Atkinson"
       ],
@@ -629,7 +558,7 @@
           "role": null
         }
       ],
-      "sortReviewed": true,
+      "sortReviewed": false,
       "projectCount": 1,
       "affiliations": [
         "faculty"
@@ -903,9 +832,9 @@
       ]
     },
     {
-      "id": "aishwarya-bhattbhatt",
-      "name": "Aishwarya Bhattbhatt",
-      "sortName": "Bhattbhatt, Aishwarya",
+      "id": "aishwarya-bhatt",
+      "name": "Aishwarya Bhatt",
+      "sortName": "Bhatt, Aishwarya",
       "kind": "person",
       "variants": [
         "Aishwarya Bhattbhatt"
@@ -1031,20 +960,34 @@
       ]
     },
     {
-      "id": "g-blekkenhorst",
-      "name": "g blekkenhorst",
-      "sortName": "blekkenhorst, g",
+      "id": "gillian-blekkenhorst",
+      "name": "Gillian Blekkenhorst",
+      "sortName": "Blekkenhorst, Gillian",
       "kind": "person",
       "variants": [
+        "Gillian Blekkenhorst",
         "g blekkenhorst"
       ],
       "projects": [
-        "qvs-community-archive"
+        "qvs-community-archive",
+        "reassurance"
       ],
       "shows": [
+        "2024",
         "2025"
       ],
       "appearances": [
+        {
+          "show": "2024",
+          "year": 2024,
+          "project": "reassurance",
+          "title": "reassurance",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
         {
           "show": "2025",
           "year": 2025,
@@ -1058,75 +1001,9 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
-      ]
-    },
-    {
-      "id": "gillian-blekkenhorst",
-      "name": "Gillian Blekkenhorst",
-      "sortName": "Blekkenhorst, Gillian",
-      "kind": "person",
-      "variants": [
-        "Gillian Blekkenhorst"
-      ],
-      "projects": [
-        "reassurance"
-      ],
-      "shows": [
-        "2024"
-      ],
-      "appearances": [
-        {
-          "show": "2024",
-          "year": 2024,
-          "project": "reassurance",
-          "title": "reassurance",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
-      "id": "sara-boo",
-      "name": "Sara Boo",
-      "sortName": "Boo, Sara",
-      "kind": "person",
-      "variants": [
-        "Sara Boo"
-      ],
-      "projects": [
-        "two-circles-connected-by-123-vertices"
-      ],
-      "shows": [
-        "2021"
-      ],
-      "appearances": [
-        {
-          "show": "2021",
-          "year": 2021,
-          "project": "two-circles-connected-by-123-vertices",
-          "title": "Two circles connected by 123 vertices",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
       ]
     },
     {
@@ -1135,15 +1012,18 @@
       "sortName": "Boo, Sarah",
       "kind": "person",
       "variants": [
+        "Sara Boo",
         "Sarah Boo"
       ],
       "projects": [
         "conduction-body",
         "sky-cavalcade",
+        "two-circles-connected-by-123-vertices",
         "variations-of-reexamined-open-paths"
       ],
       "shows": [
-        "2020"
+        "2020",
+        "2021"
       ],
       "appearances": [
         {
@@ -1178,10 +1058,21 @@
           ],
           "affiliationExact": true,
           "role": null
+        },
+        {
+          "show": "2021",
+          "year": 2021,
+          "project": "two-circles-connected-by-123-vertices",
+          "title": "Two circles connected by 123 vertices",
+          "affiliation": [
+            "undergraduate"
+          ],
+          "affiliationExact": true,
+          "role": null
         }
       ],
       "sortReviewed": false,
-      "projectCount": 3,
+      "projectCount": 4,
       "affiliations": [
         "undergraduate"
       ]
@@ -1585,10 +1476,12 @@
       "sortName": "Chakraborty, Krishnokoli Roy",
       "kind": "person",
       "variants": [
+        "Krishnokoli",
         "Krishnokoli Roy Chakraborty"
       ],
       "projects": [
-        "morse-messenger"
+        "morse-messenger",
+        "virus-v-s-vaccines"
       ],
       "shows": [
         "2020"
@@ -1604,10 +1497,21 @@
           ],
           "affiliationExact": true,
           "role": null
+        },
+        {
+          "show": "2020",
+          "year": 2020,
+          "project": "virus-v-s-vaccines",
+          "title": "Virus v/s Vaccines",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
       ]
@@ -1757,19 +1661,22 @@
       ]
     },
     {
-      "id": "neo-chen",
-      "name": "Neo Chen",
-      "sortName": "Chen, Neo",
+      "id": "neo-nuo-chen",
+      "name": "Neo Nuo Chen",
+      "sortName": "Chen, Neo Nuo",
       "kind": "person",
       "variants": [
-        "Neo Chen"
+        "Neo Chen",
+        "Neo Nuo Chen"
       ],
       "projects": [
+        "digital-fashion-metamorphosis-intro",
         "leave-a-window-open-for-me",
         "memorun"
       ],
       "shows": [
         "2019-december",
+        "2020",
         "2021"
       ],
       "appearances": [
@@ -1778,6 +1685,17 @@
           "year": 2019,
           "project": "leave-a-window-open-for-me",
           "title": "Leave a window open for me",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
+        {
+          "show": "2020",
+          "year": 2020,
+          "project": "digital-fashion-metamorphosis-intro",
+          "title": "Digital Fashion Metamorphosis - Intro",
           "affiliation": [
             "graduate"
           ],
@@ -1797,40 +1715,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 2,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
-      "id": "neo-nuo-chen",
-      "name": "Neo Nuo Chen",
-      "sortName": "Chen, Neo Nuo",
-      "kind": "person",
-      "variants": [
-        "Neo Nuo Chen"
-      ],
-      "projects": [
-        "digital-fashion-metamorphosis-intro"
-      ],
-      "shows": [
-        "2020"
-      ],
-      "appearances": [
-        {
-          "show": "2020",
-          "year": 2020,
-          "project": "digital-fashion-metamorphosis-intro",
-          "title": "Digital Fashion Metamorphosis - Intro",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 3,
       "affiliations": [
         "graduate"
       ]
@@ -2479,6 +2364,39 @@
       ]
     },
     {
+      "id": "data-materialization-studio-lab",
+      "name": "Data Materialization Studio Lab",
+      "sortName": "Data Materialization Studio Lab",
+      "kind": "collective",
+      "variants": [
+        "Data Materialization Studio Lab"
+      ],
+      "projects": [
+        "model-gallery-model"
+      ],
+      "shows": [
+        "2022"
+      ],
+      "appearances": [
+        {
+          "show": "2022",
+          "year": 2022,
+          "project": "model-gallery-model",
+          "title": "Model Gallery model",
+          "affiliation": [
+            "faculty"
+          ],
+          "affiliationExact": true,
+          "role": null
+        }
+      ],
+      "sortReviewed": true,
+      "projectCount": 1,
+      "affiliations": [
+        "faculty"
+      ]
+    },
+    {
       "id": "patricio-davila",
       "name": "Patricio Dávila",
       "sortName": "Dávila, Patricio",
@@ -2822,10 +2740,12 @@
       "sortName": "Duggal, Simran",
       "kind": "person",
       "variants": [
+        "Simran",
         "Simran Duggal"
       ],
       "projects": [
-        "bookhub"
+        "bookhub",
+        "virus-v-s-vaccines"
       ],
       "shows": [
         "2020"
@@ -2841,10 +2761,21 @@
           ],
           "affiliationExact": true,
           "role": null
+        },
+        {
+          "show": "2020",
+          "year": 2020,
+          "project": "virus-v-s-vaccines",
+          "title": "Virus v/s Vaccines",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
       ]
@@ -4131,39 +4062,6 @@
       ]
     },
     {
-      "id": "lee-seung-ho",
-      "name": "Lee Seung Ho",
-      "sortName": "Ho, Lee Seung",
-      "kind": "person",
-      "variants": [
-        "Lee Seung Ho"
-      ],
-      "projects": [
-        "character-design-works"
-      ],
-      "shows": [
-        "2022"
-      ],
-      "appearances": [
-        {
-          "show": "2022",
-          "year": 2022,
-          "project": "character-design-works",
-          "title": "Character Design works",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
-      ]
-    },
-    {
       "id": "ellie-huang",
       "name": "Ellie Huang",
       "sortName": "Huang, Ellie",
@@ -4696,15 +4594,28 @@
       "sortName": "Juyal, Shikhar",
       "kind": "person",
       "variants": [
+        "Shikhar",
         "Shikhar Juyal"
       ],
       "projects": [
+        "dischord-space-quest-pizza",
         "river-styx"
       ],
       "shows": [
         "2019-february"
       ],
       "appearances": [
+        {
+          "show": "2019-february",
+          "year": 2019,
+          "project": "dischord-space-quest-pizza",
+          "title": "DISCHORD / SPACE QUEST PIZZA",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
         {
           "show": "2019-february",
           "year": 2019,
@@ -4718,7 +4629,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
       ]
@@ -4886,39 +4797,6 @@
       ],
       "sortReviewed": false,
       "projectCount": 2,
-      "affiliations": [
-        "undergraduate"
-      ]
-    },
-    {
-      "id": "leia-kc",
-      "name": "Leia KC",
-      "sortName": "KC, Leia",
-      "kind": "person",
-      "variants": [
-        "Leia KC"
-      ],
-      "projects": [
-        "between-the-cards"
-      ],
-      "shows": [
-        "2020"
-      ],
-      "appearances": [
-        {
-          "show": "2020",
-          "year": 2020,
-          "project": "between-the-cards",
-          "title": "Between the Cards",
-          "affiliation": [
-            "undergraduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
       "affiliations": [
         "undergraduate"
       ]
@@ -5148,13 +5026,16 @@
       "sortName": "Kook-Chun, Leia",
       "kind": "person",
       "variants": [
+        "Leia KC",
         "Leia Kook-Chun"
       ],
       "projects": [
+        "between-the-cards",
         "paper-plane-poetry"
       ],
       "shows": [
-        "2019-december"
+        "2019-december",
+        "2020"
       ],
       "appearances": [
         {
@@ -5167,10 +5048,21 @@
           ],
           "affiliationExact": true,
           "role": null
+        },
+        {
+          "show": "2020",
+          "year": 2020,
+          "project": "between-the-cards",
+          "title": "Between the Cards",
+          "affiliation": [
+            "undergraduate"
+          ],
+          "affiliationExact": true,
+          "role": null
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 2,
       "affiliations": [
         "undergraduate"
       ]
@@ -5206,39 +5098,6 @@
       "projectCount": 1,
       "affiliations": [
         "undergraduate"
-      ]
-    },
-    {
-      "id": "krishnokoli",
-      "name": "Krishnokoli",
-      "sortName": "Krishnokoli",
-      "kind": "person",
-      "variants": [
-        "Krishnokoli"
-      ],
-      "projects": [
-        "virus-v-s-vaccines"
-      ],
-      "shows": [
-        "2020"
-      ],
-      "appearances": [
-        {
-          "show": "2020",
-          "year": 2020,
-          "project": "virus-v-s-vaccines",
-          "title": "Virus v/s Vaccines",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": true,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
       ]
     },
     {
@@ -5308,48 +5167,15 @@
       ]
     },
     {
-      "id": "data-materialization-studio-lab",
-      "name": "Data Materialization Studio Lab",
-      "sortName": "Lab, Data Materialization Studio",
-      "kind": "collective",
-      "variants": [
-        "Data Materialization Studio Lab"
-      ],
-      "projects": [
-        "model-gallery-model"
-      ],
-      "shows": [
-        "2022"
-      ],
-      "appearances": [
-        {
-          "show": "2022",
-          "year": 2022,
-          "project": "model-gallery-model",
-          "title": "Model Gallery model",
-          "affiliation": [
-            "faculty"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": true,
-      "projectCount": 1,
-      "affiliations": [
-        "faculty"
-      ]
-    },
-    {
-      "id": "ladan",
-      "name": "Ladan",
-      "sortName": "Ladan",
+      "id": "martha-ladly",
+      "name": "Martha Ladly",
+      "sortName": "Ladly, Martha",
       "kind": "person",
       "variants": [
-        "Ladan"
+        "Dr. Martha Laldy"
       ],
       "projects": [
-        "dischord-space-quest-pizza"
+        "decoding-origins-creating-the-visual-language-of-marks"
       ],
       "shows": [
         "2019-february"
@@ -5358,19 +5184,21 @@
         {
           "show": "2019-february",
           "year": 2019,
-          "project": "dischord-space-quest-pizza",
-          "title": "DISCHORD / SPACE QUEST PIZZA",
+          "project": "decoding-origins-creating-the-visual-language-of-marks",
+          "title": "Decoding Origins: Creating the Visual Language of Marks",
           "affiliation": [
-            "graduate"
+            "alumni",
+            "faculty"
           ],
-          "affiliationExact": true,
+          "affiliationExact": false,
           "role": null
         }
       ],
-      "sortReviewed": true,
+      "sortReviewed": false,
       "projectCount": 1,
       "affiliations": [
-        "graduate"
+        "alumni",
+        "faculty"
       ]
     },
     {
@@ -5404,41 +5232,6 @@
       "projectCount": 1,
       "affiliations": [
         "graduate"
-      ]
-    },
-    {
-      "id": "dr-martha-laldy",
-      "name": "Dr. Martha Laldy",
-      "sortName": "Laldy, Dr. Martha",
-      "kind": "person",
-      "variants": [
-        "Dr. Martha Laldy"
-      ],
-      "projects": [
-        "decoding-origins-creating-the-visual-language-of-marks"
-      ],
-      "shows": [
-        "2019-february"
-      ],
-      "appearances": [
-        {
-          "show": "2019-february",
-          "year": 2019,
-          "project": "decoding-origins-creating-the-visual-language-of-marks",
-          "title": "Decoding Origins: Creating the Visual Language of Marks",
-          "affiliation": [
-            "alumni",
-            "faculty"
-          ],
-          "affiliationExact": false,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "alumni",
-        "faculty"
       ]
     },
     {
@@ -5643,6 +5436,39 @@
       ]
     },
     {
+      "id": "lee-seung-ho",
+      "name": "Lee Seung Ho",
+      "sortName": "Lee, Seung Ho",
+      "kind": "person",
+      "variants": [
+        "Lee Seung Ho"
+      ],
+      "projects": [
+        "character-design-works"
+      ],
+      "shows": [
+        "2022"
+      ],
+      "appearances": [
+        {
+          "show": "2022",
+          "year": 2022,
+          "project": "character-design-works",
+          "title": "Character Design works",
+          "affiliation": [
+            "undergraduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        }
+      ],
+      "sortReviewed": true,
+      "projectCount": 1,
+      "affiliations": [
+        "undergraduate"
+      ]
+    },
+    {
       "id": "elizabeth-legierski",
       "name": "Elizabeth Legierski",
       "sortName": "Legierski, Elizabeth",
@@ -5769,8 +5595,8 @@
     },
     {
       "id": "brandon-li",
-      "name": "Brandon li",
-      "sortName": "li, Brandon",
+      "name": "Brandon Li",
+      "sortName": "Li, Brandon",
       "kind": "person",
       "variants": [
         "Brandon li"
@@ -6926,84 +6752,23 @@
       ]
     },
     {
-      "id": "patricia-mwenda",
-      "name": "Patricia Mwenda",
-      "sortName": "Mwenda, Patricia",
-      "kind": "person",
-      "variants": [
-        "Patricia Mwenda"
-      ],
-      "projects": [
-        "she-is-not-alone-afrofuturist-wearable-devices-for-speculative-ptsd-treatment-in-kenya"
-      ],
-      "shows": [
-        "2022"
-      ],
-      "appearances": [
-        {
-          "show": "2022",
-          "year": 2022,
-          "project": "she-is-not-alone-afrofuturist-wearable-devices-for-speculative-ptsd-treatment-in-kenya",
-          "title": "‘SHE IS NOT ALONE!’   AFROFUTURIST WEARABLE DEVICES FOR SPECULATIVE PTSD TREATMENT IN KENYA",
-          "affiliation": [
-            "alumni"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "alumni"
-      ]
-    },
-    {
-      "id": "patricia-trish-kanana-mwenda",
-      "name": "Patricia \"Trish\" Kanana Mwenda",
-      "sortName": "Mwenda, Patricia \"Trish\" Kanana",
-      "kind": "person",
-      "variants": [
-        "Patricia \"Trish\" Kanana Mwenda"
-      ],
-      "projects": [
-        "in-my-tongue"
-      ],
-      "shows": [
-        "2022"
-      ],
-      "appearances": [
-        {
-          "show": "2022",
-          "year": 2022,
-          "project": "in-my-tongue",
-          "title": "In My Tongue",
-          "affiliation": [
-            "alumni"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": true,
-      "projectCount": 1,
-      "affiliations": [
-        "alumni"
-      ]
-    },
-    {
       "id": "patricia-kanana-mwenda",
       "name": "Patricia Kanana Mwenda",
       "sortName": "Mwenda, Patricia Kanana",
       "kind": "person",
       "variants": [
-        "Patricia Kanana Mwenda"
+        "Patricia \"Trish\" Kanana Mwenda",
+        "Patricia Kanana Mwenda",
+        "Patricia Mwenda"
       ],
       "projects": [
-        "in-my-tongue-2"
+        "in-my-tongue",
+        "in-my-tongue-2",
+        "she-is-not-alone-afrofuturist-wearable-devices-for-speculative-ptsd-treatment-in-kenya"
       ],
       "shows": [
-        "2021"
+        "2021",
+        "2022"
       ],
       "appearances": [
         {
@@ -7016,11 +6781,34 @@
           ],
           "affiliationExact": true,
           "role": null
+        },
+        {
+          "show": "2022",
+          "year": 2022,
+          "project": "she-is-not-alone-afrofuturist-wearable-devices-for-speculative-ptsd-treatment-in-kenya",
+          "title": "‘SHE IS NOT ALONE!’   AFROFUTURIST WEARABLE DEVICES FOR SPECULATIVE PTSD TREATMENT IN KENYA",
+          "affiliation": [
+            "alumni"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
+        {
+          "show": "2022",
+          "year": 2022,
+          "project": "in-my-tongue",
+          "title": "In My Tongue",
+          "affiliation": [
+            "alumni"
+          ],
+          "affiliationExact": true,
+          "role": null
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 3,
       "affiliations": [
+        "alumni",
         "graduate"
       ]
     },
@@ -7262,39 +7050,6 @@
       "projectCount": 1,
       "affiliations": [
         "graduate"
-      ]
-    },
-    {
-      "id": "social-body-lab-in-collaboration-with-tapestry-opera",
-      "name": "Social Body Lab in collaboration with Tapestry Opera",
-      "sortName": "Opera, Social Body Lab in collaboration with Tapestry",
-      "kind": "collective",
-      "variants": [
-        "Social Body Lab in collaboration with Tapestry Opera"
-      ],
-      "projects": [
-        "r-u-r-a-torrent-of-light"
-      ],
-      "shows": [
-        "2022"
-      ],
-      "appearances": [
-        {
-          "show": "2022",
-          "year": 2022,
-          "project": "r-u-r-a-torrent-of-light",
-          "title": "R.U.R. A Torrent of Light",
-          "affiliation": [
-            "faculty"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": true,
-      "projectCount": 1,
-      "affiliations": [
-        "faculty"
       ]
     },
     {
@@ -8586,18 +8341,21 @@
       ]
     },
     {
-      "id": "jd-ramirez",
-      "name": "JD Ramirez",
-      "sortName": "Ramirez, JD",
+      "id": "judhell-dhy-ramirez",
+      "name": "Judhell Dhy Ramirez",
+      "sortName": "Ramirez, Judhell Dhy",
       "kind": "person",
       "variants": [
-        "JD Ramirez"
+        "JD Ramirez",
+        "Judhell Dhy Ramirez"
       ],
       "projects": [
-        "bioluminescent-cape"
+        "bioluminescent-cape",
+        "tarot-picker"
       ],
       "shows": [
-        "2023"
+        "2023",
+        "2024"
       ],
       "appearances": [
         {
@@ -8610,29 +8368,7 @@
           ],
           "affiliationExact": true,
           "role": null
-        }
-      ],
-      "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "undergraduate"
-      ]
-    },
-    {
-      "id": "judhell-dhy-ramirez",
-      "name": "Judhell Dhy Ramirez",
-      "sortName": "Ramirez, Judhell Dhy",
-      "kind": "person",
-      "variants": [
-        "Judhell Dhy Ramirez"
-      ],
-      "projects": [
-        "tarot-picker"
-      ],
-      "shows": [
-        "2024"
-      ],
-      "appearances": [
+        },
         {
           "show": "2024",
           "year": 2024,
@@ -8646,7 +8382,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
+      "projectCount": 2,
       "affiliations": [
         "undergraduate"
       ]
@@ -9351,10 +9087,12 @@
       "sortName": "Shah, Achal",
       "kind": "person",
       "variants": [
+        "Achal",
         "Achal Shah"
       ],
       "projects": [
         "enter-the-void",
+        "virus-v-s-vaccines",
         "visual-narration"
       ],
       "shows": [
@@ -9382,10 +9120,21 @@
           ],
           "affiliationExact": true,
           "role": null
+        },
+        {
+          "show": "2020",
+          "year": 2020,
+          "project": "virus-v-s-vaccines",
+          "title": "Virus v/s Vaccines",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
         }
       ],
       "sortReviewed": false,
-      "projectCount": 2,
+      "projectCount": 3,
       "affiliations": [
         "graduate"
       ]
@@ -9616,39 +9365,6 @@
       ]
     },
     {
-      "id": "shikhar",
-      "name": "Shikhar",
-      "sortName": "Shikhar",
-      "kind": "person",
-      "variants": [
-        "Shikhar"
-      ],
-      "projects": [
-        "dischord-space-quest-pizza"
-      ],
-      "shows": [
-        "2019-february"
-      ],
-      "appearances": [
-        {
-          "show": "2019-february",
-          "year": 2019,
-          "project": "dischord-space-quest-pizza",
-          "title": "DISCHORD / SPACE QUEST PIZZA",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": true,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
       "id": "sabina-shin",
       "name": "Sabina Shin",
       "sortName": "Shin, Sabina",
@@ -9821,15 +9537,28 @@
       "sortName": "Siad, Ladan",
       "kind": "person",
       "variants": [
+        "Ladan",
         "Ladan Siad"
       ],
       "projects": [
+        "dischord-space-quest-pizza",
         "generativesystems"
       ],
       "shows": [
         "2019-february"
       ],
       "appearances": [
+        {
+          "show": "2019-february",
+          "year": 2019,
+          "project": "dischord-space-quest-pizza",
+          "title": "DISCHORD / SPACE QUEST PIZZA",
+          "affiliation": [
+            "graduate"
+          ],
+          "affiliationExact": true,
+          "role": null
+        },
         {
           "show": "2019-february",
           "year": 2019,
@@ -9843,40 +9572,7 @@
         }
       ],
       "sortReviewed": false,
-      "projectCount": 1,
-      "affiliations": [
-        "graduate"
-      ]
-    },
-    {
-      "id": "simran",
-      "name": "Simran",
-      "sortName": "Simran",
-      "kind": "person",
-      "variants": [
-        "Simran"
-      ],
-      "projects": [
-        "virus-v-s-vaccines"
-      ],
-      "shows": [
-        "2020"
-      ],
-      "appearances": [
-        {
-          "show": "2020",
-          "year": 2020,
-          "project": "virus-v-s-vaccines",
-          "title": "Virus v/s Vaccines",
-          "affiliation": [
-            "graduate"
-          ],
-          "affiliationExact": true,
-          "role": null
-        }
-      ],
-      "sortReviewed": true,
-      "projectCount": 1,
+      "projectCount": 2,
       "affiliations": [
         "graduate"
       ]
@@ -9945,6 +9641,39 @@
       "projectCount": 1,
       "affiliations": [
         "undergraduate"
+      ]
+    },
+    {
+      "id": "social-body-lab-in-collaboration-with-tapestry-opera",
+      "name": "Social Body Lab in collaboration with Tapestry Opera",
+      "sortName": "Social Body Lab in collaboration with Tapestry Opera",
+      "kind": "collective",
+      "variants": [
+        "Social Body Lab in collaboration with Tapestry Opera"
+      ],
+      "projects": [
+        "r-u-r-a-torrent-of-light"
+      ],
+      "shows": [
+        "2022"
+      ],
+      "appearances": [
+        {
+          "show": "2022",
+          "year": 2022,
+          "project": "r-u-r-a-torrent-of-light",
+          "title": "R.U.R. A Torrent of Light",
+          "affiliation": [
+            "faculty"
+          ],
+          "affiliationExact": true,
+          "role": null
+        }
+      ],
+      "sortReviewed": true,
+      "projectCount": 1,
+      "affiliations": [
+        "faculty"
       ]
     },
     {
@@ -11518,8 +11247,8 @@
     },
     {
       "id": "yang-yi",
-      "name": "Yang YI",
-      "sortName": "YI, Yang",
+      "name": "Yang Yi",
+      "sortName": "Yi, Yang",
       "kind": "person",
       "variants": [
         "Yang YI"

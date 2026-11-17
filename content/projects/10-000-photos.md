@@ -18,7 +18,7 @@ credits:
     role: null
     affiliation: null
   - personId: joshua-igwe
-    name: Josh Igwe
+    name: Joshua Igwe
     role: null
     affiliation: null
   - personId: aljumaine-gayle

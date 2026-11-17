@@ -13,8 +13,8 @@ medium:
   - sound
 tags: []
 credits:
-  - personId: aishwarya-bhattbhatt
-    name: Aishwarya Bhattbhatt
+  - personId: aishwarya-bhatt
+    name: Aishwarya Bhatt
     role: null
     affiliation: null
   - personId: aranya-khurana

@@ -14,7 +14,7 @@ medium:
 tags: []
 credits:
   - personId: orus-mateo-castano-suarez
-    name: Orus Mateo Castano Suarez
+    name: Orus Mateo Castaño-Suárez
     role: null
     affiliation: null
   - personId: juan-sulca
@@ -22,7 +22,7 @@ credits:
     role: null
     affiliation: null
   - personId: ailin-dong
-    name: Aileen D
+    name: Ailin Dong
     role: null
     affiliation: null
   - personId: yu-shien-yang

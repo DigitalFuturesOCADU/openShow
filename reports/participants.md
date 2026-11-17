@@ -30,7 +30,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Nick Alexander
 - Rittika Basu
 - Mazin Chabayta
-- Neo Chen
+- Neo Nuo Chen
 - Liam Clarke
 - Sananda Dutta
 - Jignesh Gharat
@@ -50,7 +50,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 ### Open Show 2019 — February
 
-42 participants.
+39 participants.
 
 † 2 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
@@ -76,12 +76,11 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Vivian Wong
 - Anran Zhou
 
-#### Graduate (21)
+#### Graduate (18)
 
 - Veda Adnani
-- Nicholas Alexander
 - Nick Alexander
-- Carisa Antariksa
+- Carisa Putri Antariksa
 - Amreen Ashraf
 - Alicia Blakey
 - Finlay Braithwaite
@@ -89,30 +88,28 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - April De Zen
 - Omid Ettehadi
 - Shikhar Juyal
-- Ladan
 - Joshua McKenna
 - Tyson Moll
 - Peiheng
 - Olivia Prior
 - Jad Rabbaa
 - Yiyi Shao
-- Shikhar
 - Ladan Siad
 - Georgina Yeboah
 
 #### Alumni (2)
 
 - Kartikay Chadha †
-- Dr. Martha Laldy †
+- Martha Ladly †
 
 #### Faculty (2)
 
 - Kartikay Chadha †
-- Dr. Martha Laldy †
+- Martha Ladly †
 
 ### Open Show 2020
 
-73 participants.
+70 participants.
 
 † 17 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
@@ -134,8 +131,8 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Ziyao Jiang
 - Rhepa Kamal
 - Arashjot Kaur
-- Leia KC
 - Enna Kim
+- Leia Kook-Chun
 - Natalie Le Huenen
 - Thomas Liu
 - Ardy Llantino
@@ -180,9 +177,8 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Vivian Wong
 - Anran Zhou
 
-#### Graduate (25)
+#### Graduate (22)
 
-- Achal
 - Clinton Akomea-Agyin
 - Krishnokoli Roy Chakraborty
 - Neo Nuo Chen
@@ -193,7 +189,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Jie Guan †
 - Kate Hartman †
 - Jamie
-- Krishnokoli
 - Manisha Laroia †
 - Lilian Leung
 - Jun Li †
@@ -202,7 +197,6 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Olivia Prior †
 - Achal Shah
 - Yiyi Shao †
-- Simran
 - Mairead Stewart
 - Adam Tindale †
 - Emma Westecott †
@@ -245,7 +239,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 - Denzel Arthur
 - Kartik Saravana Arvind
-- Sara Boo
+- Sarah Boo
 - Shannon Callaghan
 - Liam Gonzales
 - Joshua Igwe
@@ -267,7 +261,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 #### Graduate (10)
 
-- Neo Chen
+- Neo Nuo Chen
 - Renee Ge
 - Jie Guan
 - Lilian Leung
@@ -280,7 +274,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 ### Open Show 2022
 
-59 participants.
+58 participants.
 
 † 7 of these are on a mixed team whose affiliation was recorded per project, not per person, so they appear under every affiliation their team held. Counts below are therefore an over-estimate for this show. Submissions from 2026 record affiliation per person and will be exact.
 
@@ -297,10 +291,10 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Terrell Duke
 - Hedy Fu
 - Doris Gao
-- Lee Seung Ho
 - Kan Huang
 - Atharva Jadhav
 - Kyle Kubica
+- Lee Seung Ho
 - Yilia Li
 - Mark Lin
 - Arteya Lutchman
@@ -331,7 +325,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Emma Westecott †
 - Shuting Zhou
 
-#### Alumni (16)
+#### Alumni (15)
 
 - Carisa Putri Antariksa
 - Amreen Ashraf
@@ -343,8 +337,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Kate Hartman †
 - Ellie Huang †
 - Max Lander †
-- Patricia Mwenda
-- Patricia "Trish" Kanana Mwenda
+- Patricia Kanana Mwenda
 - Cindy Poremba †
 - Candide Uyanze
 - Emma Westecott †
@@ -352,17 +345,17 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 #### Faculty (13)
 
-- collective project: Angela Atkinson _(collective)_
+- Angela Atkinson
 - Santo Aveiro †
 - Izzie Colpitts-Campbell †
+- Data Materialization Studio Lab _(collective)_
 - Michelle Gay
 - Kate Hartman †
 - Ellie Huang †
-- Data Materialization Studio Lab _(collective)_
 - Max Lander †
-- Social Body Lab in collaboration with Tapestry Opera _(collective)_
 - Cindy Poremba †
 - Barbara Rauch
+- Social Body Lab in collaboration with Tapestry Opera _(collective)_
 - Casper Sutton-Fosman
 - Emma Westecott †
 
@@ -387,7 +380,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Marquessa Mackenzie
 - Hamid Malek
 - Manuel Quiambao
-- JD Ramirez
+- Judhell Dhy Ramirez
 - Gunner Thongmeesang
 - Zhihan Zhang
 
@@ -395,7 +388,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 - Rim Armouch
 - Tyler Beatty †
-- Aishwarya Bhattbhatt
+- Aishwarya Bhatt
 - Nastaran Bizmark
 - Ryan Boyd †
 - Orus Mateo Castaño-Suárez
@@ -554,7 +547,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 
 #### Graduate (25)
 
-- g blekkenhorst
+- Gillian Blekkenhorst
 - Rina Chen
 - Minghui Cui
 - Kayla Eli
@@ -563,7 +556,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Mahnoor Hasan
 - Yubhang Huang
 - Xin Jiang
-- Brandon li
+- Brandon Li
 - Qingxuan Li
 - Amelia Lochhead
 - Thea Lu
@@ -577,7 +570,7 @@ for that show — see the coverage table in `reports/taxonomy.md`.
 - Yuhan Xia
 - Jesse Xu
 - Melanie Yan
-- Yang YI
+- Yang Yi
 - Harry Zhao
 
 #### Alumni (8)

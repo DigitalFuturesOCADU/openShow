@@ -21,8 +21,8 @@ credits:
     name: Tyson Moll
     role: null
     affiliation: null
-  - personId: nicholas-alexander
-    name: Nicholas Alexander
+  - personId: nick-alexander
+    name: Nick Alexander
     role: null
     affiliation: null
   - personId: joshua-mckenna

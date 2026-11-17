@@ -22,7 +22,7 @@ credits:
     role: null
     affiliation: null
   - personId: mika-maclear-wall
-    name: Mika MacLOear Wall
+    name: Mika Maclear Wall
     role: null
     affiliation: null
   - personId: giuliana-costa

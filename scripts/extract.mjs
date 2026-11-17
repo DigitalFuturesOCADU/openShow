@@ -421,6 +421,10 @@ const applied = []
 const unknownIds = []
 
 for (const [rawId, fields] of Object.entries(overrideDoc)) {
+  // "show:<id>" keys describe shows, not projects; they are applied further
+  // down. Reporting them here as unknown post ids sent people hunting for a
+  // typo that was not there.
+  if (String(rawId).startsWith('show:')) continue
   const rec = byId.get(String(rawId))
   if (!rec) {
     unknownIds.push(rawId)

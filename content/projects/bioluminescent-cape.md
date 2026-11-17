@@ -20,8 +20,8 @@ credits:
     name: Shane Colby
     role: null
     affiliation: null
-  - personId: jd-ramirez
-    name: JD Ramirez
+  - personId: judhell-dhy-ramirez
+    name: Judhell Dhy Ramirez
     role: null
     affiliation: null
 creditsRaw: Kayli Chow, Shane Colby, JD Ramirez

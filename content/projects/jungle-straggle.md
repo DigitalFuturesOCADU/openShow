@@ -21,7 +21,7 @@ credits:
     role: null
     affiliation: null
   - personId: brandon-li
-    name: Brandon li
+    name: Brandon Li
     role: null
     affiliation: null
   - personId: yuhan-xia

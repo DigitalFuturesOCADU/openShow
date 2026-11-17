@@ -28,8 +28,8 @@ credits:
     name: Wei Zhang
     role: null
     affiliation: null
-  - personId: neo-chen
-    name: Neo Chen
+  - personId: neo-nuo-chen
+    name: Neo Nuo Chen
     role: null
     affiliation: null
 creditsRaw: Grace Yuan, Jie Guan, Renee Ge, Wei Zhang, Neo Chen

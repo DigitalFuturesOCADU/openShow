@@ -13,8 +13,8 @@ medium:
   - web
 tags: []
 credits:
-  - personId: patricia-trish-kanana-mwenda
-    name: Patricia "Trish" Kanana Mwenda
+  - personId: patricia-kanana-mwenda
+    name: Patricia Kanana Mwenda
     role: null
     affiliation: null
   - personId: candide-uyanze

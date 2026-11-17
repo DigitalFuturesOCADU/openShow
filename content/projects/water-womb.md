@@ -22,7 +22,7 @@ credits:
     role: null
     affiliation: null
   - personId: mika-maclear-wall
-    name: Mika Wall
+    name: Mika Maclear Wall
     role: null
     affiliation: null
 creditsRaw: Kayli Chow, Cole Kassirer, Mika Wall

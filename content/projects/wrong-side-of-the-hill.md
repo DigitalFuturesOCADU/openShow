@@ -13,7 +13,7 @@ medium:
 tags: []
 credits:
   - personId: mika-maclear-wall
-    name: Mika Maclear-Wall
+    name: Mika Maclear Wall
     role: null
     affiliation: null
   - personId: jacob-sosulli

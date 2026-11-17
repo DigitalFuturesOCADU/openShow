@@ -16,8 +16,8 @@ credits:
     name: Shannen Guntoro
     role: null
     affiliation: null
-  - personId: leia-kc
-    name: Leia KC
+  - personId: leia-kook-chun
+    name: Leia Kook-Chun
     role: null
     affiliation: null
 creditsRaw: Shannen Guntoro & Leia KC

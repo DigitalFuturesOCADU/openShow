@@ -14,7 +14,7 @@ medium:
 tags: []
 credits:
   - personId: niloofar-sanandajizadeh
-    name: Niloofar Sanandaji
+    name: Niloofar Sanandajizadeh
     role: null
     affiliation: null
 creditsRaw: Niloofar Sanandaji

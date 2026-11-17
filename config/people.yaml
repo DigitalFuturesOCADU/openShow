@@ -30,38 +30,59 @@ aliases:
   "Niloofar Sanandaji": "Niloofar Sanandajizadeh"
   "Orus Mateo Castano Suarez": "Orus Mateo Castaño-Suárez"
 
-# --- PROBABLE TYPOS: normalised names within an edit distance of 2, but not
-# --- identical. NOT applied automatically — two real people can have names one
-# --- character apart. Confirm each, then move it into aliases above.
-#   "Mika MacLOear Wall" <-> "Mika Maclear Wall"   (distance 1)
-#   "Mika MacLOear Wall" <-> "Mika Maclear-Wall"   (distance 1)
-#   "Salisa Jatuweerapong" <-> "Salisa Jatweerapong"   (distance 1)
-#   "Aileen Dong" <-> "Ailin Dong"   (distance 2)
-#   "Josh Igwe" <-> "Joshua Igwe"   (distance 2)
+  # Confirmed by hand, 2026-11-17. First-name-only credits: two teams credited
+  # themselves that way — "Achal, Jamie, Krishnokoli, Simran" (2020) and
+  # "Ladan, Shikhar, Peiheng" (2019 Feb) — and each name matches exactly one
+  # person in the same show and cohort.
+  "Achal": "Achal Shah"
+  "Krishnokoli": "Krishnokoli Roy Chakraborty"
+  "Simran": "Simran Duggal"
+  "Ladan": "Ladan Siad"
+  "Shikhar": "Shikhar Juyal"
+  # Same person, different forms of the name. Canonical chosen by hand.
+  "Nicholas Alexander": "Nick Alexander"
+  "g blekkenhorst": "Gillian Blekkenhorst"
+  "Patricia Mwenda": "Patricia Kanana Mwenda"
+  "Patricia \"Trish\" Kanana Mwenda": "Patricia Kanana Mwenda"
+  "Carisa Antariksa": "Carisa Putri Antariksa"
+  "Neo Chen": "Neo Nuo Chen"
+  "Sara Boo": "Sarah Boo"
+  "JD Ramirez": "Judhell Dhy Ramirez"
+  "Leia KC": "Leia Kook-Chun"
+  # Spelling corrections: one person, credited once, spelled wrongly.
+  "Dr. Martha Laldy": "Martha Ladly"
+  "Aishwarya Bhattbhatt": "Aishwarya Bhatt"
+  "Yang YI": "Yang Yi"
+  "Brandon li": "Brandon Li"
+  "collective project: Angela Atkinson": "Angela Atkinson"
+
+# --- UNRESOLVED. Credited in a form the archive cannot complete; nothing in the
+# --- WordPress export or the 2025 sheet gives more. Class lists would.
+#   Jamie       2020, Virus v/s Vaccines (with Achal Shah, Krishnokoli Roy
+#               Chakraborty, Simran Duggal)
+#   Peiheng     2019 Feb, DISCHORD / SPACE QUEST PIZZA (with Ladan Siad,
+#               Shikhar Juyal)
+#   Joe, Ozan   2025, Drone Delivery
+#   Raza        2019 Dec, Anas
+#   Maryam      2023, Naughty Robotcat
+#   L Wilkins   2019 Dec, void
+#   Magdalena Szlapczynskials   2022, VR Game: EER — surname looks garbled
 
 # --- Sort keys the heuristic is unsure about: one-word names, four or more
 # --- words, or a particle like "van"/"de". The default guess is shown.
 sortNames:
-  "Achal": "Achal"
   "April De Zen": "De Zen, April"
-  "Data Materialization Studio Lab": "Lab, Data Materialization Studio"
-  "Emolace": "Emolace"
+  "Data Materialization Studio Lab": "Data Materialization Studio Lab"
   "Jamie": "Jamie"
   "Joe": "Joe"
-  "Krishnokoli": "Krishnokoli"
-  "Ladan": "Ladan"
+  "Lee Seung Ho": "Lee, Seung Ho"   # Korean order: family name first
   "Maryam": "Maryam"
   "Natalie Le Huenen": "Le Huenen, Natalie"
-  "Orus Mateo Castano Suarez": "Suarez, Orus Mateo Castano"
   "Ozan": "Ozan"
-  "Patricia \"Trish\" Kanana Mwenda": "Mwenda, Patricia \"Trish\" Kanana"
   "Paul Van Rijn": "Van Rijn, Paul"
   "Peiheng": "Peiheng"
   "Raza": "Raza"
-  "Shikhar": "Shikhar"
-  "Simran": "Simran"
-  "Social Body Lab in collaboration with Tapestry Opera": "Opera, Social Body Lab in collaboration with Tapestry"
-  "collective project: Angela Atkinson": "Atkinson, collective project: Angela"
+  "Social Body Lab in collaboration with Tapestry Opera": "Social Body Lab in collaboration with Tapestry Opera"
 
 # --- Groups, studios and labs. Displayed, but not treated as individuals.
 # --- Detected by name; confirm and add any the heuristic missed.
@@ -69,7 +90,6 @@ collectives:
   - "CAM Collective"
   - "Data Materialization Studio Lab"
   - "Social Body Lab in collaboration with Tapestry Opera"
-  - "collective project: Angela Atkinson"
 
 # --- Not creators at all. Detected where the credit is identical to the
 # --- project's own title, which means the field was filled in with the wrong

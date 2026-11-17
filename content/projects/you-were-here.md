@@ -14,7 +14,7 @@ medium:
 tags: []
 credits:
   - personId: yang-yi
-    name: Yang YI
+    name: Yang Yi
     role: null
     affiliation: null
 creditsRaw: Yang YI

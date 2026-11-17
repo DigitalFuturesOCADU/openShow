@@ -17,7 +17,7 @@ credits:
     role: null
     affiliation: null
   - personId: ailin-dong
-    name: Aileen Dong
+    name: Ailin Dong
     role: null
     affiliation: null
   - personId: juan-sulca

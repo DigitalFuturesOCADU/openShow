@@ -13,8 +13,8 @@ medium:
   - performance
 tags: []
 credits:
-  - personId: g-blekkenhorst
-    name: g blekkenhorst
+  - personId: gillian-blekkenhorst
+    name: Gillian Blekkenhorst
     role: null
     affiliation: null
 creditsRaw: g blekkenhorst

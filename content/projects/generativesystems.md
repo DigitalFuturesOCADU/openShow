@@ -13,8 +13,8 @@ medium:
   - installation
 tags: []
 credits:
-  - personId: carisa-antariksa
-    name: Carisa Antariksa
+  - personId: carisa-putri-antariksa
+    name: Carisa Putri Antariksa
     role: null
     affiliation: null
   - personId: joshua-mckenna

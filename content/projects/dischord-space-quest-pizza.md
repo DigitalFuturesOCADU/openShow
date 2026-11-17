@@ -11,12 +11,12 @@ medium:
   - games
 tags: []
 credits:
-  - personId: ladan
-    name: Ladan
+  - personId: ladan-siad
+    name: Ladan Siad
     role: null
     affiliation: null
-  - personId: shikhar
-    name: Shikhar
+  - personId: shikhar-juyal
+    name: Shikhar Juyal
     role: null
     affiliation: null
   - personId: peiheng

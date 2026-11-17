@@ -13,8 +13,8 @@ medium:
   - wearables
 tags: []
 credits:
-  - personId: patricia-mwenda
-    name: Patricia Mwenda
+  - personId: patricia-kanana-mwenda
+    name: Patricia Kanana Mwenda
     role: null
     affiliation: null
 creditsRaw: Patricia Mwenda

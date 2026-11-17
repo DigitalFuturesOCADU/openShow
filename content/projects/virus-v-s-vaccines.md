@@ -14,20 +14,20 @@ medium:
   - web
 tags: []
 credits:
-  - personId: achal
-    name: Achal
+  - personId: achal-shah
+    name: Achal Shah
     role: null
     affiliation: null
   - personId: jamie
     name: Jamie
     role: null
     affiliation: null
-  - personId: krishnokoli
-    name: Krishnokoli
+  - personId: krishnokoli-roy-chakraborty
+    name: Krishnokoli Roy Chakraborty
     role: null
     affiliation: null
-  - personId: simran
-    name: Simran
+  - personId: simran-duggal
+    name: Simran Duggal
     role: null
     affiliation: null
 creditsRaw: Achal, Jamie, Krishnokoli, Simran

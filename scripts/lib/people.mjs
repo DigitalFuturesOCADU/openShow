@@ -229,7 +229,13 @@ export function buildPeople(records, cfg) {
 
       resolved.push({
         personId: cslug,
-        name: credited,
+        // The confirmed name, not the spelling on the form. An alias in
+        // config/people.yaml is a statement that the credited form is wrong
+        // or incomplete — "Laldy", "Achal" — so showing it on the project
+        // while the person page says otherwise would contradict the fix. The
+        // credit as submitted is kept verbatim in creditsRaw, and every form
+        // a person was credited under stays in their variants.
+        name: canonical,
         role: credit.role ?? null,
         // Per-person affiliation. Always null for migrated data: WordPress
         // recorded affiliation on the project, so a mixed team of one faculty

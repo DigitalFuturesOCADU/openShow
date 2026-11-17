@@ -18,8 +18,8 @@ credits:
     name: Data Materialization Studio Lab
     role: null
     affiliation: null
-  - personId: collective-project-angela-atkinson
-    name: 'collective project: Angela Atkinson'
+  - personId: angela-atkinson
+    name: Angela Atkinson
     role: null
     affiliation: null
   - personId: michelle-gay

@@ -8,6 +8,38 @@ Ordered by when it bites, not by size.
 
 ---
 
+## 0. Credentials and student data were public — rotate them
+
+From 2026-08-04 to 2026-11-17 this public repository contained the WordPress
+database dump, the WordPress export and the 2025 submission spreadsheet. Between
+them: password hashes for all 16 WordPress accounts, the stored mail-server
+password, hosting and plugin tokens (Bluehost/Newfold, Envato, licence keys),
+and the email addresses of 40 student submitters and 15 site users.
+
+**Done (2026-11-17):** the files are untracked and ignored everywhere, purged
+from every commit, and the rewritten history force-pushed. Local copies remain
+in `sources/` and at the repo root, outside git.
+
+**Still to do — none of this can be done from the repository:**
+
+- [ ] Reset the passwords on all 16 WordPress accounts on df.show and sign
+      every session out. df.show is still live WordPress, so these are live.
+- [ ] Check the WordPress user list for administrators nobody recognises.
+- [ ] Rotate the mail-server password and the Bluehost/Newfold, Envato and
+      plugin licence tokens.
+- [ ] Ask GitHub Support to purge cached views of the removed commits (they
+      stay reachable by hash until GitHub garbage-collects them). Old head was
+      `634dee5`; the files were added in `ff739a5`.
+- [ ] Decide whether OCAD U's privacy office needs to know about the student
+      emails.
+- [ ] Anyone who cloned the repository before 2026-11-17 should delete the
+      clone and clone again.
+
+Assume the files were copied while public. Rotation is the fix; the purge only
+stops further exposure.
+
+---
+
 ## 1. Blocking the next real use
 
 ### 1.1 SharePoint filename resolution is UNVERIFIED — *the one to watch*
@@ -55,15 +87,12 @@ The build reads `base` and `site` from the environment, so either choice works
 without code changes. Still needed before Step 6 can ship, but nothing hangs on
 which way it goes.
 
-### 1.3 D7 — images in a second repository — **decided, needs creating**
+### 1.3 D7 — images in a second repository — **done**
 
 Web masters live in `DigitalFuturesOCADU/openShow-images`, checked out to
-`content/images` by the deploy workflow. This repository stays at 15 MB so a
+`content/images` by the deploy workflow. This repository stays small so a
 colleague can clone it without waiting for 700 photographs, and CI takes both so
-the published site is complete.
-
-**The images repository does not exist yet.** Until it is created and pushed,
-the Pages build fails at the "Fetch images" step. Setup is in the README.
+the published site is complete. Live on GitHub Pages since 2026-08-04.
 
 Not Git LFS: an LFS checkout in Actions spends its full size against a 10 GB
 monthly bandwidth allowance on *every build* — roughly 44 builds, failing at the
@@ -83,28 +112,21 @@ Fixed going forward by adding the question to the intake form
 ([INTAKE-FORM.md](INTAKE-FORM.md) §1b). The 704 already in the archive need
 writing by someone who saw the work, or they stay as they are.
 
-### 2.2 Five probable name typos
+### 2.2 Names — mostly resolved
 
-[config/people.yaml](config/people.yaml) lists them as comments, unapplied:
+Two rounds of hand-confirmed merges and spelling fixes (2026-08-04 and
+2026-11-17) took the register from 315 to 301 people. All are in `aliases:` in
+[config/people.yaml](config/people.yaml). Projects show the confirmed name; the
+credit as submitted stays in `creditsRaw`, and each person page lists the other
+forms they were credited under.
 
-| | |
-| --- | --- |
-| `Mika MacLOear Wall` ↔ `Mika Maclear-Wall` | distance 1 |
-| `Salisa Jatuweerapong` ↔ `Salisa Jatweerapong` | distance 1 |
-| `Josh Igwe` ↔ `Joshua Igwe` | distance 2 |
-| `Aileen Dong` ↔ `Ailin Dong` ↔ `Aileen D` | 3 variants, all 2023 |
+**Still unresolved**, listed in the same file: seven credits that exist only as
+a first name or initial — Jamie, Peiheng, Joe, Ozan, Raza, Maryam, L Wilkins —
+and `Magdalena Szlapczynskials`, whose surname looks garbled. Nothing in the
+export or the 2025 sheet completes them; class lists would.
 
-Never merged automatically: `Aileen`/`Ailin` may well be two different people,
-and merging would erase someone's credit.
-
-**The Dong case is now visible in the interface.** The 2023 Exhibitors list
-shows `Aileen D`, `Aileen Dong` and `Ailin Dong` as three separate people, one
-project each — `Ctrl_Space`, `Into the Unknown` and `Xdaeta music space`. They
-never appear together on one project, which is consistent with them being one
-person credited three ways, but is not proof. Someone who was there will know.
-
-Move confirmed merges into `aliases:` in `config/people.yaml` and re-run
-extract.
+Never merged automatically: two real people can have names a letter apart, and
+a wrong merge erases someone's credit.
 
 ### 2.3 Eight projects with no resolvable year
 
@@ -186,7 +208,8 @@ Re-check with `node scripts/check-links.mjs --stale 30`. Results live in
 - **Per-show theme tokens** — the mechanism works; no design direction yet.
 - **Project page layout** — matches the original three-column shape; flagged as
   needing more work.
-- **Deploy** (Step 6) — needs D6.
+- **Deploy** (Step 6) — on GitHub Pages as a placeholder. The permanent home
+  waits on the wider site reorganisation (D6).
 - **CMS** (Step 8) — deliberately deferred; the spreadsheet covers it.
 - **Consent split** — one 2025 submission answered "No" and is still in the
   archive. Ingest flags it; a human still has to read the flag.

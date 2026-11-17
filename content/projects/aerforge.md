@@ -15,7 +15,7 @@ medium:
 tags: []
 credits:
   - personId: salisa-jatuweerapong
-    name: Salisa Jatweerapong
+    name: Salisa Jatuweerapong
     role: null
     affiliation: null
   - personId: melissa-roberts
